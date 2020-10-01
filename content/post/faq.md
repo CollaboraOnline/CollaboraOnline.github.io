@@ -36,7 +36,7 @@ privacy and allows them to keep full control of their sensitive data.
 Collabora Online is mainly written by Collabora. Collabora's 20+
 committers provided 95%+ of the commits in the last year. Checkout
 our [2020 infographic]("https://www.collaboraoffice.com/community-news/updated-libreoffice-growth-infographic-2020/")
-or the [git repository](FIXME)
+or the [git repository](https://github.com/CollaboraOnline/online)
 
 We built on top of a huge volume of work from both LibreOffice [credits](https://www.libreoffice.org/about-us/credits/),
 however the Online functionality was created primarily by Collabora (as [announced in 2015](https://people.gnome.org/~michael/blog/2015-03-25-libreoffice-icewarp.html)) – or for a [detailed story](https://people.gnome.org/~michael/blog/2015-12-15-code.html).
@@ -45,7 +45,7 @@ The first integration for ownCloud (and later for Nextcloud) was built
 on top of Documents plugin (based on work of Frank Karlitschek and
 Victor Dubiniuk) that was renamed to RichDocuments, with a docker
 image from Lukas Reschke. Currently we have many more integrations
-written by either by Collabora or by Collabora Partners.
+written by either Collabora or by Collabora Partners.
 
 ### Who contributed to the Mobile work ?
 
@@ -69,6 +69,7 @@ represents only one hundredth of the strings that LibreOffice has, it re-uses
 many translations from the core too. We try to extract translators names to
 [credit their hard work]({{< relref "translate.md#Credits" >}}), which is much
 appreciated.
+Of course we prepared the [translation environment](https://collaboraonline.github.io/post/translate/) that our translators are used to.
 
 ## Why is Collabora Online its own project ?
 
@@ -192,7 +193,7 @@ LibreOffice and will honor that in equivalent access.
 
 Yes, you'll need to follow the
 [build instructions]({{< relref "build-code.md" >}}), as well
-as the FIXME: LICENSE and for now if you're modifying it significantly
+as the [license](https://www.mozilla.org/en-US/MPL/) and for now if you're modifying it significantly
 you'll want to use your own brand name to make it clear that you are
 standing behind that, and to avoid creating confusion around its origin.
 That is easy to do using various configure options.

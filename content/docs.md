@@ -34,11 +34,15 @@ For more detailed and pretty instructions on integrating with various partner so
     ownCloud
 
 ## Get involved
-* Checking out the source code to build it yourself is easy: https://github.com/CollaboraOnline
-* After compiling ‘online’ just do a `$make run` and follow the link to tweak things live.
-* The API is visible here: https://www.collaboraoffice.com/collabora-online-editor-api-reference/ and Collabora Online API
-* To send patches, and collaborate with other developers working on the code please do join in our [Discourse](https://forum.collaboraonline.com)
-* If you prefer you can also join via IRC [Freenode/#cool-dev](irc://irc.freenode.net/#cool-dev); you can get there directly via a [Webchat](https://webchat.freenode.net/#cool-dev)
+* Checking out the source code to build it yourself is easy:
+  + https://github.com/CollaboraOnline/online
+* After [building Collabora Online]({{< relref "build-code" >}} "How to build CODE") just do a `make run` and follow the link to tweak things live.
+* The API documentation is available here:
+  + https://www.collaboraoffice.com/collabora-online-editor-api-reference/
+* Send patches via the [GitHub pull requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+* To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
+* To talk to other developers, please join the IRC [Freenode/#cool-dev channel](irc://irc.freenode.net/#cool-dev)
+  + you can get there directly via a [Webchat](https://webchat.freenode.net/#cool-dev)
 * And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://twitter.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
 
 ### Your first commit
