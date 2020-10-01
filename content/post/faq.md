@@ -45,7 +45,7 @@ The first integration for ownCloud (and later for Nextcloud) was built
 on top of Documents plugin (based on work of Frank Karlitschek and
 Victor Dubiniuk) that was renamed to RichDocuments, with a docker
 image from Lukas Reschke. Currently we have many more integrations
-written by either by Collabora or by Collabora Partners.
+written by either Collabora or Collabora Partners.
 
 ### Who contributed to the Mobile work ?
 

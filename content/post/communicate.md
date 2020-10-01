@@ -9,6 +9,9 @@ tags = [
     "communicate",
     "chat",
 ]
+images = [
+    "communicate.jpg",
+]
 +++
 
 A great way to get in touch, ask anything or get mentoring is through one of our official channels:
