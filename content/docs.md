@@ -55,5 +55,5 @@ For more detailed and pretty instructions on integrating with various partner so
 
 | | | |
 |-|-|-|
-|FOSDEM 2020| [talk title.pdf]() |
-| LibOCon | [talk title.pdf]() |
+| LibreOffice Conference 2020| [Integrating-OnLine-via-WOPI.pdf](https://speakerdeck.com/kendy/integrating-libreoffice-online-via-wopi) |
+| FOSDEM 2020 | [dialog-tunneling.pdf](https://speakerdeck.com/kendy/dialog-tunneling-in-libreoffie-online) |

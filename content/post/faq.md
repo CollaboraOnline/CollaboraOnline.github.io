@@ -64,7 +64,7 @@ donor funded code is present in Online.
 
 ### What about translators work ?
 
-Great point! many translators have made a wonderful contribution. While Online
+Great point! Many translators have made important contributions. While Online
 represents only one hundredth of the strings that LibreOffice has, it re-uses
 many translations from the core too. We try to extract translators names to
 [credit their hard work]({{< relref "translate.md#Credits" >}}), which is much
@@ -84,7 +84,7 @@ longer term in improving the software most simply by moving Collabora
 Online to its own project.
 
 We believe that doing this also removes the need for a number of
-unpleasant compromises and inter-company conflict that put strain
+unpleasant compromises and inter-company conflicts that put strain
 on TDF. It also follows the well known pattern of many other successful
 FOSS companies: RedHat/Fedora, openSUSE, Samba+, ownCloud, Nextcloud,
 RocketChat, Mattermost, BigBlueButton, and others beyond number.
@@ -100,12 +100,13 @@ to the code behind the version you choose is important.
 
 ### Do we need investment ?
 
-Volunteers have always contributed to FOSS projects, LibreOffice is no
-exception, and we would love you to get involved and help out improving
-the code with us. Professional developers bring the ability to contribute
-huge amounts of feature/function work, mentoring, and the depth of focus
+Let us first state clearly that volunteers have always contributed to FOSS projects, and do so in many different ways. This is important and LibreOffice is no
+exception. So obviously we would love you to get involved and e.g. help out improving
+the code with us.
+
+Professional developers bring the ability to contribute huge amounts of feature/function work, mentoring, and the depth of focus
 necessary to tackle the hardest issues: improving interoperability,
-performance, memory consumption, latency - as well as building new UX
+performance, memory consumption, latency, move with changes in os and other software libraries - as well as building new UX
 infrastructure and adding product polish - we're far from done.
 
 Donations have also been a helpful revenue stream for TDF, however the
