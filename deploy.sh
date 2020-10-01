@@ -22,9 +22,7 @@ if [[ $(git status -s) ]]; then
 fi
 
 msg "Removing the old website"
-pushd public
-git rm -rf *
-popd
+rm -rf public/*
 
 msg "Building the website"
 hugo
