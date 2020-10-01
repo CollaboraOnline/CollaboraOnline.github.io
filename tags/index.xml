@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright>
-    <lastBuildDate>Wed, 30 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://CollaboraOnline.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,18 @@
     <item>
       <title>build</title>
       <link>https://CollaboraOnline.github.io/tags/build/</link>
-      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://CollaboraOnline.github.io/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>make</title>
+      <link>https://CollaboraOnline.github.io/tags/make/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/make/</guid>
       <description></description>
     </item>
     
@@ -72,15 +81,6 @@
       <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://CollaboraOnline.github.io/tags/leaflet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>make</title>
-      <link>https://CollaboraOnline.github.io/tags/make/</link>
-      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://CollaboraOnline.github.io/tags/make/</guid>
       <description></description>
     </item>
     
