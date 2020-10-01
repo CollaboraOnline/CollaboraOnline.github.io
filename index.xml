@@ -40,7 +40,8 @@
       <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://CollaboraOnline.github.io/post/easyhacks/</guid>
-      <description>&lt;p&gt;These hacks have been determined to be great starting points for new developers on the project - when you visit the bug on our bug tracker you will find useful code pointers as well as at least one expert who will be available to help you if you have questions.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Check out the starting points for new developers on the project - usually with
+code pointers helping you to locate the area to hack on easily.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,9 +59,8 @@
       <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://CollaboraOnline.github.io/post/filebugs/</guid>
-      <description>&lt;p&gt;Great so let the bug hunting begin!&lt;/p&gt;
-&lt;p&gt;Please make sure you can reproduce the bug and identify the necessary steps to trigger it.
-Ideally use a new blank file (which may be useful later, as a test file) and also try to reproduce after resetting CODE preferences.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Sorry about that - but you can help us resolving it by creating a great bug
+report! See the steps how to do it, and &lt;a href=&#34;https://github.com/CollaboraOnline/online/issues/new&#34; title=&#34;File the bug on GitHub&#34;&gt;file the bug on GitHub&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
