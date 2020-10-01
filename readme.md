@@ -36,15 +36,13 @@ Note: ideally we would have this in one folder inside of CollaboraOffice.com so 
 note: https://github.com/gohugoio/hugo/releases
 2. Repository and branches
 * Choose a local folder 
-* Clone it `git clone git@gitlab.collabora.com:productivity/collaboraonline-page.git .`
-* git submodule update --init
+* Clone it `git clone https://github.com/CollaboraOnline/CollaboraOnline.github.io.git .`
 * Change branch to source `git checkout source`
 * `git worktree add -B master public origin/master` : Creates a local public folder and be able to manage both branches within the same working tree, allowing to have a mixed of branches checked out at the same time. With this we can generate the site into that public folder, and have it be mirrored in the master branch.
 3. Generate live static website and run server (while watching files etc so it does not need to refresh it will do it automatically)
 
 run `hugo server` in the root of your source branch local copy
 
-_A high performance webserver_
 ## To deploy to master:
 when we want to publish the generated static website (resulting from the changes in `source` branch) we can run `./deploy.sh`
 * the script checks for git status and will not proceed if the dir is not clean
@@ -54,9 +52,3 @@ when we want to publish the generated static website (resulting from the changes
 
 * master: The master branch will store the public website files once they are all built.
 * source: additional branch to store all of the source files.
-
-
-reference:
-* https://gohugo.io/hosting-and-deployment/hosting-on-github/
-* https://www.hjdskes.nl/blog/update-deploying-hugo-on-personal-gh-pages/
-* https://goparker.com/post/2018-05-08-github-pages-and-hugo/
