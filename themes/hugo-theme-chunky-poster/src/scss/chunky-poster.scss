@@ -1,0 +1,84 @@
+.homepage-image {
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        width: 400px;
+        right: 100px;
+        top: 0;
+    }
+}
+
+.author .name a, .author .social a {
+    color: $gray-900;
+    text-decoration: none;
+}
+
+blockquote {
+    color: $gray-400;
+    border-left: 6px solid $gray-400;
+    padding-left: $spacer;
+}
+
+code {
+    background-color: $gray-100;
+    border-radius: $border-radius-sm;
+    padding: .125rem .2rem;
+}
+
+code[class*=language-], pre[class*=language-] {
+    font-family: $font-family-monospace;
+    @include font-size($code-font-size);
+}
+
+figure.highlight pre:not([class*=language-]) {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    background-color: $gray-100;
+}
+
+pre code {
+    padding: 0;
+    background-color: transparent;
+}
+
+.latest h2 a, .navbar a, .card > a, a.badge {
+    text-decoration: none;
+}
+
+figure.highlight {
+    margin-left: -($grid-gutter-width / 2);
+    margin-right: -($grid-gutter-width / 2);
+
+    @include media-breakpoint-up(md) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+img[data-src] {
+    opacity: 0;
+    @include transition($transition-fade);
+
+    &.loaded {
+        opacity: 1;
+    }
+}
+
+#navbar-main-menu {
+    transition: top 0.2s ease;
+
+    .nav-item .nav-link {
+        font-size: $navbar-brand-font-size;
+    }
+}
+
+ul.share.nav {
+    .nav-link {
+        padding: $nav-link-padding-y 0.2rem;
+        text-align: center;
+    }
+}
+
+footer a:not(.icons) {
+    color: $gray-200;
+}

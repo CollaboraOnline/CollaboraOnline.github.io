@@ -1,0 +1,51 @@
+{{ define "main" }}
+<main class="content-page container pt-7 pb-5">
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        {{- $term := . -}}
+                        {{- if $term.Params.images -}}
+                            {{- with .Resources.GetMatch (index $term.Params.images 0) -}}
+                                {{- $image := .Resize "300x" -}}
+                                <p class="text-center my-5">
+                                    <img data-src="{{ $image.RelPermalink }}" class="img-thumbnail rounded-circle" alt="{{ $term.Params.name }}">
+                                </p>
+                            {{- end -}}
+                        {{- end -}}
+
+                        {{- .Scratch.Set "name" .Title -}}
+                        {{- if $term.Params.name -}}
+                            {{- .Scratch.Set "name" $term.Params.name -}}
+                        {{- end -}}
+                        <h2 class="mb-3">{{ .Scratch.Get "name" }}</h2>
+
+                        {{- with $term.Params.twitter -}}
+                            <p class="text-muted">
+                                <a href="https://twitter.com/@{{ . | urlize }}">@{{ .}}</a>
+                            </p>
+                        {{- end -}}
+
+                        <div class="content">
+                            {{ $term.Content }}
+                        </div>
+
+                        <div class="articles">
+                            <h3>{{ T "articles" }}</h3>
+
+                            {{- with .Data.Pages -}}
+                            <ul>
+                                {{- range . -}}
+                                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                                {{- end -}}
+                            </ul>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</main>
+{{ end }}

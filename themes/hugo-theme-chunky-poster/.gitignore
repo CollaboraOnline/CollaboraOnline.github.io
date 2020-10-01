@@ -1,0 +1,15 @@
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+.npm
+.yarn-integrity
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Local Netlify folder
+.netlify

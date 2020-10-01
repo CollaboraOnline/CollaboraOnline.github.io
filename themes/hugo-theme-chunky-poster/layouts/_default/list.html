@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="list container py-6">
+    {{- if or .Title .Content -}}
+    <div class="row py-3">
+        <div class="col">
+            {{ with .Title }}<h3 class="display-4">{{ . }}</h3>{{ end }}
+
+            {{- with .Content -}}
+            <div class="content">
+                {{ . }}
+            </div>
+            {{- end -}}
+        </div>
+    </div>
+    {{- end -}}
+
+    <div class="row row-cols-1 row-cols-lg-3">
+        {{ range .Pages }}
+            <div class="col mb-3">
+                {{ .Render "card" }}
+            </div>
+        {{ end }}
+    </div>
+</main>
+{{ end }}

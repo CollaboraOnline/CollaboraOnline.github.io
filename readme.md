@@ -1,0 +1,62 @@
+# source branch
+
+This repository is used to host all source files used in the creation of the website via hugo. In turn, `master` branch is then only used to host the generated result (`public` folder)
+
+## Directory
+* Posts (buildit, easyhacks, translate, filebugs) are written in markdown and are located in `content/post/*.md`
+* Images `content/images/`
+* We can also have different authors, and since then everything will be public we can maybe use different authors according to the person who wrote them. `content/authors/` then each post and page has an attribute name `authors` (we can have multiple per content)
+* Docs page (Documentation): `content/docs.md`
+## See how it looks without server
+
+If you just want to check how the website looks and do not want to run local server
+* You can, after all it's a static website
+* just download master branch as a .zip
+* Unzip it and open it
+* There is an `index.html`, you can open with your web browser, it will work
+Caveats: since you are not runing a local server when you click a link it will not find dinamycally the `.html` of that directoy. Thus it will show you a non found page. Example:
+* You clicked `Build instructions`
+* It showed something like:
+```
+index of file:///home/pedrosilva/collaboraonline-page/public/post/buildit/
+
+Name
+index.html
+```
+To circunvent this you can either click that index.html under `Name` or you can simply type it at the end of that page address like so:
+`file:///home/pedrosilva/collaboraonline-page/public/post/buildit/index.html`
+
+Note: ideally we would have this in one folder inside of CollaboraOffice.com so everyone with Basic Auth could check it
+
+## Generate and Run local a server
+1. Install Hugo: https://gohugo.io/getting-started/installing/
+* Official packages for Debian and Ubuntu: `sudo apt-get install hugo`
+* Official packages for Fedora, Red Hat and CentOS `sudo dnf install hugo`
+* with homebrewfor [linux](https://docs.brew.sh/Homebrew-on-Linux); [macOS](https://brew.sh/): `brew install hugo`
+note: https://github.com/gohugoio/hugo/releases
+2. Repository and branches
+* Choose a local folder 
+* Clone it `git clone git@gitlab.collabora.com:productivity/collaboraonline-page.git .`
+* git submodule update --init
+* Change branch to source `git checkout source`
+* `git worktree add -B master public origin/master` : Creates a local public folder and be able to manage both branches within the same working tree, allowing to have a mixed of branches checked out at the same time. With this we can generate the site into that public folder, and have it be mirrored in the master branch.
+3. Generate live static website and run server (while watching files etc so it does not need to refresh it will do it automatically)
+
+run `hugo server` in the root of your source branch local copy
+
+_A high performance webserver_
+## To deploy to master:
+when we want to publish the generated static website (resulting from the changes in `source` branch) we can run `./deploy.sh`
+* the script checks for git status and will not proceed if the dir is not clean
+* removed any old generated version you might have locally (so anything inside of `public`)
+* runs `hugo` to generate the website into the `public` folder
+* pushes the contents of `public` folder to master branch
+
+* master: The master branch will store the public website files once they are all built.
+* source: additional branch to store all of the source files.
+
+
+reference:
+* https://gohugo.io/hosting-and-deployment/hosting-on-github/
+* https://www.hjdskes.nl/blog/update-deploying-hugo-on-personal-gh-pages/
+* https://goparker.com/post/2018-05-08-github-pages-and-hugo/

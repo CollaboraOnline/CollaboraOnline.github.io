@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Chunky Poster"
+license = "MIT"
+licenselink = "https://github.com/puresyntax71/hugo-theme-chunky-poster/blob/master/LICENSE"
+description = "A simple, bootstrap 4 based blog theme."
+homepage = "https://github.com/puresyntax71/hugo-theme-chunky-poster"
+tags = ["minimal", "minimalist", "blog", "responsive", "syntax highlighting", "multilingual", "minimalist", "light"]
+features = ["minimal", "minimalist", "blog", "responsive", "syntax highlighting", "multilingual", "minimalist", "light"]
+min_version = "0.41"
+
+[author]
+  name = "virtualcursor"
+  homepage = "https://strict-panda.com"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
