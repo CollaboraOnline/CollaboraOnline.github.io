@@ -1,0 +1,22 @@
+@keyframes code-anim {
+  0% {
+    color: #082333;
+    transform: rotate(19deg);
+  }
+
+  75% {
+    color: #b92324;
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    color: #6e1413;
+    transform: rotate(0deg);
+  }
+}
+
+main.homepage h1.display-4 {
+  transform: rotate(0deg);
+  animation-name: code-anim;
+  animation-duration: 1.2s;
+}

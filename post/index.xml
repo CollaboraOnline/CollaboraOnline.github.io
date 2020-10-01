@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Collabora Online Development Edition - Community Page</title>
+    <link>https://CollaboraOnline.github.io/post/</link>
+    <description>Recent content in Posts on Collabora Online Development Edition - Community Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright>
+    <lastBuildDate>Wed, 30 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://CollaboraOnline.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Easy Hacks</title>
+      <link>https://CollaboraOnline.github.io/post/easyhacks/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/easyhacks/</guid>
+      <description>&lt;p&gt;These hacks have been determined to be great starting points for new developers on the project - when you visit the bug on our bug tracker you will find useful code pointers as well as at least one expert who will be available to help you if you have questions.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://CollaboraOnline.github.io/post/faq/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/faq/</guid>
+      <description>&lt;p&gt;Perhaps your question is one that we have been asked before; have a read, and let us know if not.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Found a bug?</title>
+      <link>https://CollaboraOnline.github.io/post/filebugs/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/filebugs/</guid>
+      <description>&lt;p&gt;Great so let the bug hunting begin!&lt;/p&gt;
+&lt;p&gt;Please make sure you can reproduce the bug and identify the necessary steps to trigger it.
+Ideally use a new blank file (which may be useful later, as a test file) and also try to reproduce after resetting CODE preferences.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Translate ?</title>
+      <link>https://CollaboraOnline.github.io/post/translate/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/translate/</guid>
+      <description>&lt;p&gt;A great way to get involved. Perfecting CODE for your language, while learning about the feature set, and how things work can be fun.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build for Android</title>
+      <link>https://CollaboraOnline.github.io/post/build-code-android/</link>
+      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/build-code-android/</guid>
+      <description>&lt;p&gt;Are you familiar with Android development environment are are you interested to learn more while helping the project? Head over documentation or start of by following these step-by-step instructions and build &lt;code&gt;CODE&lt;/code&gt; from scratch:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Build instructions</title>
+      <link>https://CollaboraOnline.github.io/post/build-code/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/build-code/</guid>
+      <description>&lt;p&gt;Are you interested in contributing but don&amp;rsquo;t know where to start? Head over documentation or start of by following these step-by-step instructions and build &lt;code&gt;CODE&lt;/code&gt; from scratch:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../post/build-code/&#34; title=&#34;Explore and clone GitHub repository&#34;&gt;Build CODE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../post/build-code-android/&#34; title=&#34;Step-by-step setup&#34;&gt;Build CODE for Android&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

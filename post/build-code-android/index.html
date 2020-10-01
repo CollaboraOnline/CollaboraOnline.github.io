@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Build for Android | 
+    Collabora Online Development Edition - Community Page
+  
+</title><meta name="description" content="Step-by-step build instructions"><meta name="author" content="Collabora">
+
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="../../favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="../../favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="../../manifest.json">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="../../favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="../../dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+<link rel="stylesheet" href="../../css/buttons.css">
+<link rel="stylesheet" href="../../css/anim.css">
+<link rel="stylesheet" href="../../css/header.css">
+
+
+<link rel="canonical" href="https://CollaboraOnline.github.io/post/build-code-android/"><meta property="og:title" content="Build for Android" />
+<meta property="og:description" content="Step-by-step build instructions" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://CollaboraOnline.github.io/post/build-code-android/" />
+<meta property="og:image" content="https://CollaboraOnline.github.io/build-code-android.jpg" />
+<meta property="article:published_time" content="2020-09-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-29T00:00:00+00:00" />
+<meta itemprop="name" content="Build for Android">
+<meta itemprop="description" content="Step-by-step build instructions">
+<meta itemprop="datePublished" content="2020-09-29T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-09-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="971">
+<meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-android.jpg">
+
+
+
+<meta itemprop="keywords" content="build,make," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://CollaboraOnline.github.io/build-code-android.jpg"/>
+
+<meta name="twitter:title" content="Build for Android"/>
+<meta name="twitter:description" content="Step-by-step build instructions"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://CollaboraOnline.github.io">Collabora Online Development Edition - Community Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="../../docs/">Docs</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="https://www.collaboraoffice.com/code/">Downloads</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">September 29, 2020</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>971 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>5 mins read</span>
+                        </div>
+
+                        <h1>Build for Android</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="../../authors/collabora/" class="mr-3">
+                                    <picture>
+                                        <source srcset="../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_64x0_resize_box_2.png 1x, ../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_128x0_resize_q100_box_2.png 2x, ../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_192x0_resize_q100_box_2.png 3x">
+                                        <img src="../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_64x0_resize_box_2.png" class="rounded-circle" alt="Collabora">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="../../authors/collabora/" class="small">Collabora</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@collaboraoffice">@CollaboraOffice</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="../../images/build-code-android_hu41d3d574720dd6d25467cfc182417535_213124_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Build for Android">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>Are you familiar with Android development environment are are you interested to learn more while helping the project? Head over documentation or start of by following these step-by-step instructions and build <code>CODE</code> from scratch:</p>
+<h2 id="build-code-for-android">Build CODE for Android</h2>
+<p>The development of the Android app has to be done on Linux, it&rsquo;s currently not possible to
+build the native parts on Windows. Similarly to the normal CODE, you will need
+the following projects, cross-compiled to your target platform:</p>
+<ul>
+<li>LibreOffice</li>
+<li>POCO</li>
+</ul>
+<p>If you want to build the full app, you need to build for 4 platforms: ARM,
+ARM64, x86 and x86-64. For development, just one of them is enough, the build
+currently defaults to ARM.</p>
+<h3 id="build-libreoffice-master-for-android">Build LibreOffice master for Android</h3>
+<p>Create a file called <code>autogen.input</code> in your LibreOffice clone with the
+following content:</p>
+<pre><code>--build=x86_64-unknown-linux-gnu
+--with-android-ndk=/home/$USER/Android/Sdk/ndk-bundle
+--with-android-sdk=/home/$USER/Android/Sdk
+--with-distro=LibreOfficeAndroid
+--enable-sal-log
+</code></pre>
+<p>Then run <code>./autogen.sh &amp;&amp; make</code></p>
+<h3 id="build-the-poco-for-android">Build the POCO for Android</h3>
+<pre><code># clone the poco repository in the same folder where LibreOffice core and online folders are placed.
+git clone https://github.com/pocoproject/poco poco-android
+cd poco-android
+
+# use the 1.10.1 branch
+git checkout -b poco-1.10.1 origin/poco-1.10.1
+
+# configure
+./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
+
+# make it
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=armeabi-v7a CC=armv7a-linux-androideabi21-clang CXX=armv7a-linux-androideabi21-clang++ SYSLIBS=-static-libstdc++
+
+# install it to /opt/poco-android
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=armeabi-v7a CC=armv7a-linux-androideabi21-clang CXX=armv7a-linux-androideabi21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android
+</code></pre>
+<h4 id="optional-arm64-poco-for-android">(Optional) ARM64 POCO for Android</h4>
+<p>Build the ARM64 version of POCO if you want to include ARM64 in the APK too:</p>
+<pre><code># checkout the 1.10.1 in a different location and apply the following patch:
+--- a/build/config/Android
++++ b/build/config/Android
+@@ -21,6 +21,11 @@ TOOL      = arm-linux-androideabi
+ ARCHFLAGS = -march=armv7-a -mfloat-abi=softfp
+ LINKFLAGS = -Wl,--fix-cortex-a8
+ else
++ifeq ($(ANDROID_ABI),arm64-v8a)
++TOOL      = aarch64-linux-android
++#ARCHFLAGS = -march=armv7-a -mfloat-abi=softfp
++#LINKFLAGS = -Wl,--fix-cortex-a8
++else
+ ifeq ($(ANDROID_ABI),x86)
+ TOOL      = i686-linux-android
+ ARCHFLAGS = -march=i686 -msse3 -mstackrealign -mfpmath=sse
+@@ -29,6 +34,7 @@ $(error Invalid ABI specified in ANDROID_ABI)
+ endif
+ endif
+ endif
++endif
+
+ #
+ # Define Tools
+
+# configure as above:
+./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
+
+# and make it:
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=arm64-v8a CC=aarch64-linux-android21-clang CXX=aarch64-linux-android21-clang++ SYSLIBS=-static-libstdc++
+
+# install
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=arm64-v8a CC=aarch64-linux-android21-clang CXX=aarch64-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-64bit
+</code></pre>
+<h4 id="optional-x86-poco-for-android">(Optional) x86 POCO for Android</h4>
+<p>If you want to add the support for that into the APK too; eg. for Chromebooks:</p>
+<pre><code># checkout the 1.10.1 in yet another location
+git clone https://github.com/pocoproject/poco poco-android-x86
+cd poco-android-x86
+git checkout -b poco-1.10.1 origin/poco-1.10.1
+
+# configure
+./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
+
+# build
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86 CC=i686-linux-android21-clang CXX=i686-linux-android21-clang++ SYSLIBS=-static-libstdc++
+
+# install
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86 CC=i686-linux-android21-clang CXX=i686-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-x86
+</code></pre>
+<h4 id="optional-x86-64-poco-for-android">(Optional) x86-64 POCO for Android</h4>
+<p>If you want to add the support for that into the APK too:</p>
+<pre><code># checkout the 1.10.1 in yet another location
+git clone https://github.com/pocoproject/poco poco-android-x86-64
+cd poco-android-x86-64
+git checkout -b poco-1.10.1 origin/poco-1.10.1
+
+# and apply the following patch:
+diff --git a/build/config/Android b/build/config/Android
+index 9227a3352..1abf6df7c 100644
+--- a/build/config/Android
++++ b/build/config/Android
+@@ -25,10 +25,14 @@ ifeq ($(ANDROID_ABI),x86)
+ TOOL      = i686-linux-android
+ ARCHFLAGS = -march=i686 -msse3 -mstackrealign -mfpmath=sse
+ else
++ifeq ($(ANDROID_ABI),x86_64)
++TOOL      = x86_64-linux-android
++else
+ $(error Invalid ABI specified in ANDROID_ABI)
+ endif
+ endif
+ endif
++endif
+
+ #
+ # Define Tools
+
+# configure
+./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
+
+# build
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86_64 CC=x86_64-linux-android21-clang CXX=x86_64-linux-android21-clang++ SYSLIBS=-static-libstdc++
+
+# install
+PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86_64 CC=x86_64-linux-android21-clang CXX=x86_64-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-x86-64
+</code></pre>
+<h3 id="configure-the-onlinegit">Configure the online.git</h3>
+<p>Don&rsquo;t forget to change <code>--with-lo-builddir</code> in the following:</p>
+<pre><code>./autogen.sh
+./configure --enable-androidapp \
+            --with-lo-builddir=/local/libreoffice/master-android \
+            --with-poco-includes=/opt/poco-android/include --with-poco-libs=/opt/poco-android/lib \
+            --disable-setcap \
+            --enable-silent-rules --enable-debug
+make
+</code></pre>
+<p>If you build for more platforms (with the optional bits described above), just
+add more values to &ndash;with-lo-builddir, &ndash;with-poco-includes and
+&ndash;with-poco-libs, delimited with <code>:</code>. The order must be ARM, ARM64, x86,
+x86-64.</p>
+<p>For example:</p>
+<pre><code>--with-lo-builddir=/local/libreoffice/master-android-release:/local/libreoffice/master-android-release-64bit \
+--with-poco-includes=/opt/poco-android/include:/opt/poco-android-64bit/include \
+--with-poco-libs=/opt/poco-android/lib:/opt/poco-android-64bit/lib \
+</code></pre>
+<h3 id="build-the-actual-app-using-android-studio">Build the actual app using Android Studio</h3>
+<p>Just open Android Studio, open the <code>android</code> subdirectory as a project and
+start the build (Buiild -&gt; Make Project).</p>
+<p>Alternatively you can build from the command line:</p>
+<pre><code>cd android
+./gradlew build
+</code></pre>
+<h3 id="debugging">Debugging</h3>
+<p>To debug the native LibreOffice code in Android Studio, you need the debugging
+symbols and to setup Android Studio to actually read &amp; use them.</p>
+<h4 id="build-debugging-symbols-for-the-modules-you-are-interested-in">Build debugging symbols for the modules you are interested in</h4>
+<p>Add something like the following to autogen.input:</p>
+<pre><code>--enable-symbols=&quot;vcl/ desktop/ sal/ svx/ framework/ sfx2/ tools/ cppu/ cppuhelper/ filter/ comphelper/ Library_sw Library_swd Library_swui&quot;
+</code></pre>
+<p>clean the appropriate modules, like</p>
+<pre><code>make vcl.clean desktop.clean sal.clean svx.clean framework.clean sfx2.clean tools.clean cppu.clean cppuhelper.clean filter.clean comphelper.clean sw.clean
+</code></pre>
+<p>and rebuild using &lsquo;make&rsquo;.</p>
+<h4 id="add-androidobjlocalarmeabi-v7a-from-coregit-as-a-symbol-directory">Add android/obj/local/armeabi-v7a from core.git as a Symbol Directory</h4>
+<p>In Android Studio, choose Run -&gt; Debug&hellip; -&gt; Edit Configurations&hellip;</p>
+<p>There go to the Android App -&gt; app, choose the Debugger tab, and:</p>
+<pre><code>Debug type: Auto (or Dual)
+</code></pre>
+<p>Symbol Directories: here add the full path, like</p>
+<pre><code>/local/libreoffice/master-android/android/obj/local/armeabi-v7a
+</code></pre>
+<p>This path contains the non-stripped version of the liblo-native-code.so, and
+the debugger will read the symbols from that one (even if the APK contains
+the stripped version). <em>NB</em> ensure that this is before any internal source
+directories - since the internal source contains stripped native code.</p>
+<p>Alternatively you can add the following to your ~/.lldbinit instead:</p>
+<pre><code>settings set target.inline-breakpoint-strategy always
+settings append target.exec-search-paths /local/libreoffice/master-android/android/obj/local/armeabi-v7a
+</code></pre>
+<p>To use pretty printers for types like OUString, add the following to your
+~/.lldbinit:</p>
+<pre><code>command script import '/local/libreoffice/master-android/solenv/lldb/libreoffice/LO.py'
+</code></pre>
+<p>From now on, you will be able to debug directly in the Android Studio
+debugger.  Happy debugging!</p>
+<h3 id="tip-how-to-speed-up-your-coregit-build">Tip: How to speed up your core.git build</h3>
+<p>If you use icecream for parallel building, you can use it for
+cross-compilation too.</p>
+<pre><code># first generate a tarball with the toolchain (once)
+icecc-create-env ~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang ~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/armv7a-linux-androideabi21-clang++
+</code></pre>
+<p>And add it and the paths to the compiler as the first things to the
+autogen.input:</p>
+<pre><code>CC=icecc [here copy what the output of ./autogen.sh without icecream said for C compiler]
+CXX=icecc [here copy what the output of ./autogen.sh without icecream said for C++ compiler]
+ICECC_VERSION=/path/to/the/tarball/generated/above/955ceb546ceb7a5715bf0223ddd788fe.tar.gz
+--with-parallelism=[amount of cpu threads in your icecream farm]
+--enable-icecream
+[...the original autogen.input...]
+</code></pre>
+<p>So the result will look something like this:</p>
+<pre><code>CC=icecc /home/$USER/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang -mthumb -march=armv7-a -mfloat-abi=softfp -mfpu=neon -Wl,--fix-cortex-a8 -gcc-toolchain /home/$USER/Android/Sdk/ndk-bundle/to&gt;
+CXX=icecc /home/$USER/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ -mthumb -march=armv7-a -mfloat-abi=softfp -mfpu=neon -Wl,--fix-cortex-a8 -gcc-toolchain /home/$USER/Android/Sdk/ndk-bundle&gt;
+ICECC_VERSION=/local/libreoffice/android/955ceb546ceb7a5715bf0223ddd788fe.tar.gz
+--with-parallelism=25
+--enable-icecream
+--build=x86_64-unknown-linux-gnu
+--with-android-ndk=/home/$USER/Android/Sdk/ndk-bundle
+--with-android-sdk=/home/$USER/Android/Sdk
+--with-distro=LibreOfficeAndroid
+--enable-sal-log
+</code></pre>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="../../tags/build">
+                                    <i class="fas fa-tag mr-2"></i>build
+                                </a><a class="badge badge-pill badge-light border mr-2" href="../../tags/make">
+                                    <i class="fas fa-tag mr-2"></i>make
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-android%2f&text=Build%20for%20Android">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-android%2f&title=Build%20for%20Android">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-android%2f&t=Build%20for%20Android">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-android%2f&title=Build%20for%20Android">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="../../post/build-code/" class="d-block"><img data-src="../../images/build-code_hu1a6525c2a63cab2164fdeeaf0e1ecb35_185044_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Build instructions"><div class="card-body">
+            <h4 class="card-title">Build instructions</h4>
+            
+            <div class="card-text">
+                Are you interested in contributing but don&amp;rsquo;t know where to start? Head over documentation or start of by following these step-by-step instructions and build CODE from scratch:
+ Build CODE Build CODE for Android 
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://CollaboraOnline.github.io/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:hello@collaboraoffice.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://www.facebook.com/collaboraoffice/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com/CollaboraOnline" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/collabora-productivity-ltd/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social/@CollaboraOffice" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.reddit.com/r/CollaboraOnline/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/CollaboraOffice" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Unless a license is otherwise specified, content is under CC-BY-SA 3.0
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="../../dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
