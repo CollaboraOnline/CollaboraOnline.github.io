@@ -39,7 +39,7 @@ For more detailed and pretty instructions on integrating with various partner so
 * The API is visible here: https://www.collaboraoffice.com/collabora-online-editor-api-reference/ and Collabora Online API
 * To send patches, and collaborate with other developers working on the code please do join in our [Discourse](https://forum.collaboraonline.com)
 * If you prefer you can also join via IRC [Freenode/#cool-dev](irc://irc.freenode.net/#cool-dev); you can get there directly via a [Webchat](https://webchat.freenode.net/#cool-dev)
-* And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://twitter.com/CollaboraOffice) and using the `#cool-dev`
+* And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://twitter.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
 
 ### Your first commit
 * First check [How to build CODE]({{< relref "build-code" >}} "How to build CODE")
