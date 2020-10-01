@@ -1,7 +1,7 @@
 baseURL = "https://CollaboraOnline.github.io"
 RelativeURLs=true
 CanonifyURLs=true
-title = "Collabora Online Development Edition - Community Page"
+title = "Collabora Online - Community Page"
 copyright = "Unless a license is otherwise specified, content is under CC-BY-SA 3.0"
 paginate = 2
 languageCode = "en"
