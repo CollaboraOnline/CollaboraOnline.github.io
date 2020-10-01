@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Build for Android</title>
+      <link>https://CollaboraOnline.github.io/post/build-code-android/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/build-code-android/</guid>
+      <description>&lt;p&gt;Are you familiar with Android development environment are are you interested to learn more while helping the project? Head over documentation or start of by following these step-by-step instructions and build &lt;code&gt;CODE&lt;/code&gt; from scratch:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Easy Hacks</title>
       <link>https://CollaboraOnline.github.io/post/easyhacks/</link>
       <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
@@ -51,21 +60,12 @@ Ideally use a new blank file (which may be useful later, as a test file) and als
     </item>
     
     <item>
-      <title>Build for Android</title>
-      <link>https://CollaboraOnline.github.io/post/build-code-android/</link>
-      <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://CollaboraOnline.github.io/post/build-code-android/</guid>
-      <description>&lt;p&gt;Are you familiar with Android development environment are are you interested to learn more while helping the project? Head over documentation or start of by following these step-by-step instructions and build &lt;code&gt;CODE&lt;/code&gt; from scratch:&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Build instructions</title>
+      <title>Build Collabora Online</title>
       <link>https://CollaboraOnline.github.io/post/build-code/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://CollaboraOnline.github.io/post/build-code/</guid>
-      <description>&lt;p&gt;Are you interested in contributing but don&amp;rsquo;t know where to start? Head over documentation or start of by following these step-by-step instructions and build &lt;code&gt;CODE&lt;/code&gt; from scratch:&lt;/p&gt;
+      <description>&lt;p&gt;Are you interested in contributing but do not know where to start? Head over documentation or start of by following these step-by-step instructions and build &lt;code&gt;CODE&lt;/code&gt; from scratch:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;./post/build-code/&#34; title=&#34;Explore and clone GitHub repository&#34;&gt;Build CODE&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;./post/build-code-android/&#34; title=&#34;Step-by-step setup&#34;&gt;Build CODE for Android&lt;/a&gt;&lt;/li&gt;
