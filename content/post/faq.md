@@ -33,7 +33,7 @@ privacy and allows them to keep full control of their sensitive data.
 
 ### Who created Collabora Online ?
 
-Collabora Online is mainly created by Collabora. Collabora's 20+
+Collabora Online is mainly written by Collabora. Collabora's 20+
 committers provided 95%+ of the commits in the last year. Checkout
 our [2020 infographic]("https://www.collaboraoffice.com/community-news/updated-libreoffice-growth-infographic-2020/")
 or the [git repository](FIXME)
@@ -89,7 +89,7 @@ on TDF. It also follows the well known pattern of many other successful
 FOSS companies: RedHat/Fedora, openSUSE, Samba+, ownCloud, Nextcloud,
 RocketChat, Mattermost, BigBlueButton, and others beyond number.
 
-### Is this the first separate project round this code ?
+### Is this the first separate project based on this code ?
 
 It seems not; this turns out to be reasonably common. Checkout
 [OSSIIs](https://github.com/OSSII/oxool-community) [version](https://www.ossii.com.tw/product/online).
@@ -119,11 +119,8 @@ complete with pictures.
 
 ### Does investment mean Venture Capital ?
 
-In a nutshell no. Collabora is a FOSS company focused on a mission of
-making FOSS rock, we have no plans to dilute our mission that way.
-Against that we cannot spend money we do not earn, there
-is no money fairy (TINMF), so Return on Investment (RoI) is important
-to us as we invest.
+No, Collabora is a FOSS company who's mission is to accelerate the adoption of FOSS across all industries, we have no plans to dilute our mission.
+We do this by generating revenues around consultancy and product support. This allows us to hire full time engineers to invest on the FOSS codebases that we support.
 
 
 ### Did you try to work things out with TDF ?
