@@ -16,4 +16,4 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 ---
 * Chat on [Discord](https://forum.collaboraonline.com/)
 * Chat via [IRC #cool-dev channel](irc://irc.freenode.net/#cool-dev)
-* Send email [mailto:hello@collaboraoffice.com](hello@collaboraoffice.com)
+* Send email [hello@collaboraoffice.com](mailto:hello@collaboraoffice.com)
