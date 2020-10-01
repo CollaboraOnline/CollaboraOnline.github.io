@@ -123,8 +123,7 @@ In a nutshell no. Collabora is a FOSS company focused on a mission of
 making FOSS rock, we have no plans to dilute our mission that way.
 Against that we cannot spend money we do not earn, there
 is no money fairy (TINMF), so Return on Investment (RoI) is important
-to us as we invest. No-one should put their life savings in a bank
-with a highly uncertain reputation for re-paying.
+to us as we invest.
 
 
 ### Did you try to work things out with TDF ?
