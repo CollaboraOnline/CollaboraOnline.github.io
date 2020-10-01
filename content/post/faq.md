@@ -69,7 +69,8 @@ represents only one hundredth of the strings that LibreOffice has, it re-uses
 many translations from the core too. We try to extract translators names to
 [credit their hard work]({{< relref "translate.md#Credits" >}}), which is much
 appreciated.
-Of course we prepared the [translation environment](https://collaboraonline.github.io/post/translate/) that our translators are used to.
+Of course we prepared the vital [translation environment](https://collaboraonline.github.io/post/translate/)
+and are already merging changes.
 
 ## Why is Collabora Online its own project ?
 
@@ -98,6 +99,24 @@ Or [Zimbra Docs](https://www.zimbra.com/email-server-software/zimbra-docs/)
 (with no contributions back), and there are other examples.
 Clearly having a team of engineers with wide experience, who contribute
 to the code behind the version you choose is important.
+
+### Will you still contribute to the LibreOffice core ?
+
+Emphatically yes. We expect this over time to have a net increase in
+the amount of work: fixes, rendering improvements, performance wins,
+features etc. that we can contribute back to the LibreOffice project
+vs. the status quo. We continue to have significant numbers of
+Collabora Office customers who want bug fixes and improvements which
+we contribute back.
+
+Against that - LibreOffice is its own project, with its own processes
+and gets to choose what it includes from whichever contributor in the
+normal way.
+
+For our part - we intend to keep working hard to improve LibreOffice
+core in all the normal ways: code, sponsorship, mentoring, evangelizing
+and serving in lots of capacities as before. This move, is focused only
+on the Online piece.
 
 ### Do we need investment ?
 
@@ -193,7 +212,8 @@ LibreOffice and will honor that in equivalent access.
 
 Yes, you'll need to follow the
 [build instructions]({{< relref "build-code.md" >}}), as well
-as the [license](https://www.mozilla.org/en-US/MPL/) and for now if you're modifying it significantly
+as the [license](https://www.mozilla.org/en-US/MPL/2.0/) and for now
+if you're modifying it significantly
 you'll want to use your own brand name to make it clear that you are
 standing behind that, and to avoid creating confusion around its origin.
 That is easy to do using various configure options.
@@ -203,6 +223,13 @@ with you to credit, help and promote your contribution, we look
 forward to working with you. We will work to more explicitly open
 up our (small) pieces of proprietary theming / branding / CSS over
 time.
+
+### How do I get commit access ?
+
+Please poke us on IRC with your TDF commit credentials, and your
+github name, and we'll get you setup. We want TDF committership
+to transfer to Collabora Online, and we welcome and honor
+all who wish to to contribute.
 
 ### How do I get a say in the project ?
 
