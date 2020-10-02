@@ -15,7 +15,7 @@ images = [
 ]
 +++
 
-Sorry about that - but you can help us resolving it by creating a great bug
+Sorry about that — but you can help us resolving it by creating a great bug
 report! See the steps how to do it, and [file the bug on GitHub](https://github.com/CollaboraOnline/online/issues/new "File the bug on GitHub").
 
 <!--more-->
@@ -31,9 +31,9 @@ the content that causes the problem.
 This will be useful later, as a test file, we can use such files directly as
 test files.
 
-You can also try to reproduce after resetting CODE preferences -
+You can also try to reproduce after resetting CODE preferences —
 and tell us if it matters.
-This confirms for you that the problem is what you think it is and is
+This confirms for you that the problem is what you think it is, and is
 unrelated to any specific program settings.
 
 If your problem is intermittent, try to identify the conditions when does it
