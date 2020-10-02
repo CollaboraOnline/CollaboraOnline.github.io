@@ -227,7 +227,7 @@ time.
 ### How do I get commit access?
 
 Please poke us on IRC with your TDF commit credentials, and your
-github name, and we'll get you setup. We want TDF committership
+GitHub name, and we'll get you setup. We want TDF committership
 to transfer to Collabora Online, and we welcome and honor
 all who wish to to contribute.
 
