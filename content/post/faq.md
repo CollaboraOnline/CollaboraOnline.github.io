@@ -109,11 +109,11 @@ vs. the status quo. We continue to have significant numbers of
 Collabora Office customers who want bug fixes and improvements which
 we contribute back.
 
-Against that - LibreOffice is its own project, with its own processes
+Against that — LibreOffice is its own project, with its own processes
 and gets to choose what it includes from whichever contributor in the
 normal way.
 
-For our part - we intend to keep working hard to improve LibreOffice
+For our part — we intend to keep working hard to improve LibreOffice
 core in all the normal ways: code, sponsorship, mentoring, evangelizing
 and serving in lots of capacities as before. This move, is focused only
 on the Online piece.
@@ -126,8 +126,8 @@ the code with us.
 
 Professional developers bring the ability to contribute huge amounts of feature/function work, mentoring, and the depth of focus
 necessary to tackle the hardest issues: improving interoperability,
-performance, memory consumption, latency, move with changes in os and other software libraries - as well as building new UX
-infrastructure and adding product polish - we're far from done.
+performance, memory consumption, latency, move with changes in os and other software libraries — as well as building new UX
+infrastructure and adding product polish — we're far from done.
 
 Donations have also been a helpful revenue stream for TDF, however the
 size of our investment need is sufficiently large that TDF's
@@ -157,7 +157,7 @@ from Italo for example; but against much resistance.
 
 ### Why is branding & visibility important ?
 
-In large part for marketing. By investing in OSS - you can get your
+In large part for marketing. By investing in OSS, you can get your
 brand widely known, that's really important when someone wants support
 or services, or a custom version of the product.
 
@@ -169,7 +169,7 @@ or services, or a custom version of the product.
 	building a great product, marketing it with skill and
 	imagination, looking after your customers, and thereby
 	building a brand that stands for quality and customer
-	service." - Bob Young (founder of RedHat)
+	service." — Bob Young (founder of RedHat)
 
 FOSS companies have very few assets: our code is all public, but we
 can build brands that reflect the time & excellence we put into our
@@ -177,7 +177,7 @@ software, and use these to create a distinction that commands a price.
 
 Unfortunately, investing in a brand you do not own, and leading people
 to an environment where end-users / casual purchasers are extremely
-unlikely to discover that the work was done by you - makes things
+unlikely to discover that the work was done by you — makes things
 very difficult.
 
 ### Which brand to choose ?
