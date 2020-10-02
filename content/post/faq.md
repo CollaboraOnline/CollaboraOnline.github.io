@@ -91,6 +91,9 @@ on TDF. It also follows the well known pattern of many other successful
 FOSS companies: RedHat/Fedora, openSUSE, Samba+, ownCloud, Nextcloud,
 RocketChat, Mattermost, BigBlueButton, and others beyond number.
 
+More details are in the
+[announcement E-mail](https://www.mail-archive.com/board-discuss@documentfoundation.org/msg04727.html).
+
 ### Is this the first separate project based on this code?
 
 It seems not; this turns out to be reasonably common. Checkout
