@@ -35,7 +35,7 @@ privacy and allows them to keep full control of their sensitive data.
 
 Collabora Online is mainly written by Collabora. Collabora's 20+
 committers provided 95%+ of the commits in the last year. Checkout
-our [2020 infographic]("https://www.collaboraoffice.com/community-news/updated-libreoffice-growth-infographic-2020/")
+our [2020 infographic](https://www.collaboraoffice.com/community-news/updated-libreoffice-growth-infographic-2020/)
 or the [git repository](https://github.com/CollaboraOnline/online)
 
 We built on top of a huge volume of work from both LibreOffice [credits](https://www.libreoffice.org/about-us/credits/),
