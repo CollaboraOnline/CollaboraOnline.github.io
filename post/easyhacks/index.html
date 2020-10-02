@@ -47,15 +47,14 @@
 
 <meta itemprop="name" content="Easy Hacks">
 <meta itemprop="description" content="Easy Hacks">
-<meta itemprop="datePublished" content="2020-09-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-09-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="411">
+<meta itemprop="datePublished" content="2020-09-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-09-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="206">
 <meta itemprop="image" content="https://CollaboraOnline.github.io/easyhacks.jpg">
 
 
 
-<meta itemprop="keywords" content="contribute,development,code,Leaflet,JS,CSS," />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="contribute,development,code,Leaflet,JS,CSS," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://CollaboraOnline.github.io/easyhacks.jpg"/>
 
 <meta name="twitter:title" content="Easy Hacks"/>
@@ -96,8 +95,8 @@
                     <div class="col-lg-8">
                         <div class="meta text-muted mb-3">
                             <p class="created text-muted text-uppercase font-weight-bold mb-1">September 30, 2020</p>
-                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>411 words</span>
-                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>206 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>1 min read</span>
                         </div>
 
                         <h1>Easy Hacks</h1>
@@ -129,41 +128,36 @@ code pointers helping you to locate the area to hack on easily.</p>
 the <a href="../../post/build-code/" title="How to build CODE">How to build CODE</a> page.</p>
 <h3 id="list-of-easy-hacks">List of Easy Hacks</h3>
 <p>Below is a non-exhaustive list of the Easy Hacks. To view the complete list of the current Easy Hacks, you may check <a href="https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Hack%22">the corresponding issues on GitHub.</a></p>
-<h4 id="consistent-function-declaration">Consistent function declaration</h4>
-<p>Some of the functions use declaration like:</p>
-<pre><code>blah: function blah(huh) {
-    ...
-}
-</code></pre>
-<p>Instead, we want it to be:</p>
-<pre><code>blah: function(huh) {
-    ...
-}
-</code></pre>
-<p>without the repeated function name.</p>
-<p><a href="https://github.com/CollaboraOnline/online/issues/68">Continue on GitHub</a></p>
-<h4 id="more-dynamic-style-panel-in-the-notebookbar">More dynamic Style panel in the Notebookbar</h4>
-<p>Switch the UI to using Notebookbar (in <em>loolwsd.xml</em>).</p>
-<p>The style panel in notebookbar can be made more dynamic if we apply a style
-(show selected) with JS/CSS (of course the remaining things can be kept
-untouched, just overlap it with CSS). Style is applied to text almost instantly
-but in notebookbar it takes a few seconds to appear.</p>
-<p><a href="https://github.com/CollaboraOnline/online/issues/69">Continue on GitHub</a></p>
-<h4 id="debugging-of-postmessage">Debugging of postMessage</h4>
-<p>In debug mode, it would be nice to have incoming and outgoing <code>postMessage</code>
-contents written into browser console.</p>
-<p>Interested one can grep for <code>console.log2</code> in the <em>loleaflet/</em> code to find out
-how it&rsquo;s done for messages in existing debug mode.</p>
-<p>Debug mode is accessible with: <code>Ctrl + Alt + Shift + d</code></p>
-<p><a href="https://github.com/CollaboraOnline/online/issues/70">Continue on GitHub</a></p>
-<h4 id="indication-in-the-admin-console-when-the-daemon-shuts-down">Indication in the Admin console when the daemon shuts down</h4>
-<p>While <em>wsd</em> is running, open the Admin console. Now <code>Ctrl + C</code> to stop the <em>wsd</em>
-process. The Admin console should show the user that Online was shut down.
-Worse, when the <em>wsd</em> is restarted, the Admin console screen is not updated
-accordingly; it keeps showing the stale view from the previous launch.</p>
-<p>An error box or the overlay saying that <em>wsd</em> has been shut down should be done
-and refresh the page with the new WS connection whenever user clicks on
-the overlay. This is similar to when the document becomes inactive.</p>
+<br>
+<div id="easy-hacks-issues-container">
+  <div id="easy-hacks-issues">
+
+  </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script>
+var urlToGetAllOpenBugs = "https://api.github.com/repos/CollaboraOnline/online/issues?state=open&labels=Easy+Hack";
+
+$(document).ready(function () {
+    $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
+			var limit_issue = 3;
+        $.each(allIssues, function (i, issue) {
+          if (i == limit_issue)
+            return false;
+          $("#easy-hacks-issues").append("<a id='issue-"+i+"' href='"+ issue.html_url +"'><strong>" + issue.number + " - " + issue.title + "</br></strong>" + issue.created_at + "</a></br>");
+        });
+        $("#easy-hacks-issues-container").prepend("Sowing last "+ limit_issue +" from <strong>" + allIssues.length + "</strong> issues marked as Easy Hacks</br></br>");
+    });
+});
+</script>
+
+<a href='https://github.com/CollaboraOnline/online/issues?q=is%3Aissue&#43;is%3Aopen&#43;label%3A%22Easy&#43;Hack%22'  class="btn btn-primary btn-co-primary">
+View all
+</a>
+<p></p>
+
 <p><strong>How to hack:</strong></p>
 <p>Check what web socket messages we receive when <em>wsd</em> shuts down in the backend
 and handle it appropriately in the admin websocket. One can check the
@@ -171,7 +165,6 @@ websocket handling for the documents in <em>src/core/Socket.js</em> and do somet
 similar with the admin websocket. Code for admin websocket is in
 <em>loleaflet/src/admin/</em></p>
 <p>In debug mode, it would be nice to have incoming and outgoing <code>postMessage</code> contents written into browser console.</p>
-<p><a href="https://github.com/CollaboraOnline/online/issues/71">Continue on GitHub</a></p>
                         </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="../../tags/contribute">
                                     <i class="fas fa-tag mr-2"></i>contribute
                                 </a><a class="badge badge-pill badge-light border mr-2" href="../../tags/development">
