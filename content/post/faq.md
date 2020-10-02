@@ -19,7 +19,7 @@ Perhaps your question is one that we have been asked before; have a read, and le
 
 <!--more-->
 
-## What is Collabora Online anyway ?
+## What is Collabora Online anyway?
 
 Collabora Online is a feature rich online collaboration office suite
 with great support for all major document, spreadsheet and
@@ -31,7 +31,7 @@ company of your choice. It is excellent for users and organizations
 looking for an office solution in the cloud that protects their
 privacy and allows them to keep full control of their sensitive data.
 
-### Who created Collabora Online ?
+### Who created Collabora Online?
 
 Collabora Online is mainly written by Collabora. Collabora's 20+
 committers provided 95%+ of the commits in the last year. Checkout
@@ -47,7 +47,7 @@ Victor Dubiniuk) that was renamed to RichDocuments, with a docker
 image from Lukas Reschke. Currently we have many more integrations
 written by either Collabora or by Collabora Partners.
 
-### Who contributed to the Mobile work ?
+### Who contributed to the Mobile work?
 
 Our mobile app is built on top of our Online / web work. For the story
 of those behind that [see here](https://www.collaboraoffice.com/collabora-office-for-android-ios-credits/)
@@ -62,7 +62,7 @@ that list the commits, all of which were to the LibreOffice core; at that time
 Online barely existed. It is safe to say that a negligable amount of TDF
 donor funded code is present in Online.
 
-### What about translators work ?
+### What about translators work?
 
 Great point! Many translators have made important contributions. While Online
 represents only one hundredth of the strings that LibreOffice has, it re-uses
@@ -72,7 +72,7 @@ appreciated.
 Of course we prepared the vital [translation environment](https://collaboraonline.github.io/post/translate/)
 and are already merging changes.
 
-## Why is Collabora Online its own project ?
+## Why is Collabora Online its own project?
 
 Back in 2015 Collabora started the online development on TDF's
 infrastructure as a source-only project: a place to collaborate around
@@ -91,7 +91,7 @@ on TDF. It also follows the well known pattern of many other successful
 FOSS companies: RedHat/Fedora, openSUSE, Samba+, ownCloud, Nextcloud,
 RocketChat, Mattermost, BigBlueButton, and others beyond number.
 
-### Is this the first separate project based on this code ?
+### Is this the first separate project based on this code?
 
 It seems not; this turns out to be reasonably common. Checkout
 [OSSIIs](https://github.com/OSSII/oxool-community) [version](https://www.ossii.com.tw/product/online).
@@ -100,7 +100,7 @@ Or [Zimbra Docs](https://www.zimbra.com/email-server-software/zimbra-docs/)
 Clearly having a team of engineers with wide experience, who contribute
 to the code behind the version you choose is important.
 
-### Will you still contribute to the LibreOffice core ?
+### Will you still contribute to the LibreOffice core?
 
 Emphatically yes. We expect this over time to have a net increase in
 the amount of work: fixes, rendering improvements, performance wins,
@@ -118,7 +118,7 @@ core in all the normal ways: code, sponsorship, mentoring, evangelizing
 and serving in lots of capacities as before. This move, is focused only
 on the Online piece.
 
-### Do we need investment ?
+### Do we need investment?
 
 Let us first state clearly that volunteers have always contributed to FOSS projects, and do so in many different ways. This is important and LibreOffice is no
 exception. So obviously we would love you to get involved and e.g. help out improving
@@ -137,13 +137,13 @@ If you'd like a detailed explanation of some of the problems see: [vendor neutra
 marketing](https://people.gnome.org/~michael/data/vendor-neutral-marketing.html)
 complete with pictures.
 
-### Does investment mean Venture Capital ?
+### Does investment mean Venture Capital?
 
 No, Collabora is a FOSS company who's mission is to accelerate the adoption of FOSS across all industries, we have no plans to dilute our mission.
 We do this by generating revenues around consultancy and product support. This allows us to hire full time engineers to invest on the FOSS codebases that we support.
 
 
-### Did you try to work things out with TDF ?
+### Did you try to work things out with TDF?
 
 Indeed, from [2013](https://people.gnome.org/~michael/data/2013-09-25-economics.pdf)
 it has been clear that we need to work to build the ecoystem around
@@ -155,7 +155,7 @@ build confidence.
 Against that there have been some positives, a visionary plan
 from Italo for example; but against much resistance.
 
-### Why is branding & visibility important ?
+### Why is branding & visibility important?
 
 In large part for marketing. By investing in OSS, you can get your
 brand widely known, that's really important when someone wants support
@@ -180,7 +180,7 @@ to an environment where end-users / casual purchasers are extremely
 unlikely to discover that the work was done by you — makes things
 very difficult.
 
-### Which brand to choose ?
+### Which brand to choose?
 
 Customers have been confused in the past by branding, seeing
 LibreOffice/TDF as the authentic source for Online. The use and
@@ -208,7 +208,7 @@ that, to make CODE a fun project to develop on. Clearly we
 respect and recognize the contribution of all the developers of
 LibreOffice and will honor that in equivalent access.
 
-### Can I re-compile and re-distribute CODE ?
+### Can I re-compile and re-distribute CODE?
 
 Yes, you'll need to follow the
 [build instructions]({{< relref "build-code.md" >}}), as well
@@ -224,14 +224,14 @@ forward to working with you. We will work to more explicitly open
 up our (small) pieces of proprietary theming / branding / CSS over
 time.
 
-### How do I get commit access ?
+### How do I get commit access?
 
 Please poke us on IRC with your TDF commit credentials, and your
 github name, and we'll get you setup. We want TDF committership
 to transfer to Collabora Online, and we welcome and honor
 all who wish to to contribute.
 
-### How do I get a say in the project ?
+### How do I get a say in the project?
 
 We love to work with sharp people, to write FOSS, and to listen to
 them. We will try to attract and energise a community of do-ers, and
@@ -246,7 +246,7 @@ customers who through their sales &amp; evangelism efforts have
 contributed significantly to development, and we expect to expand this
 over time.
 
-### Is there the forum for questions and discussions ?
+### Is there the forum for questions and discussions?
 
 You are welcome on the [Collabora Online forum](https://forum.collaboraonline.com/)!
 
