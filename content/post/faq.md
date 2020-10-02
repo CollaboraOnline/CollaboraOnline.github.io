@@ -139,7 +139,7 @@ complete with pictures.
 
 ### Does investment mean Venture Capital?
 
-No, Collabora is a FOSS company who's mission is to accelerate the adoption of FOSS across all industries, we have no plans to dilute our mission.
+No, Collabora is a FOSS company whose mission is to accelerate the adoption of FOSS across all industries, we have no plans to dilute our mission.
 We do this by generating revenues around consultancy and product support. This allows us to hire full time engineers to invest on the FOSS codebases that we support.
 
 
