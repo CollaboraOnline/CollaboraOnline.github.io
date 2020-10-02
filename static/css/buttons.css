@@ -33,3 +33,14 @@
   font-size: 22px;
   padding: 6px 24px;
 }
+
+#easy-hacks-issues a {
+  box-shadow: 0 0 2px 0 lightgray;
+  padding: 24px;
+  display: block;
+  border-radius: 8px;
+}
+
+#easy-hacks-issues a:hover {
+  box-shadow: 0 0 2px 1px lightgray;
+}

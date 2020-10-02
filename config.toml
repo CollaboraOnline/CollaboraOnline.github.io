@@ -18,7 +18,7 @@ theme = "hugo-theme-chunky-poster"
     name = "Home"
     url = "/"
     weight = 10
-	[[menu.main]]
+  [[menu.main]]
     identifier = "downloads"
     name = "Downloads"
     url = "https://www.collaboraoffice.com/code/"
@@ -68,6 +68,10 @@ author = "authors"
 [markup]
   [markup.highlight]
     codeFences = false
+
+    [markup.goldmark]
+      [markup.goldmark.renderer]
+        unsafe = true
 
 [services]
   [services.instagram]

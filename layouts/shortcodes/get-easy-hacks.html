@@ -1,0 +1,24 @@
+<br>
+<div id="easy-hacks-issues-container">
+  <div id="easy-hacks-issues">
+
+  </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+<script>
+var urlToGetAllOpenBugs = "https://api.github.com/repos/CollaboraOnline/online/issues?state=open&labels=Easy+Hack";
+
+$(document).ready(function () {
+    $.getJSON(urlToGetAllOpenBugs, function (allIssues) {
+			var limit_issue = 3;
+        $.each(allIssues, function (i, issue) {
+          if (i == limit_issue)
+            return false;
+          $("#easy-hacks-issues").append("<a id='issue-"+i+"' href='"+ issue.html_url +"'><strong>" + issue.number + " - " + issue.title + "</br></strong>" + issue.created_at + "</a></br>");
+        });
+        $("#easy-hacks-issues-container").prepend("Sowing last "+ limit_issue +" from <strong>" + allIssues.length + "</strong> issues marked as Easy Hacks</br></br>");
+    });
+});
+</script>
