@@ -39,5 +39,14 @@
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam odio justo, interdum eu ex sit amet, rhoncus interdum magna. Nullam at magna tempor, suscipit ipsum ac, egestas tellus. Maecenas non orci ut velit consectetur feugiat. Proin dignissim ullamcorper eros, at commodo orci eleifend at. Donec luctus diam et interdum finibus. Nullam vel elit hendrerit, aliquet massa eget, vestibulum arcu. Etiam fermentum, sem in interdum scelerisque, massa risus rhoncus turpis, quis efficitur nibh dolor vel dolor.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://CollaboraOnline.github.io/authors/kara/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/authors/kara/</guid>
+      <description>How to contact me? Please feel free to mention/ping me with the username mrkara on GitHub, with the username mkara on IRC (Freenode), or with the username muhammetk on Telegram.</description>
+    </item>
+    
   </channel>
 </rss>
