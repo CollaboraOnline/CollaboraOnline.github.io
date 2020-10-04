@@ -29,8 +29,11 @@ Check out the starting points for new developers on the project — usually with
 code pointers helping you to locate the area to hack on easily.
 <!--more-->
 
-First, you need to do a build of Collabora Online though, visit
+* First, you need to do a build of Collabora Online though, visit
 the [How to build CODE]({{< relref "build-code" >}} "How to build CODE") page.
+
+* Then grab one of the GitHub issues tagged as Easy Hack, and send your first pull request to resolve it.
+* Don't forget to join one of our [official communication channels]({{< relref "communicate" >}} "official communication channels"), full of friendly fellow-developers, to say hi and ask your questions if any. And if you end up on an issue without a mentor, or feel completely stuck at some point, fear not, and contact our community mentor, Muhammet Kara.
 
 ### List of Easy Hacks
 
