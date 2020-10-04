@@ -33,7 +33,7 @@ code pointers helping you to locate the area to hack on easily.
 the [How to build CODE]({{< relref "build-code" >}} "How to build CODE") page.
 
 * Then grab one of the GitHub issues tagged as Easy Hack, and send your first pull request to resolve it.
-* Don't forget to join one of our [official communication channels]({{< relref "communicate" >}} "official communication channels"), full of friendly fellow-developers, to say hi and ask your questions if any. And if you end up on an issue without a mentor, or feel completely stuck at some point, fear not, and contact our community mentor, Muhammet Kara.
+* Don't forget to join one of our [official communication channels]({{< relref "communicate" >}} "official communication channels"), full of friendly fellow-developers, to say hi and ask your questions if any. And if you end up on an issue without a mentor, or feel completely stuck at some point, fear not, and contact our community mentor, [Muhammet Kara]({{< relref "/authors/kara" >}} "Muhammet Kara").
 
 ### List of Easy Hacks
 
