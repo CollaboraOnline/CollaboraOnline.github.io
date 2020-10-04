@@ -61,7 +61,7 @@ Alternatively you can build your own POCO. In that case, ideally use a recent ve
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make:
 
-    git clone git@github.com:CollaboraOnline/online.git
+    git clone git@github.com:CollaboraOnline/online.git collabora-online
     cd collabora-online
     ./autogen.sh
     ./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
