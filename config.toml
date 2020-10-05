@@ -56,6 +56,7 @@ author = "authors"
     github = "https://github.com/CollaboraOnline/online"
     reddit = "https://www.reddit.com/r/CollaboraOnline/"
     mastodon = "https://mastodon.social/@CollaboraOffice"
+		forum = "https://forum.collaboraonline.com/"
 
   [params.prismJS]
     enable = true
