@@ -15,7 +15,7 @@
 }
 
 .btn-co-secondary {
-	box-shadow: 0 1px 4px 2px #0000001a;
+  box-shadow: 0 1px 4px 2px #0000001a;
   border: 0.5px inset rgb(170, 50, 220, 0);
   color: #fff;
   border-radius: 3px;
@@ -23,7 +23,7 @@
 }
 
 .btn-co-secondary:hover {
-	color: #000;
+  color: #000;
   background-color: white;
   box-shadow: 0 1px 4px 2px #5049991a;
   border: 0.5px inset #000;
@@ -39,6 +39,7 @@
   padding: 24px;
   display: block;
   border-radius: 8px;
+  text-decoration: none !important;
 }
 
 #easy-hacks-issues a:hover {
