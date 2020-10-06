@@ -81,9 +81,9 @@ development, with own-branded products versions derived from that.
 Gradually pressure built to change this, and there were very long discussions
 around some [serious problems](https://lwn.net/Articles/825602/) with the
 new board, staff, wider community in 2020. During these discussions it became
-clear that we could provide the stability and confidence needed to invest
-longer term in improving the software most simply by moving Collabora
-Online to its own project.
+clear that we could provide the stability and confidence
+[needed to invest](#investment) longer term in improving the software most
+simply by moving Collabora Online to its own project.
 
 We believe that doing this also removes the need for a number of
 unpleasant compromises and inter-company conflicts that put strain
@@ -105,23 +105,24 @@ to the code behind the version you choose is important.
 
 ### Will you still contribute to the LibreOffice core? {#libo-contrib}
 
-Emphatically yes. We expect this over time to have a net increase in
-the amount of work: fixes, rendering improvements, performance wins,
-features etc. that we can contribute back to the LibreOffice project
-vs. the status quo. We continue to have significant numbers of
-Collabora Office customers who want bug fixes and improvements which
-we contribute back. We try to merge all of our work into core's master
-branch for the next LibreOffice version, and we using daily comparison
+Emphatically yes. We expect that as our business grows over time there
+will continue to be a net increase in the amount of work: fixes, rendering
+improvements, performance wins, features etc. that we can contribute back
+to the LibreOffice core vs. the status quo. We continue to have significant
+numbers of Collabora Office customers who want bug fixes and improvements
+which we contribute back. We try to merge all of our work into core's master
+branch for the next LibreOffice version, and we use daily comparison
 tooling to check this delta stays small.
 
 Against that — LibreOffice is its own project, with its own processes
-and gets to choose what it includes from whichever contributor in the
-normal way.
+and gets to choose what it includes from whichever contributors it
+includes in the normal way.
 
 For our part — we intend to keep working hard to improve LibreOffice
 core in all the normal ways: code, sponsorship, mentoring, evangelizing
-and serving in lots of capacities as before. This move, is focused only
-on the Online piece.
+and serving in lots of capacities as before while we are welcome as
+collaborators. This move is focused only on protecting the Online piece
+and we hope the choices TDF makes will complement that.
 
 ### Do we need investment? {#investment}
 
@@ -154,11 +155,11 @@ Indeed, from [2013](https://people.gnome.org/~michael/data/2013-09-25-economics.
 it has been clear that we need to work to build the ecoystem around
 LibreOffice. Many papers have been written since, presented, long
 blogs, lengthy conversations through many conferences, board meetings.
-Large, rambling discussions in the community have done nothing to
-build confidence.
+Discussions in the community and board over a long period have done
+nothing to build confidence.
 
-Against that there have been some positives, a visionary plan
-from Italo for example; but against much resistance.
+Against that there have been some positives, a visionary Marketing
+plan from Italo for example; but against much resistance.
 
 ### Why is branding & visibility important? {#visibility}
 
@@ -219,7 +220,7 @@ Yes, you'll need to follow the
 [build instructions]({{< relref "build-code.md" >}}), as well
 as the [license](https://www.mozilla.org/en-US/MPL/2.0/) and for now
 if you're modifying it significantly
-you'll want to use your own brand name to make it clear that you are
+you will need to use your own brand name to make it clear that you are
 standing behind that, and to avoid creating confusion around its origin.
 That is easy to do using various configure options.
 
@@ -228,6 +229,18 @@ with you to credit, help and promote your contribution, we look
 forward to working with you. We will work to more explicitly open
 up our (small) pieces of proprietary theming / branding / CSS over
 time.
+
+### Do you use a CLA ?
+
+No. We use an in-bound == outbound licensing model, that gives the
+same rights and responsibilities to all participants. Following
+the LibreOffice ethos.
+
+### Why use Transifex ?
+
+Good question - we're investigating a move to a hosted Weblate
+solution right now; this was a quick and easy way to bootstrap
+the project.
 
 ### How do I get commit access? {#commit-access}
 
