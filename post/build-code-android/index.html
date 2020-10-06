@@ -46,15 +46,14 @@
 <meta property="article:modified_time" content="2020-09-30T00:00:00+00:00" />
 <meta itemprop="name" content="Build for Android">
 <meta itemprop="description" content="Step-by-step build instructions">
-<meta itemprop="datePublished" content="2020-09-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-09-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="975">
+<meta itemprop="datePublished" content="2020-09-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-09-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="968">
 <meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-android.jpg">
 
 
 
-<meta itemprop="keywords" content="build,make," />
-<meta name="twitter:card" content="summary_large_image"/>
+<meta itemprop="keywords" content="build,make," /><meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://CollaboraOnline.github.io/build-code-android.jpg"/>
 
 <meta name="twitter:title" content="Build for Android"/>
@@ -95,7 +94,7 @@
                     <div class="col-lg-8">
                         <div class="meta text-muted mb-3">
                             <p class="created text-muted text-uppercase font-weight-bold mb-1">September 30, 2020</p>
-                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>975 words</span>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>968 words</span>
                             <span><i class="fas fa-clock mr-2"></i>5 mins read</span>
                         </div>
 
@@ -171,19 +170,17 @@ PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x
 <pre><code># checkout the 1.10.1 in a different location and apply the following patch:
 --- a/build/config/Android
 +++ b/build/config/Android
-@@ -21,6 +21,11 @@ TOOL      = arm-linux-androideabi
+@@ -21,6 +21,9 @@ TOOL      = arm-linux-androideabi
  ARCHFLAGS = -march=armv7-a -mfloat-abi=softfp
  LINKFLAGS = -Wl,--fix-cortex-a8
  else
 +ifeq ($(ANDROID_ABI),arm64-v8a)
 +TOOL      = aarch64-linux-android
-+#ARCHFLAGS = -march=armv7-a -mfloat-abi=softfp
-+#LINKFLAGS = -Wl,--fix-cortex-a8
 +else
  ifeq ($(ANDROID_ABI),x86)
  TOOL      = i686-linux-android
  ARCHFLAGS = -march=i686 -msse3 -mstackrealign -mfpmath=sse
-@@ -29,6 +34,7 @@ $(error Invalid ABI specified in ANDROID_ABI)
+@@ -29,6 +32,7 @@ $(error Invalid ABI specified in ANDROID_ABI)
  endif
  endif
  endif
