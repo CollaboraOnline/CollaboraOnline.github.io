@@ -72,19 +72,17 @@ Build the ARM64 version of POCO if you want to include ARM64 in the APK too:
     # checkout the 1.10.1 in a different location and apply the following patch:
     --- a/build/config/Android
     +++ b/build/config/Android
-    @@ -21,6 +21,11 @@ TOOL      = arm-linux-androideabi
+    @@ -21,6 +21,9 @@ TOOL      = arm-linux-androideabi
      ARCHFLAGS = -march=armv7-a -mfloat-abi=softfp
      LINKFLAGS = -Wl,--fix-cortex-a8
      else
     +ifeq ($(ANDROID_ABI),arm64-v8a)
     +TOOL      = aarch64-linux-android
-    +#ARCHFLAGS = -march=armv7-a -mfloat-abi=softfp
-    +#LINKFLAGS = -Wl,--fix-cortex-a8
     +else
      ifeq ($(ANDROID_ABI),x86)
      TOOL      = i686-linux-android
      ARCHFLAGS = -march=i686 -msse3 -mstackrealign -mfpmath=sse
-    @@ -29,6 +34,7 @@ $(error Invalid ABI specified in ANDROID_ABI)
+    @@ -29,6 +32,7 @@ $(error Invalid ABI specified in ANDROID_ABI)
      endif
      endif
      endif
