@@ -50,6 +50,7 @@ author = "authors"
   [params.social]
     rss = true
     email = "hello@collaboraoffice.com"
+    chat = "https://matrix.to/#/#collabora-online:matrix.org"
     facebook = "https://www.facebook.com/collaboraoffice/"
     twitter = "https://twitter.com/CollaboraOffice"
     linkedin = "https://www.linkedin.com/company/collabora-productivity-ltd/"
