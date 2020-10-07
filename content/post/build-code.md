@@ -38,6 +38,8 @@ To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
+Make sure you use and build the following specific core branch: `distro/collabora/cp-6.4`
+
 ### POCO
 
 If you use openSUSE Leap 15.1, you can use:
