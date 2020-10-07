@@ -230,13 +230,13 @@ forward to working with you. We will work to more explicitly open
 up our (small) pieces of proprietary theming / branding / CSS over
 time.
 
-### Do you use a CLA ?
+### Do you use a CLA?
 
 No. We use an in-bound == outbound licensing model, that gives the
 same rights and responsibilities to all participants. Following
 the LibreOffice ethos.
 
-### Why use Transifex ?
+### Why use Transifex?
 
 Good question - we're investigating a move to a hosted Weblate
 solution right now; this was a quick and easy way to bootstrap
