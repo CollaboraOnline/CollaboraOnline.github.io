@@ -48,7 +48,7 @@
 <meta itemprop="description" content="Step-by-step build instructions">
 <meta itemprop="datePublished" content="2020-10-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-10-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="382">
+<meta itemprop="wordCount" content="523">
 <meta itemprop="image" content="https://CollaboraOnline.github.io/build-code.jpg">
 
 
@@ -94,8 +94,8 @@
                     <div class="col-lg-8">
                         <div class="meta text-muted mb-3">
                             <p class="created text-muted text-uppercase font-weight-bold mb-1">October 1, 2020</p>
-                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>382 words</span>
-                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>523 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
                         </div>
 
                         <h1>Build Collabora Online</h1>
@@ -147,9 +147,19 @@
 </li>
 </ul>
 <h3 id="libreoffice">LibreOffice</h3>
+<p>CODE needs LibreOffice to be built to run. However, you have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick &amp; dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.</p>
+<h4 id="option-a---build-libreoffice-locally-recommended">Option A - Build LibreOffice locally (Recommended)</h4>
 <p>To build LibreOffice, follow the LibreOffice building pages:</p>
 <p><a href="https://wiki.documentfoundation.org/Development/BuildingOnLinux">https://wiki.documentfoundation.org/Development/BuildingOnLinux</a></p>
 <p>Make sure you use and build the following specific core branch: <code>distro/collabora/cp-6.4</code></p>
+<h4 id="option-b---download-a-daily-built-archive-of-libreoffice-quick--dirty">Option B - Download a Daily-Built Archive of LibreOffice (Quick &amp; Dirty)</h4>
+<p>Download the daily archive:</p>
+<pre><code>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-cp-6.4-assets.tar.gz
+</code></pre>
+<p>Extract the archive:</p>
+<pre><code>tar xvf core-cp-6.4-assets.tar.gz
+</code></pre>
+<p>You should now have two new directories extracted: <code>instdir</code> and <code>include</code>. You will use the locations of these directories for the <code>configure</code> parameters in the following steps.</p>
 <h3 id="poco">POCO</h3>
 <p>If you use openSUSE Leap 15.1, you can use:</p>
 <pre><code>zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
