@@ -18,14 +18,10 @@ A great way to get involved. You can perfect CODE for your language, while learn
 <!--more-->
 ---
 
-Please join our team of translators at [Transifex](https://www.transifex.com/collabora-productivity-ltd/collabora-online/)
-* Create an account or sign in with your GitHub profile
-* If you choose the latter, please authorize Transifex to use your GitHub account
-* Choose your username
-* Fill in your first and last name and all the required information
-* Select *Join an existing project*
-* Fill in all the languages you speak
-* And, finally, *Join team*
+Please join our team of translators at our [Hosted Weblate](https://hosted.weblate.org/projects/collabora-online/) page
+* Create an account or sign in with your OpenID provider
+* If you choose the latter, please authorize Weblate to use your OpenID
+* Follow the instructions to complete registration
 * Select the languages you want to work with
 
 That's it!

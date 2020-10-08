@@ -236,12 +236,6 @@ No. We use an in-bound == outbound licensing model, that gives the
 same rights and responsibilities to all participants. Following
 the LibreOffice ethos.
 
-### Why use Transifex?
-
-Good question - we're investigating a move to a hosted Weblate
-solution right now; this was a quick and easy way to bootstrap
-the project.
-
 ### How do I get commit access? {#commit-access}
 
 Please poke us on IRC with your TDF commit credentials, and your
