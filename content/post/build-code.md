@@ -34,11 +34,27 @@ The CODE must be built on Linux, and you need the following:
 
 ### LibreOffice
 
+CODE needs LibreOffice to be built to run. However, you have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.
+
+#### Option A - Build LibreOffice locally (Recommended)
 To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
 Make sure you use and build the following specific core branch: `distro/collabora/cp-6.4`
+
+#### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
+Download the daily archive:
+```
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-cp-6.4-assets.tar.gz
+```
+
+Extract the archive:
+```
+tar xvf core-cp-6.4-assets.tar.gz
+```
+
+You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
 
 ### POCO
 
