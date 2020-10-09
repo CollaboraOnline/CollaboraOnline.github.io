@@ -14,11 +14,20 @@ images = [
 ]
 +++
 
-Are you interested in contributing but do not know where to start? Head over documentation or start of by following these step-by-step instructions and build `CODE` from scratch:
+Are you interested in contributing but do not know where to start? Head over documentation or start of by following these step-by-step instructions and build `CODE` from scratch.
+
+<!--more-->
 
 {{< build-dropdown >}}
-<br/>
-<!--more-->
+
+<section id="build-code-opensuse" class="build-code-content">
+  openSUSE
+</section>
+<section id="build-code-fedora" class="build-code-content">
+  Fedora
+</section>
+<section id="build-code-ubuntu" class="build-code-content">
+
 ## Build CODE
 
 ### Dependencies
@@ -121,3 +130,4 @@ Alternatively you can export a variable like:
 
 to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.
+</section>

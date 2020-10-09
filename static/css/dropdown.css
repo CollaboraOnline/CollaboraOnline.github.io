@@ -20,3 +20,7 @@
 #dropdownMenuButton {
   border-radius: 3px;
 }
+
+.build-code-content {
+  display: none;
+}
