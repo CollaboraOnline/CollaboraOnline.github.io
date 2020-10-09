@@ -16,8 +16,8 @@ images = [
 
 Are you interested in contributing but do not know where to start? Head over documentation or start of by following these step-by-step instructions and build `CODE` from scratch:
 
-* [Build CODE]({{< relref "build-code.md" >}} "Explore and clone GitHub repository")
-* [Build CODE for Android]({{< relref "build-code-android.md" >}} "Step-by-step setup")
+{{< build-dropdown >}}
+<br/>
 <!--more-->
 ## Build CODE
 

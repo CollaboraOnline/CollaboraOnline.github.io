@@ -44,7 +44,7 @@ author = "authors"
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
-  customCSS = ["buttons.css", "anim.css", "header.css"]
+  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css"]
   customJS = []
 
   [params.social]
