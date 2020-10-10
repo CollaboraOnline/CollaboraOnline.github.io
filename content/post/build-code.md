@@ -24,15 +24,16 @@ Choose your GNU/Linux distro from the list below for straightforward instruction
 {{< build-dropdown >}}
 
 <section id="build-code-opensuse" class="build-code-content">
-  The instructions for openSUSE will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+  The instructions for openSUSE will be here. Submit an issue to contribute!
+
 </section>
 
 <section id="build-code-fedora" class="build-code-content">
-  The instructions for Fedora will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+  The instructions for Fedora will be here. Submit an issue to contribute!
 </section>
 
 <section id="build-code-ubuntu" class="build-code-content">
-  The instructions for Ubuntu will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+  The instructions for Ubuntu will be here. Submit an issue to contribute!
 </section>
 
 <section id="build-code-general" class="build-code-content">
