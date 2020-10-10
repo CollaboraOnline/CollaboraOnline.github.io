@@ -18,25 +18,31 @@ Are you interested in contributing but do not know where to start? Head over doc
 
 <!--more-->
 
-## Build CODE
 Choose your GNU/Linux distro from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
 
 {{< build-dropdown >}}
 
 <section id="build-code-opensuse" class="build-code-content">
-  The instructions for openSUSE will be here. Submit an issue to contribute!
 
+## Build CODE on openSUSE
+The instructions for openSUSE will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
 </section>
 
 <section id="build-code-fedora" class="build-code-content">
-  The instructions for Fedora will be here. Submit an issue to contribute!
+
+## Build CODE on Fedora
+The instructions for Fedora will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
 </section>
 
 <section id="build-code-ubuntu" class="build-code-content">
-  The instructions for Ubuntu will be here. Submit an issue to contribute!
+
+## Build CODE on Ubuntu
+The instructions for Ubuntu will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
 </section>
 
 <section id="build-code-general" class="build-code-content">
+
+## Build CODE
 
 ### Dependencies
 
