@@ -37,7 +37,81 @@ The instructions for Fedora will be here. [Submit an issue to contribute](https:
 <section id="build-code-ubuntu" class="build-code-content">
 
 ## Build CODE on Ubuntu
-The instructions for Ubuntu will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
+adjustments for other releases.
+
+### Dependencies
+We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+
+Lets start by installing the `dialog` package, which will be needed while installaing some
+of the other packages:
+```bash
+sudo apt install -y dialog
+```
+
+Now install the rest of the required packages:
+```bash
+sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
+                    libpam-dev wget git build-essential libtool \
+                    libcap2-bin python3-lxml libpng-dev libcppunit-dev \
+                    pkg-config fontconfig
+```
+
+### LibreOffice
+CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
+extra complexity. So, we will instead download a daily built archive which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.
+
+Now download a daily-built archive of LibreOffice core:
+```bash
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-cp-6.4-assets.tar.gz
+```
+
+Extract the contents of the archive:
+```bash
+tar xvf core-cp-6.4-assets.tar.gz
+```
+
+Mark the location of the extracted contents before changing directory:
+```bash
+export LOCOREPATH=$(pwd)
+```
+
+### Building CODE
+You need to clone it, run autoconf/automake, configure and build using the GNU
+make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+
+Now clone the forked repo:
+```bash
+git clone https://github.com/YOURUSERNAME/online.git collabora-online
+```
+
+Switch to the local clone's directory:
+```bash
+cd collabora-online
+```
+
+Run autogen to generate the configure file:
+```bash
+./autogen.sh
+```
+
+Run the generated configure script with proper parameters:
+```bash
+./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
+            --with-lo-path=${LOCOREPATH}/instdir \
+            --enable-debug
+```
+
+Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
+```bash
+make -j $(nproc)
+```
+
+If you want to run the unit tests, use `make check` instead of the `make`.
+
+Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
+thus **you will be asked the root password** when running make as it
+invokes `sudo` to run `/sbin/setcap`.
 </section>
 
 <section id="build-code-general" class="build-code-content">
