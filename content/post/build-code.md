@@ -18,17 +18,24 @@ Are you interested in contributing but do not know where to start? Head over doc
 
 <!--more-->
 
+## Build CODE
+Choose your GNU/Linux distro from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
+
 {{< build-dropdown >}}
 
 <section id="build-code-opensuse" class="build-code-content">
-  openSUSE
+  The instructions for openSUSE will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
 </section>
-<section id="build-code-fedora" class="build-code-content">
-  Fedora
-</section>
-<section id="build-code-ubuntu" class="build-code-content">
 
-## Build CODE
+<section id="build-code-fedora" class="build-code-content">
+  The instructions for Fedora will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+</section>
+
+<section id="build-code-ubuntu" class="build-code-content">
+  The instructions for Ubuntu will be here. [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+</section>
+
+<section id="build-code-general" class="build-code-content">
 
 ### Dependencies
 
@@ -95,19 +102,19 @@ make:
                 --with-lo-path=${MASTER}/instdir \
                 --with-poco-includes=<POCOINST>/include --with-poco-libs=<POCOINST>/lib \
                 --enable-debug
-    make
+    make -j `nproc`
 
 In the above, ${MASTER} is the location of the LibreOffice source tree you have built
-in the previous steps.
+in the previous steps. POCOINST is the location of your custom-built or externally installed POCO library.
+If you use POCO from a distro package (not a self-built version), you can omit
+the --with-poco-includes and --with-poco-libs from the above.
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
 Note that the loolforkit program needs the CAP_SYS_CHROOT capability,
 thus you will be asked the root password when running make as it
 invokes sudo to run /sbin/setcap.
-
-If you use POCO from a distro package (not a self-built version), you can omit
-the --with-poco-includes and and --with-poco-libs from the above.
+</section>
 
 ### Running
 
@@ -130,4 +137,3 @@ Alternatively you can export a variable like:
 
 to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.
-</section>
