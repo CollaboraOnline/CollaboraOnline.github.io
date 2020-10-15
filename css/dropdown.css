@@ -13,6 +13,10 @@
   z-index: 1;
 }
 
+.dropdown-item {
+  cursor: pointer !important;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
