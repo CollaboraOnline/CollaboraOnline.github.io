@@ -18,13 +18,13 @@ Are you interested in contributing but do not know where to start? Head over doc
 
 <!--more-->
 
-Choose your operating system from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
+Choose your operating system or opt for using Gitpod (Code, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
 
 {{< build-dropdown >}}<br>
 
 <section id="build-code-gitpod" class="build-code-content">
 
-## Build CODE on GitPod
+## Build CODE on Gitpod
 On top of our daily LibreOffice core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
 
 **Steps to quick start:**
