@@ -17,6 +17,10 @@
   cursor: pointer !important;
 }
 
+.gnu-linux {
+  color: gray;
+}
+
 .dropdown:hover .dropdown-content {
   display: block;
 }

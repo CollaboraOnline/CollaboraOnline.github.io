@@ -22,6 +22,37 @@ Choose your GNU/Linux distro from the list below for straightforward instruction
 
 {{< build-dropdown >}}<br>
 
+<section id="build-code-gitpod" class="build-code-content">
+
+## Build CODE on GitPod
+On top of our daily LibreOffice core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
+
+**Steps to quick start:**
+
+* Sign-up on [Gitpod.io](http://gitpod.io/) with your GitHub account
+* Install the [proper extension](https://www.gitpod.io/docs/browser-extension/) for your browser
+* Go to [COOL repo](https://github.com/CollaboraOnline/online)
+* Click on the green Gitpod button near the top of the GitHub repo page
+
+![GitPod green button on GitHub](/images/gitpod-button-onGitHub.png)
+
+* Wait for a few minutes, and you will have a full development environment with COOL already cloned & built, ready-to-start/develop
+
+{{< figure src="/images/gitpod-screenshot-COOL.png" title="Gitpod, your development environment for Collabora Online on the cloud">}}
+
+* Don’t forget to also fork the main repo ![|226x56](/images/forking.gif)
+* And set the remote address in .git/config to point to your fork’s address with this command:
+
+```bash
+git remote set-url origin https://github.com/PUT-YOUR-GITHUB-USERNAME-HERE/online.git
+```
+
+Happy hacking! : )
+
+_First published on [ Collabora Online Community Roundup #2](https://www.collaboraoffice.com/online/collabora-online-community-roundup-2/)_
+
+</section>
+
 <section id="build-code-opensuse" class="build-code-content">
 
 ## Build CODE on openSUSE
