@@ -6,10 +6,6 @@
     <description>Recent content on Collabora Online - Community Page</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright>
-    
-	<atom:link href="https://CollaboraOnline.github.io/authors/jane-smith/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright><atom:link href="https://CollaboraOnline.github.io/authors/jane-smith/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
