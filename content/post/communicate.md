@@ -14,7 +14,7 @@ images = [
 ]
 +++
 
-A great way to get in touch, ask anything or get mentoring is through one of our official channels:
+A great way to get in touch, ask anything or get mentoring is through one of our official channels. . .
 <!--more-->
 ---
 * Chat on [Collabora Online forum](https://forum.collaboraonline.com/)
