@@ -17,12 +17,14 @@ If you just want to check how the website looks and do not want to run local ser
 Caveats: since you are not runing a local server when you click a link it will not find dinamycally the `.html` of that directoy. Thus it will show you a non found page. Example:
 * You clicked `Build instructions`
 * It showed something like:
+
 ```
 index of file:///home/pedrosilva/collaboraonline-page/public/post/buildit/
 
 Name
 index.html
 ```
+
 To circunvent this you can either click that index.html under `Name` or you can simply type it at the end of that page address like so:
 `file:///home/pedrosilva/collaboraonline-page/public/post/buildit/index.html`
 
@@ -32,10 +34,16 @@ Note: ideally we would have this in one folder inside of CollaboraOffice.com so 
 1. Install Hugo: https://gohugo.io/getting-started/installing/
 * Official packages for Debian and Ubuntu: `sudo apt-get install hugo`
 * Official packages for Fedora, Red Hat and CentOS `sudo dnf install hugo`
-* with homebrewfor [linux](https://docs.brew.sh/Homebrew-on-Linux); [macOS](https://brew.sh/): `brew install hugo`
+* For openSUSE
+	* Official for Tumbleweed: `sudo zypper install hugo` [view in store](https://software.opensuse.org/download/package?package=hugo&project=openSUSE%3AFactory)
+	* Experimental for Leap 15.2 packages [view in store](https://software.opensuse.org/download/package?package=hugo&project=devel%3Alanguages%3Ago)
+		* `sudo zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/openSUSE_Leap_15.2/devel:languages:go.repo`
+		* `sudo zypper refresh`
+		* `zypper install hugo`
+* with homebrew for [linux](https://docs.brew.sh/Homebrew-on-Linux); [macOS](https://brew.sh/): `brew install hugo`
 note: https://github.com/gohugoio/hugo/releases
 2. Repository and branches
-* Choose a local folder 
+* Choose a local folder
 * Clone it `git clone https://github.com/CollaboraOnline/CollaboraOnline.github.io.git .`
 * Change branch to source `git checkout source`
 * `git worktree add -B master public origin/master` : Creates a local public folder and be able to manage both branches within the same working tree, allowing to have a mixed of branches checked out at the same time. With this we can generate the site into that public folder, and have it be mirrored in the master branch.
