@@ -31,13 +31,6 @@ First you need to build the LibreOffice core code for iOS. Put in your autogen.i
 
 and build "normally". (Naturally, no unit tests will be run when cross-compiling LibreOffice.) Of course there is no requirement to use those --enable options; as a minimum, just `--with-distro=LibreOfficeiOS` should work.
 
-for use with the SIMULATOR you can use:
-```bash
---with-distro=LibreOfficeiOS_Sim
-```
-
-Debug is implied when compiling for use in the simulator, but if you don't want that, then edit `distro-configs/LibreOfficeiOS_Sim.conf`
-
 This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)
 
 ## 2) Build LOOL Dependencies
@@ -47,7 +40,7 @@ POCO LIBRARY
 2.1) Get the source poco library at https://pocoproject.org/download.html
 2.2) Unpack
 
-2.3a) Compile for DEVICE (arm64) use:
+2.3) Compile
 ```bash
 ./configure --config=iPhone --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-arm64
 ```
@@ -58,18 +51,7 @@ make POCO_TARGET_OSARCH=arm64 -s -j4
 make POCO_TARGET_OSARCH=arm64 install
 ```
 
-2.3b) Compile for SIMULATOR (x86_64) use:
-```bash
-./configure --config=iPhoneSimulator --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-x64
-```
-```bash
-make POCO_TARGET_OSARCH=x86_64 -s -j4
-```
-```bash
-make POCO_TARGET_OSARCH=x86_64 install
-```
-
-This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 (and poco-ios-x64) directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
+This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
 
 If compiler can't find `<string.h>` you need to install:
 ```bash
@@ -110,14 +92,8 @@ PATH=/opt/libtool/bin:$PATH ./autogen.sh
 
 6) In the app folder, run:
 
-**for DEVICE:**
 ```bash
 ./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
-```
-
-**for SIMULATOR:**
-```bash
-./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-x64/include --with-poco-libs=$HOME/poco-ios-x64/lib
 ```
 
 The configure script puts the app name as the CFBundleDisplayName property into the ios/Mobile/Info.plist file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).
