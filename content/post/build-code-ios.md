@@ -33,7 +33,7 @@ and build "normally". (Naturally, no unit tests will be run when cross-compiling
 
 This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)
 
-## 2) Build LOOL Dependencies
+## 2) Build COOL Dependencies
 
 POCO LIBRARY
 
