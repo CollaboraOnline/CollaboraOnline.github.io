@@ -49,7 +49,7 @@
 <meta itemprop="description" content="Step-by-step build instructions">
 <meta itemprop="datePublished" content="2020-09-30T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-09-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="678">
+<meta itemprop="wordCount" content="610">
 <meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-ios.jpg">
 
 
@@ -96,8 +96,8 @@
                     <div class="col-lg-8">
                         <div class="meta text-muted mb-3">
                             <p class="created text-muted text-uppercase font-weight-bold mb-1">September 30, 2020</p>
-                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>678 words</span>
-                            <span><i class="fas fa-clock mr-2"></i>4 mins read</span>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>610 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
                         </div>
 
                         <h1>Build for iOS</h1>
@@ -133,30 +133,19 @@
 --with-distro=LibreOfficeiOS
 </code></pre>
 <p>and build &ldquo;normally&rdquo;. (Naturally, no unit tests will be run when cross-compiling LibreOffice.) Of course there is no requirement to use those &ndash;enable options; as a minimum, just <code>--with-distro=LibreOfficeiOS</code> should work.</p>
-<p>for use with the SIMULATOR you can use:</p>
-<pre><code class="language-bash">--with-distro=LibreOfficeiOS_Sim
-</code></pre>
-<p>Debug is implied when compiling for use in the simulator, but if you don&rsquo;t want that, then edit <code>distro-configs/LibreOfficeiOS_Sim.conf</code></p>
 <p>This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)</p>
 <h2 id="2-build-cool-dependencies">2) Build COOL Dependencies</h2>
 <p>POCO LIBRARY</p>
 <p>2.1) Get the source poco library at <a href="https://pocoproject.org/download.html">https://pocoproject.org/download.html</a>
 2.2) Unpack</p>
-<p>2.3a) Compile for DEVICE (arm64) use:</p>
+<p>2.3) Compile</p>
 <pre><code class="language-bash">./configure --config=iPhone --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-arm64
 </code></pre>
 <pre><code class="language-bash">make POCO_TARGET_OSARCH=arm64 -s -j4
 </code></pre>
 <pre><code class="language-bash">make POCO_TARGET_OSARCH=arm64 install
 </code></pre>
-<p>2.3b) Compile for SIMULATOR (x86_64) use:</p>
-<pre><code class="language-bash">./configure --config=iPhoneSimulator --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-x64
-</code></pre>
-<pre><code class="language-bash">make POCO_TARGET_OSARCH=x86_64 -s -j4
-</code></pre>
-<pre><code class="language-bash">make POCO_TARGET_OSARCH=x86_64 install
-</code></pre>
-<p>This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 (and poco-ios-x64) directory. You can change the directory to your wishes, but by installing it this way into a directory in <code>$HOME</code> it doesn&rsquo;t pollute your root directories, doesn&rsquo;t need root permissions and can be removed easily.</p>
+<p>This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in <code>$HOME</code> it doesn&rsquo;t pollute your root directories, doesn&rsquo;t need root permissions and can be removed easily.</p>
 <p>If compiler can&rsquo;t find <code>&lt;string.h&gt;</code> you need to install:</p>
 <pre><code class="language-bash">open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
 </code></pre>
@@ -184,11 +173,7 @@
 <p>In the app folder, run:</p>
 </li>
 </ol>
-<p><strong>for DEVICE:</strong></p>
 <pre><code class="language-bash">./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot; --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
-</code></pre>
-<p><strong>for SIMULATOR:</strong></p>
-<pre><code class="language-bash">./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot; --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-x64/include --with-poco-libs=$HOME/poco-ios-x64/lib
 </code></pre>
 <p>The configure script puts the app name as the CFBundleDisplayName property into the ios/Mobile/Info.plist file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).</p>
 <ol start="7">
