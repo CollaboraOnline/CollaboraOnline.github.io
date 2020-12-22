@@ -14,7 +14,7 @@ images = [
 ]
 +++
 
-Are you interested in contributing but do not know where to start? Head over documentation or start of by following these step-by-step instructions and build `CODE` from scratch.
+Are you interested in contributing but don't know where to start? Head over documentation or start by following these step-by-step instructions and build `CODE` from scratch.
 
 <!--more-->
 
@@ -40,7 +40,7 @@ On top of our daily LibreOffice core archives, we have also added integration su
 
 {{< figure src="/images/gitpod-screenshot-COOL.png" title="Gitpod, your development environment for Collabora Online on the cloud">}}
 
-* Don’t forget to also fork the main repo ![|226x56](/images/forking.gif)
+* Don’t forget to fork the main repo ![|226x56](/images/forking.gif)
 * And set the remote address in .git/config to point to your fork’s address with this command:
 
 ```bash
@@ -70,7 +70,7 @@ zypper in poco-devel libcap-progs python3-polib libcap-devel npm
 
 ### LibreOffice
 CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.
+extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
