@@ -34,6 +34,7 @@ category = "categories"
 tag = "tags"
 series = "series"
 author = "authors"
+type = "type"
 
 [params]
   Subtitle= "CODE"
@@ -44,7 +45,7 @@ author = "authors"
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
-  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css"]
+  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css", "sidebar.css"]
   customJS = []
 
   [params.social]
