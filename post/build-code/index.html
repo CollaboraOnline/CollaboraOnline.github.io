@@ -36,6 +36,7 @@
 <link rel="stylesheet" href="../../css/anim.css">
 <link rel="stylesheet" href="../../css/header.css">
 <link rel="stylesheet" href="../../css/dropdown.css">
+<link rel="stylesheet" href="../../css/sidebar.css">
 
 
 <link rel="canonical" href="https://CollaboraOnline.github.io/post/build-code/"><meta property="og:title" content="Build Collabora Online" />
@@ -93,38 +94,46 @@
     
 <main class="content-page container pt-7 pb-5">
     
-    <div class="row">
+    <div class="row sidebar">
         <div class="col">
-            <article>
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="meta text-muted mb-3">
-                            <p class="created text-muted text-uppercase font-weight-bold mb-1">October 1, 2020</p>
-                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>1441 words</span>
-                            <span><i class="fas fa-clock mr-2"></i>7 mins read</span>
-                        </div>
-
-                        <h1>Build Collabora Online</h1>
-
-                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
-                    <div class="media author"><a href="../../authors/collabora/" class="mr-3">
-                                    <picture>
-                                        <source srcset="../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_64x0_resize_box_2.png 1x, ../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_128x0_resize_q100_box_2.png 2x, ../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_192x0_resize_q100_box_2.png 3x">
-                                        <img src="../../authors/collabora/collabora-authors_hud4578eeec57eb8098f1040320f5abe0c_3427_64x0_resize_box_2.png" class="rounded-circle" alt="Collabora">
-                                    </picture>
-                                </a><div class="media-body">
-                            <h5 class="name my-0"><a href="../../authors/collabora/" class="small">Collabora</a>
-                            </h5><p class="social small text-muted">
-                                    <a href="https://twitter.com/@collaboraoffice">@CollaboraOffice</a>
-                                </p></div>
-                    </div>
-                </li></ul>
-                    </div>
-                </div><div class="row justify-content-center mb-3">
+            <article><div class="row justify-content-center mb-3">
                                 <div class="col-lg-10">
                                     <img data-src="../../images/build-code_hu1a6525c2a63cab2164fdeeaf0e1ecb35_185044_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Build Collabora Online">
                                 </div>
                             </div><div class="row justify-content-center">
+                  <div class="col-lg-4">
+                    
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#build-code-on-gitpod">Build CODE on Gitpod</a></li>
+    <li><a href="#build-code-on-opensuse">Build CODE on openSUSE</a>
+      <ul>
+        <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#libreoffice">LibreOffice</a></li>
+        <li><a href="#building-code">Building CODE</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-code-on-fedora">Build CODE on Fedora</a></li>
+    <li><a href="#build-code-on-ubuntu">Build CODE on Ubuntu</a>
+      <ul>
+        <li><a href="#dependencies-1">Dependencies</a></li>
+        <li><a href="#libreoffice-1">LibreOffice</a></li>
+        <li><a href="#building-code-1">Building CODE</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-code">Build CODE</a>
+      <ul>
+        <li><a href="#dependencies-2">Dependencies</a></li>
+        <li><a href="#libreoffice-2">LibreOffice</a></li>
+        <li><a href="#poco">POCO</a></li>
+        <li><a href="#building-code-2">Building CODE</a></li>
+        <li><a href="#running">Running</a></li>
+        <li><a href="#hacking-it">Hacking it</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                  </div>
                     <div class="col-lg-8">
                         <div class="content">
                             <p>Are you interested in contributing but don&rsquo;t know where to start? Head over documentation or start by following these step-by-step instructions and build <code>CODE</code> from scratch.</p>

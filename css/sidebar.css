@@ -1,0 +1,45 @@
+@media (min-width: 992px) {
+  .sidebar #TableOfContents {
+    box-shadow: -1px 0 3px 0 #00000035, 1px 0 #504999;
+    border: none !important;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .sidebar #TableOfContents ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 62px;
+  }
+}
+
+.sidebar #TableOfContents {
+  height: 100%;
+  background-color: #fafafa;
+  border-bottom: 1px dashed #504999;
+  border-top: 1px dashed #504999;
+  padding: 18px;
+}
+
+.sidebar #TableOfContents ul {
+  padding-left: 1rem;
+  list-style-position: outside;
+}
+
+.sidebar #TableOfContents ul ul {
+  font-size: 1rem;
+  padding: 1px 0 12px 1rem;
+}
+
+.sidebar #TableOfContents > ul > li > a {
+  color: #504999;
+  font-weight: bold;
+}
+
+.sidebar #TableOfContents a {
+  text-decoration: none;
+}
+
+.sidebar #TableOfContents a:hover {
+  text-decoration: underline;
+}
