@@ -12,6 +12,8 @@ tags = [
 images = [
     "build-code-ios.jpg",
 ]
+type = "sidebar"
+layout = "sidebar"
 +++
 
 Are you familiar with iOS development environment and interested to learn more while helping the project?

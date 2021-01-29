@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ .Content}}
 <main class="homepage container py-6">
     <!-- Hero -->
     <div class="hero row">
@@ -25,7 +26,7 @@
         </div>
     </div>
 		<!-- Latest article -->
-    {{- range first 1 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) -}}
+    {{- range first 1 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) -}}
         {{ $page := . }}
         <div class="latest row py-lg-5">
             <div class="col-lg-6 mb-3">
@@ -54,7 +55,7 @@
 
     <!-- Articles -->
     <div class="articles row row-cols-1 row-cols-lg-3">
-			{{ range after 1 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+			{{ range after 1 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
             <div class="col mb-3">
                 {{ .Render "card" }}
             </div>

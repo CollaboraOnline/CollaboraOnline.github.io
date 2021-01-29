@@ -12,6 +12,8 @@ tags = [
 images = [
     "build-code-android.jpg",
 ]
+type = "sidebar"
+layout = "sidebar"
 +++
 
 Are you familiar with Android development environment and interested to learn more while helping the project?
