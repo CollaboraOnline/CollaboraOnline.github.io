@@ -16,4 +16,7 @@
 		$( ".build-code-content").hide();
 		$( "#build-code-" + $(this).attr('onclick')).show();
 	});
+	$("#TableOfContents a[href^='#build-']").click(function(){
+		$( ".build-code-content").show();
+	});
 </script>
