@@ -52,7 +52,7 @@
 <meta itemprop="description" content="Step-by-step build instructions">
 <meta itemprop="datePublished" content="2020-10-01T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-01T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1441">
+<meta itemprop="wordCount" content="1446">
 <meta itemprop="image" content="https://CollaboraOnline.github.io/build-code.jpg">
 
 
@@ -155,6 +155,9 @@
 	$( ".dropdown-item" ).click(function() {
 		$( ".build-code-content").hide();
 		$( "#build-code-" + $(this).attr('onclick')).show();
+	});
+	$("#TableOfContents a[href^='#build-']").click(function(){
+		$( ".build-code-content").show();
 	});
 </script>
 <br></p>
