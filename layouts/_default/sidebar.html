@@ -19,10 +19,6 @@
                 {{- end -}}
 
                 <div class="row justify-content-center">
-                  <div class="col-lg-4">
-                    <!--<h1>{{ $page.Title }}</h1>-->
-                    {{ .Page.TableOfContents }}
-                  </div>
                     <div class="col-lg-8">
                         <div class="content">
                             {{ $page.Content }}
@@ -39,6 +35,10 @@
                         {{- end -}}
 
                         {{ partial "sharer.html" . }}
+                    </div>
+                    <div class="col-lg-3">
+                      <!--<h1>{{ $page.Title }}</h1>-->
+                      {{ .Page.TableOfContents }}
                     </div>
                 </div>
 

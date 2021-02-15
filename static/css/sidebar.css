@@ -1,12 +1,9 @@
 @media (min-width: 992px) {
   .sidebar #TableOfContents {
-    box-shadow: -1px 0 3px 0 #00000035, 1px 0 #504999;
+    box-shadow: 1px 0 3px 0 #00000035, -1px 0 #504999;
     border: none !important;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-  }
-
-  .sidebar #TableOfContents ul {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
     position: -webkit-sticky;
     position: sticky;
     top: 62px;
@@ -14,7 +11,6 @@
 }
 
 .sidebar #TableOfContents {
-  height: 100%;
   background-color: #fafafa;
   border-bottom: 1px dashed #504999;
   border-top: 1px dashed #504999;
