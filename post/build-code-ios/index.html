@@ -37,28 +37,23 @@
 <link rel="stylesheet" href="../../css/header.css">
 <link rel="stylesheet" href="../../css/dropdown.css">
 <link rel="stylesheet" href="../../css/sidebar.css">
+<link rel="stylesheet" href="../../css/post-content.css">
 
 
 <link rel="canonical" href="https://CollaboraOnline.github.io/post/build-code-ios/"><meta property="og:title" content="Build for iOS" />
 <meta property="og:description" content="Step-by-step build instructions" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://CollaboraOnline.github.io/post/build-code-ios/" />
-<meta property="og:image" content="https://CollaboraOnline.github.io/build-code-ios.jpg" />
-<meta property="article:published_time" content="2020-09-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-09-30T00:00:00+00:00" />
+<meta property="og:url" content="https://CollaboraOnline.github.io/post/build-code-ios/" /><meta property="og:image" content="https://CollaboraOnline.github.io/build-code-ios.jpg" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-09-30T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-09-30T00:00:00&#43;00:00" />
+
 
 
 <meta itemprop="name" content="Build for iOS">
-<meta itemprop="description" content="Step-by-step build instructions">
-<meta itemprop="datePublished" content="2020-09-30T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-09-30T00:00:00+00:00" />
-<meta itemprop="wordCount" content="610">
-<meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-ios.jpg">
-
-
-
+<meta itemprop="description" content="Step-by-step build instructions"><meta itemprop="datePublished" content="2020-09-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-09-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="652"><meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-ios.jpg">
 <meta itemprop="keywords" content="build,make," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://CollaboraOnline.github.io/build-code-ios.jpg"/>
 
@@ -106,6 +101,7 @@
                             <p>Are you familiar with iOS development environment and interested to learn more while helping the project?</p>
 <h1 id="how-to-build-the-ios-app">How to build the iOS app:</h1>
 <h2 id="1-build-the-libreoffice-core-code">1) Build the LibreOffice core code</h2>
+<h3 id="ios-1-build-Lo-mac" class="extraclass requirement-machine">on a Mac</h3>
 <p>First you need to build the LibreOffice core code for iOS. Put in your autogen.input something like this:</p>
 <pre><code class="language-bash">--enable-debug
 --enable-dbgutil
@@ -115,9 +111,14 @@
 <p>and build &ldquo;normally&rdquo;. (Naturally, no unit tests will be run when cross-compiling LibreOffice.) Of course there is no requirement to use those &ndash;enable options; as a minimum, just <code>--with-distro=LibreOfficeiOS</code> should work.</p>
 <p>This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)</p>
 <h2 id="2-build-cool-dependencies">2) Build COOL Dependencies</h2>
+<h3 id="ios-2-build-cool-mac" class="extraclass requirement-machine">on a Mac</h3>
 <p>POCO LIBRARY</p>
-<p>2.1) Get the source poco library at <a href="https://pocoproject.org/download.html">https://pocoproject.org/download.html</a>
-2.2) Unpack</p>
+<p>2.1) The below instructions are for the so-called basic edition of
+POCO 1.10.1. (If there has been a newer release of POCO by the time
+you read this, adapt as necessary.) Get the POCO library source code
+from <a href="https://pocoproject.org/releases/poco-1.10.1/">https://pocoproject.org/releases/poco-1.10.1/</a> , the
+poco-1.10.1.tar.gz archive.</p>
+<p>2.2) Unpack in some suitable location.</p>
 <p>2.3) Compile</p>
 <pre><code class="language-bash">./configure --config=iPhone --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-arm64
 </code></pre>
@@ -126,12 +127,11 @@
 <pre><code class="language-bash">make POCO_TARGET_OSARCH=arm64 install
 </code></pre>
 <p>This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in <code>$HOME</code> it doesn&rsquo;t pollute your root directories, doesn&rsquo;t need root permissions and can be removed easily.</p>
-<p>If compiler can&rsquo;t find <code>&lt;string.h&gt;</code> you need to install:</p>
-<pre><code class="language-bash">open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
-</code></pre>
-<h2 id="3-clone-online-on-a-mac">3) Clone Online on a Mac</h2>
+<h2 id="3-clone-online">3) Clone Online</h2>
+<h3 id="ios-3-clone-online-mac" class="extraclass requirement-machine">on a Mac</h3>
 <p>Do a separate clone of the online repo on macOS, but don&rsquo;t do any autogen.sh, configure, or make, or open the Mobile Xcode project there yet. We call this the app folder.</p>
-<h2 id="4-clone-online-on-a-linux-machine">4) Clone Online on a Linux machine</h2>
+<h2 id="4-clone-online">4) Clone Online</h2>
+<h3 id="ios-4-clone-online-linux" class="extraclass requirement-machine">on a Linux machine</h3>
 <p>Do a separate clone of the online repo, run autogen.sh, and configure it with the &ndash;enable-iosapp option:</p>
 <pre><code class="language-bash">./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot;
 </code></pre>
@@ -139,37 +139,27 @@
 <pre><code class="language-bash">make clean &amp;&amp; make &amp;&amp; tar cf - loleaflet/dist | ssh misan.local 'cd lo/online-ios-device &amp;&amp; rm -rf loleaflet/dist &amp;&amp; tar xvf -'
 </code></pre>
 <p>where <code>misan.local</code> is the macOS machine where I build the app, and <code>~/lo/online-ios-device</code> is the app folder from step 2.</p>
-<p>Then back to the Mac:</p>
-<p>As you were able to build LibreOffice in step 1, you must already have GNU autoconf installed on the Mac. Install also GNU automake and libtool. Preferably from sources, to make sure a potential installation of brew or similar will not pollute your environment with unknown stuff.</p>
-<p>As GNU libtool will be needed only for a very minimal part of the build (running the autogen.sh script, but not anything else), it&rsquo;s safest to install it somewhere that is not in your $PATH. Let&rsquo;s say <code>/opt/libtool</code>. (Installing Automake in the default <code>/usr/local</code>, which is in <code>$PATH</code>, is less risky.)</p>
+<h2 id="5-building-for-ios">5) Building for iOS</h2>
+<h3 id="ios-5-clone-online-mac" class="extraclass requirement-machine">on a Mac</h3>
+<p>Now back to your Mac, and with LibreOffice built from step 1, you must already have GNU autoconf installed on the Mac. Install also GNU automake and libtool. Preferably from sources, to make sure a potential installation of brew or similar will not pollute your environment with unknown stuff.</p>
+<p>As GNU libtool will be needed only for a very minimal part of the build (running the <code>autogen.sh</code> script, but not anything else), it&rsquo;s safest to install it somewhere that is not in your $PATH. Let&rsquo;s say <code>/opt/libtool</code>. (Installing Automake in the default <code>/usr/local</code>, which is in <code>$PATH</code>, is less risky.)</p>
 <p>Run the autogen.sh script in the app folder, with GNU libtool available, for instance:</p>
 <pre><code class="language-bash">PATH=/opt/libtool/bin:$PATH ./autogen.sh
 </code></pre>
-<ol start="5">
-<li>
-<p>In the app folder from step 2, edit the ios/Mobile.xcodeproj/project.pbxproj file in your favourite text editor. Change LOSRCDIR and all instances of &ldquo;../ios-device&rdquo; to refer the the LibreOffice core source directory from step 1.</p>
-</li>
-<li>
-<p>In the app folder, run:</p>
-</li>
-</ol>
+<p>5.1) In the app folder from step 2, edit the <code>ios/Mobile.xcodeproj/project.pbxproj</code> file in your favourite text editor. Change <code>LOSRCDIR</code> and all instances of <code>../ios-device</code> to refer the the LibreOffice core source directory from step 1.</p>
+<p>5.2) In the app folder, run:</p>
 <pre><code class="language-bash">./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot; --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
 </code></pre>
-<p>The configure script puts the app name as the CFBundleDisplayName property into the ios/Mobile/Info.plist file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).</p>
-<ol start="7">
-<li>
-<p>Before opening the Xcode project for the first time</p>
+<p>The configure script puts the app name as the <code>CFBundleDisplayName</code> property into the <code>ios/Mobile/Info.plist</code> file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).</p>
+<p>5.3) Before opening the Xcode project for the first time</p>
 <ul>
 <li>seriously consider disabling source code indexing, this
 spawns a vast number of git processes, and consumes huge
 amounts of CPU &amp; memory:</li>
 </ul>
-<p><code>Xcode -&gt; Preferences, &quot;Source Control&quot;, uncheck &quot;Enable Source Control&quot;</code></p>
-</li>
-<li>
-<p>Now you can open the Mobile Xcode project, build it, and run it.</p>
-</li>
-</ol>
+<pre><code>Xcode -&gt; Preferences, &quot;Source Control&quot;, uncheck &quot;Enable Source Control&quot;
+</code></pre>
+<p>5.4) Now you can open the Mobile Xcode project, build it, and run it.</p>
                         </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="../../tags/build">
                                     <i class="fas fa-tag mr-2"></i>build
                                 </a><a class="badge badge-pill badge-light border mr-2" href="../../tags/make">
@@ -201,10 +191,31 @@ amounts of CPU &amp; memory:</li>
                       
                       <nav id="TableOfContents">
   <ul>
-    <li><a href="#1-build-the-libreoffice-core-code">1) Build the LibreOffice core code</a></li>
-    <li><a href="#2-build-cool-dependencies">2) Build COOL Dependencies</a></li>
-    <li><a href="#3-clone-online-on-a-mac">3) Clone Online on a Mac</a></li>
-    <li><a href="#4-clone-online-on-a-linux-machine">4) Clone Online on a Linux machine</a></li>
+    <li><a href="#1-build-the-libreoffice-core-code">1) Build the LibreOffice core code</a>
+      <ul>
+        <li><a href="#ios-1-build-Lo-mac">on a Mac</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-build-cool-dependencies">2) Build COOL Dependencies</a>
+      <ul>
+        <li><a href="#ios-2-build-cool-mac">on a Mac</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-clone-online">3) Clone Online</a>
+      <ul>
+        <li><a href="#ios-3-clone-online-mac">on a Mac</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-clone-online">4) Clone Online</a>
+      <ul>
+        <li><a href="#ios-4-clone-online-linux">on a Linux machine</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-building-for-ios">5) Building for iOS</a>
+      <ul>
+        <li><a href="#ios-5-clone-online-mac">on a Mac</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                     </div>
@@ -367,6 +378,5 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 </body>
 </html>
