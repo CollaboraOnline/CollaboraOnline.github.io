@@ -82,11 +82,11 @@ make clean && make && tar cf - loleaflet/dist | ssh misan.local 'cd lo/online-io
 
 where `misan.local` is the macOS machine where I build the app, and `~/lo/online-ios-device` is the app folder from step 2.
 
-Then back to the Mac:
+## 5) Building for iOS
+### on a Mac ## {#ios-5-clone-online-mac .extraclass class="requirement-machine"}
+Now back to your Mac, and with LibreOffice built from step 1, you must already have GNU autoconf installed on the Mac. Install also GNU automake and libtool. Preferably from sources, to make sure a potential installation of brew or similar will not pollute your environment with unknown stuff.
 
-As you were able to build LibreOffice in step 1, you must already have GNU autoconf installed on the Mac. Install also GNU automake and libtool. Preferably from sources, to make sure a potential installation of brew or similar will not pollute your environment with unknown stuff.
-
-As GNU libtool will be needed only for a very minimal part of the build (running the autogen.sh script, but not anything else), it's safest to install it somewhere that is not in your $PATH. Let's say `/opt/libtool`. (Installing Automake in the default `/usr/local`, which is in `$PATH`, is less risky.)
+As GNU libtool will be needed only for a very minimal part of the build (running the `autogen.sh` script, but not anything else), it's safest to install it somewhere that is not in your $PATH. Let's say `/opt/libtool`. (Installing Automake in the default `/usr/local`, which is in `$PATH`, is less risky.)
 
 Run the autogen.sh script in the app folder, with GNU libtool available, for instance:
 
@@ -94,21 +94,21 @@ Run the autogen.sh script in the app folder, with GNU libtool available, for ins
 PATH=/opt/libtool/bin:$PATH ./autogen.sh
 ```
 
-5) In the app folder from step 2, edit the ios/Mobile.xcodeproj/project.pbxproj file in your favourite text editor. Change LOSRCDIR and all instances of "../ios-device" to refer the the LibreOffice core source directory from step 1.
+5.1) In the app folder from step 2, edit the `ios/Mobile.xcodeproj/project.pbxproj` file in your favourite text editor. Change `LOSRCDIR` and all instances of `../ios-device` to refer the the LibreOffice core source directory from step 1.
 
-6) In the app folder, run:
+5.2) In the app folder, run:
 
 ```bash
 ./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
 ```
 
-The configure script puts the app name as the CFBundleDisplayName property into the ios/Mobile/Info.plist file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).
+The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).
 
-7) Before opening the Xcode project for the first time
+5.3) Before opening the Xcode project for the first time
    - seriously consider disabling source code indexing, this
    spawns a vast number of git processes, and consumes huge
    amounts of CPU & memory:
 
-	`Xcode -> Preferences, "Source Control", uncheck "Enable Source Control"`
+	Xcode -> Preferences, "Source Control", uncheck "Enable Source Control"
 
-8) Now you can open the Mobile Xcode project, build it, and run it.
+5.4) Now you can open the Mobile Xcode project, build it, and run it.
