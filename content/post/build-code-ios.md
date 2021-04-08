@@ -20,7 +20,7 @@ Are you familiar with iOS development environment and interested to learn more w
 <!--more-->
 # How to build the iOS app:
 
-## 1) Build the LibreOffice core code
+## 1) Build the LibreOffice core code (on a Mac)
 
 First you need to build the LibreOffice core code for iOS. Put in your autogen.input something like this:
 
@@ -35,12 +35,17 @@ and build "normally". (Naturally, no unit tests will be run when cross-compiling
 
 This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)
 
-## 2) Build COOL Dependencies
+## 2) Build COOL Dependencies (on a Mac)
 
 POCO LIBRARY
 
-2.1) Get the source poco library at https://pocoproject.org/download.html
-2.2) Unpack
+2.1) The below instructions are for the so-called basic edition of
+POCO 1.10.1. (If there has been a newer release of POCO by the time
+you read this, adapt as necessary.) Get the POCO library source code
+from https://pocoproject.org/releases/poco-1.10.1/ , the
+poco-1.10.1.tar.gz archive.
+
+2.2) Unpack in some suitable location.
 
 2.3) Compile
 ```bash
@@ -54,11 +59,6 @@ make POCO_TARGET_OSARCH=arm64 install
 ```
 
 This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
-
-If compiler can't find `<string.h>` you need to install:
-```bash
-open /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg
-```
 
 ## 3) Clone Online on a Mac
 Do a separate clone of the online repo on macOS, but don't do any autogen.sh, configure, or make, or open the Mobile Xcode project there yet. We call this the app folder.
