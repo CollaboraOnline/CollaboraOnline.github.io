@@ -20,7 +20,8 @@ Are you familiar with iOS development environment and interested to learn more w
 <!--more-->
 # How to build the iOS app:
 
-## 1) Build the LibreOffice core code (on a Mac)
+## 1) Build the LibreOffice core code
+### on a Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
 First you need to build the LibreOffice core code for iOS. Put in your autogen.input something like this:
 
@@ -35,7 +36,8 @@ and build "normally". (Naturally, no unit tests will be run when cross-compiling
 
 This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)
 
-## 2) Build COOL Dependencies (on a Mac)
+## 2) Build COOL Dependencies
+### on a Mac ## {#ios-2-build-cool-mac .extraclass class="requirement-machine"}
 
 POCO LIBRARY
 
@@ -60,10 +62,12 @@ make POCO_TARGET_OSARCH=arm64 install
 
 This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
 
-## 3) Clone Online on a Mac
+## 3) Clone Online
+### on a Mac ## {#ios-3-clone-online-mac .extraclass class="requirement-machine"}
 Do a separate clone of the online repo on macOS, but don't do any autogen.sh, configure, or make, or open the Mobile Xcode project there yet. We call this the app folder.
 
-## 4) Clone Online on a Linux machine
+## 4) Clone Online
+### on a Linux machine ## {#ios-4-clone-online-linux .extraclass class="requirement-machine"}
 Do a separate clone of the online repo, run autogen.sh, and configure it with the --enable-iosapp option:
 
 ```bash

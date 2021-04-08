@@ -1,0 +1,17 @@
+.extraclass.requirement-machine::before {
+  content: 'requires:';
+  background-color: salmon;
+  padding: 0 4px;
+  color: white;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.extraclass.requirement-machine {
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 3px;
+  padding: 4px;
+  color: salmon;
+}

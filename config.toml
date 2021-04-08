@@ -45,7 +45,7 @@ type = "type"
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
-  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css", "sidebar.css"]
+  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css", "sidebar.css", "post-content.css"]
   customJS = []
 
   [params.social]
