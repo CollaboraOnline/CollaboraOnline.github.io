@@ -44,7 +44,7 @@ following content:
     --build=x86_64-unknown-linux-gnu
     --with-android-ndk=/home/$USER/Android/Sdk/ndk-bundle
     --with-android-sdk=/home/$USER/Android/Sdk
-    --with-distro=LibreOfficeAndroid
+    --with-distro=CPAndroid
     --enable-sal-log
 
 Then run `./autogen.sh && make`
@@ -267,5 +267,5 @@ So the result will look something like this:
     --build=x86_64-unknown-linux-gnu
     --with-android-ndk=/home/$USER/Android/Sdk/ndk-bundle
     --with-android-sdk=/home/$USER/Android/Sdk
-    --with-distro=LibreOfficeAndroid
+    --with-distro=CPAndroid
     --enable-sal-log
