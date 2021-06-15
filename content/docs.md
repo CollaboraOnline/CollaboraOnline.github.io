@@ -41,8 +41,8 @@ For more detailed and pretty instructions on integrating with various partner so
   + https://www.collaboraoffice.com/collabora-online-editor-api-reference/
 * Send patches via the [GitHub pull requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 * To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
-* To talk to other developers, please join the IRC [Freenode/#cool-dev channel](irc://irc.freenode.net/#cool-dev)
-  + you can get there directly via a [Webchat](https://webchat.freenode.net/#cool-dev)
+* To talk to other developers, please join the IRC [Libera.​Chat/#cool-dev channel](irc://irc.libera.chat/#cool-dev)
+  + you can get there directly via a [Webchat](https://web.libera.chat/#cool-dev)
   + you can also join via [Matrix](https://matrix.to/#/#collabora-online:matrix.org)
 * And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://twitter.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
 

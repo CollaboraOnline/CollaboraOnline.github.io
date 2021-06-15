@@ -43,6 +43,6 @@ as possible when reporting; attach a screenshot, or even a video!
 
 In case you have any problem reporting the bug, please don't hesitate to ask
 in the [forum](https://forum.collaboraonline.com/), or
-join the [Freenode/#cool-dev channel](irc://irc.freenode.net/#cool-dev) (you
-can get there directly via a [Webchat](https://webchat.freenode.net/#cool-dev))
+join the [Libera.Chat/#cool-dev channel](irc://irc.libera.chat/#cool-dev) (you
+can get there directly via a [Webchat](https://web.libera.chat/#cool-dev))
 and ask for the help there.
