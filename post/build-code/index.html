@@ -168,7 +168,7 @@
 <p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below</p>
 <pre><code class="language-bash">zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
 </code></pre>
-<pre><code class="language-bash">zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel
+<pre><code class="language-bash">zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
 </code></pre>
 <h3 id="libreoffice">LibreOffice</h3>
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
@@ -303,7 +303,7 @@ invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
 <h3 id="poco">POCO</h3>
 <p>If you use openSUSE Leap 15.1, you can use:</p>
 <pre><code>zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
-zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel
+zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
 </code></pre>
 <p>Similar repos exist for other openSUSE and SLE releases.</p>
 <p>Collabora provides Poco packages for Debian 8, Debian 9, Ubuntu 16.04 LTS,
