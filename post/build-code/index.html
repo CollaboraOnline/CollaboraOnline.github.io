@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <title>
-  
-     Build Collabora Online | 
+
+     Build Collabora Online |
     Collabora Online - Community Page
-  
+
 </title><meta name="description" content="Step-by-step build instructions"><meta name="author" content="Collabora">
 
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
@@ -19,17 +19,17 @@
 <link rel="icon" href="../../favicon.ico">
 
 
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
-    
 
 
 
-    
-        
+
+
+
             <link rel="stylesheet" href="../../dist/main.37ab3f61b95417873748.min.css">
-        
-    
+
+
 
 
 <link rel="stylesheet" href="../../css/buttons.css">
@@ -69,7 +69,7 @@
 
 </head>
 <body>
-    
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" id="navbar-main-menu">
     <div class="container">
         <a class="navbar-brand font-weight-bold" href="https://CollaboraOnline.github.io">Collabora Online - Community Page</a>
@@ -78,23 +78,23 @@
         </button>
         <div class="collapse navbar-collapse" id="main-menu">
             <ul class="navbar-nav ml-auto">
-                
+
                     <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
-                
+
                     <li class="nav-item"><a class="nav-link" href="../../docs/">Docs</a></li>
-                
+
                     <li class="nav-item"><a class="nav-link" href="https://www.collaboraoffice.com/code/">Downloads</a></li>
-                
-            
+
+
             </ul>
         </div>
     </div>
 </nav>
 
 
-    
+
 <main class="content-page container pt-7 pb-5">
-    
+
     <div class="row sidebar">
         <div class="col">
             <article><div class="row justify-content-center mb-3">
@@ -146,7 +146,7 @@
 <figure class="figure">
     <a href="../../images/gitpod-screenshot-COOL.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
         <img src="../../images/gitpod-screenshot-COOL.png"class="figure-img img-fluid"
-        /> 
+        />
     </a><figcaption class="figure-caption text-center">
             Gitpod, your development environment for Collabora Online on the cloud
         </figcaption>
@@ -168,7 +168,7 @@
 <p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below</p>
 <pre><code class="language-bash">zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
 </code></pre>
-<pre><code class="language-bash">zypper in poco-devel libcap-progs python3-polib libcap-devel npm
+<pre><code class="language-bash">zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel
 </code></pre>
 <h3 id="libreoffice">LibreOffice</h3>
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
@@ -303,7 +303,7 @@ invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
 <h3 id="poco">POCO</h3>
 <p>If you use openSUSE Leap 15.1, you can use:</p>
 <pre><code>zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
-zypper in poco-devel libcap-progs python3-polib libcap-devel npm
+zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel
 </code></pre>
 <p>Similar repos exist for other openSUSE and SLE releases.</p>
 <p>Collabora provides Poco packages for Debian 8, Debian 9, Ubuntu 16.04 LTS,
@@ -375,7 +375,7 @@ new content.</p>
     </nav>
                     </div>
                     <div class="col-lg-3">
-                      
+
                       <nav id="TableOfContents">
   <ul>
     <li><a href="#build-code-on-gitpod">Build CODE on Gitpod</a></li>
@@ -411,7 +411,7 @@ new content.</p>
 
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
-                        
+
                     </div>
                 </div><div class="row justify-content-center my-3">
                     <div class="col-lg-8">
@@ -424,10 +424,10 @@ new content.</p>
 
     <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
                 <div class="card h-100">
-    
+
     <a href="../../post/build-code-android/" class="d-block"><img data-src="../../images/build-code-android_huac5100e60a1934c074a52d6d3e225910_184792_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Build for Android"><div class="card-body">
             <h4 class="card-title">Build for Android</h4>
-            
+
             <div class="card-text">
                 Are you familiar with Android development environment and interested to learn more while helping the project?
 
@@ -438,10 +438,10 @@ new content.</p>
 
             </div><div class="col mb-3">
                 <div class="card h-100">
-    
+
     <a href="../../post/build-code-ios/" class="d-block"><img data-src="../../images/build-code-ios_hu0c680b6b12188094c124c07a6cd14b80_241352_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Build for iOS"><div class="card-body">
             <h4 class="card-title">Build for iOS</h4>
-            
+
             <div class="card-text">
                 Are you familiar with iOS development environment and interested to learn more while helping the project?
 
@@ -533,9 +533,9 @@ new content.</p>
                 </ul>
 
                 <p class="text-muted">
-                    
+
                         Unless a license is otherwise specified, content is under CC-BY-SA 3.0
-                    
+
                 </p>
 
                 <p class="text-muted">
@@ -546,12 +546,12 @@ new content.</p>
     </div>
 </footer>
 
-    
-    
-        
+
+
+
             <script src="../../dist/main.d608eadfe5ac0688902e.min.js"></script>
-        
-    
+
+
 
 
 
@@ -567,7 +567,7 @@ new content.</p>
 
 
 
-    
+
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -576,7 +576,7 @@ if (!doNotTrack) {
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 	ga('create', 'UA-XXXX', 'auto');
-	
+
 	ga('send', 'pageview');
 }
 </script>
