@@ -27,6 +27,9 @@ rm -rf public/*
 msg "Building the website"
 hugo
 
+msg "Adding readme file"
+cp -p readme.md public/readme.md
+
 msg "Pushing the updated \`public\` folder to the \`master\` branch"
 pushd public
 git add *
