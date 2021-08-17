@@ -67,7 +67,7 @@ We need LibreOffice core, POCO library and several other libraries and tools to 
 zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
 ```
 ```bash
-zypper in poco-devel libcap-progs python3-polib libcap-devel npm
+zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
 ```
 
 ### LibreOffice
@@ -258,7 +258,7 @@ You should now have two new directories extracted: `instdir` and `include`. You 
 If you use openSUSE Leap 15.1, you can use:
 
     zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
-    zypper in poco-devel libcap-progs python3-polib libcap-devel npm
+    zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
 
 Similar repos exist for other openSUSE and SLE releases.
 
