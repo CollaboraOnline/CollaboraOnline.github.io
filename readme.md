@@ -1,6 +1,14 @@
-# source branch
+**Table of Contents**
 
-This repository is used to host all source files used in the creation of the website via hugo. In turn, `master` branch is then only used to host the generated result (`public` folder)
+- [Work and push to the source branch](#work-and-push-to-the-source-branch)
+  - [Directory](#directory)
+  - [See how it looks without server](#see-how-it-looks-without-server)
+  - [Generate and Run local a server](#generate-and-Run-local-a-server)
+- [Deploy to master](#deploy-to-master)
+
+# Work and push to the source branch
+
+The branch with the name `source` hosts all source files used in the creation of the website via hugo. In turn, `master` branch is then only used to host the generated result (`public` folder)
 
 ## Directory
 * Posts (buildit, easyhacks, translate, filebugs) are written in markdown and are located in `content/post/*.md`
@@ -51,7 +59,7 @@ note: https://github.com/gohugoio/hugo/releases
 
 run `hugo server` in the root of your source branch local copy
 
-## To deploy to master:
+# Deploy to master:
 when we want to publish the generated static website (resulting from the changes in `source` branch) we can run `./deploy.sh`
 * the script checks for git status and will not proceed if the dir is not clean
 * removed any old generated version you might have locally (so anything inside of `public`)
