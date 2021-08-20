@@ -1,3 +1,21 @@
 #navbar-main-menu.bg-dark {
   background-color: #504999 !important;
 }
+
+#img-container-cooldays {
+  content: '';
+  width: 200px;
+  height: 200px;
+  background: url('https://www.collaboraoffice.com/wp-content/uploads/2021/08/cool-event.png');
+  margin-bottom: -100px;
+  position: relative;
+  float: right;
+  margin-right: -58px;
+  z-index: 1;
+}
+
+@media (max-width: 411px) {
+  #img-container-cooldays {
+    margin-right: 0;
+  }
+}
