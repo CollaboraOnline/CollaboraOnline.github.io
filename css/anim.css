@@ -15,6 +15,20 @@
   }
 }
 
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 4px 1px #00000020;
+  }
+
+  50% {
+    box-shadow: 0 0 4px 1px #00000050;
+  }
+
+  100% {
+    box-shadow: 0 0 4px 1px #00000020;
+  }
+}
+
 main.homepage h1.display-4 {
   transform: rotate(0deg);
   animation-name: code-anim;

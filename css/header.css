@@ -4,14 +4,24 @@
 
 #img-container-cooldays {
   content: '';
-  width: 200px;
-  height: 200px;
-  background: url('https://www.collaboraoffice.com/wp-content/uploads/2021/08/cool-event.png');
+  width: 182px;
+  height: 182px;
+  background: url('/images/circle-cooldays-final-noshadow.svg');
+  border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
   float: right;
   margin-right: -58px;
   z-index: 1;
+  animation-name: pulse-shadow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#img-container-cooldays:hover {
+  animation-play-state: paused;
+  box-shadow: 0 0 5px 1px #50499965 !important;
 }
 
 @media (max-width: 411px) {
