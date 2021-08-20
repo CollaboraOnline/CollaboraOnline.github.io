@@ -39,6 +39,8 @@ For more detailed and pretty instructions on integrating with various partner so
 * The API documentation is available here:
   + https://www.collaboraoffice.com/collabora-online-editor-api-reference/
 * Send patches via the [GitHub pull requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+* Read the full guide on [Contributing](https://github.com/CollaboraOnline/online/blob/master/CONTRIBUTING.md)
+* Read the [Code of Conduct](https://github.com/CollaboraOnline/online/blob/master/CODE_OF_CONDUCT.md)
 * To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
 * To talk to other developers, please join the IRC [Libera.​Chat/#cool-dev channel](irc://irc.libera.chat/#cool-dev)
   + you can get there directly via a [Webchat](https://web.libera.chat/#cool-dev)
