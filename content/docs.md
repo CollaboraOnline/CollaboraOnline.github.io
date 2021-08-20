@@ -43,7 +43,7 @@ For more detailed and pretty instructions on integrating with various partner so
 * To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
 * To talk to other developers, please join the IRC [Libera.​Chat/#cool-dev channel](irc://irc.libera.chat/#cool-dev)
   + you can get there directly via a [Webchat](https://web.libera.chat/#cool-dev)
-  + you can also join via [Matrix](https://matrix.to/#/#collabora-online:matrix.org)
+  + you can also join via [Matrix](https://matrix.to/#/#cool-dev:libera.chat)
 * And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://twitter.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
 
 ### Your first commit
