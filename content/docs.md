@@ -36,8 +36,7 @@ For more detailed and pretty instructions on integrating with various partner so
 ## Get involved
 * Checking out the source code to build it yourself is easy, head over to [GitHub's project page](https://github.com/CollaboraOnline/online)
 * After [building Collabora Online]({{< relref "build-code" >}} "How to build CODE") just do a `make run` and follow the link to tweak things live.
-* The API documentation is available here:
-  + https://www.collaboraoffice.com/collabora-online-editor-api-reference/
+* Browse the [SDK documentation](https://sdk.collaboraonline.com/) and find all about [postmessage api](https://sdk.collaboraonline.com/docs/postmessage_api.html), [integration examples](https://sdk.collaboraonline.com/docs/examples.html) and more
 * Send patches via the [GitHub pull requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 * Read the full guide on [Contributing](https://github.com/CollaboraOnline/online/blob/master/CONTRIBUTING.md)
 * Read the [Code of Conduct](https://github.com/CollaboraOnline/online/blob/master/CODE_OF_CONDUCT.md)
