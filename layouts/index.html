@@ -6,6 +6,7 @@
         <div class="col position-relative py-lg-7{{ if not .Site.Params.homepageImage }} py-7{{ else }} pb-5{{ end }}">
             {{- with .Site.Params.homepageImage -}}
                 <div class="homepage-image">
+									<a href="https://www.collaboraoffice.com/cool-days-2021-all-about-collabora-online/" id="img-container-cooldays"><img src="https://www.collaboraoffice.com/wp-content/uploads/2021/08/cool-event.png" class="img-fluid"></a>
                     <img src="{{ . | relURL }}" class="img-fluid">
                 </div>
             {{- end -}}

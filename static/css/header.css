@@ -1,3 +1,10 @@
 #navbar-main-menu.bg-dark {
   background-color: #504999 !important;
 }
+
+#img-container-cooldays {
+  margin-bottom: -100px;
+  position: relative;
+  float: right;
+  margin-right: -58px;
+}
