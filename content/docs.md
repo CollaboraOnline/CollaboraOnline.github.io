@@ -34,8 +34,7 @@ For more detailed and pretty instructions on integrating with various partner so
     ownCloud
 
 ## Get involved
-* Checking out the source code to build it yourself is easy:
-  + https://github.com/CollaboraOnline/online
+* Checking out the source code to build it yourself is easy, head over to [GitHub's project page](https://github.com/CollaboraOnline/online)
 * After [building Collabora Online]({{< relref "build-code" >}} "How to build CODE") just do a `make run` and follow the link to tweak things live.
 * The API documentation is available here:
   + https://www.collaboraoffice.com/collabora-online-editor-api-reference/
