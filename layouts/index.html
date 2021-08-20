@@ -6,7 +6,7 @@
         <div class="col position-relative py-lg-7{{ if not .Site.Params.homepageImage }} py-7{{ else }} pb-5{{ end }}">
             {{- with .Site.Params.homepageImage -}}
                 <div class="homepage-image">
-									<a href="https://www.collaboraoffice.com/cool-days-2021-all-about-collabora-online/" id="img-container-cooldays"><img src="https://www.collaboraoffice.com/wp-content/uploads/2021/08/cool-event.png" class="img-fluid"></a>
+                  <a href="https://www.collaboraoffice.com/cool-days-2021-all-about-collabora-online/" id="img-container-cooldays"><img src="https://www.collaboraoffice.com/wp-content/uploads/2021/08/cool-event.png" class="img-fluid"></a>
                     <img src="{{ . | relURL }}" class="img-fluid">
                 </div>
             {{- end -}}
@@ -17,7 +17,7 @@
                 <a href='https://www.collaboraoffice.com/code/'  class="btn btn-primary btn-co-primary btn-hero">
                   Download
                 </a>
-								<a href='https://github.com/CollaboraOnline/online'  class="btn btn-dark btn-co-secondary btn-hero">
+                <a href='https://github.com/CollaboraOnline/online'  class="btn btn-dark btn-co-secondary btn-hero">
                   GitHub
                 </a>
                 <a href='https://forum.collaboraonline.com/'  class="btn btn-light btn-co-secondary btn-hero">
@@ -26,7 +26,7 @@
             {{- end -}}
         </div>
     </div>
-		<!-- Latest article -->
+  <!-- Latest article -->
     {{- range first 1 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) -}}
         {{ $page := . }}
         <div class="latest row py-lg-5">
@@ -56,7 +56,7 @@
 
     <!-- Articles -->
     <div class="articles row row-cols-1 row-cols-lg-3">
-			{{ range after 1 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+      {{ range after 1 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
             <div class="col mb-3">
                 {{ .Render "card" }}
             </div>
