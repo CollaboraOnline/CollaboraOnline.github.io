@@ -51,7 +51,7 @@ type = "type"
   [params.social]
     rss = true
     email = "hello@collaboraoffice.com"
-    chat = "https://matrix.to/#/#collabora-online:matrix.org"
+    chat = "https://matrix.to/#/#cool-dev:libera.chat"
     facebook = "https://www.facebook.com/collaboraoffice/"
     twitter = "https://twitter.com/CollaboraOffice"
     linkedin = "https://www.linkedin.com/company/collabora-productivity-ltd/"
