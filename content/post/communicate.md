@@ -17,6 +17,15 @@ images = [
 A great way to get in touch, ask anything or get mentoring is through one of our official channels. . .
 <!--more-->
 ---
+## Weekly COOL meeting
+* 📅 Every Thursday
+* 🕙 ~ 10:00 UTC / 12:00 CEST
+* 💬 https://meet.jit.si/COOLWeeklyMeeting
+* 🗒 [Past meetings](https://forum.collaboraonline.com/c/news/meeting-minutes/)
+
+---
+
+## Get in touch
 * Chat on [Collabora Online forum](https://forum.collaboraonline.com/)
 * Chat via [Libera.Chat/#cool-dev channel](irc://irc.libera.chat/#cool-dev) (you can get there directly via a [Webchat](https://web.libera.chat/#cool-dev))
 * Chat via [Matrix](https://app.element.io/#/room/#cool-dev:libera.chat)
