@@ -76,12 +76,12 @@ extra complexity. So, we will instead download a daily built archive which conta
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-cp-6.4-assets.tar.gz
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-2021-assets.tar.gz
 ```
 
 Extract the contents of the archive:
 ```bash
-tar xvf core-cp-6.4-assets.tar.gz
+tar xvf core-co-2021-assets.tar.gz
 ```
 
 Mark the location of the extracted contents before changing directory:
@@ -163,12 +163,12 @@ extra complexity. So, we will instead download a daily built archive which conta
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-cp-6.4-assets.tar.gz
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-2021-assets.tar.gz
 ```
 
 Extract the contents of the archive:
 ```bash
-tar xvf core-cp-6.4-assets.tar.gz
+tar xvf core-co-2021-assets.tar.gz
 ```
 
 Mark the location of the extracted contents before changing directory:
@@ -238,17 +238,17 @@ To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Make sure you use and build the following specific core branch: `distro/collabora/cp-6.4`
+Make sure you use and build the following specific core branch: `distro/collabora/co-2021`
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
 ```
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-cp-6.4-assets.tar.gz
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-2021-assets.tar.gz
 ```
 
 Extract the archive:
 ```
-tar xvf core-cp-6.4-assets.tar.gz
+tar xvf core-co-2021-assets.tar.gz
 ```
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
