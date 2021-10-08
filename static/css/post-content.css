@@ -15,11 +15,11 @@
   padding: 4px;
   color: salmon;
 }
-*::-moz-selection { 
+::-moz-selection { 
   color: #504999;
   background: #fff;
 }
-*::selection {
+::selection {
   color: #504999;
   background: #fff;
 }
