@@ -44,6 +44,10 @@
   padding: 6px 24px;
 }
 
+.btn-edit-page {
+  float: right;
+}
+
 #easy-hacks-issues a {
   box-shadow: 0 0 2px 0 lightgray;
   padding: 24px;

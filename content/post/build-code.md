@@ -318,3 +318,5 @@ Alternatively you can export a variable like:
 
 to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.
+
+{{< edit-button to="/content/post/build-code.md" name="Edit page">}}
