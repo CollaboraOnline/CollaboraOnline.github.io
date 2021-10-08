@@ -58,6 +58,7 @@ type = "type"
     github = "https://github.com/CollaboraOnline/online"
     reddit = "https://www.reddit.com/r/CollaboraOnline/"
     mastodon = "https://mastodon.social/@CollaboraOffice"
+    telegram = "https://t.me/CollaboraOnline"
 		forum = "https://forum.collaboraonline.com/"
 
   [params.prismJS]
