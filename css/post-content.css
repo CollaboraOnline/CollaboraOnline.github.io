@@ -15,3 +15,13 @@
   padding: 4px;
   color: salmon;
 }
+
+::-moz-selection {
+  color: #fff;
+  background: #504999;
+}
+
+::selection {
+  color: #fff;
+  background: #504999;
+}
