@@ -34,3 +34,19 @@ main.homepage h1.display-4 {
   animation-name: code-anim;
   animation-duration: 1.2s;
 }
+/* Not part of animation but part of ux */
+::-moz-selection { 
+
+  color:  #504999;
+
+  background: #fff;
+
+}
+
+::selection {
+
+  color: #504999;
+
+  background: #fff;
+
+}
