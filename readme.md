@@ -60,7 +60,7 @@ note: https://github.com/gohugoio/hugo/releases
 run `hugo server` in the root of your source branch local copy
 
 # Deploy to master:
-when we want to publish the generated static website (resulting from the changes in `source` branch) we can run `./deploy.sh`
+when we want to publish the generated static website with URL https://collaboraonline.github.io/ (resulting from the changes in `source` branch) we can run `./deploy.sh`
 * the script checks for git status and will not proceed if the dir is not clean
 * removed any old generated version you might have locally (so anything inside of `public`)
 * runs `hugo` to generate the website into the `public` folder
