@@ -45,3 +45,5 @@ To see the details of an easy hack you are interested in below, just click on it
 {{< get-easy-hacks >}}
 
 {{< link-button to="https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Hack%22" name="View all">}}
+
+{{< edit-button to="/content/post/easyhacks.md" name="Edit page">}}

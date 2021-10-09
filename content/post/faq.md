@@ -268,3 +268,5 @@ You are welcome on the [Collabora Online forum](https://forum.collaboraonline.co
 .canon { background: white; width: 100%; height: auto;}
 </style>
 {{< /css.inline >}}
+
+{{< edit-button to="/content/post/faq.md" name="Edit page">}}

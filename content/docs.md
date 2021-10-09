@@ -62,3 +62,5 @@ For more detailed and pretty instructions on integrating with various partner so
 |-|-|-|
 | LibreOffice Conference 2020| [Integrating-OnLine-via-WOPI.pdf](https://speakerdeck.com/kendy/integrating-libreoffice-online-via-wopi) |
 | FOSDEM 2020 | [dialog-tunneling.pdf](https://speakerdeck.com/kendy/dialog-tunneling-in-libreoffie-online) |
+
+{{< edit-button to="/content/docs.md" name="Edit page">}}
