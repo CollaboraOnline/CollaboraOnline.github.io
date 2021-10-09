@@ -112,3 +112,6 @@ The configure script puts the app name as the `CFBundleDisplayName` property int
 	Xcode -> Preferences, "Source Control", uncheck "Enable Source Control"
 
 5.4) Now you can open the Mobile Xcode project, build it, and run it.
+
+
+{{< edit-button to="/content/post/build-code-ios.md" name="Edit page">}}
