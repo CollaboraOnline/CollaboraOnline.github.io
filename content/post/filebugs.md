@@ -46,3 +46,5 @@ in the [forum](https://forum.collaboraonline.com/), or
 join the [Libera.Chat/#cool-dev channel](irc://irc.libera.chat/#cool-dev) (you
 can get there directly via a [Webchat](https://web.libera.chat/#cool-dev))
 and ask for the help there.
+
+{{< edit-button to="/content/post/filebugs.md" name="Edit page">}}

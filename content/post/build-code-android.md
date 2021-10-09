@@ -269,3 +269,5 @@ So the result will look something like this:
     --with-android-sdk=/home/$USER/Android/Sdk
     --with-distro=CPAndroid
     --enable-sal-log
+
+{{< edit-button to="/content/post/build-code-android.md" name="Edit page">}}
