@@ -25,3 +25,7 @@
   color: #fff;
   background: #504999;
 }
+
+code.language-none::selection {
+  background: #ba2323;
+}
