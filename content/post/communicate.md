@@ -34,4 +34,4 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 * Twitter [@CollaboraOffice](https://twitter.com/CollaboraOffice) feel free to use `#cool_dev` in your tweets
 * Mastodon [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) feel free to use `#cool_dev` in your toots
 
-{{< edit-button to="/content/post/build-code-communicate.md" name="Edit page">}}
+{{< edit-button to="/content/post/communicate.md" name="Edit page">}}
