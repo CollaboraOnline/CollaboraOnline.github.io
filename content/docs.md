@@ -60,6 +60,7 @@ For more detailed and pretty instructions on integrating with various partner so
 
 | | | |
 |-|-|-|
+| COOL Days 2021 | [community website](https://github.com/CollaboraOnline/slides/blob/main/2021/pedro-silva_COOLDays-dev-2021_community-website.pdf) | 
 | LibreOffice Conference 2020| [Integrating-OnLine-via-WOPI.pdf](https://speakerdeck.com/kendy/integrating-libreoffice-online-via-wopi) |
 | FOSDEM 2020 | [dialog-tunneling.pdf](https://speakerdeck.com/kendy/dialog-tunneling-in-libreoffie-online) |
 
