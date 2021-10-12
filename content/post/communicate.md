@@ -21,6 +21,7 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 Do you need help with git? Or perhaps some other questions that are blocking you from contributing in this #hacktoberfest ? Come and ask them yourself!
 * 📅 Every Thursday
 * 🕙 ~ 09:20 UTC / 11:20 CEST
+* 💬 https://join.cool-days.org/b/ped-b1o-60z-8pb
 ---
 ## Weekly COOL meeting
 * 📅 Every Thursday
