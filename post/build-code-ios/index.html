@@ -1,393 +1,308 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html><html lang=en>
 <head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <title>
-  
-     Build for iOS | 
-    Collabora Online - Community Page
-  
-</title><meta name="description" content="Step-by-step build instructions"><meta name="author" content="Collabora">
-
-<link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="../../favicon-32x32.png " sizes="32x32" type="image/png">
-<link rel="icon" href="../../favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="../../manifest.json">
-<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#0c344b">
-<link rel="icon" href="../../favicon.ico">
-
-
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
-    
-
-
-
-    
-        
-            <link rel="stylesheet" href="../../dist/main.37ab3f61b95417873748.min.css">
-        
-    
-
-
-<link rel="stylesheet" href="../../css/buttons.css">
-<link rel="stylesheet" href="../../css/anim.css">
-<link rel="stylesheet" href="../../css/header.css">
-<link rel="stylesheet" href="../../css/dropdown.css">
-<link rel="stylesheet" href="../../css/sidebar.css">
-<link rel="stylesheet" href="../../css/post-content.css">
-
-
-<link rel="canonical" href="https://CollaboraOnline.github.io/post/build-code-ios/"><meta property="og:title" content="Build for iOS" />
-<meta property="og:description" content="Step-by-step build instructions" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://CollaboraOnline.github.io/post/build-code-ios/" /><meta property="og:image" content="https://CollaboraOnline.github.io/build-code-ios.jpg" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2020-09-30T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2020-09-30T00:00:00&#43;00:00" />
-
-
-
-<meta itemprop="name" content="Build for iOS">
-<meta itemprop="description" content="Step-by-step build instructions"><meta itemprop="datePublished" content="2020-09-30T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-09-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="654"><meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-ios.jpg">
-<meta itemprop="keywords" content="build,make," />
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://CollaboraOnline.github.io/build-code-ios.jpg"/>
-
-<meta name="twitter:title" content="Build for iOS"/>
-<meta name="twitter:description" content="Step-by-step build instructions"/>
-
-
+Build for iOS |
+Collabora Online - Community Page
+</title><meta name=description content="Step-by-step build instructions"><meta name=author content="Collabora">
+<link rel=apple-touch-icon href=../../apple-touch-icon.png sizes=180x180>
+<link rel=icon href=../../favicon-32x32.png sizes=32x32 type=image/png>
+<link rel=icon href=../../favicon-16x16.png sizes=16x16 type=image/png>
+<link rel=manifest href=../../manifest.json>
+<link rel=mask-icon href=../../safari-pinned-tab.svg color=#0c344b>
+<link rel=icon href=../../favicon.ico>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css>
+<link rel=stylesheet href=../../dist/main.37ab3f61b95417873748.min.css>
+<link rel=stylesheet href=../../css/buttons.css>
+<link rel=stylesheet href=../../css/anim.css>
+<link rel=stylesheet href=../../css/header.css>
+<link rel=stylesheet href=../../css/dropdown.css>
+<link rel=stylesheet href=../../css/sidebar.css>
+<link rel=stylesheet href=../../css/post-content.css>
+<link rel=canonical href=https://CollaboraOnline.github.io/post/build-code-ios/><meta property="og:title" content="Build for iOS">
+<meta property="og:description" content="Step-by-step build instructions">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://CollaboraOnline.github.io/post/build-code-ios/"><meta property="og:image" content="https://CollaboraOnline.github.io/build-code-ios.jpg"><meta property="article:section" content="post">
+<meta property="article:published_time" content="2020-09-30T00:00:00+00:00">
+<meta property="article:modified_time" content="2020-09-30T00:00:00+00:00">
+<meta itemprop=name content="Build for iOS">
+<meta itemprop=description content="Step-by-step build instructions"><meta itemprop=datePublished content="2020-09-30T00:00:00+00:00">
+<meta itemprop=dateModified content="2020-09-30T00:00:00+00:00">
+<meta itemprop=wordCount content="654"><meta itemprop=image content="https://CollaboraOnline.github.io/build-code-ios.jpg">
+<meta itemprop=keywords content="build,make,">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://CollaboraOnline.github.io/build-code-ios.jpg">
+<meta name=twitter:title content="Build for iOS">
+<meta name=twitter:description content="Step-by-step build instructions">
 </head>
 <body>
-    
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" id="navbar-main-menu">
-    <div class="container">
-        <a class="navbar-brand font-weight-bold" href="https://CollaboraOnline.github.io">Collabora Online - Community Page</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-menu">
-            <ul class="navbar-nav ml-auto">
-                
-                    <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
-                
-                    <li class="nav-item"><a class="nav-link" href="../../docs/">Docs</a></li>
-                
-                    <li class="nav-item"><a class="nav-link" href="https://www.collaboraoffice.com/code/">Downloads</a></li>
-                
-            
-            </ul>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" id=navbar-main-menu>
+<div class=container>
+<a class="navbar-brand font-weight-bold" href=https://CollaboraOnline.github.io>Collabora Online - Community Page</a>
+<button class=navbar-toggler type=button data-toggle=collapse data-target=#main-menu aria-controls=main-menu aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=main-menu>
+<ul class="navbar-nav ml-auto">
+<li class=nav-item><a class=nav-link href=../../>Home</a></li>
+<li class=nav-item><a class=nav-link href=../../docs/>Docs</a></li>
+<li class=nav-item><a class=nav-link href=https://www.collaboraoffice.com/code/>Downloads</a></li>
+</ul>
+</div>
+</div>
 </nav>
-
-
-    
 <main class="content-page container pt-7 pb-5">
-    
-    <div class="row sidebar">
-        <div class="col">
-            <article><div class="row justify-content-center mb-3">
-                                <div class="col-lg-10">
-                                    <img data-src="../../images/build-code-ios_hu0c680b6b12188094c124c07a6cd14b80_241352_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Build for iOS">
-                                </div>
-                            </div><div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="content">
-                            <p>Are you familiar with iOS development environment and interested to learn more while helping the project?</p>
-<h1 id="how-to-build-the-ios-app">How to build the iOS app:</h1>
-<h2 id="1-build-the-libreoffice-core-code">1) Build the LibreOffice core code</h2>
-<h3 id="ios-1-build-Lo-mac" class="extraclass requirement-machine">on a Mac</h3>
+<div class="row sidebar">
+<div class=col>
+<article><div class="row justify-content-center mb-3">
+<div class=col-lg-10>
+<img data-src=../../images/build-code-ios_hu0c680b6b12188094c124c07a6cd14b80_241352_900x500_fit_q75_box.jpg class="img-fluid rounded mx-auto d-block" alt="Build for iOS">
+</div>
+</div><div class="row justify-content-center">
+<div class=col-lg-8>
+<div class=content>
+<p>Are you familiar with iOS development environment and interested to learn more while helping the project?</p>
+<h1 id=how-to-build-the-ios-app>How to build the iOS app:</h1>
+<h2 id=1-build-the-libreoffice-core-code>1) Build the LibreOffice core code</h2>
+<h3 id=ios-1-build-Lo-mac class="extraclass requirement-machine">on a Mac</h3>
 <p>First you need to build the LibreOffice core code for iOS. Put in your autogen.input something like this:</p>
-<pre><code class="language-bash">--enable-debug
+<pre><code class=language-bash>--enable-debug
 --enable-dbgutil
 --enable-werror
 --with-distro=LibreOfficeiOS
 </code></pre>
 <p>and build &ldquo;normally&rdquo;. (Naturally, no unit tests will be run when cross-compiling LibreOffice.) Of course there is no requirement to use those &ndash;enable options; as a minimum, just <code>--with-distro=LibreOfficeiOS</code> should work.</p>
 <p>This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)</p>
-<h2 id="2-build-cool-dependencies">2) Build COOL Dependencies</h2>
-<h3 id="ios-2-build-cool-mac" class="extraclass requirement-machine">on a Mac</h3>
+<h2 id=2-build-cool-dependencies>2) Build COOL Dependencies</h2>
+<h3 id=ios-2-build-cool-mac class="extraclass requirement-machine">on a Mac</h3>
 <p>POCO LIBRARY</p>
 <p>2.1) The below instructions are for the so-called basic edition of
 POCO 1.10.1. (If there has been a newer release of POCO by the time
 you read this, adapt as necessary.) Get the POCO library source code
-from <a href="https://pocoproject.org/releases/poco-1.10.1/">https://pocoproject.org/releases/poco-1.10.1/</a> , the
+from <a href=https://pocoproject.org/releases/poco-1.10.1/>https://pocoproject.org/releases/poco-1.10.1/</a> , the
 poco-1.10.1.tar.gz archive.</p>
 <p>2.2) Unpack in some suitable location.</p>
 <p>2.3) Compile</p>
-<pre><code class="language-bash">./configure --config=iPhone --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-arm64
+<pre><code class=language-bash>./configure --config=iPhone --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-arm64
 </code></pre>
-<pre><code class="language-bash">make POCO_TARGET_OSARCH=arm64 -s -j4
+<pre><code class=language-bash>make POCO_TARGET_OSARCH=arm64 -s -j4
 </code></pre>
-<pre><code class="language-bash">make POCO_TARGET_OSARCH=arm64 install
+<pre><code class=language-bash>make POCO_TARGET_OSARCH=arm64 install
 </code></pre>
 <p>This will install the poco static libraries and headers to your $home directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in <code>$HOME</code> it doesn&rsquo;t pollute your root directories, doesn&rsquo;t need root permissions and can be removed easily.</p>
-<h2 id="3-clone-online">3) Clone Online</h2>
-<h3 id="ios-3-clone-online-mac" class="extraclass requirement-machine">on a Mac</h3>
+<h2 id=3-clone-online>3) Clone Online</h2>
+<h3 id=ios-3-clone-online-mac class="extraclass requirement-machine">on a Mac</h3>
 <p>Do a separate clone of the online repo on macOS, but don&rsquo;t do any autogen.sh, configure, or make, or open the Mobile Xcode project there yet. We call this the app folder.</p>
-<h2 id="4-clone-online">4) Clone Online</h2>
-<h3 id="ios-4-clone-online-linux" class="extraclass requirement-machine">on a Linux machine</h3>
+<h2 id=4-clone-online>4) Clone Online</h2>
+<h3 id=ios-4-clone-online-linux class="extraclass requirement-machine">on a Linux machine</h3>
 <p>Do a separate clone of the online repo, run autogen.sh, and configure it with the &ndash;enable-iosapp option:</p>
-<pre><code class="language-bash">./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot;
+<pre><code class=language-bash>./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot;
 </code></pre>
 <p>Then run make. That will produce files in loleaflet/dist, nothing else. Copy those to the corresponding folder in the app folder from step 2. This is how I do it:</p>
-<pre><code class="language-bash">make clean &amp;&amp; make &amp;&amp; tar cf - loleaflet/dist | ssh misan.local 'cd lo/online-ios-device &amp;&amp; rm -rf loleaflet/dist &amp;&amp; tar xvf -'
+<pre><code class=language-bash>make clean &amp;&amp; make &amp;&amp; tar cf - loleaflet/dist | ssh misan.local 'cd lo/online-ios-device &amp;&amp; rm -rf loleaflet/dist &amp;&amp; tar xvf -'
 </code></pre>
 <p>where <code>misan.local</code> is the macOS machine where I build the app, and <code>~/lo/online-ios-device</code> is the app folder from step 2.</p>
-<h2 id="5-building-for-ios">5) Building for iOS</h2>
-<h3 id="ios-5-clone-online-mac" class="extraclass requirement-machine">on a Mac</h3>
+<h2 id=5-building-for-ios>5) Building for iOS</h2>
+<h3 id=ios-5-clone-online-mac class="extraclass requirement-machine">on a Mac</h3>
 <p>Now back to your Mac, and with LibreOffice built from step 1, you must already have GNU autoconf installed on the Mac. Install also GNU automake and libtool. Preferably from sources, to make sure a potential installation of brew or similar will not pollute your environment with unknown stuff.</p>
 <p>As GNU libtool will be needed only for a very minimal part of the build (running the <code>autogen.sh</code> script, but not anything else), it&rsquo;s safest to install it somewhere that is not in your $PATH. Let&rsquo;s say <code>/opt/libtool</code>. (Installing Automake in the default <code>/usr/local</code>, which is in <code>$PATH</code>, is less risky.)</p>
 <p>Run the autogen.sh script in the app folder, with GNU libtool available, for instance:</p>
-<pre><code class="language-bash">PATH=/opt/libtool/bin:$PATH ./autogen.sh
+<pre><code class=language-bash>PATH=/opt/libtool/bin:$PATH ./autogen.sh
 </code></pre>
 <p>5.1) In the app folder from step 2, edit the <code>ios/Mobile.xcodeproj/project.pbxproj</code> file in your favourite text editor. Change <code>LOSRCDIR</code> and all instances of <code>../ios-device</code> to refer the the LibreOffice core source directory from step 1.</p>
 <p>5.2) In the app folder, run:</p>
-<pre><code class="language-bash">./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot; --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
+<pre><code class=language-bash>./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot; --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
 </code></pre>
 <p>The configure script puts the app name as the <code>CFBundleDisplayName</code> property into the <code>ios/Mobile/Info.plist</code> file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).</p>
 <p>5.3) Before opening the Xcode project for the first time</p>
 <ul>
 <li>seriously consider disabling source code indexing, this
 spawns a vast number of git processes, and consumes huge
-amounts of CPU &amp; memory:</li>
+amounts of CPU & memory:</li>
 </ul>
 <pre><code>Xcode -&gt; Preferences, &quot;Source Control&quot;, uncheck &quot;Enable Source Control&quot;
 </code></pre>
 <p>5.4) Now you can open the Mobile Xcode project, build it, and run it.</p>
-<a href='https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/source/content/post/build-code-ios.md'  class="btn btn-light btn-co-secondary btn-edit-page">
+<a href=https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/source/content/post/build-code-ios.md class="btn btn-light btn-co-secondary btn-edit-page">
 Edit page
 </a>
 <p></p>
-                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="../../tags/build">
-                                    <i class="fas fa-tag mr-2"></i>build
-                                </a><a class="badge badge-pill badge-light border mr-2" href="../../tags/make">
-                                    <i class="fas fa-tag mr-2"></i>make
-                                </a></div><ul class="share nav my-3 justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&text=Build%20for%20iOS">
-              <i class="fa-fw fab fa-twitter"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&title=Build%20for%20iOS">
-                <i class="fa-fw fab fa-linkedin-in"></i>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&t=Build%20for%20iOS">
-                <i class="fa-fw fab fa-facebook-f"></i>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&title=Build%20for%20iOS">
-                <i class="fa-fw fab fa-reddit-alien"></i>
-            </a>
-        </li>
-    </nav>
-                    </div>
-                    <div class="col-lg-3">
-                      
-                      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#1-build-the-libreoffice-core-code">1) Build the LibreOffice core code</a>
-      <ul>
-        <li><a href="#ios-1-build-Lo-mac">on a Mac</a></li>
-      </ul>
-    </li>
-    <li><a href="#2-build-cool-dependencies">2) Build COOL Dependencies</a>
-      <ul>
-        <li><a href="#ios-2-build-cool-mac">on a Mac</a></li>
-      </ul>
-    </li>
-    <li><a href="#3-clone-online">3) Clone Online</a>
-      <ul>
-        <li><a href="#ios-3-clone-online-mac">on a Mac</a></li>
-      </ul>
-    </li>
-    <li><a href="#4-clone-online">4) Clone Online</a>
-      <ul>
-        <li><a href="#ios-4-clone-online-linux">on a Linux machine</a></li>
-      </ul>
-    </li>
-    <li><a href="#5-building-for-ios">5) Building for iOS</a>
-      <ul>
-        <li><a href="#ios-5-clone-online-mac">on a Mac</a></li>
-      </ul>
-    </li>
-  </ul>
+</div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href=../../tags/build>
+<i class="fas fa-tag mr-2"></i>build
+</a><a class="badge badge-pill badge-light border mr-2" href=../../tags/make>
+<i class="fas fa-tag mr-2"></i>make
+</a></div><ul class="share nav my-3 justify-content-end">
+<li class=nav-item>
+<a class=nav-link target=_blank href="https://twitter.com/intent/tweet?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&text=Build%20for%20iOS">
+<i class="fa-fw fab fa-twitter"></i>
+</a>
+</li>
+<li class=nav-item>
+<a class=nav-link target=_blank href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&title=Build%20for%20iOS">
+<i class="fa-fw fab fa-linkedin-in"></i>
+</a>
+</li>
+<li class=nav-item>
+<a class=nav-link target=_blank href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&t=Build%20for%20iOS">
+<i class="fa-fw fab fa-facebook-f"></i>
+</a>
+</li>
+<li class=nav-item>
+<a class=nav-link target=_blank href="https://reddit.com/submit?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code-ios%2f&title=Build%20for%20iOS">
+<i class="fa-fw fab fa-reddit-alien"></i>
+</a>
+</li>
 </nav>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        
-                    </div>
-                </div><div class="row justify-content-center my-3">
-                    <div class="col-lg-8">
-                        <div id="commento"></div>
-                        <script src="https://commento.io"></script>
-                    </div>
-                </div></article>
-        </div>
-    </div>
-
-    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
-                <div class="card h-100">
-    
-    <a href="../../post/build-code-android/" class="d-block"><img data-src="../../images/build-code-android_huac5100e60a1934c074a52d6d3e225910_184792_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Build for Android"><div class="card-body">
-            <h4 class="card-title">Build for Android</h4>
-            
-            <div class="card-text">
-                Are you familiar with Android development environment and interested to learn more while helping the project?
-
-            </div>
-        </div>
-    </a>
 </div>
-
-            </div></div>
+<div class=col-lg-3>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#1-build-the-libreoffice-core-code>1) Build the LibreOffice core code</a>
+<ul>
+<li><a href=#ios-1-build-Lo-mac>on a Mac</a></li>
+</ul>
+</li>
+<li><a href=#2-build-cool-dependencies>2) Build COOL Dependencies</a>
+<ul>
+<li><a href=#ios-2-build-cool-mac>on a Mac</a></li>
+</ul>
+</li>
+<li><a href=#3-clone-online>3) Clone Online</a>
+<ul>
+<li><a href=#ios-3-clone-online-mac>on a Mac</a></li>
+</ul>
+</li>
+<li><a href=#4-clone-online>4) Clone Online</a>
+<ul>
+<li><a href=#ios-4-clone-online-linux>on a Linux machine</a></li>
+</ul>
+</li>
+<li><a href=#5-building-for-ios>5) Building for iOS</a>
+<ul>
+<li><a href=#ios-5-clone-online-mac>on a Mac</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class=col-lg-8>
+</div>
+</div><div class="row justify-content-center my-3">
+<div class=col-lg-8>
+<div id=commento></div>
+<script src=https://commento.io></script>
+</div>
+</div></article>
+</div>
+</div>
+<div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+<div class="card h-100">
+<a href=../../post/build-code-android/ class=d-block><img data-src=../../images/build-code-android_huac5100e60a1934c074a52d6d3e225910_184792_700x350_resize_q75_box.jpg class="card-img-top mx-auto d-block" alt="Build for Android"><div class=card-body>
+<h4 class=card-title>Build for Android</h4>
+<div class=card-text>
+Are you familiar with Android development environment and interested to learn more while helping the project?
+</div>
+</div>
+</a>
+</div>
+</div></div>
 </main>
-
-
-    <footer class="footer text-center bg-dark py-6">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                      <a href="https://forum.collaboraonline.com/" class="icons d-block">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <svg class="svg-inline--fa fa-github fa-w-16 fa-stack-1x fa-inverse" viewBox="0 0 21	21">
-                              <path fill="currentColor" d="M 10.992188 0 C 5.0243622 0 1.1842379e-15 4.8386488 0 10.808594 L 0 22 L 10.990234 21.990234 C 16.95806 21.990234 21.798828 16.96392 21.798828 10.996094 C 21.798828 5.028271 16.953655 1.1842379e-15 10.992188 0 z M 10.150391 3.4882812 C 11.966393 3.4422872 13.785771 4.1347699 15.134766 5.5292969 C 15.472573 5.7855818 15.789472 6.0768699 16.080078 6.4023438 C 16.114619 6.4405905 16.146146 6.4806168 16.179688 6.5195312 C 16.203349 6.547276 16.226716 6.5753007 16.25 6.6035156 C 16.276099 6.6349023 16.302574 6.6653664 16.328125 6.6972656 C 16.357346 6.7340075 16.389389 6.7671811 16.417969 6.8046875 C 16.409557 6.7966743 16.401023 6.789212 16.392578 6.78125 C 16.399359 6.7899742 16.407329 6.7978877 16.414062 6.8066406 C 18.888209 9.1454502 19.212954 12.967905 17.169922 15.691406 C 15.12689 18.414906 11.365424 19.172048 8.4277344 17.451172 L 4 17.974609 L 4 17.972656 L 3.9960938 17.972656 L 4.0078125 17.933594 L 4.7949219 13.970703 C 2.8209084 11.08858 3.3932077 7.1733321 6.109375 4.9765625 C 7.2976982 4.0154758 8.7227558 3.5244393 10.150391 3.4882812 z M 4 17.972656 L 4.0136719 17.96875 L 4 17.970703 L 4 17.972656 z " />
-                            </svg>
-                          </span>
-                      </a>
-                  </li><li class="list-inline-item"><a href="https://CollaboraOnline.github.io/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a></li><li class="list-inline-item">
-                        <a href="mailto:hello@collaboraoffice.com" class="icons d-block">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li><li class="list-inline-item">
-                        <a href="https://matrix.to/#/#cool-dev:libera.chat" class="icons d-block">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-comment-dots fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
-                            </span>
-                        </a>
-                    </li><li class="list-inline-item">
-                        <a href="https://t.me/CollaboraOnline" class="icons d-block">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-telegram fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
-                            </span>
-                        </a>
-                    </li><li class="list-inline-item">
-                            <a href="https://www.facebook.com/collaboraoffice/" class="icons d-block">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li><li class="list-inline-item">
-                            <a href="https://github.com/CollaboraOnline/online" class="icons d-block">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li><li class="list-inline-item">
-                            <a href="https://www.linkedin.com/company/collabora-productivity-ltd/" class="icons d-block">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li><li class="list-inline-item">
-                            <a href="https://mastodon.social/@CollaboraOffice" class="icons d-block">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li><li class="list-inline-item">
-                            <a href="https://www.reddit.com/r/CollaboraOnline/" class="icons d-block">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li><li class="list-inline-item">
-                            <a href="https://twitter.com/CollaboraOffice" class="icons d-block">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                </ul>
-
-                <p class="text-muted">
-                    
-                        Unless a license is otherwise specified, content is under CC-BY-SA 3.0
-                    
-                </p>
-
-                <p class="text-muted">
-                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
-                </p>
-            </div>
-        </div>
-    </div>
+<footer class="footer text-center bg-dark py-6">
+<div class=container>
+<div class=row>
+<div class=col>
+<ul class=list-inline>
+<li class=list-inline-item>
+<a href=https://forum.collaboraonline.com/ class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i><svg class="svg-inline--fa fa-github fa-w-16 fa-stack-1x fa-inverse" viewBox="0 0 21 21"><path fill="currentcolor" d="M10.992188.0C5.0243622.0 11842379e-22 4.8386488.0 10.808594V22L10.990234 21.990234c5.967826.0 10.808594-5.026314 10.808594-10.99414.0-5.967823-4.845173-10.996094-10.80664-10.996094zm-.841797 3.4882812C11.966393 3.4422872 13.785771 4.1347699 15.134766 5.5292969 15.472573 5.7855818 15.789472 6.0768699 16.080078 6.4023438 16.114619 6.4405905 16.146146 6.4806168 16.179688 6.5195312 16.203349 6.547276 16.226716 6.5753007 16.25 6.6035156 16.276099 6.6349023 16.302574 6.6653664 16.328125 6.6972656 16.357346 6.7340075 16.389389 6.7671811 16.417969 6.8046875 16.409557 6.7966743 16.401023 6.789212 16.392578 6.78125 16.399359 6.7899742 16.407329 6.7978877 16.414062 6.8066406 18.888209 9.1454502 19.212954 12.967905 17.169922 15.691406c-2.043032 2.7235-5.804498 3.480642-8.7421876 1.759766L4 17.974609V17.972656H3.9960938L4.0078125 17.933594l.7871094-3.962891C2.8209084 11.08858 3.3932077 7.1733321 6.109375 4.9765625c1.1883232-.9610867 2.6133808-1.4521232 4.041016-1.4882813zM4 17.972656 4.0136719 17.96875 4 17.970703V17.972656z"/></svg>
+</span>
+</a>
+</li><li class=list-inline-item><a href=https://CollaboraOnline.github.io/index.xml rel=alternate type=application/rss+xml class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+</span>
+</a></li><li class=list-inline-item>
+<a href=mailto:hello@collaboraoffice.com class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://matrix.to/#/#cool-dev:libera.chat class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i><svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-comment-dots fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 32C114.6 32 0 125.1.0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3.0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4.0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7.0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7.0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7.0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://t.me/CollaboraOnline class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i><svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-telegram fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://www.facebook.com/collaboraoffice/ class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://github.com/CollaboraOnline/online class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://www.linkedin.com/company/collabora-productivity-ltd/ class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://mastodon.social/@CollaboraOffice class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://www.reddit.com/r/CollaboraOnline/ class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li><li class=list-inline-item>
+<a href=https://twitter.com/CollaboraOffice class="icons d-block">
+<span class="fa-stack fa-lg">
+<i class="fa fa-circle fa-stack-2x"></i>
+<i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+</span>
+</a>
+</li>
+</ul>
+<p class=text-muted>
+Unless a license is otherwise specified, content is under CC-BY-SA 3.0
+</p>
+<p class=text-muted>
+Powered by <a href=https://gohugo.io target=_blank>Hugo</a> with <a href=https://github.com/puresyntax71/hugo-theme-chunky-poster target=_blank>Chunky Poster</a>.
+</p>
+</div>
+</div>
+</div>
 </footer>
-
-    
-    
-        
-            <script src="../../dist/main.d608eadfe5ac0688902e.min.js"></script>
-        
-    
-
-
-
-<script>
-    window.Prism = window.Prism || {};
-    window.Prism.manual = true;
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
-
-
-
-
-
-
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-XXXX', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
+<script src=../../dist/main.d608eadfe5ac0688902e.min.js></script>
+<script>window.Prism=window.Prism||{},window.Prism.manual=!0</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js></script>
+<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b,a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)},a[b].l=1*new Date,c=e.createElement(f),d=e.getElementsByTagName(f)[0],c.async=1,c.src=g,d.parentNode.insertBefore(c,d)}(window,document,'script','https://www.google-analytics.com/analytics.js','ga'),ga('create','UA-XXXX','auto'),ga('send','pageview'))</script>
 </body>
 </html>
