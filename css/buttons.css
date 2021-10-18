@@ -20,6 +20,7 @@
   color: #fff;
   border-radius: 3px;
   text-decoration: none;
+  margin: 5px 0px;
 }
 
 .btn-co-secondary:hover {
@@ -46,10 +47,6 @@
 
 .btn-edit-page {
   float: right;
-}
-
-.homepage .btn{
-  margin-bottom: 6px;
 }
 
 #easy-hacks-issues a {
