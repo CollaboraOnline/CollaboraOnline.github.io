@@ -8,7 +8,7 @@
 
 # Work and push to the source branch
 
-The branch with the name `source` hosts all source files used in the creation of the website via hugo. In turn, `master` branch is then only used to host the generated result (`public` folder)
+The branch with the name `master` hosts all source files used in the creation of the website via hugo. In turn, `gh-pages` branch is then only used to host the generated result (`public` folder)
 
 ## Directory
 * Posts (buildit, easyhacks, translate, filebugs) are written in markdown and are located in `content/post/*.md`
@@ -53,18 +53,18 @@ note: https://github.com/gohugoio/hugo/releases
 2. Repository and branches
 * Choose a local folder
 * Clone it `git clone https://github.com/CollaboraOnline/CollaboraOnline.github.io.git .`
-* Change branch to source `git checkout source`
-* `git worktree add -B master public origin/master` : Creates a local public folder and be able to manage both branches within the same working tree, allowing to have a mixed of branches checked out at the same time. With this we can generate the site into that public folder, and have it be mirrored in the master branch.
+* `git worktree add -B gh-pages public origin/gh-pages` : Creates a local public folder and be able to manage both branches within the same working tree, allowing to have a mixed of branches checked out at the same time. With this we can generate the site into that public folder.
 3. Generate live static website and run server (while watching files etc so it does not need to refresh it will do it automatically)
 
 run `hugo server` in the root of your source branch local copy
 
 # Deploy to master:
-when we want to publish the generated static website with URL https://collaboraonline.github.io/ (resulting from the changes in `source` branch) we can run `./deploy.sh`
+* There is already a GH action for that (it generates automatically)
+when we want to manually publish the generated static website with URL https://collaboraonline.github.io/ (resulting from the changes in `master` branch) we can run `./deploy.sh`
 * the script checks for git status and will not proceed if the dir is not clean
 * removed any old generated version you might have locally (so anything inside of `public`)
 * runs `hugo` to generate the website into the `public` folder
-* pushes the contents of `public` folder to master branch
+* pushes the contents of `public` folder to gh-pages branch
 
-* master: The master branch will store the public website files once they are all built.
-* source: additional branch to store all of the source files.
+* gh-pages: The master branch will store the public website files once they are all built.
+* master: additional branch to store all of the source files.

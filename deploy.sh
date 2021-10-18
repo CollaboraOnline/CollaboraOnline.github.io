@@ -10,7 +10,7 @@
 export LC_TIME=en_US.UTF-8
 
 # The commit message.
-MESSAGE="Generated from source branch on $(date)"
+MESSAGE="Generated from master branch on $(date)"
 
 msg() {
     printf "\033[1;32m :: %s\n\033[0m" "$1"
@@ -35,4 +35,4 @@ pushd public
 git add *
 git commit -m "$MESSAGE"
 popd
-git push origin master
+git push origin gh-pages
