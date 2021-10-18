@@ -48,6 +48,10 @@
   float: right;
 }
 
+.homepage .btn{
+  margin-bottom: 6px;
+}
+
 #easy-hacks-issues a {
   box-shadow: 0 0 2px 0 lightgray;
   padding: 24px;
