@@ -1,12 +1,12 @@
 **Table of Contents**
 
-- [Work and push to the source branch](#work-and-push-to-the-source-branch)
+- [Work and push to the master branch](#work-and-push-to-the-master-branch)
   - [Directory](#directory)
   - [See how it looks without server](#see-how-it-looks-without-server)
   - [Generate and Run local a server](#generate-and-Run-local-a-server)
 - [Deploy to master](#deploy-to-master)
 
-# Work and push to the source branch
+# Work and push to the master branch
 
 The branch with the name `master` hosts all source files used in the creation of the website via hugo. In turn, `gh-pages` branch is then only used to host the generated result (`public` folder)
 
@@ -56,7 +56,7 @@ note: https://github.com/gohugoio/hugo/releases
 * `git worktree add -B gh-pages public origin/gh-pages` : Creates a local public folder and be able to manage both branches within the same working tree, allowing to have a mixed of branches checked out at the same time. With this we can generate the site into that public folder.
 3. Generate live static website and run server (while watching files etc so it does not need to refresh it will do it automatically)
 
-run `hugo server` in the root of your source branch local copy
+run `hugo server` in the root of your master branch local copy
 
 # Deploy to master:
 * There is already a GH action for that (it generates automatically)
@@ -67,4 +67,4 @@ when we want to manually publish the generated static website with URL https://c
 * pushes the contents of `public` folder to gh-pages branch
 
 * gh-pages: The master branch will store the public website files once they are all built.
-* master: additional branch to store all of the source files.
+* master: main branch to store all of the source files and contribute to.
