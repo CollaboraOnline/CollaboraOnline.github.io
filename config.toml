@@ -60,6 +60,7 @@ type = "type"
     mastodon = "https://mastodon.social/@CollaboraOffice"
     telegram = "https://t.me/CollaboraOnline"
 		forum = "https://forum.collaboraonline.com/"
+    dev = "https://dev.to/collaboraonline"
 
   [params.prismJS]
     enable = true
