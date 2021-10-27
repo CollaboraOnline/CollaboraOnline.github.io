@@ -38,8 +38,7 @@ committers provided 95%+ of the commits in the last year. Checkout
 our [2020 infographic](https://www.collaboraoffice.com/community-news/updated-libreoffice-growth-infographic-2020/)
 or the [git repository](https://github.com/CollaboraOnline/online)
 
-We built on top of a huge volume of work from both LibreOffice [credits](https://www.libreoffice.org/about-us/credits/),
-however the Online functionality was created primarily by Collabora (as [announced in 2015](https://people.gnome.org/~michael/blog/2015-03-25-libreoffice-icewarp.html)) – or for a [detailed story](https://people.gnome.org/~michael/blog/2015-12-15-code.html).
+We built on top of a huge volume of work from LibreOffice (see [credits](https://www.libreoffice.org/about-us/credits/)), however the Online functionality was created primarily by Collabora (as [announced in 2015](https://people.gnome.org/~michael/blog/2015-03-25-libreoffice-icewarp.html)). Read the [detailed story](https://people.gnome.org/~michael/blog/2015-12-15-code.html)!
 
 The first integration for ownCloud (and later for Nextcloud) was built
 on top of Documents plugin (based on work of Frank Karlitschek and
