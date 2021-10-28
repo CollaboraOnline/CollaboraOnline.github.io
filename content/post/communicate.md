@@ -19,7 +19,8 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 ---
 ## Hacktoberfest
 Do you need help with git? Or perhaps some other questions that are blocking you from contributing in this #hacktoberfest ? Come and ask them yourself!
-* 📅 Every Thursday
+* 📅 Every Thursday | **Important: today 28 Oct there will be no meeting** to allow people to test and report bugs : )
+  * How: https://github.com/CollaboraOnline/online/discussions/3461
 * 🕙 ~ 09:20 UTC / 11:20 CEST
 * 💬 https://meet.jit.si/COOLWeeklyMeeting
 ---
