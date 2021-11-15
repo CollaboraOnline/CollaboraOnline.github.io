@@ -17,11 +17,23 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  text-decoration: none;
 }
 
 #img-container-cooldays:hover {
   animation-play-state: paused;
-  box-shadow: 0 0 5px 1px #50499965 !important;
+  box-shadow: 0 0 5px 1px #50499965, inset 0 -100px 50px 1px white !important;
+}
+
+#img-container-cooldays:hover::after {
+  content: 'Watch all the talks';
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  color: #504999;
+  position: relative;
+  top: 108px;
+  background-image: linear-gradient(to right, #fff0, white, #fff0);
 }
 
 @media (max-width: 411px) {
