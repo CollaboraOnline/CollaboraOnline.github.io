@@ -111,8 +111,9 @@ Run the generated configure script with proper parameters:
 ```bash
 ./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
             --with-lo-path=${LOCOREPATH}/instdir \
-            --enable-debug
+            --enable-debug --enable-cypress
 ```
+Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl
 
 Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
 ```bash
@@ -199,8 +200,9 @@ Run the generated configure script with proper parameters:
 ```bash
 ./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
             --with-lo-path=${LOCOREPATH}/instdir \
-            --enable-debug
+            --enable-debug --enable-cypress
 ```
+Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl
 
 Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
 ```bash
@@ -275,26 +277,35 @@ Alternatively you can build your own POCO. In that case, ideally use a recent ve
 
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make:
-
-    git clone git@github.com:CollaboraOnline/online.git collabora-online
-    cd collabora-online
-    ./autogen.sh
-    ./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
-                --with-lo-path=${MASTER}/instdir \
-                --with-poco-includes=<POCOINST>/include --with-poco-libs=<POCOINST>/lib \
-                --enable-debug
-    make -j `nproc`
-
-In the above, ${MASTER} is the location of the LibreOffice source tree you have built
-in the previous steps. POCOINST is the location of your custom-built or externally installed POCO library.
+```bash
+git clone git@github.com:CollaboraOnline/online.git collabora-online
+```
+```bash
+cd collabora-online
+```
+```bash
+./autogen.sh
+```
+```bash
+./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
+            --with-lo-path=${MASTER}/instdir \
+            --with-poco-includes=<POCOINST>/include --with-poco-libs=<POCOINST>/lib \
+            --enable-debug --enable-cypress
+```
+Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
+```bash
+make -j `nproc`
+```
+In the above, `${MASTER}` is the location of the LibreOffice source tree you have built
+in the previous steps. `POCOINST` is the location of your custom-built or externally installed POCO library.
 If you use POCO from a distro package (not a self-built version), you can omit
-the --with-poco-includes and --with-poco-libs from the above.
+the `--with-poco-includes` and `--with-poco-libs` from the above.
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the CAP_SYS_CHROOT capability,
+Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus you will be asked the root password when running make as it
-invokes sudo to run /sbin/setcap.
+invokes sudo to run `/sbin/setcap`.
 </section>
 
 ### Running
