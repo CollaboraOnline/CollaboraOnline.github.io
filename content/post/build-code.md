@@ -121,7 +121,7 @@ make -j $(nproc)
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
+Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus **you will be asked the root password** when running make as it
 invokes `sudo` to run `/sbin/setcap`.
 
@@ -209,7 +209,7 @@ make -j $(nproc)
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
+Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus **you will be asked the root password** when running make as it
 invokes `sudo` to run `/sbin/setcap`.
 </section>
@@ -292,7 +292,7 @@ the --with-poco-includes and --with-poco-libs from the above.
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the CAP_SYS_CHROOT capability,
+Note that the coolforkit program needs the CAP_SYS_CHROOT capability,
 thus you will be asked the root password when running make as it
 invokes sudo to run /sbin/setcap.
 </section>
@@ -308,13 +308,13 @@ see Writer, Calc, and Impress test documents in your browser.
 
 ### Hacking it
 
-When you change a JavaScript file (they are located under the loleaflet/
+When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue `make
 run` again, because the files are cached.
 
 Alternatively you can export a variable like:
 
-    export LOOL_SERVE_FROM_FS=1
+    export COOL_SERVE_FROM_FS=1
 
 to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.
