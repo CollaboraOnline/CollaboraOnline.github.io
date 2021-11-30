@@ -58,13 +58,13 @@ _First published on [ Collabora Online Community Roundup #2](https://www.collabo
 <section id="build-code-opensuse" class="build-code-content">
 
 ## Build CODE on openSUSE
-The instructions below have been prepared for and tested on openSUSE Leap 15.1. You might need to do small adjustments for other releases.
+The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.
 
 ### Dependencies
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below
 
 ```bash
-zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
+zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
 ```
 ```bash
 zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
@@ -257,9 +257,9 @@ You should now have two new directories extracted: `instdir` and `include`. You 
 
 ### POCO
 
-If you use openSUSE Leap 15.1, you can use:
+If you use openSUSE Leap 15.3, you can use:
 
-    zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.1/devel:libraries:c_c++.repo
+    zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
     zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
 
 Similar repos exist for other openSUSE and SLE releases.
