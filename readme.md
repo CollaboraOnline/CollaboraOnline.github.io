@@ -42,6 +42,7 @@ Note: ideally we would have this in one folder inside of CollaboraOffice.com so 
 1. Install Hugo: https://gohugo.io/getting-started/installing/
 * Official packages for Debian and Ubuntu: `sudo apt-get install hugo`
 * Official packages for Fedora, Red Hat and CentOS `sudo dnf install hugo`
+* Community packages for Arch Linux and its derivatives (such as Manjaro): `sudo pacman -Syu hugo`
 * For openSUSE
 	* Official for Tumbleweed: `sudo zypper install hugo` [view in store](https://software.opensuse.org/download/package?package=hugo&project=openSUSE%3AFactory)
 	* Experimental for Leap 15.2 packages [view in store](https://software.opensuse.org/download/package?package=hugo&project=devel%3Alanguages%3Ago)
