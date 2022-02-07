@@ -2,11 +2,11 @@
   background-color: #504999 !important;
 }
 
-#img-container-cooldays {
+#img-container-cat {
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-cooldays-final-noshadow.svg');
+  background: url('/images/circle-gsoc-cat.svg');
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
@@ -20,24 +20,33 @@
   text-decoration: none;
 }
 
-#img-container-cooldays:hover {
+#img-container-cat:hover {
   animation-play-state: paused;
   box-shadow: 0 0 5px 1px #50499965, inset 0 -100px 50px 1px white !important;
 }
 
-#img-container-cooldays:hover::after {
-  content: 'Watch all the talks';
+#img-container-cat:hover::after {
+  content: 'Summer of Code';
+  text-align: center;
+  display: block;
+  font-weight: normal;
+  color: #1a2430;
+  position: relative;
+  top: 104px;
+}
+
+#img-container-cat:hover::before {
+  content: 'Google';
   text-align: center;
   display: block;
   font-weight: bold;
-  color: #504999;
+  color: #1a2430;
   position: relative;
   top: 108px;
-  background-image: linear-gradient(to right, #fff0, white, #fff0);
 }
 
 @media (max-width: 411px) {
-  #img-container-cooldays {
+  #img-container-cat {
     margin-right: 0;
   }
 }
