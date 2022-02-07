@@ -2,6 +2,10 @@
   background-color: #504999 !important;
 }
 
+.navbar-brand {
+  margin-right: 0;
+}
+
 #img-container-cat {
   content: '';
   width: 182px;
