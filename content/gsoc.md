@@ -38,4 +38,3 @@ To see the details of an idea you are interested in below, just click on it to g
 {{< get-easy-projects >}}
 
 {{< link-button to="https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22" name="View all">}}
-{{< edit-button to="/content/gsoc.md" name="Edit page">}}
