@@ -31,7 +31,7 @@ author = "Hugo Authors"
 
 ### List of Ideas
 
-Below is a non-exhaustive list of the Easy Hacks. To view the complete list of the current Easy Hacks, you may check [the corresponding issues on GitHub.](https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22)
+This page lists the project ideas for Google Summer of Code. Check all [the corresponding issues on GitHub.](https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22)
 
 To see the details of an idea you are interested in below, just click on it to go to the related GitHub issue.
 
