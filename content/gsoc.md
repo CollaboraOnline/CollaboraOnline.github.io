@@ -34,7 +34,5 @@ author = "Hugo Authors"
 This page lists the project ideas for Google Summer of Code. Check all [the corresponding issues on GitHub.](https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22)
 
 To see the details of an idea you are interested in below, just click on it to go to the related GitHub issue.
-
 {{< get-easy-projects >}}
-
 {{< link-button to="https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22" name="View all">}}
