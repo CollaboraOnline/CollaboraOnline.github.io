@@ -24,7 +24,7 @@ author = "Hugo Authors"
       If you are a student looking forward to participating in the GSoC 2022, feel free to browse the growing idea list below. Have a cool idea that is not listed?
     </p>
     <a class="btn btn-light btn-co-secondary btn-edit-page" href="https://github.com/CollaboraOnline/online/issues/new?assignees=&labels=Easy+Project%2C+GSoC&template=easy-project-template.md&title=GSoC%3A+">Add it!</a><br><br><hr>
-    <p>For mentors: Ideal project has two mentors. Project ideas can be filled in the github repository with the `Easy Project`</p>
+    <p>For mentors: Ideal project has two mentors. Project ideas can be filled in the github repository with the <code>Easy Project</code> and <code>GSoC</code> tags, or by simply utilizing the template available form the <a href="https://github.com/CollaboraOnline/online/issues/new/choose">list</a>, or by pressing the `Add it` button.</p>
   </div>
 </div>
 <br>
