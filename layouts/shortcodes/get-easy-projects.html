@@ -19,7 +19,6 @@ $(document).ready(function () {
           var createdAt = new Date(issue.created_at);
           $("#easy-hacks-issues").append("<a id='issue-"+i+"' href='"+ issue.html_url +"'><strong>" + issue.number + " - " + issue.title + "</br></strong>" + createdAt + "</a></br>");
         });
-        $("#easy-hacks-issues-container").prepend("Sowing last "+ limit_issue +" from <strong>" + allIssues.length + "</strong> issues marked as Easy Projects</br></br>");
     });
 });
 </script>
