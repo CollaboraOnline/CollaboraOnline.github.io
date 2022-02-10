@@ -17,17 +17,22 @@ theme = "hugo-theme-chunky-poster"
     identifier = "home"
     name = "Home"
     url = "/"
-    weight = 10
+    weight = 1
   [[menu.main]]
     identifier = "downloads"
     name = "Downloads"
     url = "https://www.collaboraoffice.com/code/"
-    weight = 0
+    weight = 4
+  [[menu.main]]
+    identifier = "gsoc"
+    name = "GSoC"
+    url = "/gsoc/"
+    weight = 3
   [[menu.main]]
     identifier = "docs"
     name = "Docs"
     url = "/docs/"
-    weight = 0
+    weight = 2
 
 [taxonomies]
 category = "categories"
