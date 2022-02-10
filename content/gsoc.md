@@ -9,7 +9,7 @@ author = "Hugo Authors"
   <div class="card-body">
     <p class="badge badge-pill badge-primary bg-dark">General Information</p>
     <p>
-      The Collabora Online is planning to participate in Google Summer of Code in 2022.
+      The Collabora Online is <b>planning</b> to participate in the Google Summer of Code 2022.
     </p>
     <p>
       All students & developers are welcome to participate in the <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a> program with Collabora Online (once Collabora Productivity is accepted by Google)!
@@ -18,7 +18,7 @@ author = "Hugo Authors"
       We are welcoming contributions under the <a href="https://github.com/CollaboraOnline/online/blob/master/README.CONTRIBUTING.md">Online Contributor Representation & Certificate of Origin v1.0</a>. Additional information on <a href="https://github.com/CollaboraOnline/online/blob/master/CONTRIBUTING.md">contributing</a> might also be useful.
     </p>
     <p>
-      You can take look at the org page of the Summer of Code website for proceeding with the application process. [to do: link org page]
+      You can take look at the org page of the Summer of Code website for proceeding with the application process. [to do: link org page] pending
     </p>
     <p>
       If you are a student looking forward to participating in the GSoC 2022, feel free to browse the growing idea list below. Have a cool idea that is not listed?
