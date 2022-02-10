@@ -29,7 +29,12 @@
   box-shadow: 0 0 5px 1px #50499965, inset 0 -100px 50px 1px white !important;
 }
 
+#img-container-cat:hover::before,
 #img-container-cat:hover::after {
+  animation-play-state: paused;
+}
+
+#img-container-cat::after {
   content: 'Summer of Code';
   text-align: center;
   display: block;
@@ -37,9 +42,11 @@
   color: #1a2430;
   position: relative;
   top: 104px;
+  background-image: linear-gradient(to right, #fff0 40%, white 80%, #fff0 95%);
+  opacity: 0;
 }
 
-#img-container-cat:hover::before {
+#img-container-cat::before {
   content: 'Google';
   text-align: center;
   display: block;
@@ -47,6 +54,15 @@
   color: #1a2430;
   position: relative;
   top: 108px;
+  opacity: 0;
+}
+
+#img-container-cat::after,
+#img-container-cat::before {
+  animation-name: show-cat-txt;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @media (max-width: 411px) {

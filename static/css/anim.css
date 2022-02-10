@@ -29,6 +29,24 @@
   }
 }
 
+@keyframes show-cat-txt {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 100;
+  }
+
+  85% {
+    opacity: 100;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 main.homepage h1.display-4 {
   transform: rotate(0deg);
   animation-name: code-anim;
