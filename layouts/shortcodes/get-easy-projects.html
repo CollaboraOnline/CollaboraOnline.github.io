@@ -16,8 +16,10 @@ $(document).ready(function () {
         $.each(allIssues, function (i, issue) {
           if (i == limit_issue)
             return false;
-          var createdAt = new Date(issue.created_at);
-          $("#easy-hacks-issues").append("<a id='issue-"+i+"' href='"+ issue.html_url +"'><strong>" + issue.number + " - " + issue.title + "</br></strong>" + createdAt + "</a></br>");
+          var issueTitle = issue.title;
+          issueTitle = issueTitle.replace("GSoC: ", "")
+          $("#easy-hacks-issues").append("<a id='issue-"+i+"' href='"+ issue.html_url +"'><strong>" + issueTitle + "</strong></br><span style='text-align: right;display: block;'>" + issue.labels.pop().name + "</span></a></br>");
+          console.debug(issue.labels);
         });
     });
 });
