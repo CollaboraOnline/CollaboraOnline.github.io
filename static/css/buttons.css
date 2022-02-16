@@ -63,3 +63,7 @@
 #easy-hacks-issues a:hover {
   box-shadow: 0 0 2px 1px lightgray;
 }
+
+.badge-secondary {
+  background-color: gray;
+}
