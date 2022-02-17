@@ -48,11 +48,12 @@
   float: right;
 }
 
-.homepage .btn{
+.homepage .btn {
   margin-bottom: 6px;
 }
 
-#easy-hacks-issues a {
+#easy-hacks-issues a,
+#easy-projects-issues a {
   box-shadow: 0 0 2px 0 lightgray;
   padding: 24px;
   display: block;
@@ -60,8 +61,34 @@
   text-decoration: none !important;
 }
 
-#easy-hacks-issues a:hover {
+#easy-hacks-issues a:hover,
+#easy-projects-issues a:hover {
   box-shadow: 0 0 2px 1px lightgray;
+}
+
+#easy-projects-issues #issue-0::after {
+  content: '';
+  display: block;
+  background-image: url(https://user-images.githubusercontent.com/65948705/154491588-200cff6c-139f-4ab4-950a-cc8ce1be6436.png);
+  position: absolute;
+  width: 413px;
+  height: 512px;
+  right: -424px;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0 0 80px 10px;
+}
+
+#easy-projects-issues #issue-1::after {
+  content: '';
+  display: block;
+  background-image: url(https://user-images.githubusercontent.com/65948705/154537767-122b3ae1-c349-47de-b6e8-4c4407465385.png);
+  background-size: 465px auto;
+  position: absolute;
+  width: 465px;
+  height: 364px;
+  left: -475px;
+  border-bottom: 1px solid lightgray;
+  border-radius: 0 0 10px 80px;
 }
 
 .badge-secondary {
