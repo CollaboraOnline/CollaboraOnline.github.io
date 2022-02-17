@@ -1,6 +1,6 @@
 <br>
-<div id="easy-hacks-issues-container">
-  <div id="easy-hacks-issues">
+<div id="easy-projects-issues-container">
+  <div id="easy-projects-issues">
 
   </div>
 </div>
@@ -26,7 +26,7 @@ $(document).ready(function () {
           issueBody = issueBody.slice(index+39, index+139);
 
           issueTitle = issueTitle.replace("GSoC: ", "")
-          $("#easy-hacks-issues").append("<a id='issue-"+i+"' class='pt-2' href='"+ issue.html_url +"'><span class='badge badge-pill badge-secondary pb-1 mb-2 float-right'>" + issue.labels.pop().name + "</span><span class='clearfix'></span><strong>" + issueTitle + "</strong></br><p class='m-0' style='white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>" + issueBody + "</p></a></br>");
+          $("#easy-projects-issues").append("<a id='issue-"+i+"' class='pt-2' href='"+ issue.html_url +"'><span class='badge badge-pill badge-secondary pb-1 mb-2 float-right'>" + issue.labels.pop().name + "</span><span class='clearfix'></span><strong>" + issueTitle + "</strong></br><p class='m-0' style='white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>" + issueBody + "</p></a></br>");
           console.debug(issue.labels);
         });
     });
