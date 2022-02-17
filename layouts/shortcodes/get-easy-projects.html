@@ -11,6 +11,9 @@
 var urlToGetAllEasyHacks = "https://api.github.com/repos/CollaboraOnline/online/issues?state=open&labels=Easy+Project";
 
 $(document).ready(function () {
+    document.body.style.backgroundImage = "linear-gradient(to right, #ffffff50, #ffffff90 20%, #ffffff90 80%, #ffffff50), url('/images/gsoc-pattern-bg.webp')";
+    $('.justify-content-center > .col-lg-8').css("background-color", "white");
+    $('.justify-content-center > .col-lg-8::after').css("background-color", "white");
     $.getJSON(urlToGetAllEasyHacks, function (allIssues) {
       var limit_issue = 100;
         $.each(allIssues, function (i, issue) {
