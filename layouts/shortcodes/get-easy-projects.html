@@ -24,7 +24,7 @@ $(document).ready(function () {
           var text = issue.body;
 
           var index = text.indexOf("### Detailed");
-          issueBody = text.substr(index+39);
+          issueBody = text.slice(index+39, index+139);
 
           issueTitle = issueTitle.replace("GSoC: ", "")
           $("#easy-hacks-issues").append("<a id='issue-"+i+"' class='pt-2' href='"+ issue.html_url +"'><span class='badge badge-pill badge-secondary pb-1 mb-2 float-right'>" + issue.labels.pop().name + "</span><span class='clearfix'></span><strong>" + issueTitle + "</strong></br><p class='m-0' style='white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>" + issueBody + "</p></a></br>");
