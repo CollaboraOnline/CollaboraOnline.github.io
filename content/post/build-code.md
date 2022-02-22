@@ -405,7 +405,7 @@ run` again, because the files are cached.
 
 Alternatively you can export a variable like:
 
-    export LOOL_SERVE_FROM_FS=1
+    export COOL_SERVE_FROM_FS=1
 
 to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.
