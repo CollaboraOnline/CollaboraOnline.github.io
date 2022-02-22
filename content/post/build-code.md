@@ -122,7 +122,7 @@ make -j $(nproc)
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
+Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus **you will be asked the root password** when running make as it
 invokes `sudo` to run `/sbin/setcap`.
 
@@ -207,7 +207,7 @@ make -j $(nproc)
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
+Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus **you will be asked the root password** when running make as it
 invokes `sudo` to run `/sbin/setcap`.
 
@@ -291,7 +291,7 @@ make -j $(nproc)
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
+Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus **you will be asked the root password** when running make as it
 invokes `sudo` to run `/sbin/setcap`.
 </section>
@@ -383,7 +383,7 @@ the `--with-poco-includes` and `--with-poco-libs` from the above.
 
 If you want to run the unit tests, use `make check` instead of the `make`.
 
-Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
+Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus you will be asked the root password when running make as it
 invokes sudo to run `/sbin/setcap`.
 </section>
