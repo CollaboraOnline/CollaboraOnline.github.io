@@ -100,8 +100,8 @@ poco-1.10.1.tar.gz archive.</p>
 <p>Do a separate clone of the online repo, run autogen.sh, and configure it with the &ndash;enable-iosapp option:</p>
 <pre><code class=language-bash>./configure --enable-iosapp --with-app-name=&quot;My Own Mobile Office Suite&quot;
 </code></pre>
-<p>Then run make. That will produce files in loleaflet/dist, nothing else. Copy those to the corresponding folder in the app folder from step 2. This is how I do it:</p>
-<pre><code class=language-bash>make clean &amp;&amp; make &amp;&amp; tar cf - loleaflet/dist | ssh misan.local 'cd lo/online-ios-device &amp;&amp; rm -rf loleaflet/dist &amp;&amp; tar xvf -'
+<p>Then run make. That will produce files in browser/dist, nothing else. Copy those to the corresponding folder in the app folder from step 2. This is how I do it:</p>
+<pre><code class=language-bash>make clean &amp;&amp; make &amp;&amp; tar cf - browser/dist | ssh misan.local 'cd lo/online-ios-device &amp;&amp; rm -rf browser/dist &amp;&amp; tar xvf -'
 </code></pre>
 <p>where <code>misan.local</code> is the macOS machine where I build the app, and <code>~/lo/online-ios-device</code> is the app folder from step 2.</p>
 <h2 id=5-building-for-ios>5) Building for iOS</h2>
