@@ -74,10 +74,10 @@ Do a separate clone of the online repo, run autogen.sh, and configure it with th
 ./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite"
 ```
 
-Then run make. That will produce files in loleaflet/dist, nothing else. Copy those to the corresponding folder in the app folder from step 2. This is how I do it:
+Then run make. That will produce files in browser/dist, nothing else. Copy those to the corresponding folder in the app folder from step 2. This is how I do it:
 
 ```bash
-make clean && make && tar cf - loleaflet/dist | ssh misan.local 'cd lo/online-ios-device && rm -rf loleaflet/dist && tar xvf -'
+make clean && make && tar cf - browser/dist | ssh misan.local 'cd lo/online-ios-device && rm -rf browser/dist && tar xvf -'
 ```
 
 where `misan.local` is the macOS machine where I build the app, and `~/lo/online-ios-device` is the app folder from step 2.

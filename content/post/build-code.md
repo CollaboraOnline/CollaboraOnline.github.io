@@ -399,7 +399,7 @@ see Writer, Calc, and Impress test documents in your browser.
 
 ### Hacking it
 
-When you change a JavaScript file (they are located under the loleaflet/
+When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue `make
 run` again, because the files are cached.
 
