@@ -139,7 +139,7 @@ The instructions for Fedora will be here. [Submit an issue to contribute](https:
 
 ## Build CODE on Arch
 
-The instructions below have been prepared for and tested on Manjaro 21.2.0. You might need to do small adjustments for Arch and/or other Arch-based distributions.
+The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.
 
 ### Dependencies
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`.
@@ -151,7 +151,12 @@ sudo pacman -Syu libcap libcap-ng lib32-libcap libpng
 ```
 
 ```bash
-sudo pacman -Syu poco
+sudo pacman -Syu poco cppunit nodejs npm chromium
+```
+
+```bash
+sudo pacman -Syu python-pip
+sudo pip install polib lxlm
 ```
 
 ### LibreOffice
