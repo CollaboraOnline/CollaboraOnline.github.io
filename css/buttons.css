@@ -1,6 +1,6 @@
 .btn-co-primary {
   box-shadow: 0 1px 4px 2px #0000001a;
-  background-color: #504999;
+  background-color: #5c2983;
   border: 0.5px inset rgb(170, 50, 220, 0);
   color: #fff;
   border-radius: 3px;
@@ -8,10 +8,10 @@
 }
 
 .btn-co-primary:hover {
-  color: #504999;
+  color: #5c2983;
   background-color: white;
-  box-shadow: 0 1px 4px 2px #5049991a;
-  border: 0.5px inset #504999;
+  box-shadow: 0 1px 4px 2px #5c29831a;
+  border: 0.5px inset #5c2983;
 }
 
 .btn-co-secondary {
@@ -34,7 +34,7 @@
 }
 
 .btn-co-secondary.btn-light:hover {
-  box-shadow: 0 1px 4px 2px #5049991a;
+  box-shadow: 0 1px 4px 2px #5c29831a;
   color: #000;
   border: 1px solid #000;
 }

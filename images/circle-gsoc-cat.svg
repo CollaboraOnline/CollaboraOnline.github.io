@@ -42,7 +42,7 @@
       <path
          id="path1029"
          d="M 5.77,0 -2.88,5 V -5 Z"
-         style="fill:#504999;fill-opacity:1;fill-rule:evenodd;stroke:#504999;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#5c2983;fill-opacity:1;fill-rule:evenodd;stroke:#5c2983;stroke-width:1pt;stroke-opacity:1"
          transform="scale(0.2)"
          inkscape:connector-curvature="0" />
     </marker>
@@ -71,7 +71,7 @@
        inkscape:stockid="TriangleOutS">
       <path
          transform="scale(0.2)"
-         style="fill:#504999;fill-opacity:1;fill-rule:evenodd;stroke:#504999;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#5c2983;fill-opacity:1;fill-rule:evenodd;stroke:#5c2983;stroke-width:1pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1065"
          inkscape:connector-curvature="0" />
@@ -101,7 +101,7 @@
        inkscape:stockid="TriangleOutS">
       <path
          transform="scale(0.2)"
-         style="fill:#504999;fill-opacity:1;fill-rule:evenodd;stroke:#504999;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#5c2983;fill-opacity:1;fill-rule:evenodd;stroke:#5c2983;stroke-width:1pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1029-4"
          inkscape:connector-curvature="0" />
@@ -131,7 +131,7 @@
        inkscape:stockid="TriangleOutS">
       <path
          transform="scale(0.2)"
-         style="fill:#504999;fill-opacity:1;fill-rule:evenodd;stroke:#504999;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#5c2983;fill-opacity:1;fill-rule:evenodd;stroke:#5c2983;stroke-width:1pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1029-0"
          inkscape:connector-curvature="0" />
@@ -162,7 +162,7 @@
       <path
          inkscape:connector-curvature="0"
          transform="scale(0.2)"
-         style="fill:#504999;fill-opacity:1;fill-rule:evenodd;stroke:#504999;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#5c2983;fill-opacity:1;fill-rule:evenodd;stroke:#5c2983;stroke-width:1pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1029-2" />
     </marker>
@@ -193,7 +193,7 @@
          inkscape:connector-curvature="0"
          id="path1065-3"
          d="M 5.77,0 -2.88,5 V -5 Z"
-         style="fill:#504999;fill-opacity:1;fill-rule:evenodd;stroke:#504999;stroke-width:1pt;stroke-opacity:1"
+         style="fill:#5c2983;fill-opacity:1;fill-rule:evenodd;stroke:#5c2983;stroke-width:1pt;stroke-opacity:1"
          transform="scale(0.2)" />
     </marker>
     <marker
@@ -469,7 +469,7 @@
          style="stroke-width:7.22742" />
       <polygon
          points="293.114,293.823 297.46,317.153 265.619,398.964 261.485,372.647 "
-         fill="#504999"
+         fill="#5c2983"
          id="polygon44-7"
          style="stroke-width:7.22742" />
       <path
