@@ -1,5 +1,5 @@
 #navbar-main-menu.bg-dark {
-  background-color: #504999 !important;
+  background-color: #5c2983 !important;
 }
 
 .navbar-brand {
@@ -26,7 +26,7 @@
 
 #img-container-cat:hover {
   animation-play-state: paused;
-  box-shadow: 0 0 5px 1px #50499965, inset 0 -100px 50px 1px white !important;
+  box-shadow: 0 0 5px 1px #5c298365, inset 0 -100px 50px 1px white !important;
 }
 
 #img-container-cat:hover::before,

@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
   .sidebar #TableOfContents {
-    box-shadow: 1px 0 3px 0 #00000035, -1px 0 #504999;
+    box-shadow: 1px 0 3px 0 #00000035, -1px 0 #5c2983;
     border: none !important;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -12,8 +12,8 @@
 
 .sidebar #TableOfContents {
   background-color: #fafafa;
-  border-bottom: 1px dashed #504999;
-  border-top: 1px dashed #504999;
+  border-bottom: 1px dashed #5c2983;
+  border-top: 1px dashed #5c2983;
   padding: 18px;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .sidebar #TableOfContents > ul > li > a {
-  color: #504999;
+  color: #5c2983;
   font-weight: bold;
 }
 
