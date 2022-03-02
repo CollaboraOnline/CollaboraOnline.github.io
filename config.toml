@@ -45,7 +45,8 @@ type = "type"
   Subtitle= "CODE"
   author = "Collabora"
   description = "Collabora Online Development Edition"
-  homepageImage = "/images/homepage-image.jpg"
+  homepageImage = "/images/homepage-image.png"
+  homepageImageLaptop = "/images/notebook.jpg"
   share = true
   showLanguageSwitcher = false
 

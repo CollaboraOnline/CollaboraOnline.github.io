@@ -4,12 +4,15 @@
     <!-- Hero -->
     <div class="hero row">
         <div class="col position-relative py-lg-7{{ if not .Site.Params.homepageImage }} py-7{{ else }} pb-5{{ end }}">
-            {{- with .Site.Params.homepageImage -}}
+                <a href="/gsoc" id="img-container-cat"></a>
                 <div class="homepage-image">
-                  <a href="/gsoc" id="img-container-cat"></a>
-                    <img src="{{ . | relURL }}" class="img-fluid">
+                  {{- with .Site.Params.homepageImageLaptop -}}
+                    <img src="{{ . | relURL }}" class="img-fluid home-laptop">
+                  {{- end -}}
+                  {{- with .Site.Params.homepageImage -}}
+                    <img src="{{ . | relURL }}" class="img-fluid home-screenshot">
+                  {{- end -}}
                 </div>
-            {{- end -}}
 
             <h1 class="display-4">{{ .Site.Params.subtitle }}</h1>
             {{- with .Site.Params.description -}}
