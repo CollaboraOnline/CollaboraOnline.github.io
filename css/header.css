@@ -6,6 +6,47 @@
   margin-right: 0;
 }
 
+.hero h3 {
+  font-size: calc(1.32187rem + 0.3vw);
+}
+
+.home-laptop {
+  visibility: hidden;
+}
+
+.home-screenshot {
+  left: 50%;
+  position: absolute;
+  top: 2%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 4px;
+  box-shadow: 0 12px 20px 0 lightgray;
+}
+
+.homepage-image {
+  right: 0;
+  top: 14px;
+}
+
+@media (min-width: 992px) {
+  .homepage-image {
+    position: absolute;
+    width: 50%;
+  }
+
+  .home-laptop {
+    visibility: visible;
+    margin: 0 auto;
+    max-height: 67vh;
+  }
+
+  .home-screenshot {
+    height: 78%;
+    box-shadow: none;
+  }
+}
+
 #img-container-cat {
   content: '';
   width: 182px;
