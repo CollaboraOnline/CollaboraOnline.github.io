@@ -47,6 +47,7 @@ type = "type"
   description = "Collabora Online Development Edition"
   homepageImage = "/images/homepage-image.png"
   homepageImageLaptop = "/images/notebook.jpg"
+  homepageCAT = true
   share = true
   showLanguageSwitcher = false
 

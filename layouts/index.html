@@ -4,7 +4,9 @@
     <!-- Hero -->
     <div class="hero row">
         <div class="col position-relative py-lg-7{{ if not .Site.Params.homepageImage }} py-7{{ else }} pb-5{{ end }}">
-                <a href="/gsoc" id="img-container-cat"></a>
+                {{ if .Site.Params.homepageCAT -}}
+                  <a href="/gsoc" id="img-container-cat"></a>
+                {{- end -}}
                 <div class="homepage-image">
                   {{- with .Site.Params.homepageImageLaptop -}}
                     <img src="{{ . | relURL }}" class="img-fluid home-laptop">
