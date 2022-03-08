@@ -29,7 +29,7 @@ Collabora Online - Community Page
 <meta itemprop=name content="Build Collabora Online">
 <meta itemprop=description content="Step-by-step build instructions"><meta itemprop=datePublished content="2020-10-01T00:00:00+00:00">
 <meta itemprop=dateModified content="2020-10-01T00:00:00+00:00">
-<meta itemprop=wordCount content="1863"><meta itemprop=image content="https://CollaboraOnline.github.io/build-code.jpg">
+<meta itemprop=wordCount content="2213"><meta itemprop=image content="https://CollaboraOnline.github.io/build-code.jpg">
 <meta itemprop=keywords content="build,make,">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://CollaboraOnline.github.io/build-code.jpg">
@@ -161,17 +161,13 @@ invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
 </section>
 <section id=build-code-fedora class=build-code-content>
 <h2 id=build-code-on-fedora>Build CODE on Fedora</h2>
-<p>The instructions for Fedora will be here. <a href=https://github.com/CollaboraOnline/online/issues/new>Submit an issue to contribute</a>!</p>
-</section>
-<section id=build-code-arch class=build-code-content>
-<h2 id=build-code-on-arch>Build CODE on Arch</h2>
-<p>The instructions below have been prepared for and tested on Manjaro 21.2.0. You might need to do small adjustments for Arch and/or other Arch-based distributions.</p>
+<p>The instructions below have been prepared for and tested on Fedora 35. You might need to do small adjustments for Fedora-based distributions.</p>
 <h3 id=dependencies-1>Dependencies</h3>
 <p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>.</p>
 <p>Open a terminal and follow the steps below:</p>
-<pre><code class=language-bash>sudo pacman -Syu libcap libcap-ng lib32-libcap libpng
-</code></pre>
-<pre><code class=language-bash>sudo pacman -Syu poco
+<pre><code class=language-bash>sudo dnf install poco-devel gcc gcc-c++ python3-polib \
+                 libtool libstdc++-devel libpng libpng-devel \
+                 cppunit-devel nodejs-devel
 </code></pre>
 <h3 id=libreoffice-1>LibreOffice</h3>
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
@@ -207,6 +203,58 @@ make. <strong>Before moving on, <a href=https://github.com/CollaboraOnline/onlin
 <pre><code class=language-bash>make -j $(nproc)
 </code></pre>
 <p>If you want to run the unit tests, use <code>make check</code> instead of the <code>make</code>.</p>
+<p>Note that the loolforkit program needs the <code>CAP_SYS_CHROOT</code> capability,
+thus <strong>you will be asked the root password</strong> when running make as it
+invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
+<p>Found a problem? <a href=https://github.com/CollaboraOnline/online/issues/new>Submit an issue to contribute</a>!</p>
+</section>
+<section id=build-code-arch class=build-code-content>
+<h2 id=build-code-on-arch>Build CODE on Arch</h2>
+<p>The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.</p>
+<h3 id=dependencies-2>Dependencies</h3>
+<p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>.</p>
+<p>Open a terminal and follow the steps below:</p>
+<pre><code class=language-bash>sudo pacman -Syu libcap libcap-ng lib32-libcap libpng
+</code></pre>
+<pre><code class=language-bash>sudo pacman -Syu poco cppunit nodejs npm chromium
+</code></pre>
+<pre><code class=language-bash>sudo pacman -Syu python-pip
+sudo pip install polib lxlm
+</code></pre>
+<h3 id=libreoffice-2>LibreOffice</h3>
+<p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-2021-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class=language-bash>tar xvf core-co-2021-assets.tar.gz
+</code></pre>
+<p>Mark the location of the extracted contents before changing directory:</p>
+<pre><code class=language-bash>export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id=building-code-2>Building CODE</h3>
+<p>You need to clone it, run autoconf/automake, configure and build using the GNU
+make. <strong>Before moving on, <a href=https://github.com/CollaboraOnline/online/fork>fork the repo</a> if you haven&rsquo;t done that yet.</strong></p>
+<p>Now clone the forked repo:</p>
+<pre><code class=language-bash>git clone git@github.com:YOURUSERNAME/online.git collabora-online
+</code></pre>
+<p>Switch to the local clone&rsquo;s directory:</p>
+<pre><code class=language-bash>cd collabora-online
+</code></pre>
+<p>Run autogen to generate the configure file:</p>
+<pre><code class=language-bash>./autogen.sh
+</code></pre>
+<p>(install all missing packages that <code>./autogen.sh</code> couldn&rsquo;t find on your system)</p>
+<p>Run the generated configure script with proper parameters:</p>
+<pre><code class=language-bash>./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
+            --with-lo-path=${LOCOREPATH}/instdir \
+            --enable-debug --enable-cypress
+</code></pre>
+<p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p>
+<p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p>
+<pre><code class=language-bash>make -j $(nproc)
+</code></pre>
+<p>If you want to run the unit tests, use <code>make check</code> instead of the <code>make</code>.</p>
 <p>Note that the coolforkit program needs the <code>CAP_SYS_CHROOT</code> capability,
 thus <strong>you will be asked the root password</strong> when running make as it
 invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
@@ -216,7 +264,7 @@ invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
 <h2 id=build-code-on-ubuntu>Build CODE on Ubuntu</h2>
 <p>The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
 adjustments for other releases.</p>
-<h3 id=dependencies-2>Dependencies</h3>
+<h3 id=dependencies-3>Dependencies</h3>
 <p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below.</p>
 <p>Lets start by installing the <code>dialog</code> package, which will be needed while installaing some
 of the other packages:</p>
@@ -228,7 +276,7 @@ of the other packages:</p>
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
                     pkg-config fontconfig
 </code></pre>
-<h3 id=libreoffice-2>LibreOffice</h3>
+<h3 id=libreoffice-3>LibreOffice</h3>
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
 extra complexity. So, we will instead download a daily built archive which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
 <p>Now download a daily-built archive of LibreOffice core:</p>
@@ -240,7 +288,7 @@ extra complexity. So, we will instead download a daily built archive which conta
 <p>Mark the location of the extracted contents before changing directory:</p>
 <pre><code class=language-bash>export LOCOREPATH=$(pwd)
 </code></pre>
-<h3 id=building-code-2>Building CODE</h3>
+<h3 id=building-code-3>Building CODE</h3>
 <p>You need to clone it, run autoconf/automake, configure and build using the GNU
 make. <strong>Before moving on, <a href=https://github.com/CollaboraOnline/online/fork>fork the repo</a> if you haven&rsquo;t done that yet.</strong></p>
 <p>Now clone the forked repo:</p>
@@ -268,7 +316,7 @@ invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
 </section>
 <section id=build-code-general class=build-code-content>
 <h2 id=build-code>Build CODE</h2>
-<h3 id=dependencies-3>Dependencies</h3>
+<h3 id=dependencies-4>Dependencies</h3>
 <p>The CODE must be built on Linux, and you need the following:</p>
 <ul>
 <li>LibreOffice
@@ -287,7 +335,7 @@ invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
 </ul>
 </li>
 </ul>
-<h3 id=libreoffice-3>LibreOffice</h3>
+<h3 id=libreoffice-4>LibreOffice</h3>
 <p>CODE needs LibreOffice to be built to run. However, you have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.</p>
 <h4 id=option-a---build-libreoffice-locally-recommended>Option A - Build LibreOffice locally (Recommended)</h4>
 <p>To build LibreOffice, follow the LibreOffice building pages:</p>
@@ -313,7 +361,7 @@ see:</p>
 <p><a href=https://www.collaboraoffice.com/code/linux-packages/>https://www.collaboraoffice.com/code/linux-packages/</a></p>
 <p>Alternatively you can build your own POCO. In that case, ideally use a recent version like
 1.10.1 or newer.</p>
-<h3 id=building-code-3>Building CODE</h3>
+<h3 id=building-code-4>Building CODE</h3>
 <p>You need to clone it, run autoconf/automake, configure and build using the GNU
 make:</p>
 <pre><code class=language-bash>git clone git@github.com:CollaboraOnline/online.git collabora-online
@@ -395,27 +443,33 @@ Edit page
 <li><a href=#building-code>Building CODE</a></li>
 </ul>
 </li>
-<li><a href=#build-code-on-fedora>Build CODE on Fedora</a></li>
-<li><a href=#build-code-on-arch>Build CODE on Arch</a>
+<li><a href=#build-code-on-fedora>Build CODE on Fedora</a>
 <ul>
 <li><a href=#dependencies-1>Dependencies</a></li>
 <li><a href=#libreoffice-1>LibreOffice</a></li>
 <li><a href=#building-code-1>Building CODE</a></li>
 </ul>
 </li>
-<li><a href=#build-code-on-ubuntu>Build CODE on Ubuntu</a>
+<li><a href=#build-code-on-arch>Build CODE on Arch</a>
 <ul>
 <li><a href=#dependencies-2>Dependencies</a></li>
 <li><a href=#libreoffice-2>LibreOffice</a></li>
 <li><a href=#building-code-2>Building CODE</a></li>
 </ul>
 </li>
-<li><a href=#build-code>Build CODE</a>
+<li><a href=#build-code-on-ubuntu>Build CODE on Ubuntu</a>
 <ul>
 <li><a href=#dependencies-3>Dependencies</a></li>
 <li><a href=#libreoffice-3>LibreOffice</a></li>
-<li><a href=#poco>POCO</a></li>
 <li><a href=#building-code-3>Building CODE</a></li>
+</ul>
+</li>
+<li><a href=#build-code>Build CODE</a>
+<ul>
+<li><a href=#dependencies-4>Dependencies</a></li>
+<li><a href=#libreoffice-4>LibreOffice</a></li>
+<li><a href=#poco>POCO</a></li>
+<li><a href=#building-code-4>Building CODE</a></li>
 <li><a href=#running>Running</a></li>
 <li><a href=#hacking-it>Hacking it</a></li>
 </ul>
