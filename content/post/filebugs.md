@@ -16,7 +16,7 @@ images = [
 +++
 
 Sorry about that — but you can help us resolving it by creating a great bug
-report! See the steps how to do it, and [file the bug on GitHub](https://github.com/CollaboraOnline/online/issues/new "File the bug on GitHub").
+report! See the steps how to do it, and [file the bug on GitHub](https://github.com/CollaboraOnline/online/issues/new/choose "File the bug on GitHub").
 
 <!--more-->
 ### How to file a good bug report
@@ -24,7 +24,7 @@ report! See the steps how to do it, and [file the bug on GitHub](https://github.
 When you find a bug, please make sure you can reproduce it and identify
 the necessary steps to trigger it. Then describe the steps on GitHub:
 
-    https://github.com/CollaboraOnline/online/issues/new
+    https://github.com/CollaboraOnline/online/issues/new/choose
 
 If the bug is specific to a file, please try to create a blank one and add just
 the content that causes the problem.
