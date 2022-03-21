@@ -1,6 +1,6 @@
 +++
-title = "GSoC 2022 ideas page"
-description = "Google Summer of Code 2022 ideas page"
+title = "Ideas page"
+description = "List of project ideas that capture the development needs of Collabora Online."
 date = "2022-02-07"
 aliases = ["about-us","about-hugo","contact"]
 author = "Hugo Authors"
@@ -9,19 +9,16 @@ author = "Hugo Authors"
   <div class="card-body">
     <p class="badge badge-pill badge-primary bg-dark">General Information</p>
     <p>
-      The Collabora Online is <b>hoping</b> to participate in the Google Summer of Code 2022.
+      This is a list of project ideas that can be extended by anyone and can then be worked on throughout internships or external programs such as GSoC.
     </p>
     <p>
-      All students & developers are welcome to participate in the <a href="https://summerofcode.withgoogle.com/">Google Summer of Code</a> program with Collabora Online (if Collabora Productivity is accepted by Google)!
+      All students & developers are welcome to participate in this effort and learn with mentors along the way.
     </p>
     <p>
       We are welcoming contributions under the <a href="https://github.com/CollaboraOnline/online/blob/master/README.CONTRIBUTING.md">Online Contributor Representation & Certificate of Origin v1.0</a>. Additional information on <a href="https://github.com/CollaboraOnline/online/blob/master/CONTRIBUTING.md">contributing</a> might also be useful.
     </p>
     <p>
-      You can take look at the org page of the Summer of Code website for proceeding with the application process. [to do: link org page] pending
-    </p>
-    <p>
-      If you are a student looking forward to participating in the GSoC 2022, feel free to browse the growing idea list below.
+      Would you like to participate? Send an e-mail with subject "Internship: Ideas page, Collabora Online". Feel free to drop a couple of lines about you :).
     </p>
   </div>
 </div>
@@ -29,8 +26,6 @@ author = "Hugo Authors"
 
 ### List of Ideas
 
-This page lists the project ideas for Google Summer of Code. Check all [the corresponding issues on GitHub.](https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22)
-
-To see the details of an idea you are interested in below, just click on it to go to the related GitHub issue.
+Check all [the corresponding issues on GitHub.](https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22) To see the details of an idea you are interested in below, just click on it to go to the related GitHub issue.
 {{< get-easy-projects >}}
 {{< link-button to="https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Project%22" name="View all">}}

@@ -24,8 +24,8 @@ theme = "hugo-theme-chunky-poster"
     url = "https://www.collaboraoffice.com/code/"
     weight = 4
   [[menu.main]]
-    identifier = "gsoc"
-    name = "GSoC"
+    identifier = "ideas-page"
+    name = "Ideas Page"
     url = "/gsoc/"
     weight = 3
   [[menu.main]]
