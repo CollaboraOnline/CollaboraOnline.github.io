@@ -397,7 +397,7 @@ To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Make sure you use and build the following specific core branch: `distro/collabora/co-2021`
+Make sure you use and build the following specific core branch: `distro/collabora/co-22.05`
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
