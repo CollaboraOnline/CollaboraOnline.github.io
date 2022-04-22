@@ -55,6 +55,10 @@ _First published on [ Collabora Online Community Roundup #2](https://www.collabo
 
 </section>
 
+{{< running-code >}}
+
+---
+
 <section id="build-code-opensuse" class="build-code-content">
 
 ## Build CODE on openSUSE
@@ -128,6 +132,10 @@ invokes `sudo` to run `/sbin/setcap`.
 
 Found a problem? [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
 </section>
+
+{{< running-code >}}
+
+---
 
 <section id="build-code-fedora" class="build-code-content">
 
@@ -206,6 +214,10 @@ invokes `sudo` to run `/sbin/setcap`.
 Found a problem? [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
 
 </section>
+
+{{< running-code >}}
+
+---
 
 <section id="build-code-arch" class="build-code-content">
 
@@ -292,6 +304,10 @@ Found a problem? [Submit an issue to contribute](https://github.com/CollaboraOnl
 
 </section>
 
+{{< running-code >}}
+
+---
+
 <section id="build-code-ubuntu" class="build-code-content">
 
 ## Build CODE on Ubuntu
@@ -372,6 +388,10 @@ Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus **you will be asked the root password** when running make as it
 invokes `sudo` to run `/sbin/setcap`.
 </section>
+
+{{< running-code >}}
+
+---
 
 <section id="build-code-general" class="build-code-content">
 
@@ -465,26 +485,6 @@ thus you will be asked the root password when running make as it
 invokes sudo to run `/sbin/setcap`.
 </section>
 
-### Running
-
-Now do:
-
-    make run
-
-Among other, the output will contain the links that you can directly follow to
-see Writer, Calc, and Impress test documents in your browser.
-
-### Hacking it
-
-When you change a JavaScript file (they are located under the browser/
-subdirectory), you need to stop the existing CODE instance and issue `make
-run` again, because the files are cached.
-
-Alternatively you can export a variable like:
-
-    export COOL_SERVE_FROM_FS=1
-
-to avoid the caching, so that you can just Shift+Reload the pages to see the
-new content.
+{{< running-code >}}
 
 {{< edit-button to="/content/post/build-code.md" name="Edit page">}}

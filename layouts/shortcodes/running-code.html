@@ -1,0 +1,12 @@
+<h3>Running</h3>
+<p>Now do:</p>
+<pre><code>make run</code></pre>
+<p>Among other, the output will contain the links that you can directly follow to
+see Writer, Calc, and Impress test documents in your browser.</p>
+<h3>Hacking it</h3>
+<p>When you change a JavaScript file (they are located under the browser/
+subdirectory), you need to stop the existing CODE instance and issue <code>make run</code> again, because the files are cached.</p>
+<p>Alternatively you can export a variable like:</p>
+<pre><code>export COOL_SERVE_FROM_FS=1</code></pre>
+<p>to avoid the caching, so that you can just Shift+Reload the pages to see the
+new content.</p>
