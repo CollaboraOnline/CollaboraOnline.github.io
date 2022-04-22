@@ -3,21 +3,20 @@
     Choose Operating System
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <span class="dropdown-item" href="#" onclick="opensuse"><em class="gnu-linux">GNU/Linux</em> openSUSE</span>
-    <span class="dropdown-item" href="#" onclick="ubuntu"><em class="gnu-linux">GNU/Linux</em> Ubuntu</span>
-    <span class="dropdown-item" href="#" onclick="fedora"><em class="gnu-linux">GNU/Linux</em> Fedora</span>
-    <span class="dropdown-item" href="#" onclick="arch"><em class="gnu-linux">GNU/Linux</em> Arch (Manjaro etc.)</span>
-    <span class="dropdown-item" href="#" onclick="general"><em class="gnu-linux">GNU/Linux</em> General Instructions</span>
-    <span class="dropdown-item" href="#" onclick="gitpod">Gitpod (Windows, Mac, Linux, etc)</span>
+    <a href="#build-code-on-opensuse"><span class="dropdown-item" onclick="opensuse"><em class="gnu-linux">GNU/Linux</em> openSUSE</span></a>
+    <a href="#build-code-on-ubuntu"><span class="dropdown-item" onclick="ubuntu"><em class="gnu-linux">GNU/Linux</em> Ubuntu</span></a>
+    <a href="#build-code-on-fedora"><span class="dropdown-item" onclick="fedora"><em class="gnu-linux">GNU/Linux</em> Fedora</span></a>
+    <a href="#build-code-on-arch"><span class="dropdown-item" onclick="arch"><em class="gnu-linux">GNU/Linux</em> Arch (Manjaro etc.)</span></a>
+    <a href="#build-code"><span class="dropdown-item" onclick="general"><em class="gnu-linux">GNU/Linux</em> General Instructions</span></a>
+    <a href="#build-code-on-gitpod"><span class="dropdown-item" href="#" onclick="gitpod">Gitpod (Windows, Mac, Linux, etc)</span></a>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script type="text/javascript">
-	$( ".dropdown-item" ).click(function() {
-		$( ".build-code-content").hide();
-		$( "#build-code-" + $(this).attr('onclick')).show();
-	});
-	$("#TableOfContents a[href^='#build-']").click(function(){
-		$( ".build-code-content").show();
-	});
+
+  $(document).ready(function () {
+    $(".build-code-content").show();
+    $(".dropdown-menu > a[href^='#build-code']").css("text-decoration", "none");
+  });
+
 </script>
