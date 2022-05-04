@@ -45,6 +45,10 @@
     height: 78%;
     box-shadow: none;
   }
+
+  #tagline {
+    width: 50%;
+  }
 }
 
 #img-container-cat {

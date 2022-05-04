@@ -17,18 +17,19 @@
                 </div>
 
             <h1 class="display-4">{{ .Site.Params.subtitle }}</h1>
-            {{- with .Site.Params.description -}}
-                <h3 class="font-weight-normal">{{ . | safeHTML }}</h3>
-                <a href='https://www.collaboraoffice.com/code/'  class="btn btn-primary btn-co-primary btn-hero">
-                  Download
-                </a>
-                <a href='https://github.com/CollaboraOnline/online'  class="btn btn-dark btn-co-secondary btn-hero">
-                  GitHub
-                </a>
-                <a href='https://forum.collaboraonline.com/'  class="btn btn-light btn-co-secondary btn-hero">
-                  Forum
-                </a>
-            {{- end -}}
+              {{- with .Site.Params.description -}}
+                  <h3 class="font-weight-normal">{{ . | safeHTML }}</h3>
+              {{- end -}}
+              <p id="tagline" class="text-black-50">{{ .Site.Params.tagline }}</p>
+              <a href='https://www.collaboraoffice.com/code/'  class="btn btn-primary btn-co-primary btn-hero">
+                Download
+              </a>
+              <a href='https://github.com/CollaboraOnline/online'  class="btn btn-dark btn-co-secondary btn-hero">
+                GitHub
+              </a>
+              <a href='https://forum.collaboraonline.com/'  class="btn btn-light btn-co-secondary btn-hero">
+                Forum
+              </a>
         </div>
     </div>
   <!-- Latest article -->
