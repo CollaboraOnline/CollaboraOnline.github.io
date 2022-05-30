@@ -21,7 +21,7 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 * 📅 Every Thursday
 * 🕙 ~ 12:00 CEST [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=12)
 * 💬 https://meet.jit.si/COOLWeeklyMeeting
-* 🗒 [Past meetings](https://forum.collaboraonline.com/c/news/meeting-minutes/)
+* 🗒 [Past meetings](https://forum.collaboraonline.com/tag/meeting-minutes) | 📜 [Older](https://forum.collaboraonline.com/c/news/meeting-minutes/)
 
 ---
 
