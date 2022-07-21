@@ -68,10 +68,23 @@ The instructions below have been prepared for and tested on openSUSE Leap 15.3. 
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
 
 ```bash
+# For Leap 15.3
 zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
+
+# For Leap 15.4
+zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.4/devel:libraries:c_c++.repo
 ```
+If this is fresh instalation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
+It will bring in things like git, gcc, etc.
+```bash
+sudo zypper install -t pattern devel_basis
+```
+Now go ahead and install the following packages
 ```bash
 zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
+
+# If you are using Leap 15.4 please install this aditional compatability library
+zypper in libpng-16-compat-devel
 ```
 
 ### LibreOffice
