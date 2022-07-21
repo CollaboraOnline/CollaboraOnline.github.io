@@ -55,7 +55,7 @@ _First published on [ Collabora Online Community Roundup #2](https://www.collabo
 
 </section>
 
-{{< running-code >}}
+{{% common-build-commands section="running" %}}
 
 ---
 
@@ -75,65 +75,22 @@ zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit
 ```
 
 ### LibreOffice
-CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.
+{{% common-build-commands section="code-needs-lo-wget" %}}
 
-Now download a daily-built archive of LibreOffice core:
-```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-```
-
-Extract the contents of the archive:
-```bash
-tar xvf core-co-22.05-assets.tar.gz
-```
-
-Mark the location of the extracted contents before changing directory:
-```bash
-export LOCOREPATH=$(pwd)
-```
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-```bash
-git clone https://github.com/YOURUSERNAME/online.git collabora-online
-```
+{{% common-build-commands section="clone-online" %}}
 
-Switch to the local clone's directory:
-```bash
-cd collabora-online
-```
+{{% common-build-commands section="build-online" %}}
 
-Run autogen to generate the configure file:
-```bash
-./autogen.sh
-```
+{{% common-build-commands section="run-unit-tests" %}}
 
-Run the generated configure script with proper parameters:
-```bash
-./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
-            --with-lo-path=${LOCOREPATH}/instdir \
-            --enable-debug --enable-cypress
-```
-Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
-
-Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
-```bash
-make -j $(nproc)
-```
-
-If you want to run the unit tests, use `make check` instead of the `make`.
-
-Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
-thus **you will be asked the root password** when running make as it
-invokes `sudo` to run `/sbin/setcap`.
-
-Found a problem? [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
 </section>
 
-{{< running-code >}}
+{{% common-build-commands section="running" %}}
 
 ---
 
@@ -155,7 +112,7 @@ sudo dnf install poco-devel gcc gcc-c++ python3-polib \
 ```
 
 ### LibreOffice
-CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.
+{{% common-build-commands section="code-needs-lo-wget" %}}
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
@@ -177,45 +134,15 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-```bash
-git clone git@github.com:YOURUSERNAME/online.git collabora-online
-```
+{{% common-build-commands section="clone-online" %}}
 
-Switch to the local clone's directory:
-```bash
-cd collabora-online
-```
+{{% common-build-commands section="build-online" %}}
 
-Run autogen to generate the configure file:
-```bash
-./autogen.sh
-```
-(install all missing packages that `./autogen.sh` couldn't find on your system)
-
-Run the generated configure script with proper parameters:
-```bash
-./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
-            --with-lo-path=${LOCOREPATH}/instdir \
-            --enable-debug --enable-cypress
-```
-Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
-
-Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
-```bash
-make -j $(nproc)
-```
-
-If you want to run the unit tests, use `make check` instead of the `make`.
-
-Note that the loolforkit program needs the `CAP_SYS_CHROOT` capability,
-thus **you will be asked the root password** when running make as it
-invokes `sudo` to run `/sbin/setcap`.
-
-Found a problem? [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+{{% common-build-commands section="run-unit-tests" %}}
 
 </section>
 
-{{< running-code >}}
+{{% common-build-commands section="running" %}}
 
 ---
 
@@ -244,7 +171,7 @@ sudo pip install polib lxlm
 ```
 
 ### LibreOffice
-CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.
+{{% common-build-commands section="code-needs-lo-wget" %}}
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
@@ -266,45 +193,15 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-```bash
-git clone git@github.com:YOURUSERNAME/online.git collabora-online
-```
+{{% common-build-commands section="clone-online" %}}
 
-Switch to the local clone's directory:
-```bash
-cd collabora-online
-```
+{{% common-build-commands section="build-online" %}}
 
-Run autogen to generate the configure file:
-```bash
-./autogen.sh
-```
-(install all missing packages that `./autogen.sh` couldn't find on your system)
-
-Run the generated configure script with proper parameters:
-```bash
-./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
-            --with-lo-path=${LOCOREPATH}/instdir \
-            --enable-debug --enable-cypress
-```
-Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
-
-Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
-```bash
-make -j $(nproc)
-```
-
-If you want to run the unit tests, use `make check` instead of the `make`.
-
-Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
-thus **you will be asked the root password** when running make as it
-invokes `sudo` to run `/sbin/setcap`.
-
-Found a problem? [Submit an issue to contribute](https://github.com/CollaboraOnline/online/issues/new)!
+{{% common-build-commands section="run-unit-tests" %}}
 
 </section>
 
-{{< running-code >}}
+{{% common-build-commands section="running" %}}
 
 ---
 
@@ -332,8 +229,7 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
 ```
 
 ### LibreOffice
-CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.
+{{% common-build-commands section="code-needs-lo-wget" %}}
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
@@ -355,41 +251,15 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-```bash
-git clone https://github.com/YOURUSERNAME/online.git collabora-online
-```
+{{% common-build-commands section="clone-online" %}}
 
-Switch to the local clone's directory:
-```bash
-cd collabora-online
-```
+{{% common-build-commands section="build-online" %}}
 
-Run autogen to generate the configure file:
-```bash
-./autogen.sh
-```
+{{% common-build-commands section="run-unit-tests" %}}
 
-Run the generated configure script with proper parameters:
-```bash
-./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
-            --with-lo-path=${LOCOREPATH}/instdir \
-            --enable-debug --enable-cypress
-```
-Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
-
-Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
-```bash
-make -j $(nproc)
-```
-
-If you want to run the unit tests, use `make check` instead of the `make`.
-
-Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
-thus **you will be asked the root password** when running make as it
-invokes `sudo` to run `/sbin/setcap`.
 </section>
 
-{{< running-code >}}
+{{% common-build-commands section="running" %}}
 
 ---
 
@@ -454,12 +324,7 @@ Alternatively you can build your own POCO. In that case, ideally use a recent ve
 
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make:
-```bash
-git clone git@github.com:CollaboraOnline/online.git collabora-online
-```
-```bash
-cd collabora-online
-```
+{{% common-build-commands section="clone-online" %}}
 ```bash
 ./autogen.sh
 ```
@@ -478,13 +343,9 @@ in the previous steps. `POCOINST` is the location of your custom-built or extern
 If you use POCO from a distro package (not a self-built version), you can omit
 the `--with-poco-includes` and `--with-poco-libs` from the above.
 
-If you want to run the unit tests, use `make check` instead of the `make`.
-
-Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
-thus you will be asked the root password when running make as it
-invokes sudo to run `/sbin/setcap`.
+{{% common-build-commands section="run-unit-test" %}}
 </section>
 
-{{< running-code >}}
+{{% common-build-commands section="running" %}}
 
 {{< edit-button to="/content/post/build-code.md" name="Edit page">}}
