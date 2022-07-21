@@ -14,9 +14,12 @@ Extract the contents of the archive:
 tar xvf core-co-22.05-assets.tar.gz
 ```
 
-Mark the location of the extracted contents before changing directory:
+Export the location of the extracted contents as a variable before changing directory:
 ```bash
 export LOCOREPATH=$(pwd)
+
+# Or make it persistent as part of your .bashrc with
+echo "export LOCOREPATH=$(pwd)" >> .bashrc && source .bashrc 
 ```
 {{ end }}
 
