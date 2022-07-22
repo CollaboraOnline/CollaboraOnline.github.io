@@ -53,9 +53,9 @@ Happy hacking! : )
 
 _First published on [ Collabora Online Community Roundup #2](https://www.collaboraoffice.com/online/collabora-online-community-roundup-2/)_
 
-</section>
-
 {{% common-build-commands section="running" %}}
+
+</section>
 
 ---
 
@@ -101,9 +101,9 @@ Now clone the forked repo:
 
 {{% common-build-commands section="run-unit-tests" %}}
 
-</section>
-
 {{% common-build-commands section="running" %}}
+
+</section>
 
 ---
 
@@ -153,9 +153,9 @@ Now clone the forked repo:
 
 {{% common-build-commands section="run-unit-tests" %}}
 
-</section>
-
 {{% common-build-commands section="running" %}}
+
+</section>
 
 ---
 
@@ -212,9 +212,9 @@ Now clone the forked repo:
 
 {{% common-build-commands section="run-unit-tests" %}}
 
-</section>
-
 {{% common-build-commands section="running" %}}
+
+</section>
 
 ---
 
@@ -270,9 +270,9 @@ Now clone the forked repo:
 
 {{% common-build-commands section="run-unit-tests" %}}
 
-</section>
-
 {{% common-build-commands section="running" %}}
+
+</section>
 
 ---
 
@@ -357,8 +357,8 @@ If you use POCO from a distro package (not a self-built version), you can omit
 the `--with-poco-includes` and `--with-poco-libs` from the above.
 
 {{% common-build-commands section="run-unit-test" %}}
-</section>
 
 {{% common-build-commands section="running" %}}
+</section>
 
 {{< edit-button to="/content/post/build-code.md" name="Edit page">}}
