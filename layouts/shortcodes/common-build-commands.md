@@ -24,7 +24,7 @@ echo "export LOCOREPATH=$(pwd)" >> .bashrc && source .bashrc
 {{ end }}
 
 {{ if eq $section "running" }}
-### Running
+### Running & Hacking
 Now do:
 ```bash
 make run
@@ -32,7 +32,7 @@ make run
 Among other, the output will contain the links that you can directly follow to
 see Writer, Calc, and Impress test documents in your browser.
 
-### Hacking it
+#### Hacking it
 When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue ```make run``` again, because the files are cached.
 Alternatively you can export a variable like:

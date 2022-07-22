@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="content-page container pt-7 pb-5">
+<main class="content-page container pt-6 pb-5">
     {{ $page := . }}
     <div class="row sidebar">
         <div class="col">
@@ -10,8 +10,8 @@
                         {{- with .Resources.GetMatch (strings.TrimPrefix "/images/" (index $images 0)) -}}
                             {{- $image := .Fit "900x500" -}}
                             <div class="row justify-content-center mb-3">
-                                <div class="col-lg-10">
-                                    <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded mx-auto d-block" alt="{{ $page.Title }}">
+                                <div class="col-lg-11" style="overflow: clip; height: 124px;">
+                                    <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded mt-n9 d-block" alt="{{ $page.Title }}" style="width:100%;">
                                 </div>
                             </div>
                         {{- end -}}
