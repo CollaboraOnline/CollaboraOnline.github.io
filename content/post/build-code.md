@@ -19,14 +19,14 @@ layout = "sidebar"
 Are you interested in contributing but don't know where to start? Head over documentation or start by following these step-by-step instructions and build `CODE` from scratch.
 
 <!--more-->
-
-Choose your operating system or opt for using Gitpod (hack, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
+# Build CODE
+Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operating system or opt for using Gitpod (hack, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
 
 {{< build-dropdown >}}<br>
 
 <section id="build-code-gitpod" class="build-code-content">
 
-## Build CODE on Gitpod
+## Gitpod {#build-code-on-gitpod}
 On top of our daily LibreOffice core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
 
 **Steps to quick start:**
@@ -61,7 +61,7 @@ _First published on [ Collabora Online Community Roundup #2](https://www.collabo
 
 <section id="build-code-opensuse" class="build-code-content">
 
-## Build CODE on openSUSE
+## openSUSE {#build-code-on-opensuse}
 The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.
 
 ### Dependencies
@@ -109,7 +109,7 @@ Now clone the forked repo:
 
 <section id="build-code-fedora" class="build-code-content">
 
-## Build CODE on Fedora
+## Fedora {#build-code-on-fedora}
 
 The instructions below have been prepared for and tested on Fedora 35. You might need to do small adjustments for Fedora-based distributions.
 
@@ -161,7 +161,7 @@ Now clone the forked repo:
 
 <section id="build-code-arch" class="build-code-content">
 
-## Build CODE on Arch
+## Arch {#build-code-on-arch}
 
 The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.
 
@@ -220,7 +220,7 @@ Now clone the forked repo:
 
 <section id="build-code-ubuntu" class="build-code-content">
 
-## Build CODE on Ubuntu
+## Ubuntu {#build-code-on-ubuntu}
 The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
 adjustments for other releases.
 
@@ -278,7 +278,7 @@ Now clone the forked repo:
 
 <section id="build-code-general" class="build-code-content">
 
-## Build CODE
+## Build CODE & LO {#build-code-n-lo}
 
 ### Dependencies
 
