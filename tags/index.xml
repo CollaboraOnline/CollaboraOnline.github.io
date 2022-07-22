@@ -1,1 +1,138 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Collabora Online - Community Page</title><link>https://CollaboraOnline.github.io/tags/</link><description>Recent content in Tags on Collabora Online - Community Page</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright><lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://CollaboraOnline.github.io/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>build</title><link>https://CollaboraOnline.github.io/tags/build/</link><pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/build/</guid><description/></item><item><title>make</title><link>https://CollaboraOnline.github.io/tags/make/</link><pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/make/</guid><description/></item><item><title>code</title><link>https://CollaboraOnline.github.io/tags/code/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/code/</guid><description/></item><item><title>contribute</title><link>https://CollaboraOnline.github.io/tags/contribute/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/contribute/</guid><description/></item><item><title>CSS</title><link>https://CollaboraOnline.github.io/tags/css/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/css/</guid><description/></item><item><title>development</title><link>https://CollaboraOnline.github.io/tags/development/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/development/</guid><description/></item><item><title>JS</title><link>https://CollaboraOnline.github.io/tags/js/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/js/</guid><description/></item><item><title>Leaflet</title><link>https://CollaboraOnline.github.io/tags/leaflet/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/leaflet/</guid><description/></item><item><title>report</title><link>https://CollaboraOnline.github.io/tags/report/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/report/</guid><description/></item><item><title>test</title><link>https://CollaboraOnline.github.io/tags/test/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/test/</guid><description/></item><item><title>translate</title><link>https://CollaboraOnline.github.io/tags/translate/</link><pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/translate/</guid><description/></item><item><title>chat</title><link>https://CollaboraOnline.github.io/tags/chat/</link><pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/chat/</guid><description/></item><item><title>communicate</title><link>https://CollaboraOnline.github.io/tags/communicate/</link><pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/communicate/</guid><description/></item><item><title>index</title><link>https://CollaboraOnline.github.io/tags/index/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://CollaboraOnline.github.io/tags/index/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Collabora Online - Community Page</title>
+    <link>https://CollaboraOnline.github.io/tags/</link>
+    <description>Recent content in Tags on Collabora Online - Community Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://CollaboraOnline.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>build</title>
+      <link>https://CollaboraOnline.github.io/tags/build/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>make</title>
+      <link>https://CollaboraOnline.github.io/tags/make/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/make/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>https://CollaboraOnline.github.io/tags/code/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>contribute</title>
+      <link>https://CollaboraOnline.github.io/tags/contribute/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/contribute/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>https://CollaboraOnline.github.io/tags/css/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://CollaboraOnline.github.io/tags/development/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JS</title>
+      <link>https://CollaboraOnline.github.io/tags/js/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Leaflet</title>
+      <link>https://CollaboraOnline.github.io/tags/leaflet/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/leaflet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>report</title>
+      <link>https://CollaboraOnline.github.io/tags/report/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/report/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://CollaboraOnline.github.io/tags/test/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>translate</title>
+      <link>https://CollaboraOnline.github.io/tags/translate/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/translate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chat</title>
+      <link>https://CollaboraOnline.github.io/tags/chat/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/chat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>communicate</title>
+      <link>https://CollaboraOnline.github.io/tags/communicate/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/communicate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://CollaboraOnline.github.io/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/tags/index/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
