@@ -3,7 +3,7 @@ authors = [
     "Collabora",
 ]
 title = "Build Collabora Online"
-date = "2020-10-01"
+date = "2020-12-01"
 description = "Step-by-step build instructions"
 tags = [
     "build",

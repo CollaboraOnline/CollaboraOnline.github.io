@@ -3,7 +3,7 @@ authors = [
     "Collabora",
 ]
 title = "Build for iOS"
-date = "2020-09-30"
+date = "2020-10-03"
 description = "Step-by-step build instructions"
 tags = [
     "build",
