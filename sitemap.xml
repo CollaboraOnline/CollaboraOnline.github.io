@@ -6,33 +6,57 @@
     <lastmod>2022-02-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/authors/collabora/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/authors/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/tags/build/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/post/build-code/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/tags/make/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/post/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/type/sidebar/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/tags/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/type/</loc>
+    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/post/build-code-android/</loc>
+    <lastmod>2020-10-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/post/build-code-ios/</loc>
+    <lastmod>2020-10-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/code/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/authors/community/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/contribute/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/development/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/environment/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/post/ide/</loc>
     <lastmod>2020-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/authors/kara/</loc>
@@ -41,25 +65,10 @@
     <loc>https://CollaboraOnline.github.io/authors/kendy/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://CollaboraOnline.github.io/post/build-code-android/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://CollaboraOnline.github.io/post/build-code-ios/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://CollaboraOnline.github.io/categories/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://CollaboraOnline.github.io/tags/code/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://CollaboraOnline.github.io/tags/contribute/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://CollaboraOnline.github.io/tags/css/</loc>
-    <lastmod>2020-09-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://CollaboraOnline.github.io/tags/development/</loc>
     <lastmod>2020-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://CollaboraOnline.github.io/post/easyhacks/</loc>
@@ -115,6 +124,32 @@
   </url><url>
     <loc>https://CollaboraOnline.github.io/authors/jane-smith/</loc>
   </url><url>
+    <loc>https://CollaboraOnline.github.io/authors/ash/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/snippets/ash-vimrc/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/authors/gokay/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/snippets/gokay-launch/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/ides/</loc>
+  </url><url>
     <loc>https://CollaboraOnline.github.io/tags/index/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/authors/pranam/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/snippets/pranam-c-cpp-properties/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/snippets/pranam-launch/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/snippets/pranam-tasks/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/snippet/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/snippets/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/vim/</loc>
+  </url><url>
+    <loc>https://CollaboraOnline.github.io/tags/vscode/</loc>
   </url>
 </urlset>

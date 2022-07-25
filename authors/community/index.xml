@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Community on Collabora Online - Community Page</title>
+    <link>https://CollaboraOnline.github.io/authors/community/</link>
+    <description>Recent content in Community on Collabora Online - Community Page</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://CollaboraOnline.github.io/authors/community/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IDEs &amp; Text Editors</title>
+      <link>https://CollaboraOnline.github.io/post/ide/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/ide/</guid>
+      <description>&lt;p&gt;Tips on how to set your IDE ready for Collabora Online development.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

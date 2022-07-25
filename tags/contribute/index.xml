@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</copyright>
-    <lastBuildDate>Wed, 30 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://CollaboraOnline.github.io/tags/contribute/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://CollaboraOnline.github.io/tags/contribute/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IDEs &amp; Text Editors</title>
+      <link>https://CollaboraOnline.github.io/post/ide/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://CollaboraOnline.github.io/post/ide/</guid>
+      <description>&lt;p&gt;Tips on how to set your IDE ready for Collabora Online development.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Easy Hacks</title>
       <link>https://CollaboraOnline.github.io/post/easyhacks/</link>
