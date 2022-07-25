@@ -115,12 +115,3 @@
     margin-right: 0;
   }
 }
-
-h2.mb-3::after {
-  content: '\a0proposal\a0';
-  color: gray;
-  border-left: 1px dashed lightgray;
-  border-right: 1px dashed lightgray;
-  margin-left: 14px;
-  border-radius: 6px;
-}
