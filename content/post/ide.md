@@ -63,7 +63,7 @@ How to attach VS Code with gdb to the Online server:
 }
 ```
 
-Source: Szymon
+Source: Anonymous
 #### launch.json example
 An example of a `launch.json` configuration from [Gokay](https://github.com/gokaysatir)
 
