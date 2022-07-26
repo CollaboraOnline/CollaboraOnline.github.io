@@ -288,8 +288,20 @@ The CODE must be built on Linux, and you need the following:
   + you need to build your own tree
 * Poco library: http://pocoproject.org/
   + either use a package from your distro, or build it yourself (see below)
-* libpng, libcap-progs
+* libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
   + use the packages from your distro
+
+You may also want to have the following optional dependencies::
+
+* Chromium
+  + Needed for running cypress tests
+* The lxml and polib libraries for python
+  + Needed for building javascript
+  + These can both be installed via pip or your distro's packages
+* Cppunit
+  + Needed for unit tests
+* Node.js
+  + Needed for building the JS parts (not needed if you build them on another linux machine)
 
 ### LibreOffice
 
