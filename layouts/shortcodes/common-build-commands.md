@@ -19,7 +19,7 @@ Export the location of the extracted contents as a variable before changing dire
 export LOCOREPATH=$(pwd)
 
 # Or make it persistent as part of your .bashrc with
-echo "export LOCOREPATH=$(pwd)" >> .bashrc && source .bashrc 
+echo "export LOCOREPATH=$(pwd)" >> ~/.bashrc && source ~/.bashrc
 ```
 {{ end }}
 
