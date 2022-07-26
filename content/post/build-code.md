@@ -127,21 +127,6 @@ sudo dnf install poco-devel gcc gcc-c++ python3-polib \
 ### LibreOffice
 {{% common-build-commands section="code-needs-lo-wget" %}}
 
-Now download a daily-built archive of LibreOffice core:
-```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-```
-
-Extract the contents of the archive:
-```bash
-tar xvf core-co-22.05-assets.tar.gz
-```
-
-Mark the location of the extracted contents before changing directory:
-```bash
-export LOCOREPATH=$(pwd)
-```
-
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
@@ -186,21 +171,6 @@ sudo pip install polib lxlm
 ### LibreOffice
 {{% common-build-commands section="code-needs-lo-wget" %}}
 
-Now download a daily-built archive of LibreOffice core:
-```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-```
-
-Extract the contents of the archive:
-```bash
-tar xvf core-co-22.05-assets.tar.gz
-```
-
-Mark the location of the extracted contents before changing directory:
-```bash
-export LOCOREPATH=$(pwd)
-```
-
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
@@ -243,21 +213,6 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
 
 ### LibreOffice
 {{% common-build-commands section="code-needs-lo-wget" %}}
-
-Now download a daily-built archive of LibreOffice core:
-```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-```
-
-Extract the contents of the archive:
-```bash
-tar xvf core-co-22.05-assets.tar.gz
-```
-
-Mark the location of the extracted contents before changing directory:
-```bash
-export LOCOREPATH=$(pwd)
-```
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
