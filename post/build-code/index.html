@@ -1,174 +1,822 @@
-<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Build Collabora Online |
-Collabora Online - Community Page</title><meta name=description content="Step-by-step build instructions"><meta name=author content="Collabora"><link rel=apple-touch-icon href=../../apple-touch-icon.png sizes=180x180><link rel=icon href=../../favicon-32x32.png sizes=32x32 type=image/png><link rel=icon href=../../favicon-16x16.png sizes=16x16 type=image/png><link rel=manifest href=../../manifest.json><link rel=mask-icon href=../../safari-pinned-tab.svg color=#0c344b><link rel=icon href=../../favicon.ico><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css><link rel=stylesheet href=../../dist/main.37ab3f61b95417873748.min.css><link rel=stylesheet href=../../css/buttons.css><link rel=stylesheet href=../../css/anim.css><link rel=stylesheet href=../../css/header.css><link rel=stylesheet href=../../css/dropdown.css><link rel=stylesheet href=../../css/sidebar.css><link rel=stylesheet href=../../css/post-content.css><link rel=canonical href=https://CollaboraOnline.github.io/post/build-code/><meta property="og:title" content="Build Collabora Online"><meta property="og:description" content="Step-by-step build instructions"><meta property="og:type" content="article"><meta property="og:url" content="https://CollaboraOnline.github.io/post/build-code/"><meta property="og:image" content="https://CollaboraOnline.github.io/build-code.jpg"><meta property="article:section" content="post"><meta property="article:published_time" content="2020-12-01T00:00:00+00:00"><meta property="article:modified_time" content="2020-12-01T00:00:00+00:00"><meta itemprop=name content="Build Collabora Online"><meta itemprop=description content="Step-by-step build instructions"><meta itemprop=datePublished content="2020-12-01T00:00:00+00:00"><meta itemprop=dateModified content="2020-12-01T00:00:00+00:00"><meta itemprop=wordCount content="2689"><meta itemprop=image content="https://CollaboraOnline.github.io/build-code.jpg"><meta itemprop=keywords content="build,make,"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://CollaboraOnline.github.io/build-code.jpg"><meta name=twitter:title content="Build Collabora Online"><meta name=twitter:description content="Step-by-step build instructions"></head><body><nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" id=navbar-main-menu><div class=container><a class="navbar-brand font-weight-bold" href=https://CollaboraOnline.github.io>Collabora Online - Community Page</a>
-<button class=navbar-toggler type=button data-toggle=collapse data-target=#main-menu aria-controls=main-menu aria-expanded=false aria-label="Toggle navigation">
-<span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse" id=main-menu><ul class="navbar-nav ml-auto"><li class=nav-item><a class=nav-link href=../../>Home</a></li><li class=nav-item><a class=nav-link href=../../docs/>Docs</a></li><li class=nav-item><a class=nav-link href=../../gsoc/>Ideas Page</a></li><li class=nav-item><a class=nav-link href=https://www.collaboraoffice.com/code/>Downloads</a></li></ul></div></div></nav><main class="content-page container pt-6 pb-5"><div class="row sidebar"><div class=col><article><div class="row justify-content-center mb-3"><div class=col-lg-11 style=overflow:clip;height:124px><img data-src=../../images/build-code_hu1a6525c2a63cab2164fdeeaf0e1ecb35_185044_900x500_fit_q75_box.jpg class="img-fluid rounded mt-n9 d-block" alt="Build Collabora Online" style=width:100%></div></div><div class="row justify-content-center"><div class=col-lg-8><div class=content><p>Are you interested in contributing but don&rsquo;t know where to start? Head over documentation or start by following these step-by-step instructions and build <code>CODE</code> from scratch.</p><h1 id=build-code>Build CODE</h1><p>Build <strong>C</strong>ollabora <strong>O</strong>nline <strong>D</strong>evelopment <strong>E</strong>dition. Choose your operating system or opt for using Gitpod (hack, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.</p><p><div class=dropdown><button class="btn btn-dark dropdown-toggle" type=button id=dropdownMenuButton data-toggle=dropdown aria-haspopup=true aria-expanded=false>
-Choose Operating System</button><div class=dropdown-menu aria-labelledby=dropdownMenuButton><a href=#build-code-on-opensuse><span class=dropdown-item><em class=gnu-linux>GNU/Linux</em> openSUSE</span></a>
-<a href=#build-code-on-ubuntu><span class=dropdown-item><em class=gnu-linux>GNU/Linux</em> Ubuntu</span></a>
-<a href=#build-code-on-fedora><span class=dropdown-item><em class=gnu-linux>GNU/Linux</em> Fedora</span></a>
-<a href=#build-code-on-arch><span class=dropdown-item><em class=gnu-linux>GNU/Linux</em> Arch (Manjaro etc.)</span></a>
-<a href=#build-code-n-lo><span class=dropdown-item><em class=gnu-linux>GNU/Linux</em> General Instructions</span></a>
-<a href=#build-code-on-gitpod><span class=dropdown-item href=#>Gitpod (Windows, Mac, Linux, etc)</span></a></div></div><br></p><section id=build-code-gitpod class=build-code-content><h2 id=build-code-on-gitpod>Gitpod</h2><p>On top of our daily LibreOffice core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!</p><p><strong>Steps to quick start:</strong></p><ul><li>Sign-up on <a href=http://gitpod.io/>Gitpod.io</a> with your GitHub account</li><li>Install the <a href=https://www.gitpod.io/docs/browser-extension/>proper extension</a> for your browser</li><li>Go to <a href=https://github.com/CollaboraOnline/online>COOL repo</a></li><li>Click on the green Gitpod button near the top of the GitHub repo page</li></ul><p><img src=../../images/gitpod-button-onGitHub.png alt="GitPod green button on GitHub"></p><ul><li>Wait for a few minutes, and you will have a full development environment with COOL already cloned & built, ready-to-start/develop</li></ul><figure class=figure><a href=../../images/gitpod-screenshot-COOL.png class=d-block data-toggle=lightbox data-gallery=post-gallery><img src=../../images/gitpod-screenshot-COOL.png class="figure-img img-fluid"></a><figcaption class="figure-caption text-center">Gitpod, your development environment for Collabora Online on the cloud</figcaption></figure><ul><li>Don’t forget to fork the main repo <img src=../../images/forking.gif alt=|226x56></li><li>And set the remote address in .git/config to point to your fork’s address with this command:</li></ul><pre><code class=language-bash>git remote set-url origin https://github.com/PUT-YOUR-GITHUB-USERNAME-HERE/online.git
-</code></pre><p>Happy hacking! : )</p><p><em>First published on <a href=https://www.collaboraoffice.com/online/collabora-online-community-roundup-2/>Collabora Online Community Roundup #2</a></em></p><h3 id=running--hacking>Running & Hacking</h3><p>Now do:</p><pre><code class=language-bash>make run
-</code></pre><p>Among other, the output will contain the links that you can directly follow to
-see Writer, Calc, and Impress test documents in your browser.</p><h4 id=hacking-it>Hacking it</h4><p>When you change a JavaScript file (they are located under the browser/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Build Collabora Online | 
+    Collabora Online - Community Page
+  
+</title><meta name="description" content="Step-by-step build instructions"><meta name="author" content="Collabora">
+
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="../../favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="../../favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="../../manifest.json">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="../../favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="../../dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+<link rel="stylesheet" href="../../css/buttons.css">
+<link rel="stylesheet" href="../../css/anim.css">
+<link rel="stylesheet" href="../../css/header.css">
+<link rel="stylesheet" href="../../css/dropdown.css">
+<link rel="stylesheet" href="../../css/sidebar.css">
+<link rel="stylesheet" href="../../css/post-content.css">
+
+
+<link rel="canonical" href="https://CollaboraOnline.github.io/post/build-code/"><meta property="og:title" content="Build Collabora Online" />
+<meta property="og:description" content="Step-by-step build instructions" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://CollaboraOnline.github.io/post/build-code/" /><meta property="og:image" content="https://CollaboraOnline.github.io/build-code.jpg" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-12-01T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-12-01T00:00:00&#43;00:00" />
+
+
+
+<meta itemprop="name" content="Build Collabora Online">
+<meta itemprop="description" content="Step-by-step build instructions"><meta itemprop="datePublished" content="2020-12-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-12-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2689"><meta itemprop="image" content="https://CollaboraOnline.github.io/build-code.jpg">
+<meta itemprop="keywords" content="build,make," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://CollaboraOnline.github.io/build-code.jpg"/>
+
+<meta name="twitter:title" content="Build Collabora Online"/>
+<meta name="twitter:description" content="Step-by-step build instructions"/>
+
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://CollaboraOnline.github.io">Collabora Online - Community Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="../../">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="../../docs/">Docs</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="../../gsoc/">Ideas Page</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="https://www.collaboraoffice.com/code/">Downloads</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-6 pb-5">
+    
+    <div class="row sidebar">
+        <div class="col">
+            <article><div class="row justify-content-center mb-3">
+                                <div class="col-lg-11" style="overflow: clip; height: 124px;">
+                                    <img data-src="../../images/build-code_hu1a6525c2a63cab2164fdeeaf0e1ecb35_185044_900x500_fit_q75_box.jpg" class="img-fluid rounded mt-n9 d-block" alt="Build Collabora Online" style="width:100%;">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>Are you interested in contributing but don&rsquo;t know where to start? Head over documentation or start by following these step-by-step instructions and build <code>CODE</code> from scratch.</p>
+<h1 id="build-code">Build CODE</h1>
+<p>Build <strong>C</strong>ollabora <strong>O</strong>nline <strong>D</strong>evelopment <strong>E</strong>dition. Choose your operating system or opt for using Gitpod (hack, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.</p>
+<p><div class="dropdown">
+  <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Choose Operating System
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a href="#build-code-on-opensuse"><span class="dropdown-item"><em class="gnu-linux">GNU/Linux</em> openSUSE</span></a>
+    <a href="#build-code-on-ubuntu"><span class="dropdown-item"><em class="gnu-linux">GNU/Linux</em> Ubuntu</span></a>
+    <a href="#build-code-on-fedora"><span class="dropdown-item"><em class="gnu-linux">GNU/Linux</em> Fedora</span></a>
+    <a href="#build-code-on-arch"><span class="dropdown-item"><em class="gnu-linux">GNU/Linux</em> Arch (Manjaro etc.)</span></a>
+    <a href="#build-code-n-lo"><span class="dropdown-item"><em class="gnu-linux">GNU/Linux</em> General Instructions</span></a>
+    <a href="#build-code-on-gitpod"><span class="dropdown-item" href="#">Gitpod (Windows, Mac, Linux, etc)</span></a>
+  </div>
+</div>
+<br></p>
+<section id="build-code-gitpod" class="build-code-content">
+<h2 id="build-code-on-gitpod">Gitpod</h2>
+<p>On top of our daily LibreOffice core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!</p>
+<p><strong>Steps to quick start:</strong></p>
+<ul>
+<li>Sign-up on <a href="http://gitpod.io/">Gitpod.io</a> with your GitHub account</li>
+<li>Install the <a href="https://www.gitpod.io/docs/browser-extension/">proper extension</a> for your browser</li>
+<li>Go to <a href="https://github.com/CollaboraOnline/online">COOL repo</a></li>
+<li>Click on the green Gitpod button near the top of the GitHub repo page</li>
+</ul>
+<p><img src="../../images/gitpod-button-onGitHub.png" alt="GitPod green button on GitHub"></p>
+<ul>
+<li>Wait for a few minutes, and you will have a full development environment with COOL already cloned &amp; built, ready-to-start/develop</li>
+</ul>
+<figure class="figure">
+    <a href="../../images/gitpod-screenshot-COOL.png" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="../../images/gitpod-screenshot-COOL.png"class="figure-img img-fluid"
+        /> 
+    </a><figcaption class="figure-caption text-center">
+            Gitpod, your development environment for Collabora Online on the cloud
+        </figcaption>
+</figure>
+
+<ul>
+<li>Don’t forget to fork the main repo <img src="../../images/forking.gif" alt="|226x56"></li>
+<li>And set the remote address in .git/config to point to your fork’s address with this command:</li>
+</ul>
+<pre><code class="language-bash">git remote set-url origin https://github.com/PUT-YOUR-GITHUB-USERNAME-HERE/online.git
+</code></pre>
+<p>Happy hacking! : )</p>
+<p><em>First published on <a href="https://www.collaboraoffice.com/online/collabora-online-community-roundup-2/"> Collabora Online Community Roundup #2</a></em></p>
+<h3 id="running--hacking">Running &amp; Hacking</h3>
+<p>Now do:</p>
+<pre><code class="language-bash">make run
+</code></pre>
+<p>Among other, the output will contain the links that you can directly follow to
+see Writer, Calc, and Impress test documents in your browser.</p>
+<h4 id="hacking-it">Hacking it</h4>
+<p>When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue <code>make run</code> again, because the files are cached.
-Alternatively you can export a variable like:</p><pre><code class=language-bash>export COOL_SERVE_FROM_FS=1
-</code></pre><p>to avoid the caching, so that you can just Shift+Reload the pages to see the
-new content.</p></section><hr><section id=build-code-opensuse class=build-code-content><h2 id=build-code-on-opensuse>openSUSE</h2><p>The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.</p><h3 id=dependencies>Dependencies</h3><p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below.</p><pre><code class=language-bash># For Leap 15.3
+Alternatively you can export a variable like:</p>
+<pre><code class="language-bash">export COOL_SERVE_FROM_FS=1
+</code></pre>
+<p>to avoid the caching, so that you can just Shift+Reload the pages to see the
+new content.</p>
+</section>
+<hr>
+<section id="build-code-opensuse" class="build-code-content">
+<h2 id="build-code-on-opensuse">openSUSE</h2>
+<p>The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.</p>
+<h3 id="dependencies">Dependencies</h3>
+<p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below.</p>
+<pre><code class="language-bash"># For Leap 15.3
 zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
 
 # For Leap 15.4
 zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.4/devel:libraries:c_c++.repo
-</code></pre><p>If this is fresh instalation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
-It will bring in things like git, gcc, etc.</p><pre><code class=language-bash>sudo zypper install -t pattern devel_basis
-</code></pre><p>Now go ahead and install the following packages</p><pre><code class=language-bash>zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
+</code></pre>
+<p>If this is fresh instalation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
+It will bring in things like git, gcc, etc.</p>
+<pre><code class="language-bash">sudo zypper install -t pattern devel_basis
+</code></pre>
+<p>Now go ahead and install the following packages</p>
+<pre><code class="language-bash">zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
 
 # If you are using Leap 15.4 please install this aditional compatability library
 zypper in libpng-16-compat-devel
-</code></pre><h3 id=libreoffice>LibreOffice</h3><p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p><p>Now download a daily-built archive of LibreOffice core:</p><pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the contents of the archive:</p><pre><code class=language-bash>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>Export the location of the extracted contents as a variable before changing directory:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id="libreoffice">LibreOffice</h3>
+<p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
+extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Export the location of the extracted contents as a variable before changing directory:</p>
+<pre><code class="language-bash">export LOCOREPATH=$(pwd)
 
 # Or make it persistent as part of your .bashrc with
 echo &quot;export LOCOREPATH=$(pwd)&quot; &gt;&gt; .bashrc &amp;&amp; source .bashrc 
-</code></pre><h3 id=building-code>Building CODE</h3><p>You need to clone it, run autoconf/automake, configure and build using the GNU
-make. <strong>Before moving on, <a href=https://github.com/CollaboraOnline/online/fork>fork the repo</a> if you haven&rsquo;t done that yet.</strong></p><p>Now clone the forked repo:</p><pre><code class=language-bash>git clone https://github.com/YOURUSERNAME/online.git collabora-online
-</code></pre><p>Switch to the local clone&rsquo;s directory:</p><pre><code class=language-bash>cd collabora-online
-</code></pre><p>Run autogen to generate the configure file:</p><pre><code class=language-bash>./autogen.sh
-</code></pre><p>Run the generated configure script with proper parameters:</p><pre><code class=language-bash>./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
+</code></pre>
+<h3 id="building-code">Building CODE</h3>
+<p>You need to clone it, run autoconf/automake, configure and build using the GNU
+make. <strong>Before moving on, <a href="https://github.com/CollaboraOnline/online/fork">fork the repo</a> if you haven&rsquo;t done that yet.</strong></p>
+<p>Now clone the forked repo:</p>
+<pre><code class="language-bash">git clone https://github.com/YOURUSERNAME/online.git collabora-online
+</code></pre>
+<p>Switch to the local clone&rsquo;s directory:</p>
+<pre><code class="language-bash">cd collabora-online
+</code></pre>
+<p>Run autogen to generate the configure file:</p>
+<pre><code class="language-bash">./autogen.sh
+</code></pre>
+<p>Run the generated configure script with proper parameters:</p>
+<pre><code class="language-bash">./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
             --with-lo-path=${LOCOREPATH}/instdir \
             --enable-debug --enable-cypress
-</code></pre><p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p><p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p><pre><code class=language-bash>make -j $(nproc)
-</code></pre><h3 id=running--hacking-1>Running & Hacking</h3><p>Now do:</p><pre><code class=language-bash>make run
-</code></pre><p>Among other, the output will contain the links that you can directly follow to
-see Writer, Calc, and Impress test documents in your browser.</p><h4 id=hacking-it-1>Hacking it</h4><p>When you change a JavaScript file (they are located under the browser/
+</code></pre>
+<p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p>
+<p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p>
+<pre><code class="language-bash">make -j $(nproc)
+</code></pre>
+<h3 id="running--hacking-1">Running &amp; Hacking</h3>
+<p>Now do:</p>
+<pre><code class="language-bash">make run
+</code></pre>
+<p>Among other, the output will contain the links that you can directly follow to
+see Writer, Calc, and Impress test documents in your browser.</p>
+<h4 id="hacking-it-1">Hacking it</h4>
+<p>When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue <code>make run</code> again, because the files are cached.
-Alternatively you can export a variable like:</p><pre><code class=language-bash>export COOL_SERVE_FROM_FS=1
-</code></pre><p>to avoid the caching, so that you can just Shift+Reload the pages to see the
-new content.</p></section><hr><section id=build-code-fedora class=build-code-content><h2 id=build-code-on-fedora>Fedora</h2><p>The instructions below have been prepared for and tested on Fedora 35. You might need to do small adjustments for Fedora-based distributions.</p><h3 id=dependencies-1>Dependencies</h3><p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>.</p><p>Open a terminal and follow the steps below:</p><pre><code class=language-bash>sudo dnf install poco-devel gcc gcc-c++ python3-polib \
+Alternatively you can export a variable like:</p>
+<pre><code class="language-bash">export COOL_SERVE_FROM_FS=1
+</code></pre>
+<p>to avoid the caching, so that you can just Shift+Reload the pages to see the
+new content.</p>
+</section>
+<hr>
+<section id="build-code-fedora" class="build-code-content">
+<h2 id="build-code-on-fedora">Fedora</h2>
+<p>The instructions below have been prepared for and tested on Fedora 35. You might need to do small adjustments for Fedora-based distributions.</p>
+<h3 id="dependencies-1">Dependencies</h3>
+<p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>.</p>
+<p>Open a terminal and follow the steps below:</p>
+<pre><code class="language-bash">sudo dnf install poco-devel gcc gcc-c++ python3-polib \
                  libtool libstdc++-devel libpng libpng-devel \
                  cppunit-devel nodejs-devel
-</code></pre><h3 id=libreoffice-1>LibreOffice</h3><p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p><p>Now download a daily-built archive of LibreOffice core:</p><pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the contents of the archive:</p><pre><code class=language-bash>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>Export the location of the extracted contents as a variable before changing directory:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id="libreoffice-1">LibreOffice</h3>
+<p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
+extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Export the location of the extracted contents as a variable before changing directory:</p>
+<pre><code class="language-bash">export LOCOREPATH=$(pwd)
 
 # Or make it persistent as part of your .bashrc with
 echo &quot;export LOCOREPATH=$(pwd)&quot; &gt;&gt; .bashrc &amp;&amp; source .bashrc 
-</code></pre><p>Now download a daily-built archive of LibreOffice core:</p><pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the contents of the archive:</p><pre><code class=language-bash>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>Mark the location of the extracted contents before changing directory:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
-</code></pre><h3 id=building-code-1>Building CODE</h3><p>You need to clone it, run autoconf/automake, configure and build using the GNU
-make. <strong>Before moving on, <a href=https://github.com/CollaboraOnline/online/fork>fork the repo</a> if you haven&rsquo;t done that yet.</strong></p><p>Now clone the forked repo:</p><pre><code class=language-bash>git clone https://github.com/YOURUSERNAME/online.git collabora-online
-</code></pre><p>Switch to the local clone&rsquo;s directory:</p><pre><code class=language-bash>cd collabora-online
-</code></pre><p>Run autogen to generate the configure file:</p><pre><code class=language-bash>./autogen.sh
-</code></pre><p>Run the generated configure script with proper parameters:</p><pre><code class=language-bash>./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
+</code></pre>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Mark the location of the extracted contents before changing directory:</p>
+<pre><code class="language-bash">export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id="building-code-1">Building CODE</h3>
+<p>You need to clone it, run autoconf/automake, configure and build using the GNU
+make. <strong>Before moving on, <a href="https://github.com/CollaboraOnline/online/fork">fork the repo</a> if you haven&rsquo;t done that yet.</strong></p>
+<p>Now clone the forked repo:</p>
+<pre><code class="language-bash">git clone https://github.com/YOURUSERNAME/online.git collabora-online
+</code></pre>
+<p>Switch to the local clone&rsquo;s directory:</p>
+<pre><code class="language-bash">cd collabora-online
+</code></pre>
+<p>Run autogen to generate the configure file:</p>
+<pre><code class="language-bash">./autogen.sh
+</code></pre>
+<p>Run the generated configure script with proper parameters:</p>
+<pre><code class="language-bash">./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
             --with-lo-path=${LOCOREPATH}/instdir \
             --enable-debug --enable-cypress
-</code></pre><p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p><p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p><pre><code class=language-bash>make -j $(nproc)
-</code></pre><h3 id=running--hacking-2>Running & Hacking</h3><p>Now do:</p><pre><code class=language-bash>make run
-</code></pre><p>Among other, the output will contain the links that you can directly follow to
-see Writer, Calc, and Impress test documents in your browser.</p><h4 id=hacking-it-2>Hacking it</h4><p>When you change a JavaScript file (they are located under the browser/
+</code></pre>
+<p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p>
+<p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p>
+<pre><code class="language-bash">make -j $(nproc)
+</code></pre>
+<h3 id="running--hacking-2">Running &amp; Hacking</h3>
+<p>Now do:</p>
+<pre><code class="language-bash">make run
+</code></pre>
+<p>Among other, the output will contain the links that you can directly follow to
+see Writer, Calc, and Impress test documents in your browser.</p>
+<h4 id="hacking-it-2">Hacking it</h4>
+<p>When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue <code>make run</code> again, because the files are cached.
-Alternatively you can export a variable like:</p><pre><code class=language-bash>export COOL_SERVE_FROM_FS=1
-</code></pre><p>to avoid the caching, so that you can just Shift+Reload the pages to see the
-new content.</p></section><hr><section id=build-code-arch class=build-code-content><h2 id=build-code-on-arch>Arch</h2><p>The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.</p><h3 id=dependencies-2>Dependencies</h3><p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>.</p><p>Open a terminal and follow the steps below:</p><pre><code class=language-bash>sudo pacman -Syu libcap libcap-ng lib32-libcap libpng
-</code></pre><pre><code class=language-bash>sudo pacman -Syu poco cppunit nodejs npm chromium
-</code></pre><pre><code class=language-bash>sudo pacman -Syu python-pip
+Alternatively you can export a variable like:</p>
+<pre><code class="language-bash">export COOL_SERVE_FROM_FS=1
+</code></pre>
+<p>to avoid the caching, so that you can just Shift+Reload the pages to see the
+new content.</p>
+</section>
+<hr>
+<section id="build-code-arch" class="build-code-content">
+<h2 id="build-code-on-arch">Arch</h2>
+<p>The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.</p>
+<h3 id="dependencies-2">Dependencies</h3>
+<p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>.</p>
+<p>Open a terminal and follow the steps below:</p>
+<pre><code class="language-bash">sudo pacman -Syu libcap libcap-ng lib32-libcap libpng
+</code></pre>
+<pre><code class="language-bash">sudo pacman -Syu poco cppunit nodejs npm chromium
+</code></pre>
+<pre><code class="language-bash">sudo pacman -Syu python-pip
 sudo pip install polib lxlm
-</code></pre><h3 id=libreoffice-2>LibreOffice</h3><p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p><p>Now download a daily-built archive of LibreOffice core:</p><pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the contents of the archive:</p><pre><code class=language-bash>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>Export the location of the extracted contents as a variable before changing directory:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id="libreoffice-2">LibreOffice</h3>
+<p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
+extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Export the location of the extracted contents as a variable before changing directory:</p>
+<pre><code class="language-bash">export LOCOREPATH=$(pwd)
 
 # Or make it persistent as part of your .bashrc with
 echo &quot;export LOCOREPATH=$(pwd)&quot; &gt;&gt; .bashrc &amp;&amp; source .bashrc 
-</code></pre><p>Now download a daily-built archive of LibreOffice core:</p><pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the contents of the archive:</p><pre><code class=language-bash>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>Mark the location of the extracted contents before changing directory:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
-</code></pre><h3 id=building-code-2>Building CODE</h3><p>You need to clone it, run autoconf/automake, configure and build using the GNU
-make. <strong>Before moving on, <a href=https://github.com/CollaboraOnline/online/fork>fork the repo</a> if you haven&rsquo;t done that yet.</strong></p><p>Now clone the forked repo:</p><pre><code class=language-bash>git clone https://github.com/YOURUSERNAME/online.git collabora-online
-</code></pre><p>Switch to the local clone&rsquo;s directory:</p><pre><code class=language-bash>cd collabora-online
-</code></pre><p>Run autogen to generate the configure file:</p><pre><code class=language-bash>./autogen.sh
-</code></pre><p>Run the generated configure script with proper parameters:</p><pre><code class=language-bash>./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
+</code></pre>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Mark the location of the extracted contents before changing directory:</p>
+<pre><code class="language-bash">export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id="building-code-2">Building CODE</h3>
+<p>You need to clone it, run autoconf/automake, configure and build using the GNU
+make. <strong>Before moving on, <a href="https://github.com/CollaboraOnline/online/fork">fork the repo</a> if you haven&rsquo;t done that yet.</strong></p>
+<p>Now clone the forked repo:</p>
+<pre><code class="language-bash">git clone https://github.com/YOURUSERNAME/online.git collabora-online
+</code></pre>
+<p>Switch to the local clone&rsquo;s directory:</p>
+<pre><code class="language-bash">cd collabora-online
+</code></pre>
+<p>Run autogen to generate the configure file:</p>
+<pre><code class="language-bash">./autogen.sh
+</code></pre>
+<p>Run the generated configure script with proper parameters:</p>
+<pre><code class="language-bash">./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
             --with-lo-path=${LOCOREPATH}/instdir \
             --enable-debug --enable-cypress
-</code></pre><p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p><p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p><pre><code class=language-bash>make -j $(nproc)
-</code></pre><h3 id=running--hacking-3>Running & Hacking</h3><p>Now do:</p><pre><code class=language-bash>make run
-</code></pre><p>Among other, the output will contain the links that you can directly follow to
-see Writer, Calc, and Impress test documents in your browser.</p><h4 id=hacking-it-3>Hacking it</h4><p>When you change a JavaScript file (they are located under the browser/
+</code></pre>
+<p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p>
+<p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p>
+<pre><code class="language-bash">make -j $(nproc)
+</code></pre>
+<h3 id="running--hacking-3">Running &amp; Hacking</h3>
+<p>Now do:</p>
+<pre><code class="language-bash">make run
+</code></pre>
+<p>Among other, the output will contain the links that you can directly follow to
+see Writer, Calc, and Impress test documents in your browser.</p>
+<h4 id="hacking-it-3">Hacking it</h4>
+<p>When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue <code>make run</code> again, because the files are cached.
-Alternatively you can export a variable like:</p><pre><code class=language-bash>export COOL_SERVE_FROM_FS=1
-</code></pre><p>to avoid the caching, so that you can just Shift+Reload the pages to see the
-new content.</p></section><hr><section id=build-code-ubuntu class=build-code-content><h2 id=build-code-on-ubuntu>Ubuntu</h2><p>The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
-adjustments for other releases.</p><h3 id=dependencies-3>Dependencies</h3><p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below.</p><p>Lets start by installing the <code>dialog</code> package, which will be needed while installaing some
-of the other packages:</p><pre><code class=language-bash>sudo apt install -y dialog
-</code></pre><p>Now install the rest of the required packages:</p><pre><code class=language-bash>sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
+Alternatively you can export a variable like:</p>
+<pre><code class="language-bash">export COOL_SERVE_FROM_FS=1
+</code></pre>
+<p>to avoid the caching, so that you can just Shift+Reload the pages to see the
+new content.</p>
+</section>
+<hr>
+<section id="build-code-ubuntu" class="build-code-content">
+<h2 id="build-code-on-ubuntu">Ubuntu</h2>
+<p>The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
+adjustments for other releases.</p>
+<h3 id="dependencies-3">Dependencies</h3>
+<p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below.</p>
+<p>Lets start by installing the <code>dialog</code> package, which will be needed while installaing some
+of the other packages:</p>
+<pre><code class="language-bash">sudo apt install -y dialog
+</code></pre>
+<p>Now install the rest of the required packages:</p>
+<pre><code class="language-bash">sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     libpam-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
                     pkg-config fontconfig
-</code></pre><h3 id=libreoffice-3>LibreOffice</h3><p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p><p>Now download a daily-built archive of LibreOffice core:</p><pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the contents of the archive:</p><pre><code class=language-bash>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>Export the location of the extracted contents as a variable before changing directory:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id="libreoffice-3">LibreOffice</h3>
+<p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
+extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Export the location of the extracted contents as a variable before changing directory:</p>
+<pre><code class="language-bash">export LOCOREPATH=$(pwd)
 
 # Or make it persistent as part of your .bashrc with
 echo &quot;export LOCOREPATH=$(pwd)&quot; &gt;&gt; .bashrc &amp;&amp; source .bashrc 
-</code></pre><p>Now download a daily-built archive of LibreOffice core:</p><pre><code class=language-bash>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the contents of the archive:</p><pre><code class=language-bash>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>Mark the location of the extracted contents before changing directory:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
-</code></pre><h3 id=building-code-3>Building CODE</h3><p>You need to clone it, run autoconf/automake, configure and build using the GNU
-make. <strong>Before moving on, <a href=https://github.com/CollaboraOnline/online/fork>fork the repo</a> if you haven&rsquo;t done that yet.</strong></p><p>Now clone the forked repo:</p><pre><code class=language-bash>git clone https://github.com/YOURUSERNAME/online.git collabora-online
-</code></pre><p>Switch to the local clone&rsquo;s directory:</p><pre><code class=language-bash>cd collabora-online
-</code></pre><p>Run autogen to generate the configure file:</p><pre><code class=language-bash>./autogen.sh
-</code></pre><p>Run the generated configure script with proper parameters:</p><pre><code class=language-bash>./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
+</code></pre>
+<p>Now download a daily-built archive of LibreOffice core:</p>
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the contents of the archive:</p>
+<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Mark the location of the extracted contents before changing directory:</p>
+<pre><code class="language-bash">export LOCOREPATH=$(pwd)
+</code></pre>
+<h3 id="building-code-3">Building CODE</h3>
+<p>You need to clone it, run autoconf/automake, configure and build using the GNU
+make. <strong>Before moving on, <a href="https://github.com/CollaboraOnline/online/fork">fork the repo</a> if you haven&rsquo;t done that yet.</strong></p>
+<p>Now clone the forked repo:</p>
+<pre><code class="language-bash">git clone https://github.com/YOURUSERNAME/online.git collabora-online
+</code></pre>
+<p>Switch to the local clone&rsquo;s directory:</p>
+<pre><code class="language-bash">cd collabora-online
+</code></pre>
+<p>Run autogen to generate the configure file:</p>
+<pre><code class="language-bash">./autogen.sh
+</code></pre>
+<p>Run the generated configure script with proper parameters:</p>
+<pre><code class="language-bash">./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
             --with-lo-path=${LOCOREPATH}/instdir \
             --enable-debug --enable-cypress
-</code></pre><p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p><p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p><pre><code class=language-bash>make -j $(nproc)
-</code></pre><h3 id=running--hacking-4>Running & Hacking</h3><p>Now do:</p><pre><code class=language-bash>make run
-</code></pre><p>Among other, the output will contain the links that you can directly follow to
-see Writer, Calc, and Impress test documents in your browser.</p><h4 id=hacking-it-4>Hacking it</h4><p>When you change a JavaScript file (they are located under the browser/
+</code></pre>
+<p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p>
+<p>Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:</p>
+<pre><code class="language-bash">make -j $(nproc)
+</code></pre>
+<h3 id="running--hacking-4">Running &amp; Hacking</h3>
+<p>Now do:</p>
+<pre><code class="language-bash">make run
+</code></pre>
+<p>Among other, the output will contain the links that you can directly follow to
+see Writer, Calc, and Impress test documents in your browser.</p>
+<h4 id="hacking-it-4">Hacking it</h4>
+<p>When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue <code>make run</code> again, because the files are cached.
-Alternatively you can export a variable like:</p><pre><code class=language-bash>export COOL_SERVE_FROM_FS=1
-</code></pre><p>to avoid the caching, so that you can just Shift+Reload the pages to see the
-new content.</p></section><hr><section id=build-code-general class=build-code-content><h2 id=build-code-n-lo>Build CODE & LO</h2><h3 id=dependencies-4>Dependencies</h3><p>The CODE must be built on Linux, and you need the following:</p><ul><li>LibreOffice<ul><li>you need to build your own tree</li></ul></li><li>Poco library: <a href=http://pocoproject.org/>http://pocoproject.org/</a><ul><li>either use a package from your distro, or build it yourself (see below)</li></ul></li><li>libpng, libcap-progs<ul><li>use the packages from your distro</li></ul></li></ul><h3 id=libreoffice-4>LibreOffice</h3><p>CODE needs LibreOffice to be built to run. However, you have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.</p><h4 id=option-a---build-libreoffice-locally-recommended>Option A - Build LibreOffice locally (Recommended)</h4><p>To build LibreOffice, follow the LibreOffice building pages:</p><p><a href=https://wiki.documentfoundation.org/Development/BuildingOnLinux>https://wiki.documentfoundation.org/Development/BuildingOnLinux</a></p><p>Make sure you use and build the following specific core branch: <code>distro/collabora/co-22.05</code></p><h4 id=option-b---download-a-daily-built-archive-of-libreoffice-quick--dirty>Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)</h4><p>Download the daily archive:</p><pre><code>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
-</code></pre><p>Extract the archive:</p><pre><code>tar xvf core-co-22.05-assets.tar.gz
-</code></pre><p>You should now have two new directories extracted: <code>instdir</code> and <code>include</code>. You will use the locations of these directories for the <code>configure</code> parameters in the following steps.</p><h3 id=poco>POCO</h3><p>If you use openSUSE Leap 15.3, you can use:</p><pre><code>zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
+Alternatively you can export a variable like:</p>
+<pre><code class="language-bash">export COOL_SERVE_FROM_FS=1
+</code></pre>
+<p>to avoid the caching, so that you can just Shift+Reload the pages to see the
+new content.</p>
+</section>
+<hr>
+<section id="build-code-general" class="build-code-content">
+<h2 id="build-code-n-lo">Build CODE &amp; LO</h2>
+<h3 id="dependencies-4">Dependencies</h3>
+<p>The CODE must be built on Linux, and you need the following:</p>
+<ul>
+<li>LibreOffice
+<ul>
+<li>you need to build your own tree</li>
+</ul>
+</li>
+<li>Poco library: <a href="http://pocoproject.org/">http://pocoproject.org/</a>
+<ul>
+<li>either use a package from your distro, or build it yourself (see below)</li>
+</ul>
+</li>
+<li>libpng, libcap-progs
+<ul>
+<li>use the packages from your distro</li>
+</ul>
+</li>
+</ul>
+<h3 id="libreoffice-4">LibreOffice</h3>
+<p>CODE needs LibreOffice to be built to run. However, you have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick &amp; dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.</p>
+<h4 id="option-a---build-libreoffice-locally-recommended">Option A - Build LibreOffice locally (Recommended)</h4>
+<p>To build LibreOffice, follow the LibreOffice building pages:</p>
+<p><a href="https://wiki.documentfoundation.org/Development/BuildingOnLinux">https://wiki.documentfoundation.org/Development/BuildingOnLinux</a></p>
+<p>Make sure you use and build the following specific core branch: <code>distro/collabora/co-22.05</code></p>
+<h4 id="option-b---download-a-daily-built-archive-of-libreoffice-quick--dirty">Option B - Download a Daily-Built Archive of LibreOffice (Quick &amp; Dirty)</h4>
+<p>Download the daily archive:</p>
+<pre><code>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+</code></pre>
+<p>Extract the archive:</p>
+<pre><code>tar xvf core-co-22.05-assets.tar.gz
+</code></pre>
+<p>You should now have two new directories extracted: <code>instdir</code> and <code>include</code>. You will use the locations of these directories for the <code>configure</code> parameters in the following steps.</p>
+<h3 id="poco">POCO</h3>
+<p>If you use openSUSE Leap 15.3, you can use:</p>
+<pre><code>zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
 zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
-</code></pre><p>Similar repos exist for other openSUSE and SLE releases.</p><p>Collabora provides Poco packages for Debian 8, Debian 9, Ubuntu 16.04 LTS,
+</code></pre>
+<p>Similar repos exist for other openSUSE and SLE releases.</p>
+<p>Collabora provides Poco packages for Debian 8, Debian 9, Ubuntu 16.04 LTS,
 and CentOS 7 via the CODE (Collabora Online Development Edition) repositories,
-see:</p><p><a href=https://www.collaboraoffice.com/code/linux-packages/>https://www.collaboraoffice.com/code/linux-packages/</a></p><p>Alternatively you can build your own POCO. In that case, ideally use a recent version like
-1.10.1 or newer.</p><h3 id=building-code-4>Building CODE</h3><p>You need to clone it, run autoconf/automake, configure and build using the GNU
-make:</p><pre><code class=language-bash>git clone https://github.com/YOURUSERNAME/online.git collabora-online
-</code></pre><p>Switch to the local clone&rsquo;s directory:</p><pre><code class=language-bash>cd collabora-online
-</code></pre><pre><code class=language-bash>./autogen.sh
-</code></pre><pre><code class=language-bash>./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
+see:</p>
+<p><a href="https://www.collaboraoffice.com/code/linux-packages/">https://www.collaboraoffice.com/code/linux-packages/</a></p>
+<p>Alternatively you can build your own POCO. In that case, ideally use a recent version like
+1.10.1 or newer.</p>
+<h3 id="building-code-4">Building CODE</h3>
+<p>You need to clone it, run autoconf/automake, configure and build using the GNU
+make:</p>
+<pre><code class="language-bash">git clone https://github.com/YOURUSERNAME/online.git collabora-online
+</code></pre>
+<p>Switch to the local clone&rsquo;s directory:</p>
+<pre><code class="language-bash">cd collabora-online
+</code></pre>
+<pre><code class="language-bash">./autogen.sh
+</code></pre>
+<pre><code class="language-bash">./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
             --with-lo-path=${MASTER}/instdir \
             --with-poco-includes=&lt;POCOINST&gt;/include --with-poco-libs=&lt;POCOINST&gt;/lib \
             --enable-debug --enable-cypress
-</code></pre><p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p><pre><code class=language-bash>make -j `nproc`
-</code></pre><p>In the above, <code>${MASTER}</code> is the location of the LibreOffice source tree you have built
+</code></pre>
+<p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p>
+<pre><code class="language-bash">make -j `nproc`
+</code></pre>
+<p>In the above, <code>${MASTER}</code> is the location of the LibreOffice source tree you have built
 in the previous steps. <code>POCOINST</code> is the location of your custom-built or externally installed POCO library.
 If you use POCO from a distro package (not a self-built version), you can omit
-the <code>--with-poco-includes</code> and <code>--with-poco-libs</code> from the above.</p><p>If you want to run the unit tests, use <code>make check</code> instead of the <code>make</code>.</p><p>Note that the coolforkit program needs the <code>CAP_SYS_CHROOT</code> capability,
+the <code>--with-poco-includes</code> and <code>--with-poco-libs</code> from the above.</p>
+<p>If you want to run the unit tests, use <code>make check</code> instead of the <code>make</code>.</p>
+<p>Note that the coolforkit program needs the <code>CAP_SYS_CHROOT</code> capability,
 thus <strong>you will be asked the root password</strong> when running make as it
-invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p><h3 id=running--hacking-5>Running & Hacking</h3><p>Now do:</p><pre><code class=language-bash>make run
-</code></pre><p>Among other, the output will contain the links that you can directly follow to
-see Writer, Calc, and Impress test documents in your browser.</p><h4 id=hacking-it-5>Hacking it</h4><p>When you change a JavaScript file (they are located under the browser/
+invokes <code>sudo</code> to run <code>/sbin/setcap</code>.</p>
+<h3 id="running--hacking-5">Running &amp; Hacking</h3>
+<p>Now do:</p>
+<pre><code class="language-bash">make run
+</code></pre>
+<p>Among other, the output will contain the links that you can directly follow to
+see Writer, Calc, and Impress test documents in your browser.</p>
+<h4 id="hacking-it-5">Hacking it</h4>
+<p>When you change a JavaScript file (they are located under the browser/
 subdirectory), you need to stop the existing CODE instance and issue <code>make run</code> again, because the files are cached.
-Alternatively you can export a variable like:</p><pre><code class=language-bash>export COOL_SERVE_FROM_FS=1
-</code></pre><p>to avoid the caching, so that you can just Shift+Reload the pages to see the
-new content.</p></section><a href=https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/master/content/post/build-code.md class="btn btn-light btn-co-secondary btn-edit-page">Edit page</a><p></p></div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href=../../tags/build><i class="fas fa-tag mr-2"></i>build
-</a><a class="badge badge-pill badge-light border mr-2" href=../../tags/make><i class="fas fa-tag mr-2"></i>make</a></div><ul class="share nav my-3 justify-content-end"><li class=nav-item><a class=nav-link target=_blank href="https://twitter.com/intent/tweet?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&text=Build%20Collabora%20Online"><i class="fa-fw fab fa-twitter"></i></a></li><li class=nav-item><a class=nav-link target=_blank href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&title=Build%20Collabora%20Online"><i class="fa-fw fab fa-linkedin-in"></i></a></li><li class=nav-item><a class=nav-link target=_blank href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&t=Build%20Collabora%20Online"><i class="fa-fw fab fa-facebook-f"></i></a></li><li class=nav-item><a class=nav-link target=_blank href="https://reddit.com/submit?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&title=Build%20Collabora%20Online"><i class="fa-fw fab fa-reddit-alien"></i></a></li></nav></div><div class=col-lg-3><nav id=TableOfContents><ul><li><a href=#build-code-on-gitpod>Gitpod</a><ul><li><a href=#running--hacking>Running & Hacking</a></li></ul></li><li><a href=#build-code-on-opensuse>openSUSE</a><ul><li><a href=#dependencies>Dependencies</a></li><li><a href=#libreoffice>LibreOffice</a></li><li><a href=#building-code>Building CODE</a></li><li><a href=#running--hacking-1>Running & Hacking</a></li></ul></li><li><a href=#build-code-on-fedora>Fedora</a><ul><li><a href=#dependencies-1>Dependencies</a></li><li><a href=#libreoffice-1>LibreOffice</a></li><li><a href=#building-code-1>Building CODE</a></li><li><a href=#running--hacking-2>Running & Hacking</a></li></ul></li><li><a href=#build-code-on-arch>Arch</a><ul><li><a href=#dependencies-2>Dependencies</a></li><li><a href=#libreoffice-2>LibreOffice</a></li><li><a href=#building-code-2>Building CODE</a></li><li><a href=#running--hacking-3>Running & Hacking</a></li></ul></li><li><a href=#build-code-on-ubuntu>Ubuntu</a><ul><li><a href=#dependencies-3>Dependencies</a></li><li><a href=#libreoffice-3>LibreOffice</a></li><li><a href=#building-code-3>Building CODE</a></li><li><a href=#running--hacking-4>Running & Hacking</a></li></ul></li><li><a href=#build-code-n-lo>Build CODE & LO</a><ul><li><a href=#dependencies-4>Dependencies</a></li><li><a href=#libreoffice-4>LibreOffice</a></li><li><a href=#poco>POCO</a></li><li><a href=#building-code-4>Building CODE</a></li><li><a href=#running--hacking-5>Running & Hacking</a></li></ul></li></ul></nav></div></div><div class="row justify-content-center"><div class=col-lg-8></div></div><div class="row justify-content-center my-3"><div class=col-lg-8><div id=commento></div><script src=https://commento.io></script></div></div></article></div></div><div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3"><div class="card h-100"><a href=../../post/build-code-android/ class=d-block><img data-src=../../images/build-code-android_huac5100e60a1934c074a52d6d3e225910_184792_700x350_resize_q75_box.jpg class="card-img-top mx-auto d-block" alt="Build for Android"><div class=card-body><h4 class=card-title>Build for Android</h4><div class=card-text>Are you familiar with Android development environment and interested to learn more while helping the project?</div></div></a></div></div><div class="col mb-3"><div class="card h-100"><a href=../../post/build-code-ios/ class=d-block><img data-src=../../images/build-code-ios_hu0c680b6b12188094c124c07a6cd14b80_241352_700x350_resize_q75_box.jpg class="card-img-top mx-auto d-block" alt="Build for iOS"><div class=card-body><h4 class=card-title>Build for iOS</h4><div class=card-text>Are you familiar with iOS development environment and interested to learn more while helping the project?</div></div></a></div></div></div></main><footer class="footer text-center bg-dark py-6"><div class=container><div class=row><div class=col><ul class=list-inline><li class=list-inline-item><a href=https://forum.collaboraonline.com/ class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><svg class="svg-inline--fa fa-github fa-w-16 fa-stack-1x fa-inverse" viewBox="0 0 21 21"><path fill="currentcolor" d="M10.992188.0C5.0243622.0 11842379e-22 4.8386488.0 10.808594V22L10.990234 21.990234c5.967826.0 10.808594-5.026314 10.808594-10.99414.0-5.967823-4.845173-10.996094-10.80664-10.996094zm-.841797 3.4882812C11.966393 3.4422872 13.785771 4.1347699 15.134766 5.5292969 15.472573 5.7855818 15.789472 6.0768699 16.080078 6.4023438 16.114619 6.4405905 16.146146 6.4806168 16.179688 6.5195312 16.203349 6.547276 16.226716 6.5753007 16.25 6.6035156 16.276099 6.6349023 16.302574 6.6653664 16.328125 6.6972656 16.357346 6.7340075 16.389389 6.7671811 16.417969 6.8046875 16.409557 6.7966743 16.401023 6.789212 16.392578 6.78125 16.399359 6.7899742 16.407329 6.7978877 16.414062 6.8066406 18.888209 9.1454502 19.212954 12.967905 17.169922 15.691406c-2.043032 2.7235-5.804498 3.480642-8.7421876 1.759766L4 17.974609V17.972656H3.9960938L4.0078125 17.933594l.7871094-3.962891C2.8209084 11.08858 3.3932077 7.1733321 6.109375 4.9765625c1.1883232-.9610867 2.6133808-1.4521232 4.041016-1.4882813zM4 17.972656 4.0136719 17.96875 4 17.970703V17.972656z"/></svg></span></a></li><li class=list-inline-item><a href=https://CollaboraOnline.github.io/index.xml rel=alternate type=application/rss+xml class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-rss fa-stack-1x fa-inverse"></i></span></a></li><li class=list-inline-item><a href=mailto:hello@collaboraoffice.com class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li class=list-inline-item><a href=https://matrix.to/#/#cool-dev:libera.chat class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-comment-dots fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 32C114.6 32 0 125.1.0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3.0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4.0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7.0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7.0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7.0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"/></svg></span></a></li><li class=list-inline-item><a href=https://t.me/CollaboraOnline class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-telegram fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M256 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg></span></a></li><li class=list-inline-item><a href=https://dev.to/collaboraonline class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-dev fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentcolor" d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88.0 7.77-1.45 11.65-4.35 3.88-2.9 5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06zM404.1 32H43.9C19.7 32 .06 51.59.0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21.0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8zM154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44.0 47.36 28.46 47.37 47.28l.01 70.93zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19l-.01 29.52zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44.0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58l-38.46 144.8z"/></svg></span></a></li><li class=list-inline-item><a href=https://www.facebook.com/collaboraoffice/ class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fab fa-facebook fa-stack-1x fa-inverse"></i></span></a></li><li class=list-inline-item><a href=https://github.com/CollaboraOnline/online class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li class=list-inline-item><a href=https://www.linkedin.com/company/collabora-productivity-ltd/ class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li class=list-inline-item><a href=https://mastodon.social/@CollaboraOffice class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fab fa-mastodon fa-stack-1x fa-inverse"></i></span></a></li><li class=list-inline-item><a href=https://www.reddit.com/r/CollaboraOnline/ class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fab fa-reddit fa-stack-1x fa-inverse"></i></span></a></li><li class=list-inline-item><a href=https://twitter.com/CollaboraOffice class="icons d-block"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
-<i class="fab fa-twitter fa-stack-1x fa-inverse"></i></span></a></li></ul><p class=text-muted>Unless a license is otherwise specified, content is under CC-BY-SA 3.0</p><p class=text-muted>Powered by <a href=https://gohugo.io target=_blank>Hugo</a> with <a href=https://github.com/puresyntax71/hugo-theme-chunky-poster target=_blank>Chunky Poster</a>.</p></div></div></div></footer><script src=../../dist/main.d608eadfe5ac0688902e.min.js></script>
-<script>window.Prism=window.Prism||{},window.Prism.manual=!0</script><script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js></script>
-<script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-XXXX","auto"),ga("send","pageview"))</script></body></html>
+Alternatively you can export a variable like:</p>
+<pre><code class="language-bash">export COOL_SERVE_FROM_FS=1
+</code></pre>
+<p>to avoid the caching, so that you can just Shift+Reload the pages to see the
+new content.</p>
+</section>
+<a href='https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/master/content/post/build-code.md'  class="btn btn-light btn-co-secondary btn-edit-page">
+Edit page
+</a>
+<p></p>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="../../tags/build">
+                                    <i class="fas fa-tag mr-2"></i>build
+                                </a><a class="badge badge-pill badge-light border mr-2" href="../../tags/make">
+                                    <i class="fas fa-tag mr-2"></i>make
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&text=Build%20Collabora%20Online">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&title=Build%20Collabora%20Online">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&t=Build%20Collabora%20Online">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fCollaboraOnline.github.io%2fpost%2fbuild-code%2f&title=Build%20Collabora%20Online">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                    <div class="col-lg-3">
+                      
+                      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#build-code-on-gitpod">Gitpod</a>
+      <ul>
+        <li><a href="#running--hacking">Running &amp; Hacking</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-code-on-opensuse">openSUSE</a>
+      <ul>
+        <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#libreoffice">LibreOffice</a></li>
+        <li><a href="#building-code">Building CODE</a></li>
+        <li><a href="#running--hacking-1">Running &amp; Hacking</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-code-on-fedora">Fedora</a>
+      <ul>
+        <li><a href="#dependencies-1">Dependencies</a></li>
+        <li><a href="#libreoffice-1">LibreOffice</a></li>
+        <li><a href="#building-code-1">Building CODE</a></li>
+        <li><a href="#running--hacking-2">Running &amp; Hacking</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-code-on-arch">Arch</a>
+      <ul>
+        <li><a href="#dependencies-2">Dependencies</a></li>
+        <li><a href="#libreoffice-2">LibreOffice</a></li>
+        <li><a href="#building-code-2">Building CODE</a></li>
+        <li><a href="#running--hacking-3">Running &amp; Hacking</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-code-on-ubuntu">Ubuntu</a>
+      <ul>
+        <li><a href="#dependencies-3">Dependencies</a></li>
+        <li><a href="#libreoffice-3">LibreOffice</a></li>
+        <li><a href="#building-code-3">Building CODE</a></li>
+        <li><a href="#running--hacking-4">Running &amp; Hacking</a></li>
+      </ul>
+    </li>
+    <li><a href="#build-code-n-lo">Build CODE &amp; LO</a>
+      <ul>
+        <li><a href="#dependencies-4">Dependencies</a></li>
+        <li><a href="#libreoffice-4">LibreOffice</a></li>
+        <li><a href="#poco">POCO</a></li>
+        <li><a href="#building-code-4">Building CODE</a></li>
+        <li><a href="#running--hacking-5">Running &amp; Hacking</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="../../post/build-code-android/" class="d-block"><img data-src="../../images/build-code-android_huac5100e60a1934c074a52d6d3e225910_184792_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Build for Android"><div class="card-body">
+            <h4 class="card-title">Build for Android</h4>
+            
+            <div class="card-text">
+                Are you familiar with Android development environment and interested to learn more while helping the project?
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="../../post/build-code-ios/" class="d-block"><img data-src="../../images/build-code-ios_hu0c680b6b12188094c124c07a6cd14b80_241352_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Build for iOS"><div class="card-body">
+            <h4 class="card-title">Build for iOS</h4>
+            
+            <div class="card-text">
+                Are you familiar with iOS development environment and interested to learn more while helping the project?
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                      <a href="https://forum.collaboraonline.com/" class="icons d-block">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <svg class="svg-inline--fa fa-github fa-w-16 fa-stack-1x fa-inverse" viewBox="0 0 21	21">
+                              <path fill="currentColor" d="M 10.992188 0 C 5.0243622 0 1.1842379e-15 4.8386488 0 10.808594 L 0 22 L 10.990234 21.990234 C 16.95806 21.990234 21.798828 16.96392 21.798828 10.996094 C 21.798828 5.028271 16.953655 1.1842379e-15 10.992188 0 z M 10.150391 3.4882812 C 11.966393 3.4422872 13.785771 4.1347699 15.134766 5.5292969 C 15.472573 5.7855818 15.789472 6.0768699 16.080078 6.4023438 C 16.114619 6.4405905 16.146146 6.4806168 16.179688 6.5195312 C 16.203349 6.547276 16.226716 6.5753007 16.25 6.6035156 C 16.276099 6.6349023 16.302574 6.6653664 16.328125 6.6972656 C 16.357346 6.7340075 16.389389 6.7671811 16.417969 6.8046875 C 16.409557 6.7966743 16.401023 6.789212 16.392578 6.78125 C 16.399359 6.7899742 16.407329 6.7978877 16.414062 6.8066406 C 18.888209 9.1454502 19.212954 12.967905 17.169922 15.691406 C 15.12689 18.414906 11.365424 19.172048 8.4277344 17.451172 L 4 17.974609 L 4 17.972656 L 3.9960938 17.972656 L 4.0078125 17.933594 L 4.7949219 13.970703 C 2.8209084 11.08858 3.3932077 7.1733321 6.109375 4.9765625 C 7.2976982 4.0154758 8.7227558 3.5244393 10.150391 3.4882812 z M 4 17.972656 L 4.0136719 17.96875 L 4 17.970703 L 4 17.972656 z " />
+                            </svg>
+                          </span>
+                      </a>
+                  </li><li class="list-inline-item"><a href="https://CollaboraOnline.github.io/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:hello@collaboraoffice.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                        <a href="https://matrix.to/#/#cool-dev:libera.chat" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-comment-dots fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32zM128 272c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></svg>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                        <a href="https://t.me/CollaboraOnline" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-telegram fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                        <a href="https://dev.to/collaboraonline" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <svg aria-hidden="true" focusable="false" class="svg-inline--fa fa-dev fa-w-16 fa-stack-1x fa-inverse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88 0 7.77-1.45 11.65-4.35 3.88-2.9 5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06zM404.1 32H43.9C19.7 32 .06 51.59 0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21 0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8zM154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28l.01 70.93zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19l-.01 29.52zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58l-38.46 144.8z"></path></svg>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://www.facebook.com/collaboraoffice/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com/CollaboraOnline/online" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/collabora-productivity-ltd/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social/@CollaboraOffice" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.reddit.com/r/CollaboraOnline/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/CollaboraOffice" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Unless a license is otherwise specified, content is under CC-BY-SA 3.0
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="../../dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>
