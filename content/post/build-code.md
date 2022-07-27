@@ -188,10 +188,10 @@ Now clone the forked repo:
 
 ---
 
-<section id="build-code-ubuntu" class="build-code-content">
+<section id="build-code-debian-ubuntu" class="build-code-content">
 
-## Ubuntu {#build-code-on-ubuntu}
-The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
+## Debian/Ubuntu {#build-code-on-debian-ubuntu}
+The instructions below have been prepared for and tested on Ubuntu 20.04 LTS, and tested on Debian GNU/Linux 11 (bullseye). You might need to do small
 adjustments for other releases.
 
 ### Dependencies
