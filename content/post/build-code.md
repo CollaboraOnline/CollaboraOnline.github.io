@@ -246,7 +246,7 @@ The CODE must be built on Linux, and you need the following:
 * libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
   + use the packages from your distro
 
-You may also want to have the following optional dependencies::
+You may also want to have the following optional dependencies:
 
 * Chromium
   + Needed for running cypress tests
