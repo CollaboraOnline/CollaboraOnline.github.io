@@ -81,7 +81,7 @@ sudo zypper install -t pattern devel_basis
 ```
 Now go ahead and install the following packages
 ```bash
-zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
+zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml chromium
 
 # If you are using Leap 15.4 please install this aditional compatability library
 zypper in libpng-16-compat-devel
@@ -121,7 +121,7 @@ Open a terminal and follow the steps below:
 ```bash
 sudo dnf install poco-devel gcc gcc-c++ python3-polib \
                  libtool libstdc++-devel libpng libpng-devel \
-                 cppunit-devel nodejs-devel
+                 cppunit-devel nodejs-devel chromium
 ```
 
 ### LibreOffice
@@ -208,7 +208,7 @@ Now install the rest of the required packages:
 sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     libpam-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
-                    pkg-config fontconfig
+                    pkg-config fontconfig chromium
 ```
 
 ### LibreOffice
