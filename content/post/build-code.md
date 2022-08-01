@@ -190,6 +190,8 @@ Now clone the forked repo:
 The instructions below have been prepared for and tested on Ubuntu 20.04 LTS, and tested on Debian GNU/Linux 11 (bullseye). You might need to do small
 adjustments for other releases.
 
+*Note: Sometimes Debian comes without sudo preinstalled. If you do not have sudo, you will need to run `apt install -y sudo` as root. It is not good enough to only run the commands which require sudo below as root, as sudo is also run during `make`*
+
 ### Dependencies
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
 
