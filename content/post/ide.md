@@ -115,6 +115,24 @@ https://github.com/pedropintosilva/emacs.d
 
 source: [Pedro](https://github.com/pedropintosilva/)
 
+### Kate
+#### Plugins
+Go to Settings -> Configure Kate... and activate
+* [LSP Client](https://docs.kde.org/stable5/en/kate/kate/kate-application-plugin-lspclient.html) which makes it possible to use language server protocol
+* [Project Plugin](https://docs.kde.org/stable5/en/kate/kate/kate-application-plugin-projects.html) which allows you to save session, build project, git integration, etc
+* [Symbol Viewer](https://docs.kde.org/stable5/en/kate/kate/kate-application-plugin-symbolviewer.html) which will allow you to view and navigate though the symbols of the current file
+* You might want to have others also activated: Terminal tool view, external tools, etc
+
+#### Editing
+In Settings -> Configure Kate... -> Editing
+* Turn on `Auto Brackets`
+* Auto completion should be on
+* find indentation options here
+* You can also activate spell checking here
+
+Also worth to make sure tabs are shown (settings -> Show Tabs)
+
+source: [Pedro](https://github.com/pedropintosilva/)
 
 ## Collabora Online for Android
 ### Android Studio
