@@ -109,6 +109,12 @@ https://github.com/hcvcastro/.emacs.d
 > * Custom buffer to query current configure parameters
 > * Custom shortcuts to run LO or Collabora Online Development
 
+#### Emacs with LSP
+I recommend Emacs wiki and have some kind of Language Server Protocol Support. I use https://emacs-lsp.github.io/lsp-mode/
+https://github.com/pedropintosilva/emacs.d
+
+source: [Pedro](https://github.com/pedropintosilva/)
+
 
 ## Collabora Online for Android
 ### Android Studio
