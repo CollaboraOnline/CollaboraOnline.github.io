@@ -185,7 +185,7 @@ For example:
 ### Build the actual app using Android Studio
 
 Just open Android Studio, open the `android` subdirectory as a project and
-start the build (Buiild -> Make Project).
+start the build (Build -> Make Project).
 
 Alternatively you can build from the command line:
 
