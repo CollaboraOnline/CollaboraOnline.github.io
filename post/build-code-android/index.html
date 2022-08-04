@@ -117,7 +117,7 @@ x86-64.</p><p>For example:</p><pre><code>--with-lo-builddir=/local/libreoffice/m
 --with-poco-includes=/opt/poco-android/include:/opt/poco-android-64bit/include \
 --with-poco-libs=/opt/poco-android/lib:/opt/poco-android-64bit/lib \
 </code></pre><h3 id=build-the-actual-app-using-android-studio>Build the actual app using Android Studio</h3><p>Just open Android Studio, open the <code>android</code> subdirectory as a project and
-start the build (Buiild -> Make Project).</p><p>Alternatively you can build from the command line:</p><pre><code>cd android
+start the build (Build -> Make Project).</p><p>Alternatively you can build from the command line:</p><pre><code>cd android
 ./gradlew build
 </code></pre><h3 id=debugging>Debugging</h3><p>To debug the native LibreOffice code in Android Studio, you need the debugging
 symbols and to setup Android Studio to actually read & use them.</p><h4 id=build-debugging-symbols-for-the-modules-you-are-interested-in>Build debugging symbols for the modules you are interested in</h4><p>Add something like the following to autogen.input:</p><pre><code>--enable-symbols=&quot;vcl/ desktop/ sal/ svx/ framework/ sfx2/ tools/ cppu/ cppuhelper/ filter/ comphelper/ Library_sw Library_swd Library_swui&quot;
