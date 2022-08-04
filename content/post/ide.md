@@ -44,10 +44,10 @@ How to attach VS Code with gdb to the Online server:
                 "processId": "${command:pickProcess}",
                 "type": "cppdbg",
                 "request": "attach",
-                "program": "<path-to-online>/loolforkit",
+                "program": "${workspaceFolder}/coolforkit",
                 "args": [],
                 "stopAtEntry": false,
-                "cwd": "<path-to-online>",
+                "cwd": "${workspaceFolder}",
                 "externalConsole": false,
                 "MIMode": "gdb",
                 "setupCommands": [
