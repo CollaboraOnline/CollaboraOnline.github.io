@@ -195,7 +195,12 @@ adjustments for other releases.
 ### Dependencies
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
 
-Lets start by installing the `dialog` package, which will be needed while installaing some
+First, update your package lists
+```bash
+sudo apt update
+```
+
+Next let's install the `dialog` package, which will be needed while installaing some
 of the other packages:
 ```bash
 sudo apt install -y dialog
@@ -206,7 +211,15 @@ Now install the rest of the required packages:
 sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     libpam-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
-                    pkg-config fontconfig chromium
+                    pkg-config fontconfig
+```
+
+You also need chromium. The way to install this depends on if you're using Debian or Ubuntu.
+```bash
+# On Debian
+sudo apt install -y chromium
+# On Ubuntu
+sudo apt install -y chromium-browser
 ```
 
 ### LibreOffice
