@@ -66,7 +66,7 @@ Run the generated configure script with proper parameters:
             --with-lo-path=${LOCOREPATH}/instdir \
             --enable-debug --enable-cypress
 ```
-Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
+Note: you can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
 
 Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
 ```bash
