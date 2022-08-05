@@ -151,4 +151,4 @@ source: [IRC]({{< ref "/content/post/communicate.md" >}} "Communicate page")
 ## Additional info
 For contributing to core LibreOffice there are excellent resources already available at TDF wiki cafes:
 * https://wiki.documentfoundation.org/Development/IDE
-* https://wiki.documentfoundation.org/Development/How_to_debugCheck
+* https://wiki.documentfoundation.org/Development/How_to_debug
