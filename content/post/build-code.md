@@ -195,7 +195,7 @@ adjustments for other releases.
 ### Dependencies
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
 
-Lets start by installing the `dialog` package, which will be needed while installaing some
+Lets start by installing the `dialog` package, which will be needed while installing some
 of the other packages:
 ```bash
 sudo apt install -y dialog
