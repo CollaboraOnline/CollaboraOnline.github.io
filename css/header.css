@@ -55,7 +55,7 @@
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-gsoc-cat.svg');
+  background: url('/images/circle-cooldays-cat.svg');
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
@@ -80,10 +80,10 @@
 }
 
 #img-container-cat::after {
-  content: 'Summer of Code';
+  content: 'Get your ticket!';
   text-align: center;
   display: block;
-  font-weight: normal;
+  font-weight: bold;
   color: #1a2430;
   position: relative;
   top: 104px;
@@ -92,11 +92,11 @@
 }
 
 #img-container-cat::before {
-  content: 'Google';
+  content: 'Get your Ticket';
   text-align: center;
   display: block;
   font-weight: bold;
-  color: #1a2430;
+  color: transparent;
   position: relative;
   top: 108px;
   opacity: 0;
