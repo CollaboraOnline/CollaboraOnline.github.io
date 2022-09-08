@@ -48,7 +48,7 @@ type = "type"
   tagline = "We love to work with everyone and anyone in the open to liberate people's documents."
   homepageImage = "/images/homepage-image.png"
   homepageImageLaptop = "/images/notebook.jpg"
-  homepageCAT = false
+  homepageCAT = true
   share = true
   showLanguageSwitcher = false
 
