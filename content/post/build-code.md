@@ -250,8 +250,10 @@ Now install the rest of the required packages:
 sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     libpam-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
-                    pkg-config fontconfig chromium
+                    pkg-config fontconfig snapd chromium-browser
 ```
+
+*Note: Chomium is needed and used in cpress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy pacakge that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
 ### LibreOffice
 {{% common-build-commands section="code-needs-lo-wget" %}}
