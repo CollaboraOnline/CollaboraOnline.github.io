@@ -184,13 +184,57 @@ Now clone the forked repo:
 
 ---
 
-<section id="build-code-debian-ubuntu" class="build-code-content">
+<section id="build-code-debian" class="build-code-content">
 
-## Debian/Ubuntu {#build-code-on-debian-ubuntu}
-The instructions below have been prepared for and tested on Ubuntu 20.04 LTS, and tested on Debian GNU/Linux 11 (bullseye). You might need to do small
+## Debian {#build-code-on-debian}
+The instructions below have been prepared for and tested on Debian GNU/Linux 11 (bullseye). You might need to do small
 adjustments for other releases.
 
+
 *Note: Sometimes Debian comes without sudo preinstalled. If you do not have sudo, you will need to run `apt install -y sudo` as root. It is not good enough to only run the commands which require sudo below as root, as sudo is also run during `make`*
+
+### Dependencies
+We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+
+Lets start by installing the `dialog` package, which will be needed while installing some
+of the other packages:
+```bash
+sudo apt install -y dialog
+```
+
+Now install the rest of the required packages:
+```bash
+sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
+                    libpam-dev wget git build-essential libtool \
+                    libcap2-bin python3-lxml libpng-dev libcppunit-dev \
+                    pkg-config fontconfig chromium
+```
+
+### LibreOffice
+{{% common-build-commands section="code-needs-lo-wget" %}}
+
+### Building CODE
+You need to clone it, run autoconf/automake, configure and build using the GNU
+make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+
+Now clone the forked repo:
+{{% common-build-commands section="clone-online" %}}
+
+{{% common-build-commands section="build-online" %}}
+
+{{% common-build-commands section="run-unit-tests" %}}
+
+{{% common-build-commands section="running" %}}
+
+</section>
+
+---
+
+<section id="build-code-ubuntu" class="build-code-content">
+
+## Ubuntu {#build-code-on-ubuntu}
+The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
+adjustments for other releases.
 
 ### Dependencies
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
