@@ -55,7 +55,7 @@
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-cooldays-cat.svg');
+  background: url('/images/circle-hacktoberfest-cta.svg');
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
@@ -80,25 +80,26 @@
 }
 
 #img-container-cat::after {
-  content: 'Get your ticket!';
+  content: '2022';
   text-align: center;
   display: block;
   font-weight: bold;
   color: #1a2430;
   position: relative;
   top: 104px;
-  background-image: linear-gradient(to right, #fff0 40%, white 80%, #fff0 95%);
+  background-image: linear-gradient(to right, #fff0 20%, white 40%, white 50%, white 55%, #fff0 75%);
   opacity: 0;
 }
 
 #img-container-cat::before {
-  content: 'Get your Ticket';
+  content: 'Hacktoberfest';
   text-align: center;
   display: block;
   font-weight: bold;
-  color: transparent;
+  color: #1a2430;
   position: relative;
   top: 108px;
+  background-image: linear-gradient(to right, #fff0 10%, white 20%, white 50%, white 60%, #fff0 95%);
   opacity: 0;
 }
 
