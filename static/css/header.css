@@ -111,6 +111,12 @@
   animation-timing-function: ease-in-out;
 }
 
+#img-container-cat:hover::after,
+#img-container-cat:hover::before {
+  animation-play-state: initial;
+  opacity: 1;
+}
+
 @media (max-width: 411px) {
   #img-container-cat {
     margin-right: 0;
