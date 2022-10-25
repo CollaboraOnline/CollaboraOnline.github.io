@@ -71,7 +71,8 @@ Do a separate clone of the online repo on macOS, but don't do any autogen.sh, co
 Do a separate clone of the online repo, run autogen.sh, and configure it with the --enable-iosapp option:
 
 ```bash
-./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite"
+./autogen.sh
+./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-vendor=MyOwnApp
 ```
 
 Then run make. That will produce files in browser/dist, nothing else. Copy those to the corresponding folder in the app folder from step 2. This is how I do it:
@@ -99,7 +100,7 @@ PATH=/opt/libtool/bin:$PATH ./autogen.sh
 5.2) In the app folder, run:
 
 ```bash
-./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
+./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-vendor=MyOwnApp --with-lo-builddir=$HOME/lode/dev/LO --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib
 ```
 
 The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).
