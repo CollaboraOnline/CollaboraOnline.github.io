@@ -55,7 +55,7 @@
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-hacktoberfest-cta.svg');
+  background: url('/images/circle-cooldays-cat.svg');
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
@@ -80,7 +80,7 @@
 }
 
 #img-container-cat::after {
-  content: '2022';
+  content: 'Youtube';
   text-align: center;
   display: block;
   font-weight: bold;
@@ -92,7 +92,7 @@
 }
 
 #img-container-cat::before {
-  content: 'Hacktoberfest';
+  content: 'Watch it on';
   text-align: center;
   display: block;
   font-weight: bold;
