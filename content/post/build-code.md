@@ -111,7 +111,7 @@ Now clone the forked repo:
 
 ## Fedora {#build-code-on-fedora}
 
-The instructions below have been prepared for and tested on Fedora 35. You might need to do small adjustments for Fedora-based distributions.
+The instructions below have been prepared for and tested on Fedora 37. You might need to do small adjustments for Fedora-based distributions.
 
 ### Dependencies
 We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`.
@@ -121,7 +121,8 @@ Open a terminal and follow the steps below:
 ```bash
 sudo dnf install poco-devel gcc gcc-c++ python3-polib \
                  libtool libstdc++-devel libpng libpng-devel \
-                 cppunit-devel nodejs-devel chromium
+                 cppunit-devel nodejs-devel chromium \
+                 libzstd-devel libcap-devel pam-devel
 ```
 
 ### LibreOffice
