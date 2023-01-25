@@ -16,10 +16,10 @@ subdirectory), you need to stop the existing CODE instance and issue <code>make 
 Alternatively you can export a variable like:</p><pre><code class=language-bash>export COOL_SERVE_FROM_FS=1
 </code></pre><p>to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.</p></section><hr><section id=build-code-opensuse class=build-code-content><h2 id=build-code-on-opensuse>openSUSE</h2><p>The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.</p><h3 id=dependencies>Dependencies</h3><p>We need LibreOffice core, POCO library and several other libraries and tools to build <code>CODE</code>. Open a terminal and follow the steps below.</p><pre><code class=language-bash># For Leap 15.3
-zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
+zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/15.3/devel:libraries:c_c++.repo
 
 # For Leap 15.4
-zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.4/devel:libraries:c_c++.repo
+zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/15.4/devel:libraries:c_c++.repo
 </code></pre><p>If this is fresh instalation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
 It will bring in things like git, gcc, etc.</p><pre><code class=language-bash>sudo zypper install -t pattern devel_basis
 </code></pre><p>Now go ahead and install the following packages</p><pre><code class=language-bash>zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml chromium
