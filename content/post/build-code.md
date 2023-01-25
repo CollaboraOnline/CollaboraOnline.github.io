@@ -84,7 +84,7 @@ Now go ahead and install the following packages
 zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml chromium
 
 # If you are using Leap 15.4 please install this aditional compatability library
-zypper in libpng-16-compat-devel
+zypper in libpng16-compat-devel
 ```
 
 ### LibreOffice
