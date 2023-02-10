@@ -151,6 +151,8 @@ PATH=/opt/libtool/bin:$PATH ./autogen.sh
 make
 ```
 
+Note: if you did step 4 and cloned Online on a Linux machine, make is unnecessary. If you run make, you can ignore any errors and continue on to the steps below.
+
 The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).
 
 5.2) Before opening the Xcode project for the first time
