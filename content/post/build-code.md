@@ -54,7 +54,14 @@ Happy hacking! : )
 _First published on [ Collabora Online Community Roundup #2](https://www.collaboraoffice.com/online/collabora-online-community-roundup-2/)_
 
 {{% common-build-commands section="running" %}}
-
+    
+    
+If you are not using the VS Code desktop and instead just your web browser, to open and test Collabora Online:
+1. Make sure your web browser is not blocking any tabs from opening;
+2. Check that you have the VCN tab opened (if not, open it up from the left side Remote explorer > 6080)
+3. In the terminal where make is running: scroll and copy the the URL ending with: hello-world.odt
+4. In a new terminal execute the following:
+   firefox  [paste copied URL here]
 </section>
 
 ---
