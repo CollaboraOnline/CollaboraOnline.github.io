@@ -26,9 +26,14 @@ Are you familiar with iOS development environment and interested to learn more w
 1.1) First you need to build the LibreOffice core code for iOS. Put in your autogen.input something like this:
 
 ```bash
+# Comment out for production builds
 --enable-debug
 --enable-dbgutil
+
+# Standard build options
 --enable-werror
+--enable-symbols
+--with-myspell-dicts
 --with-distro=LibreOfficeiOS
 ```
 
