@@ -35,6 +35,7 @@ Are you familiar with iOS development environment and interested to learn more w
 --enable-symbols
 --with-myspell-dicts
 --with-distro=LibreOfficeiOS
+--with-lang=ar bg ca cs da de el en-US en-GB eo es eu fi fr gl he hr hu id is it ja ko lo nb nl oc pl pt pt-BR sq ru sk sl sv tr uk vi zh-CN zh-TW
 ```
 
 and build "normally". (Naturally, no unit tests will be run when cross-compiling LibreOffice.) Of course there is no requirement to use those --enable options; as a minimum, just `--with-distro=LibreOfficeiOS` should work.
