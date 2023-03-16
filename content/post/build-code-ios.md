@@ -168,7 +168,11 @@ The configure script puts the app name as the `CFBundleDisplayName` property int
 
 	Xcode -> Preferences, "Source Control", uncheck "Enable Source Control"
 
-5.3) Now you can open the Mobile Xcode project, build it, and run it. Note:
+5.3) Now you can open the Mobile Xcode project. Important: you will still need to do some configuration before you can run the iOS app. Xcode is very restrictive and requires the following:
+   - Xcode must be signed into an Apple ID that is a member of the Apple Developer Program
+   - In the Xcode project's Signing & Capabilities panel, you must change the Bundle Identifier to a unique bundle ID. To obtain a unique bundle ID, login to your Apple Developer account at https://developer.apple.com and create a unique bundle ID in the Certificates, Identifiers & Profiles page. Be sure to check the Fonts and iCloud options in the Capabilities section. A screen snapshot of a sample unique build ID configuration is here: https://collaboraonline.github.io/images/build-code-ios-bundle-ID-config.png
+
+5.4) Now you can open the Mobile Xcode project, build it, and run it. Note:
 building for "My Mac (Designed for iPad)" on Mac Silicon will run, but it
 is unstable. Also, you can't run in an emulator since LibreOffice for iOS is
 built for arm64 only. So, effectively, you can only test the build on a real
