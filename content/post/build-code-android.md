@@ -159,6 +159,11 @@ If you want to add the support for that into the APK too:
     # install
     PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86_64 CC=x86_64-linux-android21-clang CXX=x86_64-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-x86-64
 
+### libzstd
+
+libzstd is now a requirement. It has to be built from source and `--with-libzstd-includes` and `--with-zstd-libs` have to be passed to configure script of Collabora Online. Make use of the helper script to build libzstd for android: https://github.com/CollaboraOnline/online/tree/master/scripts/build-zstd-android.sh
+
+
 ### Configure the online.git
 
 Don't forget to change `--with-lo-builddir` in the following:
@@ -167,6 +172,8 @@ Don't forget to change `--with-lo-builddir` in the following:
     ./configure --enable-androidapp \
                 --with-lo-builddir=/local/libreoffice/master-android \
                 --with-poco-includes=/opt/poco-android/include --with-poco-libs=/opt/poco-android/lib \
+                --with-libzstd-includes \
+                --with-zstd-libs \
                 --disable-setcap \
                 --enable-silent-rules --enable-debug
     make

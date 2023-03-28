@@ -96,6 +96,8 @@ you read this, adapt as necessary.) Get the zstd library source code
 from https://github.com/facebook/zstd/releases/tag/v1.5.2, the
 zstd-1.5.2.tar.gz archive.
 
+Alternatively you can use the helper script to build libzstd for iOS: https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-ios.sh
+
 2.3.2) Unpack in some suitable location.
 
 2.3.3) Compile. Note: in the first command, force SDK to iOS and set the
