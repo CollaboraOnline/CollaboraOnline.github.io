@@ -69,7 +69,7 @@ POCO LIBRARY
 2.2.1) The below instructions are for the so-called basic edition of
 poco 1.10.1. (If there has been a newer release of poco by the time
 you read this, adapt as necessary.) Get the poco library source code
-from https://pocoproject.org/releases/poco-1.10.1/, the
+from https://pocoproject.org/releases/poco-1.10.1/ , the
 poco-1.10.1.tar.gz archive.
 
 2.2.2) Unpack in some suitable location.
