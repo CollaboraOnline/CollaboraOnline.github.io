@@ -93,7 +93,7 @@ ZSTD LIBRARY
 2.3.1) The below instructions are for the so-called basic edition of
 zstd 1.5.2. (If there has been a newer release of zstd by the time
 you read this, adapt as necessary.) Get the zstd library source code
-from https://github.com/facebook/zstd/releases/tag/v1.5.2, the
+from https://github.com/facebook/zstd/releases/tag/v1.5.2/ , the
 zstd-1.5.2.tar.gz archive.
 
 Alternatively you can use the helper script to build libzstd for iOS: https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-ios.sh
