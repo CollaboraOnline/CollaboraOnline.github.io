@@ -80,7 +80,7 @@
 }
 
 #img-container-cta::after {
-  content: 'Youtube';
+  content: 'Re-watch';
   text-align: center;
   display: block;
   font-weight: bold;
@@ -96,10 +96,10 @@
   text-align: center;
   display: block;
   font-weight: bold;
-  color: #1a2430;
+  color: transparent;
   position: relative;
   top: 108px;
-  background-image: linear-gradient(to right, #fff0 10%, white 20%, white 50%, white 60%, #fff0 95%);
+  /* background-image: linear-gradient(to right, #fff0 10%, white 20%, white 50%, white 60%, #fff0 95%); */
   opacity: 0;
 }
 
