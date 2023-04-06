@@ -51,11 +51,11 @@
   }
 }
 
-#img-container-cat {
+#img-container-cta {
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-cooldays-cat.svg');
+  background: url('/images/circle-cooldays-cta.svg');
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
@@ -69,18 +69,18 @@
   text-decoration: none;
 }
 
-#img-container-cat:hover {
+#img-container-cta:hover {
   animation-play-state: paused;
   box-shadow: 0 0 5px 1px #5c298365, inset 0 -100px 50px 1px white !important;
 }
 
-#img-container-cat:hover::before,
-#img-container-cat:hover::after {
+#img-container-cta:hover::before,
+#img-container-cta:hover::after {
   animation-play-state: paused;
 }
 
-#img-container-cat::after {
-  content: 'Youtube';
+#img-container-cta::after {
+  content: 'Re-watch';
   text-align: center;
   display: block;
   font-weight: bold;
@@ -91,34 +91,34 @@
   opacity: 0;
 }
 
-#img-container-cat::before {
+#img-container-cta::before {
   content: 'Watch it on';
   text-align: center;
   display: block;
   font-weight: bold;
-  color: #1a2430;
+  color: transparent;
   position: relative;
   top: 108px;
-  background-image: linear-gradient(to right, #fff0 10%, white 20%, white 50%, white 60%, #fff0 95%);
+  /* background-image: linear-gradient(to right, #fff0 10%, white 20%, white 50%, white 60%, #fff0 95%); */
   opacity: 0;
 }
 
-#img-container-cat::after,
-#img-container-cat::before {
-  animation-name: show-cat-txt;
+#img-container-cta::after,
+#img-container-cta::before {
+  animation-name: show-cta-txt;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
 
-#img-container-cat:hover::after,
-#img-container-cat:hover::before {
+#img-container-cta:hover::after,
+#img-container-cta:hover::before {
   animation-play-state: initial;
   opacity: 1;
 }
 
 @media (max-width: 411px) {
-  #img-container-cat {
+  #img-container-cta {
     margin-right: 0;
   }
 }
