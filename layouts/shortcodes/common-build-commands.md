@@ -6,12 +6,12 @@ extra complexity. So, we will instead download a daily built archive which conta
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 ```
 
 Extract the contents of the archive:
 ```bash
-tar xvf core-co-22.05-assets.tar.gz
+tar xvf core-co-23.05-assets.tar.gz
 ```
 
 Export the location of the extracted contents as a variable before changing directory:
