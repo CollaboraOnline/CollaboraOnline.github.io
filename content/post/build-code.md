@@ -268,7 +268,7 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     pkg-config fontconfig snapd chromium-browser
 ```
 
-*Note: Chomium is needed and used in cpress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy pacakge that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
+*Note: Chomium is needed and used in cypress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy pacakge that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
 ### LibreOffice
 {{% common-build-commands section="code-needs-lo-wget" %}}
@@ -371,9 +371,14 @@ make:
 ./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
             --with-lo-path=${MASTER}/instdir \
             --with-poco-includes=<POCOINST>/include --with-poco-libs=<POCOINST>/lib \
-            --enable-debug --enable-cypress
+            --enable-debug
 ```
-Note: you can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
+
+You can also add extra flags to customize your build
+
+- You can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
+- If you installed chromium as an optional dependency you can add `--enable-cypress` to enable tests which use a browser
+
 ```bash
 make -j `nproc`
 ```
