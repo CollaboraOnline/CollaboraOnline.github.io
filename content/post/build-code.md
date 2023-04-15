@@ -319,17 +319,17 @@ To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Make sure you use and build the following specific core branch: `distro/collabora/co-22.05`
+Make sure you use and build the following specific core branch: `distro/collabora/co-23.05`
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
 ```
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 ```
 
 Extract the archive:
 ```
-tar xvf core-co-22.05-assets.tar.gz
+tar xvf core-co-23.05-assets.tar.gz
 ```
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
