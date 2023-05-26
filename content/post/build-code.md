@@ -54,7 +54,14 @@ Happy hacking! : )
 _First published on [ Collabora Online Community Roundup #2](https://www.collaboraoffice.com/online/collabora-online-community-roundup-2/)_
 
 {{% common-build-commands section="running" %}}
-    
+
+If you are using VS Code as your IDE and want to run code in your local VS Code with local ports, follow these steps:
+1. Open Gitpod and navigate to the top left option.
+2. Select `Gitpod: Open in VS Code`.
+3. Install the following extensions in your VS Code: `Gitpod`, `Remote - SSH`, `Remote - SSH: Editing Configuration Files`, and `Remote Explorer`.
+4. Configure your SSH key in VS Code.
+5. Once everything is set up, type make run. This will allow you to access the hosted port on your local machine.
+
     
 If you are not using the VS Code desktop and instead just your web browser, to open and test Collabora Online:
 1. Make sure your web browser is not blocking any tabs from opening;
