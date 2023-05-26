@@ -52,7 +52,7 @@
 <meta itemprop="name" content="Build Collabora Online">
 <meta itemprop="description" content="Step-by-step build instructions"><meta itemprop="datePublished" content="2020-12-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-12-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3315"><meta itemprop="image" content="https://CollaboraOnline.github.io/build-code.jpg">
+<meta itemprop="wordCount" content="3431"><meta itemprop="image" content="https://CollaboraOnline.github.io/build-code.jpg">
 <meta itemprop="keywords" content="build,make," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://CollaboraOnline.github.io/build-code.jpg"/>
@@ -163,6 +163,14 @@ Alternatively you can export a variable like:</p>
 </code></pre>
 <p>to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.</p>
+<p>If you are using VS Code as your IDE and want to run code in your local VS Code with local ports, follow these steps:</p>
+<ol>
+<li>Open Gitpod and navigate to the top left option.</li>
+<li>Select <code>Gitpod: Open in VS Code</code>.</li>
+<li>Install the following extensions in your VS Code: <code>Gitpod</code>, <code>Remote - SSH</code>, <code>Remote - SSH: Editing Configuration Files</code>, and <code>Remote Explorer</code>.</li>
+<li>Configure your SSH key in VS Code.</li>
+<li>Once everything is set up, type make run. This will allow you to access the hosted port on your local machine.</li>
+</ol>
 <p>If you are not using the VS Code desktop and instead just your web browser, to open and test Collabora Online:</p>
 <ol>
 <li>Make sure your web browser is not blocking any tabs from opening;</li>
@@ -198,10 +206,10 @@ zypper in libpng16-compat-devel
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
 extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
 <p>Now download a daily-built archive of LibreOffice core:</p>
-<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Extract the contents of the archive:</p>
-<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">tar xvf core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Export the location of the extracted contents as a variable before changing directory:</p>
 <pre><code class="language-bash">export LOCOREPATH=$(pwd)
@@ -261,10 +269,10 @@ new content.</p>
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
 extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
 <p>Now download a daily-built archive of LibreOffice core:</p>
-<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Extract the contents of the archive:</p>
-<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">tar xvf core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Export the location of the extracted contents as a variable before changing directory:</p>
 <pre><code class="language-bash">export LOCOREPATH=$(pwd)
@@ -325,10 +333,10 @@ sudo pip install polib
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
 extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
 <p>Now download a daily-built archive of LibreOffice core:</p>
-<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Extract the contents of the archive:</p>
-<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">tar xvf core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Export the location of the extracted contents as a variable before changing directory:</p>
 <pre><code class="language-bash">export LOCOREPATH=$(pwd)
@@ -394,10 +402,10 @@ of the other packages:</p>
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
 extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
 <p>Now download a daily-built archive of LibreOffice core:</p>
-<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Extract the contents of the archive:</p>
-<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">tar xvf core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Export the location of the extracted contents as a variable before changing directory:</p>
 <pre><code class="language-bash">export LOCOREPATH=$(pwd)
@@ -458,15 +466,15 @@ of the other packages:</p>
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
                     pkg-config fontconfig snapd chromium-browser
 </code></pre>
-<p><em>Note: Chomium is needed and used in cpress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy pacakge that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.</em></p>
+<p><em>Note: Chomium is needed and used in cypress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy pacakge that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.</em></p>
 <h3 id="libreoffice-4">LibreOffice</h3>
 <p>CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
 extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, refer to the general instructions.</p>
 <p>Now download a daily-built archive of LibreOffice core:</p>
-<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Extract the contents of the archive:</p>
-<pre><code class="language-bash">tar xvf core-co-22.05-assets.tar.gz
+<pre><code class="language-bash">tar xvf core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Export the location of the extracted contents as a variable before changing directory:</p>
 <pre><code class="language-bash">export LOCOREPATH=$(pwd)
@@ -561,13 +569,13 @@ new content.</p>
 <h4 id="option-a---build-libreoffice-locally-recommended">Option A - Build LibreOffice locally (Recommended)</h4>
 <p>To build LibreOffice, follow the LibreOffice building pages:</p>
 <p><a href="https://wiki.documentfoundation.org/Development/BuildingOnLinux">https://wiki.documentfoundation.org/Development/BuildingOnLinux</a></p>
-<p>Make sure you use and build the following specific core branch: <code>distro/collabora/co-22.05</code></p>
+<p>Make sure you use and build the following specific core branch: <code>distro/collabora/co-23.05</code></p>
 <h4 id="option-b---download-a-daily-built-archive-of-libreoffice-quick--dirty">Option B - Download a Daily-Built Archive of LibreOffice (Quick &amp; Dirty)</h4>
 <p>Download the daily archive:</p>
-<pre><code>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-22.05-assets.tar.gz
+<pre><code>wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 </code></pre>
 <p>Extract the archive:</p>
-<pre><code>tar xvf core-co-22.05-assets.tar.gz
+<pre><code>tar xvf core-co-23.05-assets.tar.gz
 </code></pre>
 <p>You should now have two new directories extracted: <code>instdir</code> and <code>include</code>. You will use the locations of these directories for the <code>configure</code> parameters in the following steps.</p>
 <h3 id="poco">POCO</h3>
@@ -595,9 +603,13 @@ make:</p>
 <pre><code class="language-bash">./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
             --with-lo-path=${MASTER}/instdir \
             --with-poco-includes=&lt;POCOINST&gt;/include --with-poco-libs=&lt;POCOINST&gt;/lib \
-            --enable-debug --enable-cypress
+            --enable-debug
 </code></pre>
-<p>Note: you can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</p>
+<p>You can also add extra flags to customize your build</p>
+<ul>
+<li>You can also add <code>--disable-ssl</code> instead of changing coolwsd.xml everytime you want to disable ssl.</li>
+<li>If you installed chromium as an optional dependency you can add <code>--enable-cypress</code> to enable tests which use a browser</li>
+</ul>
 <pre><code class="language-bash">make -j `nproc`
 </code></pre>
 <p>In the above, <code>${MASTER}</code> is the location of the LibreOffice source tree you have built
