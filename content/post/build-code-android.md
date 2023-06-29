@@ -161,7 +161,7 @@ If you want to add the support for that into the APK too:
 
 ### libzstd
 
-libzstd is now a requirement. It has to be built from source and `--with-libzstd-includes` and `--with-zstd-libs` have to be passed to configure script of Collabora Online. Make use of the helper script to build libzstd for android: https://github.com/CollaboraOnline/online/tree/master/scripts/build-zstd-android.sh
+libzstd is now a requirement. It has to be built from source and `--with-zstd-includes` and `--with-zstd-libs` have to be passed to configure script of Collabora Online. Make use of the helper script to build libzstd for android: https://github.com/CollaboraOnline/online/tree/master/scripts/build-zstd-android.sh
 
 
 ### Configure the online.git
@@ -171,23 +171,28 @@ Don't forget to change `--with-lo-builddir` in the following:
     ./autogen.sh
     ./configure --enable-androidapp \
                 --with-lo-builddir=/local/libreoffice/master-android \
-                --with-poco-includes=/opt/poco-android/include --with-poco-libs=/opt/poco-android/lib \
-                --with-libzstd-includes \
-                --with-zstd-libs \
+                --with-poco-includes=/opt/poco-android/include \
+                --with-poco-libs=/opt/poco-android/lib \
+                --with-zstd-includes=/opt/android-zstd/lib \
+                --with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib \
                 --disable-setcap \
-                --enable-silent-rules --enable-debug
+                --enable-silent-rules \
+                --enable-debug
     make
 
 If you build for more platforms (with the optional bits described above), just
-add more values to --with-lo-builddir, --with-poco-includes and
---with-poco-libs, delimited with `:`. The order must be ARM, ARM64, x86,
-x86-64.
+add more values to --with-lo-builddir, --with-poco-includes, --with-poco-libs,
+--with-zstd-includes and --with-zstd-libs delimited with `:`.
+The order must be ARM, ARM64, x86, x86-64.
 
 For example:
 
     --with-lo-builddir=/local/libreoffice/master-android-release:/local/libreoffice/master-android-release-64bit \
     --with-poco-includes=/opt/poco-android/include:/opt/poco-android-64bit/include \
     --with-poco-libs=/opt/poco-android/lib:/opt/poco-android-64bit/lib \
+    --with-zstd-includes=/opt/android-zstd/lib:/opt/android-zstd/lib \
+    --with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib:/opt/android-zstd/install/arm64-v8a/lib \
+
 
 ### Build the actual app using Android Studio
 
