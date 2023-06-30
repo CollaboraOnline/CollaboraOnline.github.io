@@ -52,7 +52,7 @@
 <meta itemprop="name" content="Build for Android">
 <meta itemprop="description" content="Step-by-step build instructions"><meta itemprop="datePublished" content="2020-10-04T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2020-10-04T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1013"><meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-android.jpg">
+<meta itemprop="wordCount" content="1021"><meta itemprop="image" content="https://CollaboraOnline.github.io/build-code-android.jpg">
 <meta itemprop="keywords" content="build,make," />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://CollaboraOnline.github.io/build-code-android.jpg"/>
@@ -231,27 +231,31 @@ PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x
 PATH=&quot;$PATH&quot;:~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86_64 CC=x86_64-linux-android21-clang CXX=x86_64-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-x86-64
 </code></pre>
 <h3 id="libzstd">libzstd</h3>
-<p>libzstd is now a requirement. It has to be built from source and <code>--with-libzstd-includes</code> and <code>--with-zstd-libs</code> have to be passed to configure script of Collabora Online. Make use of the helper script to build libzstd for android: <a href="https://github.com/CollaboraOnline/online/tree/master/scripts/build-zstd-android.sh">https://github.com/CollaboraOnline/online/tree/master/scripts/build-zstd-android.sh</a></p>
+<p>libzstd is now a requirement. It has to be built from source and <code>--with-zstd-includes</code> and <code>--with-zstd-libs</code> have to be passed to configure script of Collabora Online. Make use of the helper script to build libzstd for android: <a href="https://github.com/CollaboraOnline/online/tree/master/scripts/build-zstd-android.sh">https://github.com/CollaboraOnline/online/tree/master/scripts/build-zstd-android.sh</a></p>
 <h3 id="configure-the-onlinegit">Configure the online.git</h3>
 <p>Don&rsquo;t forget to change <code>--with-lo-builddir</code> in the following:</p>
 <pre><code>./autogen.sh
 ./configure --enable-androidapp \
             --with-lo-builddir=/local/libreoffice/master-android \
-            --with-poco-includes=/opt/poco-android/include --with-poco-libs=/opt/poco-android/lib \
-            --with-libzstd-includes \
-            --with-zstd-libs \
+            --with-poco-includes=/opt/poco-android/include \
+            --with-poco-libs=/opt/poco-android/lib \
+            --with-zstd-includes=/opt/android-zstd/lib \
+            --with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib \
             --disable-setcap \
-            --enable-silent-rules --enable-debug
+            --enable-silent-rules \
+            --enable-debug
 make
 </code></pre>
 <p>If you build for more platforms (with the optional bits described above), just
-add more values to &ndash;with-lo-builddir, &ndash;with-poco-includes and
-&ndash;with-poco-libs, delimited with <code>:</code>. The order must be ARM, ARM64, x86,
-x86-64.</p>
+add more values to &ndash;with-lo-builddir, &ndash;with-poco-includes, &ndash;with-poco-libs,
+&ndash;with-zstd-includes and &ndash;with-zstd-libs delimited with <code>:</code>.
+The order must be ARM, ARM64, x86, x86-64.</p>
 <p>For example:</p>
 <pre><code>--with-lo-builddir=/local/libreoffice/master-android-release:/local/libreoffice/master-android-release-64bit \
 --with-poco-includes=/opt/poco-android/include:/opt/poco-android-64bit/include \
 --with-poco-libs=/opt/poco-android/lib:/opt/poco-android-64bit/lib \
+--with-zstd-includes=/opt/android-zstd/lib:/opt/android-zstd/lib \
+--with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib:/opt/android-zstd/install/arm64-v8a/lib \
 </code></pre>
 <h3 id="build-the-actual-app-using-android-studio">Build the actual app using Android Studio</h3>
 <p>Just open Android Studio, open the <code>android</code> subdirectory as a project and
