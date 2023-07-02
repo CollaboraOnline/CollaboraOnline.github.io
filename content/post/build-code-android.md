@@ -26,7 +26,7 @@ Head over documentation or start of by following these step-by-step instructions
 
 ## Build CODE for Android
 The development of the Android app has to be done on Linux, it's currently not possible to
-build the native parts on Windows. Build have been tested with Android NDK r20b, newer NDKs may or may not work.
+build the native parts on Windows. Builds have been tested with Android NDK r20b, newer NDKs may or may not work.
 Similarly to the normal CODE, you will need the following projects, cross-compiled to your target platform:
 
 * LibreOffice (LOKit)
@@ -65,7 +65,7 @@ Don't forget to change `--with-lo-builddir` and/or path for POCO and libzstd in 
                 --enable-silent-rules \
                 --enable-debug
     make
-If you build for more platforms, just add more values to 
+If you build for more platforms, just add more values to
 --with-lo-builddir, --with-poco-includes, --with-poco-libs,
 --with-zstd-includes and --with-zstd-libs delimited with `:`.
 The order must be ARM, ARM64, x86, x86-64.
