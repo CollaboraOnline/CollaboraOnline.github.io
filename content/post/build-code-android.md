@@ -3,7 +3,7 @@ authors = [
     "Collabora",
 ]
 title = "Build for Android"
-date = "2020-09-30"
+date = "2022-07-02"
 description = "Step-by-step build instructions"
 tags = [
     "build",
@@ -24,13 +24,15 @@ Head over documentation or start of by following these step-by-step instructions
 * [Build CODE]({{< relref "build-code.md" >}} "Explore and clone GitHub repository")
 * [Build CODE for Android]({{< relref "build-code-android.md" >}} "Step-by-step setup")
 
+
 ## Build CODE for Android
 The development of the Android app has to be done on Linux, it's currently not possible to
-build the native parts on Windows. Similarly to the normal CODE, you will need
-the following projects, cross-compiled to your target platform:
+build the native parts on Windows. Build have been tested with Android NDK r20b, newer NDKs may or may not work.
+Similarly to the normal CODE, you will need the following projects, cross-compiled to your target platform:
 
-* LibreOffice
-* POCO
+* LibreOffice (LOKit)
+* POCO - use [build-poco-android.sh](https://github.com/CollaboraOnline/online/blob/master/scripts/build-poco-android.sh)
+* libzstd - use [build-zstd-android.sh](https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-android.sh)
 
 If you want to build the full app, you need to build for 4 platforms: ARM,
 ARM64, x86 and x86-64. For development, just one of them is enough, the build
@@ -49,138 +51,21 @@ following content:
 
 Then run `./autogen.sh && make`
 
-### Build the POCO for Android
-
-    # clone the poco repository in the same folder where LibreOffice core and online folders are placed.
-    git clone https://github.com/pocoproject/poco poco-android
-    cd poco-android
-
-    # use the 1.10.1 branch
-    git checkout -b poco-1.10.1 origin/poco-1.10.1
-
-    # configure
-    ./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
-
-    # make it
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=armeabi-v7a CC=armv7a-linux-androideabi21-clang CXX=armv7a-linux-androideabi21-clang++ SYSLIBS=-static-libstdc++
-
-    # install it to /opt/poco-android
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=armeabi-v7a CC=armv7a-linux-androideabi21-clang CXX=armv7a-linux-androideabi21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android
-
-#### (Optional) ARM64 POCO for Android
-
-Build the ARM64 version of POCO if you want to include ARM64 in the APK too:
-
-    # checkout the 1.10.1 in a different location and apply the following patch:
-    --- a/build/config/Android
-    +++ b/build/config/Android
-    @@ -21,6 +21,9 @@ TOOL      = arm-linux-androideabi
-     ARCHFLAGS = -march=armv7-a -mfloat-abi=softfp
-     LINKFLAGS = -Wl,--fix-cortex-a8
-     else
-    +ifeq ($(ANDROID_ABI),arm64-v8a)
-    +TOOL      = aarch64-linux-android
-    +else
-     ifeq ($(ANDROID_ABI),x86)
-     TOOL      = i686-linux-android
-     ARCHFLAGS = -march=i686 -msse3 -mstackrealign -mfpmath=sse
-    @@ -29,6 +32,7 @@ $(error Invalid ABI specified in ANDROID_ABI)
-     endif
-     endif
-     endif
-    +endif
-
-     #
-     # Define Tools
-
-    # configure as above:
-    ./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
-
-    # and make it:
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=arm64-v8a CC=aarch64-linux-android21-clang CXX=aarch64-linux-android21-clang++ SYSLIBS=-static-libstdc++
-
-    # install
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=arm64-v8a CC=aarch64-linux-android21-clang CXX=aarch64-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-64bit
-
-#### (Optional) x86 POCO for Android
-
-If you want to add the support for that into the APK too; eg. for Chromebooks:
-
-    # checkout the 1.10.1 in yet another location
-    git clone https://github.com/pocoproject/poco poco-android-x86
-    cd poco-android-x86
-    git checkout -b poco-1.10.1 origin/poco-1.10.1
-
-    # configure
-    ./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
-
-    # build
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86 CC=i686-linux-android21-clang CXX=i686-linux-android21-clang++ SYSLIBS=-static-libstdc++
-
-    # install
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86 CC=i686-linux-android21-clang CXX=i686-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-x86
-
-#### (Optional) x86-64 POCO for Android
-
-If you want to add the support for that into the APK too:
-
-    # checkout the 1.10.1 in yet another location
-    git clone https://github.com/pocoproject/poco poco-android-x86-64
-    cd poco-android-x86-64
-    git checkout -b poco-1.10.1 origin/poco-1.10.1
-
-    # and apply the following patch:
-    diff --git a/build/config/Android b/build/config/Android
-    index 9227a3352..1abf6df7c 100644
-    --- a/build/config/Android
-    +++ b/build/config/Android
-    @@ -25,10 +25,14 @@ ifeq ($(ANDROID_ABI),x86)
-     TOOL      = i686-linux-android
-     ARCHFLAGS = -march=i686 -msse3 -mstackrealign -mfpmath=sse
-     else
-    +ifeq ($(ANDROID_ABI),x86_64)
-    +TOOL      = x86_64-linux-android
-    +else
-     $(error Invalid ABI specified in ANDROID_ABI)
-     endif
-     endif
-     endif
-    +endif
-
-     #
-     # Define Tools
-
-    # configure
-    ./configure --config=Android --no-samples --no-tests --omit=Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT
-
-    # build
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86_64 CC=x86_64-linux-android21-clang CXX=x86_64-linux-android21-clang++ SYSLIBS=-static-libstdc++
-
-    # install
-    PATH="$PATH":~/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin make -j8 ANDROID_ABI=x86_64 CC=x86_64-linux-android21-clang CXX=x86_64-linux-android21-clang++ SYSLIBS=-static-libstdc++ install INSTALLDIR=/opt/poco-android-x86-64
-
 ### Configure the online.git
 
-Don't forget to change `--with-lo-builddir` in the following:
+Don't forget to change `--with-lo-builddir` and/or path for POCO and libzstd in the following:
 
     ./autogen.sh
     ./configure --enable-androidapp \
                 --with-lo-builddir=/local/libreoffice/master-android \
-                --with-poco-includes=/opt/poco-android/include --with-poco-libs=/opt/poco-android/lib \
+                --with-poco-includes=/opt/android-poco/install/include:/opt/android-poco/install/include:/opt/android-poco/install/include:/opt/android-poco/install/include \
+                --with-poco-libs=/opt/android-poco/install/armeabi-v7a/lib:/opt/android-poco/install/arm64-v8a/lib:/opt/android-poco/install/x86/lib:/opt/android-poco/install/x86_64/lib \
+                --with-zstd-includes=/opt/android-zstd/lib:/opt/android-zstd/lib:/opt/android-zstd/lib:/opt/android-zstd/lib \
+                --with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib:/opt/android-zstd/install/arm64-v8a/lib:/opt/android-zstd/install/x86/lib:/opt/android-zstd/install/x86_64/lib \
                 --disable-setcap \
-                --enable-silent-rules --enable-debug
+                --enable-silent-rules \
+                --enable-debug
     make
-
-If you build for more platforms (with the optional bits described above), just
-add more values to --with-lo-builddir, --with-poco-includes and
---with-poco-libs, delimited with `:`. The order must be ARM, ARM64, x86,
-x86-64.
-
-For example:
-
-    --with-lo-builddir=/local/libreoffice/master-android-release:/local/libreoffice/master-android-release-64bit \
-    --with-poco-includes=/opt/poco-android/include:/opt/poco-android-64bit/include \
-    --with-poco-libs=/opt/poco-android/lib:/opt/poco-android-64bit/lib \
 
 ### Build the actual app using Android Studio
 
