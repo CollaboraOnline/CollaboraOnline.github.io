@@ -4,6 +4,7 @@ authors = [
 ]
 title = "Build for Android"
 date = "2022-07-02"
+home_pos = "2"
 description = "Step-by-step build instructions"
 tags = [
     "build",

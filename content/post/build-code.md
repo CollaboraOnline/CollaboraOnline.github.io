@@ -4,6 +4,7 @@ authors = [
 ]
 title = "Build Collabora Online"
 date = "2020-12-01"
+home_pos = "1"
 description = "Step-by-step build instructions"
 tags = [
     "build",
@@ -62,7 +63,7 @@ If you are using VS Code as your IDE and want to run code in your local VS Code 
 4. Configure your SSH key in VS Code.
 5. Once everything is set up, type make run. This will allow you to access the hosted port on your local machine.
 
-    
+
 If you are not using the VS Code desktop and instead just your web browser, to open and test Collabora Online:
 1. Make sure your web browser is not blocking any tabs from opening;
 2. Check that you have the VCN tab opened (if not, open it up from the left side Remote explorer > 6080)
