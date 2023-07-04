@@ -4,6 +4,7 @@ authors = [
 ]
 title = "Translate?"
 date = "2020-09-30"
+home_pos = "8"
 description = "Do you want to get involved in localization?"
 tags = [
     "contribute",

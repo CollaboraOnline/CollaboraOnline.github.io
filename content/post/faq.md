@@ -4,6 +4,7 @@ authors = [
 ]
 title = "FAQ"
 date = "2020-09-30"
+home_pos = "6"
 description = "Frequently Asked Questions"
 tags = [
     "contribute",

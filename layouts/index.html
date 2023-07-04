@@ -32,8 +32,8 @@
               </a>
         </div>
     </div>
-  <!-- Latest article -->
-    {{- range first 1 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) -}}
+  <!-- Pick the first according to home_pos param -->
+  {{- range first 1 (sort (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) ".Params.home_pos") -}}
         {{ $page := . }}
         <div class="latest row py-lg-5">
             <div class="col-lg-6 mb-3">
@@ -60,9 +60,9 @@
         </div>
     {{- end -}}
 
-    <!-- Articles -->
+    <!-- Articles: excluding the first and sorted by home_pos param -->
     <div class="articles row row-cols-1 row-cols-lg-3">
-      {{ range after 1 (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+      {{ range after 1 (sort (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) ".Params.home_pos") }}
             <div class="col mb-3">
                 {{ .Render "card" }}
             </div>
