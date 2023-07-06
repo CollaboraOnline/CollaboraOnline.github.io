@@ -85,6 +85,32 @@ When the action is triggered, the execution of the JavaScript code will pause at
 * Step 8: Using Console Logging:
 If breakpoints alone are not sufficient for debugging, you can also make use of console logging. Inserting console.log() statements at key points in your JavaScript code allows you to output information to the browser's console. This information can help you track the flow of the program, identify values of variables, and detect any unexpected behavior.
 
+## Debug Collabora online on android
+
+### Local or remote hosted on an android mobile device
+Pre requisites :-
+   * Google chrome on android device and desktop
+   * USB cable for debugging
+
+Steps :-
+   1. Enable usb debugging on your android device (Various links are available for how to do this, am trying to reduce the scope here).
+
+   2. Open chrome in desktop and type chrome://inspect . We can see the devices in the network and the mobile device in devices
+
+   ![Chrome inspect](/images/Chrome-inspect.png)
+
+   3. Connect your android device via USB to the desktop. There may be a prompt on mobile for allow debug and allow that. You can see a new device is listed in devices list in chrome.
+
+   <img src="/images/After-usb-connection.png" alt="Debug In IDE" width="100%">
+   <br><br>
+
+   4. Now if we add a new tab or go to a website, the tabs and address will listed in desktop. Inspect link is right over there and click on that
+
+   5. This will open up a mobile screen cast and all the set of chrome dev tools options
+
+
+    
+
 </section>
 
 ---
