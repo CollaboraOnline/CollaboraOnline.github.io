@@ -28,32 +28,6 @@ Since the steps provided below may vary depending on the platform and tools you 
 
 <section id="debug-code" class="debug-code-content">
 
-## Using VSCode/dium
-
-If you are trying to debug Collabora online using VSCode then probably first you need add this file in your .vscode code folder.
-
-* [launch.json]({{< ref "/content/snippets/darshan-launch.md" >}})
-* Note:
-    * Inside launch file make sure url path will be same path as shown in terminal after `make run`.
-    * Please replace the variable ${Your-Work-Directory} with your collabora project directory path.
-
- To Start Debugging :
-
-1. Do `make run`.
-
-1. First put break points in files where you want to see the values or action to be carried out after some events.
-
-1. Click on Run and Debug Icon :- You can find this icon in left side of your IDE.
-
-1. Click on document type that you want to open and debug. For an example choose `writer`. It will then launch the document in browser.
-
-![Run And Debug Option](/images/run-and-debug.png)
-
-* after that you can perform any action. On the bases of your action break point will be hit and you can see the values of variables and code flow in your IDE. like this
-
-<img src="/images/debug-in-ide.png" alt="Debug In IDE" width="100%">
-<br><br>
-
 ## With web browser
 
 Introduction:
@@ -85,6 +59,31 @@ When the action is triggered, the execution of the JavaScript code will pause at
 1. Using Console Logging:
 If breakpoints alone are not sufficient for debugging, you can also make use of console logging. Inserting console.log() statements at key points in your JavaScript code allows you to output information to the browser's console. This information can help you track the flow of the program, identify values of variables, and detect any unexpected behavior.
 
+## Using VSCode/dium
+
+If you are trying to debug Collabora online using VSCode then probably first you need add this file in your .vscode code folder.
+
+* [launch.json]({{< ref "/content/snippets/darshan-launch.md" >}})
+* Note:
+    * Inside launch file make sure url path will be same path as shown in terminal after `make run`.
+    * Please replace the variable ${Your-Work-Directory} with your collabora project directory path.
+
+ To Start Debugging :
+
+1. Do `make run`.
+
+1. First put break points in files where you want to see the values or action to be carried out after some events.
+
+1. Click on Run and Debug Icon :- You can find this icon in left side of your IDE.
+
+1. Click on document type that you want to open and debug. For an example choose `writer`. It will then launch the document in browser.
+
+![Run And Debug Option](/images/run-and-debug.png)
+
+* after that you can perform any action. On the bases of your action break point will be hit and you can see the values of variables and code flow in your IDE. like this
+
+<img src="/images/debug-in-ide.png" alt="Debug In IDE" width="100%">
+<br><br>
 
 ## On android
 
