@@ -28,7 +28,7 @@ Since the steps provided below may vary depending on the platform and tools you 
 
 <section id="debug-code" class="debug-code-content">
 
-## Debug in VSCode/dium
+## Using VSCode/dium
 
 If you are trying to debug Collabora online using VSCode then probably first you need add this file in your .vscode code folder.
 
@@ -54,7 +54,7 @@ If you are trying to debug Collabora online using VSCode then probably first you
 <img src="/images/debug-in-ide.png" alt="Debug In IDE" width="100%">
 <br><br>
 
-## Debug in Browser
+## With web browser
 
 Introduction:
 Fortunately, modern web browsers come equipped with powerful debugging tools that make this process much more efficient. In this article, we will explore the steps you can follow to debug collabora online code when specific actions are performed.
@@ -86,7 +86,7 @@ When the action is triggered, the execution of the JavaScript code will pause at
 If breakpoints alone are not sufficient for debugging, you can also make use of console logging. Inserting console.log() statements at key points in your JavaScript code allows you to output information to the browser's console. This information can help you track the flow of the program, identify values of variables, and detect any unexpected behavior.
 
 
-## Debug on android
+## On android
 
 ### Local or remote hosted on an android mobile device
 Pre requisites :-
