@@ -85,6 +85,7 @@ When the action is triggered, the execution of the JavaScript code will pause at
 * Step 8: Using Console Logging:
 If breakpoints alone are not sufficient for debugging, you can also make use of console logging. Inserting console.log() statements at key points in your JavaScript code allows you to output information to the browser's console. This information can help you track the flow of the program, identify values of variables, and detect any unexpected behavior.
 
+
 ## Debug on android
 
 ### Local or remote hosted on an android mobile device
@@ -114,9 +115,5 @@ Steps :-
 </section>
 
 ---
-
-<section id="debug-code-android" class="build-code-content">
-
-</section>
 
 {{< edit-button to="/content/post/debug-code.md" name="Edit page">}}
