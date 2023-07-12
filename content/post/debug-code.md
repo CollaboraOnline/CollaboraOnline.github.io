@@ -33,6 +33,39 @@ Since the steps provided below may vary depending on the platform and tools you 
 Introduction:
 Fortunately, modern web browsers come equipped with powerful debugging tools that make this process much more efficient. In this article, we will explore the steps you can follow to debug collabora online code when specific actions are performed.
 
+### About Dialog
+
+There are a couple of things under "Help" → "About" that will help you test Collabora Online.
+
+#### Triple click
+
+In the About dialog left click three times to open a list, located on the top right corner, of all the important control layers toggles:
+
+* Tile overlays
+* Screen overlays
+* Show Clipboard
+* Always active
+* Typing
+* Tiles device pixel grid: Display the pixel grid in red. Essential when trying to understand why document looks blurry. E.g.: spreadhsheet cells, text, etc.
+* Sidebar Rerendering
+* Performance Tracing
+* Protocol logging
+* Tile dumping
+
+The canvas area (document and surroudings) now displays, even if all toggles are off, a blue grid with some information in each square:
+* wireID:
+* invalidFrom:
+* nviewid:
+* requested
+* rec-tiles:
+* recv-delta:
+* rawdeltas:
+
+#### JS widgets
+
+In the About dialog search for "JSDialogs: View widgets". Click the link to open another dialog with all the javascript-based widgets. You can now test and see how all widgets look in one place.
+
+### Developer Tools
 
 1. Open document:
 To begin debugging any document first open any document in localhost after `make run`.To build collabora online please refer this blog [Build CODE]({{< relref "build-code.md" >}} "Explore and clone GitHub repository")
