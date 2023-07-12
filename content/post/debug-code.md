@@ -39,22 +39,22 @@ If you are trying to debug Collabora online using VSCode then probably first you
 
  To Start Debugging :
 
-* Step 1: Do `make run`. 
+* Step 1: Do `make run`.
 
-* Step 2: First put break points in files where you want to see the values or action to be carried out after some events. 
+* Step 2: First put break points in files where you want to see the values or action to be carried out after some events.
 
 * Step 3: Click on Run and Debug Icon :- You can find this icon in left side of your IDE.
- 
-* Step 4: Click on document type that you want to open and debug. For an example choose `writer`. It will then launch the document in browser. 
+
+* Step 4: Click on document type that you want to open and debug. For an example choose `writer`. It will then launch the document in browser.
 
 ![Run And Debug Option](/images/run-and-debug.png)
 
-* after that you can perform any action. On the bases of your action break point will be hit and you can see the values of variables and code flow in your IDE. like this 
+* after that you can perform any action. On the bases of your action break point will be hit and you can see the values of variables and code flow in your IDE. like this
 
 <img src="/images/debug-in-ide.png" alt="Debug In IDE" width="100%">
 <br><br>
 
-## Debug in Browser 
+## Debug in Browser
 
 Introduction:
 Fortunately, modern web browsers come equipped with powerful debugging tools that make this process much more efficient. In this article, we will explore the steps you can follow to debug collabora online code when specific actions are performed.
@@ -109,7 +109,7 @@ Steps :-
    5. This will open up a mobile screen cast and all the set of chrome dev tools options
 
 
-    
+
 
 </section>
 
