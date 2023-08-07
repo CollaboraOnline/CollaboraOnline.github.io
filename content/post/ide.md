@@ -18,6 +18,8 @@ images = [
 ]
 type = "sidebar"
 layout = "sidebar"
+showimage = false
+showtitle = true
 +++
 
 Tips on how to set your IDE ready for Collabora Online development.

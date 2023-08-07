@@ -14,6 +14,8 @@ tags = [
 images = [
     "faq.jpg",
 ]
+showimage = false
+showtitle = true
 +++
 
 Perhaps your question is one that we have been asked before; have a read, and let us know if not.

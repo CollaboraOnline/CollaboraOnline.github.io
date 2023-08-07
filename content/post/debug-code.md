@@ -15,6 +15,7 @@ images = [
 ]
 type = "sidebar"
 layout = "sidebar"
+showimage = false
 +++
 
 You need to enable debugging support to do any practical interactive debugging.

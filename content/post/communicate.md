@@ -13,6 +13,9 @@ tags = [
 images = [
     "communicate.jpg",
 ]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
 +++
 
 A great way to get in touch, ask anything or get mentoring is through one of our official channels. . .

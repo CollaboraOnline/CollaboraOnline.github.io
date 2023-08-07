@@ -15,6 +15,7 @@ images = [
 ]
 type = "sidebar"
 layout = "sidebar"
+showimage = false
 +++
 
 Are you familiar with iOS development environment and interested to learn more while helping the project?

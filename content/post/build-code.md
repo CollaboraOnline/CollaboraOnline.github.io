@@ -15,6 +15,7 @@ images = [
 ]
 type = "sidebar"
 layout = "sidebar"
+showimage = false
 +++
 
 Are you interested in contributing but don't know where to start? Head over documentation or start by following these step-by-step instructions and build `CODE` from scratch.

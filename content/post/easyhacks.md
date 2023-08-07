@@ -25,6 +25,8 @@ aliases = ["migrate-from-jekyl"]
 images = [
     "easyhacks.jpg",
 ]
+showimage = false
+showtitle = true
 +++
 
 Check out the starting points for new developers on the project — usually with

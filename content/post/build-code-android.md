@@ -15,6 +15,8 @@ images = [
 ]
 type = "sidebar"
 layout = "sidebar"
+showimage = false
+showtitle = true
 +++
 
 Are you familiar with Android development environment and interested to learn more while helping the project?
@@ -25,7 +27,7 @@ Head over documentation or start of by following these step-by-step instructions
 * [Build CODE]({{< relref "build-code.md" >}} "Explore and clone GitHub repository")
 * [Build CODE for Android]({{< relref "build-code-android.md" >}} "Step-by-step setup")
 
-## Build CODE for Android
+
 The development of the Android app has to be done on Linux, it's currently not possible to
 build the native parts on Windows. Builds have been tested with Android NDK r20b, newer NDKs may or may not work.
 Similarly to the normal CODE, you will need the following projects, cross-compiled to your target platform:
@@ -38,7 +40,7 @@ If you want to build the full app, you need to build for 4 platforms: ARM,
 ARM64, x86 and x86-64. For development, just one of them is enough, the build
 currently defaults to ARM.
 
-### Build LibreOffice master for Android
+## Build LibreOffice master for Android
 
 Create a file called `autogen.input` in your LibreOffice clone with the
 following content:
@@ -51,7 +53,7 @@ following content:
 
 Then run `./autogen.sh && make`
 
-### Configure the online.git
+## Configure the online.git
 
 Don't forget to change `--with-lo-builddir` and/or path for POCO and libzstd in the following:
 
@@ -80,7 +82,7 @@ For example:
                 --with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib:/opt/android-zstd/install/arm64-v8a/lib:/opt/android-zstd/install/x86/lib:/opt/android-zstd/install/x86_64/lib \
 
 
-### Build the actual app using Android Studio
+## Build the actual app using Android Studio
 
 Just open Android Studio, open the `android` subdirectory as a project and
 start the build (Build -> Make Project).
@@ -90,12 +92,12 @@ Alternatively you can build from the command line:
     cd android
     ./gradlew build
 
-### Debugging
+## Debugging
 
 To debug the native LibreOffice code in Android Studio, you need the debugging
 symbols and to setup Android Studio to actually read & use them.
 
-#### Build debugging symbols for the modules you are interested in
+### Build debugging symbols for the modules you are interested in
 
 Add something like the following to autogen.input:
 
@@ -107,7 +109,7 @@ clean the appropriate modules, like
 
 and rebuild using 'make'.
 
-#### Add android/obj/local/armeabi-v7a from core.git as a Symbol Directory
+### Add android/obj/local/armeabi-v7a from core.git as a Symbol Directory
 
 In Android Studio, choose Run -> Debug... -> Edit Configurations...
 
@@ -137,7 +139,7 @@ To use pretty printers for types like OUString, add the following to your
 From now on, you will be able to debug directly in the Android Studio
 debugger.  Happy debugging!
 
-### Tip: How to speed up your core.git build
+## Tip: How to speed up your core.git build
 
 If you use icecream for parallel building, you can use it for
 cross-compilation too.

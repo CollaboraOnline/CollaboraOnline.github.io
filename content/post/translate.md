@@ -13,12 +13,15 @@ tags = [
 images = [
     "translate.jpg",
 ]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
+showtitle = true
 +++
 
 A great way to get involved. You can perfect CODE for your language, while learning about the feature set, and how things work.
 <!--more-->
----
-
+## Weblate
 Please join our team of translators at our [Hosted Weblate](https://hosted.weblate.org/projects/collabora-online/) page
 * Create an account or sign in with your OpenID provider
 * If you choose the latter, please authorize Weblate to use your OpenID
@@ -27,7 +30,7 @@ Please join our team of translators at our [Hosted Weblate](https://hosted.webla
 
 That's it!
 
-### Credits
+## Credits
 
 Many thanks to all those who have worked on translating Online, you rock!
 
