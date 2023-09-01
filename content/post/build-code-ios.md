@@ -3,7 +3,7 @@ authors = [
     "Collabora",
 ]
 title = "Build for iOS"
-date = "2020-10-03"
+date = "2023-09-01"
 home_pos = "3"
 description = "Step-by-step build instructions"
 tags = [
@@ -22,10 +22,10 @@ Are you familiar with iOS development environment and interested to learn more w
 <!--more-->
 # How to build the iOS app:
 
-## 1) Build the LibreOffice core code
+## 1) Build the LibreOfficeKit code for iOS
 ### on a Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
-1.1) First you need to build the LibreOffice core code for iOS. Put in your autogen.input something like this:
+1.1) First you need to build the LibreOfficeKit code (LibreOffice core) for iOS. For the build dependencies, it is the best to install [LODE, the LibreOffice Development Environment](https://wiki.documentfoundation.org/Development/lode) and add its `bin` directory to the `PATH`. Then get LibreOffice core source code and put in your autogen.input something like this:
 
 ```bash
 # Comment out for production builds
@@ -47,24 +47,15 @@ This will produce a large number of static archives (.a) here and there in instd
 ## 2) Build COOL Dependencies
 ### on a Mac ## {#ios-2-build-cool-mac .extraclass class="requirement-machine"}
 
-MACPORTS PACKAGES
+PYTHON MODULES and NODEJS
 
-2.1.1) Install [MacPorts](https://github.com/macports/macports-base/releases).
-Note: make sure that /opt/local/bin/port is at the end of your PATH.
-
-2.1.2) Install the following MacPorts modules:
-```bash
-sudo /opt/local/bin/port install npm9 -x11
-sudo /opt/local/bin/port install pkgconfig -x11
-sudo /opt/local/bin/port install cairo -x11
-sudo /opt/local/bin/port install pango -x11
-```
-
-2.1.3) Install the following Python modules:
+2.1.1) Install the following Python modules:
 ```bash
 /usr/bin/pip3 install polib
 /usr/bin/pip3 install lxml
 ```
+
+2.1.2) Install nodejs from https://nodejs.org/en/download (macOS pkg). This package provides `npm` and `node` commands that are required to build everything in `browser/` folder.
 
 POCO LIBRARY
 
@@ -121,62 +112,46 @@ find "$HOME/zstd-ios-arm64" -name "*.dylib*" -exec rm {} \;
 
 This will install the zstd static libraries and headers to your $HOME directory into zstd-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
 
-## 3) Clone Online
+## 3) Build the iOS app
 ### on a Mac ## {#ios-3-clone-online-mac .extraclass class="requirement-machine"}
-Do a separate clone of the online repo on macOS, but don't do any autogen.sh, configure, or make, or open the Mobile Xcode project there yet. We call this the app folder.
+3.1) Do a separate clone of the online repo on macOS.
 
-## 4) Clone Online
-### on a Linux machine ## {#ios-4-clone-online-linux .extraclass class="requirement-machine"}
-Do a separate clone of the online repo, run autogen.sh, and configure it with the --enable-iosapp option:
+Run autogen.sh, and configure it with the --enable-iosapp option:
 
 ```bash
 ./autogen.sh
-./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-vendor=MyOwnApp
+./configure \
+--enable-iosapp \
+--with-app-name="My Own Mobile Office Suite" \
+--enable-experimental \
+--with-vendor="MyOwnApp" \
+--with-lo-builddir=$HOME/path/to/libreoffice/core \
+--with-poco-includes=$HOME/poco-ios-arm64/include \
+--with-poco-libs=$HOME/poco-ios-arm64/lib \
+--with-zstd-includes=$HOME/zstd-ios-arm64/usr/local/include \
+--with-zstd-libs=$HOME/zstd-ios-arm64/usr/local/lib
 ```
 
-Then run make. That will produce files in browser/dist, nothing else. Copy those to the corresponding folder in the app folder from step 2. This is how I do it:
+Then run:
 
 ```bash
-make clean && make && tar cf - browser/dist | ssh misan.local 'cd lo/online-ios-device && rm -rf browser/dist && tar xvf -'
+(cd browser && make)
 ```
-
-where `misan.local` is the macOS machine where I build the app, and `~/lo/online-ios-device` is the app folder from step 2.
-
-## 5) Building for iOS
-### on a Mac ## {#ios-5-clone-online-mac .extraclass class="requirement-machine"}
-Now back to your Mac, and with LibreOffice built from step 1, you must already have GNU autoconf installed on the Mac. Install also GNU automake and libtool. Preferably from sources, to make sure a potential installation of brew or similar will not pollute your environment with unknown stuff.
-
-As GNU libtool will be needed only for a very minimal part of the build (running the `autogen.sh` script, but not anything else), it's safest to install it somewhere that is not in your $PATH. Let's say `/opt/libtool`. (Installing Automake in the default `/usr/local`, which is in `$PATH`, is less risky.)
-
-Run the autogen.sh script in the app folder, with GNU libtool available, for instance:
-
-```bash
-PATH=/opt/libtool/bin:$PATH ./autogen.sh
-```
-
-5.1) In the app folder, set LOSRCDIR to the absolute path of the LibreOffice build built in step 1 and then run:
-
-```bash
-./configure --enable-iosapp --with-app-name="My Own Mobile Office Suite" --with-vendor=MyOwnApp --with-poco-includes=$HOME/poco-ios-arm64/include --with-poco-libs=$HOME/poco-ios-arm64/lib --with-zstd-libs=$HOME/zstd-ios-arm64/usr/local/lib --with-zstd-includes=$HOME/zstd-ios-arm64/usr/local/include --with-lo-builddir=$LOSRCDIR
-make
-```
-
-Note: if you did step 4 and cloned Online on a Linux machine, make is unnecessary. If you run make, you can ignore any errors and continue on to the steps below.
 
 The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).
 
-5.2) Before opening the Xcode project for the first time
+3.2) Before opening the Xcode project for the first time
    - seriously consider disabling source code indexing, this
    spawns a vast number of git processes, and consumes huge
    amounts of CPU & memory:
 
 	Xcode -> Preferences, "Source Control", uncheck "Enable Source Control"
 
-5.3) Now you can open the Mobile Xcode project. Important: you will still need to do some configuration before you can run the iOS app. Xcode is very restrictive and requires the following:
+3.3) Now you can open the Mobile Xcode project. Important: you will still need to do some configuration before you can run the iOS app. Xcode is very restrictive and requires the following:
    - Xcode must be signed into an Apple ID that is a member of the Apple Developer Program
    - In the Xcode project's Signing & Capabilities panel, you must change the Bundle Identifier to a unique bundle ID. To obtain a unique bundle ID, login to your Apple Developer account at https://developer.apple.com and create a unique bundle ID in the Certificates, Identifiers & Profiles page. Be sure to check the Fonts and iCloud options in the Capabilities section. A screen snapshot of a sample unique build ID configuration is here: https://collaboraonline.github.io/images/build-code-ios-bundle-ID-config.png
 
-5.4) Now you can open the Mobile Xcode project, build it, and run it. Note:
+3.4) Now you can open the Mobile Xcode project, build it, and run it. Note:
 building for "My Mac (Designed for iPad)" on Mac Silicon will run, but it
 is unstable. Also, you can't run in an emulator since LibreOffice for iOS is
 built for arm64 only. So, effectively, you can only test the build on a real
