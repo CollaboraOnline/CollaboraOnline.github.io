@@ -45,8 +45,11 @@ Note: ideally we would have this in one folder inside of CollaboraOffice.com so 
 * Community packages for Arch Linux and its derivatives (such as Manjaro): `sudo pacman -Syu hugo`
 * For openSUSE
 	* Official for Tumbleweed: `sudo zypper install hugo` [view in store](https://software.opensuse.org/download/package?package=hugo&project=openSUSE%3AFactory)
-	* Experimental for Leap 15.2 packages [view in store](https://software.opensuse.org/download/package?package=hugo&project=devel%3Alanguages%3Ago)
-		* `sudo zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/openSUSE_Leap_15.2/devel:languages:go.repo`
+	* Experimental for Leap 15.4/15.5 packages [view in store](https://software.opensuse.org/download/package?package=hugo&project=devel%3Alanguages%3Ago)
+		* `# For 15.4`
+		* `sudo zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/15.4/devel:languages:go.repo`
+		* `# For 15.5:`
+		* `sudo zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/15.4/devel:languages:go.repo`
 		* `sudo zypper refresh`
 		* `zypper install hugo`
 * with homebrew for [linux](https://docs.brew.sh/Homebrew-on-Linux); [macOS](https://brew.sh/): `brew install hugo`
