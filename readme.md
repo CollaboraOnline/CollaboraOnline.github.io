@@ -60,7 +60,7 @@ note: https://github.com/gohugoio/hugo/releases
 * `git worktree add -B gh-pages public origin/gh-pages` : Creates a local public folder and be able to manage both branches within the same working tree, allowing to have a mixed of branches checked out at the same time. With this we can generate the site into that public folder.
 3. Generate live static website and run server (while watching files etc so it does not need to refresh it will do it automatically)
 
-run `hugo server` in the root of your master branch local copy
+run `hugo server` in the root of your master branch local copy (you can also disable cash by enabling full re-renders on changes with `hugo server --disableFastRender`).
 
 # Deploy to master:
 * There is already a GH action for that (it generates automatically)
