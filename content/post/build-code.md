@@ -328,7 +328,7 @@ To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Make sure you use and build the following specific core branch: `distro/collabora/co-23.05`
+Make sure you use and build the following specific core branch: `distro/collabora/co-23.05` and build with the following config: `./autogen.sh --with-distro=CPLinux-LOKit`
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
