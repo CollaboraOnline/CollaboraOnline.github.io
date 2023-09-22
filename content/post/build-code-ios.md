@@ -22,6 +22,26 @@ Are you familiar with iOS development environment and interested to learn more w
 <!--more-->
 # How to build the iOS app:
 
+## You will need
+
+### A developer program enrollment ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
+
+You will need an Apple ID that is a member of the Apple Developer program, as Collabora iOS relies on Fonts and iCloud capabilities, which are only available to accounts in the developer platform
+
+If you don't have an account in the developer program, you can enroll [on Apple's developer program website](https://developer.apple.com/programs/enroll/). It costs $99 USD per year to enroll. If you are developing Collabora iOS for work your employer may be able to [add you to a development team](https://developer.apple.com/help/account/manage-your-team/invite-team-members/)
+
+### A Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
+You will need a Mac with [Xcode](https://apps.apple.com/gb/app/xcode/id497799835) installed
+
+Intel Macs should work, although this guide has only been tested with a Mac Mini 2023, which has an Apple M2 chip
+
+### An iOS or iPadOS device ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
+
+**Collabora Office cannot run in a simulator** because the LibreOfficeKit bits are built for an `iOS` target, but the simulator is `iOS-simulator`. Therefore, you'll need a real device to run this.
+
+Building for `My Mac (Designed for iPad)` on Mac Silicon will run, but it is unstable. In particular, sometimes bugs are present on Mac that are not present on a mobile device or vice-versa. We strongly suggest you build and run for a physical iOS or iPadOS device.
+
+
 ## 1) Build the LibreOfficeKit code for iOS
 ### on a Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
