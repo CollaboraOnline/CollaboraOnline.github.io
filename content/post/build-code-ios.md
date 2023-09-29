@@ -65,7 +65,7 @@ This will produce a large number of static archives (.a) here and there in instd
 ## 2) Build COOL Dependencies
 ### on a Mac ## {#ios-2-build-cool-mac .extraclass class="requirement-machine"}
 
-PYTHON MODULES and NODEJS
+PYTHON MODULES, NODEJS, and HOMEBREW
 
 2.1.1) Install the following Python modules:
 ```bash
@@ -74,6 +74,16 @@ PYTHON MODULES and NODEJS
 ```
 
 2.1.2) Install nodejs from https://nodejs.org/en/download (macOS pkg). This package provides `npm` and `node` commands that are required to build everything in `browser/` folder.
+
+2.1.3) Install Homebrew from https://github.com/Homebrew/brew/releases/latest (macOS pkg) and add /opt/homebrew/bin and /opt/homebrew/sbin to the end of your PATH.
+
+2.1.4) Install the following Homebrew modules:
+```bash
+brew install pkg-config
+brew install pixman
+brew install cairo
+brew install pango
+```
 
 POCO LIBRARY
 
@@ -114,7 +124,7 @@ Alternatively you can use the helper script to build libzstd for iOS: https://gi
 2.3.3) Compile. Note: in the first command, force SDK to iOS and set the
 minimum iOS version to match the LibreOffice build:
 ```bash
-CC="/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.2.sdk -target arm64-apple-ios14.5" make
+CC="/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk -target arm64-apple-ios14.5" make
 ```
 ```bash
 make DESTDIR=$HOME/zstd-ios-arm64 install
@@ -143,11 +153,11 @@ Run autogen.sh, and configure it with the --enable-iosapp option:
 --with-app-name="My Own Mobile Office Suite" \
 --enable-experimental \
 --with-vendor="MyOwnApp" \
---with-lo-builddir=$HOME/path/to/libreoffice/core \
 --with-poco-includes=$HOME/poco-ios-arm64/include \
 --with-poco-libs=$HOME/poco-ios-arm64/lib \
 --with-zstd-includes=$HOME/zstd-ios-arm64/usr/local/include \
---with-zstd-libs=$HOME/zstd-ios-arm64/usr/local/lib
+--with-zstd-libs=$HOME/zstd-ios-arm64/usr/local/lib \
+--with-lo-builddir=/path/to/libreoffice/core
 ```
 
 Then run:
