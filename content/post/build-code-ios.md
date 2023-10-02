@@ -28,12 +28,10 @@ Are you familiar with iOS development environment and interested to learn more w
 
 You will need an Apple ID that is a member of the Apple Developer program, as Collabora iOS relies on Fonts and iCloud capabilities, which are only available to accounts in the developer platform
 
-If you don't have an account in the developer program, you can enroll [on Apple's developer program website](https://developer.apple.com/programs/enroll/). It costs $99 USD per year to enroll. If you are developing Collabora iOS for work your employer may be able to [add you to a development team](https://developer.apple.com/help/account/manage-your-team/invite-team-members/)
+If you don't have an account in the developer program, you can enroll [on Apple's developer program website](https://developer.apple.com/programs/enroll/). If you are developing Collabora iOS for work your employer may be able to [add you to a development team](https://developer.apple.com/help/account/manage-your-team/invite-team-members/)
 
 ### A Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 You will need a Mac with [Xcode](https://apps.apple.com/gb/app/xcode/id497799835) installed
-
-Intel Macs should work, although this guide has only been tested with a Mac Mini 2023, which has an Apple M2 chip
 
 ### An iOS or iPadOS device ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
