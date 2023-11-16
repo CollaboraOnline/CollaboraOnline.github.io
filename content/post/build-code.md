@@ -40,9 +40,27 @@ On top of our daily LibreOffice core archives, we have also added integration su
 
 ![GitPod green button on GitHub](/images/gitpod-button-onGitHub.png)
 
-* Wait for a few minutes, and you will have a full development environment with COOL already cloned & built, ready-to-start/develop
+* You should be redirected to gitpod.io where you can set your workspace settings. Please choose large container:
+
+![GitPod.io new workspace](/images/gitpod-new-workspace.png)
+
+* Make sure your browser is not blocking windows/tabs from opening from the gitpod workspace URL (maybe add `*.gitpod.io` to your browser's whitelist)
+* VNC tab will open automatically if not just click on the left icon `Remote explorer` and click `6080`. You will see a tab completely black, that's normal.
 
 {{< figure src="/images/gitpod-screenshot-COOL.png" title="Gitpod, your development environment for Collabora Online on the cloud">}}
+
+* Wait for a few minutes, and you will have a full development environment with COOL already cloned & built, ready-to-start/develop.
+
+{{< figure src="/images/gitpod-screenshot-COOL-splitterminal.png" title="The left pane will automatically start to build the software for you. The right waits for the 9980 port to be available and displays interesting comments">}}
+
+* The GitPod tasks will run automatically and further instructions will be printed out right in the terminal
+* After the build finishes (left terminal pane) you will see links. Copy the URL ending with: `hello-world.odt`
+* In the right terminal pane execute the following: `firefox  [paste copied URL here]` or `/usr/bin/chromium [paste copied URL here]`
+* Now head over to the we browser tab where the VNC is opened, you will see Firefox/Chromium opening there, maximize and have fun.
+* You can also run cypress tests via GitPod. To do so, please  prepend `CYPRESS_BROWSER="/usr/bin/chromium"` (`"firefox"` can also be used). Example:
+  * `cd cypress_test/`
+  * `CYPRESS_BROWSER="/usr/bin/chromium" make check` for every test or `CYPRESS_BROWSER="/usr/bin/chromium" make check-desktop spec=impress/scrolling_spec.js` for one specific test on desktop
+  * More info at https://github.com/CollaboraOnline/online/blob/master/cypress_test/README
 
 * Don’t forget to fork the main repo ![|226x56](/images/forking.gif)
 * And set the remote address in .git/config to point to your fork’s address with this command:
@@ -64,13 +82,6 @@ If you are using VS Code as your IDE and want to run code in your local VS Code 
 4. Configure your SSH key in VS Code.
 5. Once everything is set up, type make run. This will allow you to access the hosted port on your local machine.
 
-
-If you are not using the VS Code desktop and instead just your web browser, to open and test Collabora Online:
-1. Make sure your web browser is not blocking any tabs from opening;
-2. Check that you have the VCN tab opened (if not, open it up from the left side Remote explorer > 6080)
-3. In the terminal where make is running: scroll and copy the the URL ending with: hello-world.odt
-4. In a new terminal execute the following:
-   firefox  [paste copied URL here]
 </section>
 
 ---
