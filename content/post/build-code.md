@@ -18,7 +18,7 @@ layout = "sidebar"
 showimage = false
 +++
 
-Are you interested in contributing but don't know where to start? Head over documentation or start by following these step-by-step instructions and build `CODE` from scratch.
+Are you interested in contributing but don't know where to start? Head over to the documentation or start by following these step-by-step instructions and build `CODE` from scratch.
 
 <!--more-->
 # Build CODE
@@ -56,7 +56,7 @@ On top of our daily LibreOffice core archives, we have also added integration su
 * The GitPod tasks will run automatically and further instructions will be printed out right in the terminal
 * After the build finishes (left terminal pane) you will see links. Copy the URL ending with: `hello-world.odt`
 * In the right terminal pane execute the following: `firefox  [paste copied URL here]` or `/usr/bin/chromium [paste copied URL here]`
-* Now head over to the we browser tab where the VNC is opened, you will see Firefox/Chromium opening there, maximize and have fun.
+* Now head over to the web browser tab where the VNC is opened, you will see Firefox/Chromium opening there, maximize and have fun.
 * You can also run cypress tests via GitPod. To do so, please  prepend `CYPRESS_BROWSER="/usr/bin/chromium"` (`"firefox"` can also be used). Example:
   * `cd cypress_test/`
   * `CYPRESS_BROWSER="/usr/bin/chromium" make check` for every test or `CYPRESS_BROWSER="/usr/bin/chromium" make check-desktop spec=impress/scrolling_spec.js` for one specific test on desktop
