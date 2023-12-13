@@ -312,11 +312,11 @@ Now clone the forked repo:
 The CODE must be built on Linux, and you need the following:
 
 * LibreOffice
-  + you need to build your own tree
+  + Either build LibreOffice from source, or download a daily built archive (see below)
 * Poco library: http://pocoproject.org/
-  + either use a package from your distro, or build it yourself (see below)
+  + Either use the package from your distro, or build it yourself, ideally 1.10.1 or later
 * libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
-  + use the packages from your distro
+  + Use the packages from your distro
 
 You may also want to have the following optional dependencies:
 
@@ -339,7 +339,9 @@ To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Make sure you use and build the following specific core branch: `distro/collabora/co-23.05` and build with the following config: `./autogen.sh --with-distro=CPLinux-LOKit`
+Make sure you use and build the following specific core branch: `distro/collabora/co-23.05` and build with the following config:
+
+    ./autogen.sh --with-distro=CPLinux-LOKit --without-package-format --without-system-nss
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
@@ -354,24 +356,6 @@ tar xvf core-co-23.05-assets.tar.gz
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
 
-### POCO
-
-If you use openSUSE Leap 15.3, you can use:
-
-    zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/openSUSE_Leap_15.3/devel:libraries:c_c++.repo
-    zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml
-
-Similar repos exist for other openSUSE and SLE releases.
-
-Collabora provides Poco packages for Debian 8, Debian 9, Ubuntu 16.04 LTS,
-and CentOS 7 via the CODE (Collabora Online Development Edition) repositories,
-see:
-
-https://www.collaboraoffice.com/code/linux-packages/
-
-Alternatively you can build your own POCO. In that case, ideally use a recent version like
-1.10.1 or newer.
-
 ### Building CODE
 
 You need to clone it, run autoconf/automake, configure and build using the GNU
@@ -381,25 +365,24 @@ make:
 ./autogen.sh
 ```
 ```bash
-./configure --enable-silent-rules --with-lokit-path=${MASTER}/include \
-            --with-lo-path=${MASTER}/instdir \
-            --with-poco-includes=<POCOINST>/include --with-poco-libs=<POCOINST>/lib \
-            --enable-debug
+./configure --with-lokit-path=<LIBREOFFICEDIRECTORY>/include \
+            --with-lo-path=<LIBREOFFICEDIRECTORY>/instdir \
 ```
+
+where `<LIBREOFFICEDIRECTORY>` is the location of the LibreOffice source tree you have built
+in the previous steps. `
 
 You can also add extra flags to customize your build
 
-- You can also add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
+- If you built POCO from source, add `--with-poco-includes=<POCODIRECTORY>/include --with-poco-libs=<POCODIRECTORY>/lib`
+- Add `--enable-debug` to enable debugging and link with debugging versons of POCO libraries
+- Add `--enable-silent-rules` to create less verbose build output
+- Add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
 - If you installed chromium as an optional dependency you can add `--enable-cypress` to enable tests which use a browser
 
 ```bash
 make -j `nproc`
 ```
-In the above, `${MASTER}` is the location of the LibreOffice source tree you have built
-in the previous steps. `POCOINST` is the location of your custom-built or externally installed POCO library.
-If you use POCO from a distro package (not a self-built version), you can omit
-the `--with-poco-includes` and `--with-poco-libs` from the above.
-
 {{% common-build-commands section="run-unit-test" %}}
 
 {{% common-build-commands section="running" %}}
