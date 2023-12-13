@@ -29,7 +29,7 @@ Now do:
 ```bash
 make run
 ```
-Among other, the output will contain the links that you can directly follow to
+The output will contain the links that you can directly follow to
 see Writer, Calc, and Impress test documents in your browser.
 
 #### Hacking it
@@ -75,7 +75,7 @@ make -j $(nproc)
 {{ end }}
 
 {{ if eq $section "run-unit-test" }}
-If you want to run the unit tests, use `make check` instead of the `make`.
+If you want to run the unit tests, use `make check` instead of `make`.
 
 Note that the coolforkit program needs the `CAP_SYS_CHROOT` capability,
 thus **you will be asked the root password** when running make as it
