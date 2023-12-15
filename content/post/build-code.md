@@ -332,22 +332,30 @@ You may also want to have the following optional dependencies:
 
 ### LibreOffice
 
-CODE needs LibreOffice to be built to run. However, you have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.
+CODE needs LibreOffice to be built to run. You have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.
 
 #### Option A - Build LibreOffice locally (Recommended)
-To build LibreOffice, follow the LibreOffice building pages:
+The build process for LibreOffice is described on their wiki. However, a few modifications are needed in order to support building CODE.
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Make sure you use and build the following specific core branch:
-```
+Install the dependencies. The lists of dependencies and commands for various distributions of Linux are avialable on the LibreOffice Wiki linked above.
+
+Clone the repository and switch to the Collabora Online branch:
+```bash
+git clone https://gerrit.libreoffice.org/core libreoffice
+cd libreoffice
 git checkout distro/collabora/co-23.05
 ```
 
-Also add the following configuration options to `autogen.sh` or `autogen.input`:
-```
+Configure and build, adding the following configuration options to `autogen.sh` or `autogen.input`:
+```bash
 ./autogen.sh --with-distro=CPLinux-LOKit --without-package-format
 ```
+```bash
+make -j $(nproc)
+```
+You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
