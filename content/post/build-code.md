@@ -339,18 +339,24 @@ To build LibreOffice, follow the LibreOffice building pages:
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Make sure you use and build the following specific core branch: `distro/collabora/co-23.05` and build with the following config:
+Make sure you use and build the following specific core branch:
+```
+git checkout distro/collabora/co-23.05
+```
 
-    ./autogen.sh --with-distro=CPLinux-LOKit --without-package-format --without-system-nss
+Also add the following configuration options to `autogen.sh` or `autogen.input`:
+```
+./autogen.sh --with-distro=CPLinux-LOKit --without-package-format
+```
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
-```
+```bash
 wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
 ```
 
 Extract the archive:
-```
+```bash
 tar xvf core-co-23.05-assets.tar.gz
 ```
 
@@ -363,26 +369,27 @@ make:
 {{% common-build-commands section="clone-online" %}}
 ```bash
 ./autogen.sh
-```
-```bash
 ./configure --with-lokit-path=<LIBREOFFICEDIRECTORY>/include \
             --with-lo-path=<LIBREOFFICEDIRECTORY>/instdir \
+            --enable-debug \
+            --disable-ssl
 ```
 
 where `<LIBREOFFICEDIRECTORY>` is the location of the LibreOffice source tree you have built
-in the previous steps. `
+in the previous steps.
 
-You can also add extra flags to customize your build
+You can also add extra flags to customize your build:
 
 - If you built POCO from source, add `--with-poco-includes=<POCODIRECTORY>/include --with-poco-libs=<POCODIRECTORY>/lib`
-- Add `--enable-debug` to enable debugging and link with debugging versons of POCO libraries
 - Add `--enable-silent-rules` to create less verbose build output
-- Add `--disable-ssl` instead of changing coolwsd.xml everytime you want to disable ssl.
-- If you installed chromium as an optional dependency you can add `--enable-cypress` to enable tests which use a browser
+- Add `--enable-cypress` to enable tests which use a browser (requires Chromium)
+
+See `./configure --help` for the full list of options.
 
 ```bash
 make -j `nproc`
 ```
+
 {{% common-build-commands section="run-unit-test" %}}
 
 {{% common-build-commands section="running" %}}
