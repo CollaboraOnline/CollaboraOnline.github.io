@@ -83,7 +83,9 @@ brew install pkg-config
 brew install pixman
 brew install cairo
 brew install pango
+brew install giflib
 ```
+These modules are required to build `canvas` node module. On Intel based Macs the build system pulls a binary from GitHub, therefore building from source is only required on M1/M2 Macs.
 
 POCO LIBRARY
 
