@@ -112,7 +112,7 @@ If you are trying to debug Collabora online using VSCode then probably first you
 
 1. Click on document type that you want to open and debug. For an example choose `writer`. It will then launch the document in browser.
 
-![Run And Debug Option](/images/run-and-debug.png)
+{{< figure src="/images/run-and-debug.png" alt="Run And Debug Option">}}
 
 * after that you can perform any action. On the bases of your action break point will be hit and you can see the values of variables and code flow in your IDE. like this
 
@@ -131,7 +131,7 @@ Steps:
 
    2. Open chrome in desktop and type chrome://inspect . We can see the devices in the network and the mobile device in devices
 
-   ![Chrome inspect](/images/Chrome-inspect.png)
+{{< figure src="/images/Chrome-inspect.png" alt="Chrome inspect">}}
 
    3. Connect your android device via USB to the desktop. There may be a prompt on mobile for allow debug and allow that. You can see a new device is listed in devices list in chrome.
 

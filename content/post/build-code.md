@@ -38,11 +38,11 @@ On top of our daily LibreOffice core archives, we have also added integration su
 * Go to [COOL repo](https://github.com/CollaboraOnline/online)
 * Click on the green Gitpod button near the top of the GitHub repo page
 
-![GitPod green button on GitHub](/images/gitpod-button-onGitHub.png)
+{{< figure src="/images/gitpod-button-onGitHub.png" alt="GitPod green button on GitHub">}}
 
 * You should be redirected to gitpod.io where you can set your workspace settings. Please choose large container:
 
-![GitPod.io new workspace](/images/gitpod-new-workspace.png)
+{{< figure src="/images/gitpod-new-workspace.png"  alt="GitPod.io new workspace">}}
 
 * Make sure your browser is not blocking windows/tabs from opening from the gitpod workspace URL (maybe add `*.gitpod.io` to your browser's whitelist)
 * VNC tab will open automatically if not just click on the left icon `Remote explorer` and click `6080`. You will see a tab completely black, that's normal.
