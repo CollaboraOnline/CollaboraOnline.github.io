@@ -97,7 +97,7 @@ If breakpoints alone are not sufficient for debugging, you can also make use of 
 
 If you are trying to debug Collabora online using VSCode then probably first you need add this file in your .vscode code folder.
 
-* [launch.json]({{< ref "/content/snippets/darshan-launch.md" >}})
+* [launch.json]({{< ref "/snippets/darshan-launch.md" >}})
 * Note:
     * Inside launch file make sure url path will be same path as shown in terminal after `make run`.
     * Please replace the variable ${Your-Work-Directory} with your collabora project directory path.
@@ -106,11 +106,11 @@ If you are trying to debug Collabora online using VSCode then probably first you
 
 1. Do `make run`.
 
-1. First put break points in files where you want to see the values or action to be carried out after some events.
+2. First put break points in files where you want to see the values or action to be carried out after some events.
 
-1. Click on Run and Debug Icon :- You can find this icon in left side of your IDE.
+3. Click on Run and Debug Icon :- You can find this icon in left side of your IDE.
 
-1. Click on document type that you want to open and debug. For an example choose `writer`. It will then launch the document in browser.
+4. Click on document type that you want to open and debug. For an example choose `writer`. It will then launch the document in browser.
 
 {{< figure src="/images/run-and-debug.png" alt="Run And Debug Option">}}
 

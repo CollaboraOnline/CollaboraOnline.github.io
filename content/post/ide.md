@@ -35,9 +35,9 @@ Please note this is a very rough page and any contribution is very welcomed. The
 #### Easy to grab setup (Pranam)
 Thanks [Pranam](https://github.com/lpranam) for making your configurations available:
 > I use vs code let me give you config file for vs with which people can debug or whatever they want in vs code without ever leaving it:
-* [c_cpp_properties.json]({{< ref "/content/snippets/pranam-c-cpp-properties.md" >}} "Pranam's config")
-* [launch.json]({{< ref "/content/snippets/pranam-launch.md" >}} "Pranam's config")
-* [tasks.json]({{< ref "/content/snippets/pranam-tasks.md" >}} "Pranam's config")
+* [c_cpp_properties.json]({{< ref "/snippets/pranam-c-cpp-properties.md" >}} "Pranam's config")
+* [launch.json]({{< ref "/snippets/pranam-launch.md" >}} "Pranam's config")
+* [tasks.json]({{< ref "/snippets/pranam-tasks.md" >}} "Pranam's config")
 
 #### gdb
 How to attach VS Code with gdb to the Online server:
@@ -71,7 +71,7 @@ Source: Anonymous
 An example of a `launch.json` configuration from [Gokay](https://github.com/gokaysatir)
 
 The file that i use for VS Code server side debugging:
-* [launch.json]({{< ref "/content/snippets/gokay-launch.md" >}} "Gokay's config")
+* [launch.json]({{< ref "/snippets/gokay-launch.md" >}} "Gokay's config")
 
 Source: [Gokay](https://github.com/gokaysatir)
 
@@ -100,7 +100,7 @@ https://wiki.documentfoundation.org/Development/Vim has some vim tips, navigatin
 Source: [Miklos](https://github.com/vmiklos)
 
 #### Ashod's .vimrc
-Thanks [Ash](https://github.com/Ashod) for making your configurations available: [.vimrc]({{< ref "/content/snippets/ash-vimrc.md" >}} "Ashod's .vimrc")
+Thanks [Ash](https://github.com/Ashod) for making your configurations available: [.vimrc]({{< ref "/snippets/ash-vimrc.md" >}} "Ashod's .vimrc")
 > I use Vim in the terminal (a lot) and I use Vim addon in VSCode. Always customize the colors, behavior of searching, highlighting, etc. for best experience. Also, add shortcuts for common actions (e.g. highlighting multiple words in different colors is very useful when reading logs or complex code with many variables, use F2, F3, etc. to highlight different words in different colors for readability).
 
 
@@ -148,7 +148,7 @@ Android Studio debugger for gdb users gdb commands, and their AS equivalent:
 
 I find it impossible to remember those keystrokes if I don't use them for 2 weeks :)
 
-source: [IRC]({{< ref "/content/post/communicate.md" >}} "Communicate page")
+source: [IRC]({{< ref "/post/communicate.md" >}} "Communicate page")
 
 
 ## Additional info
