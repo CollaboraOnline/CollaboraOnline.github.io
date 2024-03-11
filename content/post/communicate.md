@@ -31,9 +31,7 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 
 ## Get in touch
 * Chat on [Collabora Online forum](https://forum.collaboraonline.com/)
-* ~~Chat via [Libera.Chat/#cool-dev channel](irc://irc.libera.chat/#cool-dev) (you can get there directly via a [Webchat](https://web.libera.chat/#cool-dev))~~
-  * For now the libera.chat bridge is down. Please use Matrix or Telegram instead.
-* Chat via [Matrix](https://app.element.io/#/room/#cool-dev:libera.chat)
+* Chat via [Matrix](https://app.element.io/#/room/#cool-dev:clicks.codes)
 * Chat on [Telegram:CollaboraOnline](https://t.me/CollaboraOnline)
 * Send email [hello@collaboraoffice.com](mailto:hello@collaboraoffice.com)
 * Twitter [@CollaboraOffice](https://twitter.com/CollaboraOffice) feel free to use `#cool_dev` in your tweets
