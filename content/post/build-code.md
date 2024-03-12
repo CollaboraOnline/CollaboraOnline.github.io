@@ -342,7 +342,7 @@ Clone the repository and switch to the Collabora Online branch:
 ```bash
 git clone https://gerrit.libreoffice.org/core libreoffice
 cd libreoffice
-git checkout distro/collabora/co-23.05
+git checkout distro/collabora/co-24.04
 ```
 
 Configure and build, adding the following configuration options to `autogen.sh` or `autogen.input`:
@@ -357,12 +357,12 @@ You can expect this process to take at least an hour or two the first time, poss
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
 Download the daily archive:
 ```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-24.04-assets.tar.gz
 ```
 
 Extract the archive:
 ```bash
-tar xvf core-co-23.05-assets.tar.gz
+tar xvf core-co-24.04-assets.tar.gz
 ```
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
