@@ -6,12 +6,12 @@ extra complexity. So, we will instead download a daily built archive which conta
 
 Now download a daily-built archive of LibreOffice core:
 ```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-23.05-assets.tar.gz
+wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/{{.Get "lotar"}}
 ```
 
 Extract the contents of the archive:
 ```bash
-tar xvf core-co-23.05-assets.tar.gz
+tar xvf {{.Get "lotar"}}
 ```
 
 Export the location of the extracted contents as a variable before changing directory:
@@ -41,6 +41,15 @@ export COOL_SERVE_FROM_FS=1
 ```
 to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.
+{{ end }}
+
+{{ if eq $section "clone-lo" }}
+
+```bash
+git clone https://gerrit.libreoffice.org/core libreoffice
+cd libreoffice
+git checkout distro/collabora/{{.Get "lobranch"}}
+```
 {{ end }}
 
 {{ if eq $section "clone-online" }}
