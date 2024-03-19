@@ -89,41 +89,35 @@ These modules are required to build `canvas` node module. On Intel based Macs th
 
 POCO LIBRARY
 
-2.2.1) The below instructions are for the so-called basic edition of
-poco 1.10.1. (If there has been a newer release of poco by the time
-you read this, adapt as necessary.) Get the poco library source code
-from https://pocoproject.org/releases/poco-1.10.1/ , the
-poco-1.10.1.tar.gz archive.
+2.2.1) The below instructions are for the so-called basic edition of the POCO
+library. Download the source code from https://pocoproject.org/download.html:
 
-2.2.2) Unpack in some suitable location.
-
-2.2.3) Compile. Note: in the second command, force path to load /usr/bin/python3
-and set the minimum iOS version to match the LibreOffice build:
+2.2.2) Compile. Note: the second and third commands force the path to load
+/usr/bin/python3 and /usr/bin/libtool and the second command sets the minimum
+iOS version to match the LibreOffice build:
 ```bash
-./configure --config=iPhone --static --no-tests --no-samples --omit=Data/ODBC,Data/MySQL --prefix=$HOME/poco-ios-arm64
+./configure --config=iPhone --static --no-tests --no-samples \
+  --omit=ActiveRecord,Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT,Prometheus,Redis \
+  --prefix=$HOME/poco-ios-arm64
 ```
 ```bash
 PATH="/usr/bin:$PATH" make POCO_TARGET_OSARCH=arm64 IPHONE_SDK_VERSION_MIN=14.5 -s -j4
 ```
 ```bash
-make POCO_TARGET_OSARCH=arm64 install
+PATH="/usr/bin:$PATH" make POCO_TARGET_OSARCH=arm64 install
 ```
 
 This will install the poco static libraries and headers to your $HOME directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
 
 ZSTD LIBRARY
 
-2.3.1) The below instructions are for the so-called basic edition of
-zstd 1.5.2. (If there has been a newer release of zstd by the time
-you read this, adapt as necessary.) Get the zstd library source code
-from https://github.com/facebook/zstd/releases/tag/v1.5.2/ , the
-zstd-1.5.2.tar.gz archive.
+2.3.1) The below instructions are for the so-called basic edition of the
+ZSTD library. Download the source code from
+https://github.com/facebook/zstd/releases.
 
 Alternatively you can use the helper script to build libzstd for iOS: https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-ios.sh
 
-2.3.2) Unpack in some suitable location.
-
-2.3.3) Compile. Note: in the first command, force SDK to iOS and set the
+2.3.2) Compile. Note: in the first command, force SDK to iOS and set the
 minimum iOS version to match the LibreOffice build:
 ```bash
 CC="/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk -target arm64-apple-ios14.5" make
