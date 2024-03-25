@@ -112,14 +112,14 @@ zypper in libpng16-compat-devel
 ```
 
 ### LibreOffice
-{{% common-build-commands section="code-needs-lo-wget" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-24.04-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" %}}
+{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -150,14 +150,14 @@ sudo dnf install poco-devel gcc gcc-c++ python3-polib python3-lxml \
 ```
 
 ### LibreOffice
-{{% common-build-commands section="code-needs-lo-wget" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-24.04-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" %}}
+{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -190,14 +190,14 @@ sudo pip install polib
 ```
 
 ### LibreOffice
-{{% common-build-commands section="code-needs-lo-wget" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-24.04-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" %}}
+{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -236,14 +236,14 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
 ```
 
 ### LibreOffice
-{{% common-build-commands section="code-needs-lo-wget" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-24.04-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" %}}
+{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -281,14 +281,14 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
 *Note: Chomium is needed and used in cypress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy pacakge that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
 ### LibreOffice
-{{% common-build-commands section="code-needs-lo-wget" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-24.04-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" %}}
+{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -339,11 +339,7 @@ https://wiki.documentfoundation.org/Development/BuildingOnLinux
 Install the dependencies. The lists of dependencies and commands for various distributions of Linux are avialable on the LibreOffice Wiki linked above.
 
 Clone the repository and switch to the Collabora Online branch:
-```bash
-git clone https://gerrit.libreoffice.org/core libreoffice
-cd libreoffice
-git checkout distro/collabora/co-24.04
-```
+{{% common-build-commands section="clone-lo" lobranch="co-24.04" %}}
 
 Configure and build, adding the following configuration options to `autogen.sh` or `autogen.input`:
 ```bash
@@ -355,15 +351,7 @@ make -j $(nproc)
 You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
 
 #### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
-Download the daily archive:
-```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/core-co-24.04-assets.tar.gz
-```
-
-Extract the archive:
-```bash
-tar xvf core-co-24.04-assets.tar.gz
-```
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-24.04-assets.tar.gz" %}}
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
 
@@ -371,17 +359,8 @@ You should now have two new directories extracted: `instdir` and `include`. You 
 
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make:
-{{% common-build-commands section="clone-online" %}}
-```bash
-./autogen.sh
-./configure --with-lokit-path=<LIBREOFFICEDIRECTORY>/include \
-            --with-lo-path=<LIBREOFFICEDIRECTORY>/instdir \
-            --enable-debug \
-            --disable-ssl
-```
-
-where `<LIBREOFFICEDIRECTORY>` is the location of the LibreOffice source tree you have built
-in the previous steps.
+{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
+{{% common-build-commands section="build-online" %}}
 
 You can also add extra flags to customize your build:
 
