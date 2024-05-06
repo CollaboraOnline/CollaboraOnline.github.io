@@ -119,7 +119,7 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
+{{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -157,7 +157,7 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
+{{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -197,7 +197,7 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
+{{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -243,7 +243,7 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
+{{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -288,7 +288,7 @@ You need to clone it, run autoconf/automake, configure and build using the GNU
 make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
-{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
+{{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
 
@@ -359,7 +359,7 @@ You should now have two new directories extracted: `instdir` and `include`. You 
 
 You need to clone it, run autoconf/automake, configure and build using the GNU
 make:
-{{% common-build-commands section="clone-online" lobranch="co-24.04" %}}
+{{% common-build-commands section="clone-online" %}}
 {{% common-build-commands section="build-online" %}}
 
 You can also add extra flags to customize your build:
