@@ -138,7 +138,7 @@ This will install the zstd static libraries and headers to your $HOME directory 
 
 ## 3) Build the iOS app
 ### on a Mac ## {#ios-3-clone-online-mac .extraclass class="requirement-machine"}
-3.1) Do a separate clone of the online repo on macOS.
+3.1) Do a separate clone of the [Collabora Online repo](https://github.com/CollaboraOnline/online) on macOS.
 
 Run autogen.sh, and configure it with the --enable-iosapp option:
 
