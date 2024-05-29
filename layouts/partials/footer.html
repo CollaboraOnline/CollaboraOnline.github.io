@@ -70,7 +70,7 @@
                     </li>
                     {{- end -}}
                     {{- range $name, $path := .Site.Params.social -}}
-                        {{- if and $path (not (in (slice "rss" "email" "chat" "forum" "telegram" "dev") $name)) -}}
+                        {{- if and $path (not (in (slice "rss" "email" "chat" "chatname" "forum" "telegram" "dev") $name)) -}}
                         <li class="list-inline-item">
                             <a href="{{ $path | safeURL }}" class="icons d-block">
                                 <span class="fa-stack fa-lg">
