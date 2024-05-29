@@ -41,7 +41,7 @@ For more detailed and pretty instructions on integrating with various partner so
 * Read the full guide on [Contributing](https://github.com/CollaboraOnline/online/blob/master/CONTRIBUTING.md)
 * Read the [Code of Conduct](https://github.com/CollaboraOnline/online/blob/master/CODE_OF_CONDUCT.md)
 * To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
-+ To talk with other developers please join us on [Matrix](https://matrix.to/#/#cool-dev:clicks.codes)
++ To talk with other developers please join us on {{% chat-room %}} room.
 * And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://twitter.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
 
 ### Your first commit
@@ -59,7 +59,7 @@ For more detailed and pretty instructions on integrating with various partner so
 | | | |
 |-|-|-|
 | COOL Days 2021 | [Moodle Integration](https://github.com/CollaboraOnline/slides/blob/main/2021/Ash-CoolDays-2021-Dev-Moodle-Integration.pdf) |
-| COOL Days 2021 | [community website](https://github.com/CollaboraOnline/slides/blob/main/2021/pedro-silva_COOLDays-dev-2021_community-website.pdf) | 
+| COOL Days 2021 | [community website](https://github.com/CollaboraOnline/slides/blob/main/2021/pedro-silva_COOLDays-dev-2021_community-website.pdf) |
 | LibreOffice Conference 2020| [Integrating-OnLine-via-WOPI.pdf](https://speakerdeck.com/kendy/integrating-libreoffice-online-via-wopi) |
 | FOSDEM 2020 | [dialog-tunneling.pdf](https://speakerdeck.com/kendy/dialog-tunneling-in-libreoffie-online) |
 
