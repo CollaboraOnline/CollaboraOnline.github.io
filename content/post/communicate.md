@@ -23,13 +23,13 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 ---
 ## Weekly COOL meeting
 * 📅 Every Thursday
-* 🕙 ~ 12:00 CET [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=12)
+* 🕙 ~ {{< dst tm="12:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=12)
 * 💬 https://meet.jit.si/COOLWeeklyMeeting
 * 🗒 [Past meetings](https://forum.collaboraonline.com/tag/meeting-minutes) | 📜 [Older](https://forum.collaboraonline.com/c/news/meeting-minutes/)
 
 ## Tea Time Trainings
 * 📅 Every Friday
-* 🕙 ~ 13:00 CET [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=13)
+* 🕙 ~ {{< dst tm="13:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=13)
 * 💬 https://meet.jit.si/Fri-TTT-CPTEAM
 * 🗒 [Talks](https://staging-perf.eu.collaboraonline.com/nextcloud/index.php/s/geAKbYAg4GJagqe)
 
