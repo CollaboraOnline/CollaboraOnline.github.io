@@ -32,6 +32,7 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 * 🕙 ~ {{< dst tm="13:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=13)
 * 💬 https://meet.jit.si/Fri-TTT-CPTEAM
 * 🗒 [Talks](https://staging-perf.eu.collaboraonline.com/nextcloud/index.php/s/geAKbYAg4GJagqe)
+* Video records of past talks: [YouTube](https://www.youtube.com/@CollaboraOnlineTechTalks)
 
 ---
 
