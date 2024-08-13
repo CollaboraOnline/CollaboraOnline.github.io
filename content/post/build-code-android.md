@@ -36,9 +36,9 @@ Similarly to the normal CODE, you will need the following projects, cross-compil
 * POCO - use [build-poco-android.sh](https://github.com/CollaboraOnline/online/blob/master/scripts/build-poco-android.sh)
 * libzstd - use [build-zstd-android.sh](https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-android.sh)
 
-If you want to build the full app, you need to build for 4 platforms: ARM,
-ARM64, x86 and x86-64. For development, just one of them is enough, the build
-currently defaults to ARM.
+If you want to build the full app, you need to build for 4 platforms:
+armeabi-v7a, arm64-v8a, x86 and x86_64. For development, just one of them is
+enough, the build defaults to armeabi-v7a currently defaults to ARM.
 
 ## Build LibreOffice master for Android
 
@@ -66,21 +66,19 @@ Don't forget to change `--with-lo-builddir` and/or path for POCO and libzstd in 
                 --with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib \
                 --disable-setcap \
                 --enable-silent-rules \
-                --enable-debug
+                --enable-debug \
+                --with-android-abi=arm64-v8a
     make
-If you build for more platforms, just add more values to
---with-lo-builddir, --with-poco-includes, --with-poco-libs,
---with-zstd-includes and --with-zstd-libs delimited with `:`.
-The order must be ARM, ARM64, x86, x86-64.
 
-For example:
+Depending on your phone's architecture you will also need to change the ABI you
+pass to `--with-android-abi`. The supported ABIs are armeabi-v7a, arm64-v8a, x86
+and x86_64.
 
-                --with-lo-builddir=/opt/libreoffice/core_android_armeabi-v7a:/opt/libreoffice/core_android_arm64-v8a:/opt/libreoffice/core_android_x86:/opt/libreoffice/core_android_x86-64 \
-                --with-poco-includes=/opt/android-poco/install/include:/opt/android-poco/install/include:/opt/android-poco/install/include:/opt/android-poco/install/include \
-                --with-poco-libs=/opt/android-poco/install/armeabi-v7a/lib:/opt/android-poco/install/arm64-v8a/lib:/opt/android-poco/install/x86/lib:/opt/android-poco/install/x86_64/lib \
-                --with-zstd-includes=/opt/android-zstd/lib:/opt/android-zstd/lib:/opt/android-zstd/lib:/opt/android-zstd/lib \
-                --with-zstd-libs=/opt/android-zstd/install/armeabi-v7a/lib:/opt/android-zstd/install/arm64-v8a/lib:/opt/android-zstd/install/x86/lib:/opt/android-zstd/install/x86_64/lib \
+If you're not sure what your phone's architecture is, you can either research
+online or use adb to get a list of valid architectures
 
+    $ adb shell getprop ro.product.cpu.abilist
+    arm64-v8a,armeabi-v7a,armeabi
 
 ## Build the actual app using Android Studio
 
