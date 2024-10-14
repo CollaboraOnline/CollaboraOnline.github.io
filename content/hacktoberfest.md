@@ -1,5 +1,5 @@
 +++
-title = "Hacktoberfest 2022"
+title = "Hacktoberfest 2024"
 description = "Hi and welcome aboard!"
 date = "2022-02-07"
 aliases = ["about-us","about-hugo","contact"]
