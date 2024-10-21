@@ -2,7 +2,7 @@ const fs = require('fs');
 const fetch = require('node-fetch');
 
 const REPO = 'CollaboraOnline/online';
-const PER_PAGE = 100; // Maximum allowed per page
+const PER_PAGE = 1000; // Maximum allowed per page
 const API_URL = `https://api.github.com/repos/${REPO}/contributors`;
 
 let page = 1;
