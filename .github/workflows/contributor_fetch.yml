@@ -47,8 +47,8 @@ jobs:
       - name: Commit changes
         run: |
           cd repo
-          git config user.name "Pedro Pinto Silva"
-          git config user.email "pedro.silva@collabora.com"
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
           git add content/post/contributors.md
           git commit -m "Update contributors list" --signoff  # Add sign-off to the commit
 
