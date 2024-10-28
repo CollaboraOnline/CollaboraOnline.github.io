@@ -42,7 +42,7 @@ For more detailed and pretty instructions on integrating with various partner so
 * Read the [Code of Conduct](https://github.com/CollaboraOnline/online/blob/master/CODE_OF_CONDUCT.md)
 * To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
 + To talk with other developers please join us on {{% chat-room %}} room.
-* And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://twitter.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
+* And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://x.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
 
 ### Your first commit
 * First check [How to build CODE]({{< relref "build-code" >}} "How to build CODE")
