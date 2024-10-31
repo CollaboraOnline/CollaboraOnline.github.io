@@ -19,11 +19,13 @@ function daylights_savings(dt) {
 		return datetdy;
 	}
 	var datetdy = dt.getTimezoneOffset();
+
 	// To test if you are not in Central Europe:
 	// CEST is GMT
-	// datetdy = new Date('August 19, 2024 17:00:00 GMT');;
+	// datetdy = new Date('August 19, 2024 17:00:00 GMT').getTimezoneOffset();
 	// CET is GMT+1
-	// datetdy = new Date('November 19, 2024 17:00:00 GMT+1');;
+	// datetdy = new Date('November 19, 2024 17:00:00 GMT+1').getTimezoneOffset();
+
 	datetdy = datetdy < 0 ? datetdy = ' CET' : datetdy = ' CEST';
 	return datetdy
 }
