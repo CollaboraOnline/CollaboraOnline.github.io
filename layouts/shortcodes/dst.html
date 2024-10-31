@@ -2,23 +2,24 @@
 
 
 <script>
-  window.addEventListener('load', function() {
-	  var meetings = document.getElementsByClassName('meeting-time');
-	  var tmzone = daylights_savings(new Date());
+	window.addEventListener('load', function () {
+		var meetings = document.getElementsByClassName('meeting-time');
+		var tmzone = daylights_savings(new Date());
 
-	  for (var i = 0; i < meetings.length; i++) {
-		  if (meetings[i].hasAttribute("timezone")) {
-			  break;
-		  }
-		  meetings[i].innerHTML += tmzone;
-		  meetings[i].setAttribute("timezone", tmzone);}
-  });
-  function daylights_savings(dt) {
-	  if (typeof datetdy !== 'undefined') {
-		  return datetdy;
-	  }
-	  var datetdy = dt.getTimezoneOffset();
-	  datetdy = datetdy < 0 ?  datetdy = ' CEST' : datetdy = ' CET';
-	  return datetdy
-  }
+		for (var i = 0; i < meetings.length; i++) {
+			if (meetings[i].hasAttribute("timezone")) {
+				break;
+			}
+			meetings[i].innerHTML += tmzone;
+			meetings[i].setAttribute("timezone", tmzone);
+		}
+	});
+function daylights_savings(dt) {
+	if (typeof datetdy !== 'undefined') {
+		return datetdy;
+	}
+	var datetdy = dt.getTimezoneOffset();
+	datetdy = datetdy < 0 ? datetdy = ' CEST' : datetdy = ' CET';
+	return datetdy
+}
 </script>
