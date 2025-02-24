@@ -377,6 +377,111 @@ make -j `nproc`
 {{% common-build-commands section="run-unit-test" %}}
 
 {{% common-build-commands section="running" %}}
+
+## Running manually
+
+If you want to do the 'make run' yourself, you need to set up a minimal
+chroot system, and directory for the jails:
+
+    SYSTEMPLATE=`pwd`/systemplate  # or tweak for your system
+    ROOTFORJAILS=`pwd`/jails       # or tweak for your system
+    ROOTFORCACHE=`pwd`/cache       # or tweak for your system
+
+    rm -Rf ${SYSTEMPLATE} # clean
+    ./coolwsd-systemplate-setup ${SYSTEMPLATE} ${MASTER}/instdir # build template
+    mkdir -p ${ROOTFORJAILS} # create location for transient jails.
+    mkdir -p ${ROOTFORCACHE} # create location for persistent cache.
+
+To run coolwsd the way it is supposed to eventually be run "for real", you can
+now do:
+
+    ./coolwsd --o:sys_template_path=${SYSTEMPLATE} --o:child_root_path=${ROOTFORJAILS} --o:cache_files.path=${ROOTFORCACHE}
+
+The ${SYSTEMPLATE} is a directory tree set up using the
+coolwsd-systemplate-setup script here. (It should not exist before
+running the script.) It will contain the runtime environment needed by
+the LibreOffice dynamic libraries used through LibreOfficeKit.
+Improvements to that script are very likely needed on various distros.
+
+The ${ROOTFORJAILS} directory above is a presumably initially empty
+directory under which coolwsd will create chroot jails for editing
+each specific document.
+Warning: the jails directory and its contents are deleted by coolwsd.
+
+As coolwsd uses hardlinks to "copy" the contents of both
+${SYSTEMPLATE} and the ${MASTER}/instdir directories into each chroot
+jail, ${SYSTEMPLATE} and ${MASTER}/instdir need to be on the same file
+system as ${ROOTFORJAILS}.
+
+Leaflet files are served itself by coolwsd internal file server. You
+can specify the root of this fileserver using the --o:file_server_root_path
+flag in coolwsd commandline. By default, if you do not specify this
+flag, the parent directory of coolwsd/ is assumed to be the
+file_server_root_path. So, for development purposes, you can access the
+COOL files (using /browser/), but it is advised to explicitly set
+the file_server_root_path to prevent any unwanted files from reading,
+especially when cool is deployed for normal public usage on servers.
+
+Please note that it is necessary that all the COOL files that are
+meant to be served is under a directory named 'browser'. Since, the
+COOL files, in the git repo, are itself in a directory named
+'browser', this would work out of the box for development purposes.
+
+If you run coolwsd on HTTPS, you have to set up your own private key
+and certificates (in PEM format only). The name and location of key,
+certificate and CA certificate chain is defined in
+${sysconfdir}/coolwsd/coolwsd.xml. Dummy self-signed cert.pem,
+ca-chain.cert.pem and key.pem are already included, but it is better
+to replace those with your own files.
+
+### generate the new self-signed certificate
+
+To generate the new self-signed certificate, you can do the following. Maybe
+there is a less verbose way, but this worked for me:
+
+    # create the ca-chain.cert.pem
+
+    mkdir private
+
+    openssl genrsa -aes256 -out private/ca.key.pem 4096
+
+    # You will be asked many questions, put the IP in Common Name
+    openssl req -new -x509 -days 365 -key private/ca.key.pem -sha256 -extensions v3_ca -out ca.cert.pem
+
+    openssl genrsa -aes256 -out private/intermediate.key.pem 4096
+
+    openssl req -sha256 -new -key private/intermediate.key.pem -out intermediate.csr.pem
+
+    mkdir -p demoCA/newcerts
+    touch demoCA/index.txt
+    echo 1000 > demoCA/serial
+    openssl ca -keyfile private/ca.key.pem -cert ca.cert.pem -extensions v3_ca -notext -md sha256 -in intermediate.csr.pem -out intermediate.cert.pem
+
+    cat intermediate.cert.pem ca.cert.pem > ca-chain.cert.pem
+
+    # create the key / cert
+
+    openssl genrsa -out key.pem 2048
+
+    openssl req -sha256 -new -key key.pem -out csr.pem
+
+    # change "unique_subject = yes" to "unique_subject = no" in demoCA/index.txt.attr
+    # otherwise you'll get the following error:
+    #   failed to update database
+    #   TXT_DB error number 2
+
+    openssl ca -keyfile private/ca.key.pem -cert ca.cert.pem -extensions usr_cert -notext -md sha256 -in csr.pem -out cert.pem
+
+HTTPS is the default. HTTP-only mode can be enabled with --disable-ssl
+configure option.
+
+If you plan to hack on coolwsd, you probably want to familiarize
+yourself with coolwsd's --o:num_prespawn_children switch, and the 'connect'
+test program.
+
+For interactive testing, you can use the 'connect' program. It accepts
+"commands" from the protocol on standard input.
+
 </section>
 
 {{< edit-button to="/content/post/build-code.md" name="Edit page">}}
