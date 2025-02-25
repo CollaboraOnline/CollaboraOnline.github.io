@@ -119,6 +119,62 @@ If you are trying to debug Collabora online using VSCode then probably first you
 <img src="/images/debug-in-ide.png" alt="Debug In IDE" width="100%">
 <br><br>
 
+### GDB debugging for CPP files
+
+When debugging, you want to pass `--o:num_prespawn_children=1` to coolwsd
+to limit the number of concurrently running processes.
+
+When a crash happens too early, you also want to
+
+    export SLEEPFORDEBUGGER=<number of seconds>
+
+or
+    export PAUSEFORDEBUGGER=1
+
+so that you have time to attach to the process.
+
+Then run coolwsd, and attach your debugger to the process you are
+interested in. Note that simply attaching gdb via `gdb -p` is not meant to work, your options are:
+
+- `sudo gdb -p <PID>`, which is easy to remember or
+
+- `gdb -iex "set sysroot /" -p <PID>`, which can run as an unprivileged user, since we switched from
+  capabilities to unprivileged namespaces.
+
+You can make the later an alias as well:
+
+```
+alias cool-gdb='gdb -iex "set sysroot /"'
+cool-gdb -p <PID>
+```
+
+Also, note that as the child processes run in a chroot environment,
+they see the LibreOffice shared libraries as being in a directory tree
+/lo , but your debugger does not. So in order to be able to
+effectively debug the LibreOffice code as used through LibreOfficeKit
+by a child coolwsd process, you need to symlink the "lo" subdirectory
+of a running child coolwsd process's chroot jail as /lo. Something like:
+
+`sudo ln -s ~/libreoffice/master/cool-child-roots/1046829984599121011/lo /lo`
+
+Use the ps command to find out exactly the path to use.
+
+Set `COOL_DEBUG=1` to trap SIGSEGV and SEGBUS and prompt for debugger.
+
+if you choose PAUSEFORDEBUGGER send the signal SIGUSR1 to resume the process
+
+In order to run and debug one unit test, run the commandline that is printed
+when the test fails. To run one single CppUnit test from a suite, additionally use:
+
+    CPPUNIT_TEST_NAME="HTTPWSTest::testCalcEditRendering" <printed commandline>
+
+
+</section>
+
+---
+
+{{< edit-button to="/content/post/debug-code.md" name="Edit page">}}
+
 ## On android
 
 ### Local or remote hosted on an android mobile device
