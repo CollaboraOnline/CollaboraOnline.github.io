@@ -482,6 +482,31 @@ test program.
 For interactive testing, you can use the 'connect' program. It accepts
 "commands" from the protocol on standard input.
 
+## Troubleshooting
+
+### AppArmor Error
+If you encounter the following error when building Collabora Online:
+
+```bash
+apparmor_restrict_unprivileged_userns is enabled, which blocks user namespaces
+WARNING: install podman to workaround this
+make: *** [Makefile:9080: run] Error 1
+```
+
+This issue occurs because AppArmor restricts unprivileged user namespaces. To resolve it, you need to disable this restriction with a persistent setting.
+
+**Solution:**
+
+Disable the restriction by creating a new configuration file at `/etc/sysctl.d/60-apparmor-namespace.conf` with the following content:
+
+```bash
+kernel.apparmor_restrict_unprivileged_userns=0
+```
+
+**Reboot** your system to apply the changes.
+
+After rebooting, you should be able to continue the build process without encountering the error.
+
 </section>
 
 {{< edit-button to="/content/post/build-code.md" name="Edit page">}}
