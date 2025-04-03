@@ -374,6 +374,8 @@ Make sure we use unbundled libraries within POCO libraries. For this, we should 
 
 ```bash
 export CFLAGS="$CFLAGS -DPOCO_UNBUNDLED=1"
+export CXXFLAGS="$CXXFLAGS -DPOCO_UNBUNDLED=1"
+
 make -j `nproc`
 ```
 
