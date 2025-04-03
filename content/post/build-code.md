@@ -143,10 +143,23 @@ We need LibreOffice core, POCO library and several other libraries and tools to 
 Open a terminal and follow the steps below:
 
 ```bash
-sudo dnf install poco-devel gcc gcc-c++ python3-polib python3-lxml \
-                 libtool libstdc++-devel libpng libpng-devel \
-                 cppunit-devel nodejs-devel chromium \
-                 libzstd-devel libcap-devel pam-devel
+sudo dnf -y install --allowerasing \
+    chromium \
+    cppunit-devel \
+    gcc \
+    gcc-c++ \
+    libcap-devel \
+    libpng \
+    libpng-devel \
+    libstdc++-devel \
+    libtool \
+    libzstd-devel \
+    nodejs \
+    nodejs-devel \
+    npm \
+    pam-devel \
+    poco-devel \
+    python3-polib
 ```
 
 ### LibreOffice
