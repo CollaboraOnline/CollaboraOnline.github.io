@@ -346,8 +346,6 @@ Configure and build, adding the following configuration options to `autogen.sh` 
 ./autogen.sh --with-distro=CPLinux-LOKit --without-package-format
 ```
 ```bash
-export CXXFLAGS="$CXXFLAGS -DPOCO_UNBUNDLED=1"
-
 make -j $(nproc)
 ```
 You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
