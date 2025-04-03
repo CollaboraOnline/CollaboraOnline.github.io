@@ -345,10 +345,7 @@ Configure and build, adding the following configuration options to `autogen.sh` 
 ```bash
 ./autogen.sh --with-distro=CPLinux-LOKit --without-package-format
 ```
-Make sure we use unbundled libraries within POCO libraries. For this, we should export `CFLAGS` and ``CCFLAGS`` appropriately.
-
 ```bash
-export CFLAGS="$CFLAGS -DPOCO_UNBUNDLED=1"
 export CXXFLAGS="$CXXFLAGS -DPOCO_UNBUNDLED=1"
 
 make -j $(nproc)
@@ -375,7 +372,10 @@ You can also add extra flags to customize your build:
 
 See `./configure --help` for the full list of options.
 
+Make sure we use unbundled libraries within POCO libraries. For this, we should export `CFLAGS` and ``CCFLAGS`` appropriately.
+
 ```bash
+export CFLAGS="$CFLAGS -DPOCO_UNBUNDLED=1"
 make -j `nproc`
 ```
 
