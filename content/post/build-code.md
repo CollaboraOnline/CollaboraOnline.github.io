@@ -98,7 +98,7 @@ We need LibreOffice core, POCO library and several other libraries and tools to 
 # For Leap 15.5
 zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/15.5/devel:libraries:c_c++.repo
 ```
-If this is fresh instalation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
+If this is fresh installation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
 It will bring in things like git, gcc, etc.
 ```bash
 sudo zypper install -t pattern devel_basis
@@ -115,8 +115,9 @@ zypper in libpng16-compat-devel
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using the GNU
-make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+You need to clone it, run autoconf/automake, configure and build using GNU make.
+
+**Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
@@ -153,8 +154,9 @@ sudo dnf install poco-devel gcc gcc-c++ python3-polib python3-lxml \
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using the GNU
-make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+You need to clone it, run autoconf/automake, configure and build using GNU make.
+
+**Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
@@ -193,8 +195,9 @@ sudo pip install polib
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using the GNU
-make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+You need to clone it, run autoconf/automake, configure and build using GNU make.
+
+**Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
@@ -239,8 +242,9 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using the GNU
-make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+You need to clone it, run autoconf/automake, configure and build using GNU make.
+
+**Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
@@ -278,14 +282,15 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     pkg-config fontconfig snapd chromium-browser
 ```
 
-*Note: Chomium is needed and used in cypress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy pacakge that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
+*Note: Chromium is needed and used in cypress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy package that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
 ### LibreOffice
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using the GNU
-make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+You need to clone it, run autoconf/automake, configure and build using GNU make.
+
+**Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
@@ -306,7 +311,7 @@ Now clone the forked repo:
 
 ### Dependencies
 
-The CODE must be built on Linux, and you need the following:
+CODE must be built on Linux, and you need the following:
 
 * LibreOffice
   + Either build LibreOffice from source, or download a daily built archive (see below)
@@ -336,7 +341,7 @@ The build process for LibreOffice is described on their wiki. However, a few mod
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Install the dependencies. The lists of dependencies and commands for various distributions of Linux are avialable on the LibreOffice Wiki linked above.
+Install the dependencies. The lists of dependencies and commands for various distributions of Linux are available on the LibreOffice Wiki linked above.
 
 Clone the repository and switch to the Collabora Online branch:
 {{% common-build-commands section="clone-lo" lobranch="co-25.04" %}}
@@ -357,8 +362,8 @@ You should now have two new directories extracted: `instdir` and `include`. You 
 
 ### Building CODE
 
-You need to clone it, run autoconf/automake, configure and build using the GNU
-make:
+You need to clone it, run autoconf/automake, configure and build using GNU make:
+
 {{% common-build-commands section="clone-online" %}}
 {{% common-build-commands section="build-online" %}}
 
