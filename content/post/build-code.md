@@ -331,7 +331,7 @@ The build process for LibreOffice is described on their wiki. However, a few mod
 
 https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-Install the dependencies. The lists of dependencies and commands for various distributions of Linux are available on the LibreOffice Wiki linked above.
+Install the dependencies. The lists of dependencies and commands for various Linux distributions are available on the LibreOffice Wiki linked above.
 
 Clone the repository and switch to the Collabora Online branch:
 {{% common-build-commands section="clone-lo" lobranch="co-25.04" %}}
