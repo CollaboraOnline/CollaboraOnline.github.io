@@ -115,9 +115,7 @@ zypper in libpng16-compat-devel
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using GNU make.
-
-**Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
 
 Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
