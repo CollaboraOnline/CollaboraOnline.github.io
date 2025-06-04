@@ -274,7 +274,7 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     pkg-config fontconfig snapd chromium-browser
 ```
 
-*Note: Chromium is needed and used in cypress tests. Ubuntu has no chromium deb packages in its repositories, only a dummy package that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
+*Note: Chromium is needed and used in the cypress tests. Ubuntu has no Chromium deb packages in its repositories, only a dummy package that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
 ### LibreOffice
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
