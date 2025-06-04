@@ -98,7 +98,7 @@ We need LibreOffice core, POCO library and several other libraries and tools to 
 # For Leap 15.5
 zypper ar http://download.opensuse.org/repositories/devel:/libraries:/c_c++/15.5/devel:libraries:c_c++.repo
 ```
-If this is fresh installation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
+If this is a fresh installation it might be worth install devel-basis pattern: Minimal set of tools for compiling and linking applications.
 It will bring in things like git, gcc, etc.
 ```bash
 sudo zypper install -t pattern devel_basis
