@@ -142,7 +142,7 @@ We need LibreOffice core, POCO library and several other libraries and tools to 
 Open a terminal and follow the steps below:
 
 ```bash
-sudo dnf -y install --allowerasing \
+sudo dnf install \
     chromium \
     cppunit-devel \
     gcc \
