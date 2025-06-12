@@ -22,6 +22,14 @@ author = "Hugo Authors"
     </p>
   </div>
 </div>
+
+<a id="gsoc-img1" class="gsoc-img d-none d-xl-block" href="https://github.com/CollaboraOnline/online/issues/4219">
+  <img src="https://user-images.githubusercontent.com/65948705/154491588-200cff6c-139f-4ab4-950a-cc8ce1be6436.png" />
+</a>
+<a id="gsoc-img2" class="gsoc-img d-none d-xl-block" href="https://github.com/CollaboraOnline/online/issues/4218">
+  <img src="https://user-images.githubusercontent.com/65948705/154537767-122b3ae1-c349-47de-b6e8-4c4407465385.png" />
+</a>
+
 <br>
 
 ### List of Ideas
