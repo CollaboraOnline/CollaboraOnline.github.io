@@ -310,6 +310,26 @@ Now clone the forked repo:
 
 <section id="build-code-general" class="build-code-content">
 
+## Nix/NixOS {#build-code-with-nix}
+
+### What this is
+
+This is a set of shells used for development. It will let you build collabora
+from dependencies installed with Nix.
+
+### Supported platforms
+
+Currently the Nix build has only been tested on `x86_64-linux` NixOS. It would
+probably be possible to make it run on `aarch64-linux` fairly easily. It may
+also be possible to make darwin shells for building the iOS app.
+
+### How do I do it?
+
+Follow the instructions in the
+[nix-build-support](https://github.com/CollaboraOnline/nix-build-support)
+repository. They will lead you through cloning LibreOffice core and Collabora
+online, configuring your build and running your newly-built CODE.
+
 ## Build CODE & LO {#build-code-n-lo}
 
 ### Dependencies
