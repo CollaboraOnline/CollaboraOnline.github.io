@@ -49,7 +49,7 @@ Thank you all for making COOL a success!
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/290614?v=4" alt="timar" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">timar</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 1828</p>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 1830</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
@@ -109,7 +109,7 @@ Thank you all for making COOL a success!
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/26241069?v=4" alt="Rash419" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Rash419</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 546</p>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 547</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
@@ -145,13 +145,13 @@ Thank you all for making COOL a success!
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/34243578?v=4" alt="Minion3665" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Minion3665</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 251</p>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 267</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/61119120?v=4" alt="codewithvk" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">codewithvk</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 218</p>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 220</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
@@ -233,15 +233,15 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/9937631?v=4" alt="mrkara" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">mrkara</h3>
+    <img src="https://avatars.githubusercontent.com/u/620941?v=4" alt="meven" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">meven</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 65</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/620941?v=4" alt="meven" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">meven</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 64</p>
+    <img src="https://avatars.githubusercontent.com/u/9937631?v=4" alt="mrkara" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">mrkara</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 65</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
@@ -301,7 +301,7 @@ Thank you all for making COOL a success!
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/48405287?v=4" alt="banobepascal" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">banobepascal</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 45</p>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 46</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
@@ -313,7 +313,7 @@ Thank you all for making COOL a success!
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/58837400?v=4" alt="rparth07" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">rparth07</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 40</p>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 42</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
@@ -809,8 +809,8 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/42316180?v=4" alt="BoFFire" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">BoFFire</h3>
+    <img src="https://avatars.githubusercontent.com/u/13365531?v=4" alt="LorbusChris" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">LorbusChris</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 3</p>
 </div>
 
@@ -881,14 +881,14 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/13365531?v=4" alt="LorbusChris" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">LorbusChris</h3>
+    <img src="https://avatars.githubusercontent.com/u/1546915?v=4" alt="ahunt" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ahunt</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 3</p>
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/1546915?v=4" alt="ahunt" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">ahunt</h3>
+    <img src="https://avatars.githubusercontent.com/u/42316180?v=4" alt="BoFFire" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">BoFFire</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 3</p>
 </div>
 
@@ -953,32 +953,8 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/50857856?v=4" alt="Oymate" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Oymate</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
-</div>
-
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/12208593?v=4" alt="p-bo" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">p-bo</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
-</div>
-
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/60978162?v=4" alt="Hakaponttoauto" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Hakaponttoauto</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
-</div>
-
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/47820033?v=4" alt="stavros-k" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">stavros-k</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
-</div>
-
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/80407955?v=4" alt="SubhamJena" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">SubhamJena</h3>
+    <img src="https://avatars.githubusercontent.com/u/24381728?v=4" alt="yunusbulutt" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">yunusbulutt</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
 </div>
 
@@ -989,8 +965,38 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/24381728?v=4" alt="yunusbulutt" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">yunusbulutt</h3>
+    <img src="https://avatars.githubusercontent.com/u/80407955?v=4" alt="SubhamJena" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">SubhamJena</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
+</div>
+
+<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    <img src="https://avatars.githubusercontent.com/u/47820033?v=4" alt="stavros-k" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">stavros-k</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
+</div>
+
+<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    <img src="https://avatars.githubusercontent.com/u/60978162?v=4" alt="Hakaponttoauto" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Hakaponttoauto</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
+</div>
+
+<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    <img src="https://avatars.githubusercontent.com/u/12208593?v=4" alt="p-bo" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">p-bo</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
+</div>
+
+<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    <img src="https://avatars.githubusercontent.com/u/50857856?v=4" alt="Oymate" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Oymate</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
+</div>
+
+<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    <img src="https://avatars.githubusercontent.com/u/15653577?v=4" alt="Antony007" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Antony007</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
 </div>
 
@@ -1049,12 +1055,6 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/15653577?v=4" alt="Antony007" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Antony007</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
-</div>
-
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/109509698?v=4" alt="arturyak" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">arturyak</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
@@ -1099,6 +1099,12 @@ Thank you all for making COOL a success!
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/158463475?v=4" alt="hb9hil-tester" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">hb9hil-tester</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
+</div>
+
+<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    <img src="https://avatars.githubusercontent.com/u/1853968?v=4" alt="JohnSylver" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">JohnSylver</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 2</p>
 </div>
 
@@ -1307,8 +1313,8 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/18303197?v=4" alt="saitgulmez" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">saitgulmez</h3>
+    <img src="https://avatars.githubusercontent.com/u/15890356?v=4" alt="franchardin" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">franchardin</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 1</p>
 </div>
 
@@ -1481,12 +1487,6 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/15890356?v=4" alt="franchardin" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">franchardin</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 1</p>
-</div>
-
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/6138244?v=4" alt="feyzayavuz" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">feyzayavuz</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 1</p>
@@ -1649,6 +1649,12 @@ Thank you all for making COOL a success!
 </div>
 
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    <img src="https://avatars.githubusercontent.com/u/18303197?v=4" alt="saitgulmez" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
+    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">saitgulmez</h3>
+    <p style="font-size: 0.9rem; margin: 0;">Contributions: 1</p>
+</div>
+
+<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/103860065?v=4" alt="Koslas1" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Koslas1</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 1</p>
@@ -1741,12 +1747,6 @@ Thank you all for making COOL a success!
 <div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
     <img src="https://avatars.githubusercontent.com/u/110243388?v=4" alt="mioli104" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">mioli104</h3>
-    <p style="font-size: 0.9rem; margin: 0;">Contributions: 1</p>
-</div>
-
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
-    <img src="https://avatars.githubusercontent.com/u/1853968?v=4" alt="JohnSylver" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
-    <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">JohnSylver</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: 1</p>
 </div>
 
