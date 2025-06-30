@@ -55,11 +55,10 @@
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-hacktoberfest-cta.svg');
+  background: url('/images/circle-cooldays-cta.svg');
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 86px;
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
@@ -84,7 +83,7 @@
 }
 
 #img-container-cta:hover::after {
-  content: 'Contribute';
+  content: 'COOL Days 2025';
   text-align: center;
   display: block;
   font-weight: bold;
