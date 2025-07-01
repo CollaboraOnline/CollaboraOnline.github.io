@@ -72,3 +72,11 @@ when we want to manually publish the generated static website with URL https://c
 
 * gh-pages: The master branch will store the public website files once they are all built.
 * master: main branch to store all of the source files and contribute to.
+
+## Branding License Exception
+
+Please note: while the content of this repository is generally covered under the Creative Commons Attribution-ShareAlike 3.0 license (CC-BY-SA 3.0), some branding assets are excluded.
+
+Specifically, the **beaver images** located in `content/images/beaver/` are © Collabora Ltd. and are **not licensed** under CC-BY-SA.
+
+See `content/images/beaver/LICENSE` for more details.
