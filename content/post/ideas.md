@@ -6,6 +6,7 @@ home_pos = "11"
 images = [
     "beaver/ideas-copyrighted.png",
 ]
+url = "/ideas/"
 aliases = ["about-us","about-hugo","contact"]
 author = "Hugo Authors"
 +++
