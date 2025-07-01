@@ -12,7 +12,7 @@ tags = [
 		"test",
 ]
 images = [
-    "faq.jpg",
+    "beaver/faq-copyrighted.png",
 ]
 showimage = false
 showtitle = true

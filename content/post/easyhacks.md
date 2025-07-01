@@ -23,7 +23,7 @@ categories = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 images = [
-    "easyhacks.jpg",
+    "beaver/easyhacks-copyrighted.png",
 ]
 showimage = false
 showtitle = true

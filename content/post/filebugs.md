@@ -12,7 +12,7 @@ tags = [
 		"test",
 ]
 images = [
-    "foundabug.jpg",
+    "beaver/foundabug-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"

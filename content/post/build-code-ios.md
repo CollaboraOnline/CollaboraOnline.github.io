@@ -11,7 +11,7 @@ tags = [
     "make",
 ]
 images = [
-    "build-code-ios.jpg",
+    "beaver/build-code-ios-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"
