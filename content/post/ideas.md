@@ -2,9 +2,18 @@
 title = "Ideas page"
 description = "List of project ideas that capture the development needs of Collabora Online."
 date = "2022-02-07"
+home_pos = "11"
+images = [
+    "beaver/ideas-copyrighted.png",
+]
 aliases = ["about-us","about-hugo","contact"]
 author = "Hugo Authors"
 +++
+
+A great way to get started, explore ideas, and contribute long-term (like during GSoC or internships) is by picking up one of our open project ideas.
+
+<!--more-->
+
 <div class="card" id="general-information">
   <div class="card-body">
     <p class="badge badge-pill badge-primary bg-dark">General Information</p>

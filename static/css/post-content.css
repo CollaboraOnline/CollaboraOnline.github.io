@@ -29,3 +29,8 @@
 code.language-none::selection {
   background: #ba2323;
 }
+
+.image-wrapper img{
+  aspect-ratio: 14/9;
+  object-fit: contain;
+}

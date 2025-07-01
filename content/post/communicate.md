@@ -11,7 +11,7 @@ tags = [
     "chat",
 ]
 images = [
-    "communicate.jpg",
+    "beaver/communicate-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"

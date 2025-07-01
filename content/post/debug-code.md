@@ -11,7 +11,7 @@ tags = [
     "make",
 ]
 images = [
-    "debug-code.jpg",
+    "beaver/debug-code-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"

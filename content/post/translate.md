@@ -11,7 +11,7 @@ tags = [
     "translate",
 ]
 images = [
-    "translate.jpg",
+    "beaver/translate-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"

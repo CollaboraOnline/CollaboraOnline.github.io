@@ -14,7 +14,7 @@ tags = [
 
 ]
 images = [
-    "easyhacks.jpg",
+    "beaver/ide-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"

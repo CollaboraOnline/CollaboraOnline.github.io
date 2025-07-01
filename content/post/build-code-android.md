@@ -11,7 +11,7 @@ tags = [
     "make",
 ]
 images = [
-    "build-code-android.jpg",
+    "beaver/build-code-android-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"
