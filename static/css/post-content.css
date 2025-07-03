@@ -33,4 +33,43 @@ code.language-none::selection {
 .image-wrapper img{
   aspect-ratio: 14/9;
   object-fit: contain;
+  padding-inline-start: 3px;
+}
+.latest .d-block {
+  display: flex !important;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 88%, rgba(200, 200, 200, 0.1) 100%);
+}
+
+.img-fluid.rounded.loaded {
+  width: 50%;
+}
+
+.card-img-top.mx-auto.d-block.loaded {
+  margin-top: 20px;
+}
+
+.card .d-block {
+  display: flex !important;
+  flex: 2 1 auto;
+}
+
+.card .d-block>.card-body {
+  flex: 2 1 60%;
+}
+
+.card .d-block>.image-wrapper {
+  flex: 2 1 40%;
+}
+
+@media (min-width: 992px) {
+  .image-wrapper img {
+    aspect-ratio: 1;
+    object-fit: contain;
+  }
+
+  .homepage {
+    max-width: 1300px;
+  }
 }
