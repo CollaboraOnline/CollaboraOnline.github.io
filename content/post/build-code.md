@@ -281,7 +281,7 @@ sudo apt install -y dialog
 
 Now install the rest of the required packages:
 ```bash
-sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
+sudo apt install -y libpoco-dev python3-polib libcap-dev libssl-dev npm \
                     libpam-dev libzstd-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libgif-dev libcppunit-dev \
                     pkg-config fontconfig snapd chromium-browser
