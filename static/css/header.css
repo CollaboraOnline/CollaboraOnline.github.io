@@ -59,6 +59,8 @@
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 570px auto;
+  background-position: -360px -50px;
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
