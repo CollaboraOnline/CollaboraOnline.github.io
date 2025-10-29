@@ -55,7 +55,7 @@
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-cooldays-cta.svg');
+  background: url('/images/COOL-Days-2025-PeopleWaving.png');
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
@@ -83,7 +83,7 @@
 }
 
 #img-container-cta:hover::after {
-  content: 'COOL Days 2026';
+  content: 'COOL Days 2025';
   text-align: center;
   display: block;
   font-weight: bold;
