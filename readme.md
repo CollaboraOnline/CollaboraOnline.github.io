@@ -33,7 +33,7 @@ Name
 index.html
 ```
 
-To circunvent this you can either click that index.html under `Name` or you can simply type it at the end of that page address like so:
+To circumvent this you can either click that index.html under `Name` or you can simply type it at the end of that page address like so:
 `file:///home/pedrosilva/collaboraonline-page/public/post/buildit/index.html`
 
 Note: ideally we would have this in one folder inside of CollaboraOffice.com so everyone with Basic Auth could check it
