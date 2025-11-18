@@ -10,20 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the IO repository using PAT (IMPORTANT)
+      # Checkout IO repository using PAT (NEEDED)
       - name: Checkout IO repository
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GENERATE_CONTRIBUTORS }}
           path: io
 
-      # Checkout the Online repository
+      # Checkout Online repository using same PAT (also REQUIRED)
       - name: Checkout Online repository
         uses: actions/checkout@v3
         with:
           repository: CollaboraOnline/online
           ref: master
           path: online
+          token: ${{ secrets.GENERATE_CONTRIBUTORS }}
 
       # Install Node.js
       - name: Setup Node.js
@@ -31,7 +32,7 @@ jobs:
         with:
           node-version: 18
 
-      # Run the contributors script from the Online repo
+      # Run the contributors script
       - name: Generate contributors.md
         run: |
           cd online
@@ -39,12 +40,12 @@ jobs:
           node scripts/contributors-credit.js
           cp contributors.md ../io/content/post/contributors.md
 
-      # Commit and push back to IO repo (will now use PAT)
+      # Commit & Push using PAT
       - name: Commit and Push changes
         run: |
           cd io
-          git config user.name "${GITHUB_ACTOR}"
-          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
           git add content/post/contributors.md
           git commit -m "Update contributors list" --signoff || echo "No changes to commit"
-          git push
+          git push https://x-access-token:${{ secrets.GENERATE_CONTRIBUTORS }}@github.com/CollaboraOnline/CollaboraOnline.github.io.git master
