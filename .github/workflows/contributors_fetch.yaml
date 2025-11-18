@@ -44,8 +44,8 @@ jobs:
       - name: Commit and Push changes
         run: |
           cd io
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "Darshan-upadhyay1110"
+          git config user.email "darshan.upadhyay@collabora.com"
           git add content/post/contributors.md
           git commit -m "Update contributors list" --signoff || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GENERATE_CONTRIBUTORS }}@github.com/CollaboraOnline/CollaboraOnline.github.io.git master
