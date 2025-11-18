@@ -10,13 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the IO repository itself
+      # Checkout the IO repository using PAT (IMPORTANT)
       - name: Checkout IO repository
         uses: actions/checkout@v3
         with:
+          token: ${{ secrets.GENERATE_CONTRIBUTORS }}
           path: io
 
-      # Checkout the Online repository (where scripts exist)
+      # Checkout the Online repository
       - name: Checkout Online repository
         uses: actions/checkout@v3
         with:
@@ -38,7 +39,7 @@ jobs:
           node scripts/contributors-credit.js
           cp contributors.md ../io/content/post/contributors.md
 
-      # Commit and push back to IO repo
+      # Commit and push back to IO repo (will now use PAT)
       - name: Commit and Push changes
         run: |
           cd io
