@@ -1,0 +1,49 @@
+name: Generate Contributors List and Push to Collabora Github IO
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-contributors:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the IO repository itself
+      - name: Checkout IO repository
+        uses: actions/checkout@v3
+        with:
+          path: io
+
+      # Checkout the Online repository (where scripts exist)
+      - name: Checkout Online repository
+        uses: actions/checkout@v3
+        with:
+          repository: CollaboraOnline/online
+          ref: master
+          path: online
+
+      # Install Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Run the contributors script from the Online repo
+      - name: Generate contributors.md
+        run: |
+          cd online
+          npm install node-fetch@2
+          node scripts/contributors-credit.js
+          cp contributors.md ../io/content/post/contributors.md
+
+      # Commit and push back to IO repo
+      - name: Commit and Push changes
+        run: |
+          cd io
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add content/post/contributors.md
+          git commit -m "Update contributors list" --signoff || echo "No changes to commit"
+          git push
