@@ -2,7 +2,7 @@
 title = "Ideas page"
 description = "List of project ideas that capture the development needs of Collabora Online."
 date = "2022-02-07"
-home_pos = "11"
+home_pos = "14"
 images = [
     "beaver/ideas-copyrighted.png",
 ]

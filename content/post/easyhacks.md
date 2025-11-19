@@ -5,7 +5,7 @@ authors = [
 ]
 title = "Easy Hacks"
 date = "2020-09-30"
-home_pos = "6"
+home_pos = "9"
 description = "Easy Hacks"
 tags = [
     "contribute",

@@ -4,7 +4,7 @@ authors = [
 ]
 title = "Found a bug?"
 date = "2020-09-30"
-home_pos = "8"
+home_pos = "11"
 description = "Lorem Ipsum Dolor Si Amet"
 tags = [
     "contribute",

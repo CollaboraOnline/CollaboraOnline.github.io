@@ -4,7 +4,7 @@ authors = [
 ]
 title = "Communicate"
 date = "2020-09-28"
-home_pos = "10"
+home_pos = "7"
 description = "Do you want to get involved in localization?"
 tags = [
     "communicate",
@@ -43,5 +43,3 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 * Send email [hello@collaboraoffice.com](mailto:hello@collaboraoffice.com)
 * Twitter [@CollaboraOffice](https://x.com/CollaboraOffice) feel free to use `#cool_dev` in your tweets
 * Mastodon [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) feel free to use `#cool_dev` in your toots
-
-{{< edit-button to="/content/post/communicate.md" name="Edit page">}}

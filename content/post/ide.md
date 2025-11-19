@@ -4,7 +4,7 @@ authors = [
 ]
 title = "IDEs & Text Editors"
 date = "2020-10-01"
-home_pos = "5"
+home_pos = "8"
 description = "Development Environment"
 tags = [
     "contribute",
