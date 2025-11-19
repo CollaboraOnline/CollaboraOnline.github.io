@@ -5,7 +5,7 @@ authors = [
 ]
 title = "Contributors"
 date = "2023-07-04"
-home_pos = "11"
+home_pos = "14"
 description = "COOL Contributors"
 tags = [
     "build",

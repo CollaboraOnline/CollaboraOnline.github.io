@@ -4,7 +4,7 @@ authors = [
 ]
 title = "Debug CODE"
 date = "2023-07-04"
-home_pos = "4"
+home_pos = "7"
 description = "How to debug Collabora Online"
 tags = [
     "build",
