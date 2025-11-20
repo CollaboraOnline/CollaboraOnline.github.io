@@ -10,21 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout IO repository using PAT (NEEDED)
+      # Checkout IO repository using PAT
       - name: Checkout IO repository
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GENERATE_CONTRIBUTORS }}
           path: io
-
-      # Checkout Online repository using same PAT (also REQUIRED)
-      - name: Checkout Online repository
-        uses: actions/checkout@v3
-        with:
-          repository: CollaboraOnline/online
-          ref: master
-          path: online
-          token: ${{ secrets.GENERATE_CONTRIBUTORS }}
 
       # Install Node.js
       - name: Setup Node.js
@@ -32,13 +23,13 @@ jobs:
         with:
           node-version: 18
 
-      # Run the contributors script
+      # Run the contributors script from IO repo
       - name: Generate contributors.md
         run: |
-          cd online
+          cd io
           npm install node-fetch@2
-          node scripts/contributors-credit.js
-          cp contributors.md ../io/content/post/contributors.md
+          node scripts/contributors-credits.js
+          cp contributors.md content/post/contributors.md
 
       # Commit & Push using PAT
       - name: Commit and Push changes
