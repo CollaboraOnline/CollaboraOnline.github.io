@@ -95,3 +95,29 @@
 .badge-secondary {
   background-color: gray;
 }
+
+.btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #5c2983;
+    border-color: #5c2983;
+    color: #fff;
+    box-shadow: none;
+}
+
+.show > .btn-primary.dropdown-toggle,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 1px 1px 1px #5c2983;
+}
+
+#downloadDropdown + .dropdown-menu .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none !important;
+}
+
+#downloadDropdown + .dropdown-menu .dropdown-item img {
+  width: 18px;
+  height: 18px;
+}

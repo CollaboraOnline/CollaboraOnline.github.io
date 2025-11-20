@@ -21,17 +21,49 @@
                   <h3 class="font-weight-normal">{{ . | safeHTML }}</h3>
               {{- end -}}
               <p id="tagline" class="text-black-50">{{ .Site.Params.tagline }}</p>
-              <a href='https://www.collaboraoffice.com/code/'  class="btn btn-primary btn-co-primary btn-hero">
-                Download
-              </a>
-              <a href='https://github.com/CollaboraOnline/online'  class="btn btn-dark btn-co-secondary btn-hero">
-                GitHub
-              </a>
-              <a href='https://forum.collaboraonline.com/'  class="btn btn-light btn-co-secondary btn-hero">
-                Forum
-              </a>
-        </div>
-    </div>
+
+<div class="dropdown">
+  <button
+    class="btn btn-primary btn-co-primary btn-hero dropdown-toggle"
+    role="button"
+    id="downloadDropdown"
+    data-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Download
+  </button>
+
+  <div class="dropdown-menu" aria-labelledby="downloadDropdown">
+
+    <a href="https://www.collaboraoffice.com/code/" target="_blank" class="dropdown-item">
+      <img src="/images/browser.svg" alt="" width="16" style="margin-right:6px;">
+      Online
+    </a>
+
+    <a href="https://apps.microsoft.com/detail/9P9MRBXJJG0M" target="_blank" class="dropdown-item">
+      <img src="/images/windows.svg" alt="" width="16" style="margin-right:6px;">
+      Windows
+    </a>
+
+    <a href="https://cdn.collaboraoffice.com/collaboraoffice-v25.04.7.2_final.flatpak" target="_blank" class="dropdown-item">
+      <img src="/images/linux.svg" alt="" width="16" style="margin-right:6px;">
+      Linux
+    </a>
+
+    <a href="https://apps.apple.com/us/app/collabora-office-desktop/id6754639856" target="_blank" class="dropdown-item">
+      <img src="/images/mac.svg" alt="" width="16" style="margin-right:6px;">
+      Mac
+    </a>
+
+  </div>
+
+  <a href='https://github.com/CollaboraOnline/online'  class="btn btn-dark btn-co-secondary btn-hero">
+    GitHub
+  </a>
+  <a href='https://forum.collaboraonline.com/'  class="btn btn-light btn-co-secondary btn-hero">
+    Forum
+  </a>
+</div>
   <!-- Pick the first according to home_pos param -->
   {{- range first 1 (sort (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) ".Params.home_pos") -}}
         {{ $page := . }}
