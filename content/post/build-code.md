@@ -2,7 +2,7 @@
 authors = [
     "Collabora",
 ]
-title = "Build Collabora Online"
+title = "Build Collabora Online for Web"
 date = "2020-12-01"
 home_pos = "1"
 description = "Step-by-step build instructions"
