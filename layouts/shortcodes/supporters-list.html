@@ -1,0 +1,191 @@
+<link rel="stylesheet" href="/css/supporters.css">
+
+<div class="supporters-grid">
+    {{/* Supporters source: try .Site.Data.supporters, then .Site.Params.supporters, else fall back to a hard-coded
+    example */}}
+    {{ $list := .Site.Data.supporters }}
+    {{ if not $list }}
+    {{ $list = .Site.Params.supporters }}
+    {{ end }}
+
+    {{ if $list }}
+    {{ range $i, $s := $list }}
+    <div class="supporter-card" data-person="{{ $s.person }}" data-title="{{ $s.title }}">
+        <div class="supporter-img">
+            {{ with $s.image }}
+            <img src="{{ . | relURL }}" alt="{{ $s.name }} logo">
+            {{ else }}
+            <div class="placeholder" aria-hidden="true"></div>
+            {{ end }}
+        </div>
+        <div class="supporter-body">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;">
+                <div class="supporter-name">{{ $s.person }}</div>
+                    {{ with $s.logo }}
+                        <img class="supporter-logo" src="{{ . | relURL }}" alt="{{ $s.name }}">
+                    {{ end }}
+            </div>
+            {{ with $s.quote }}
+        <div class="supporter-quote">{{ replace (replace . "“" "") "”" "" }}
+                <span class="supporter-attribution"></span>
+            </div>
+            <div class="supporter-actions">
+                {{ with $s.link }}<a class="supporter-link" href="{{ . }}" target="_blank" rel="noopener"
+                    aria-label="Learn more about {{ $s.name }}">Learn more</a>{{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+    {{ else }}
+    <div class="supporter-card">
+        <div class="supporter-img">
+            <div class="placeholder" aria-hidden="true"></div>
+        </div>
+        <div class="supporter-body">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+                <div class="supporter-name">Example Supporter</div>
+            </div>
+            <div class="supporter-quote">Built for example — Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="supporter-actions"><a class="supporter-link" href="#">Learn more</a></div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var supportersPanel = document.getElementById('supporters-section');
+
+        function addTogglesOnce() {
+            document.querySelectorAll('.supporter-card').forEach(function (card) {
+                var quote = card.querySelector('.supporter-quote');
+                if (!quote) return;
+                // skip if toggle already added
+                if (card.querySelector('.quote-toggle')) return;
+                // Temporarily allow layout to calculate
+                requestAnimationFrame(function () {
+                    var isOverflowing = quote.scrollHeight > quote.clientHeight + 1;
+                    if (isOverflowing) {
+                        var btn = document.createElement('a');
+                        btn.className = 'quote-toggle';
+                        btn.href = '#';
+                        btn.setAttribute('role', 'button');
+                        btn.textContent = 'Read more';
+                        btn.setAttribute('aria-expanded', 'false');
+                        // open modal on click instead of inline expansion
+                        btn.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            openQuoteModal({
+                                name: card.querySelector('.supporter-name')?.textContent || '',
+                                quote: quote.textContent.replace(/^\s*\u201C?|\u201D?\s*$/g, '').trim(),
+                                logo: card.querySelector('.supporter-logo')?.getAttribute('src') || card.querySelector('.supporter-img img')?.getAttribute('src') || null,
+                                link: card.querySelector('.supporter-link')?.getAttribute('href') || null,
+                                person: card.dataset.person || '',
+                                title: card.dataset.title || '',
+                            });
+                        });
+                        // insert into the actions container if present, otherwise after quote
+                        var actions = card.querySelector('.supporter-actions');
+                        if (actions) {
+                            actions.insertBefore(btn, actions.firstChild);
+                        } else {
+                            quote.parentNode.insertBefore(btn, quote.nextSibling);
+                        }
+                    }
+                });
+            });
+        }
+
+        // initial run
+        addTogglesOnce();
+
+        // also re-run on window resize
+        window.addEventListener('resize', function () {
+            addTogglesOnce();
+        });
+
+        // If supporters panel exists and may be toggled, observe attribute changes to detect visibility
+        if (supportersPanel && window.MutationObserver) {
+            var mo = new MutationObserver(function (mutations) {
+                mutations.forEach(function (m) {
+                    // when panel becomes visible, re-run detection
+                    var style = window.getComputedStyle(supportersPanel);
+                    var isVisible = style && style.display !== 'none' && supportersPanel.offsetParent !== null;
+                    var ariaHidden = supportersPanel.getAttribute('aria-hidden');
+                    if (isVisible || ariaHidden === 'false') {
+                        // small delay to allow layout to settle
+                        setTimeout(addTogglesOnce, 50);
+                    }
+                });
+            });
+            mo.observe(supportersPanel, { attributes: true, attributeFilter: ['style', 'aria-hidden', 'class'] });
+        }
+
+        // Modal creation and open/close helpers
+        function openQuoteModal(data) {
+            if (!data) return;
+            var existing = document.querySelector('.supporter-modal-backdrop');
+            if (existing) existing.remove();
+
+            var backdrop = document.createElement('div');
+            backdrop.className = 'supporter-modal-backdrop';
+
+            var modal = document.createElement('div');
+            modal.className = 'supporter-modal';
+
+            var header = document.createElement('div'); header.className = 'modal-header';
+            var title = document.createElement('div'); title.className = 'modal-title';
+            if (data.person) {
+            title.innerHTML = `
+                <span class="modal-person">${data.person}</span>
+                <br>
+                <span class="modal-role">${data.title || ''}</span>
+            `;
+            } else {
+            title.textContent = data.name;
+            }
+
+            var closeBtn = document.createElement('button'); closeBtn.className = 'modal-close'; closeBtn.innerHTML = '\u2715';
+            closeBtn.addEventListener('click', closeModal);
+            header.appendChild(title);
+            header.appendChild(closeBtn);
+
+            var body = document.createElement('div'); body.className = 'modal-body';
+            if (data.logo) {
+                var img = document.createElement('img');
+                img.src = data.logo;
+                img.style.width = '100px';
+                img.style.height = 'auto';
+                img.style.maxHeight = '72px';
+                img.style.objectFit = 'contain';
+                img.style.float = 'right';
+                img.style.marginLeft = '12px';
+                img.alt = data.name || '';
+                body.appendChild(img);
+            }
+            var quotePara = document.createElement('div'); quotePara.textContent = data.quote || '';
+            body.appendChild(quotePara);
+
+            var footer = document.createElement('div'); footer.style.textAlign = 'right';
+            if (data.link) {
+                var a = document.createElement('a'); a.href = data.link; a.target = '_blank'; a.rel = 'noopener'; a.className = 'supporter-link'; a.textContent = 'Learn more';
+                footer.appendChild(a);
+            }
+
+            modal.appendChild(header);
+            modal.appendChild(body);
+            modal.appendChild(footer);
+            backdrop.appendChild(modal);
+            document.body.appendChild(backdrop);
+
+            // close on backdrop click
+            backdrop.addEventListener('click', function (e) { if (e.target === backdrop) closeModal(); });
+
+            function closeModal() {
+                backdrop.remove();
+            }
+        }
+    });
+</script>
