@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Collabora Office",
+    "image": "/images/supporters/mugshots/Michael-Meeks.jpg",
+    "logo": "/images/supporters/collabora-office.svg",
+    "quote": "We’re excited to bring a first release of Collabora Office to the desktop, letting desktop users work both on-line and off-line in comfort. We look forward to working with and gaining valuable feedback from our partners, customers, users and community. This release provides an opportunity to see the direction of Collabora Productivity's products, and as an open source company, we love to work with others to shape and collaborate on new features.",
+    "person": "Michael Meeks",
+    "title": "CEO of Collabora Productivity",
+    "link": "http://www.collaboraonline.com/"
+  },
+  {
+    "name": "Nextcloud",
+    "image": "/images/supporters/mugshots/Frank-Karlitschek.jpeg",
+    "logo": "/images/supporters/Nextcloud_Logo.svg.png",
+    "quote": "Nextcloud has a long standing, close partnership with Collabora, and we are pleased to have been able to bring our UX engineering expertise to help make Collabora Office more ergonomic and intuitive. This combined with strong privacy-first design and document interoperability, powers Nextcloud Office as an excellent match for our users and customers’ needs.",
+    "person": "Frank Karlitschek",
+    "title": "CEO and Founder of Nextcloud",
+    "link": "https://collaboraoffice.com/partners/nextcloud/"
+  },
+  {
+    "name": "ZenDiS",
+    "image": "/images/supporters/mugshots/Alexander-Smolianitski.jpeg",
+    "logo": "/images/supporters/zendis.svg",
+    "quote": "We are delighted to see Collabora bring this functionality from the web to the off-line desktop. Collabora is an essential component of our openDesk suite, and we are pleased to see greater flexibility and mobility for users; it is great to have a consistent experience—whether you need to edit a spreadsheet on a train with no Wi-Fi, or later collaborate with colleagues online.",
+    "person": "Alexander Smolianitski",
+    "title": "ZenDiS, German Government’s Centre for Digital Sovereignty",
+    "link": "https://www.collaboraonline.com/integrations/opendesk/"
+  },
+  {
+    "name": "Adfinis",
+    "image": "/images/supporters/mugshots/Nicolas-Christener.jpeg",
+    "logo": "/images/supporters/Adfinis.png",
+    "quote": "We are really pleased to see the Open Source code that we helped to fund for tablets brought to the desktop, and as contributors of server power for automated testing, we are excited to continue our partnership with Collabora Productivity.",
+    "person": "Nicolas Christener",
+    "title": "CEO of Adfinis",
+    "link": "https://collaboraoffice.com/partners/adfinis/"
+  },
+  {
+    "name": "Arawa",
+    "image": "/images/supporters/mugshots/Philippe-Hemel.jpg",
+    "logo": "/images/supporters/Arawa.png",
+    "quote": "Arawa is pleased to see Collabora incorporating feedback from our joint French customers in government and industry to improve the product in another great direction. We’re looking forward to this reaching Enterprise quality, and contributing to its future.",
+    "person": "Philippe Hemel",
+    "title": "CEO of Arawa",
+    "link": "https://www.collaboraonline.com/partners/arawa/"
+  },
+  {
+    "name": "CIB Group",
+    "image": "/images/supporters/mugshots/Brandner.jpg",
+    "logo": "/images/supporters/CIB.svg",
+    "quote": "With our CIB seven Open Source BPMN system and our stack of AI-enabled input/output solutions, we know how to provide EU-developed, effective digital sovereign software. We commend Collabora Productivity's decision to deliver Collabora Online's excellent, unified and familiar user experience now also for Windows, macOS and Linux. It is great to see more choice now also for offline-first use cases, as we see increasing demand for digital-sovereign solutions also in regulated industries as well as in government agencies",
+    "person": "Uli Brandner",
+    "title": "Owner of CIB Group",
+    "link": "https://www.cib.de/en/"
+  },
+  {
+    "name": "Consolidate.eu",
+    "image": "/images/supporters/mugshots/Bickel-Christian.jpeg",
+    "logo": "/images/supporters/Consolidate_Logo.png",
+    "quote": "We at Consolidate work closely with Collabora to simplify our customers' workflows. The new version of Collabora Office will integrate even deeper into our platform. This allows our users to edit documents more directly and fluidly. We value privacy and open standards. Collabora Office delivers on these requirements, giving our customers the secure, flexible solution they need.",
+    "person": "Christian Bickel",
+    "title": "CEO and Founder of Consolidate.eu",
+    "link": "https://www.collaboraonline.com/partners/consolidate/"
+  },
+  {
+    "name": "Circularo",
+    "image": "/images/supporters/mugshots/Josef-Neumann.jpeg",
+    "logo": "/images/supporters/Circularo.svg",
+    "quote": "At Circularo, we are committed to delivering truly sovereign collaboration, where organizations retain full control over their data and workflows. Collabora Online has long supported that vision, and bringing its modern, intuitive experience to the desktop further strengthens our end-to-end document collaboration offering.  We look forward to continuing our partnership with Collabora to advance secure, interoperable, privacy-first productivity for governments and enterprises worldwide.",
+    "person": " Josef Neumann",
+    "title": "CEO of Circularo",
+    "link": "https://www.collaboraonline.com/partners/circularo/"
+  },
+  {
+    "name": "EGroupware",
+    "image": "/images/supporters/mugshots/Birgit-Becker.jpeg",
+    "logo": "/images/supporters/EGroupware.svg",
+    "quote": "The integration of Collabora Online and the new Collabora Office makes EGroupware a Smart Online Office, where users can easily merge their EGroupware data e.g., from contacts into documents or spreadsheets. Additionally, our e-invoicing feature wouldn't be possible without the perfect integration with Collabora. We highly appreciate the partnership with Collabora Productivity as we share many values.",
+    "person": " Birgit Becker",
+    "title": "co-owner of EGroupware GmbH",
+    "link": "https://www.collaboraonline.com/partners/egroupware/"
+  },
+  {
+    "name": "NLnet Foundation",
+    "image": "/images/supporters/mugshots/Michiel-Leenaars.jpg",
+    "logo": "/images/supporters/NLnet.svg",
+    "quote": "In these more geopolitically turbulent times there is a re-appreciation of actual software that you can download and properly install on your own devices—and that you know will just work no matter what happens. It is great to now have a consistent free and open source offering which is available cross-platform, from web and mobile to laptop and workstation. This reduces the dependency on individual vendors, and opens up a lot of exciting possibilities for improving productivity and making collaboration more easy. Every employee in every organization should really have such software on all their devices, even just in case of emergency.",
+    "person": "Michiel Leenaars",
+    "title": "Director of Strategy at NLnet Foundation and Project Lead of the NGI Zero European research programmes ",
+    "link": "https://nlnet.nl/project/LO-Online/"
+  },
+  {
+    "name": "OpenCloud",
+    "image": "/images/supporters/mugshots/Klaas-Freitag.jpg",
+    "logo": "/images/supporters/OpenCloud.jpg",
+    "quote": "We are delighted to see our strategic partner Collabora Productivity taking this important step to offer even more valuable support for the leading open source office applications. It enables an even more comprehensive user experience, from web office to desktop office. This enhances the broad usage of Collabora for even more use cases, and we anticipate a significant change in the market for office applications!",
+    "person": "Klaas Freitag",
+    "title": "CTO of OpenCloud",
+    "link": "https://www.collaboraonline.com/partners/opencloud/"
+  },
+  {
+    "name": "Univention",
+    "image": "/images/supporters/mugshots/Peter-Ganten.jpeg",
+    "logo": "/images/supporters/Univention.png",
+    "quote": "By providing and continuously developing a modern, collaborative online office solution that is Open Source and offers great compatibility with other other suites and an ever-improving user interface, Collabora has made a tremendous and important contribution to enable digital sovereignty in the world of office and collaboration. I am delighted that the result of this work will now also be available directly on the desktop. This will allow for even better integration with the desktop and other business applications and is a major step forward.",
+    "person": "Peter Ganten",
+    "title": "CEO of Univention GmbH",
+    "link": "https://www.collaboraonline.com/partners/univention/"
+  },
+  {
+    "name": "Kendy",
+    "image": "/images/supporters/mugshots/kendy.jpg",
+    "quote": "As a founder of The Document Foundation, I’ve always wanted to create software that looks beautiful and feels naturally at home on every platform. Extending the Collabora Online approach from mobile to desktop finally makes that vision real, and I’m excited that the new Collabora Office delivers a polished, tightly integrated experience for desktop users.",
+    "person": "Jan Holesovsky - Kendy",
+    "title": "Founding member of TDF, former Board deputy, former LibreOffice ESC, Certification, and Membership Committee member",
+    "link": "https://holesovsky.blogspot.com/"
+  },
+  {
+    "name": "Thorsten Behrens",
+    "image": "/images/supporters/mugshots/Thorsten-Behrens.jpeg",
+    "quote": "It is wonderful to witness the many ways a codebase of 35 years can be ported, extended & and polished to shine - in exciting and sometimes unexpected ways. Just like we did for the WASM port, this is another great example of how to creatively leverage existing solutions, build on the shoulder of giants, and deliver something that provides measurable added value to office users. Implementing lovely UI in JavaScript is just so much quicker and efficient, than having to custom-develop it in c++.",
+    "person": "Thorsten Behrens",
+    "title": "Co-founder of The Document Foundation, former Board chair, former LibreOffice ESC, former ODF TC member, opensource developer of three decades.",
+    "link": "https://blog.thebehrens.net/"
+  },
+  {
+    "name": "1&1 Mail & Media Applications",
+    "image": "/images/supporters/mugshots/Gabriel-Masei.jpg",
+    "quote": "As someone who is integrating Collabora Online into a custom online office software for a long time, I'm more than excited to learn about the new achievements of Collabora Online / Collabora Office software family. Being involved in junior software engineers education through open source software, I think that adapting to new hardware and software technologies is the best way to win the interest of newer generations for a software with which are so well accustomed older generations. Driven by the well known excellence in developing office software, the future of it looks bright.",
+    "person": "Gabriel Masei",
+    "title": "Former TDF Board deputy and LibreOffice ESC member, and organizer of the 2023 Bucharest conference",
+    "link": "https://www.mail-and-media.com/en/"
+  },
+  {
+    "name": "Cor",
+    "image": "/images/supporters/mugshots/Cor-Nouws.jpeg",
+    "quote": "This is great news for the free software movement, strongly supporting development and helping shape a truly sovereign digital future for all users",
+    "person": "Cor Nouws",
+    "title": "Co-founder of The Document Foundation; Former Chair of the TDF Membership Committee; Former Board Member of the TDF Membership Committee.",
+    "link": "https://nouenoff.nl/"
+  }
+]

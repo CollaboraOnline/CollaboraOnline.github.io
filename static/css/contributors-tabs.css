@@ -1,0 +1,81 @@
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px
+}
+
+.tab-button {
+    font-family: inherit;
+    padding: 8px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color .18s ease, box-shadow .22s ease, transform .12s ease;
+    background-color: transparent;
+    color: #444;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 4px 2px #0000001a
+}
+
+.tabs>.tab-button {
+    color: #444;
+    border: 1px solid #ccc
+}
+
+.tab-button[data-tab="contributors"] {
+    font-weight: 600
+}
+
+.tab-button.active {
+    background-color: #5c2983 !important;
+    color: #fff;
+    border: 0.5px inset rgba(170, 50, 220, 0);
+    box-shadow: 0 1px 4px 2px #0000001a;
+    transform: none
+}
+
+.tab-button:focus,
+.tab-button:not(:disabled):not(.disabled):active {
+    outline: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08)
+}
+
+/* keep active state clear when focused/pressed */
+.tab-button.active:active,
+.tab-button.active:focus {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12)
+}
+
+.tab-button:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 1px 4px 2px #5c29831a;
+    transform: none;
+    border: 1px solid #000
+}
+
+.tab-button.active:focus,
+.tab-button.active:hover {
+    box-shadow: 0 2px 8px rgba(92, 41, 131, 0.18), 0 0 0 4px rgba(92, 41, 131, 0.08), inset 0 -2px 6px rgba(0, 0, 0, 0.06);
+    color: #fff;
+    background-color: #5c2983;
+    border: 0.5px inset rgba(170, 50, 220, 0)
+}
+
+.tab-section {
+    display: block
+}
+
+#supporters-section {
+    display: none
+}
+
+.tab-fade {
+    transition: opacity .18s ease
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tab-fade {
+        transition: none
+    }
+}
