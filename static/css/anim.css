@@ -52,3 +52,12 @@ main.homepage h1.display-4 {
   animation-name: code-anim;
   animation-duration: 1.2s;
 }
+.contributor-card {
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+  padding: 10px;
+}
+
+.contributor-card:hover {
+  box-shadow: 0 0 6px rgba(0,0,0,0.12);
+}
