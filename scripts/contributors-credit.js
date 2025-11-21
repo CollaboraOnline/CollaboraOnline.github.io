@@ -72,13 +72,15 @@ async function getAllContributors() {
 <div class="contributors-list" style="display: flex; flex-wrap: wrap; gap: 50px; justify-content: center; padding: 20px 0px;">
 `;
 
-    contributors.forEach(contributor => {
-        htmlContent += `
-<div class="contributor" style="width: 140px; text-align: center; font-family: Arial, sans-serif;">
+    contributors.forEach((contributor) => {
+      htmlContent += `
+<a href="${contributor.html_url}" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
+<div class="contributor contributor-card" style="width: 140px; text-align: center; font-family: Arial, sans-serif; cursor: pointer;">
     <img src="${contributor.avatar_url}" alt="${contributor.login}" style="border-radius: 50%; width: 100px; height: 100px; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);">
     <h3 style="font-size: 1rem; margin: 10px 0 5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${contributor.login}</h3>
     <p style="font-size: 0.9rem; margin: 0;">Contributions: ${contributor.contributions}</p>
 </div>
+</a>
 `;
     });
 
