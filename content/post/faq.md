@@ -26,7 +26,7 @@ Perhaps your question is one that we have been asked before; have a read, and le
 
 ## What is Collabora Office? {#whatiscodesktop}
 
-The new Collabora Office announced 2025-011-26 brings Collabora Online
+The new Collabora Office announced 2025-11-26 brings Collabora Online
 to the desktop, and re-brands previous product Collabora Office Classic.
 You can read much more about that in the
 [release materials](https://www.collaboraoffice.com/)
