@@ -14,6 +14,8 @@ tags = [
 images = [
     "beaver/faq-copyrighted.png",
 ]
+type = "sidebar"
+layout = "sidebar"
 showimage = false
 showtitle = true
 +++
@@ -21,6 +23,34 @@ showtitle = true
 Perhaps your question is one that we have been asked before; have a read, and let us know if not.
 
 <!--more-->
+
+## What is Collabora Office? {#whatiscodesktop}
+
+The new Collabora Office announced 2025-011-26 brings Collabora Online
+to the desktop, and re-brands previous product Collabora Office Classic.
+You can read much more about that in the
+[release materials](https://www.collaboraoffice.com/)
+
+### Why bring Collabora Online to the desktop ? {#whycodesktop}
+
+That brings lots of advantages such as off-line capability, access to
+much better platform APIs than the browser provides, a shared user
+experience with Collabora Online, the ability to debug a single
+process on a FLOSS platform and much more.
+
+### Where do I file bugs ?
+
+Thanks for trying it out. As of our first release we expect rather a
+rapid iteration cycle to iron out the more obvious problems. We
+would love to have your help finding and fixing issues that come
+there. Checkout [how to file a bug]({{< relref "filebugs.md" >}} "How to file bugs") and put a 'Desktop:' prefix in your subject - thanks!
+
+### Where can I get code ?
+
+For our initial release you'll see that in both core and online
+repositories in distro/collabora/coda-25.04 branches - over time
+we expect the code to be meged into the normal distro/collabora/co-
+version branches.
 
 ## What is Collabora Online anyway? {#whatisit}
 
@@ -238,6 +268,14 @@ No. We use an in-bound == outbound licensing model, that gives the
 same rights and responsibilities to all participants. Following
 the LibreOffice ethos.
 
+### Are you in-love with github ?
+
+It is great to have a large choice of collaboration software
+available, free of price, and from the most unexpected sources -
+and we're grateful for that. Having said that - most of us are
+lovers of gerrit and would prefer a fully-FOSS hosted version
+of that.
+
 ### How do I get commit access? {#commit-access}
 
 Please poke us on IRC with your TDF commit credentials, and your
@@ -259,6 +297,14 @@ We also have a Partner Council that includes those partners and
 customers who through their sales &amp; evangelism efforts have
 contributed significantly to development, and we expect to expand this
 over time.
+
+### How can I support your work ?
+
+Clearly the most valuable contributions are helping with the
+development itself for example:
+de-duplicating, double-checking, bisecting [bugs in the tracker]({{< relref "filebugs.md" >}} "How to file bugs"), [translating]({{< relref "translate.md" >}} "Get involved with translation"), [trying some hacking]({{< relref "easyhacks.md" >}} "Get involved with development"), and more.
+
+For those who have substantially contributed towards the project we have a [supporters]({{< relref "contributors.md" >}} "Supporters section") list which we plan to extend over time.
 
 ### Is there the forum for questions and discussions?
 

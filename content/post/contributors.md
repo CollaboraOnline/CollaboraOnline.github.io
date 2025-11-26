@@ -23,8 +23,8 @@ showtitle = true
     <div class="contributors-intro-text">
         <p>Thank you to everyone who helps move the COOL project forward!</p>
         <!--more-->
-        <p>This page highlights the amazing people and organizations who contribute their time, 
-        expertise, and support. Use the tabs below to see our individual contributors and 
+        <p>This page highlights the amazing people and organizations who contribute their time,
+        expertise, and support. Use the tabs below to see our individual contributors and
         our valued supporters.</p>
     </div>
 
