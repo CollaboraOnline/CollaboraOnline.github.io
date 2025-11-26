@@ -73,9 +73,23 @@ document.addEventListener('DOMContentLoaded', function(){
             contrib.style.display = 'none';
             supp.style.display = 'block';
         }
+
+        // update URL without page reload
+        history.replaceState(null, '', `?tab=${tab}`);
     }
+
+    // read ?tab=supporters OR #supporters
+    const urlParams = new URLSearchParams(window.location.search);
+    const queryTab = urlParams.get('tab');
+    const hashTab = window.location.hash.replace('#','');
+
+    const initial = queryTab || hashTab || 
+        document.querySelector('.tab-button.active')?.dataset.tab || 
+        'contributors';
+
+    activate(initial);
+
+    // click handler
     buttons.forEach(b=> b.addEventListener('click', ()=> activate(b.dataset.tab)));
-    // keep initial state consistent
-    activate(document.querySelector('.tab-button.active')?.dataset.tab || 'contributors');
 });
 </script>
