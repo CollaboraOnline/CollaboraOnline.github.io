@@ -540,6 +540,34 @@ kernel.apparmor_restrict_unprivileged_userns=0
 
 After rebooting, you should be able to continue the build process without encountering the error.
 
-</section>
 
-{{< edit-button to="/content/post/build-code.md" name="Edit page">}}
+### Poco 1.13.0 Crash on Startup (`make run`)
+
+When running ```make run```, Poco 1.13.0 may crash on startup with the following error:
+
+```Failed to initialize COOLWSD: Null pointer: strategy in file "./Foundation/src/FileChannel.cpp", line 283 ```
+
+This happens due to the use of ```rotation="never"``` for the log rotation strategy in ```coolwsd.xml.```
+
+**Solution**
+
+Update the log rotation strategy in ```coolwsd.xml```:
+
+ * Change
+
+      ```
+      rotation="never"
+      ```
+     to:
+      ```
+      rotation="monthly"
+      ```
+
+This resolves the crash.
+
+Note: This is a dependency-related issue that may be resolved in future versions. You can also refer to the online repository's development notes for the most current information regarding dependency issues: https://github.com/CollaboraOnline/online/blob/master/dev-notes/dependency-issues.md?plain=1#L12
+
+</section>
+{{< edit-button >}}
+
+
