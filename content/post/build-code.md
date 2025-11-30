@@ -568,6 +568,6 @@ This resolves the crash.
 Note: This is a dependency-related issue that may be resolved in future versions. You can also refer to the online repository's development notes for the most current information regarding dependency issues: https://github.com/CollaboraOnline/online/blob/master/dev-notes/dependency-issues.md?plain=1#L12
 
 </section>
-{{< edit-button >}}
 
+{{< edit-button to="/content/post/build-code.md" name="Edit page">}}
 
