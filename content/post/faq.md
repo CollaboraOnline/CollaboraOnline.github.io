@@ -52,6 +52,18 @@ repositories in distro/collabora/coda-25.04 branches - over time
 we expect the code to be meged into the normal distro/collabora/co-
 version branches.
 
+### Where are unsaved documents stored on macOS? {#macos-unsaved}
+
+When a user creates a new document on macOS and has not yet saved it, Collabora Office automatically stores temporary autosave data. If the application crashes before the user chooses a name and location, the unsaved file can often be found here:
+
+`~/Library/Containers/com.collabora.office/Data/tmp/Autosave Information/`
+
+The most common filename is:
+
+`Unsaved Collabora Office Document.od*`
+
+This can help recover work from newly created documents that were never manually saved.
+
 ## What is Collabora Online anyway? {#whatisit}
 
 Collabora Online is a feature rich online collaboration office suite
@@ -305,6 +317,10 @@ development itself for example:
 de-duplicating, double-checking, bisecting [bugs in the tracker]({{< relref "filebugs.md" >}} "How to file bugs"), [translating]({{< relref "translate.md" >}} "Get involved with translation"), [trying some hacking]({{< relref "easyhacks.md" >}} "Get involved with development"), and more.
 
 For those who have substantially contributed towards the project we have a [supporters]({{< relref "contributors.md" >}} "Supporters section") list which we plan to extend over time.
+
+### What’s with the Beavers? {#beavers}
+
+We have a mascot that is an extremely hard-working animal, known for taking on epic tasks and making an out-sized impact. For stories about hard-working beaver exploits you can read The Open Road to Freedom at https://www.collaboraonline.com/torf.
 
 ### Is there the forum for questions and discussions?
 
