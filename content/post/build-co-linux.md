@@ -11,7 +11,7 @@ tags = [
     "make",
 ]
 images = [
-    "beaver/coda-linux-copyrighted.png",
+    "beaver/co-linux-copyrighted.png",
 ]
 type = "sidebar"
 layout = "sidebar"
