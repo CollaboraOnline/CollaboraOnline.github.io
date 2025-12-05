@@ -25,7 +25,7 @@ On Windows and want to tinker? Build Collabora Office and level up your setup.
 
 The steps below are for building the Collabora Office in Windows.
 
-<section id="build-coda-windows" class="build-coda-linux">
+<section id="build-co-windows" class="build-co-linux">
 
 ## Windows
 

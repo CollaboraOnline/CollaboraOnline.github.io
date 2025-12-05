@@ -25,7 +25,7 @@ Got a Mac and a curious mind? Build your own Collabora Office and see the magic 
 
 The steps below are for building the Collabora Office in macOS (macos/).
 
-<section id="build-coda-mac" class="build-coda-linux">
+<section id="build-co-mac" class="build-co-linux">
 
 ## Mac
 
@@ -38,7 +38,7 @@ it, and only depend on eg. self-built libpng, etc.
 * Node.js
     + Needed for building the JS parts (not needed if you build them on another linux machine)
 * Install node.js
-    ``` 
+    ```
     brew install node
     ```
 * Install poco

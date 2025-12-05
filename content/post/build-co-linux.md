@@ -24,7 +24,7 @@ Linux lover? Build Collabora Office and unleash your inner hacker.
 # Build Collabora Office
 
 This is the Collabora Office Linux app built on Qt6 WebEngine. It’s designed to work the same way as the Collabora Office apps for Windows (windows/) and macOS (macos/).
-<section id="build-coda-linux" class="build-coda-linux">
+<section id="build-co-linux" class="build-co-linux">
 
 ## Linux
 
