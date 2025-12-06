@@ -51,7 +51,7 @@ administrator Command Prompt:
 In that Ubuntu, install various things that will be needed later. Most
 of this is needed just to run the configure script in online. That
 configure script checks for tons of things that are completely
-irrelevant for Collabora Office, but oh well. Patches welcome.
+irrelevant for a Windows build of Collabora Office, but oh well. Patches welcome.
 
 This is not necessarily a comprehensive list, you might notice more
 missing things as you go along.
@@ -101,6 +101,11 @@ without Cygwin, as Cygwin is available only for x64 Windows.
 The distro/collabora/coda-25.04 branch was successfully built under WSL following the
 instructions on [TDF Wiki](https://wiki.documentfoundation.org/Development/BuildingOnWSLWindows).
 
+Despite allegedly being about building core using *WSL*, the above
+uses the so-called Git Bash. Ideally, in the future, it would be nice
+to be able to truly build core for Windows using only Visual Studio
+and WSL.
+
 ### Build direct dependencies of Collabora Office for Windows
 
 Version numbers below are current at the time of writing this. Newer
@@ -114,6 +119,12 @@ Download and unpack the zstd-1.5.7 tarball. Open the Visual Studio
 solution zstd-1.5.7/build/VS2010/zstd.sln. Let Visual Studio retarget
 the projects. It is enough to build just the libzstd project of the
 solution.
+
+Note that you need to manually turn off "Whole Program Optimization"
+in the project settings. Having that option on means that the libzstd
+archive does not contain normal object files but LLVM bytecode for
+link-time code generation, and that won't be useable by the CODA
+project.
 
 The static libraries that you are interested end up as
 zstd-1.5.7/build/VS2010/bin/x64\_Debug/libzstd\_static.lib and
