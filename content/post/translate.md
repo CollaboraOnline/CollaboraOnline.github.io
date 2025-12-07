@@ -3,7 +3,7 @@ authors = [
     "Collabora"
 ]
 title = "Translate?"
-date = "2020-09-30"
+date = "2025-12-07"
 home_pos = "12"
 description = "Do you want to get involved in localization?"
 tags = [
@@ -19,7 +19,7 @@ showimage = false
 showtitle = true
 +++
 
-A great way to get involved. You can perfect CODE for your language, while learning about the feature set, and how things work.
+A great way to get involved. You can perfect CODE and Collabora Office apps for your language, while learning about the feature set, and how things work.
 <!--more-->
 ## Weblate
 Please join our team of translators at our [Hosted Weblate](https://hosted.weblate.org/projects/collabora-online/) page
@@ -29,6 +29,17 @@ Please join our team of translators at our [Hosted Weblate](https://hosted.webla
 * Select the languages you want to work with
 
 That's it!
+
+### Components to work with
+In Weblate there are many components in the Collabora Online category. The most important ones:
+* UI: this contains the bulk of user interface strings of CODE and Collabora Office
+* LOKit: this contains the difference between Collabora's core release branch and upstream LibreOffice.
+* Collabora Office Qt app: a few strings specific to the Qt app on Linux (File Open and Print dialogs)
+* Collabora Office macOS app: a few strings specific to the macOS app (Main menu)
+* Help: a small built-in help module and table of keyboard shortcuts
+* Welcome Presentation: Upon the first start of Collabora Office there is a little presentation about the new product, and this presentation can be localized.
+* iOS app: a few strings specific to the iOS app (Settings panel)
+* Android app and Android lib: a few strings specific to the Android app
 
 ## Credits
 
