@@ -143,3 +143,5 @@ Open the macos/coda/coda.xcodeproj project in Xcode and choose `Build and Run cu
 That's it!
 
 </section>
+
+{{< edit-button to="/content/post/build-co-mac.md" name="Edit page">}}

@@ -195,3 +195,5 @@ PATH has what is needed, and you quote the msbuild command-line
 parameters as needed.
 
 </section>
+
+{{< edit-button to="/content/post/build-co-windows.md" name="Edit page">}}

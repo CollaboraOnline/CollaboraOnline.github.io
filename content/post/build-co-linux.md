@@ -82,3 +82,5 @@ Use flatpak-builder to create a flatpak.
 
 - Create a bundle from the build-dir:
 `flatpak build-bundle .flatpak-builder/cache CODA-Q.bundle com.collabora.Office`
+
+{{< edit-button to="/content/post/build-co-linux.md" name="Edit page">}}
