@@ -29,7 +29,7 @@ This is the Collabora Office Linux app built on Qt6 WebEngine. It’s designed t
 ## Linux
 
 ## Build
-Use a separate “online” checkout — not the one you use for regular Online builds. Clone the LibreOffice core repository and switch to the `distro/collabora/coda-25.04` branch.  [For general build guidance, see the normal build instruction](/post/build-code/).
+Use a separate “online” checkout that is separate from your usual Online builds and checkout the `distro/collabora/coda-25.04` branch. Clone the LibreOffice core repository and switch to the `distro/collabora/coda-25.04` branch.  [For general build guidance, see the normal build instruction](/post/build-code/).
 
 It Requires what Collabora Online already requires and the additionally following Qt
 libraries: `Qt6Core Qt6Widgets Qt6Gui Qt6WebEngineCore Qt6WebChannel Qt6WebEngineWidgets`.
