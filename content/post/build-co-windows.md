@@ -194,6 +194,11 @@ You could also run that from a WSL shell, as long as you make sure
 PATH has what is needed, and you quote the msbuild command-line
 parameters as needed.
 
+### pre-built snapshot for Windows
+
+If you just want a **pre-built snapshot for Windows**, you can download it here:  
+👉 https://www.collaboraoffice.com/downloads/Collabora-Office-Windows-Snapshot/
+
 </section>
 
 {{< edit-button to="/content/post/build-co-windows.md" name="Edit page">}}

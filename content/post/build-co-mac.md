@@ -142,6 +142,13 @@ Open the macos/coda/coda.xcodeproj project in Xcode and choose `Build and Run cu
 
 That's it!
 
+### pre-built macOS
+
+If you just want a pre-built macOS version instead of building locally, please use
+the **TestFlight preview build**:  
+👉 https://testflight.apple.com/join/sbkwMzMt
+
+
 </section>
 
 {{< edit-button to="/content/post/build-co-mac.md" name="Edit page">}}

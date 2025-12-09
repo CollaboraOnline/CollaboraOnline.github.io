@@ -83,4 +83,10 @@ Use flatpak-builder to create a flatpak.
 - Create a bundle from the build-dir:
 `flatpak build-bundle .flatpak-builder/cache CODA-Q.bundle com.collabora.Office`
 
+### Pre-built package for linux
+
+If you just want a pre-built package instead of compiling, download the
+**Collabora Office Linux Flatpak snapshots** here:  
+👉 https://www.collaboraoffice.com/downloads/Collabora-Office-Linux-Snapshot/
+
 {{< edit-button to="/content/post/build-co-linux.md" name="Edit page">}}
