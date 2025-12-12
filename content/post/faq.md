@@ -64,6 +64,22 @@ The most common filename is:
 
 This can help recover work from newly created documents that were never manually saved.
 
+### Collabora Office Crashes or rendering glitches on older Nvidia GPUs
+
+On systems with very old Nvidia hardware using the nouveau `nv50` driver, Collabora Office Flatpak may crash on start due to a Qt WebEngine GPU-acceleration issue (seen also in other Qt apps).
+
+You can work around it by disabling GPU acceleration:
+
+```
+flatpak run --env=QTWEBENGINE_CHROMIUM_FLAGS=--disable-gpu com.collaboraoffice.Office
+```
+
+To make this permanent:
+
+```
+flatpak override --env=QTWEBENGINE_CHROMIUM_FLAGS=--disable-gpu com.collaboraoffice.Office
+```
+
 ## What is Collabora Online anyway? {#whatisit}
 
 Collabora Online is a feature rich online collaboration office suite
