@@ -66,7 +66,7 @@ stuff. This is the main reason we are using WSL.
 
 ### Build core
 
-Clone the https://git.libreoffice.org/core repository and check out the distro/collabora/coda-25.04 branch.
+Clone the https://git.libreoffice.org/core repository and check out the distro/collabora/co-25.04 branch.
 
 The known good configuration is in `distro-configs/CODAWindows.conf`. Make sure that you include
 it in your `autogen.input`. You can tweak it as you like, for example:
@@ -98,7 +98,7 @@ for Windows using WSL, not Cygwin. Especialy when/if somebody would
 want or need to work on Collabora Office on ARM64 Windows, it is good to manage
 without Cygwin, as Cygwin is available only for x64 Windows.
 
-The distro/collabora/coda-25.04 branch was successfully built under WSL following the
+The distro/collabora/co-25.04 branch was successfully built under WSL following the
 instructions on [TDF Wiki](https://wiki.documentfoundation.org/Development/BuildingOnWSLWindows).
 
 Despite allegedly being about building core using *WSL*, the above
