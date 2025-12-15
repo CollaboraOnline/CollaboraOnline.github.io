@@ -17,7 +17,7 @@ missing things as you go along.</p><pre><code>sudo apt install libtool python3-l
 sudo apt install libpng-dev libzstd-dev libcppunit-dev libpam-dev
 </code></pre><p>The following things are more essential, for bulding the JavaScript
 stuff. This is the main reason we are using WSL.</p><pre><code>sudo apt install nodejs npm
-</code></pre><h3 id=build-core>Build core</h3><p>Clone the <a href=https://git.libreoffice.org/core>https://git.libreoffice.org/core</a> repository and check out the distro/collabora/coda-25.04 branch.</p><p>The known good configuration is in <code>distro-configs/CODAWindows.conf</code>. Make sure that you include
+</code></pre><h3 id=build-core>Build core</h3><p>Clone the <a href=https://git.libreoffice.org/core>https://git.libreoffice.org/core</a> repository and check out the distro/collabora/co-25.04 branch.</p><p>The known good configuration is in <code>distro-configs/CODAWindows.conf</code>. Make sure that you include
 it in your <code>autogen.input</code>. You can tweak it as you like, for example:</p><p>autogen.input:</p><pre><code>--host=x86_64-pc-cygwin
 --with-distro=CODAWindows
 --with-lang=ar ca cs cy da de el en-US en-GB es eu fi fr ga gl he hr hu hy id is it ja kk ko nl pl pt pt-BR ro ru sk sl sq sv tr uk zh-CN zh-TW
@@ -31,7 +31,7 @@ suitable windowing system found, exiting&rdquo;.</p><p>You can attempt to run <c
 some false positives.</p><h4 id=building-also-core-using-wsl>Building also core using WSL</h4><p>Apparently it is possible nowadays to build core
 for Windows using WSL, not Cygwin. Especialy when/if somebody would
 want or need to work on Collabora Office on ARM64 Windows, it is good to manage
-without Cygwin, as Cygwin is available only for x64 Windows.</p><p>The distro/collabora/coda-25.04 branch was successfully built under WSL following the
+without Cygwin, as Cygwin is available only for x64 Windows.</p><p>The distro/collabora/co-25.04 branch was successfully built under WSL following the
 instructions on <a href=https://wiki.documentfoundation.org/Development/BuildingOnWSLWindows>TDF Wiki</a>.</p><p>Despite allegedly being about building core using <em>WSL</em>, the above
 uses the so-called Git Bash. Ideally, in the future, it would be nice
 to be able to truly build core for Windows using only Visual Studio
