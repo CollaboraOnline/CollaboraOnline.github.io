@@ -47,10 +47,11 @@ there. Checkout [how to file a bug]({{< relref "filebugs.md" >}} "How to file bu
 
 ### Where can I get code ?
 
-For our initial release you'll see that in both core and online
-repositories in distro/collabora/coda-25.04 branches - over time
-we expect the code to be meged into the normal distro/collabora/co-
-version branches.
+On Dec 11, 2025 the 25.04.7.3-2 release was made from the coda-25.04.7.3-2 tags
+that exist both in core and online repo.
+Development continues:
+- online: distro/collabora/coda-25.04 branch - soon to be merged to master branch
+- core: distro/collabora/co-25.04 branch
 
 ### Where are unsaved documents stored on macOS? {#macos-unsaved}
 
