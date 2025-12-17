@@ -53,16 +53,14 @@ that exist both in core and online repo. Development continues:
 - core: distro/collabora/co-25.04 branch
 
 Repositories:
-- online: https://github.com/CollaboraOnline/online  
-  https://github.com/CollaboraOnline/online/tree/distro/collabora/coda-25.04
-- core: https://github.com/CollaboraOnline/core  
-  https://github.com/CollaboraOnline/core/tree/distro/collabora/co-25.04
+- online: https://github.com/CollaboraOnline/online
+- core: https://github.com/LibreOffice/core
 
 Build instructions:
-- Linux: https://collaboraonline.github.io/post/build-co-linux/
+- Linux (Collabora): https://collaboraonline.github.io/post/build-co-linux/
+- Linux (LibreOffice core): https://wiki.documentfoundation.org/Development/BuildingOnLinux
 - Windows: https://collaboraonline.github.io/post/build-co-windows/
 - macOS: https://collaboraonline.github.io/post/build-co-mac/
-
 
 ### Where are unsaved documents stored on macOS? {#macos-unsaved}
 
