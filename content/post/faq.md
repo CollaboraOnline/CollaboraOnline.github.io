@@ -48,10 +48,21 @@ there. Checkout [how to file a bug]({{< relref "filebugs.md" >}} "How to file bu
 ### Where can I get code ?
 
 On Dec 11, 2025 the 25.04.7.3-2 release was made from the coda-25.04.7.3-2 tags
-that exist both in core and online repo.
-Development continues:
+that exist both in core and online repo. Development continues:
 - online: distro/collabora/coda-25.04 branch - soon to be merged to master branch
 - core: distro/collabora/co-25.04 branch
+
+Repositories:
+- online: https://github.com/CollaboraOnline/online  
+  https://github.com/CollaboraOnline/online/tree/distro/collabora/coda-25.04
+- core: https://github.com/CollaboraOnline/core  
+  https://github.com/CollaboraOnline/core/tree/distro/collabora/co-25.04
+
+Build instructions:
+- Linux: https://collaboraonline.github.io/post/build-co-linux/
+- Windows: https://collaboraonline.github.io/post/build-co-windows/
+- macOS: https://collaboraonline.github.io/post/build-co-mac/
+
 
 ### Where are unsaved documents stored on macOS? {#macos-unsaved}
 
