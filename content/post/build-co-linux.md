@@ -42,7 +42,7 @@ It requires what Collabora Online already requires and the additionally followin
 
 Run `./autogen.sh`, then configure
 ```sh
-./configure \
+CC="ccache gcc-12" CXX="ccache g++-12" ./configure \
     --enable-qtapp \
     --with-lo-path=/path/to/core/instdir \
     --with-lokit-path=/path/to/core/include \
