@@ -120,13 +120,13 @@ You need to clone it, run autoconf/automake, configure and build using GNU make.
 Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
 
-> **Compiler note (openSUSE):**  
->GCC/G++ 12 or newer is required for building Collabora Online on openSUSE.
-> If your default compiler is older, run configure like this:
->
-> ```bash
-> CC="ccache gcc-12" CXX="ccache g++-12" ./configure
-> ```
+**Compiler note (openSUSE):**  
+GCC/G++ 12 or newer is required for building Collabora Online on openSUSE.
+If your default compiler is older, run configure like this:
+
+```bash
+CC="ccache gcc-12" CXX="ccache g++-12" ./configure
+```
 
 {{% common-build-commands section="build-online" %}}
 
