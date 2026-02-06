@@ -191,13 +191,7 @@ We need LibreOffice core, POCO library and several other libraries and tools to 
 
 Open a terminal and follow the steps below:
 ```bash
-sudo pacman -Syu libcap libcap-ng lib32-libcap libpng poco cppunit nodejs npm chromium python-lxml
-```
-
-Additionally you will need to install python-polib. You can do this using pip (as below) *or* using [the python-polib AUR package](https://aur.archlinux.org/packages/python-polib)
-```bash
-sudo pacman -Syu python-pip
-sudo pip install polib
+sudo pacman -Syu libcap libcap-ng lib32-libcap libpng poco cppunit nodejs npm chromium python-lxml python-polib
 ```
 
 ### LibreOffice
