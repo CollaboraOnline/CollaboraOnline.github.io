@@ -1,0 +1,61 @@
+/* Fix positioning context */
+.highlight,
+pre {
+    position: relative !important;
+}
+
+.copy-button {
+    position: absolute !important;
+    top: 6px !important;
+    right: 6px !important;
+
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 4px !important;
+
+    cursor: pointer !important;
+    padding: 4px !important;
+    z-index: 100 !important;
+
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: blur(2px);
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    box-shadow: none !important;
+}
+
+.copy-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.copy-button:hover {
+    transform: scale(1.1) !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.copy-button svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    color: #333333 !important;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+/* Success state */
+.copy-button.copied {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.copy-button.copied svg {
+    color: #333333 !important;
+}
