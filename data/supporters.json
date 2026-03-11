@@ -108,6 +108,15 @@
     "link": "https://www.collaboraonline.com/partners/univention/"
   },
   {
+    "name": "Leif-Jöran",
+    "logo": "/images/supporters/fps-logo.png",
+    "image": "/images/supporters/mugshots/Leif.png",
+    "quote": "Friprogramvarusyndikatet are excited about the development to bring collaborative editing from Online to the desktop as well, letting desktop users work both on-line and off-line in the same familiar and trusted environment. As a long-time partner and with our free software and hosting background, we are proud to contribute to the direction of Collabora Productivity's products also with SailfishOS as one of our platforms",
+    "person": "Leif-Jöran ",
+    "title": "CTO of FRIPROGRAMVARU",
+    "link": "https://www.friprogramvarusyndkatet.se/"
+  },
+  {
     "name": "Kendy",
     "image": "/images/supporters/mugshots/kendy.jpg",
     "quote": "As a founder of The Document Foundation, I’ve always wanted to create software that looks beautiful and feels naturally at home on every platform. Extending the Collabora Online approach from mobile to desktop finally makes that vision real, and I’m excited that the new Collabora Office delivers a polished, tightly integrated experience for desktop users.",
