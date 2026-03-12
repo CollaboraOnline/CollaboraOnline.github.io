@@ -117,7 +117,7 @@ cd core
 ```
 
 ```bash
-./autogen.sh --with-distro=CPLinux-LOKit --without-package-format
+./autogen.sh --with-distro=CPLinux-LOKit --without-package-format --with-system-nss
 make
 ```
 
