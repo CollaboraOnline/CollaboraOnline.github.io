@@ -133,6 +133,9 @@ or
 
 so that you have time to attach to the process.
 
+If you are only interested in debugging the wsd process, you can run `make run-gdb`.
+If you want to debug the `core` process, use this command to find the process to attach to: `ps -u "$USER" -o pid=,comm=  | grep kitbroker_`
+
 Then run coolwsd, and attach your debugger to the process you are
 interested in. Note that simply attaching gdb via `gdb -p` is not meant to work, your options are:
 
