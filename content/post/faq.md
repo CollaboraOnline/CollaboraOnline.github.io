@@ -175,24 +175,19 @@ to the code behind the version you choose is important.
 
 ### Will you still contribute to the LibreOffice core? {#libo-contrib}
 
-Emphatically yes. We expect that as our business grows over time there
-will continue to be a net increase in the amount of work: fixes, rendering
-improvements, performance wins, features etc. that we can contribute back
-to the LibreOffice core vs. the status quo. We continue to have significant
-numbers of Collabora Office customers who want bug fixes and improvements
-which we contribute back. We try to merge all of our work into core's master
-branch for the next LibreOffice version, and we use daily comparison
-tooling to check this delta stays small.
+Collabora has been one of the biggest contributors to the LibreOffice
+code base ever since its formation, including fixes, rendering
+improvements, performance wins, features etc. This has continued
+even after Collabora Online became separate project.
 
-Against that — LibreOffice is its own project, with its own processes
-and gets to choose what it includes from whichever contributors it
-includes in the normal way.
+However, after [recent events](https://www.collaboraonline.com/blog/tdf-ejects-its-core-developers/)
+that caused Collabora developers to be removed from TDF, we are
+continuing developing our [new Collabora Office for desktop](https://www.collaboraonline.com/blog/collabora-online-now-available-on-desktop/)
+on our own [gerrit instance](https://gerrit.collaboraoffice.com/),
+independent of TDF.
 
-For our part — we intend to keep working hard to improve LibreOffice
-core in all the normal ways: code, sponsorship, mentoring, evangelizing
-and serving in lots of capacities as before while we are welcome as
-collaborators. This move is focused only on protecting the Online piece
-and we hope the choices TDF makes will complement that.
+At the same time, we will continue to make contributions to LibreOffice where
+that makes sense.
 
 ### Do we need investment? {#investment}
 
