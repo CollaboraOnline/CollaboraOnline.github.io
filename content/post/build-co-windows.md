@@ -3,7 +3,7 @@ authors = [
     "Collabora",
 ]
 title = "Build Collabora Office for Windows"
-date = "2020-12-05"
+date = "2026-04-02"
 home_pos = "3"
 description = "Step-by-step build instructions"
 tags = [
@@ -31,7 +31,7 @@ The steps below are for building the Collabora Office in Windows.
 
 ### Requirements
 
-For starters, the same requirements as for building LibreOffice, see
+For starters, the same requirements as for building the core bits, see
 https://wiki.documentfoundation.org/Development/BuildingOnWindows as
 you will do that as part of building Collabora Office for windows. Make sure to use Visual
 Studio 2022. Using other Visual Studio versions for building the
@@ -66,7 +66,8 @@ stuff. This is the main reason we are using WSL.
 
 ### Build core
 
-Clone the https://git.libreoffice.org/core repository and check out the distro/collabora/co-25.04 branch.
+Clone the https://gerrit.collaboraoffice.com/core repository. The
+default "main" branch is what is used for development
 
 The known good configuration is in `distro-configs/CODAWindows.conf`. Make sure that you include
 it in your `autogen.input`. You can tweak it as you like, for example:
@@ -91,20 +92,17 @@ suitable windowing system found, exiting".
 You can attempt to run `make check` but that will probably run into
 some false positives.
 
-#### Building also core using WSL
+#### Building also core using WSL and Git Bash
 
-Apparently it is possible nowadays to build core
-for Windows using WSL, not Cygwin. Especialy when/if somebody would
-want or need to work on Collabora Office on ARM64 Windows, it is good to manage
-without Cygwin, as Cygwin is available only for x64 Windows.
+It is possible nowadays to configure core
+for Windows in WSL, not Cygwin. The actual build will use the so-called Git Bash, though, not WSL.
+It is unclear why the impression that one is building in WSL is given.
 
-The distro/collabora/co-25.04 branch was successfully built under WSL following the
+The "main" branch has been successfully built like that following the
 instructions on [TDF Wiki](https://wiki.documentfoundation.org/Development/BuildingOnWSLWindows).
 
-Despite allegedly being about building core using *WSL*, the above
-uses the so-called Git Bash. Ideally, in the future, it would be nice
-to be able to truly build core for Windows using only Visual Studio
-and WSL.
+Ideally, in the future, it would be nice to be able to actually truly build
+core for Windows using only Visual Studio and WSL, without Git Bash.
 
 ### Build direct dependencies of Collabora Office for Windows
 
@@ -150,7 +148,8 @@ Then move all the headers into one place:
 
 ### Build Collabora Office itself
 
-Clone the https://github.com/CollaboraOnline/online.git repo, and checkout distro/collabora/coda-25.04 branch.
+Clone the https://github.com/CollaboraOnline/online.git repo. The main
+branch is used for development.
 
 In an Ubuntu shell, run
 
@@ -164,7 +163,7 @@ a Debug configuration of the Collabora Office, and the Release libraries
 in a Release configuration. There is some slightly questionable
 #pragmas in <Poco/Foundation.h> to take care of that.)
 
-	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=/mnt/c/cygwin64/home/tml/lo/core-gitlab-coda25-coda-release --with-lo-path='C:\cygwin64\home\tml\lo\core-gitlab-coda25-coda-release\instdir' --with-poco-includes=/mnt/c/Users/tml/poco-poco-1.14.2-release/include --with-poco-libs=/mnt/c/Users/tml/poco-poco-1.14.2-release/lib64 --with-zstd-includes=/mnt/c/Users/tml/zstd-1.5.7/lib --with-zstd-libs=/mnt/c/Users/tml/zstd-1.5.7/build/VS2010/bin/x64_Release --with-libpng-includes=/mnt/c/cygwin64/home/tml/lo/core-gitlab-coda25-coda-release/workdir/UnpackedTarball/libpng --with-libpng-libs=/mnt/c/cygwin64/home/tml/lo/core-gitlab-coda25-coda-release/workdir/LinkTarget/StaticLibrary --with-zlib-includes=/mnt/c/cygwin64/home/tml/lo/core-gitlab-coda25-coda-release/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
+	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release --with-lo-path='C:\cygwin64\home\tml\lo\core-main-coda-release\instdir' --with-poco-includes=/mnt/c/Users/tml/poco-poco-1.14.2-release/include --with-poco-libs=/mnt/c/Users/tml/poco-poco-1.14.2-release/lib64 --with-zstd-includes=/mnt/c/Users/tml/zstd-1.5.7/lib --with-zstd-libs=/mnt/c/Users/tml/zstd-1.5.7/build/VS2010/bin/x64_Release --with-libpng-includes=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/UnpackedTarball/libpng --with-libpng-libs=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/LinkTarget/StaticLibrary --with-zlib-includes=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
 
 Obviously, adapt as necessary to match your username and where you
 built LibreOffice, zstd, and Poco. Also change the `--with-info-url` as
