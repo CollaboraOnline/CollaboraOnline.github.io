@@ -156,7 +156,7 @@ In an Ubuntu shell, run
 	./autogen.sh
 
 then run the configure script. Like this to use release build of zstd
-and LibreOffice core.
+and Collabora Office core.
 
 (You will automatically get the Debug libraries of Poco when building
 a Debug configuration of the Collabora Office, and the Release libraries
@@ -166,7 +166,7 @@ in a Release configuration. There is some slightly questionable
 	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release --with-lo-path='C:\cygwin64\home\tml\lo\core-main-coda-release\instdir' --with-poco-includes=/mnt/c/Users/tml/poco-poco-1.14.2-release/include --with-poco-libs=/mnt/c/Users/tml/poco-poco-1.14.2-release/lib64 --with-zstd-includes=/mnt/c/Users/tml/zstd-1.5.7/lib --with-zstd-libs=/mnt/c/Users/tml/zstd-1.5.7/build/VS2010/bin/x64_Release --with-libpng-includes=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/UnpackedTarball/libpng --with-libpng-libs=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/LinkTarget/StaticLibrary --with-zlib-includes=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
 
 Obviously, adapt as necessary to match your username and where you
-built LibreOffice, zstd, and Poco. Also change the `--with-info-url` as
+built Collabora Office core, zstd, and Poco. Also change the `--with-info-url` as
 appropriate. That is the web page that will be shown when clicking the
 leftmost button in the toolbar.
 

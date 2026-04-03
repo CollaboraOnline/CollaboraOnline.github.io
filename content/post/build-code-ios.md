@@ -43,7 +43,7 @@ Building for `My Mac (Designed for iPad)` on Mac Silicon will run, but it is uns
 ## 1) Build the LibreOfficeKit code for iOS
 ### on a Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
-1.1) First you need to build the LibreOfficeKit code (LibreOffice core) for iOS. For the build dependencies, it is the best to install [LODE, the LibreOffice Development Environment](https://wiki.documentfoundation.org/Development/lode) and add its `bin` directory to the `PATH`. Then get LibreOffice core source code and put in your autogen.input something like this:
+1.1) First you need to build the LibreOfficeKit code (Collabora Office core) for iOS. For the build dependencies, it is the best to install [LODE, the LibreOffice Development Environment](https://wiki.documentfoundation.org/Development/lode) and add its `bin` directory to the `PATH`. Then get Collabora Office core source code and put in your autogen.input something like this:
 
 ```bash
 # Comment out for production builds
@@ -58,7 +58,7 @@ Building for `My Mac (Designed for iPad)` on Mac Silicon will run, but it is uns
 --with-lang=ar bg ca cs da de el en-US en-GB eo es eu fi fr gl he hr hu id is it ja ko lo nb nl oc pl pt pt-BR sq ru sk sl sv tr uk vi zh-CN zh-TW
 ```
 
-and build "normally". (Naturally, no unit tests will be run when cross-compiling LibreOffice.) Of course there is no requirement to use those --enable options; as a minimum, just `--with-distro=LibreOfficeiOS` should work.
+and build "normally". (Naturally, no unit tests will be run when cross-compiling.) Of course there is no requirement to use those --enable options; as a minimum, just `--with-distro=LibreOfficeiOS` should work.
 
 This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)
 
@@ -94,7 +94,7 @@ library. Download the source code from https://pocoproject.org/download.html:
 
 2.2.2) Compile. Note: the second and third commands force the path to load
 /usr/bin/python3 and /usr/bin/libtool and the second command sets the minimum
-iOS version to match the LibreOffice build:
+iOS version to match the Collabora Office core build:
 ```bash
 ./configure --config=iPhone --static --no-tests --no-samples \
   --omit=ActiveRecord,Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT,Prometheus,Redis \
@@ -118,7 +118,7 @@ https://github.com/facebook/zstd/releases.
 Alternatively you can use the helper script to build libzstd for iOS: https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-ios.sh
 
 2.3.2) Compile. Note: in the first command, force SDK to iOS and set the
-minimum iOS version to match the LibreOffice build:
+minimum iOS version to match the Collabora Office core build:
 ```bash
 CC="/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk -target arm64-apple-ios14.5" make
 ```
@@ -162,7 +162,7 @@ Then run:
 (cd browser && make)
 ```
 
-The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the LibreOffice core source and build directories (which typically will be the same, of course).
+The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the Collabora Office core source and build directories (which typically will be the same, of course).
 
 3.2) Before opening the Xcode project for the first time
    - seriously consider disabling source code indexing, this
@@ -177,7 +177,7 @@ The configure script puts the app name as the `CFBundleDisplayName` property int
 
 3.4) Now you can open the Mobile Xcode project, build it, and run it. Note:
 building for "My Mac (Designed for iPad)" on Mac Silicon will run, but it
-is unstable. Also, you can't run in an emulator since LibreOffice for iOS is
+is unstable. Also, you can't run in an emulator since Collabora Office core for iOS is
 built for arm64 only. So, effectively, you can only test the build on a real
 iOS device.
 

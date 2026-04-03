@@ -87,7 +87,7 @@ it, and only depend on eg. self-built libpng, etc.
 
 ### Build LO
 
-You need the `distro/collabora/co-25.04` branch of LibreOffice for this, and you must use the following `autogen.input`.
+You need the `main` branch of Collabora Office core from gerrit.collaboraoffice.com for this, and you must use the following `autogen.input`.
 
 NOTE: Build with stuff installed via 'brew', and not via 'lode'; if you have
 too many things installed via 'brew', compilation may fail for you due to
@@ -108,7 +108,7 @@ incompatible stuff.
     # If you don't want localizations
     --without-lang
 
-https://wiki.documentfoundation.org/Development/BuildingOnLinux
+For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
 ### Configure Collabora Online
 

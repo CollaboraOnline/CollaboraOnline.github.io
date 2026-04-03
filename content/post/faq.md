@@ -49,16 +49,16 @@ there. Checkout [how to file a bug]({{< relref "filebugs.md" >}} "How to file bu
 
 On Dec 11, 2025 the 25.04.7.3-2 release was made from the coda-25.04.7.3-2 tags
 that exist both in core and online repo. Development continues:
-- online: distro/collabora/coda-25.04 branch - soon to be merged to master branch
-- core: distro/collabora/co-25.04 branch
+- online: main branch
+- core: main branch on gerrit.collaboraoffice.com
 
 Repositories:
 - online: https://github.com/CollaboraOnline/online
-- core: https://github.com/LibreOffice/core
+- core: https://gerrit.collaboraoffice.com/core
 
 Build instructions:
 - Linux (Collabora): https://collaboraonline.github.io/post/build-co-linux/
-- Linux (LibreOffice core): https://wiki.documentfoundation.org/Development/BuildingOnLinux
+- Linux (core dependencies): https://wiki.documentfoundation.org/Development/BuildingOnLinux
 - Windows: https://collaboraonline.github.io/post/build-co-windows/
 - macOS: https://collaboraonline.github.io/post/build-co-mac/
 
