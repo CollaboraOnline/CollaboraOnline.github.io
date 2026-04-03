@@ -45,20 +45,20 @@ to, we strongly suggest you build and run for a physical device.
 You should [connect this device or simulator to your computer using
 adb](https://developer.android.com/tools/adb#Enabling)
 
-## Build LibreOffice for Android
+## Build Collabora Office Core for Android
 
-### Clone LibreOffice core
+### Clone Collabora Office core
 
-First, use git to clone the LibreOffice core repository from the LibreOffice
-gerrit and switch to the Collabora Online branch
+First, use git to clone the Collabora Office core repository from
+gerrit.collaboraoffice.com and switch to the Collabora Online branch
 
-{{% common-build-commands section="clone-lo" lobranch="co-24.04" %}}
+{{% common-build-commands section="clone-lo" lobranch="main" %}}
 
 This is the same core repository as you may already have for building Collabora
 Online. If you already have it cloned, you may [use git worktrees to speed up
 this step](https://git-scm.com/docs/git-worktree).
 
-### Configure LibreOffice core
+### Configure Collabora Office core
 
 Decide what architecture you are going to build for. This will depend on your
 android device's ABI. We support building for armeabi-v7a, arm64-v8a, x86 and
@@ -70,7 +70,7 @@ online or use adb to get a list of valid architectures
     $ adb shell getprop ro.product.cpu.abilist
     arm64-v8a,armeabi-v7a,armeabi
 
-Create a file called `autogen.input` in your LibreOffice clone with the
+Create a file called `autogen.input` in your core clone with the
 following content:
 
     --build=x86_64-unknown-linux-gnu
@@ -113,7 +113,7 @@ Finally, run
 
     ./autogen.sh
 
-### Build LibreOffice core
+### Build Collabora Office core
 
 Run `make` and wait a while for the build to finish...
 
@@ -135,7 +135,7 @@ Let's set some variables based on what we just built...
     export ZSTD_DIR=/opt/android-zstd
     export LO_BUILDDIR=/opt/libreoffice
 
-...remember to change your ABI to the ABI you're building the app for, POCO\_DIR and ZSTD\_DIR to the output directories of the build scripts, and LO_BUILDDIR to the directory you cloned and built LibreOffice core in.
+...remember to change your ABI to the ABI you're building the app for, POCO\_DIR and ZSTD\_DIR to the output directories of the build scripts, and LO_BUILDDIR to the directory you cloned and built Collabora Office core in.
 
 Now we can use that to configure our Collabora Online build
 
@@ -177,7 +177,7 @@ otherwise aren't able to use Android Studio) we recommend you follow Option 1
 
 ## Debugging
 
-To debug the native LibreOffice code in Android Studio, you need the debugging
+To debug the native Collabora Office core code in Android Studio, you need the debugging
 symbols and to setup Android Studio to actually read & use them.
 
 ### Add android/obj/local/armeabi-v7a from core.git as a Symbol Directory

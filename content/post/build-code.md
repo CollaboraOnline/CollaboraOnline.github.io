@@ -29,7 +29,7 @@ Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operatin
 <section id="build-code-gitpod" class="build-code-content">
 
 ## Gitpod {#build-code-on-gitpod}
-On top of our daily LibreOffice core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
+On top of our daily Collabora Office core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
 
 **Steps to quick start:**
 
@@ -92,7 +92,7 @@ If you are using VS Code as your IDE and want to run code in your local VS Code 
 The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.
 
 ### Dependencies
-We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
 
 ```bash
 # For Leap 15.5
@@ -111,7 +111,7 @@ zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit
 zypper in libpng16-compat-devel
 ```
 
-### LibreOffice
+### Collabora Office Core
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
@@ -137,7 +137,7 @@ Now clone the forked repo:
 The instructions below have been prepared for and tested on Fedora 37. You might need to do small adjustments for Fedora-based distributions.
 
 ### Dependencies
-We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`.
+We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`.
 
 Open a terminal and follow the steps below:
 
@@ -161,7 +161,7 @@ sudo dnf install \
     python3-polib
 ```
 
-### LibreOffice
+### Collabora Office Core
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
@@ -187,14 +187,14 @@ Now clone the forked repo:
 The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.
 
 ### Dependencies
-We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`.
+We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`.
 
 Open a terminal and follow the steps below:
 ```bash
 sudo pacman -Syu libcap libcap-ng lib32-libcap libpng poco cppunit nodejs npm chromium python-lxml python-polib
 ```
 
-### LibreOffice
+### Collabora Office Core
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
@@ -223,7 +223,7 @@ adjustments for other releases.
 *Note: Sometimes Debian comes without sudo preinstalled. If you do not have sudo, you will need to run `apt install -y sudo` as root. It is not good enough to only run the commands which require sudo below as root, as sudo is also run during `make`*
 
 ### Dependencies
-We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
 
 Lets start by installing the `dialog` package, which will be needed while installing some
 of the other packages:
@@ -239,7 +239,7 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     pkg-config fontconfig chromium
 ```
 
-### LibreOffice
+### Collabora Office Core
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
@@ -265,7 +265,7 @@ The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. Yo
 adjustments for other releases.
 
 ### Dependencies
-We need LibreOffice core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
 
 Lets start by installing the `dialog` package, which will be needed while installing some
 of the other packages:
@@ -283,7 +283,7 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev libssl-dev npm \
 
 *Note: Chromium is needed and used in the cypress tests. Ubuntu has no Chromium deb packages in its repositories, only a dummy package that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
-### LibreOffice
+### Collabora Office Core
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 ### Building CODE
@@ -321,17 +321,17 @@ also be possible to make darwin shells for building the iOS app.
 
 Follow the instructions in the
 [nix-build-support](https://github.com/CollaboraOnline/nix-build-support)
-repository. They will lead you through cloning LibreOffice core and Collabora
+repository. They will lead you through cloning Collabora Office core and Collabora
 online, configuring your build and running your newly-built CODE.
 
-## Build CODE & LO {#build-code-n-lo}
+## Build CODE & Core {#build-code-n-lo}
 
 ### Dependencies
 
 CODE must be built on Linux, and you need the following:
 
-* LibreOffice
-  + Either build LibreOffice from source, or download a daily built archive (see below)
+* Collabora Office core
+  + Either build core from source, or download a daily built archive (see below)
 * Poco library: http://pocoproject.org/
   + Either use the package from your distro, or build it yourself, ideally 1.10.1 or later
 * libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
@@ -349,19 +349,15 @@ You may also want to have the following optional dependencies:
 * Node.js
   + Needed for building the JS parts (not needed if you build them on another linux machine)
 
-### LibreOffice
+### Collabora Office Core
 
-CODE needs LibreOffice to be built to run. You have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, you may prefer the second way.
+CODE needs Collabora Office core to be built to run. You have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on Collabora Office core, or you just want to quickly get going to do some small fixes, you may prefer the second way.
 
-#### Option A - Build LibreOffice locally (Recommended)
-The build process for LibreOffice is described on their wiki. However, a few modifications are needed in order to support building CODE.
+#### Option A - Build core locally (Recommended)
+A few modifications are needed in order to support building CODE with Collabora Office core. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux.
 
-https://wiki.documentfoundation.org/Development/BuildingOnLinux
-
-Install the dependencies. The lists of dependencies and commands for various Linux distributions are available on the LibreOffice Wiki linked above.
-
-Clone the repository and switch to the Collabora Online branch:
-{{% common-build-commands section="clone-lo" lobranch="co-25.04" %}}
+Clone the repository and switch to the main branch:
+{{% common-build-commands section="clone-lo" lobranch="main" %}}
 
 Configure and build, adding the following configuration options to `autogen.sh` or `autogen.input`:
 ```bash
@@ -372,7 +368,7 @@ make -j $(nproc)
 ```
 You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
 
-#### Option B - Download a Daily-Built Archive of LibreOffice (Quick & Dirty)
+#### Option B - Download a Daily-Built Archive of Collabora Office Core (Quick & Dirty)
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.

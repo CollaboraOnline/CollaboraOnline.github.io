@@ -1,10 +1,10 @@
 {{$section := .Get "section"}}
 
 {{ if eq $section "code-needs-lo-wget" }}
-CODE needs LibreOffice to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the LibreOffice core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, [refer to the general instructions](/post/build-code/#build-code-n-lo).
+CODE needs Collabora Office core to be built to run. However, it takes a considerable amount of time and brings in
+extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the Collabora Office core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, [refer to the general instructions](/post/build-code/#build-code-n-lo).
 
-Now download a daily-built archive of LibreOffice core:
+Now download a daily-built archive of Collabora Office core:
 ```bash
 wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/{{.Get "lotar"}}
 ```
@@ -46,9 +46,9 @@ new content.
 {{ if eq $section "clone-lo" }}
 
 ```bash
-git clone https://gerrit.libreoffice.org/core libreoffice
-cd libreoffice
-git checkout distro/collabora/{{.Get "lobranch"}}
+git clone https://gerrit.collaboraoffice.com/core
+cd core
+git checkout {{.Get "lobranch"}}
 ```
 {{ end }}
 

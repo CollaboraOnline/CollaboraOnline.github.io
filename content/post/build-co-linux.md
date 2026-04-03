@@ -107,12 +107,12 @@ Poco >= 1.12.0 is required. Some distros ship an older version -- see the [Ubunt
 
 ## Building
 
-### LibreOffice Core
+### Collabora Office Core
 
-Collabora Office needs core to be built. See [detailed instructions](https://wiki.documentfoundation.org/Development/BuildingOnLinux) if needed.
+Collabora Office needs core to be built. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux if needed.
 
 ```bash
-git clone --depth 1 -b distro/collabora/co-26.04 https://gerrit.libreoffice.org/core
+git clone --depth 1 -b main https://gerrit.collaboraoffice.com/core
 cd core
 ```
 
