@@ -25,7 +25,7 @@ A great way to get started, explore ideas, and contribute long-term (like during
       All students & developers are welcome to participate in this effort and learn with mentors along the way.
     </p>
     <p>
-      We are welcoming contributions under the <a href="https://github.com/CollaboraOnline/online/blob/master/README.CONTRIBUTING.md">Online Contributor Representation & Certificate of Origin v1.0</a>. Additional information on <a href="https://github.com/CollaboraOnline/online/blob/master/CONTRIBUTING.md">contributing</a> might also be useful.
+      We are welcoming contributions under the <a href="https://github.com/CollaboraOnline/online/blob/main/README.CONTRIBUTING.md">Online Contributor Representation & Certificate of Origin v1.0</a>. Additional information on <a href="https://github.com/CollaboraOnline/online/blob/main/CONTRIBUTING.md">contributing</a> might also be useful.
     </p>
     <p>
       Would you like to participate? Send an e-mail with subject "Internship: Ideas page, Collabora Online". Feel free to drop a couple of lines about you :).

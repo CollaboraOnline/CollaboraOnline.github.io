@@ -123,8 +123,8 @@ Run `make` and wait a while for the build to finish...
 
 You need a copy of `POCO` and `libzstd` built for Android in order to build the Android app. You can use these scripts to build those
 
-* POCO - use [build-poco-android.sh](https://github.com/CollaboraOnline/online/blob/master/scripts/build-poco-android.sh)
-* libzstd - use [build-zstd-android.sh](https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-android.sh)
+* POCO - use [build-poco-android.sh](https://github.com/CollaboraOnline/online/blob/main/scripts/build-poco-android.sh)
+* libzstd - use [build-zstd-android.sh](https://github.com/CollaboraOnline/online/blob/main/scripts/build-zstd-android.sh)
 
 ### Configuring the build
 
