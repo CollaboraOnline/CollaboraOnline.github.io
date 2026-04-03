@@ -12,7 +12,7 @@ author = "Hugo Authors"
       This is a list of events and sheduled calls intended to help you in your journey in becoming a COOL contributor.
     </p>
     <p>
-      We are welcoming contributions under the <a href="https://github.com/CollaboraOnline/online/blob/master/README.CONTRIBUTING.md">Online Contributor Representation & Certificate of Origin v1.0</a>. Additional information on <a href="https://github.com/CollaboraOnline/online/blob/master/CONTRIBUTING.md">contributing</a> might also be useful.
+      We are welcoming contributions under the <a href="https://github.com/CollaboraOnline/online/blob/main/README.CONTRIBUTING.md">Online Contributor Representation & Certificate of Origin v1.0</a>. Additional information on <a href="https://github.com/CollaboraOnline/online/blob/main/CONTRIBUTING.md">contributing</a> might also be useful.
     </p>
     <p>
       Keep an eye for issue tagged with easy hacks or hacktoberfest tag.

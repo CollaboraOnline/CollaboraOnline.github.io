@@ -60,7 +60,7 @@ On top of our daily Collabora Office core archives, we have also added integrati
 * You can also run cypress tests via GitPod. To do so, please  prepend `CYPRESS_BROWSER="/usr/bin/chromium"` (`"firefox"` can also be used). Example:
   * `cd cypress_test/`
   * `CYPRESS_BROWSER="/usr/bin/chromium" make check` for every test or `CYPRESS_BROWSER="/usr/bin/chromium" make check-desktop spec=impress/scrolling_spec.js` for one specific test on desktop
-  * More info at https://github.com/CollaboraOnline/online/blob/master/cypress_test/README
+  * More info at https://github.com/CollaboraOnline/online/blob/main/cypress_test/README
 
 * Don’t forget to fork the main repo ![|226x56](/images/forking.gif)
 * And set the remote address in .git/config to point to your fork’s address with this command:
@@ -555,7 +555,7 @@ Update the log rotation strategy in ```coolwsd.xml```:
 
 This resolves the crash.
 
-Note: This is a dependency-related issue that may be resolved in future versions. You can also refer to the online repository's development notes for the most current information regarding dependency issues: https://github.com/CollaboraOnline/online/blob/master/dev-notes/dependency-issues.md?plain=1#L12
+Note: This is a dependency-related issue that may be resolved in future versions. You can also refer to the online repository's development notes for the most current information regarding dependency issues: https://github.com/CollaboraOnline/online/blob/main/dev-notes/dependency-issues.md?plain=1#L12
 
 </section>
 

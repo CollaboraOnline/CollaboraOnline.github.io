@@ -115,7 +115,7 @@ ZSTD LIBRARY
 ZSTD library. Download the source code from
 https://github.com/facebook/zstd/releases.
 
-Alternatively you can use the helper script to build libzstd for iOS: https://github.com/CollaboraOnline/online/blob/master/scripts/build-zstd-ios.sh
+Alternatively you can use the helper script to build libzstd for iOS: https://github.com/CollaboraOnline/online/blob/main/scripts/build-zstd-ios.sh
 
 2.3.2) Compile. Note: in the first command, force SDK to iOS and set the
 minimum iOS version to match the Collabora Office core build:
