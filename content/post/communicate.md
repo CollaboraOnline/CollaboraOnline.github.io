@@ -27,6 +27,11 @@ A great way to get in touch, ask anything or get mentoring is through one of our
 * 💬 https://meet.jit.si/COOLWeeklyMeeting
 * 🗒 [Past meetings](https://forum.collaboraonline.com/tag/meeting-minutes) | 📜 [Older](https://forum.collaboraonline.com/c/news/meeting-minutes/)
 
+## Weekly COOL Technical Committee Meeting
+* 📅 Every Wednesday
+* 🕙 ~ {{< dst tm="16:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=16)
+* 💬 https://meet.jit.si/COOL-TC-Meeting
+
 ## Tea Time Trainings
 * 📅 Every Friday
 * 🕙 ~ {{< dst tm="13:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=13)
