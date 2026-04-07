@@ -112,7 +112,7 @@ zypper in libpng16-compat-devel
 ```
 
 ### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
@@ -162,7 +162,7 @@ sudo dnf install \
 ```
 
 ### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
@@ -195,7 +195,7 @@ sudo pacman -Syu libcap libcap-ng lib32-libcap libpng poco cppunit nodejs npm ch
 ```
 
 ### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
@@ -240,7 +240,7 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
 ```
 
 ### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
@@ -284,7 +284,7 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev libssl-dev npm \
 *Note: Chromium is needed and used in the cypress tests. Ubuntu has no Chromium deb packages in its repositories, only a dummy package that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
 ### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
 You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
@@ -369,7 +369,7 @@ make -j $(nproc)
 You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
 
 #### Option B - Download a Daily-Built Archive of Collabora Office Core (Quick & Dirty)
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-co-25.04-assets.tar.gz" %}}
+{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
 
