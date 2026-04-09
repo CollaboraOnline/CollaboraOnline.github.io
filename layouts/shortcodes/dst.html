@@ -4,7 +4,10 @@
 <script>
 	window.addEventListener('load', function () {
 		var meetings = document.getElementsByClassName('meeting-time');
-		var tmzone = daylights_savings(new Date());
+		var now = new Date();
+		var berlin = new Date(now.toLocaleString('en-US', { timeZone: 'Europe/Berlin' }));
+		var utc = new Date(now.toLocaleString('en-US', { timeZone: 'UTC' }));
+		var tmzone = (berlin - utc) / 3600000 === 2 ? ' CEST' : ' CET';
 
 		for (var i = 0; i < meetings.length; i++) {
 			if (meetings[i].hasAttribute("timezone")) {
@@ -14,19 +17,4 @@
 			meetings[i].setAttribute("timezone", tmzone);
 		}
 	});
-function daylights_savings(dt) {
-	if (typeof datetdy !== 'undefined') {
-		return datetdy;
-	}
-	var datetdy = dt.getTimezoneOffset();
-
-	// To test if you are not in Central Europe:
-	// CEST is GMT
-	// datetdy = new Date('August 19, 2024 17:00:00 GMT').getTimezoneOffset();
-	// CET is GMT+1
-	// datetdy = new Date('November 19, 2024 17:00:00 GMT+1').getTimezoneOffset();
-
-	datetdy = datetdy < 0 ? datetdy = ' CET' : datetdy = ' CEST';
-	return datetdy
-}
 </script>
