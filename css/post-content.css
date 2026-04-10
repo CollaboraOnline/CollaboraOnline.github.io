@@ -35,6 +35,30 @@ code.language-none::selection {
   object-fit: contain;
   padding-inline-start: 3px;
 }
+.latest.row.py-lg-5,
+.homepage .card {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.latest.row.py-lg-5 {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  margin-inline: 0;
+  margin-block: 54px;
+  padding-block: 24px !important;
+}
+
+.latest.row.py-lg-5:hover,
+.homepage .card:hover {
+  border-color: #5c2983 !important;
+  cursor: pointer;
+}
+
+.latest.row.py-lg-5:hover h2 a,
+.homepage .card:hover .card-title {
+  color: #5c2983 !important;
+}
+
 .latest .d-block {
   display: flex !important;
   justify-content: center;
