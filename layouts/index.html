@@ -71,27 +71,25 @@
   {{- range first 1 (sort (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) ".Params.home_pos") -}}
         {{ $page := . }}
         <div class="latest row py-lg-5">
-            <div class="col-lg-6 mb-3">
+        <a href="{{ $page.RelPermalink }}" class="d-block hero-card-link">
+            <div class="col-lg-6 mb-3 hero-card-image">
                 {{- with $page.Params.images -}}
                     {{- $images := . -}}
                     {{- with $page.Site.GetPage "section" "images" -}}
                         {{- with .Resources.GetMatch (strings.TrimPrefix "/images/" (index $images 0)) -}}
                             {{- $image := .Fill "700x450" -}}
-                            <a href="{{ $page.RelPermalink }}" class="d-block">
-                                <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded" alt="{{ $page.Title }}">
-                            </a>
+                            <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded" alt="{{ $page.Title }}">
                         {{- end -}}
                     {{- end -}}
                 {{- end -}}
             </div>
             <div class="col-lg-6 mb-3 mt-3">
-                <!--<h5 class="created text-muted text-uppercase font-weight-bold">{{ $page.Date.Format "January 2, 2006" }}</h5>-->
-                <h2><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
-
+                <h2>{{ $page.Title }}</h2>
                 <div class="content">
                     {{ $page.Summary }}
                 </div>
             </div>
+        </a>
         </div>
     {{- end -}}
 
