@@ -9,13 +9,12 @@ description = "Frequently Asked Questions"
 tags = [
     "contribute",
     "report",
-		"test",
+    "test",
 ]
 images = [
     "beaver/faq-copyrighted.png",
 ]
-type = "sidebar"
-layout = "sidebar"
+type = "post"
 showimage = false
 showtitle = true
 +++
@@ -23,6 +22,8 @@ showtitle = true
 Perhaps your question is one that we have been asked before; have a read, and let us know if not.
 
 <!--more-->
+
+{{< table_of_contents >}}
 
 ## What is Collabora Office? {#whatiscodesktop}
 
