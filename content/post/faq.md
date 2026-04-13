@@ -26,6 +26,7 @@ Perhaps your question is one that we have been asked before; have a read, and le
 {{< table_of_contents >}}
 
 ## What is Collabora Office? {#whatiscodesktop}
+{{< faq-date added="2025-11-26" added_commit="01ec5bb" >}}
 
 The new Collabora Office announced 2025-11-26 brings Collabora Online
 to the desktop, and re-brands previous product Collabora Office Classic.
@@ -33,6 +34,7 @@ You can read much more about that in the
 [release materials](https://www.collaboraoffice.com/)
 
 ### Why bring Collabora Online to the desktop ? {#whycodesktop}
+{{< faq-date added="2025-11-26" added_commit="01ec5bb" >}}
 
 That brings lots of advantages such as off-line capability, access to
 much better platform APIs than the browser provides, a shared user
@@ -40,6 +42,7 @@ experience with Collabora Online, the ability to debug a single
 process on a FLOSS platform and much more.
 
 ### Where do I file bugs ?
+{{< faq-date added="2025-11-26" added_commit="01ec5bb" >}}
 
 Thanks for trying it out. As of our first release we expect rather a
 rapid iteration cycle to iron out the more obvious problems. We
@@ -47,6 +50,7 @@ would love to have your help finding and fixing issues that come
 there. Checkout [how to file a bug]({{< relref "filebugs.md" >}} "How to file bugs") and put a 'Desktop:' prefix in your subject - thanks!
 
 ### Where can I get code ?
+{{< faq-date added="2025-11-26" added_commit="01ec5bb" updated="2026-04-03" updated_commit="5fc61cd" >}}
 
 On Dec 11, 2025 the 25.04.7.3-2 release was made from the coda-25.04.7.3-2 tags
 that exist both in core and online repo. Development continues:
@@ -64,6 +68,7 @@ Build instructions:
 - macOS: https://collaboraonline.github.io/post/build-co-mac/
 
 ### Where are unsaved documents stored on macOS? {#macos-unsaved}
+{{< faq-date added="2025-12-03" added_commit="de61883" >}}
 
 When a user creates a new document on macOS and has not yet saved it, Collabora Office automatically stores temporary autosave data. If the application crashes before the user chooses a name and location, the unsaved file can often be found here:
 
@@ -76,6 +81,7 @@ The most common filename is:
 This can help recover work from newly created documents that were never manually saved.
 
 ### Collabora Office Crashes or rendering glitches on older Nvidia GPUs
+{{< faq-date added="2025-12-12" added_commit="b881982" >}}
 
 On systems with very old Nvidia hardware using the nouveau `nv50` driver, Collabora Office Flatpak may crash on start due to a Qt WebEngine GPU-acceleration issue (seen also in other Qt apps).
 
@@ -92,6 +98,7 @@ flatpak override --env=QTWEBENGINE_CHROMIUM_FLAGS=--disable-gpu com.collaboraoff
 ```
 
 ## What is Collabora Online anyway? {#whatisit}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Collabora Online is a feature rich online collaboration office suite
 with great support for all major document, spreadsheet and
@@ -104,6 +111,7 @@ looking for an office solution in the cloud that protects their
 privacy and allows them to keep full control of their sensitive data.
 
 ### Who created Collabora Online? {#creators}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Collabora Online is mainly written by Collabora. Collabora's 20+
 committers provided 95%+ of the commits in the last year. Checkout
@@ -119,6 +127,7 @@ image from Lukas Reschke. Currently we have many more integrations
 written by either Collabora or by Collabora Partners.
 
 ### Who contributed to the Mobile work? {#mobile-story}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Our mobile app is built on top of our Online / web work. For the story
 of those behind that [see here](https://www.collaboraoffice.com/collabora-office-for-android-ios-credits/)
@@ -134,6 +143,7 @@ Online barely existed. It is safe to say that a negligable amount of TDF
 donor funded code is present in Online.
 
 ### What about translators work? {#translators}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Great point! Many translators have made important contributions. While Online
 represents only one hundredth of the strings that LibreOffice has, it re-uses
@@ -144,6 +154,7 @@ Of course we prepared the vital [translation environment](https://collaboraonlin
 and are already merging changes.
 
 ## Why is Collabora Online its own project? {#own-project}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Back in 2015 Collabora started the online development on TDF's
 infrastructure as a source-only project: a place to collaborate around
@@ -166,6 +177,7 @@ More details are in the
 [announcement E-mail](https://www.mail-archive.com/board-discuss@documentfoundation.org/msg04727.html).
 
 ### Is this the first separate project based on this code?
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 It seems not; this turns out to be reasonably common. Checkout
 [OSSIIs](https://github.com/OSSII/oxool-community) [version](https://www.ossii.com.tw/product/online).
@@ -175,6 +187,7 @@ Clearly having a team of engineers with wide experience, who contribute
 to the code behind the version you choose is important.
 
 ### Will you still contribute to the LibreOffice core? {#libo-contrib}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" updated="2026-04-03" updated_commit="7d7e084" >}}
 
 Collabora has been one of the biggest contributors to the LibreOffice
 code base ever since its formation, including fixes, rendering
@@ -191,6 +204,7 @@ At the same time, we will continue to make contributions to LibreOffice where
 that makes sense.
 
 ### Do we need investment? {#investment}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" updated="2020-10-06" updated_commit="cf7cbd2" >}}
 
 Let us first state clearly that volunteers have always contributed to FOSS projects, and do so in many different ways. This is important and LibreOffice is no
 exception. So obviously we would love you to get involved and e.g. help out improving
@@ -198,8 +212,8 @@ the code with us.
 
 Professional developers bring the ability to contribute huge amounts of feature/function work, mentoring, and the depth of focus
 necessary to tackle the hardest issues: improving interoperability,
-performance, memory consumption, latency, move with changes in os and other software libraries — as well as building new UX
-infrastructure and adding product polish — we're far from done.
+performance, memory consumption, latency, move with changes in os and other software libraries - as well as building new UX
+infrastructure and adding product polish - we're far from done.
 
 Donations have also been a helpful revenue stream for TDF, however the
 size of our investment need is sufficiently large that TDF's
@@ -210,12 +224,14 @@ marketing](https://people.gnome.org/~michael/data/vendor-neutral-marketing.html)
 complete with pictures.
 
 ### Does investment mean Venture Capital? {#VC}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 No, Collabora is a FOSS company whose mission is to accelerate the adoption of FOSS across all industries, we have no plans to dilute our mission.
 We do this by generating revenues around consultancy and product support. This allows us to hire full time engineers to invest on the FOSS codebases that we support.
 
 
 ### Did you try to work things out with TDF? {#TDF}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" updated="2020-10-06" updated_commit="cf7cbd2" >}}
 
 Indeed, from [2013](https://people.gnome.org/~michael/data/2013-09-25-economics.pdf)
 it has been clear that we need to work to build the ecoystem around
@@ -228,6 +244,7 @@ Against that there have been some positives, a visionary Marketing
 plan from Italo for example; but against much resistance.
 
 ### Why is branding & visibility important? {#visibility}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 In large part for marketing. By investing in OSS, you can get your
 brand widely known, that's really important when someone wants support
@@ -241,7 +258,7 @@ or services, or a custom version of the product.
 	building a great product, marketing it with skill and
 	imagination, looking after your customers, and thereby
 	building a brand that stands for quality and customer
-	service." — Bob Young (founder of RedHat)
+	service." - Bob Young (founder of RedHat)
 
 FOSS companies have very few assets: our code is all public, but we
 can build brands that reflect the time & excellence we put into our
@@ -249,10 +266,11 @@ software, and use these to create a distinction that commands a price.
 
 Unfortunately, investing in a brand you do not own, and leading people
 to an environment where end-users / casual purchasers are extremely
-unlikely to discover that the work was done by you — makes things
+unlikely to discover that the work was done by you - makes things
 very difficult.
 
 ### Which brand to choose? {#brand-choice}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Customers have been confused in the past by branding, seeing
 LibreOffice/TDF as the authentic source for Online. The use and
@@ -272,6 +290,7 @@ of attempts to change the branding on code written by others.
 
 
 ## A Free / Open Source project {#floss}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 We are committed to becoming a best-of-breed Free / Open Source
 project. We start from a great place with the LibreOffice
@@ -281,6 +300,7 @@ respect and recognize the contribution of all the developers of
 LibreOffice and will honor that in equivalent access.
 
 ### Can I re-compile and re-distribute CODE? {#code-compile}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Yes, you'll need to follow the
 [build instructions]({{< relref "build-code.md" >}}), as well
@@ -297,12 +317,14 @@ up our (small) pieces of proprietary theming / branding / CSS over
 time.
 
 ### Do you use a CLA?
+{{< faq-date added="2020-10-06" added_commit="cf7cbd2" >}}
 
 No. We use an in-bound == outbound licensing model, that gives the
 same rights and responsibilities to all participants. Following
 the LibreOffice ethos.
 
 ### Are you in-love with github ?
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 It is great to have a large choice of collaboration software
 available, free of price, and from the most unexpected sources -
@@ -311,6 +333,7 @@ lovers of gerrit and would prefer a fully-FOSS hosted version
 of that.
 
 ### How do I get commit access? {#commit-access}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Please poke us on IRC with your TDF commit credentials, and your
 GitHub name, and we'll get you setup. We want TDF committership
@@ -318,6 +341,7 @@ to transfer to Collabora Online, and we welcome and honor
 all who wish to to contribute.
 
 ### How do I get a say in the project? {#say}
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 We love to work with sharp people, to write FOSS, and to listen to
 them. We will try to attract and energise a community of do-ers, and
@@ -333,6 +357,7 @@ contributed significantly to development, and we expect to expand this
 over time.
 
 ### How can I support your work ?
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 Clearly the most valuable contributions are helping with the
 development itself for example:
@@ -340,11 +365,13 @@ de-duplicating, double-checking, bisecting [bugs in the tracker]({{< relref "fil
 
 For those who have substantially contributed towards the project we have a [supporters]({{< relref "contributors.md" >}} "Supporters section") list which we plan to extend over time.
 
-### What’s with the Beavers? {#beavers}
+### What's with the Beavers? {#beavers}
+{{< faq-date added="2025-12-03" added_commit="de61883" >}}
 
 We have a mascot that is an extremely hard-working animal, known for taking on epic tasks and making an out-sized impact. For stories about hard-working beaver exploits you can read The Open Road to Freedom at https://www.collaboraonline.com/torf.
 
 ### Is there the forum for questions and discussions?
+{{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
 You are welcome on the [Collabora Online forum](https://forum.collaboraonline.com/)!
 

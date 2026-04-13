@@ -1,0 +1,13 @@
+{{- $commitBase := "https://github.com/CollaboraOnline/CollaboraOnline.github.io/commit/" -}}
+{{- $added := .Get "added" -}}
+{{- $addedCommit := .Get "added_commit" -}}
+{{- $updated := .Get "updated" -}}
+{{- $updatedCommit := .Get "updated_commit" -}}
+<p class="faq-date">
+    {{- if $updated -}}
+        Updated {{ if $updatedCommit }}<a href="{{ $commitBase }}{{ $updatedCommit }}" target="_blank" rel="noopener">{{ dateFormat "January 2, 2006" $updated }}</a>{{ else }}{{ dateFormat "January 2, 2006" $updated }}{{ end }}
+        {{- if $added }} <span class="faq-date-sub">(added {{ if $addedCommit }}<a href="{{ $commitBase }}{{ $addedCommit }}" target="_blank" rel="noopener">{{ dateFormat "January 2, 2006" $added }}</a>{{ else }}{{ dateFormat "January 2, 2006" $added }}{{ end }})</span>{{ end -}}
+    {{- else if $added -}}
+        Added {{ if $addedCommit }}<a href="{{ $commitBase }}{{ $addedCommit }}" target="_blank" rel="noopener">{{ dateFormat "January 2, 2006" $added }}</a>{{ else }}{{ dateFormat "January 2, 2006" $added }}{{ end }}
+    {{- end -}}
+</p>
