@@ -21,16 +21,21 @@ showimage = false
 A great way to get in touch, ask anything or get mentoring is through one of our official channels. . .
 <!--more-->
 ---
-## Weekly COOL meeting
+## COOL meeting
 * 📅 Every Thursday
 * 🕙 ~ {{< dst tm="12:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=12)
 * 💬 https://meet.jit.si/COOLWeeklyMeeting
 * 🗒 [Past meetings](https://forum.collaboraonline.com/tag/meeting-minutes) | 📜 [Older](https://forum.collaboraonline.com/c/news/meeting-minutes/)
 
-## Weekly COOL Technical Committee Meeting
+## COOL Technical Committee Meeting
 * 📅 Every Wednesday
 * 🕙 ~ {{< dst tm="16:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=16)
 * 💬 https://meet.jit.si/COOL-TC-Meeting
+
+## COOL UI/UX Design meeting
+* 📅 Every Thursday
+* 🕙 ~ {{< dst tm="14:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=14)
+* 💬 https://meet.jit.si/COOL-UI-UX-Design
 
 ## Tea Time Trainings
 * 📅 Every Friday
