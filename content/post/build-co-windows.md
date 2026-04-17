@@ -85,7 +85,7 @@ in the Debug configuration, you *must* use a core build with either
 `--enable-dbgutil` or `--enable-msvc-debug-runtime`.
 
 The core build should proceed fairly normally. Note that you
-will not end up with a runnable normal desktop Collabora Office. Attempting
+will not end up with a runnable Collabora Office Classic. Attempting
 to run instdir/program/soffice.exe will just produce the message "no
 suitable windowing system found, exiting".
 
