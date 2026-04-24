@@ -171,6 +171,7 @@ flatpak install org.kde.Sdk//6.10 \
                 org.kde.Platform//6.10 \
                 org.freedesktop.Sdk.Extension.node20//25.08 \
                 io.qt.qtwebengine.BaseApp//6.10
+                io.qt.qtwebengine.BaseApp.Debug//6.10
 ```
 
 Build and export to a local repo:
