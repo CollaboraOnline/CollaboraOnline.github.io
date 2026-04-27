@@ -3,7 +3,7 @@ authors = [
     "Collabora",
 ]
 title = "Build Collabora Office for Windows"
-date = "2026-04-02"
+date = "2026-04-27"
 home_pos = "3"
 description = "Step-by-step build instructions"
 tags = [
@@ -31,13 +31,14 @@ The steps below are for building the Collabora Office in Windows.
 
 ### Requirements
 
-For starters, the same requirements as for building the core bits, see
-https://wiki.documentfoundation.org/Development/BuildingOnWindows as
-you will do that as part of building Collabora Office for windows. Make sure to use Visual
+For starters, the same requirements as for building Collabora Office Classic
+or LibreOffice, see
+https://wiki.documentfoundation.org/Development/BuildingOnWindows.
+Make sure to use Visual
 Studio 2022. Using other Visual Studio versions for building the
 online bits has not been tested.
 
-In Visual Studio 2022, also install the .NET desktop development
+In the Visual Studio installer, also install the .NET desktop development
 components.
 
 ### Setup
@@ -64,11 +65,14 @@ stuff. This is the main reason we are using WSL.
 
 	sudo apt install nodejs npm
 
-### Build core
+### Clone the common repository for both Collabora Online and the "engine" (core)
 
-Clone the https://gerrit.collaboraoffice.com/core repository. The
+Clone the https://gerrit.collaboraoffice.com/online repository. The
 default "main" branch is what is used for development
 
+### Build "engine" ("core")
+
+Change to the `engine` subdirectory.
 The known good configuration is in `distro-configs/CODAWindows.conf`. Make sure that you include
 it in your `autogen.input`. You can tweak it as you like, for example:
 
@@ -92,17 +96,15 @@ suitable windowing system found, exiting".
 You can attempt to run `make check` but that will probably run into
 some false positives.
 
-#### Building also core using WSL and Git Bash
+#### Building engine using WSL and Git Bash
 
-It is possible nowadays to configure core
-for Windows in WSL, not Cygwin. The actual build will use the so-called Git Bash, though, not WSL.
-It is unclear why the impression that one is building in WSL is given.
-
-The "main" branch has been successfully built like that following the
-instructions on [TDF Wiki](https://wiki.documentfoundation.org/Development/BuildingOnWSLWindows).
+It is possible nowadays to configure Collabora Office Classic or
+LibreOffice for Windows in WSL, not Cygwin. The actual build will then
+use the so-called Git Bash, though, not WSL. It is unclear why the
+impression is given that one is building in WSL. We have not used that for Collabora Office, though.
 
 Ideally, in the future, it would be nice to be able to actually truly build
-core for Windows using only Visual Studio and WSL, without Git Bash.
+`engine` for Windows using only Visual Studio and WSL, without Git Bash.
 
 ### Build direct dependencies of Collabora Office for Windows
 
@@ -148,10 +150,7 @@ Then move all the headers into one place:
 
 ### Build Collabora Office itself
 
-Clone the https://github.com/CollaboraOnline/online.git repo. The main
-branch is used for development.
-
-In an Ubuntu shell, run
+In an Ubuntu shell, in the top-level of your clone of the `online` repo, run
 
 	./autogen.sh
 
@@ -163,10 +162,10 @@ a Debug configuration of the Collabora Office, and the Release libraries
 in a Release configuration. There is some slightly questionable
 #pragmas in <Poco/Foundation.h> to take care of that.)
 
-	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release --with-lo-path='C:\cygwin64\home\tml\lo\core-main-coda-release\instdir' --with-poco-includes=/mnt/c/Users/tml/poco-poco-1.14.2-release/include --with-poco-libs=/mnt/c/Users/tml/poco-poco-1.14.2-release/lib64 --with-zstd-includes=/mnt/c/Users/tml/zstd-1.5.7/lib --with-zstd-libs=/mnt/c/Users/tml/zstd-1.5.7/build/VS2010/bin/x64_Release --with-libpng-includes=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/UnpackedTarball/libpng --with-libpng-libs=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/LinkTarget/StaticLibrary --with-zlib-includes=/mnt/c/cygwin64/home/tml/lo/core-main-coda-release/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
+	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=$PWD/engine --with-lo-path=`wslpath -w $PWD/engine/instdir` --with-poco-includes=/mnt/c/Users/tml/poco-poco-1.14.2-release/include --with-poco-libs=/mnt/c/Users/tml/poco-poco-1.14.2-release/lib64 --with-zstd-includes=/mnt/c/Users/tml/zstd-1.5.7/lib --with-zstd-libs=/mnt/c/Users/tml/zstd-1.5.7/build/VS2010/bin/x64_Release --with-libpng-includes=$PWD/engine/workdir/UnpackedTarball/libpng --with-libpng-libs=$PWD/engine/workdir/LinkTarget/StaticLibrary --with-zlib-includes=$PWD/engine/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
 
-Obviously, adapt as necessary to match your username and where you
-built Collabora Office core, zstd, and Poco. Also change the `--with-info-url` as
+Obviously, adapt as necessary to match where you
+built zstd and Poco. Also change the `--with-info-url` as
 appropriate. That is the web page that will be shown when clicking the
 leftmost button in the toolbar.
 
