@@ -57,12 +57,30 @@
 
   </div>
 
-  <a href='https://gerrit.collaboraoffice.com/' target="_blank" class="btn btn-dark btn-co-secondary btn-hero">
-    Gerrit
-  </a>
-  <a href='https://github.com/CollaboraOnline/online' target="_blank" class="btn btn-dark btn-co-secondary btn-hero">
-    GitHub
-  </a>
+  <div class="btn-group">
+    <button
+      class="btn btn-dark btn-co-secondary btn-hero dropdown-toggle"
+      role="button"
+      id="contributeDropdown"
+      data-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Contribute
+    </button>
+
+    <div class="dropdown-menu" aria-labelledby="contributeDropdown">
+      <a href="https://gerrit.collaboraoffice.com/" target="_blank" class="dropdown-item">
+        Code on Gerrit
+      </a>
+      <a href="https://github.com/CollaboraOnline/online/issues" target="_blank" class="dropdown-item">
+        Issues on GitHub
+      </a>
+      <a href="https://hosted.weblate.org/projects/collabora-online/" target="_blank" class="dropdown-item">
+        Translate on Weblate
+      </a>
+    </div>
+  </div>
+
   <a href='https://forum.collaboraonline.com/' target="_blank" class="btn btn-light btn-co-secondary btn-hero">
     Forum
   </a>
