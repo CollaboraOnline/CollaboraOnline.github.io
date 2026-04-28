@@ -43,7 +43,23 @@ Building for `My Mac (Designed for iPad)` on Mac Silicon will run, but it is uns
 ## 1) Build the LibreOfficeKit code for iOS
 ### on a Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
-1.1) First you need to build the LibreOfficeKit code (Collabora Office core) for iOS. For the build dependencies, it is the best to install [LODE, the LibreOffice Development Environment](https://wiki.documentfoundation.org/Development/lode) and add its `bin` directory to the `PATH`. Then get Collabora Office core source code and put in your autogen.input something like this:
+1.1) First you need to build the LibreOfficeKit code (Collabora Office core) for iOS. For the build dependencies, it is the best to install [LODE, the LibreOffice Development Environment](https://wiki.documentfoundation.org/Development/lode) and add its `bin` directory to the `PATH`.
+
+Collabora Online and the LibreOffice core now live in a single Gerrit monorepo - core is the `engine/` subdirectory of the `online` repo, so there is no separate `core` clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
+
+For an anonymous read-only clone:
+
+```bash
+git clone https://gerrit.collaboraoffice.com/online collabora-online
+```
+
+If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
+
+```bash
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-online
+```
+
+Then move into `collabora-online/engine` and put in your autogen.input something like this:
 
 ```bash
 # Comment out for production builds
@@ -138,7 +154,7 @@ This will install the zstd static libraries and headers to your $HOME directory 
 
 ## 3) Build the iOS app
 ### on a Mac ## {#ios-3-clone-online-mac .extraclass class="requirement-machine"}
-3.1) Do a separate clone of the [Collabora Online repo](https://github.com/CollaboraOnline/online) on macOS.
+3.1) Step back to the top of the `collabora-online` clone (one level up from `engine/`) - the same monorepo you used in step 1 contains the online sources.
 
 Run autogen.sh, and configure it with the --enable-iosapp option:
 
@@ -153,7 +169,7 @@ Run autogen.sh, and configure it with the --enable-iosapp option:
 --with-poco-libs=$HOME/poco-ios-arm64/lib \
 --with-zstd-includes=$HOME/zstd-ios-arm64/usr/local/include \
 --with-zstd-libs=$HOME/zstd-ios-arm64/usr/local/lib \
---with-lo-builddir=/path/to/libreoffice/core
+--with-lo-builddir=$(pwd)/engine
 ```
 
 Then run:

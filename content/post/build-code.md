@@ -62,12 +62,7 @@ On top of our daily Collabora Office core archives, we have also added integrati
   * `CYPRESS_BROWSER="/usr/bin/chromium" make check` for every test or `CYPRESS_BROWSER="/usr/bin/chromium" make check-desktop spec=impress/scrolling_spec.js` for one specific test on desktop
   * More info at https://github.com/CollaboraOnline/online/blob/main/cypress_test/README
 
-* Don’t forget to fork the main repo ![|226x56](/images/forking.gif)
-* And set the remote address in .git/config to point to your fork’s address with this command:
-
-```bash
-git remote set-url origin https://github.com/PUT-YOUR-GITHUB-USERNAME-HERE/online.git
-```
+* Code review now happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests. When you have something to submit, follow the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) to set up SSH keys, install the `commit-msg` hook, and push to `refs/for/main`.
 
 Happy hacking! : )
 
@@ -115,9 +110,8 @@ zypper in libpng16-compat-devel
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
 
-Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
@@ -165,9 +159,8 @@ sudo dnf install \
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
 
-Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
@@ -198,9 +191,8 @@ sudo pacman -Syu libcap libcap-ng lib32-libcap libpng poco cppunit nodejs npm ch
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
 
-Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
@@ -243,9 +235,8 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
 
-Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
@@ -287,9 +278,8 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev libssl-dev npm \
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 ### Building CODE
-You need to clone it, run autoconf/automake, configure and build using GNU make. **Before moving on, [fork the repo](https://github.com/CollaboraOnline/online/fork) if you haven't done that yet.**
+Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
 
-Now clone the forked repo:
 {{% common-build-commands section="clone-online" %}}
 
 {{% common-build-commands section="build-online" %}}
@@ -354,9 +344,13 @@ You may also want to have the following optional dependencies:
 CODE needs Collabora Office core to be built to run. You have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on Collabora Office core, or you just want to quickly get going to do some small fixes, you may prefer the second way.
 
 #### Option A - Build core locally (Recommended)
-A few modifications are needed in order to support building CODE with Collabora Office core. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux.
+For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux.
 
-Clone the repository and switch to the main branch:
+First clone the unified `online` monorepo (the LibreOffice core lives under `engine/` inside this repo - there is no separate `core` clone any more):
+
+{{% common-build-commands section="clone-online" %}}
+
+Now move into the core tree and build it:
 {{% common-build-commands section="clone-lo" lobranch="main" %}}
 
 Configure and build, adding the following configuration options to `autogen.sh` or `autogen.input`:
@@ -368,16 +362,25 @@ make -j $(nproc)
 ```
 You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
 
+Once core is built, record its location and step back to the top of the monorepo to build online:
+```bash
+export LOCOREPATH=$(pwd)
+cd ..
+```
+
 #### Option B - Download a Daily-Built Archive of Collabora Office Core (Quick & Dirty)
 {{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
 
 You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
 
-### Building CODE
-
-You need to clone it, run autoconf/automake, configure and build using GNU make:
+When using Option B you still need the `online` checkout for the build itself - clone it now if you have not already:
 
 {{% common-build-commands section="clone-online" %}}
+
+### Building CODE
+
+Run autoconf/automake, configure and build using GNU make from the top of the `online` checkout:
+
 {{% common-build-commands section="build-online" %}}
 
 You can also add extra flags to customize your build:

@@ -107,13 +107,28 @@ Poco >= 1.12.0 is required. Some distros ship an older version -- see the [Ubunt
 
 ## Building
 
+Development happens on the unified [Gerrit monorepo](https://gerrit.collaboraoffice.com/online). The LibreOffice core sits under `engine/` inside the same `online` repo, so there is no separate `core` clone any more. Code review uses Gerrit, not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
+
+### Clone the monorepo
+
+For an anonymous read-only clone:
+```bash
+git clone https://gerrit.collaboraoffice.com/online collabora-online
+cd collabora-online
+```
+
+If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
+```bash
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-online
+cd collabora-online
+```
+
 ### Collabora Office Core
 
-Collabora Office needs core to be built. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux if needed.
+Core is the `engine/` subdirectory of the monorepo. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux if needed.
 
 ```bash
-git clone --depth 1 -b main https://gerrit.collaboraoffice.com/core
-cd core
+cd engine
 ```
 
 ```bash
@@ -123,17 +138,15 @@ make
 
 > For debug builds, add `--enable-dbgutil` to the autogen line.
 
-Once done, set the path for the online build:
+Once done, record the path for the online build and step back to the top of the monorepo:
 ```bash
 export LOCOREPATH=$(pwd)
+cd ..
 ```
 
 ### Collabora Online
 
-```bash
-git clone https://github.com/CollaboraOnline/online.git collabora-online
-cd collabora-online
-```
+From the top of the `collabora-online` clone:
 
 ```bash
 ./autogen.sh

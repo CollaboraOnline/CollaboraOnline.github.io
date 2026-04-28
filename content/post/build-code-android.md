@@ -47,16 +47,19 @@ adb](https://developer.android.com/tools/adb#Enabling)
 
 ## Build Collabora Office Core for Android
 
-### Clone Collabora Office core
+### Clone the monorepo
 
-First, use git to clone the Collabora Office core repository from
-gerrit.collaboraoffice.com and switch to the Collabora Online branch
+Collabora Online and the LibreOffice core now live in a single Gerrit monorepo - core is the `engine/` subdirectory of the `online` repo, so there is no separate `core` clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
+
+{{% common-build-commands section="clone-online" %}}
+
+### Move into core
+
+Core lives under `engine/` inside the monorepo - that is where you do the core build:
 
 {{% common-build-commands section="clone-lo" lobranch="main" %}}
 
-This is the same core repository as you may already have for building Collabora
-Online. If you already have it cloned, you may [use git worktrees to speed up
-this step](https://git-scm.com/docs/git-worktree).
+If you already have the monorepo cloned for another job, you may [use git worktrees to speed up this step](https://git-scm.com/docs/git-worktree).
 
 ### Configure Collabora Office core
 
@@ -135,10 +138,11 @@ Let's set some variables based on what we just built...
     export ZSTD_DIR=/opt/android-zstd
     export LO_BUILDDIR=/opt/libreoffice
 
-...remember to change your ABI to the ABI you're building the app for, POCO\_DIR and ZSTD\_DIR to the output directories of the build scripts, and LO_BUILDDIR to the directory you cloned and built Collabora Office core in.
+...remember to change your ABI to the ABI you're building the app for, POCO\_DIR and ZSTD\_DIR to the output directories of the build scripts, and LO_BUILDDIR to the `engine/` subdirectory of the monorepo where you built Collabora Office core.
 
-Now we can use that to configure our Collabora Online build
+Now step back to the top of the monorepo (one level up from `engine/`) and configure the Collabora Online build
 
+    cd ..
     ./autogen.sh
     ./configure --enable-androidapp \
                 --with-lo-builddir=${LO_BUILDDIR} \
