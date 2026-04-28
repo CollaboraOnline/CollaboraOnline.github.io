@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collabora Online Design System</title>
+<style>
+/* ===== Project Design Tokens (auto-generated — do not edit below) ===== */
+:root {
+	/*LibreOffice Colors: https://wiki.documentfoundation.org/Marketing/Branding#Colors
+	 * this is the color prefab for light mode
+	----------------------------------[to do]*/
+	--blue1-txt-primary-color: 3, 105, 163;
+	--green0-txt-primary-color: 16, 104, 2; /*green1 lacks contrast against white*/
+	--orange1-txt-primary-color: 163, 62, 3;
+	--yellow0-txt-primary-color: 135, 105, 0; /*yellow1 lacks contrast against white*/
+
+	--color-main-text: #333333;
+	--color-text-dark: #333333;  /* select */
+	--color-text-darker: #000;  /* hover */
+	--color-text-lighter: #696969; /* secondard text, disabled */
+	--color-text-calc-header: #e8e8e8;
+	--color-status-badge: #616161;
+	--color-slideshow: #A8A8A8;
+	--color-date-text: #555555;
+	--color-annotation-line: #000000;
+
+	--color-main-background: #F8F9FA;
+	--color-background-dark: #e8e8e8;  /* select */
+	--color-background-darker: #c0bfbc;  /* todo: apply to pressed (active), li:hover(top menu on classic mode)*/
+	--color-background-slideshow: #1a1a1a;
+	--color-background-lighter: #fff; /* hover, toolbar, dialog, disabled */
+	--color-overlay: #1c5fa814;
+	--color-background-tabs-group: #f1f1f1;
+	--color-stylesview-background: var(--color-background-lighter);
+	--brightness-stylesview: 1;
+
+	--color-canvas: #f0f0f0;
+
+	--color-primary: #0b87e7; /* border-color */
+	--color-primary-text: #fff; /* text color when primary-lighter is background */
+	--color-primary-dark: #0063b1;
+	--color-primary-darker: #004b86;
+	--color-primary-lighter: #83beec; /* background-color */
+
+	--color-border: #b6b6b6;
+	--color-border-dark: #949494; /* select */
+	--color-border-darker: #c0bfbc;  /* hover */
+	--color-border-dark-63: #a1a1a1;
+	--color-border-lighter: #f1f1f1; /* disabled */
+
+	--color-btn-border: #b6b6b6;
+	--color-btn-border-dis: #c0bfbc;
+
+	--color-stylesview-border: var(--color-toolbar-border);
+	--color-toolbar-border: #e1dfdd;
+
+	--color-error: #e9322d;
+	--color-warning: #eca700;
+	--color-success: #46ba61;
+
+	--color-presenter-console-btn-hover: #404040;
+
+	--color-box-shadow-light: rgba(77, 77, 77, 0.1);
+	--color-box-shadow: rgba(77, 77, 77, 0.5);
+	--color-box-shadow-dark: rgba(77, 77, 77, 0.85);
+	--color-hyperlink: #000080;
+
+	--color-calc-grid: #c0c0c0;
+	--color-calc-header: #f0f0f0;
+	--color-calc-header-selected: #e1e1e1;
+	--color-calc-header-hover: #fff;
+
+	--color-calc-header-sheetview: #0a0a0a;
+	--color-calc-header-sheetview-selected: #646464;
+	--color-calc-header-sheetview-hover: #646464;
+
+	--color-text-calc-header-selected: var(--color-text-darker);
+	--color-text-calc-header-sheetview-selected: #fff;
+	--color-border-calc-header: #c0c0c0;
+	--color-border-calc-header-sheetview: #333;
+
+	--color-calc-comment: #BE5083;
+	--column-row-highlight: #CCFFFF;
+
+	--color-grid-helper-line-solid: #e6e6e6;
+	--color-grid-helper-line-dashed: #191919;
+	--color-smart-guides-helper-line: #f36d4f;
+	--color-insert-marker-background: #DDDD;
+	--color-insert-marker-background-dark: #F5F5F5;
+
+	--color-treeview-highlight: #FFEE80;
+	--color-treeview-highlight-text: #222;
+	--color-quickfind-border: #e1dfdd;
+	--scrollbar-color: #c0bfbc transparent;
+	--color-background-hover: #F5F5F5;
+
+	--color-backstage-background : #f5f5f5;
+	--color-backstage-background-dark : #f0f0f0;
+}
+
+[data-bg-theme='light'] {
+	--color-cursor-blink-background: #000;
+	--color-background-document: #FFFFFF;
+}
+
+[data-doctype='text'] {--doc-type: 3, 105, 163;}
+[data-doctype='spreadsheet'] {--doc-type: 16, 104, 2;}
+[data-doctype='presentation'] {--doc-type: 163, 62, 3;}
+[data-doctype='drawing'] {--doc-type: 135, 105, 0;}
+
+:root {
+	/*All used fonts (except w2ui)
+	----------------------------------*/
+	--cool-font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+	/* Shared color for cell and selection border */
+	--cell-cursor-selection-border-color: var(--color-primary);
+
+	--btn-size: 28px;
+	--btn-padding: 2px;
+	--btn-img-size: calc(var(--btn-size) - var(--btn-padding) * 2);
+	--btn-color-colorpicker-size: 4px;
+	--btn-img-colorpicker-size: calc(var(--btn-size) - var(--btn-padding) * 2 - var(--btn-color-colorpicker-size));
+
+	--btn-size-m: 22px;
+	--btn-img-size-m: calc(var(--btn-size-m) - var(--btn-padding) * 2);
+
+	--btn-size-s: 20px;
+	--btn-img-size-s: calc(var(--btn-size-s) - var(--btn-padding) * 2);
+
+	--border-radius-s: 2px;
+	--border-radius: 4px; /* buttons, widgets */
+	--border-radius-large: 10px; /* dialog */
+
+	--tooltip-font-size: 0.875rem;
+	--default-font-size: 0.75rem;
+	--overflow-group-font-size: 8.5pt; /* do not scale labels of groups */
+	--medium-font-size: 0.875rem;
+	--header-font-size: 1rem;
+	/* tab min font-size */
+	--tb-min-fs: 0.6875rem;
+	/* tab min font-size without units*/
+	--tb-min-fs-u: 11;
+	/* tab max font-size */
+	--tb-max-fs: 1rem;
+	/* tab max font-size without units*/
+	--tb-max-fs-u: 16;
+	/* tab font-size preferred value or scaler */
+	--tb-fs-s: 1vw;
+
+	--default-height: 24px;
+	--default-width: 24px;
+	--header-height: 34px;
+	--sidebar-header-height: 34px;
+
+	/* Annotations */
+	--annotation-input-size: 100px;
+	--annotation-max-size: 1000;
+	--annotation-min-size: 100;
+
+	/* Ruler */
+	--ruler-height: 20px;
+
+	/* Notebookbar */
+	--notebookbar-element-height: 64px;
+
+	/* Scrollbars */
+	--scrollbar-width: thin;
+}
+
+/* ===== Branding Token Overrides (from dist/branding.css) ===== */
+:root {
+  --color-calc-header-selected: #D2D2D2 !important;
+  --color-calc-header-hover: #9FD5B7 !important;
+  --color-text-calc-header-selected: #106802 !important;
+  --color-doc-name-input-bg-hover: rgba(0, 0, 0, 0.2) !important;
+}
+
+[data-theme=dark] {
+  --color-calc-header-selected: #646464 !important;
+  --color-calc-header-hover: #217346 !important;
+  --color-text-calc-header-selected: #fff !important;
+  --color-doc-name-input-bg-hover: rgb(0, 0, 0) !important;
+}
+
+:root {
+  --column-row-highlight: #9FD5B7 !important;
+}
+
+[data-theme=dark] {
+  --column-row-highlight: #9FD5B7 !important;
+}
+
+:root {
+  --co-color-main-text: #212121 ;
+  --co-color-background-hover: #f5f5f5 ;
+  --co-color-background-dark: #ededed ;
+  --co-body-bg: #ffffff ;
+  --co-text-accent: #38257a ;
+  --co-primary-element: #4c566a ;
+  --co-primary-elment-rgb: 76, 86, 106 ;
+  --co-primary-element-light: #eaecf0 ;
+  --co-primary-text: #ffffff ;
+  --co-border-radius: 3px ;
+  --co-color-border-dark: #b0b4bd ;
+  --co-color-text-lighter: #636363 ;
+  --co-color-warning: #eca700 ;
+  --co-color-main-background-translucent: transparent ;
+  --co-color-background-light: #f1f1f1 ;
+  --co-color-text-nb-tab: #fff ;
+  --co-color-bg-nb-tab: rgba(0, 0, 0, 0.13) ;
+  --co-settings-btn-primary: #00679e ;
+  --co-settings-btn-primary-text: #ffffff ;
+  --co-settings-btn-light: #e5eff5 ;
+  --co-settings-btn-light-text: #00293f ;
+  --co-settings-border: #ededed ;
+  --co-settings-border-contrast: #dbdbdb ;
+  --co-settings-text: #222222 ;
+  --co-settings-text-maxcontrast: #6b6b6b ;
+  --co-settings-background: #ffffff ;
+  --co-settings-background-hover: #f5f5f5 ;
+}
+
+[data-theme=dark] {
+  --co-color-main-text: #ededed ;
+  --co-color-background-hover: #262626 ;
+  --co-color-background-dark: #1E1E1E ;
+  --co-body-bg: #262626 ;
+  --co-text-accent: #83beec ;
+  --co-primary-element: #0b87e7 ;
+  --co-primary-element-light: #83beec ;
+  --co-primary-text: #000 ;
+  --co-color-border-dark: #1E1E1E ;
+  --co-color-text-lighter: #fff ;
+  --co-color-warning: #eca700 ;
+  --co-color-main-background-translucent: transparent ;
+  --co-color-background-light: #363636 ;
+  --co-color-bg-nb-tab: rgba(255, 255, 255, 0.05) ;
+  --co-settings-btn-primary: #0091f2 ;
+  --co-settings-btn-primary-text: #000000 ;
+  --co-settings-btn-light: #14232c ;
+  --co-settings-btn-light-text: #99d3f9 ;
+  --co-settings-border: #292929 ;
+  --co-settings-border-contrast: #3b3b3b ;
+  --co-settings-text: #ebebeb ;
+  --co-settings-text-maxcontrast: #999999 ;
+  --co-settings-background: #171717 ;
+  --co-settings-background-hover: #212121 ;
+}
+
+:root {
+  --settings-btn-primary: var(--co-settings-btn-primary) !important;
+  --settings-btn-primary-text: var(--co-settings-btn-primary-text) !important;
+  --settings-btn-light: var(--co-settings-btn-light) !important;
+  --settings-btn-light-text: var(--co-settings-btn-light-text) !important;
+  --settings-border: var(--co-settings-border) !important;
+  --settings-border-contrast: var(--co-settings-border-contrast) !important;
+  --settings-text: var(--co-settings-text) !important;
+  --settings-text-maxcontrast: var(--co-settings-text-maxcontrast) !important;
+  --settings-background: var(--co-settings-background) !important;
+  --settings-background-hover: var(--co-settings-background-hover) !important;
+}
+
+/* ===== End Project Design Tokens ===== */
+
+/* ===== Page Layout ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+	font-family: var(--cool-font);
+	color: var(--color-main-text);
+	background: var(--color-main-background);
+	display: flex;
+	height: 100vh;
+	overflow: hidden;
+}
+
+/* ===== Sidebar ===== */
+.ds-sidebar {
+	width: 260px;
+	min-width: 260px;
+	height: 100vh;
+	overflow-y: auto;
+	background: var(--color-background-lighter);
+	border-right: 1px solid var(--color-toolbar-border);
+	padding: 24px 0;
+	scrollbar-width: thin;
+	position: sticky;
+	top: 0;
+}
+
+.ds-sidebar-logo {
+	padding: 0 20px 20px;
+	border-bottom: 1px solid var(--color-toolbar-border);
+	margin-bottom: 12px;
+}
+
+.ds-sidebar-logo h2 {
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--color-text-darker);
+	line-height: 1.3;
+}
+
+.ds-sidebar-logo p {
+	font-size: 11px;
+	color: var(--color-text-lighter);
+	margin-top: 4px;
+}
+
+.ds-nav-section {
+	padding: 8px 20px 4px;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: var(--color-text-lighter);
+}
+
+.ds-nav-link {
+	display: block;
+	padding: 6px 20px 6px 28px;
+	font-size: 13px;
+	color: var(--color-main-text);
+	text-decoration: none;
+	border-left: 3px solid transparent;
+	transition: all 0.15s;
+}
+
+.ds-nav-link:hover {
+	background: var(--color-background-hover);
+	color: var(--color-text-darker);
+}
+
+.ds-nav-link.active {
+	border-left-color: rgb(var(--doc-type));
+	background: rgba(var(--doc-type), 0.06);
+	color: var(--color-text-darker);
+	font-weight: 600;
+}
+
+.ds-nav-link.sub {
+	padding-left: 44px;
+	font-size: 12px;
+}
+
+/* ===== Main Content ===== */
+.ds-main {
+	flex: 1;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+	padding: 40px 48px 80px;
+	max-width: 960px;
+}
+
+.ds-main h1 {
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--color-text-darker);
+	margin-bottom: 8px;
+}
+
+.ds-main > p.ds-intro {
+	font-size: 15px;
+	color: var(--color-text-lighter);
+	margin-bottom: 40px;
+	line-height: 1.5;
+}
+
+h2.ds-section-title {
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--color-text-darker);
+	margin: 48px 0 8px;
+	padding-top: 24px;
+	border-top: 1px solid var(--color-toolbar-border);
+}
+
+h2.ds-section-title:first-of-type {
+	margin-top: 0;
+	border-top: none;
+	padding-top: 0;
+}
+
+h3.ds-component-title {
+	font-size: 17px;
+	font-weight: 600;
+	color: var(--color-text-darker);
+	margin: 32px 0 6px;
+}
+
+p.ds-desc {
+	font-size: 13px;
+	color: var(--color-text-lighter);
+	line-height: 1.6;
+	margin-bottom: 16px;
+	max-width: 640px;
+}
+
+/* ===== Spec Table ===== */
+.ds-spec-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.ds-spec-table th {
+	text-align: left;
+	padding: 6px 12px;
+	background: var(--color-background-dark);
+	color: var(--color-text-darker);
+	font-weight: 600;
+	border: 1px solid var(--color-border-dark);
+}
+
+.ds-spec-table td {
+	padding: 5px 12px;
+	border: 1px solid var(--color-border-dark);
+	vertical-align: top;
+}
+
+.ds-spec-table td:first-child { font-weight: 500; white-space: nowrap; }
+
+.ds-spec-table code {
+	font-family: 'Consolas', 'Menlo', monospace;
+	font-size: 11px;
+	background: var(--color-background-dark);
+	padding: 1px 5px;
+	border-radius: 3px;
+}
+
+/* ===== Interactive Demo Box ===== */
+.ds-demo {
+	border: 1px solid var(--color-toolbar-border);
+	border-radius: var(--border-radius-large);
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+.ds-demo-header {
+	background: var(--color-background-dark);
+	padding: 8px 16px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: var(--color-text-lighter);
+	border-bottom: 1px solid var(--color-toolbar-border);
+}
+
+.ds-demo-canvas {
+	padding: 32px;
+	background: var(--color-background-lighter);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	align-items: center;
+	justify-content: center;
+	min-height: 80px;
+}
+
+.ds-demo-canvas.col {
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.ds-demo-canvas.start {
+	justify-content: flex-start;
+}
+
+.ds-demo-states {
+	padding: 16px;
+	background: var(--color-main-background);
+	border-top: 1px solid var(--color-toolbar-border);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	align-items: flex-end;
+}
+
+.ds-state-group {
+	text-align: center;
+}
+
+.ds-state-group .ds-state-label {
+	display: block;
+	font-size: 10px;
+	color: var(--color-text-lighter);
+	margin-top: 6px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+/* ===== Typography Preview ===== */
+.ds-type-sample {
+	margin-bottom: 20px;
+	padding: 16px;
+	background: var(--color-background-lighter);
+	border: 1px solid var(--color-toolbar-border);
+	border-radius: var(--border-radius);
+}
+
+.ds-type-sample .sample-text {
+	margin-bottom: 6px;
+}
+
+.ds-type-sample .sample-meta {
+	font-size: 11px;
+	color: var(--color-text-lighter);
+	font-family: 'Consolas', monospace;
+}
+
+/* ===== Color Swatches ===== */
+.ds-color-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.ds-color-card {
+	border: 1px solid var(--color-toolbar-border);
+	border-radius: var(--border-radius);
+	overflow: hidden;
+}
+
+.ds-color-swatch {
+	height: 56px;
+}
+
+.ds-color-info {
+	padding: 8px 10px;
+	background: var(--color-background-lighter);
+}
+
+.ds-color-info .name {
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--color-text-darker);
+}
+
+.ds-color-info .value {
+	font-size: 11px;
+	color: var(--color-text-lighter);
+	font-family: 'Consolas', monospace;
+}
+
+/* doc-type color bands */
+.ds-doctype-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.ds-doctype-card {
+	border-radius: var(--border-radius);
+	padding: 16px;
+	text-align: center;
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+/* ===== COMPONENT STYLES (from project CSS) ===== */
+
+/* --- Primary Button --- */
+.demo .button-primary {
+	height: 32px;
+	line-height: 0em;
+	color: var(--color-primary-text);
+	min-width: 62px;
+	background-color: var(--color-primary);
+	border: 1px solid var(--color-primary-dark);
+	border-radius: var(--border-radius);
+	margin: 5px;
+	vertical-align: middle;
+	width: max-content;
+	font-family: var(--cool-font);
+	font-size: var(--default-font-size);
+	cursor: pointer;
+	padding: 0 16px;
+}
+
+.demo .button-primary:hover {
+	background-color: var(--color-primary-lighter);
+	color: var(--color-primary-dark);
+}
+
+.demo .button-primary:active {
+	background-color: var(--color-primary-darker);
+	color: var(--color-primary-text);
+}
+
+.demo .button-primary:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+.demo .button-primary:disabled {
+	color: var(--color-text-lighter);
+	background-color: var(--color-background-lighter);
+	border-color: var(--color-border-lighter);
+	cursor: not-allowed;
+}
+
+/* forced state previews */
+.demo .button-primary.force-hover {
+	background-color: var(--color-primary-lighter);
+	color: var(--color-primary-dark);
+}
+
+.demo .button-primary.force-active {
+	background-color: var(--color-primary-darker);
+	color: var(--color-primary-text);
+}
+
+.demo .button-primary.force-focus {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+/* --- Secondary Button --- */
+.demo .button-secondary {
+	box-sizing: border-box;
+	height: 32px;
+	line-height: normal;
+	color: var(--color-main-text);
+	font-size: var(--default-font-size);
+	font-family: var(--cool-font);
+	background-color: var(--color-background-dark);
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	margin: 5px;
+	vertical-align: middle;
+	width: max-content;
+	min-width: 62px;
+	cursor: pointer;
+	padding: 0 16px;
+}
+
+.demo .button-secondary:hover {
+	cursor: pointer;
+	color: var(--color-text-darker);
+	background-color: var(--color-background-lighter);
+	border: 1px solid var(--color-border-darker);
+}
+
+.demo .button-secondary:active {
+	background-color: var(--color-background-darker);
+}
+
+.demo .button-secondary:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+.demo .button-secondary:disabled {
+	color: var(--color-text-lighter);
+	background-color: var(--color-background-lighter);
+	border-color: var(--color-border-lighter);
+	cursor: not-allowed;
+}
+
+.demo .button-secondary.force-hover {
+	color: var(--color-text-darker);
+	background-color: var(--color-background-lighter);
+	border: 1px solid var(--color-border-darker);
+}
+
+.demo .button-secondary.force-active {
+	background-color: var(--color-background-darker);
+}
+
+.demo .button-secondary.force-focus {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+/* --- Icon Toolbar Button --- */
+.demo .unotoolbutton {
+	background-color: transparent;
+	border: 1px solid transparent;
+	color: var(--color-main-text);
+	border-radius: var(--border-radius);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding: 0;
+	margin: 2px;
+}
+
+.demo .unotoolbutton .unobutton {
+	box-sizing: border-box;
+	padding: var(--btn-padding);
+	width: var(--btn-size);
+	height: var(--btn-size);
+	background-color: transparent;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.demo .unotoolbutton .unobutton img {
+	width: var(--btn-img-size);
+	height: var(--btn-img-size);
+}
+
+.demo .unotoolbutton:hover {
+	border: 1px solid var(--color-btn-border);
+	color: var(--color-text-darker);
+	background-color: var(--color-background-tabs-group);
+}
+
+.demo .unotoolbutton.selected {
+	background-color: rgba(var(--doc-type), 0.1);
+	border: 1px solid rgb(var(--doc-type));
+	color: var(--color-text-dark);
+}
+
+.demo .unotoolbutton.selected:hover {
+	background-color: var(--color-background-tabs-group);
+}
+
+.demo .unotoolbutton.disabled {
+	opacity: 0.65;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+.demo .unotoolbutton.disabled img {
+	filter: grayscale(100%) brightness(100%);
+}
+
+.demo .unotoolbutton.force-hover {
+	border: 1px solid var(--color-btn-border);
+	background-color: var(--color-background-tabs-group);
+}
+
+/* --- Menu Button --- */
+.demo .menubutton {
+	box-sizing: border-box;
+	line-height: normal;
+	font-size: calc(var(--default-font-size) * 1.2);
+	font-family: var(--jquery-ui-font);
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	padding: 8px 10px;
+	margin: 2px 0;
+	background-color: var(--color-background-dark);
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	color: var(--color-main-text);
+}
+
+.demo .menubutton:hover {
+	background-color: var(--color-background-lighter);
+	border-color: var(--color-border-darker);
+	color: var(--color-text-darker);
+}
+
+.demo .menubutton:disabled {
+	background-color: transparent;
+	color: var(--color-text-lighter);
+	cursor: not-allowed;
+}
+
+.demo .menubutton .arrow {
+	width: 0; height: 0;
+	border: 4px solid transparent;
+	border-top: 5px solid var(--color-main-text);
+	display: inline-block;
+}
+
+.demo .menubutton:disabled .arrow {
+	border-top-color: var(--color-text-lighter);
+}
+
+/* --- Text Input --- */
+.demo .ui-edit {
+	color: var(--color-text-dark);
+	background-color: var(--color-background-dark);
+	line-height: 28px;
+	height: 32px;
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	padding: 0 4px;
+	font-family: var(--jquery-ui-font);
+	font-size: var(--default-font-size);
+	width: 200px;
+}
+
+.demo .ui-edit:hover {
+	border-color: var(--color-border-darker);
+	background-color: var(--color-background-lighter);
+}
+
+.demo .ui-edit:focus {
+	outline: none;
+	border-color: var(--color-primary);
+	background-color: var(--color-background-lighter);
+}
+
+.demo .ui-edit:disabled {
+	color: var(--color-text-lighter);
+	background: var(--color-background-lighter);
+	border-color: var(--color-border-lighter);
+}
+
+/* --- Spinfield --- */
+.demo .spinfieldcontainer {
+	display: inline-flex;
+	align-items: center;
+	min-width: 70px;
+}
+
+.demo .spinfieldcontainer .spinfield {
+	padding: 4px 0 4px 4px;
+	height: 28px;
+	box-sizing: border-box;
+	min-width: 70px;
+	width: 90px;
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	background: var(--color-background-dark);
+	color: var(--color-text-dark);
+	font-family: var(--jquery-ui-font);
+	font-size: var(--default-font-size);
+}
+
+.demo .spinfieldcontainer .spinfield:hover {
+	border-color: var(--color-border-darker);
+	background-color: var(--color-background-lighter);
+}
+
+.demo .spinfieldcontainer .spinfield:focus {
+	outline: none;
+	border-color: var(--color-primary);
+	background-color: var(--color-background-lighter);
+}
+
+.demo .spinfieldunit {
+	font-size: var(--default-font-size);
+	color: var(--color-text-dark);
+	margin-left: 4px;
+}
+
+/* --- Checkbox --- */
+.demo .checkbutton {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	white-space: nowrap;
+	margin: 4px 0;
+}
+
+.demo .checkbutton input[type='checkbox'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--color-border);
+	border-radius: 3px;
+	background: var(--color-background-lighter);
+	cursor: pointer;
+	position: relative;
+	margin: 1px 8px 1px 0;
+	flex-shrink: 0;
+}
+
+.demo .checkbutton input[type='checkbox']:checked {
+	background: var(--color-primary);
+	border-color: var(--color-primary);
+}
+
+.demo .checkbutton input[type='checkbox']:checked::after {
+	content: '';
+	position: absolute;
+	left: 5px; top: 1px;
+	width: 6px; height: 11px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+.demo .checkbutton input[type='checkbox']:hover {
+	border-color: var(--color-primary);
+}
+
+.demo .checkbutton input[type='checkbox']:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+.demo .checkbutton input[type='checkbox']:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.demo .checkbutton label {
+	font-size: var(--default-font-size);
+	color: var(--color-main-text);
+	cursor: pointer;
+	line-height: 28px;
+}
+
+/* --- Radio Button --- */
+.demo .radiobutton {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	margin: 4px 0;
+}
+
+.demo .radiobutton input[type='radio'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 18px;
+	height: 18px;
+	border: 2px solid var(--color-border);
+	border-radius: 50%;
+	background: var(--color-background-lighter);
+	cursor: pointer;
+	margin: 1px 8px 1px 0;
+	position: relative;
+	flex-shrink: 0;
+}
+
+.demo .radiobutton input[type='radio']:checked {
+	border-color: var(--color-primary);
+}
+
+.demo .radiobutton input[type='radio']:checked::after {
+	content: '';
+	position: absolute;
+	left: 3px; top: 3px;
+	width: 8px; height: 8px;
+	border-radius: 50%;
+	background: var(--color-primary);
+}
+
+.demo .radiobutton input[type='radio']:hover {
+	border-color: var(--color-primary);
+}
+
+.demo .radiobutton input[type='radio']:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 2px;
+}
+
+.demo .radiobutton label {
+	font-size: var(--default-font-size);
+	color: var(--color-main-text);
+	cursor: pointer;
+}
+
+/* --- Select / Listbox --- */
+.demo .ui-listbox-container {
+	display: inline-flex;
+	align-items: center;
+	height: 32px;
+	min-width: 70px;
+	position: relative;
+}
+
+.demo .ui-listbox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	height: 100%;
+	padding: 0 24px 0 8px;
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	background-color: var(--color-background-dark);
+	color: var(--color-text-dark);
+	font-size: var(--default-font-size);
+	font-family: var(--jquery-ui-font);
+	min-width: 120px;
+	cursor: pointer;
+}
+
+.demo .ui-listbox:hover {
+	background-color: var(--color-background-lighter);
+	color: var(--color-text-darker);
+}
+
+.demo .ui-listbox:focus {
+	outline: none;
+	border-color: var(--color-primary);
+}
+
+.demo .ui-listbox-arrow {
+	width: 0; height: 0;
+	border: 4px solid transparent;
+	border-top: 5px solid var(--color-main-text);
+	position: absolute;
+	right: 8px;
+	top: calc(50% - 2px);
+	pointer-events: none;
+}
+
+/* --- Combobox --- */
+.demo .ui-combobox {
+	display: inline-flex;
+	height: 32px;
+	min-width: 150px;
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	overflow: hidden;
+	background: var(--color-background-dark);
+}
+
+.demo .ui-combobox-content {
+	flex: 1;
+	border: none;
+	padding: 0 8px;
+	font-size: var(--default-font-size);
+	font-family: var(--jquery-ui-font);
+	color: var(--color-text-dark);
+	background-color: var(--color-background-lighter);
+	border-radius: var(--border-radius) 0 0 var(--border-radius);
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.demo .ui-combobox-content:focus {
+	outline: none;
+	border-color: var(--color-primary);
+}
+
+.demo .ui-combobox-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 28px;
+	border: none;
+	border-left: 1px solid var(--color-border);
+	background: transparent;
+	cursor: pointer;
+}
+
+.demo .ui-combobox-button:hover {
+	background-color: var(--color-background-darker);
+}
+
+/* --- Tabs --- */
+.demo .ui-tabs {
+	display: flex;
+	gap: 0;
+	background: var(--color-main-background);
+	padding: 4px 4px 0;
+}
+
+.demo .ui-tab {
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 1em;
+	border: 1px solid transparent;
+	border-radius: var(--border-radius);
+	background-color: var(--color-main-background);
+	color: var(--color-text-dark);
+	font-size: var(--default-font-size);
+	font-family: var(--cool-font);
+	cursor: pointer;
+	margin-right: 12px;
+}
+
+.demo .ui-tab:hover {
+	background-color: var(--color-background-darker);
+	color: var(--color-text-darker);
+}
+
+.demo .ui-tab.selected {
+	background-color: var(--color-background-lighter);
+	color: var(--color-text-darker);
+	box-shadow: 0 0 2px 1px var(--color-box-shadow);
+}
+
+/* Notebookbar tabs variant */
+.demo .ui-tabs.notebookbar {
+	background: var(--color-main-background);
+	padding: 0;
+	height: 34px;
+	align-items: center;
+}
+
+.demo .ui-tab.notebookbar {
+	border-radius: 0;
+	background: transparent;
+	margin-right: 0;
+	padding: 0 clamp(4px, 1vw, 1em);
+	height: 100%;
+	box-shadow: none;
+	font-size: clamp(11px, 1vw, 16px);
+}
+
+.demo .ui-tab.notebookbar:hover {
+	background: transparent;
+	box-shadow: inset 0 -2px var(--color-border);
+}
+
+.demo .ui-tab.notebookbar.selected {
+	background: transparent;
+	box-shadow: inset 0 -2px rgb(var(--doc-type));
+	color: var(--color-text-darker);
+	font-weight: normal;
+}
+
+/* --- TreeView --- */
+.demo .ui-treeview {
+	display: grid;
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	overflow-y: auto;
+	max-height: 180px;
+	min-width: 250px;
+	padding: 1px;
+	color: var(--color-main-text);
+	font-size: var(--default-font-size);
+	line-height: var(--default-height);
+	scrollbar-width: thin;
+	background: var(--color-background-lighter);
+}
+
+.demo .ui-treeview-entry {
+	display: flex;
+	align-items: center;
+	padding: 0 8px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.demo .ui-treeview-entry:hover {
+	background-color: var(--color-background-darker);
+	color: var(--color-text-darker);
+	border-color: var(--color-background-darker);
+}
+
+.demo .ui-treeview-entry.selected {
+	background-color: var(--color-primary);
+	color: #fff;
+	border-color: var(--color-primary);
+}
+
+.demo .ui-treeview-icon {
+	width: var(--btn-img-size-s);
+	height: var(--btn-img-size-s);
+	margin-right: 8px;
+	opacity: 0.6;
+}
+
+/* --- Tooltip --- */
+.demo .cooltip-text {
+	color: var(--color-main-text);
+	background-color: var(--color-background-lighter);
+	box-shadow: 0px 0px 4px 0 var(--color-box-shadow);
+	border-radius: 6px;
+	padding: 7px 9px;
+	font-family: var(--cool-font);
+	font-size: var(--tooltip-font-size);
+	white-space: nowrap;
+	display: inline-block;
+}
+
+/* --- Progress Bar --- */
+.demo .ui-progressbar {
+	height: 5px;
+	width: 100%;
+	background-color: rgba(var(--doc-type), 0.2);
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.demo .ui-progressbar-fill {
+	height: 100%;
+	background-color: rgb(var(--doc-type));
+	border-radius: 3px;
+	transition: width 0.3s ease;
+}
+
+/* --- Badge --- */
+.demo .ui-badge {
+	padding: 5px;
+	background-color: var(--color-background-darker);
+	color: var(--color-text-darker);
+	border: none;
+	border-radius: var(--border-radius);
+	font-family: var(--cool-font);
+	font-size: var(--default-font-size);
+	font-weight: normal;
+	display: inline-block;
+}
+
+/* --- Separator --- */
+.demo .ui-separator-v {
+	width: 1px;
+	height: 14px;
+	background-color: var(--color-background-darker);
+	margin: 0 3px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.demo .ui-separator-h {
+	height: 1px;
+	background-color: var(--color-border-lighter);
+	width: 100%;
+}
+
+/* --- Snackbar --- */
+.demo .snackbar {
+	display: inline-flex;
+	align-items: center;
+	gap: 16px;
+	background: #323232;
+	color: #fff;
+	padding: 12px 16px;
+	border-radius: var(--border-radius);
+	font-size: var(--default-font-size);
+	font-family: var(--cool-font);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.demo .snackbar-action {
+	color: var(--color-primary-lighter);
+	background: none;
+	border: none;
+	font-size: var(--default-font-size);
+	font-weight: 600;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+/* --- Color Picker --- */
+.demo .ui-color-picker {
+	display: grid;
+	grid-template-columns: repeat(12, 16px);
+	gap: 4px;
+	padding: 4px;
+}
+
+.demo .ui-color-picker-entry {
+	width: 16px;
+	height: 16px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	border-radius: 1px;
+}
+
+.demo .ui-color-picker-entry:hover,
+.demo .ui-color-picker-entry:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 1px;
+}
+
+/* --- Context Menu --- */
+.demo .context-menu-list {
+	background: var(--color-background-lighter);
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	box-shadow: 0 0 3px var(--color-box-shadow);
+	padding: 4px 0;
+	min-width: 180px;
+	list-style: none;
+}
+
+.demo .context-menu-item {
+	color: var(--color-main-text);
+	padding: 5px 22px;
+	font-size: var(--medium-font-size);
+	font-family: var(--cool-font);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.demo .context-menu-item:hover {
+	background: var(--color-background-darker);
+	color: var(--color-text-darker);
+}
+
+.demo .context-menu-item.disabled {
+	color: var(--color-text-lighter);
+	cursor: not-allowed;
+}
+
+.demo .context-menu-separator {
+	height: 1px;
+	background: var(--color-border-lighter);
+	margin: 4px 0;
+}
+
+/* SVG placeholder icons */
+.ico {
+	display: inline-block;
+	width: 24px; height: 24px;
+	background: var(--color-border);
+	border-radius: 3px;
+	position: relative;
+}
+
+.ico::after {
+	content: '';
+	position: absolute;
+	inset: 5px;
+	background: var(--color-background-lighter);
+	border-radius: 2px;
+}
+
+.ico-s {
+	width: 16px; height: 16px;
+}
+
+.ico-s::after { inset: 3px; }
+</style>
+</head>
+<body>
+
+<!-- ===== SIDEBAR ===== -->
+<nav class="ds-sidebar">
+	<div class="ds-sidebar-logo">
+		<h2>Collabora Online<br>Design System</h2>
+		<p>Extracted from CSS codebase</p>
+	</div>
+
+	<div class="ds-nav-section">Foundations</div>
+	<a class="ds-nav-link" href="#typography">Typography</a>
+	<a class="ds-nav-link" href="#color">Color Palette</a>
+
+	<div class="ds-nav-section" style="margin-top:12px">Components</div>
+	<a class="ds-nav-link" href="#btn-primary">Primary Button</a>
+	<a class="ds-nav-link" href="#btn-secondary">Secondary Button</a>
+	<a class="ds-nav-link" href="#btn-icon">Icon Toolbar Button</a>
+	<a class="ds-nav-link" href="#btn-menu">Menu Button</a>
+	<a class="ds-nav-link" href="#input-text">Text Input</a>
+	<a class="ds-nav-link" href="#input-spin">Spinfield</a>
+	<a class="ds-nav-link" href="#input-checkbox">Checkbox</a>
+	<a class="ds-nav-link" href="#input-radio">Radio Button</a>
+	<a class="ds-nav-link" href="#input-select">Select / Listbox</a>
+	<a class="ds-nav-link" href="#input-combobox">Combobox</a>
+	<a class="ds-nav-link" href="#tabs">Tabs</a>
+	<a class="ds-nav-link" href="#treeview">TreeView</a>
+	<a class="ds-nav-link" href="#context-menu">Context Menu</a>
+	<a class="ds-nav-link" href="#tooltip">Tooltip</a>
+	<a class="ds-nav-link" href="#progress">Progress Bar</a>
+	<a class="ds-nav-link" href="#color-picker">Color Picker</a>
+	<a class="ds-nav-link" href="#badge">Badge</a>
+	<a class="ds-nav-link" href="#separator">Separator</a>
+	<a class="ds-nav-link" href="#snackbar">Snackbar</a>
+</nav>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="ds-main" id="ds-main">
+
+<h1>Collabora Online Design System</h1>
+<p class="ds-intro">A living reference of the UI components, tokens, and patterns used in Collabora Online, extracted directly from the CSS source files under <code>browser/css/</code>.</p>
+
+<!-- ========== TYPOGRAPHY ========== -->
+<h2 class="ds-section-title" id="typography">Typography</h2>
+<p class="ds-desc">The UI uses a multi-tier font system. The primary font for all chrome is <code>--cool-font</code>. Dialogs and form controls use <code>--jquery-ui-font</code>.</p>
+
+<div class="ds-type-sample">
+	<div class="sample-text" style="font-family: var(--cool-font); font-size: 1rem; font-weight: 700;">Header Text (--header-font-size: 1rem / 16px)</div>
+	<div class="sample-meta">font-family: --cool-font &middot; 'Segoe UI', Tahoma, Arial, Helvetica, sans-serif</div>
+</div>
+
+<div class="ds-type-sample">
+	<div class="sample-text" style="font-family: var(--cool-font); font-size: 0.875rem;">Medium Text (--medium-font-size: 0.875rem / 14px)</div>
+	<div class="sample-meta">Used in context menus, tooltips</div>
+</div>
+
+<div class="ds-type-sample">
+	<div class="sample-text" style="font-family: var(--cool-font); font-size: 0.75rem;">Default Body Text (--default-font-size: 0.75rem / 12px)</div>
+	<div class="sample-meta">Labels, buttons, form controls, toolbar items</div>
+</div>
+
+<div class="ds-type-sample">
+	<div class="sample-text" style="font-family: var(--jquery-ui-font); font-size: 0.75rem;">Dialog & Form Text (--jquery-ui-font)</div>
+	<div class="sample-meta">font-family: Trebuchet MS, Tahoma, Verdana, Arial, sans-serif</div>
+</div>
+
+<div class="ds-type-sample">
+	<div class="sample-text" style="font-family: var(--cool-font); font-size: clamp(11px, 1vw, 16px);">Notebookbar Tab Text (fluid: clamp 11px&ndash;16px)</div>
+	<div class="sample-meta">Scales between 640px and 1000px viewport width via clamp(0.6875rem, 1vw, 1rem)</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Token</th><th>Value</th><th>Usage</th></tr>
+	<tr><td><code>--default-font-size</code></td><td>0.75rem (12px)</td><td>Body, labels, controls</td></tr>
+	<tr><td><code>--medium-font-size</code></td><td>0.875rem (14px)</td><td>Context menus, tooltips</td></tr>
+	<tr><td><code>--header-font-size</code></td><td>1rem (16px)</td><td>Section headers, doc title</td></tr>
+	<tr><td><code>--tooltip-font-size</code></td><td>0.875rem (14px)</td><td>Tooltip text</td></tr>
+	<tr><td><code>--overflow-group-font-size</code></td><td>8.5pt</td><td>Notebookbar group labels</td></tr>
+</table>
+
+
+<!-- ========== COLOR ========== -->
+<h2 class="ds-section-title" id="color">Color Palette</h2>
+<p class="ds-desc">All colors are defined as CSS custom properties in <code>color-palette.css</code> (light) and <code>color-palette-dark.css</code> (dark). The primary brand color is a vibrant blue used for focus rings, active states, and primary actions.</p>
+
+<h3 class="ds-component-title">Primary / Brand</h3>
+<div class="ds-color-grid">
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#0b87e7"></div><div class="ds-color-info"><div class="name">Primary</div><div class="value">#0b87e7</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#0063b1"></div><div class="ds-color-info"><div class="name">Primary Dark</div><div class="value">#0063b1</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#004b86"></div><div class="ds-color-info"><div class="name">Primary Darker</div><div class="value">#004b86</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#83beec"></div><div class="ds-color-info"><div class="name">Primary Lighter</div><div class="value">#83beec</div></div></div>
+</div>
+
+<h3 class="ds-component-title">Text</h3>
+<div class="ds-color-grid">
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#333333"></div><div class="ds-color-info"><div class="name">Main Text</div><div class="value">#333333</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#000000"></div><div class="ds-color-info"><div class="name">Text Darker (hover)</div><div class="value">#000000</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#696969"></div><div class="ds-color-info"><div class="name">Text Lighter (disabled)</div><div class="value">#696969</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#fff; border: 1px solid #ccc"></div><div class="ds-color-info"><div class="name">Primary Text (on blue)</div><div class="value">#ffffff</div></div></div>
+</div>
+
+<h3 class="ds-component-title">Backgrounds</h3>
+<div class="ds-color-grid">
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#F8F9FA; border-bottom: 1px solid #eee"></div><div class="ds-color-info"><div class="name">Main Background</div><div class="value">#F8F9FA</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#e8e8e8"></div><div class="ds-color-info"><div class="name">Background Dark</div><div class="value">#e8e8e8</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#c0bfbc"></div><div class="ds-color-info"><div class="name">Background Darker</div><div class="value">#c0bfbc</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#fff; border-bottom: 1px solid #eee"></div><div class="ds-color-info"><div class="name">Background Lighter</div><div class="value">#ffffff</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#f1f1f1"></div><div class="ds-color-info"><div class="name">Tabs Group</div><div class="value">#f1f1f1</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#F5F5F5; border-bottom: 1px solid #eee"></div><div class="ds-color-info"><div class="name">Hover</div><div class="value">#F5F5F5</div></div></div>
+</div>
+
+<h3 class="ds-component-title">Borders</h3>
+<div class="ds-color-grid">
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#b6b6b6"></div><div class="ds-color-info"><div class="name">Border</div><div class="value">#b6b6b6</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#cecece"></div><div class="ds-color-info"><div class="name">Border Dark</div><div class="value">#cecece</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#c0bfbc"></div><div class="ds-color-info"><div class="name">Border Darker</div><div class="value">#c0bfbc</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#f1f1f1; border-bottom: 1px solid #ddd"></div><div class="ds-color-info"><div class="name">Border Lighter</div><div class="value">#f1f1f1</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#e1dfdd"></div><div class="ds-color-info"><div class="name">Toolbar Border</div><div class="value">#e1dfdd</div></div></div>
+</div>
+
+<h3 class="ds-component-title">Semantic</h3>
+<div class="ds-color-grid">
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#e9322d"></div><div class="ds-color-info"><div class="name">Error</div><div class="value">#e9322d</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#eca700"></div><div class="ds-color-info"><div class="name">Warning</div><div class="value">#eca700</div></div></div>
+	<div class="ds-color-card"><div class="ds-color-swatch" style="background:#46ba61"></div><div class="ds-color-info"><div class="name">Success</div><div class="value">#46ba61</div></div></div>
+</div>
+
+<h3 class="ds-component-title">Document Type Accents</h3>
+<p class="ds-desc">Each document type has an RGB triplet used for selected tab underlines, active toolbar buttons, and progress bars via <code>--doc-type</code>.</p>
+<div class="ds-doctype-grid">
+	<div class="ds-doctype-card" style="background: rgb(3,105,163)">Writer</div>
+	<div class="ds-doctype-card" style="background: rgb(16,104,2)">Calc</div>
+	<div class="ds-doctype-card" style="background: rgb(163,62,3)">Impress</div>
+	<div class="ds-doctype-card" style="background: rgb(135,105,0)">Draw</div>
+</div>
+
+
+<!-- ========== COMPONENTS ========== -->
+<h2 class="ds-section-title" id="components">Components</h2>
+
+<!-- PRIMARY BUTTON -->
+<h3 class="ds-component-title" id="btn-primary">Primary Button</h3>
+<p class="ds-desc">The main call-to-action button, used for the default action in dialog boxes (e.g., "OK", "Apply"). Class: <code>.button-primary</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<button class="button-primary">Primary Action</button>
+		<button class="button-primary">OK</button>
+		<button class="button-primary" disabled>Disabled</button>
+	</div>
+	<div class="ds-demo-states">
+		<div class="ds-state-group"><button class="button-primary">Default</button><span class="ds-state-label">Default</span></div>
+		<div class="ds-state-group"><button class="button-primary force-hover">Hover</button><span class="ds-state-label">Hover</span></div>
+		<div class="ds-state-group"><button class="button-primary force-active">Active</button><span class="ds-state-label">Active</span></div>
+		<div class="ds-state-group"><button class="button-primary force-focus">Focus</button><span class="ds-state-label">Focus</span></div>
+		<div class="ds-state-group"><button class="button-primary" disabled>Disabled</button><span class="ds-state-label">Disabled</span></div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Height</td><td><code>32px</code></td></tr>
+	<tr><td>Min Width</td><td><code>62px</code></td></tr>
+	<tr><td>Padding</td><td><code>0 16px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>var(--border-radius)</code> = <code>4px</code></td></tr>
+	<tr><td>Border</td><td><code>1px solid #0063b1</code></td></tr>
+	<tr><td>Background</td><td><code>#0b87e7</code> (--color-primary)</td></tr>
+	<tr><td>Text Color</td><td><code>#fff</code></td></tr>
+	<tr><td>Font Size</td><td><code>0.75rem</code> (12px)</td></tr>
+	<tr><td>Margin</td><td><code>5px</code></td></tr>
+</table>
+
+
+<!-- SECONDARY BUTTON -->
+<h3 class="ds-component-title" id="btn-secondary">Secondary Button</h3>
+<p class="ds-desc">Used for cancel, close, and non-primary dialog actions. Also the default style for all generic <code>&lt;button&gt;</code> elements in dialogs. Class: <code>.button-secondary</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<button class="button-secondary">Cancel</button>
+		<button class="button-secondary">Close</button>
+		<button class="button-secondary">Help</button>
+		<button class="button-secondary" disabled>Disabled</button>
+	</div>
+	<div class="ds-demo-states">
+		<div class="ds-state-group"><button class="button-secondary">Default</button><span class="ds-state-label">Default</span></div>
+		<div class="ds-state-group"><button class="button-secondary force-hover">Hover</button><span class="ds-state-label">Hover</span></div>
+		<div class="ds-state-group"><button class="button-secondary force-active">Active</button><span class="ds-state-label">Active</span></div>
+		<div class="ds-state-group"><button class="button-secondary force-focus">Focus</button><span class="ds-state-label">Focus</span></div>
+		<div class="ds-state-group"><button class="button-secondary" disabled>Disabled</button><span class="ds-state-label">Disabled</span></div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Height</td><td><code>32px</code></td></tr>
+	<tr><td>Min Width</td><td><code>62px</code></td></tr>
+	<tr><td>Padding</td><td><code>0 16px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Border</td><td><code>1px solid #cecece</code> (--color-border-dark)</td></tr>
+	<tr><td>Background</td><td><code>#e8e8e8</code> (--color-background-dark)</td></tr>
+	<tr><td>Text Color</td><td><code>#333333</code></td></tr>
+	<tr><td>Margin</td><td><code>5px</code></td></tr>
+</table>
+
+
+<!-- ICON TOOLBAR BUTTON -->
+<h3 class="ds-component-title" id="btn-icon">Icon Toolbar Button</h3>
+<p class="ds-desc">Used in the toolbar and notebookbar for icon-only actions (Bold, Italic, Underline, etc.). The selected state is tinted with the document-type accent color. Class: <code>.unotoolbutton</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<div class="unotoolbutton"><button class="unobutton"><span class="ico"></span></button></div>
+		<div class="unotoolbutton"><button class="unobutton"><span class="ico"></span></button></div>
+		<div class="unotoolbutton selected"><button class="unobutton"><span class="ico"></span></button></div>
+		<div class="unotoolbutton disabled"><button class="unobutton"><span class="ico"></span></button></div>
+	</div>
+	<div class="ds-demo-states">
+		<div class="ds-state-group"><div class="unotoolbutton"><button class="unobutton"><span class="ico"></span></button></div><span class="ds-state-label">Default</span></div>
+		<div class="ds-state-group"><div class="unotoolbutton force-hover"><button class="unobutton"><span class="ico"></span></button></div><span class="ds-state-label">Hover</span></div>
+		<div class="ds-state-group"><div class="unotoolbutton selected"><button class="unobutton"><span class="ico"></span></button></div><span class="ds-state-label">Selected</span></div>
+		<div class="ds-state-group"><div class="unotoolbutton disabled"><button class="unobutton"><span class="ico"></span></button></div><span class="ds-state-label">Disabled</span></div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Size (button)</td><td><code>28px &times; 28px</code> (--btn-size)</td></tr>
+	<tr><td>Icon Size</td><td><code>24px &times; 24px</code> (--btn-img-size)</td></tr>
+	<tr><td>Padding</td><td><code>2px</code> (--btn-padding)</td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Border (default)</td><td><code>1px solid transparent</code></td></tr>
+	<tr><td>Border (hover)</td><td><code>1px solid #b6b6b6</code> (--color-btn-border)</td></tr>
+	<tr><td>Background (hover)</td><td><code>#f1f1f1</code> (--color-background-tabs-group)</td></tr>
+	<tr><td>Selected Background</td><td><code>rgba(var(--doc-type), 0.1)</code></td></tr>
+	<tr><td>Selected Border</td><td><code>1px solid rgb(var(--doc-type))</code></td></tr>
+	<tr><td>Disabled Opacity</td><td><code>0.65</code></td></tr>
+	<tr><td>Margin (in toolbar)</td><td><code>auto 2px</code></td></tr>
+</table>
+
+
+<!-- MENU BUTTON -->
+<h3 class="ds-component-title" id="btn-menu">Menu Button</h3>
+<p class="ds-desc">A button with a dropdown arrow, used for selection controls in dialogs and sidebars. Class: <code>.jsdialog.menubutton</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<button class="menubutton">Page Style <i class="arrow"></i></button>
+		<button class="menubutton">Default Paragraph Style <i class="arrow"></i></button>
+		<button class="menubutton" disabled>Disabled <i class="arrow"></i></button>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Padding</td><td><code>8px 10px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Border</td><td><code>1px solid #cecece</code> (--color-border-dark)</td></tr>
+	<tr><td>Background</td><td><code>#e8e8e8</code> (--color-background-dark)</td></tr>
+	<tr><td>Font Size</td><td><code>calc(0.75rem * 1.2)</code> (~14.4px)</td></tr>
+	<tr><td>Font Family</td><td><code>--jquery-ui-font</code></td></tr>
+	<tr><td>Arrow</td><td>CSS triangle: <code>4px border, 5px top</code></td></tr>
+</table>
+
+
+<!-- TEXT INPUT -->
+<h3 class="ds-component-title" id="input-text">Text Input</h3>
+<p class="ds-desc">Standard single-line text field used in dialogs. Class: <code>.jsdialog.ui-edit</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas col" style="max-width: 320px;">
+		<input class="ui-edit" type="text" value="Sample text" />
+		<input class="ui-edit" type="text" placeholder="Placeholder..." />
+		<input class="ui-edit" type="text" value="Disabled" disabled />
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Height</td><td><code>32px</code></td></tr>
+	<tr><td>Line Height</td><td><code>28px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Border</td><td><code>1px solid #cecece</code> (--color-border-dark)</td></tr>
+	<tr><td>Background</td><td><code>#e8e8e8</code> (--color-background-dark)</td></tr>
+	<tr><td>Padding Inline</td><td><code>4px</code></td></tr>
+	<tr><td>Focus border</td><td><code>#0b87e7</code> (--color-primary)</td></tr>
+</table>
+
+
+<!-- SPINFIELD -->
+<h3 class="ds-component-title" id="input-spin">Spinfield</h3>
+<p class="ds-desc">Numeric input with step controls, used for measurements and quantities. Class: <code>.spinfieldcontainer .spinfield</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<div class="spinfieldcontainer">
+			<input class="spinfield" type="number" value="1.27" step="0.01" />
+			<span class="spinfieldunit">cm</span>
+		</div>
+		<div class="spinfieldcontainer">
+			<input class="spinfield" type="number" value="12" step="1" />
+			<span class="spinfieldunit">pt</span>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Height</td><td><code>28px</code></td></tr>
+	<tr><td>Min Width</td><td><code>70px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Border</td><td><code>1px solid #cecece</code></td></tr>
+	<tr><td>Background</td><td><code>#e8e8e8</code></td></tr>
+	<tr><td>Padding</td><td><code>4px 0 4px 4px</code></td></tr>
+	<tr><td>Container margin-end</td><td><code>5px</code></td></tr>
+</table>
+
+
+<!-- CHECKBOX -->
+<h3 class="ds-component-title" id="input-checkbox">Checkbox</h3>
+<p class="ds-desc">Custom-styled checkbox with SVG icons in the actual app. Class: <code>.jsdialog.checkbutton</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas col" style="max-width: 300px; gap: 4px;">
+		<div class="checkbutton">
+			<input type="checkbox" id="chk1" checked /><label for="chk1">Checked option</label>
+		</div>
+		<div class="checkbutton">
+			<input type="checkbox" id="chk2" /><label for="chk2">Unchecked option</label>
+		</div>
+		<div class="checkbutton">
+			<input type="checkbox" id="chk3" disabled /><label for="chk3">Disabled option</label>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Checkbox Size</td><td><code>20px &times; 20px</code></td></tr>
+	<tr><td>Checkbox Margin</td><td><code>1px 8px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>3px</code></td></tr>
+	<tr><td>Label Font Size</td><td><code>0.75rem</code> (12px)</td></tr>
+	<tr><td>Label Line Height</td><td><code>28px</code></td></tr>
+</table>
+
+
+<!-- RADIO -->
+<h3 class="ds-component-title" id="input-radio">Radio Button</h3>
+<p class="ds-desc">Mutually exclusive option selector. Class: <code>.radiobutton.jsdialog</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas col" style="max-width: 300px; gap: 4px;">
+		<div class="radiobutton"><input type="radio" name="demo-radio" id="r1" checked /><label for="r1">Option A</label></div>
+		<div class="radiobutton"><input type="radio" name="demo-radio" id="r2" /><label for="r2">Option B</label></div>
+		<div class="radiobutton"><input type="radio" name="demo-radio" id="r3" /><label for="r3">Option C</label></div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Radio Size</td><td><code>18px &times; 18px</code></td></tr>
+	<tr><td>Radio Margin</td><td><code>1px 8px</code></td></tr>
+	<tr><td>Dot Size (checked)</td><td><code>8px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>50%</code></td></tr>
+</table>
+
+
+<!-- SELECT -->
+<h3 class="ds-component-title" id="input-select">Select / Listbox</h3>
+<p class="ds-desc">Native select dropdown used in dialogs and sidebar. Class: <code>.ui-listbox-container .ui-listbox</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<div class="ui-listbox-container">
+			<select class="ui-listbox">
+				<option>Default Paragraph Style</option>
+				<option>Heading 1</option>
+				<option>Heading 2</option>
+				<option>Text Body</option>
+			</select>
+			<span class="ui-listbox-arrow"></span>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Height (dialog)</td><td><code>32px</code></td></tr>
+	<tr><td>Height (toolbar)</td><td><code>24px</code> (1.5rem)</td></tr>
+	<tr><td>Min Width</td><td><code>70px</code> (toolbar) / <code>100px</code> (dialog)</td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Border</td><td><code>1px solid #cecece</code></td></tr>
+	<tr><td>Background</td><td><code>#e8e8e8</code></td></tr>
+	<tr><td>Padding</td><td><code>0 14px 0 4px</code></td></tr>
+</table>
+
+
+<!-- COMBOBOX -->
+<h3 class="ds-component-title" id="input-combobox">Combobox</h3>
+<p class="ds-desc">Editable input combined with a dropdown list. Class: <code>.ui-combobox</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<div class="ui-combobox">
+			<input class="ui-combobox-content" type="text" value="Liberation Serif" />
+			<button class="ui-combobox-button"><span class="ui-listbox-arrow" style="position:static; margin:0"></span></button>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Height (dialog)</td><td><code>32px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Border</td><td><code>1px solid #b6b6b6</code> (--color-border)</td></tr>
+	<tr><td>Input Background</td><td><code>#fff</code> (--color-background-lighter)</td></tr>
+	<tr><td>Button width</td><td><code>28px</code></td></tr>
+</table>
+
+
+<!-- TABS -->
+<h3 class="ds-component-title" id="tabs">Tabs</h3>
+<p class="ds-desc">Two tab variants exist: <strong>Dialog tabs</strong> (pill-style) and <strong>Notebookbar tabs</strong> (underline-style with doc-type accent).</p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo &mdash; Dialog Tabs</div>
+	<div class="ds-demo-canvas" style="background: var(--color-main-background);">
+		<div class="ui-tabs" role="tablist">
+			<button class="ui-tab selected" onclick="selectTab(this)">Font</button>
+			<button class="ui-tab" onclick="selectTab(this)">Font Effects</button>
+			<button class="ui-tab" onclick="selectTab(this)">Position</button>
+		</div>
+	</div>
+</div>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo &mdash; Notebookbar Tabs</div>
+	<div class="ds-demo-canvas" style="background: var(--color-main-background); padding: 0;">
+		<div class="ui-tabs notebookbar" role="tablist" style="width:100%;">
+			<button class="ui-tab notebookbar" onclick="selectTab(this)">File</button>
+			<button class="ui-tab notebookbar selected" onclick="selectTab(this)">Home</button>
+			<button class="ui-tab notebookbar" onclick="selectTab(this)">Insert</button>
+			<button class="ui-tab notebookbar" onclick="selectTab(this)">Layout</button>
+			<button class="ui-tab notebookbar" onclick="selectTab(this)">References</button>
+			<button class="ui-tab notebookbar" onclick="selectTab(this)">Review</button>
+			<button class="ui-tab notebookbar" onclick="selectTab(this)">View</button>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Dialog Tab</th><th>Notebookbar Tab</th></tr>
+	<tr><td>Height</td><td><code>24px</code></td><td><code>34px</code> (full nav height)</td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td><td><code>0</code> (none)</td></tr>
+	<tr><td>Padding</td><td><code>0 1em</code></td><td><code>0 clamp(4px, 1vw, 1em)</code></td></tr>
+	<tr><td>Selected indicator</td><td>box-shadow pill</td><td><code>inset 0 -2px rgb(var(--doc-type))</code></td></tr>
+	<tr><td>Margin</td><td><code>0 12px 0 0</code></td><td><code>0</code></td></tr>
+</table>
+
+
+<!-- TREEVIEW -->
+<h3 class="ds-component-title" id="treeview">TreeView</h3>
+<p class="ds-desc">Scrollable list of entries with optional icons, used in dialogs for file browsers, style lists, etc. Class: <code>.ui-treeview</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<div class="ui-treeview">
+			<div class="ui-treeview-entry" onclick="selectTreeEntry(this)"><span class="ico ico-s"></span> <span>Default Paragraph Style</span></div>
+			<div class="ui-treeview-entry selected" onclick="selectTreeEntry(this)"><span class="ico ico-s"></span> <span>Heading 1</span></div>
+			<div class="ui-treeview-entry" onclick="selectTreeEntry(this)"><span class="ico ico-s"></span> <span>Heading 2</span></div>
+			<div class="ui-treeview-entry" onclick="selectTreeEntry(this)"><span class="ico ico-s"></span> <span>Text Body</span></div>
+			<div class="ui-treeview-entry" onclick="selectTreeEntry(this)"><span class="ico ico-s"></span> <span>List Bullet</span></div>
+			<div class="ui-treeview-entry" onclick="selectTreeEntry(this)"><span class="ico ico-s"></span> <span>List Number</span></div>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Border</td><td><code>1px solid #b6b6b6</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Min Size</td><td><code>150px &times; 100px</code></td></tr>
+	<tr><td>Max Height (dialog)</td><td><code>150px</code></td></tr>
+	<tr><td>Line Height</td><td><code>24px</code></td></tr>
+	<tr><td>Icon Size</td><td><code>16px</code> (--btn-img-size-s)</td></tr>
+	<tr><td>Selected Background</td><td><code>#0b87e7</code> (--color-primary)</td></tr>
+	<tr><td>Hover Background</td><td><code>#c0bfbc</code> (--color-background-darker)</td></tr>
+</table>
+
+
+<!-- CONTEXT MENU -->
+<h3 class="ds-component-title" id="context-menu">Context Menu</h3>
+<p class="ds-desc">Right-click popup menu. Class: <code>.context-menu-list</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas start">
+		<ul class="context-menu-list">
+			<li class="context-menu-item"><span class="ico ico-s"></span> Cut</li>
+			<li class="context-menu-item"><span class="ico ico-s"></span> Copy</li>
+			<li class="context-menu-item"><span class="ico ico-s"></span> Paste</li>
+			<li class="context-menu-separator"></li>
+			<li class="context-menu-item"><span class="ico ico-s"></span> Paragraph...</li>
+			<li class="context-menu-item disabled"><span class="ico ico-s"></span> Disabled item</li>
+		</ul>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Border</td><td><code>1px solid #cecece</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Box Shadow</td><td><code>0 0 3px rgba(77,77,77,0.5)</code></td></tr>
+	<tr><td>Item Font Size</td><td><code>0.875rem</code> (14px)</td></tr>
+	<tr><td>Item Padding</td><td><code>5px 22px</code></td></tr>
+	<tr><td>Separator</td><td><code>1px solid #f1f1f1</code></td></tr>
+</table>
+
+
+<!-- TOOLTIP -->
+<h3 class="ds-component-title" id="tooltip">Tooltip</h3>
+<p class="ds-desc">Hover tooltip for toolbar buttons and controls. Class: <code>.cooltip-text</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo &mdash; hover the button</div>
+	<div class="ds-demo-canvas" style="position: relative;">
+		<span style="position: relative; display: inline-block;" class="tooltip-trigger">
+			<button class="button-secondary" style="margin:0">Hover me</button>
+			<span class="cooltip-text" style="visibility: visible; position: absolute; top: -38px; left: 50%; transform: translateX(-50%);">Bold (Ctrl+B)</span>
+		</span>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Padding</td><td><code>7px 9px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>6px</code></td></tr>
+	<tr><td>Box Shadow</td><td><code>0 0 4px rgba(77,77,77,0.5)</code></td></tr>
+	<tr><td>Font Size</td><td><code>0.875rem</code> (14px)</td></tr>
+	<tr><td>Background</td><td><code>#fff</code></td></tr>
+	<tr><td>Z-index</td><td><code>2147483647</code> (max)</td></tr>
+</table>
+
+
+<!-- PROGRESS BAR -->
+<h3 class="ds-component-title" id="progress">Progress Bar</h3>
+<p class="ds-desc">Thin progress indicator tinted with the document-type accent. Class: <code>.ui-progressbar</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo &mdash; click to animate</div>
+	<div class="ds-demo-canvas col" style="gap: 20px;">
+		<div>
+			<p class="ds-desc" style="margin-bottom:6px; font-size:11px;">Writer (blue) &mdash; 65%</p>
+			<div class="ui-progressbar" onclick="animateProgress(this)">
+				<div class="ui-progressbar-fill" style="width: 65%; background-color: rgb(3,105,163);"></div>
+			</div>
+		</div>
+		<div>
+			<p class="ds-desc" style="margin-bottom:6px; font-size:11px;">Calc (green) &mdash; 40%</p>
+			<div class="ui-progressbar" style="background-color: rgba(16,104,2,0.2);" onclick="animateProgress(this)">
+				<div class="ui-progressbar-fill" style="width: 40%; background-color: rgb(16,104,2);"></div>
+			</div>
+		</div>
+		<div>
+			<p class="ds-desc" style="margin-bottom:6px; font-size:11px;">Impress (orange) &mdash; 80%</p>
+			<div class="ui-progressbar" style="background-color: rgba(163,62,3,0.2);" onclick="animateProgress(this)">
+				<div class="ui-progressbar-fill" style="width: 80%; background-color: rgb(163,62,3);"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Height</td><td><code>5px</code></td></tr>
+	<tr><td>Track Color</td><td><code>rgba(var(--doc-type), 0.2)</code></td></tr>
+	<tr><td>Bar Color</td><td><code>rgb(var(--doc-type))</code></td></tr>
+	<tr><td>Border Radius</td><td><code>3px</code></td></tr>
+</table>
+
+
+<!-- COLOR PICKER -->
+<h3 class="ds-component-title" id="color-picker">Color Picker</h3>
+<p class="ds-desc">Grid of color swatches for font/background color selection. Class: <code>.ui-color-picker</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas start">
+		<div class="ui-color-picker" id="demo-color-picker"></div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Swatch Size</td><td><code>16px &times; 16px</code></td></tr>
+	<tr><td>Grid Gap</td><td><code>4px</code></td></tr>
+	<tr><td>Padding</td><td><code>4px</code></td></tr>
+	<tr><td>Hover Outline</td><td><code>2px solid #0b87e7</code>, offset <code>1px</code></td></tr>
+</table>
+
+
+<!-- BADGE -->
+<h3 class="ds-component-title" id="badge">Badge</h3>
+<p class="ds-desc">Small status indicator used in the status bar. Class: <code>.ui-badge</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<span class="ui-badge">English (USA)</span>
+		<span class="ui-badge">100%</span>
+		<span class="ui-badge">Words: 1,234</span>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Padding</td><td><code>5px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Background</td><td><code>#c0bfbc</code> (--color-background-darker)</td></tr>
+	<tr><td>Font Size</td><td><code>0.75rem</code> (12px)</td></tr>
+</table>
+
+
+<!-- SEPARATOR -->
+<h3 class="ds-component-title" id="separator">Separator</h3>
+<p class="ds-desc">Visual dividers for toolbars and dialogs.</p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas col" style="gap: 20px;">
+		<div style="display: flex; align-items: center; gap: 8px;">
+			<span class="ui-badge">Bold</span>
+			<span class="ui-separator-v"></span>
+			<span class="ui-badge">Italic</span>
+			<span class="ui-separator-v"></span>
+			<span class="ui-badge">Underline</span>
+		</div>
+		<div>
+			<p style="font-size:11px; color: var(--color-text-lighter); margin-bottom:6px;">Horizontal separator:</p>
+			<div class="ui-separator-h"></div>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Vertical</th><th>Horizontal</th></tr>
+	<tr><td>Size</td><td><code>1px &times; 14px</code></td><td><code>100% &times; 1px</code></td></tr>
+	<tr><td>Color</td><td><code>#c0bfbc</code></td><td><code>#f1f1f1</code></td></tr>
+	<tr><td>Margin</td><td><code>0 3px</code></td><td><code>0</code></td></tr>
+</table>
+
+
+<!-- SNACKBAR -->
+<h3 class="ds-component-title" id="snackbar">Snackbar</h3>
+<p class="ds-desc">Toast-like notification bar shown at the bottom of the screen. Class: <code>.snackbar</code></p>
+
+<div class="ds-demo demo">
+	<div class="ds-demo-header">Interactive Demo</div>
+	<div class="ds-demo-canvas">
+		<div class="snackbar">
+			<span>Document has been saved.</span>
+			<button class="snackbar-action">UNDO</button>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table">
+	<tr><th>Property</th><th>Value</th></tr>
+	<tr><td>Background</td><td><code>#323232</code></td></tr>
+	<tr><td>Text Color</td><td><code>#fff</code></td></tr>
+	<tr><td>Padding</td><td><code>12px 16px</code></td></tr>
+	<tr><td>Border Radius</td><td><code>4px</code></td></tr>
+	<tr><td>Action Color</td><td><code>#83beec</code> (--color-primary-lighter)</td></tr>
+</table>
+
+</main>
+
+<script>
+// Sidebar active state tracking
+const mainEl = document.getElementById('ds-main');
+const links = document.querySelectorAll('.ds-nav-link');
+const sections = [];
+
+links.forEach(link => {
+	const id = link.getAttribute('href');
+	if (id && id.startsWith('#')) {
+		const el = document.getElementById(id.slice(1));
+		if (el) sections.push({ link, el });
+	}
+});
+
+mainEl.addEventListener('scroll', () => {
+	const scrollTop = mainEl.scrollTop + 80;
+	let current = sections[0];
+	for (const s of sections) {
+		if (s.el.offsetTop <= scrollTop) current = s;
+	}
+	links.forEach(l => l.classList.remove('active'));
+	if (current) current.link.classList.add('active');
+});
+
+// Tab selection
+function selectTab(el) {
+	el.parentElement.querySelectorAll('.ui-tab').forEach(t => t.classList.remove('selected'));
+	el.classList.add('selected');
+}
+
+// TreeView selection
+function selectTreeEntry(el) {
+	el.parentElement.querySelectorAll('.ui-treeview-entry').forEach(e => e.classList.remove('selected'));
+	el.classList.add('selected');
+}
+
+// Progress bar animation
+function animateProgress(bar) {
+	const fill = bar.querySelector('.ui-progressbar-fill');
+	fill.style.width = '0%';
+	setTimeout(() => { fill.style.width = (Math.random() * 60 + 30) + '%'; }, 50);
+}
+
+// Generate color picker
+(function() {
+	const picker = document.getElementById('demo-color-picker');
+	const colors = [
+		'#000000','#434343','#666666','#999999','#b7b7b7','#cccccc','#d9d9d9','#efefef','#f3f3f3','#ffffff','#980000','#ff0000',
+		'#ff9900','#ffff00','#00ff00','#00ffff','#4a86e8','#0000ff','#9900ff','#ff00ff','#e6b8af','#f4cccc',
+		'#fce5cd','#fff2cc','#d9ead3','#d0e0e3','#c9daf8','#cfe2f3','#d9d2e9','#ead1dc','#dd7e6b','#ea9999',
+		'#f9cb9c','#ffe599','#b6d7a8','#a2c4c9','#a4c2f4','#9fc5e8','#b4a7d6','#d5a6bd','#cc4125','#e06666',
+		'#f6b26b','#ffd966','#93c47d','#76a5af','#6d9eeb','#6fa8dc','#8e7cc3','#c27ba0','#a61c00','#cc0000',
+		'#e69138','#f1c232','#6aa84f','#45818e','#3c78d8','#3d85c6','#674ea7','#a64d79','#85200c','#990000',
+		'#b45f06','#bf9000','#38761d','#134f5c','#1155cc','#0b5394','#351c75','#741b47','#5b0f00','#660000',
+		'#783f04','#7f6000','#274e13','#0c343d','#1c4587','#073763','#20124d','#4c1130'
+	];
+	colors.forEach(c => {
+		const swatch = document.createElement('div');
+		swatch.className = 'ui-color-picker-entry';
+		swatch.style.backgroundColor = c;
+		swatch.tabIndex = 0;
+		swatch.title = c;
+		swatch.addEventListener('click', function() {
+			picker.querySelectorAll('.ui-color-picker-entry').forEach(s => s.style.outline = '');
+			this.style.outline = '2px solid var(--color-primary)';
+			this.style.outlineOffset = '1px';
+		});
+		picker.appendChild(swatch);
+	});
+})();
+
+// Init first active link
+if (sections.length) sections[0].link.classList.add('active');
+</script>
+</body>
+</html>
