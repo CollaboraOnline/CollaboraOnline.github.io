@@ -85,9 +85,25 @@ it, and only depend on eg. self-built libpng, etc.
     * After that you might need to update them in System Settings > General > Software Updates
         * For some reason for me it lists both 15.3 and 16.0 there. As I have Xcode 16.0, I choose just that one.
 
+### Clone the monorepo
+
+Collabora Online and the LibreOffice core now live in a single Gerrit monorepo - core is the `engine/` subdirectory of the `online` repo, so there is no separate `core` clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
+
+For an anonymous read-only clone:
+```bash
+git clone https://gerrit.collaboraoffice.com/online collabora-online
+cd collabora-online
+```
+
+If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
+```bash
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-online
+cd collabora-online
+```
+
 ### Build LO
 
-You need the `main` branch of Collabora Office core from gerrit.collaboraoffice.com for this, and you must use the following `autogen.input`.
+Move into the `engine/` subdirectory of the monorepo and build the `main` branch with the following `autogen.input`.
 
 NOTE: Build with stuff installed via 'brew', and not via 'lode'; if you have
 too many things installed via 'brew', compilation may fail for you due to
@@ -112,6 +128,8 @@ For dependency installation, refer to https://wiki.documentfoundation.org/Develo
 
 ### Configure Collabora Online
 
+Run this from the top of the monorepo (one level up from `engine/`):
+
     ./autogen.sh && ./configure \
     --enable-macosapp \
     --enable-experimental \
@@ -124,11 +142,11 @@ For dependency installation, refer to https://wiki.documentfoundation.org/Develo
     --with-zstd-libs=/opt/homebrew/lib \
     --with-libpng-includes=/opt/homebrew/include \
     --with-libpng-libs=/opt/homebrew/lib \
-    --with-lo-path=path-to-lo-core/instdir/your-built-lo.app \
-    --with-lokit-path=path-to-lo-core/include
+    --with-lo-path=engine/instdir/your-built-lo.app \
+    --with-lokit-path=engine/include
 
-Obviously you need to change the `path-to-lo-core` and `your-built-lo` above to
-match what you have. Also, on Intel Macs homebrew gets installed in
+Adjust `your-built-lo.app` to match the app bundle name produced by your core
+build. Also, on Intel Macs homebrew gets installed in
 `/usr/local`, not `/opt/homebrew`; but you may prefer your own built versions of
 POCO, libpng and zstd.
 

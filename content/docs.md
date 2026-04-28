@@ -34,10 +34,10 @@ For more detailed and pretty instructions on integrating with various partner so
     ownCloud
 
 ## Get involved
-* Checking out the source code to build it yourself is easy, head over to [GitHub's project page](https://github.com/CollaboraOnline/online)
+* The source lives on a single Gerrit monorepo at [gerrit.collaboraoffice.com/online](https://gerrit.collaboraoffice.com/online). The LibreOffice core sits under `engine/` inside the same repo, so there is no separate `core` clone any more.
 * After [building Collabora Online]({{< relref "build-code" >}} "How to build CODE") just do a `make run` and follow the link to tweak things live.
 * Browse the [SDK documentation](https://sdk.collaboraonline.com/) and find all about [postmessage api](https://sdk.collaboraonline.com/docs/postmessage_api.html), [integration examples](https://sdk.collaboraonline.com/docs/examples.html) and more
-* Send patches via the [GitHub pull requests](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+* Code review now happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests. The [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) walks through SSH key setup, the `commit-msg` hook, and pushing to `refs/for/main`.
 * Read the full guide on [Contributing](https://github.com/CollaboraOnline/online/blob/main/CONTRIBUTING.md)
 * Read the [Code of Conduct](https://github.com/CollaboraOnline/online/blob/main/CODE_OF_CONDUCT.md)
 * To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
@@ -47,10 +47,10 @@ For more detailed and pretty instructions on integrating with various partner so
 ### Your first commit
 * First check [How to build CODE]({{< relref "build-code" >}} "How to build CODE")
 * Do your modifications and check them
-* `git commit` # to commit the stuff
+* `git commit -s` # commit, with a Signed-off-by line for the DCO
 * `git log -p -1` # to check your work
-* `git push origin HEAD:feature/name`
-* Create a Pull Request via the URL that you are told
+* `git push origin HEAD:refs/for/main` # send the patch to Gerrit for review
+* The push prints a Gerrit URL - that is your change. Reviewers leave comments there and CI votes on it.
 
 ## Watch a talk & grab slides
 

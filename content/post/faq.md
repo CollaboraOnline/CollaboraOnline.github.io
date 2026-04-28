@@ -50,16 +50,22 @@ would love to have your help finding and fixing issues that come
 there. Checkout [how to file a bug]({{< relref "filebugs.md" >}} "How to file bugs") and put a 'Desktop:' prefix in your subject - thanks!
 
 ### Where can I get code ?
-{{< faq-date added="2025-11-26" added_commit="01ec5bb" updated="2026-04-03" updated_commit="5fc61cd" >}}
+{{< faq-date added="2025-11-26" added_commit="01ec5bb" updated="2026-04-28" updated_commit="HEAD" >}}
 
-On Dec 11, 2025 the 25.04.7.3-2 release was made from the coda-25.04.7.3-2 tags
-that exist both in core and online repo. Development continues:
-- online: main branch
-- core: main branch on gerrit.collaboraoffice.com
+The `online` and `core` repositories have been unified into a single Gerrit
+monorepo. The LibreOffice core now lives under `engine/` inside `online`, so
+there is no separate `core` clone any more. Code review has moved from GitHub
+pull requests to [Gerrit](https://gerrit.collaboraoffice.com/) - new pull
+requests opened on GitHub against `main` are auto-closed with a pointer to
+Gerrit.
 
-Repositories:
-- online: https://github.com/CollaboraOnline/online
-- core: https://gerrit.collaboraoffice.com/core
+Repository (monorepo, includes core under `engine/`):
+- anonymous HTTPS: `git clone https://gerrit.collaboraoffice.com/online`
+- Gerrit SSH (for contributors): `git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online`
+
+For the full Gerrit workflow (SSH key setup, `commit-msg` hook, pushing to
+`refs/for/main`, addressing review feedback) see the
+[first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41).
 
 Build instructions:
 - Linux (Collabora): https://collaboraonline.github.io/post/build-co-linux/

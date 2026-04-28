@@ -44,18 +44,28 @@ new content.
 {{ end }}
 
 {{ if eq $section "clone-lo" }}
+Collabora Office core lives inside the `online` monorepo under `engine/`, so a separate `core` clone is no longer needed. If you have not cloned the monorepo yet, run the `clone-online` step above first. Then move into the core tree:
 
 ```bash
-git clone https://gerrit.collaboraoffice.com/core
-cd core
+cd engine
 git checkout {{.Get "lobranch"}}
 ```
 {{ end }}
 
 {{ if eq $section "clone-online" }}
+Collabora Online is hosted on Gerrit as a single monorepo. The LibreOffice core sits under `engine/` inside the same repo, so there is no separate `core` clone any more.
+
+For an anonymous read-only clone (no account needed):
 ```bash
-git clone https://github.com/YOURUSERNAME/online.git collabora-online
+git clone https://gerrit.collaboraoffice.com/online collabora-online
 ```
+
+If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
+```bash
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-online
+```
+
+See the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full Gerrit workflow (SSH key, `commit-msg` hook, pushing to `refs/for/main`).
 
 Switch to the local clone's directory:
 ```bash
@@ -75,7 +85,7 @@ Run the generated configure script with proper parameters:
             --with-lo-path=${LOCOREPATH}/instdir \
             --enable-debug --enable-cypress
 ```
-Note: you can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
+Note: when building from the monorepo with core built in `engine/`, set `LOCOREPATH=$(pwd)/engine` from the top of the clone before running configure. You can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
 
 Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
 ```bash
