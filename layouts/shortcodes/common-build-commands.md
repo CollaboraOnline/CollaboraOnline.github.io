@@ -1,25 +1,21 @@
 {{$section := .Get "section"}}
 
 {{ if eq $section "code-needs-lo-wget" }}
-CODE needs Collabora Office core to be built to run. However, it takes a considerable amount of time and brings in
-extra complexity. So, we will instead download a daily built archive which contains only the pieces that are absolutely necessary. If you are working only on the online side, without doing any code-level changes on the Collabora Office core, or you just want to quickly get going to do some small fixes, then this will be enough for you. Otherwise, [refer to the general instructions](/post/build-code/#build-code-n-lo).
+CODE needs the engine (formerly "Collabora Office core") to be built to run. Building the engine from source takes a considerable amount of time and brings in extra complexity, so we will instead download a daily-built archive containing the pieces that are absolutely necessary. If you are working only on the online side, without any engine-side changes, or you just want to quickly get going to do some small fixes, this will be enough for you. Otherwise, [refer to the general instructions](/post/build-code/#build-code-n-lo).
 
-Now download a daily-built archive of Collabora Office core:
+The archive ships only the engine's `instdir`; the LOKit headers no longer need to be bundled because they are already in the monorepo at `engine/include`. Run the following from the top of the cloned `online` monorepo so the asset is extracted into the existing `engine/` directory:
+
 ```bash
 wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/{{.Get "lotar"}}
+tar xvf {{.Get "lotar"}} -C engine
 ```
 
-Extract the contents of the archive:
+Export the location of the engine tree as a variable for the configure step:
 ```bash
-tar xvf {{.Get "lotar"}}
-```
-
-Export the location of the extracted contents as a variable before changing directory:
-```bash
-export LOCOREPATH=$(pwd)
+export LOCOREPATH=$(pwd)/engine
 
 # Or make it persistent as part of your .bashrc with
-echo "export LOCOREPATH=$(pwd)" >> ~/.bashrc && source ~/.bashrc
+echo "export LOCOREPATH=$(pwd)/engine" >> ~/.bashrc && source ~/.bashrc
 ```
 {{ end }}
 

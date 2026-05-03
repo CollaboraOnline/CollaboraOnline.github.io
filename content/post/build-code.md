@@ -106,13 +106,16 @@ zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit
 zypper in libpng16-compat-devel
 ```
 
-### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
-
-### Building CODE
-Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
+### Clone the source
+Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
+
+### Engine binaries
+{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+
+### Building CODE
+Run autoconf/automake, configure and build using GNU make:
 
 {{% common-build-commands section="build-online" %}}
 
@@ -155,13 +158,16 @@ sudo dnf install \
     python3-polib
 ```
 
-### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
-
-### Building CODE
-Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
+### Clone the source
+Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
+
+### Engine binaries
+{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+
+### Building CODE
+Run autoconf/automake, configure and build using GNU make:
 
 {{% common-build-commands section="build-online" %}}
 
@@ -187,13 +193,16 @@ Open a terminal and follow the steps below:
 sudo pacman -Syu libcap libcap-ng lib32-libcap libpng poco cppunit nodejs npm chromium python-lxml python-polib
 ```
 
-### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
-
-### Building CODE
-Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
+### Clone the source
+Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
+
+### Engine binaries
+{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+
+### Building CODE
+Run autoconf/automake, configure and build using GNU make:
 
 {{% common-build-commands section="build-online" %}}
 
@@ -231,13 +240,16 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
                     pkg-config fontconfig chromium
 ```
 
-### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
-
-### Building CODE
-Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
+### Clone the source
+Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
+
+### Engine binaries
+{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+
+### Building CODE
+Run autoconf/automake, configure and build using GNU make:
 
 {{% common-build-commands section="build-online" %}}
 
@@ -274,13 +286,16 @@ sudo apt install -y libpoco-dev python3-polib libcap-dev libssl-dev npm \
 
 *Note: Chromium is needed and used in the cypress tests. Ubuntu has no Chromium deb packages in its repositories, only a dummy package that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
 
-### Collabora Office Core
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
-
-### Building CODE
-Clone the unified `online` monorepo from Gerrit, run autoconf/automake, configure and build using GNU make.
+### Clone the source
+Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
+
+### Engine binaries
+{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+
+### Building CODE
+Run autoconf/automake, configure and build using GNU make:
 
 {{% common-build-commands section="build-online" %}}
 
@@ -368,14 +383,17 @@ export LOCOREPATH=$(pwd)
 cd ..
 ```
 
-#### Option B - Download a Daily-Built Archive of Collabora Office Core (Quick & Dirty)
-{{% common-build-commands section="code-needs-lo-wget" lotar="core-main-assets.tar.gz" %}}
+#### Option B - Download a Daily-Built Archive of the Engine (Quick & Dirty)
 
-You should now have two new directories extracted: `instdir` and `include`. You will use the locations of these directories for the `configure` parameters in the following steps.
-
-When using Option B you still need the `online` checkout for the build itself - clone it now if you have not already:
+Option B reuses the same monorepo clone as Option A, but skips the engine source build by dropping a pre-built `instdir` into `engine/`. If you have not cloned the monorepo yet, do so now:
 
 {{% common-build-commands section="clone-online" %}}
+
+Then download the daily-built archive and extract it into `engine/`:
+
+{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+
+The archive only contains `instdir`; the LOKit headers come from the monorepo's `engine/include`. Both paths feed the `--with-lo-path` / `--with-lokit-path` configure options in the next step.
 
 ### Building CODE
 
