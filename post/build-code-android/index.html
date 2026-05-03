@@ -38,11 +38,11 @@ should contain this content</p><pre><code>--build=x86_64-unknown-linux-gnu
 </code></pre><h2 id=build-collabora-online>Build Collabora Online</h2><p>You need a copy of <code>POCO</code> and <code>libzstd</code> built for Android in order to build the Android app. You can use these scripts to build those</p><ul><li>POCO - use <a href=https://github.com/CollaboraOnline/online/blob/main/scripts/build-poco-android.sh>build-poco-android.sh</a></li><li>libzstd - use <a href=https://github.com/CollaboraOnline/online/blob/main/scripts/build-zstd-android.sh>build-zstd-android.sh</a></li></ul><h3 id=configuring-the-build>Configuring the build</h3><p>Let&rsquo;s set some variables based on what we just built&mldr;</p><pre><code>export ABI=arm64-v8a
 export POCO_DIR=/opt/android-poco
 export ZSTD_DIR=/opt/android-zstd
-export LO_BUILDDIR=/opt/libreoffice
-</code></pre><p>&mldr;remember to change your ABI to the ABI you&rsquo;re building the app for, POCO_DIR and ZSTD_DIR to the output directories of the build scripts, and LO_BUILDDIR to the <code>engine/</code> subdirectory of the monorepo where you built Collabora Office core.</p><p>Now step back to the top of the monorepo (one level up from <code>engine/</code>) and configure the Collabora Online build</p><pre><code>cd ..
+export CO_BUILDDIR=/opt/libreoffice
+</code></pre><p>&mldr;remember to change your ABI to the ABI you&rsquo;re building the app for, POCO_DIR and ZSTD_DIR to the output directories of the build scripts, and CO_BUILDDIR to the <code>engine/</code> subdirectory of the monorepo where you built Collabora Office core.</p><p>Now step back to the top of the monorepo (one level up from <code>engine/</code>) and configure the Collabora Online build</p><pre><code>cd ..
 ./autogen.sh
 ./configure --enable-androidapp \
-            --with-lo-builddir=${LO_BUILDDIR} \
+            --with-lo-builddir=${CO_BUILDDIR} \
             --with-poco-includes=${POCO_DIR}/install/include \
             --with-poco-libs=${POCO_DIR}/install/${ABI}/lib \
             --with-zstd-includes=${ZSTD_DIR}/lib \

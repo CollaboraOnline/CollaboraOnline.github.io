@@ -38,12 +38,12 @@ cd collabora-online
 </code></pre><h3 id=collabora-office-core>Collabora Office Core</h3><p>Core is the <code>engine/</code> subdirectory of the monorepo. For dependency installation, refer to <a href=https://wiki.documentfoundation.org/Development/BuildingOnLinux>https://wiki.documentfoundation.org/Development/BuildingOnLinux</a> if needed.</p><pre><code class=language-bash>cd engine
 </code></pre><pre><code class=language-bash>./autogen.sh --with-distro=CPLinux-LOKit --without-package-format --with-system-nss
 make
-</code></pre><blockquote><p>For debug builds, add <code>--enable-dbgutil</code> to the autogen line.</p></blockquote><p>Once done, record the path for the online build and step back to the top of the monorepo:</p><pre><code class=language-bash>export LOCOREPATH=$(pwd)
+</code></pre><blockquote><p>For debug builds, add <code>--enable-dbgutil</code> to the autogen line.</p></blockquote><p>Once done, record the path for the online build and step back to the top of the monorepo:</p><pre><code class=language-bash>export COCOREPATH=$(pwd)
 cd ..
 </code></pre><h3 id=collabora-online>Collabora Online</h3><p>From the top of the <code>collabora-online</code> clone:</p><pre><code class=language-bash>./autogen.sh
 ./configure --enable-qtapp \
-    --with-lo-path=${LOCOREPATH}/instdir \
-    --with-lokit-path=${LOCOREPATH}/include \
+    --with-lo-path=${COCOREPATH}/instdir \
+    --with-lokit-path=${COCOREPATH}/include \
     --enable-debug
 make -j $(nproc)
 </code></pre><blockquote><p><strong>Ubuntu:</strong> if you built Poco from source, add <code>--with-poco-includes=/usr/local/include --with-poco-libs=/usr/local/lib</code> to configure.</p></blockquote><p>This produces the <code>coda-qt</code> executable in <code>qt/</code>.</p><h2 id=running>Running</h2><pre><code class=language-bash>./qt/coda-qt                         # start without a document
