@@ -12,10 +12,10 @@ tar xvf {{.Get "lotar"}} -C engine
 
 Export the location of the engine tree as a variable for the configure step:
 ```bash
-export LOCOREPATH=$(pwd)/engine
+export COCOREPATH=$(pwd)/engine
 
 # Or make it persistent as part of your .bashrc with
-echo "export LOCOREPATH=$(pwd)/engine" >> ~/.bashrc && source ~/.bashrc
+echo "export COCOREPATH=$(pwd)/engine" >> ~/.bashrc && source ~/.bashrc
 ```
 {{ end }}
 
@@ -77,11 +77,11 @@ Run autogen to generate the configure file:
 
 Run the generated configure script with proper parameters:
 ```bash
-./configure --enable-silent-rules --with-lokit-path=${LOCOREPATH}/include \
-            --with-lo-path=${LOCOREPATH}/instdir \
+./configure --enable-silent-rules --with-lokit-path=${COCOREPATH}/include \
+            --with-lo-path=${COCOREPATH}/instdir \
             --enable-debug --enable-cypress
 ```
-Note: when building from the monorepo with core built in `engine/`, set `LOCOREPATH=$(pwd)/engine` from the top of the clone before running configure. You can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
+Note: when building from the monorepo with core built in `engine/`, set `COCOREPATH=$(pwd)/engine` from the top of the clone before running configure. You can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
 
 Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
 ```bash

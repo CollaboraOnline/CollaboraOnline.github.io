@@ -136,16 +136,16 @@ Let's set some variables based on what we just built...
     export ABI=arm64-v8a
     export POCO_DIR=/opt/android-poco
     export ZSTD_DIR=/opt/android-zstd
-    export LO_BUILDDIR=/opt/libreoffice
+    export CO_BUILDDIR=/opt/libreoffice
 
-...remember to change your ABI to the ABI you're building the app for, POCO\_DIR and ZSTD\_DIR to the output directories of the build scripts, and LO_BUILDDIR to the `engine/` subdirectory of the monorepo where you built Collabora Office core.
+...remember to change your ABI to the ABI you're building the app for, POCO\_DIR and ZSTD\_DIR to the output directories of the build scripts, and CO_BUILDDIR to the `engine/` subdirectory of the monorepo where you built Collabora Office core.
 
 Now step back to the top of the monorepo (one level up from `engine/`) and configure the Collabora Online build
 
     cd ..
     ./autogen.sh
     ./configure --enable-androidapp \
-                --with-lo-builddir=${LO_BUILDDIR} \
+                --with-lo-builddir=${CO_BUILDDIR} \
                 --with-poco-includes=${POCO_DIR}/install/include \
                 --with-poco-libs=${POCO_DIR}/install/${ABI}/lib \
                 --with-zstd-includes=${ZSTD_DIR}/lib \
