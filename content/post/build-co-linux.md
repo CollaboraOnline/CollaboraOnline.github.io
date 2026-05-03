@@ -140,7 +140,7 @@ make
 
 Once done, record the path for the online build and step back to the top of the monorepo:
 ```bash
-export LOCOREPATH=$(pwd)
+export COCOREPATH=$(pwd)
 cd ..
 ```
 
@@ -151,8 +151,8 @@ From the top of the `collabora-online` clone:
 ```bash
 ./autogen.sh
 ./configure --enable-qtapp \
-    --with-lo-path=${LOCOREPATH}/instdir \
-    --with-lokit-path=${LOCOREPATH}/include \
+    --with-lo-path=${COCOREPATH}/instdir \
+    --with-lokit-path=${COCOREPATH}/include \
     --enable-debug
 make -j $(nproc)
 ```

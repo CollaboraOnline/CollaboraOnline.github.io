@@ -379,7 +379,7 @@ You can expect this process to take at least an hour or two the first time, poss
 
 Once core is built, record its location and step back to the top of the monorepo to build online:
 ```bash
-export LOCOREPATH=$(pwd)
+export COCOREPATH=$(pwd)
 cd ..
 ```
 
