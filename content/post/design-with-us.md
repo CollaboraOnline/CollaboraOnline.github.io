@@ -25,7 +25,7 @@ Following the design system keeps new features and contributions feeling at home
 
 <div class="d-flex flex-wrap my-4" style="gap: 12px;">
   <a href="/design-system/" class="btn btn-primary btn-co-primary">Open the design system</a>
-  <a href="https://www.figma.com/design/DWnTqyFZ67jWzqPJo6LeBp/Design-System-Collabora-Producitivity?node-id=0-1&t=zuAoj29cwIr2HdAd-1" target="_blank" class="btn btn-dark btn-co-secondary">Components on Figma</a>
+  <a href="https://www.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=0-1&t=f5bSK1GGhZyyN9WB-1" target="_blank" class="btn btn-dark btn-co-secondary">Components on Figma</a>
 </div>
 
 ## What it covers
