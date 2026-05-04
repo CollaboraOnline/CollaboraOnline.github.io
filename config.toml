@@ -1,9 +1,10 @@
 baseURL = "https://CollaboraOnline.github.io"
-RelativeURLs=true
+RelativeURLs=false
 CanonifyURLs=true
 title = "Collabora Online - Community Page"
 copyright = "Unless a license is otherwise specified, content is under CC-BY-SA 3.0 <br> <br> Beaver illustrations are under <a href='https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/master/content/images/beaver/LICENSE'>Copyright © 2025 Collabora Ltd. All rights reserved.</a>"
-paginate = 2
+[pagination]
+  pagerSize = 2
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -53,8 +54,8 @@ type = "type"
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
-  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css", "sidebar.css", "post-content.css"]
-  customJS = []
+  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css", "sidebar.css", "post-content.css", "copy-code.css"]
+  customJS = ["copy-code.js"]
 
   [params.social]
     rss = true
@@ -91,5 +92,5 @@ type = "type"
   [services.instagram]
     disableInlineCSS = true
 
-  [services.twitter]
+  [services.x]
     disableInlineCSS = true
