@@ -113,23 +113,6 @@ versions will probably work, too.
 For `zlib` and `libpng` we use the unpacked sources in the core build directory, and
 the static libraries already built there.
 
-### zstd
-
-Download and unpack the zstd-1.5.7 tarball. Open the Visual Studio
-solution zstd-1.5.7/build/VS2010/zstd.sln. Let Visual Studio retarget
-the projects. It is enough to build just the libzstd project of the
-solution.
-
-Note that you need to manually turn off "Whole Program Optimization"
-in the project settings. Having that option on means that the libzstd
-archive does not contain normal object files but LLVM bytecode for
-link-time code generation, and that won't be useable by the CODA
-project.
-
-The static libraries that you are interested end up as
-zstd-1.5.7/build/VS2010/bin/x64\_Debug/libzstd\_static.lib and
-zstd-1.5.7/build/VS2010/bin/x64\_Release/libzstd\_static.lib .
-
 ### Poco
 
 Download and unpack the poco-poco-1.14.2-release.zip archive.
@@ -154,18 +137,18 @@ In an Ubuntu shell, in the top-level of your clone of the `online` repo, run
 
 	./autogen.sh
 
-then run the configure script. Like this to use release build of zstd
-and Collabora Office core.
+then run the configure script. Like below. Use the build of libpng and
+zlib that you already built as part of engine.
 
 (You will automatically get the Debug libraries of Poco when building
 a Debug configuration of the Collabora Office, and the Release libraries
 in a Release configuration. There is some slightly questionable
 #pragmas in <Poco/Foundation.h> to take care of that.)
 
-	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=$PWD/engine --with-lo-path=`wslpath -w $PWD/engine/instdir` --with-poco-includes=/mnt/c/Users/tml/poco-poco-1.14.2-release/include --with-poco-libs=/mnt/c/Users/tml/poco-poco-1.14.2-release/lib64 --with-zstd-includes=/mnt/c/Users/tml/zstd-1.5.7/lib --with-zstd-libs=/mnt/c/Users/tml/zstd-1.5.7/build/VS2010/bin/x64_Release --with-libpng-includes=$PWD/engine/workdir/UnpackedTarball/libpng --with-libpng-libs=$PWD/engine/workdir/LinkTarget/StaticLibrary --with-zlib-includes=$PWD/engine/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
+	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=$PWD/engine --with-lo-path=`wslpath -w $PWD/engine/instdir` --with-poco-includes=/mnt/c/Users/tml/poco-poco-1.14.2-release/include --with-poco-libs=/mnt/c/Users/tml/poco-poco-1.14.2-release/lib64 --with-libpng-includes=$PWD/engine/workdir/UnpackedTarball/libpng --with-libpng-libs=$PWD/engine/workdir/LinkTarget/StaticLibrary --with-zlib-includes=$PWD/engine/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
 
 Obviously, adapt as necessary to match where you
-built zstd and Poco. Also change the `--with-info-url` as
+built Poco. Also change the `--with-info-url` as
 appropriate. That is the web page that will be shown when clicking the
 leftmost button in the toolbar.
 
