@@ -38,8 +38,8 @@ For more detailed and pretty instructions on integrating with various partner so
 * After [building Collabora Online]({{< relref "build-code" >}} "How to build CODE") just do a `make run` and follow the link to tweak things live.
 * Browse the [SDK documentation](https://sdk.collaboraonline.com/) and find all about [postmessage api](https://sdk.collaboraonline.com/docs/postmessage_api.html), [integration examples](https://sdk.collaboraonline.com/docs/examples.html) and more
 * Code review now happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests. The [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) walks through SSH key setup, the `commit-msg` hook, and pushing to `refs/for/main`.
-* Read the full guide on [Contributing](https://github.com/CollaboraOnline/online/blob/main/CONTRIBUTING.md)
-* Read the [Code of Conduct](https://github.com/CollaboraOnline/online/blob/main/CODE_OF_CONDUCT.md)
+* Read the full guide on [Contributing](https://github.com/CollaboraOnline/online.mirror/blob/main/CONTRIBUTING.md)
+* Read the [Code of Conduct](https://github.com/CollaboraOnline/online.mirror/blob/main/CODE_OF_CONDUCT.md)
 * To ask questions, use the [Collabora Online forum](https://forum.collaboraonline.com)
 + To talk with other developers please join us on {{% chat-room %}} room.
 * And feel free to share your contributions and iterations on twitter by tagging [@CollaboraOffice](https://x.com/CollaboraOffice) or [@CollaboraOffice@mastodon.social](https://mastodon.social/@CollaboraOffice) and using the `#cool_dev`
