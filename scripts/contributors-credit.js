@@ -1,7 +1,7 @@
 const fs = require('fs');
 const fetch = require('node-fetch');
 
-const REPO = 'CollaboraOnline/online';
+const REPO = 'CollaboraOnline/online.mirror';
 const PER_PAGE = 100;
 const API_URL = `https://api.github.com/repos/${REPO}/contributors`;
 
