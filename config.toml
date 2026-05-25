@@ -19,20 +19,30 @@ theme = "hugo-theme-chunky-poster"
     url = "/"
     weight = 1
   [[menu.main]]
+    identifier = "docs"
+    name = "Docs"
+    url = "https://sdk.collaboraonline.com/"
+    weight = 2
+  [[menu.main]]
+    identifier = "code-on-gerrit"
+    name = "Code on Gerrit"
+    url = "https://gerrit.collaboraoffice.com/plugins/gitiles/online"
+    weight = 3
+  [[menu.main]]
+    identifier = "issues-on-github"
+    name = "Issues on Github"
+    url = "https://github.com/CollaboraOnline/online/issues"
+    weight = 4
+  [[menu.main]]
     identifier = "downloads"
     name = "Downloads"
     url = "https://www.collaboraoffice.com/code/"
-    weight = 4
+    weight = 5
   [[menu.main]]
     identifier = "ideas-page"
     name = "Ideas Page"
     url = "/ideas/"
-    weight = 3
-  [[menu.main]]
-    identifier = "docs"
-    name = "Docs"
-    url = "/docs/"
-    weight = 2
+    weight = 6
 
 [taxonomies]
 category = "categories"
