@@ -35,7 +35,7 @@ On top of our daily Collabora Office core archives, we have also added integrati
 
 * Sign-up on [Gitpod.io](http://gitpod.io/) with your GitHub account
 * Install the [proper extension](https://www.gitpod.io/docs/browser-extension/) for your browser
-* Go to [COOL repo](https://github.com/CollaboraOnline/online)
+* Go to [COOL repo](https://github.com/CollaboraOnline/online.mirror)
 * Click on the green Gitpod button near the top of the GitHub repo page
 
 {{< figure src="/images/gitpod-button-onGitHub.png" alt="GitPod green button on GitHub">}}
@@ -60,7 +60,7 @@ On top of our daily Collabora Office core archives, we have also added integrati
 * You can also run cypress tests via GitPod. To do so, please  prepend `CYPRESS_BROWSER="/usr/bin/chromium"` (`"firefox"` can also be used). Example:
   * `cd cypress_test/`
   * `CYPRESS_BROWSER="/usr/bin/chromium" make check` for every test or `CYPRESS_BROWSER="/usr/bin/chromium" make check-desktop spec=impress/scrolling_spec.js` for one specific test on desktop
-  * More info at https://github.com/CollaboraOnline/online/blob/main/cypress_test/README
+  * More info at https://github.com/CollaboraOnline/online.mirror/blob/main/cypress_test/README
 
 * Code review now happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests. When you have something to submit, follow the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) to set up SSH keys, install the `commit-msg` hook, and push to `refs/for/main`.
 
@@ -576,7 +576,7 @@ Update the log rotation strategy in ```coolwsd.xml```:
 
 This resolves the crash.
 
-Note: This is a dependency-related issue that may be resolved in future versions. You can also refer to the online repository's development notes for the most current information regarding dependency issues: https://github.com/CollaboraOnline/online/blob/main/dev-notes/dependency-issues.md?plain=1#L12
+Note: This is a dependency-related issue that may be resolved in future versions. You can also refer to the online repository's development notes for the most current information regarding dependency issues: https://github.com/CollaboraOnline/online.mirror/blob/main/dev-notes/dependency-issues.md?plain=1#L12
 
 </section>
 
