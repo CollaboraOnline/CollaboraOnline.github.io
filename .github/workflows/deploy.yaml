@@ -17,6 +17,7 @@ jobs:
       - name: Publish Site
         uses: chabad360/hugo-gh-pages@master
         with:
+          cname: www.collaboraoffice.org
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           args: --gc --minify --cleanDestinationDir
