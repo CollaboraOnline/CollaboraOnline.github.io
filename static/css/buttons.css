@@ -48,6 +48,10 @@
   float: right;
 }
 
+.btn-copy-code {
+  margin-block-end: 1rem;
+}
+
 .homepage .btn {
   margin-bottom: 6px;
   margin-inline-end: 10px;
