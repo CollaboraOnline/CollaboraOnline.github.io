@@ -24,6 +24,8 @@ Are you interested in contributing but do not know where to start? Head over to 
 # Build CODE
 Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operating system or opt for using Gitpod (hack, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
 
+**Where the code lives.** Development happens on [Gerrit](https://gerrit.collaboraoffice.com/), which is where code review takes place and where the canonical history lives. GitHub hosts a read-only mirror of the monorepo (online plus core under `engine/`) at [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror) for browsing, cloning, and GitHub Actions. The original [`CollaboraOnline/online`](https://github.com/CollaboraOnline/online) repo is now used only for the issue tracker, so existing `cool#1234` references in commit messages keep working. Pull requests against either GitHub repo are auto-closed; see the FAQ entries [What is `online.mirror`?]({{< relref "faq.md#online-mirror" >}}) and [I have a fix - where do I send the PR?]({{< relref "faq.md#sending-fixes" >}}) for the contribution workflow.
+
 {{< build-dropdown >}}<br>
 
 <section id="build-code-gitpod" class="build-code-content">

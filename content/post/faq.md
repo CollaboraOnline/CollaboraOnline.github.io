@@ -49,8 +49,8 @@ rapid iteration cycle to iron out the more obvious problems. We
 would love to have your help finding and fixing issues that come
 there. Checkout [how to file a bug]({{< relref "filebugs.md" >}} "How to file bugs") and put a 'Desktop:' prefix in your subject - thanks!
 
-### Where can I get code ?
-{{< faq-date added="2025-11-26" added_commit="01ec5bb" updated="2026-04-28" updated_commit="HEAD" >}}
+### Where can I get code ? {#where-can-i-get-code}
+{{< faq-date added="2025-11-26" added_commit="01ec5bb" updated="2026-05-26" updated_commit="HEAD" >}}
 
 The `online` and `core` repositories have been unified into a single Gerrit
 monorepo. The LibreOffice core now lives under `engine/` inside `online`, so
@@ -62,6 +62,7 @@ Gerrit.
 Repository (monorepo, includes core under `engine/`):
 - anonymous HTTPS: `git clone https://gerrit.collaboraoffice.com/online`
 - Gerrit SSH (for contributors): `git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online`
+- read-only GitHub mirror (for browsing, one-off clones, or history): [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror). See [What is `online.mirror`?](#online-mirror) for the role split.
 
 For the full Gerrit workflow (SSH key setup, `commit-msg` hook, pushing to
 `refs/for/main`, addressing review feedback) see the
@@ -72,6 +73,41 @@ Build instructions:
 - Linux (core dependencies): https://wiki.documentfoundation.org/Development/BuildingOnLinux
 - Windows: https://collaboraonline.github.io/post/build-co-windows/
 - macOS: https://collaboraonline.github.io/post/build-co-mac/
+
+### What is `online.mirror`, and why is the code there instead of `online`? {#online-mirror}
+{{< faq-date added="2026-05-26" added_commit="HEAD" >}}
+
+[`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror)
+is a read-only GitHub mirror of our Gerrit monorepo. It is the place to
+clone, browse, or link to the current source and the full project history on
+GitHub.
+
+A few things to know:
+
+- It does not accept pull requests. Code review happens on Gerrit; see
+  [I have a fix - where do I send the PR?](#sending-fixes).
+- It does not host issues. Issues stay on
+  [`CollaboraOnline/online`](https://github.com/CollaboraOnline/online/issues)
+  so existing `cool#1234` references in commit messages keep working.
+- GitHub Actions for the project run against `online.mirror`.
+
+[`CollaboraOnline/online`](https://github.com/CollaboraOnline/online) itself
+is now a minimal shell for the issue tracker; the source no longer lives
+there.
+
+### I have a fix - where do I send the PR? {#sending-fixes}
+{{< faq-date added="2026-05-26" added_commit="HEAD" >}}
+
+Neither GitHub repo accepts pull requests for code review. All code changes
+go through [Gerrit](https://gerrit.collaboraoffice.com/). `online.mirror` is
+a read-only mirror, and PRs opened against `CollaboraOnline/online` are
+auto-closed with a pointer to Gerrit.
+
+If you are sending your first change, the
+[first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41)
+walks through SSH key setup, the `commit-msg` hook (which generates the
+`Change-Id` trailer), and pushing to `refs/for/main`. See
+[Where can I get code?](#where-can-i-get-code) for the clone URLs.
 
 ### Where are unsaved documents stored on macOS? {#macos-unsaved}
 {{< faq-date added="2025-12-03" added_commit="de61883" >}}
