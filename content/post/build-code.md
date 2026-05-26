@@ -83,6 +83,22 @@ If you are using VS Code as your IDE and want to run code in your local VS Code 
 
 ---
 
+<section id="build-code-clone-script" class="build-code-content">
+
+## Auto-setup script (Linux/macOS) {#build-code-clone-script}
+
+A one-stop helper for Linux/macOS newcomers that handles SSH key setup, Gerrit registration, cloning, and (optionally) the engine plus online build. See [scripts/clone-online.md](https://github.com/CollaboraOnline/online.mirror/blob/main/scripts/clone-online.md) for flags, prerequisites, and troubleshooting.
+
+```sh
+curl -fsSL https://github.com/CollaboraOnline/online.mirror/raw/main/scripts/clone-online.sh -o clone-online.sh
+chmod +x clone-online.sh
+./clone-online.sh
+```
+
+</section>
+
+---
+
 <section id="build-code-opensuse" class="build-code-content">
 
 ## openSUSE {#build-code-on-opensuse}
