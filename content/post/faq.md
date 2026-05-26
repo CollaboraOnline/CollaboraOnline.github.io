@@ -63,6 +63,7 @@ Repository (monorepo, includes core under `engine/`):
 - anonymous HTTPS: `git clone https://gerrit.collaboraoffice.com/online`
 - Gerrit SSH (for contributors): `git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online`
 - read-only GitHub mirror (for browsing, one-off clones, or history): [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror). See [What is `online.mirror`?](#online-mirror) for the role split.
+- new contributor on Linux/macOS? An [auto-setup script]({{< relref "build-code.md#build-code-clone-script" >}}) handles SSH key, Gerrit registration, and clone in one go.
 
 For the full Gerrit workflow (SSH key setup, `commit-msg` hook, pushing to
 `refs/for/main`, addressing review feedback) see the
