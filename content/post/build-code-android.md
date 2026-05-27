@@ -33,7 +33,7 @@ build the native parts on Windows
 
 ### The Android platform tools including a compatible NDK  ## {.extraclass class="requirement-machine"}
 
-Builds have been tested with Android NDK 23.0.7599858, other NDK versions may or
+Builds have been tested with Android NDK 27.3.13750724, other NDK versions may or
 may not work
 
 ### An Android or ChromeOS device or simulator ## {.extraclass class="requirement-machine"}
@@ -77,7 +77,7 @@ Create a file called `autogen.input` in your core clone with the
 following content:
 
     --build=x86_64-unknown-linux-gnu
-    --with-android-ndk=/home/$USER/Android/Sdk/ndk/23.0.7599858
+    --with-android-ndk=/home/$USER/Android/Sdk/ndk/27.3.13750724
     --with-android-sdk=/home/$USER/Android/Sdk
     --enable-sal-log
     --enable-dbgutil
