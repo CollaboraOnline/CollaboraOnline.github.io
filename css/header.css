@@ -4,6 +4,27 @@
 
 .navbar-brand {
   margin-right: 0;
+  line-height: 1.1;
+}
+
+.navbar-brand .brand-main {
+  display: block;
+}
+
+.navbar-brand .brand-sub {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.navbar-nav .nav-link {
+  white-space: nowrap;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .hero h3 {
