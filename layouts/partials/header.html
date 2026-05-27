@@ -1,7 +1,11 @@
 {{ $current := . }}
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-sm" id="navbar-main-menu">
     <div class="container">
-        <a class="navbar-brand font-weight-bold" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        <a class="navbar-brand font-weight-bold" href="{{ .Site.BaseURL }}">
+            {{ $parts := split .Site.Title " - " }}
+            <span class="brand-main">{{ index $parts 0 }}</span>
+            <span class="brand-sub">{{ index $parts 1 }}</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

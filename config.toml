@@ -1,7 +1,7 @@
 baseURL = "https://CollaboraOnline.github.io"
 RelativeURLs=true
 CanonifyURLs=true
-title = "Collabora Online - Community Page"
+title = "Collabora Office - Community Page"
 copyright = "Unless a license is otherwise specified, content is under CC-BY-SA 3.0 <br> <br> Beaver illustrations are under <a href='https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/master/content/images/beaver/LICENSE'>Copyright © 2025 Collabora Ltd. All rights reserved.</a>"
 paginate = 2
 languageCode = "en"
@@ -38,11 +38,6 @@ theme = "hugo-theme-chunky-poster"
     name = "Downloads"
     url = "https://www.collaboraoffice.com/code/"
     weight = 5
-  [[menu.main]]
-    identifier = "ideas-page"
-    name = "Ideas Page"
-    url = "/ideas/"
-    weight = 6
 
 [taxonomies]
 category = "categories"

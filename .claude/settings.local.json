@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs ls *)",
+      "Bash(git log *)",
+      "Bash(gh api *)",
+      "Bash(hugo --quiet)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://github.com/CollaboraOnline/online/blob/main/README.CONTRIBUTING.md)",
+      "Bash(curl -s -o /dev/null -w \"master: %{http_code}\\\\n\" https://raw.githubusercontent.com/CollaboraOnline/online.mirror/master/README.CONTRIBUTING.md)",
+      "Bash(curl -s -o /dev/null -w \"main:   %{http_code}\\\\n\" https://raw.githubusercontent.com/CollaboraOnline/online.mirror/main/README.CONTRIBUTING.md)",
+      "Bash(curl -s https://api.github.com/repos/CollaboraOnline/online.mirror)",
+      "Bash(git *)"
+    ]
+  }
+}
