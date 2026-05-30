@@ -37,7 +37,8 @@ Tested on Fedora 43.
 sudo dnf install autoconf automake cppunit-devel fontconfig-devel gcc gcc-c++ \
     git libcap-devel libpng-devel libtool libzstd-devel make npm openssl-devel \
     pam-devel perl-JSON-PP pkgconf-pkg-config poco-devel python3-lxml \
-    python3-polib qt6-linguist qt6-qtbase-devel qt6-qtwebengine-devel
+    python3-polib qt6-linguist qt6-qtbase-devel qt6-qtwebengine-devel \
+    qt6-qtwebsockets-devel
 ```
 
 ### Ubuntu
@@ -46,9 +47,9 @@ Tested on Ubuntu 24.04 LTS.
 
 ```bash
 sudo apt install -y autoconf automake build-essential cmake fontconfig git \
-    libcap-dev libcppunit-dev libpam0g-dev libpng-dev libssl-dev libtool \
-    libzstd-dev npm pkg-config python3-lxml python3-polib qt6-base-dev \
-    qt6-tools-dev qt6-tools-dev-tools qt6-webengine-dev
+    libcap-dev libcppunit-dev libpam0g-dev libpng-dev libqt6websockets6-dev \
+    libssl-dev libtool libzstd-dev npm pkg-config python3-lxml python3-polib \
+    qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-webengine-dev
 ```
 
 #### Poco from source
@@ -73,9 +74,10 @@ Tested on Debian 13 (Trixie).
 
 ```bash
 sudo apt install -y autoconf automake build-essential fontconfig git \
-    libcap-dev libcppunit-dev libpam0g-dev libpng-dev libpoco-dev libssl-dev \
-    libtool libzstd-dev npm pkg-config python3-lxml python3-polib \
-    qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-webengine-dev
+    libcap-dev libcppunit-dev libpam0g-dev libpng-dev libpoco-dev \
+    libqt6websockets6-dev libssl-dev libtool libzstd-dev npm pkg-config \
+    python3-lxml python3-polib qt6-base-dev qt6-tools-dev qt6-tools-dev-tools \
+    qt6-webengine-dev
 ```
 
 ### Arch Linux
@@ -83,7 +85,8 @@ sudo apt install -y autoconf automake build-essential fontconfig git \
 ```bash
 sudo pacman -Syu autoconf automake base-devel cppunit fontconfig \
     git libcap libpng libtool npm openssl pam perl-json-pp pkgconf poco \
-    python-lxml python-polib qt6-base qt6-tools qt6-webengine zstd
+    python-lxml python-polib qt6-base qt6-tools qt6-webengine \
+    qt6-websockets zstd
 ```
 
 ### openSUSE
@@ -96,7 +99,7 @@ sudo zypper install autoconf automake cppunit-devel fontconfig-devel gcc-c++ \
     git libcap-devel libopenssl-devel libpng16-compat-devel libpng16-devel \
     libtool libzstd-devel make npm-default pam-devel pkgconf poco-devel \
     ${PYVER}-lxml ${PYVER}-polib qt6-base-devel qt6-tools-linguist \
-    qt6-webenginecore-devel qt6-webenginewidgets-devel
+    qt6-webenginecore-devel qt6-webenginewidgets-devel qt6-websockets-devel
 ```
 
 ### General notes
