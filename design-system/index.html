@@ -309,6 +309,65 @@ body {
 	margin-top: 4px;
 }
 
+.ds-sidebar-figma-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 10px;
+	padding: 6px 12px;
+	background: #082333;
+	color: #fff;
+	border: 1px solid #020A10;
+	border-radius: var(--border-radius);
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.15s, color 0.15s;
+}
+.ds-sidebar-figma-link:hover {
+	background: #11354A;
+	color: #fff;
+	text-decoration: none;
+}
+.ds-sidebar-figma-link:focus-visible {
+	outline: 2px solid #082333;
+	outline-offset: 2px;
+}
+.ds-sidebar-figma-link svg {
+	width: 11px;
+	height: 11px;
+	flex: 0 0 auto;
+}
+
+.ds-cta-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: 10px;
+	padding: 6px 12px;
+	background: #5C2983;
+	color: #fff;
+	border: 1px solid #401D5C;
+	border-radius: var(--border-radius);
+	font-size: 12px;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.15s, color 0.15s;
+}
+.ds-cta-link:hover {
+	background: #401D5C;
+	color: #fff;
+}
+.ds-cta-link:focus-visible {
+	outline: 2px solid #5C2983;
+	outline-offset: 2px;
+}
+.ds-cta-link svg {
+	width: 11px;
+	height: 11px;
+	flex: 0 0 auto;
+}
+
 .ds-nav-section {
 	padding: 8px 20px 4px;
 	font-size: 10px;
@@ -1837,7 +1896,14 @@ p.ds-desc {
 <nav class="ds-sidebar" id="ds-sidebar">
 	<div class="ds-sidebar-logo">
 		<h2>Collabora Online<br>Design System</h2>
-		<p>Extracted from CSS codebase</p>
+		<a class="ds-sidebar-figma-link" href="https://www.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=0-1&amp;t=f5bSK1GGhZyyN9WB-1" target="_blank" rel="noopener noreferrer" title="Open in a new tab">
+			Components on Figma
+			<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 2v2h2.59L6.3 9.29l1.41 1.42L13 5.41V8h2V2H9zM3 4h6v2H5v6h6V8h2v6H3V4z"/></svg>
+		</a>
+		<a class="ds-cta-link" href="https://www.collaboraoffice.org/design-with-us/" target="_blank" rel="noopener noreferrer" title="Open in a new tab">
+			Design with us
+			<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 2v2h2.59L6.3 9.29l1.41 1.42L13 5.41V8h2V2H9zM3 4h6v2H5v6h6V8h2v6H3V4z"/></svg>
+		</a>
 	</div>
 
 	<div class="ds-nav-section">Foundations</div>
