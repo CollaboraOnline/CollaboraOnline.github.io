@@ -1377,6 +1377,366 @@ p.ds-desc {
 .ds-cursor-source-list { margin: 0; padding: 0; list-style: none; }
 .ds-cursor-source-list li { margin: 0; }
 
+/* ===== Infographics ===== */
+.ds-infographic-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 20px;
+	margin: 16px 0 24px;
+}
+.ds-infographic-card {
+	background: var(--color-background-lighter);
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+}
+.ds-infographic-preview {
+	background: #ffffff;
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 12px;
+}
+.ds-infographic-preview svg {
+	width: 100%;
+	height: auto;
+	max-height: 220px;
+	display: block;
+}
+.ds-infographic-card-title {
+	margin: 0 0 4px;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--color-main-text);
+}
+.ds-infographic-card-title code {
+	font-size: 13px;
+	background: var(--color-background-dark);
+	padding: 1px 6px;
+	border-radius: 4px;
+}
+.ds-infographic-card-desc {
+	margin: 0 0 12px;
+	font-size: 13px;
+	color: var(--color-text-lighter);
+	line-height: 1.45;
+}
+.ds-infographic-card-sources {
+	margin-top: auto;
+	padding-top: 8px;
+	border-top: 1px dashed var(--color-border);
+	font-size: 12px;
+}
+.ds-infographic-card-sources ul { margin: 0; padding: 0; list-style: none; }
+.ds-infographic-card-sources li { margin: 2px 0; }
+
+/* ===== Dialogs ===== */
+
+/* Stage: the "page behind the dialog". Provides backdrop, scale, framing. */
+.ds-dialog-stage {
+	position: relative;
+	background: var(--color-background-darker);
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	min-height: 280px;
+	padding: 32px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 12px 0 8px;
+}
+/* "Document" content under the dialog, so the user can see what gets dimmed */
+.ds-dialog-stage-doc {
+	position: absolute;
+	inset: 16px;
+	background: var(--color-background-lighter);
+	border-radius: calc(var(--border-radius) - 2px);
+	padding: 16px;
+	color: var(--color-text-lighter);
+	font-size: 12px;
+	line-height: 1.5;
+	z-index: 0;
+}
+.ds-dialog-stage-doc::before {
+	content: '';
+	display: block;
+	height: 12px;
+	width: 60%;
+	background: var(--color-border);
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+.ds-dialog-stage-doc::after {
+	content: '';
+	display: block;
+	height: 8px;
+	width: 90%;
+	background: var(--color-border-lighter);
+	border-radius: 3px;
+	box-shadow:
+		0 14px 0 var(--color-border-lighter),
+		0 28px 0 var(--color-border-lighter),
+		0 42px 0 var(--color-border-lighter);
+}
+.ds-dialog-stage-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.35);
+	z-index: 1;
+}
+
+/* The dialog "window" itself */
+.ds-dialog {
+	position: relative;
+	z-index: 2;
+	background: var(--color-main-background);
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+	min-width: 320px;
+	max-width: 100%;
+	font-size: var(--default-font-size);
+	font-family: var(--cool-font);
+}
+.ds-dialog-titlebar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 12px;
+	border-bottom: 1px solid var(--color-border);
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+	background: var(--color-background-lighter);
+	cursor: default;
+	user-select: none;
+}
+.ds-dialog--nonmodal .ds-dialog-titlebar { cursor: grab; }
+.ds-dialog--nonmodal.ds-dragging,
+.ds-dialog--nonmodal.ds-dragging .ds-dialog-titlebar { cursor: grabbing; user-select: none; }
+.ds-dialog-titlebar-title {
+	font-weight: 600;
+	font-size: 13px;
+	color: var(--color-main-text);
+}
+.ds-dialog-titlebar-close {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	border: 0;
+	background: transparent;
+	color: var(--color-text-lighter);
+	border-radius: var(--border-radius);
+	font-size: 16px;
+	cursor: pointer;
+}
+.ds-dialog-titlebar-close:hover {
+	background: var(--color-background-dark);
+	color: var(--color-main-text);
+}
+.ds-dialog-body {
+	padding: 14px 14px 10px;
+	color: var(--color-main-text);
+}
+.ds-dialog-body p { margin: 0 0 10px; line-height: 1.45; }
+.ds-dialog-buttons {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 12px 12px;
+	border-top: 1px solid var(--color-border-lighter);
+}
+.ds-dialog-buttons .ds-dialog-buttons-left {
+	display: flex;
+	gap: 8px;
+}
+.ds-dialog-buttons .ds-dialog-buttons-spacer { flex: 1; }
+.ds-dialog-buttons .ds-dialog-buttons-right {
+	display: flex;
+	gap: 8px;
+}
+/* Reset .demo button margins inside dialog (the existing button styles use margin:5px which is wrong inside a button bar). */
+.ds-dialog .demo .button-primary,
+.ds-dialog .demo .button-secondary {
+	margin: 0;
+}
+
+/* Nonmodal stage variation: no dimming, doc visible behind */
+.ds-dialog-stage--nonmodal { background: var(--color-background-lighter); }
+.ds-dialog-stage--nonmodal .ds-dialog-stage-overlay { display: none; }
+
+/* Popover stage: anchored to a fake control */
+.ds-dialog-stage--popover {
+	min-height: 220px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 24px;
+	background: var(--color-background-lighter);
+}
+.ds-dialog-stage--popover .ds-dialog-stage-overlay { display: none; }
+.ds-popover-anchor {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 6px 10px;
+	font-size: 13px;
+	background: var(--color-main-background);
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	color: var(--color-main-text);
+	cursor: default;
+}
+.ds-popover-anchor::after {
+	content: '\25BE';
+	color: var(--color-text-lighter);
+	font-size: 10px;
+}
+.ds-popover {
+	position: absolute;
+	top: 60px;
+	left: 24px;
+	z-index: 2;
+	background: var(--color-main-background);
+	border: 1px solid var(--color-border-dark);
+	border-radius: var(--border-radius);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+	min-width: 200px;
+	font-size: 13px;
+	padding: 4px 0;
+}
+.ds-popover-item {
+	padding: 6px 12px;
+	cursor: pointer;
+	color: var(--color-main-text);
+}
+.ds-popover-item:hover { background: var(--color-primary-lighter); }
+.ds-popover-item.selected {
+	background: var(--color-primary);
+	color: var(--color-primary-text);
+}
+
+/* Anatomy: labelled callouts around a dialog */
+.ds-dialog-anatomy {
+	position: relative;
+	background: var(--color-background-darker);
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	padding: 56px 24px;
+	margin: 12px 0 16px;
+	display: flex;
+	justify-content: center;
+	overflow: visible;
+}
+.ds-anatomy-dialog {
+	position: relative;
+	overflow: visible;
+}
+.ds-anatomy-callout {
+	position: absolute;
+	z-index: 3;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--color-primary-dark);
+	background: var(--color-primary-lighter);
+	padding: 3px 8px;
+	border-radius: 10px;
+	border: 1px solid var(--color-primary);
+	white-space: nowrap;
+}
+/* Side modifiers: chip hangs off the left or right edge of the dialog */
+.ds-anatomy-callout--left  { right: 100%; margin-right: 60px; }
+.ds-anatomy-callout--right { left:  100%; margin-left:  60px; }
+/* Leader line: from the chip to the dialog edge */
+.ds-anatomy-callout--left::before,
+.ds-anatomy-callout--right::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: 56px;
+	height: 1px;
+	background: var(--color-primary);
+}
+.ds-anatomy-callout--left::before  { left:  100%; }
+.ds-anatomy-callout--right::before { right: 100%; }
+/* Terminating dot: sits on the dialog edge, on the labelled row */
+.ds-anatomy-callout--left::after,
+.ds-anatomy-callout--right::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -4px;
+	width: 8px;
+	height: 8px;
+	background: var(--color-primary);
+	border-radius: 50%;
+}
+.ds-anatomy-callout--left::after  { left:  100%; margin-left:  56px; }
+.ds-anatomy-callout--right::after { right: 100%; margin-right: 56px; }
+/* Row-specific vertical positioning, aligned to the chip's vertical centre */
+.ds-anatomy-callout--titlebar { top: 8px;  }
+.ds-anatomy-callout--close    { top: 8px;  }
+.ds-anatomy-callout--body     { top: 52px; }
+.ds-anatomy-callout--buttons-left,
+.ds-anatomy-callout--buttons-right { bottom: 18px; }
+@media (max-width: 880px) {
+	.ds-anatomy-callout { display: none; }
+}
+.ds-anatomy-legend {
+	margin: 8px 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	color: var(--color-text-lighter);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 4px 16px;
+}
+.ds-anatomy-legend li::before {
+	content: '\25CF';
+	color: var(--color-primary);
+	margin-right: 6px;
+}
+.ds-anatomy-legend strong {
+	color: var(--color-main-text);
+	font-weight: 600;
+}
+
+/* Examples table tweaks */
+.ds-dialog-examples td:first-child { font-weight: 600; }
+.ds-dialog-examples code { white-space: nowrap; }
+
+/* ===== Figma embed ===== */
+.ds-figma-embed {
+	margin: 12px 0 20px;
+}
+.ds-figma-embed-label {
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	color: var(--color-text-lighter);
+	margin-bottom: 6px;
+}
+.ds-figma-embed iframe {
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	aspect-ratio: 800 / 450;
+	height: auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: var(--border-radius);
+	background: var(--color-background-lighter);
+}
+
 /* ===== Mobile: hamburger menu ===== */
 .ds-menu-toggle {
 	display: none;
@@ -1483,6 +1843,9 @@ p.ds-desc {
 	<div class="ds-nav-section">Foundations</div>
 	<a class="ds-nav-link" href="#typography">Typography</a>
 	<a class="ds-nav-link" href="#color">Color Palette</a>
+	<a class="ds-nav-link" href="#cursors">Cursors</a>
+	<a class="ds-nav-link" href="#infographics">Infographics</a>
+	<a class="ds-nav-link" href="#icons">Icons</a>
 
 	<div class="ds-nav-section" style="margin-top:12px">Components</div>
 	<a class="ds-nav-link" href="#btn-primary">Primary Button</a>
@@ -1504,9 +1867,14 @@ p.ds-desc {
 	<a class="ds-nav-link" href="#badge">Badge</a>
 	<a class="ds-nav-link" href="#separator">Separator</a>
 	<a class="ds-nav-link" href="#snackbar">Snackbar</a>
+	<a class="ds-nav-link" href="#status-bar">Status bar</a>
 
-	<div class="ds-nav-section" style="margin-top:12px">Reference</div>
-	<a class="ds-nav-link" href="#cursors">Cursors</a>
+	<div class="ds-nav-section" style="margin-top:12px">Patterns</div>
+	<a class="ds-nav-link" href="#dialogs">Dialogs</a>
+	<a class="ds-nav-link sub" href="#dialogs-anatomy">Anatomy</a>
+	<a class="ds-nav-link sub" href="#dialogs-modal">Modal (lightbox)</a>
+	<a class="ds-nav-link sub" href="#dialogs-nonmodal">Nonmodal (draggable)</a>
+	<a class="ds-nav-link sub" href="#dialogs-popover">Popover</a>
 </nav>
 
 <!-- ===== MAIN CONTENT ===== -->
@@ -1611,6 +1979,174 @@ p.ds-desc {
 
 
 <!-- ========== COMPONENTS ========== -->
+<!-- ========== CURSORS ========== -->
+<h2 class="ds-section-title" id="cursors">Cursors</h2>
+<p class="ds-desc">All cursor types used across Collabora Online, with live previews and links to source. There is no centralised cursor map in the codebase &mdash; cursors are applied inline via <code>style.cursor</code> in TypeScript/JavaScript or via CSS classes. The <em>Uses</em> chip counts occurrences in <code>browser/css/</code> + inline <code>style.cursor</code> assignments in <code>browser/src/</code>. The <em>Source</em> link points at one representative declaration at a pinned upstream SHA.</p>
+
+<div class="ds-cursor-note">
+<strong>Tip:</strong> hover the preview box to see the actual cursor as your browser renders it. Source links point at the read-only GitHub mirror <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror">CollaboraOnline/online.mirror</a> pinned to SHA <code>2b71cd2</code> so line numbers stay accurate; re-run the generator after upstream changes to refresh.
+</div>
+
+<h3 class="ds-component-title" id="cursors-standard">Standard CSS cursors</h3>
+<table class="ds-spec-table ds-cursor-table">
+	<thead>
+		<tr><th>Cursor</th><th>Preview</th><th>Description</th><th>Uses</th><th>Source</th></tr>
+	</thead>
+	<tbody>
+		<tr><td><code>auto</code></td><td><div class="ds-cursor-preview" style="cursor: auto;">hover</div></td><td>Browser chooses cursor automatically</td><td><span class="ds-cursor-count">3</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#L233">cool.css:233</a></td></tr>
+		<tr><td><code>cell</code></td><td><div class="ds-cursor-preview" style="cursor: cell;">hover</div></td><td>Cell selection in spreadsheets</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css#L2">spreadsheet.css:2</a></td></tr>
+		<tr><td><code>col-resize</code></td><td><div class="ds-cursor-preview" style="cursor: col-resize;">hover</div></td><td>Column width resize</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#L266">cool.css:266</a></td></tr>
+		<tr><td><code>context-menu</code></td><td><div class="ds-cursor-preview" style="cursor: context-menu;">hover</div></td><td>Context menu trigger</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#L747">jsdialogs.css:747</a></td></tr>
+		<tr><td><code>crosshair</code></td><td><div class="ds-cursor-preview" style="cursor: crosshair;">hover</div></td><td>Crosshair selector (auto-fill in spreadsheets)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#L169">leaflet.css:169</a></td></tr>
+		<tr><td><code>default</code></td><td><div class="ds-cursor-preview" style="cursor: default;">hover</div></td><td>Standard arrow (buttons, toolbar, panels)</td><td><span class="ds-cursor-count">20</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L61">jquery-ui-lightness.css:61</a></td></tr>
+		<tr><td><code>e-resize</code></td><td><div class="ds-cursor-preview" style="cursor: e-resize;">hover</div></td><td>Resize from the east (right) edge</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L613">jquery-ui-lightness.css:613</a></td></tr>
+		<tr><td><code>ew-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ew-resize;">hover</div></td><td>Horizontal resize (east/west)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#L187">leaflet.css:187</a></td></tr>
+		<tr><td><code>grab</code></td><td><div class="ds-cursor-preview" style="cursor: grab;">hover</div></td><td>Hand ready to grab/drag. <em>Used only as SVG fallback in this codebase</em> &mdash; see <code>grab.svg</code> below.</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#L30">ShapeHandleAnchorSubSection.ts:30</a></td></tr>
+		<tr><td><code>grabbing</code></td><td><div class="ds-cursor-preview" style="cursor: grabbing;">hover</div></td><td>Hand actively dragging</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#L220">leaflet.css:220</a></td></tr>
+		<tr><td><code>help</code></td><td><div class="ds-cursor-preview" style="cursor: help;">hover</div></td><td>Help/explainer cursor (info tooltips, AI chat sidebar)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/aichat-sidebar.css#L212">aichat-sidebar.css:212</a></td></tr>
+		<tr><td><code>inherit</code></td><td><div class="ds-cursor-preview" style="cursor: inherit;">hover</div></td><td>Inherit cursor from parent element</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#L946">cool.css:946</a></td></tr>
+		<tr><td><code>move</code></td><td><div class="ds-cursor-preview" style="cursor: move;">hover</div></td><td>Move/drag element (four-arrow)</td><td><span class="ds-cursor-count">7</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#L165">leaflet.css:165</a></td></tr>
+		<tr><td><code>n-resize</code></td><td><div class="ds-cursor-preview" style="cursor: n-resize;">hover</div></td><td>Resize from north (top) edge</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L599">jquery-ui-lightness.css:599</a></td></tr>
+		<tr><td><code>ne-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ne-resize;">hover</div></td><td>Resize from north-east corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L648">jquery-ui-lightness.css:648</a></td></tr>
+		<tr><td><code>nesw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nesw-resize;">hover</div></td><td>Diagonal resize (NE / SW)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#L183">leaflet.css:183</a></td></tr>
+		<tr><td><code>not-allowed</code></td><td><div class="ds-cursor-preview" style="cursor: not-allowed;">hover</div></td><td>Action not permitted (disabled buttons)</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/backstage.css#L166">backstage.css:166</a></td></tr>
+		<tr><td><code>ns-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ns-resize;">hover</div></td><td>Vertical resize (north/south)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#L195">leaflet.css:195</a></td></tr>
+		<tr><td><code>nw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nw-resize;">hover</div></td><td>Resize from north-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L641">jquery-ui-lightness.css:641</a></td></tr>
+		<tr><td><code>nwse-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nwse-resize;">hover</div></td><td>Diagonal resize (NW / SE)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#L191">leaflet.css:191</a></td></tr>
+		<tr><td><code>pointer</code></td><td><div class="ds-cursor-preview" style="cursor: pointer;">hover</div></td><td>Interactive element (buttons, links)</td><td><span class="ds-cursor-count">78</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/selectionMarkers.css#L29">selectionMarkers.css:29</a></td></tr>
+		<tr><td><code>row-resize</code></td><td><div class="ds-cursor-preview" style="cursor: row-resize;">hover</div></td><td>Row height resize</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css#L228">spreadsheet.css:228</a></td></tr>
+		<tr><td><code>s-resize</code></td><td><div class="ds-cursor-preview" style="cursor: s-resize;">hover</div></td><td>Resize from south (bottom) edge</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L606">jquery-ui-lightness.css:606</a></td></tr>
+		<tr><td><code>se-resize</code></td><td><div class="ds-cursor-preview" style="cursor: se-resize;">hover</div></td><td>Resize from south-east corner (table fill)</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L627">jquery-ui-lightness.css:627</a></td></tr>
+		<tr><td><code>sw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: sw-resize;">hover</div></td><td>Resize from south-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L634">jquery-ui-lightness.css:634</a></td></tr>
+		<tr><td><code>text</code></td><td><div class="ds-cursor-preview" style="cursor: text;">hover</div></td><td>Text input / text selection (I-beam)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L862">jquery-ui-lightness.css:862</a></td></tr>
+		<tr><td><code>w-resize</code></td><td><div class="ds-cursor-preview" style="cursor: w-resize;">hover</div></td><td>Resize from west (left) edge</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#L620">jquery-ui-lightness.css:620</a></td></tr>
+	</tbody>
+</table>
+
+<h3 class="ds-component-title" id="cursors-custom">Custom SVG cursors</h3>
+<p class="ds-desc">Three product-specific cursors shipped as SVG assets in <code>browser/images/cursors/</code>.</p>
+<table class="ds-spec-table ds-cursor-table">
+	<thead>
+		<tr><th>Cursor</th><th>SVG</th><th>Preview</th><th>Description</th><th>Uses</th><th>Source</th></tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>crop.svg</code></td>
+			<td><div class="ds-cursor-svg"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path style="fill:#ffffff;" d="M 5,1 V 5 H 1 v 4 h 4 v 6 c 0,2.197294 1.8027056,4 4,4 h 6 v 4 h 4 v -4 h 4 V 15 H 19 V 9 C 19,6.8027056 17.197294,5 15,5 H 9 V 1 Z m 4,8 h 6 v 6 H 9 Z"/><path style="fill:#000000;" d="M 6 2 L 6 6 L 2 6 L 2 8 L 6 8 L 6 15 A 3 3 0 0 0 9 18 L 16 18 L 16 22 L 18 22 L 18 18 L 22 18 L 22 16 L 18 16 L 18 9 A 3 3 0 0 0 15 6 L 8 6 L 8 2 L 6 2 z M 8 8 L 15 8 A 1 1 0 0 1 16 9 L 16 16 L 9 16 A 1 1 0 0 1 8 15 L 8 8 z "/></svg></div></td>
+			<td><div class="ds-cursor-preview" style="cursor: url('data:image/svg+xml;utf8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath style=%22fill:%23ffffff;%22 d=%22M 5,1 V 5 H 1 v 4 h 4 v 6 c 0,2.197294 1.8027056,4 4,4 h 6 v 4 h 4 v -4 h 4 V 15 H 19 V 9 C 19,6.8027056 17.197294,5 15,5 H 9 V 1 Z m 4,8 h 6 v 6 H 9 Z%22 /%3E %3Cpath style=%22fill:%23000000;%22 d=%22M 6 2 L 6 6 L 2 6 L 2 8 L 6 8 L 6 15 A 3 3 0 0 0 9 18 L 16 18 L 16 22 L 18 22 L 18 18 L 22 18 L 22 16 L 18 16 L 18 9 A 3 3 0 0 0 15 6 L 8 6 L 8 2 L 6 2 z M 8 8 L 15 8 A 1 1 0 0 1 16 9 L 16 16 L 9 16 A 1 1 0 0 1 8 15 L 8 8 z %22 /%3E %3C/svg%3E') 8 8, auto;">hover</div></td>
+			<td>Image cropping tool &mdash; shown when dragging a shape's scaling handle in crop mode</td>
+			<td><span class="ds-cursor-count">1</span></td>
+			<td>
+				<ul class="ds-cursor-source-list">
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/images/cursors/crop.svg">crop.svg</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleScalingSubSection.ts#L36">ShapeHandleScalingSubSection.ts:36</a></li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><code>fill.svg</code></td>
+			<td><div class="ds-cursor-svg"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path style="fill:#ffffff;" d="m 12,0 c -1.644363,0 -2.998936,1.3539113 -3,2.9980469 -2.93e-4,0.1854743 0.016921,0.3723357 0.050781,0.5546875 l 0.4433594,4.4375 C 9.4755406,8.4360185 9.3832545,8.6770477 9.3046875,8.78125 9.2292645,8.8812844 9.1237529,8.9461136 8.8574219,9 H 7 C 5.909297,9 5,9.9092972 5,11 v 0.5 4.423828 C 4.614758,18.258234 4.0745928,19.614487 3.1054688,21.552734 L 2.3828125,23 H 19.609375 L 19.494141,21.896484 C 19.301755,20.043463 19.173014,18.430705 19,15.957031 V 11.5 11 C 19,9.9092972 18.090703,9 17,9 H 15.142578 C 14.876247,8.9461136 14.770736,8.8812844 14.695312,8.78125 14.616746,8.6770477 14.524454,8.4360185 14.505859,7.9902344 l 0.44336,-4.4375 C 14.982969,3.3709852 15.000169,3.1848018 15,3 15,1.3549901 13.645009,0 12,0 Z"/><path style="fill:#000000;" d="m 12,1 c -1.1,0 -2,0.9 -2,2 -2.1e-4,0.1331322 0.01288,0.2659524 0.03906,0.3964844 L 10.5,8 C 10.462718,9.2 10,9.8 9,10 H 7 c -0.554,0 -1,0.446 -1,1 v 4 h 12 v -4 c 0,-0.554 -0.446,-1 -1,-1 H 15 C 14.019187,9.826374 13.537282,9.197784 13.5,8 L 14,3.3964844 C 14,3.2659524 14,3.1331322 14,3 14,1.9 13.1,1 12,1 Z M 6,16 C 5.6,18.477191 5,20 4,22 H 18.5 C 18.3,20.126595 18.174317,18.5 18,16 Z"/></svg></div></td>
+			<td><div class="ds-cursor-preview" style="cursor: url('data:image/svg+xml;utf8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath style=%22fill:%23ffffff;%22 d=%22m 12,0 c -1.644363,0 -2.998936,1.3539113 -3,2.9980469 -2.93e-4,0.1854743 0.016921,0.3723357 0.050781,0.5546875 l 0.4433594,4.4375 C 9.4755406,8.4360185 9.3832545,8.6770477 9.3046875,8.78125 9.2292645,8.8812844 9.1237529,8.9461136 8.8574219,9 H 7 C 5.909297,9 5,9.9092972 5,11 v 0.5 4.423828 C 4.614758,18.258234 4.0745928,19.614487 3.1054688,21.552734 L 2.3828125,23 H 19.609375 L 19.494141,21.896484 C 19.301755,20.043463 19.173014,18.430705 19,15.957031 V 11.5 11 C 19,9.9092972 18.090703,9 17,9 H 15.142578 C 14.876247,8.9461136 14.770736,8.8812844 14.695312,8.78125 14.616746,8.6770477 14.524454,8.4360185 14.505859,7.9902344 l 0.44336,-4.4375 C 14.982969,3.3709852 15.000169,3.1848018 15,3 15,1.3549901 13.645009,0 12,0 Z%22 /%3E %3Cpath style=%22fill:%23000000;%22 d=%22m 12,1 c -1.1,0 -2,0.9 -2,2 -2.1e-4,0.1331322 0.01288,0.2659524 0.03906,0.3964844 L 10.5,8 C 10.462718,9.2 10,9.8 9,10 H 7 c -0.554,0 -1,0.446 -1,1 v 4 h 12 v -4 c 0,-0.554 -0.446,-1 -1,-1 H 15 C 14.019187,9.826374 13.537282,9.197784 13.5,8 L 14,3.3964844 C 14,3.2659524 14,3.1331322 14,3 14,1.9 13.1,1 12,1 Z M 6,16 C 5.6,18.477191 5,20 4,22 H 18.5 C 18.3,20.126595 18.174317,18.5 18,16 Z%22 /%3E %3C/svg%3E') 4 18, auto;">hover</div></td>
+			<td>Auto-fill brush &mdash; paint formatting / spreadsheet fill handle</td>
+			<td><span class="ds-cursor-count">2</span></td>
+			<td>
+				<ul class="ds-cursor-source-list">
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/images/cursors/fill.svg">fill.svg</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css#L6">spreadsheet.css:6</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#L250">cool.css:250</a></li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td><code>grab.svg</code></td>
+			<td><div class="ds-cursor-svg"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path style="fill:#ffffff;" d="m 9.75,2.344 c -0.498,-0.55 -1.136,-0.934 -1.937,-0.875 H 7.78 A 2.487,2.487 0 0 0 5.53,4.374944 l 1.25,7.469 c -0.473,-0.334 -1.047,-0.905 -1.468,-1.094 -0.978,-0.438 -1.873,-0.493 -2.594,-0.281 -1.442,0.424 -1.875,1.812 -1.875,1.812 l -0.25,0.719 0.625,0.437 c 1.376,0.93 2.774,3.183 4.094,5.282 0.66,1.049 1.315,2.042 2.062,2.843 0.747,0.801 1.642,1.476 2.781,1.47 l 8.845,-0.033 h 0.969 l 0.03,-0.969 c 0,0 0.09,-1.745 0.25,-3.812 0.162,-2.068 0.41,-4.478 0.688,-5.594 l 1.5,-6.031 c 0.433,-1.657 -0.886,-3.252 -2.593,-3.125 -0.524,0.03 -0.987,0.26 -1.375,0.562 l 0.031,-0.906 A 2.49,2.49 0 0 0 15.844,0.468 c -0.852,0.052 -1.434,0.6 -1.844,1.28 -0.447,-1.668 -3.616,-1.77 -4.25,0.595 Z"/><path style="fill:#000000;" d="m 11.906,1.47 c -0.786,0.047 -1.457,0.808 -1.406,1.59 l 0.406,7.094 c 0.02,0.354 -0.298,0.427 -0.344,0.156 l -1.1,-6.562 c -0.108,-0.742 -0.846,-1.336 -1.594,-1.281 -0.823,0.074 -1.485,0.935 -1.344,1.75 l 1.5,9 q 0.008,0.191 0.063,0.375 c -0.059,0.237 -0.094,0.406 -0.094,0.406 -5,-5 -6.219,-1.406 -6.219,-1.406 3.398,2.294 5.459,9.456 8.375,9.437 l 8.843,-0.031 c 0,0 0.33,-7.055 0.969,-9.625 l 1.5,-6.031 c 0.24,-0.92 -0.615,-1.946 -1.563,-1.875 a 1.54,1.54 0 0 0 -1.375,1.156 l -1.281,5.094 c -0.07,0.276 -0.136,0.165 -0.125,-0.063 l 0.375,-7.594 c 0.055,-0.848 -0.746,-1.648 -1.594,-1.593 -0.733,0.045 -1.377,0.703 -1.406,1.4370002 l -0.344,6.938 c -0.017,0.352 -0.26,0.36 -0.281,-0.032 L 13.5,2.906944 C 13.468,2.1109438 12.702,1.4189438 11.906,1.47 Z"/></svg></div></td>
+			<td><div class="ds-cursor-preview" style="cursor: url('data:image/svg+xml;utf8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath style=%22fill:%23ffffff;%22 d=%22m 9.75,2.344 c -0.498,-0.55 -1.136,-0.934 -1.937,-0.875 H 7.78 A 2.487,2.487 0 0 0 5.53,4.374944 l 1.25,7.469 c -0.473,-0.334 -1.047,-0.905 -1.468,-1.094 -0.978,-0.438 -1.873,-0.493 -2.594,-0.281 -1.442,0.424 -1.875,1.812 -1.875,1.812 l -0.25,0.719 0.625,0.437 c 1.376,0.93 2.774,3.183 4.094,5.282 0.66,1.049 1.315,2.042 2.062,2.843 0.747,0.801 1.642,1.476 2.781,1.47 l 8.845,-0.033 h 0.969 l 0.03,-0.969 c 0,0 0.09,-1.745 0.25,-3.812 0.162,-2.068 0.41,-4.478 0.688,-5.594 l 1.5,-6.031 c 0.433,-1.657 -0.886,-3.252 -2.593,-3.125 -0.524,0.03 -0.987,0.26 -1.375,0.562 l 0.031,-0.906 A 2.49,2.49 0 0 0 15.844,0.468 c -0.852,0.052 -1.434,0.6 -1.844,1.28 -0.447,-1.668 -3.616,-1.77 -4.25,0.595 Z%22 /%3E %3Cpath style=%22fill:%23000000;%22 d=%22m 11.906,1.47 c -0.786,0.047 -1.457,0.808 -1.406,1.59 l 0.406,7.094 c 0.02,0.354 -0.298,0.427 -0.344,0.156 l -1.1,-6.562 c -0.108,-0.742 -0.846,-1.336 -1.594,-1.281 -0.823,0.074 -1.485,0.935 -1.344,1.75 l 1.5,9 q 0.008,0.191 0.063,0.375 c -0.059,0.237 -0.094,0.406 -0.094,0.406 -5,-5 -6.219,-1.406 -6.219,-1.406 3.398,2.294 5.459,9.456 8.375,9.437 l 8.843,-0.031 c 0,0 0.33,-7.055 0.969,-9.625 l 1.5,-6.031 c 0.24,-0.92 -0.615,-1.946 -1.563,-1.875 a 1.54,1.54 0 0 0 -1.375,1.156 l -1.281,5.094 c -0.07,0.276 -0.136,0.165 -0.125,-0.063 l 0.375,-7.594 c 0.055,-0.848 -0.746,-1.648 -1.594,-1.593 -0.733,0.045 -1.377,0.703 -1.406,1.4370002 l -0.344,6.938 c -0.017,0.352 -0.26,0.36 -0.281,-0.032 L 13.5,2.906944 C 13.468,2.1109438 12.702,1.4189438 11.906,1.47 Z%22 /%3E %3C/svg%3E') 12 12, grab;">hover</div></td>
+			<td>Custom grab hand &mdash; shape anchor and custom shape handles</td>
+			<td><span class="ds-cursor-count">2</span></td>
+			<td>
+				<ul class="ds-cursor-source-list">
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/images/cursors/grab.svg">grab.svg</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#L30">ShapeHandleAnchorSubSection.ts:30</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleCustomSubSection.ts#L31">ShapeHandleCustomSubSection.ts:31</a></li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p class="ds-desc">Cursor declarations live across <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css">spreadsheet.css</a> (spreadsheet-specific), <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css">leaflet.css</a> (map/pan resize), <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css">jquery-ui-lightness.css</a> (UI widget resize), and inline in <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/tree/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections">browser/src/canvas/sections/</a> (shape/canvas handles).</p>
+
+<h3 class="ds-component-title" id="cursors-anatomy">Anatomy</h3>
+<p class="ds-desc">How each custom cursor is constructed: hotspot, fill, stroke, and the surrounding clear region. The three Figma frames below break down the anatomy and the production conventions used across the cursor set.</p>
+
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Cursor anatomy: overview</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=502-5991&amp;embed-host=share" allowfullscreen loading="lazy" title="Cursor anatomy overview (Figma)"></iframe>
+</div>
+
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Cursor anatomy: detail</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=502-6006&amp;embed-host=share" allowfullscreen loading="lazy" title="Cursor anatomy detail (Figma)"></iframe>
+</div>
+
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Cursor anatomy: variants</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=502-3827&amp;embed-host=share" allowfullscreen loading="lazy" title="Cursor anatomy variants (Figma)"></iframe>
+</div>
+
+<h2 class="ds-section-title" id="infographics">Infographics</h2>
+<p class="ds-desc">Illustrative SVGs that visualise a choice or state for the user. Distinct from <a href="#cursors">cursors</a> (functional pointer feedback) and toolbar icons (which live in the LibreOffice icon themes). Infographics live next to the surface that uses them &mdash; e.g. <code>browser/admin/images/</code> for the integrator settings panel.</p>
+
+<h3 class="ds-component-title" id="infographics-ui-mode">UI mode selector (integrator settings)</h3>
+<p class="ds-desc">Shown in the per-user settings dialog under <em>Customization</em>, where the user picks between the Notebookbar and Compact toolbar layouts. The two illustrations are paired as clickable cards; the active card gets the <code>.selected</code> ring (blue tint + border). Rendered at <code>300px</code> wide, scaling responsively. See <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1443"><code>AdminIntegratorSettings.ts:1443</code></a> (<code>renderCompactModeToggle</code>) and <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/admin/css/adminIntegratorSettings.css#L669"><code>adminIntegratorSettings.css:669</code></a> for the styling.</p>
+
+<div class="ds-infographic-grid">
+	<div class="ds-infographic-card">
+		<div class="ds-infographic-preview">
+			<svg viewBox="0 0 238.12 158.75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Notebookbar view: tabbed ribbon-style toolbar"><defs><filter id="infographic-shadow-notebookbar" x="-.026573" y="-.042516" width="1.0531" height="1.085" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="2.1781894"/></filter></defs><rect x="13.229" y="13.229" width="211.67" height="132.29" rx="1.5875" ry="1.5875" fill="#989898" filter="url(#infographic-shadow-notebookbar)" stroke="#fff" stroke-width=".79375" style="paint-order:fill markers stroke"/><rect x="13.229" y="13.229" width="211.67" height="132.29" rx="1.5875" ry="1.5875" fill="#f2f2f2" stroke="#fff" stroke-width=".79375" style="paint-order:fill markers stroke"/><path d="m14.817 13.229h208.49c0.87947 0 1.5875 0.70802 1.5875 1.5875v129.12c0 0.87947-0.70803 1.5875-1.5875 1.5875h-208.49c-0.87948 0-1.5875-0.70803-1.5875-1.5875v-129.12c0-0.87948 0.70802-1.5875 1.5875-1.5875z" fill="#f9f9f9" stroke="#fff" stroke-width=".79375" style="paint-order:fill markers stroke"/><g transform="translate(0 1.7942)"><rect x="13.229" y="14.49" width="211.67" height="28.575" fill="#f2f2f2" style="paint-order:fill markers stroke"/><path transform="translate(0 -1.7942)" d="m14.817 13.229c-0.87948 0-1.5875 0.70802-1.5875 1.5875v14.245c0 0.87948 0.70802 1.5875 1.5875 1.5875h41.385v-10.786c0-0.87948 0.70802-1.5875 1.5875-1.5875h37.042c0.87948 0 1.5875 0.70802 1.5875 1.5875v10.786h126.89c0.87947 0 1.5875-0.70802 1.5875-1.5875v-14.245c0-0.87948-0.70803-1.5875-1.5875-1.5875z" fill="#0369a2" stroke-width="2.5186" style="paint-order:fill markers stroke"/><rect x="20.079" y="21.489" width="25.929" height="3.175" fill="#f2f2f2" style="paint-order:fill markers stroke"/><rect x="63.346" y="21.489" width="25.929" height="3.175" fill="#0369a2" style="paint-order:fill markers stroke"/><rect x="106.61" y="21.489" width="25.929" height="3.175" fill="#f2f2f2" style="paint-order:fill markers stroke"/><rect x="149.88" y="21.489" width="25.929" height="3.175" fill="#f2f2f2" style="paint-order:fill markers stroke"/><rect x="193.15" y="21.489" width="25.929" height="3.175" fill="#f2f2f2" style="paint-order:fill markers stroke"/><g><path d="m32.411 45.566h173.3v98.16h-173.3z" fill="#f9f9f9" stop-color="#000000" style="paint-order:fill markers stroke"/><path d="m206.11 144.12v-94.708h-174.1v94.708m0.79492-93.915h172.51v93.915h-172.51z" fill="#e6e6e6" stop-color="#000000" style="paint-order:fill markers stroke"/></g><rect x="13.229" y="42.801" width="211.67" height=".26458" fill="#e6e6e6" style="paint-order:fill markers stroke"/></g><g transform="translate(55.533 -44.663)" fill="#ccc"><rect x="-34.66" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="-18.785" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="15.61" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="20.902" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="26.194" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="31.485" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="-28.31" y="78.94" width="6.35" height="6.35" rx=".79375" ry=".79375"/><rect x="36.777" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="-34.66" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="26.194" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="31.485" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="36.777" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="-18.785" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="-13.494" y="77.881" width="7.9375" height="3.175" rx=".79375" ry=".79375"/><rect x="-3.4396" y="77.881" width="16.933" height="3.175" rx=".79375" ry=".79375"/><rect x="-8.7312" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="1.8521" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="15.61" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="20.902" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="57.944" y="77.484" width="51.254" height="10.054" rx=".79375" ry=".79375"/><rect x="-13.494" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="-3.4396" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="7.1438" y="83.173" width="6.35" height="3.175" rx=".79375" ry=".79375"/><rect x="52.652" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="43.127" y="78.94" width="6.35" height="6.35" rx=".79375" ry=".79375"/><rect x="52.652" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="111.31" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="111.31" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="116.61" y="77.881" width="6.35" height="3.175" rx=".79375" ry=".79375"/><rect x="116.61" y="83.173" width="6.35" height="3.175" rx=".79375" ry=".79375"/><rect x="126.66" y="77.881" width="3.175" height="3.175" rx=".79375" ry=".79375"/><rect x="126.66" y="83.173" width="3.175" height="3.175" rx=".79375" ry=".79375"/></g><rect x="48.12" y="66.026" width="47.146" height="34.424" fill="#f2f2f2" stroke="#e6e6e6" stroke-width=".79375" style="paint-order:fill markers stroke"/><rect x="101.26" y="65.629" width="78.846" height="3.7042" fill="#e6e6e6"/><rect x="101.26" y="73.566" width="65.295" height="2.6458" fill="#e6e6e6"/><rect x="101.26" y="78.858" width="53.975" height="2.6458" fill="#e6e6e6"/><rect x="101.26" y="84.15" width="62.649" height="2.6458" fill="#e6e6e6"/><rect x="101.26" y="89.441" width="57.622" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="109.02" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="114.31" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="119.6" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="124.89" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="109.02" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="114.31" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="119.6" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="124.89" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="130.19" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="135.48" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="140.77" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="130.19" width="59.267" height="2.6458" fill="#e6e6e6"/></svg>
+		</div>
+		<p class="ds-infographic-card-title"><code>Notebookbar.svg</code></p>
+		<p class="ds-infographic-card-desc">Tabbed ribbon-style toolbar (the default). Shows a coloured tab strip with one tab active, plus a grid of icon-sized rectangles standing in for the per-tab tool clusters.</p>
+		<div class="ds-infographic-card-sources">
+			<ul>
+				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/admin/images/Notebookbar.svg"><code>browser/admin/images/Notebookbar.svg</code></a></li>
+				<li>Used at <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1444"><code>AdminIntegratorSettings.ts:1444</code></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="ds-infographic-card">
+		<div class="ds-infographic-preview">
+			<svg viewBox="0 0 238.12 158.75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Compact view: single-row classic toolbar"><defs><filter id="infographic-shadow-compact" x="-.026573" y="-.042516" width="1.0531" height="1.085" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="2.1781894"/></filter></defs><rect x="13.229" y="13.229" width="211.67" height="132.29" rx="1.5875" ry="1.5875" fill="#989898" filter="url(#infographic-shadow-compact)" stroke="#fff" stroke-width=".79375" style="paint-order:fill markers stroke"/><g><path d="m14.817 13.229h208.49c0.87947 0 1.5875 0.70802 1.5875 1.5875v129.12c0 0.87947-0.70803 1.5875-1.5875 1.5875h-208.49c-0.87948 0-1.5875-0.70803-1.5875-1.5875v-129.12c0-0.87948 0.70802-1.5875 1.5875-1.5875z" fill="#e9e9e9" stop-color="#000000" style="paint-order:fill markers stroke"/><path d="m14.816 12.832c-1.0925 0-1.9844 0.8919-1.9844 1.9844v129.12c0 1.0925 0.8919 1.9844 1.9844 1.9844h208.49c1.0925 0 1.9844-0.8919 1.9844-1.9844v-129.12c0-1.0925-0.8919-1.9844-1.9844-1.9844zm0 0.79492h208.49c0.66647 0 1.1895 0.52298 1.1895 1.1895v129.12c0 0.66647-0.52299 1.1895-1.1895 1.1895h-208.49c-0.66647 0-1.1895-0.52299-1.1895-1.1895v-129.12c0-0.66647 0.52298-1.1895 1.1895-1.1895z" fill="#fff" stop-color="#000000" style="paint-order:fill markers stroke"/></g><path d="m14.817 33.222c-0.87948 0-1.5875 0.70802-1.5875 1.5875v109.12c0 0.87947 0.70802 1.5875 1.5875 1.5875h208.49c0.87947 0 1.5875-0.70803 1.5875-1.5875v-110.71z" fill="#f2f2f2" stroke="#fff" stroke-width=".79375" style="paint-order:fill markers stroke"/><g transform="translate(0 1.7942)"><path d="m32.411 45.566h173.3v98.16h-173.3z" fill="#f9f9f9"/><path d="m206.11 144.12v-98.953h-174.1v98.953m0.79492-98.16h172.51v98.16h-172.51z" fill="#e6e6e6"/></g><g transform="translate(0 1.7942)"><rect x="13.629" y="11.833" width="210.87" height="6.6146" rx="1.0583" ry="1.0583" fill="#0369a2"/><rect x="13.629" y="17.389" width="210.87" height="8.4667" fill="#f9f9f9"/><rect x="19.979" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="19.979" y="13.817" width="12.7" height="1.5875" fill="#f2f2f2"/><rect x="36.473" y="13.817" width="6.35" height="1.5875" fill="#f2f2f2"/><rect x="58.879" y="13.817" width="8.4667" height="1.5875" fill="#f2f2f2"/><rect x="81.285" y="13.817" width="8.4667" height="1.5875" fill="#f2f2f2"/><rect x="71.141" y="13.817" width="6.35" height="1.5875" fill="#f2f2f2"/><rect x="93.547" y="13.817" width="8.4667" height="1.5875" fill="#f2f2f2"/><rect x="46.618" y="13.817" width="8.4667" height="1.5875" fill="#f2f2f2"/><rect x="105.81" y="13.817" width="6.35" height="1.5875" fill="#f2f2f2"/><rect x="115.95" y="13.817" width="6.35" height="1.5875" fill="#f2f2f2"/><rect x="26.859" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="33.738" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="40.618" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="47.498" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="54.377" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="61.257" y="19.241" width="14.288" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="77.662" y="19.241" width="23.813" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="103.59" y="19.241" width="10.318" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="116.03" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="122.91" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="129.79" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="136.67" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="143.54" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="150.42" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="157.3" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="164.18" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="171.06" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="177.94" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/><rect x="214.97" y="19.241" width="4.7625" height="4.7625" rx=".79375" ry=".79375" fill="#ccc"/></g><rect x="48.12" y="61.78" width="47.146" height="34.424" fill="#f2f2f2" stroke="#e6e6e6" stroke-width=".79375"/><rect x="101.26" y="61.383" width="78.846" height="3.7042" fill="#e6e6e6"/><rect x="101.26" y="69.321" width="65.295" height="2.6458" fill="#e6e6e6"/><rect x="101.26" y="74.613" width="53.975" height="2.6458" fill="#e6e6e6"/><rect x="101.26" y="79.904" width="62.649" height="2.6458" fill="#e6e6e6"/><rect x="101.26" y="85.196" width="57.622" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="104.77" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="110.07" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="115.36" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="120.65" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="104.77" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="110.07" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="115.36" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="120.65" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="125.94" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="131.23" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="47.723" y="136.52" width="69.85" height="2.6458" fill="#e6e6e6"/><rect x="120.55" y="125.94" width="59.267" height="2.6458" fill="#e6e6e6"/></svg>
+		</div>
+		<p class="ds-infographic-card-title"><code>Compact.svg</code></p>
+		<p class="ds-infographic-card-desc">Classic single-row toolbar with a menubar above (the &ldquo;Compact&rdquo; mode). Mirrors the Notebookbar illustration's footprint so the two cards align side-by-side.</p>
+		<div class="ds-infographic-card-sources">
+			<ul>
+				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/admin/images/Compact.svg"><code>browser/admin/images/Compact.svg</code></a></li>
+				<li>Used at <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1451"><code>AdminIntegratorSettings.ts:1451</code></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<p class="ds-desc"><strong>Conventions for new infographics:</strong> author at the rendered display size (here 900&times;600 viewBox, displayed at 300&times;200), keep the Collabora primary blue <code>#0369a2</code> for emphasis strokes, use the neutral greys (<code>#e6e6e6</code>, <code>#f2f2f2</code>, <code>#f9f9f9</code>) for the chrome, and pair illustrations that share a footprint so they can be compared at a glance.</p>
+
+<!-- ========== ICONS ========== -->
+<h2 class="ds-section-title" id="icons">Icons</h2>
+<p class="ds-desc">The Collabora Online icon theme started life as <strong>Colibre</strong>, <a href="https://colibreoffice.wordpress.com/2018/05/21/libreoffice-6-1-fits-windows-10/" title="Visit Andreas blog">designed by Andreas Kainz</a>. Over the years the set has grown well past its starting point: hundreds of additions and tweaks have landed from many contributors, and the result no longer follows the original Colibre conventions in every detail. The drift is friendly, not adversarial, but it does mean the source-of-truth for "what an icon should look like today" is no longer the historical Colibre rules. But here is the current icon guidelines for Collabora Online:</p>
+
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Icon Grid</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=578-3378&amp;embed-host=share" allowfullscreen loading="lazy" title="Icon Grid (Figma)"></iframe>
+</div>
+
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Icon Colors</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=579-8422&amp;embed-host=share" allowfullscreen loading="lazy" title="Icon Colors (Figma)"></iframe>
+</div>
+
+
 <h2 class="ds-section-title" id="components">Components</h2>
 
 <!-- PRIMARY BUTTON -->
@@ -1646,6 +2182,11 @@ p.ds-desc {
 	<tr><td>Margin</td><td><code>5px</code></td></tr>
 </table>
 
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Figma reference</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=66-680&amp;embed-host=share" allowfullscreen loading="lazy" title="Primary button (Figma)"></iframe>
+</div>
+
 
 <!-- SECONDARY BUTTON -->
 <h3 class="ds-component-title" id="btn-secondary">Secondary Button</h3>
@@ -1679,6 +2220,11 @@ p.ds-desc {
 	<tr><td>Text Color</td><td><code>#333333</code></td></tr>
 	<tr><td>Margin</td><td><code>5px</code></td></tr>
 </table>
+
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Figma reference</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=66-750&amp;embed-host=share" allowfullscreen loading="lazy" title="Secondary button (Figma)"></iframe>
+</div>
 
 
 <!-- ICON TOOLBAR BUTTON -->
@@ -1883,14 +2429,9 @@ p.ds-desc {
 <h3 class="ds-component-title" id="input-combobox">Combobox</h3>
 <p class="ds-desc">Editable input combined with a dropdown list. Class: <code>.ui-combobox</code></p>
 
-<div class="ds-demo demo">
-	<div class="ds-demo-header">Interactive Demo</div>
-	<div class="ds-demo-canvas">
-		<div class="ui-combobox">
-			<input class="ui-combobox-content" type="text" value="Liberation Serif" />
-			<button class="ui-combobox-button"><span class="ui-listbox-arrow" style="position:static; margin:0"></span></button>
-		</div>
-	</div>
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Figma reference</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=66-977&amp;embed-host=share" allowfullscreen loading="lazy" title="Combobox (Figma)"></iframe>
 </div>
 
 <table class="ds-spec-table">
@@ -1931,6 +2472,11 @@ p.ds-desc {
 			<button class="ui-tab notebookbar" onclick="selectTab(this)">View</button>
 		</div>
 	</div>
+</div>
+
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Figma reference: Notebookbar tab</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=199-1042&amp;embed-host=share" allowfullscreen loading="lazy" title="Notebookbar tab (Figma)"></iframe>
 </div>
 
 <table class="ds-spec-table">
@@ -2160,102 +2706,203 @@ p.ds-desc {
 </table>
 
 
-<!-- ========== CURSORS ========== -->
-<h2 class="ds-section-title" id="cursors">Cursors</h2>
-<p class="ds-desc">All cursor types used across Collabora Online, with live previews and links to source. There is no centralised cursor map in the codebase &mdash; cursors are applied inline via <code>style.cursor</code> in TypeScript/JavaScript or via CSS classes. The <em>Uses</em> chip counts occurrences in <code>browser/css/</code> + inline <code>style.cursor</code> assignments in <code>browser/src/</code>. The <em>Source</em> link points at one representative declaration at a pinned upstream SHA.</p>
+<!-- DOCUMENT STATUS BAR -->
+<h3 class="ds-component-title" id="status-bar">Status bar</h3>
+<p class="ds-desc">The bar pinned at the bottom of the document viewport. Hosts document-wide indicators (page number, zoom, word count, language, sheet selector in Calc, slide indicator in Impress) and the user presence list for collaborative editing. See the Figma reference for the canonical layout.</p>
 
-<div class="ds-cursor-note">
-<strong>Tip:</strong> hover the preview box to see the actual cursor as your browser renders it. Source links are pinned to <code>cogerrit/main</code> at SHA <code>2b71cd2</code> so line numbers stay accurate; re-run the generator after upstream changes to refresh.
+<div class="ds-figma-embed">
+	<div class="ds-figma-embed-label">Figma reference</div>
+	<iframe src="https://embed.figma.com/design/llT9ld2MKP1hoRfKnNnjPt/Design-System-Collabora-Producitivity?node-id=222-1922&amp;embed-host=share" allowfullscreen loading="lazy" title="Status bar (Figma)"></iframe>
 </div>
 
-<h3 class="ds-component-title" id="cursors-standard">Standard CSS cursors</h3>
-<table class="ds-spec-table ds-cursor-table">
-	<thead>
-		<tr><th>Cursor</th><th>Preview</th><th>Description</th><th>Uses</th><th>Source</th></tr>
-	</thead>
+
+<!-- ========== DIALOGS ========== -->
+<h2 class="ds-section-title" id="dialogs">Dialogs</h2>
+<p class="ds-desc">Collabora Online uses a single dialog framework (<em>jsdialog</em>, see <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/control/Control.JSDialog.js"><code>Control.JSDialog.js</code></a> + <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css"><code>jsdialogs.css</code></a>) but the framework hosts three behaviourally distinct kinds of surface, classified by two dimensions &mdash; whether the backdrop is dimmed (lightbox / nonlightbox) and whether background interaction is blocked (modal / nonmodal / non-dialog). See <a target="_blank" rel="noopener noreferrer" href="https://forum.collaboraonline.com/t/classifying-dialogs/1649">the classification thread on the forum</a> for the original rubric.</p>
+
+<table class="ds-spec-table">
+	<thead><tr><th>Kind</th><th>Backdrop</th><th>Background interaction</th><th>Movable</th><th>Outside click</th><th>CSS marker</th></tr></thead>
 	<tbody>
-		<tr><td><code>auto</code></td><td><div class="ds-cursor-preview" style="cursor: auto;">hover</div></td><td>Browser chooses cursor automatically</td><td><span class="ds-cursor-count">3</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#233">cool.css:233</a></td></tr>
-		<tr><td><code>cell</code></td><td><div class="ds-cursor-preview" style="cursor: cell;">hover</div></td><td>Cell selection in spreadsheets</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css#2">spreadsheet.css:2</a></td></tr>
-		<tr><td><code>col-resize</code></td><td><div class="ds-cursor-preview" style="cursor: col-resize;">hover</div></td><td>Column width resize</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#266">cool.css:266</a></td></tr>
-		<tr><td><code>context-menu</code></td><td><div class="ds-cursor-preview" style="cursor: context-menu;">hover</div></td><td>Context menu trigger</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#747">jsdialogs.css:747</a></td></tr>
-		<tr><td><code>crosshair</code></td><td><div class="ds-cursor-preview" style="cursor: crosshair;">hover</div></td><td>Crosshair selector (auto-fill in spreadsheets)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#169">leaflet.css:169</a></td></tr>
-		<tr><td><code>default</code></td><td><div class="ds-cursor-preview" style="cursor: default;">hover</div></td><td>Standard arrow (buttons, toolbar, panels)</td><td><span class="ds-cursor-count">20</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#61">jquery-ui-lightness.css:61</a></td></tr>
-		<tr><td><code>e-resize</code></td><td><div class="ds-cursor-preview" style="cursor: e-resize;">hover</div></td><td>Resize from the east (right) edge</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#613">jquery-ui-lightness.css:613</a></td></tr>
-		<tr><td><code>ew-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ew-resize;">hover</div></td><td>Horizontal resize (east/west)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#187">leaflet.css:187</a></td></tr>
-		<tr><td><code>grab</code></td><td><div class="ds-cursor-preview" style="cursor: grab;">hover</div></td><td>Hand ready to grab/drag. <em>Used only as SVG fallback in this codebase</em> &mdash; see <code>grab.svg</code> below.</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#30">ShapeHandleAnchorSubSection.ts:30</a></td></tr>
-		<tr><td><code>grabbing</code></td><td><div class="ds-cursor-preview" style="cursor: grabbing;">hover</div></td><td>Hand actively dragging</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#220">leaflet.css:220</a></td></tr>
-		<tr><td><code>help</code></td><td><div class="ds-cursor-preview" style="cursor: help;">hover</div></td><td>Help/explainer cursor (info tooltips, AI chat sidebar)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/aichat-sidebar.css#212">aichat-sidebar.css:212</a></td></tr>
-		<tr><td><code>inherit</code></td><td><div class="ds-cursor-preview" style="cursor: inherit;">hover</div></td><td>Inherit cursor from parent element</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#946">cool.css:946</a></td></tr>
-		<tr><td><code>move</code></td><td><div class="ds-cursor-preview" style="cursor: move;">hover</div></td><td>Move/drag element (four-arrow)</td><td><span class="ds-cursor-count">7</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#165">leaflet.css:165</a></td></tr>
-		<tr><td><code>n-resize</code></td><td><div class="ds-cursor-preview" style="cursor: n-resize;">hover</div></td><td>Resize from north (top) edge</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#599">jquery-ui-lightness.css:599</a></td></tr>
-		<tr><td><code>ne-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ne-resize;">hover</div></td><td>Resize from north-east corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#648">jquery-ui-lightness.css:648</a></td></tr>
-		<tr><td><code>nesw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nesw-resize;">hover</div></td><td>Diagonal resize (NE / SW)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#183">leaflet.css:183</a></td></tr>
-		<tr><td><code>not-allowed</code></td><td><div class="ds-cursor-preview" style="cursor: not-allowed;">hover</div></td><td>Action not permitted (disabled buttons)</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/backstage.css#166">backstage.css:166</a></td></tr>
-		<tr><td><code>ns-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ns-resize;">hover</div></td><td>Vertical resize (north/south)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#195">leaflet.css:195</a></td></tr>
-		<tr><td><code>nw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nw-resize;">hover</div></td><td>Resize from north-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#641">jquery-ui-lightness.css:641</a></td></tr>
-		<tr><td><code>nwse-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nwse-resize;">hover</div></td><td>Diagonal resize (NW / SE)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css#191">leaflet.css:191</a></td></tr>
-		<tr><td><code>pointer</code></td><td><div class="ds-cursor-preview" style="cursor: pointer;">hover</div></td><td>Interactive element (buttons, links)</td><td><span class="ds-cursor-count">78</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/selectionMarkers.css#29">selectionMarkers.css:29</a></td></tr>
-		<tr><td><code>row-resize</code></td><td><div class="ds-cursor-preview" style="cursor: row-resize;">hover</div></td><td>Row height resize</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css#228">spreadsheet.css:228</a></td></tr>
-		<tr><td><code>s-resize</code></td><td><div class="ds-cursor-preview" style="cursor: s-resize;">hover</div></td><td>Resize from south (bottom) edge</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#606">jquery-ui-lightness.css:606</a></td></tr>
-		<tr><td><code>se-resize</code></td><td><div class="ds-cursor-preview" style="cursor: se-resize;">hover</div></td><td>Resize from south-east corner (table fill)</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#627">jquery-ui-lightness.css:627</a></td></tr>
-		<tr><td><code>sw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: sw-resize;">hover</div></td><td>Resize from south-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#634">jquery-ui-lightness.css:634</a></td></tr>
-		<tr><td><code>text</code></td><td><div class="ds-cursor-preview" style="cursor: text;">hover</div></td><td>Text input / text selection (I-beam)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#862">jquery-ui-lightness.css:862</a></td></tr>
-		<tr><td><code>w-resize</code></td><td><div class="ds-cursor-preview" style="cursor: w-resize;">hover</div></td><td>Resize from west (left) edge</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css#620">jquery-ui-lightness.css:620</a></td></tr>
+		<tr><td>Modal</td><td>Lightbox (dimmed)</td><td>Blocked</td><td>No</td><td>Closes only if <code>.cancellable</code> (info dialogs)</td><td><code>.jsdialog-window.modalpopup</code> + <code>.jsdialog-overlay</code></td></tr>
+		<tr><td>Nonmodal</td><td>Nonlightbox</td><td>Allowed</td><td>Yes (drag titlebar)</td><td>Does not close</td><td><code>.jsdialog-window:not(.modalpopup)</code></td></tr>
+		<tr><td>Popover</td><td>Nonlightbox</td><td>Allowed</td><td>No (anchored)</td><td>Closes</td><td><code>popupParent: '_POPOVER_'</code> on the JSDialog instance</td></tr>
 	</tbody>
 </table>
 
-<h3 class="ds-component-title" id="cursors-custom">Custom SVG cursors</h3>
-<p class="ds-desc">Three product-specific cursors shipped as SVG assets in <code>browser/images/cursors/</code>.</p>
-<table class="ds-spec-table ds-cursor-table">
-	<thead>
-		<tr><th>Cursor</th><th>SVG</th><th>Preview</th><th>Description</th><th>Uses</th><th>Source</th></tr>
-	</thead>
+<h3 class="ds-component-title" id="dialogs-anatomy">Anatomy</h3>
+<p class="ds-desc">Every dialog (regardless of kind) shares the same three regions: a <strong>title bar</strong> with the title and a close affordance, a <strong>body</strong> with the content, and a <strong>button area</strong> at the foot. Popovers are the exception &mdash; they have no title bar or button area and are just a body anchored to the trigger.</p>
+
+<div class="ds-dialog-anatomy">
+	<div class="ds-dialog ds-anatomy-dialog" style="width: 360px;">
+		<span class="ds-anatomy-callout ds-anatomy-callout--left  ds-anatomy-callout--titlebar">Title bar</span>
+		<span class="ds-anatomy-callout ds-anatomy-callout--right ds-anatomy-callout--close">Close affordance</span>
+		<div class="ds-dialog-titlebar">
+			<span class="ds-dialog-titlebar-title">Dialog Title</span>
+			<button class="ds-dialog-titlebar-close" aria-label="Close" type="button">&times;</button>
+		</div>
+		<span class="ds-anatomy-callout ds-anatomy-callout--left ds-anatomy-callout--body">Body</span>
+		<div class="ds-dialog-body">
+			<p>Body content with the inputs, labels and options the dialog needs to ask the user about.</p>
+		</div>
+		<span class="ds-anatomy-callout ds-anatomy-callout--left  ds-anatomy-callout--buttons-left">Secondary actions</span>
+		<span class="ds-anatomy-callout ds-anatomy-callout--right ds-anatomy-callout--buttons-right">Primary action</span>
+		<div class="ds-dialog-buttons demo">
+			<div class="ds-dialog-buttons-left">
+				<button class="button-secondary" type="button">Help</button>
+			</div>
+			<div class="ds-dialog-buttons-spacer"></div>
+			<div class="ds-dialog-buttons-right">
+				<button class="button-secondary" type="button">Cancel</button>
+				<button class="button-primary" type="button">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<ul class="ds-anatomy-legend">
+	<li><strong>Title bar.</strong> Short noun phrase naming the dialog. On nonmodal dialogs the title bar is also the drag handle.</li>
+	<li><strong>Close affordance.</strong> The &times; on the right; <kbd>Esc</kbd> is the keyboard equivalent. For destructive dialogs prefer an explicit Cancel button.</li>
+	<li><strong>Body.</strong> A single column. Group related fields with a separator or a fieldset, not visual frames.</li>
+	<li><strong>Secondary actions (left).</strong> <em>Help</em>, <em>Reset</em>, advanced toggles. Never put a destructive action here.</li>
+	<li><strong>Primary action (right).</strong> The default action sits rightmost (Western convention; mirrored in RTL). Cancel sits just left of the primary action.</li>
+</ul>
+
+<h3 class="ds-component-title" id="dialogs-modal">Modal (lightbox)</h3>
+<p class="ds-desc">A dimmed backdrop blocks the document underneath. The dialog is centred and cannot be moved. <strong>Use when:</strong> the user must commit to a decision before they can keep working (settings, confirmations, blocking errors). Outside-click closes only when the dialog has the <code>cancellable</code> flag (typical for purely informational dialogs).</p>
+
+<div class="ds-dialog-stage">
+	<div class="ds-dialog-stage-doc"></div>
+	<div class="ds-dialog-stage-overlay"></div>
+	<div class="ds-dialog" style="width: 380px;">
+		<div class="ds-dialog-titlebar">
+			<span class="ds-dialog-titlebar-title">Save Changes?</span>
+			<button class="ds-dialog-titlebar-close" aria-label="Close" type="button">&times;</button>
+		</div>
+		<div class="ds-dialog-body">
+			<p>You have unsaved changes in <em>Untitled 1</em>. Do you want to save them before closing?</p>
+		</div>
+		<div class="ds-dialog-buttons demo">
+			<div class="ds-dialog-buttons-left">
+				<button class="button-secondary" type="button">Don&rsquo;t save</button>
+			</div>
+			<div class="ds-dialog-buttons-spacer"></div>
+			<div class="ds-dialog-buttons-right">
+				<button class="button-secondary" type="button">Cancel</button>
+				<button class="button-primary" type="button">Save</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table ds-dialog-examples">
+	<thead><tr><th>Example</th><th>Dialog id / class</th><th>Source</th></tr></thead>
 	<tbody>
 		<tr>
-			<td><code>crop.svg</code></td>
-			<td><div class="ds-cursor-svg"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path style="fill:#ffffff;" d="M 5,1 V 5 H 1 v 4 h 4 v 6 c 0,2.197294 1.8027056,4 4,4 h 6 v 4 h 4 v -4 h 4 V 15 H 19 V 9 C 19,6.8027056 17.197294,5 15,5 H 9 V 1 Z m 4,8 h 6 v 6 H 9 Z"/><path style="fill:#000000;" d="M 6 2 L 6 6 L 2 6 L 2 8 L 6 8 L 6 15 A 3 3 0 0 0 9 18 L 16 18 L 16 22 L 18 22 L 18 18 L 22 18 L 22 16 L 18 16 L 18 9 A 3 3 0 0 0 15 6 L 8 6 L 8 2 L 6 2 z M 8 8 L 15 8 A 1 1 0 0 1 16 9 L 16 16 L 9 16 A 1 1 0 0 1 8 15 L 8 8 z "/></svg></div></td>
-			<td><div class="ds-cursor-preview" style="cursor: url('data:image/svg+xml;utf8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath style=%22fill:%23ffffff;%22 d=%22M 5,1 V 5 H 1 v 4 h 4 v 6 c 0,2.197294 1.8027056,4 4,4 h 6 v 4 h 4 v -4 h 4 V 15 H 19 V 9 C 19,6.8027056 17.197294,5 15,5 H 9 V 1 Z m 4,8 h 6 v 6 H 9 Z%22 /%3E %3Cpath style=%22fill:%23000000;%22 d=%22M 6 2 L 6 6 L 2 6 L 2 8 L 6 8 L 6 15 A 3 3 0 0 0 9 18 L 16 18 L 16 22 L 18 22 L 18 18 L 22 18 L 22 16 L 18 16 L 18 9 A 3 3 0 0 0 15 6 L 8 6 L 8 2 L 6 2 z M 8 8 L 15 8 A 1 1 0 0 1 16 9 L 16 16 L 9 16 A 1 1 0 0 1 8 15 L 8 8 z %22 /%3E %3C/svg%3E') 8 8, auto;">hover</div></td>
-			<td>Image cropping tool &mdash; shown when dragging a shape's scaling handle in crop mode</td>
-			<td><span class="ds-cursor-count">1</span></td>
-			<td>
-				<ul class="ds-cursor-source-list">
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/images/cursors/crop.svg">crop.svg</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleScalingSubSection.ts#36">ShapeHandleScalingSubSection.ts:36</a></li>
-				</ul>
-			</td>
+			<td>About dialog</td>
+			<td><code>#modal-dialog-about-dialog-box</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#L159">jsdialogs.css:159</a></td>
 		</tr>
 		<tr>
-			<td><code>fill.svg</code></td>
-			<td><div class="ds-cursor-svg"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path style="fill:#ffffff;" d="m 12,0 c -1.644363,0 -2.998936,1.3539113 -3,2.9980469 -2.93e-4,0.1854743 0.016921,0.3723357 0.050781,0.5546875 l 0.4433594,4.4375 C 9.4755406,8.4360185 9.3832545,8.6770477 9.3046875,8.78125 9.2292645,8.8812844 9.1237529,8.9461136 8.8574219,9 H 7 C 5.909297,9 5,9.9092972 5,11 v 0.5 4.423828 C 4.614758,18.258234 4.0745928,19.614487 3.1054688,21.552734 L 2.3828125,23 H 19.609375 L 19.494141,21.896484 C 19.301755,20.043463 19.173014,18.430705 19,15.957031 V 11.5 11 C 19,9.9092972 18.090703,9 17,9 H 15.142578 C 14.876247,8.9461136 14.770736,8.8812844 14.695312,8.78125 14.616746,8.6770477 14.524454,8.4360185 14.505859,7.9902344 l 0.44336,-4.4375 C 14.982969,3.3709852 15.000169,3.1848018 15,3 15,1.3549901 13.645009,0 12,0 Z"/><path style="fill:#000000;" d="m 12,1 c -1.1,0 -2,0.9 -2,2 -2.1e-4,0.1331322 0.01288,0.2659524 0.03906,0.3964844 L 10.5,8 C 10.462718,9.2 10,9.8 9,10 H 7 c -0.554,0 -1,0.446 -1,1 v 4 h 12 v -4 c 0,-0.554 -0.446,-1 -1,-1 H 15 C 14.019187,9.826374 13.537282,9.197784 13.5,8 L 14,3.3964844 C 14,3.2659524 14,3.1331322 14,3 14,1.9 13.1,1 12,1 Z M 6,16 C 5.6,18.477191 5,20 4,22 H 18.5 C 18.3,20.126595 18.174317,18.5 18,16 Z"/></svg></div></td>
-			<td><div class="ds-cursor-preview" style="cursor: url('data:image/svg+xml;utf8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath style=%22fill:%23ffffff;%22 d=%22m 12,0 c -1.644363,0 -2.998936,1.3539113 -3,2.9980469 -2.93e-4,0.1854743 0.016921,0.3723357 0.050781,0.5546875 l 0.4433594,4.4375 C 9.4755406,8.4360185 9.3832545,8.6770477 9.3046875,8.78125 9.2292645,8.8812844 9.1237529,8.9461136 8.8574219,9 H 7 C 5.909297,9 5,9.9092972 5,11 v 0.5 4.423828 C 4.614758,18.258234 4.0745928,19.614487 3.1054688,21.552734 L 2.3828125,23 H 19.609375 L 19.494141,21.896484 C 19.301755,20.043463 19.173014,18.430705 19,15.957031 V 11.5 11 C 19,9.9092972 18.090703,9 17,9 H 15.142578 C 14.876247,8.9461136 14.770736,8.8812844 14.695312,8.78125 14.616746,8.6770477 14.524454,8.4360185 14.505859,7.9902344 l 0.44336,-4.4375 C 14.982969,3.3709852 15.000169,3.1848018 15,3 15,1.3549901 13.645009,0 12,0 Z%22 /%3E %3Cpath style=%22fill:%23000000;%22 d=%22m 12,1 c -1.1,0 -2,0.9 -2,2 -2.1e-4,0.1331322 0.01288,0.2659524 0.03906,0.3964844 L 10.5,8 C 10.462718,9.2 10,9.8 9,10 H 7 c -0.554,0 -1,0.446 -1,1 v 4 h 12 v -4 c 0,-0.554 -0.446,-1 -1,-1 H 15 C 14.019187,9.826374 13.537282,9.197784 13.5,8 L 14,3.3964844 C 14,3.2659524 14,3.1331322 14,3 14,1.9 13.1,1 12,1 Z M 6,16 C 5.6,18.477191 5,20 4,22 H 18.5 C 18.3,20.126595 18.174317,18.5 18,16 Z%22 /%3E %3C/svg%3E') 4 18, auto;">hover</div></td>
-			<td>Auto-fill brush &mdash; paint formatting / spreadsheet fill handle</td>
-			<td><span class="ds-cursor-count">2</span></td>
-			<td>
-				<ul class="ds-cursor-source-list">
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/images/cursors/fill.svg">fill.svg</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css#6">spreadsheet.css:6</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/cool.css#250">cool.css:250</a></li>
-				</ul>
-			</td>
+			<td>Online Help</td>
+			<td><code>#modal-dialog-online-help-content-box</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#L160">jsdialogs.css:160</a></td>
 		</tr>
 		<tr>
-			<td><code>grab.svg</code></td>
-			<td><div class="ds-cursor-svg"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path style="fill:#ffffff;" d="m 9.75,2.344 c -0.498,-0.55 -1.136,-0.934 -1.937,-0.875 H 7.78 A 2.487,2.487 0 0 0 5.53,4.374944 l 1.25,7.469 c -0.473,-0.334 -1.047,-0.905 -1.468,-1.094 -0.978,-0.438 -1.873,-0.493 -2.594,-0.281 -1.442,0.424 -1.875,1.812 -1.875,1.812 l -0.25,0.719 0.625,0.437 c 1.376,0.93 2.774,3.183 4.094,5.282 0.66,1.049 1.315,2.042 2.062,2.843 0.747,0.801 1.642,1.476 2.781,1.47 l 8.845,-0.033 h 0.969 l 0.03,-0.969 c 0,0 0.09,-1.745 0.25,-3.812 0.162,-2.068 0.41,-4.478 0.688,-5.594 l 1.5,-6.031 c 0.433,-1.657 -0.886,-3.252 -2.593,-3.125 -0.524,0.03 -0.987,0.26 -1.375,0.562 l 0.031,-0.906 A 2.49,2.49 0 0 0 15.844,0.468 c -0.852,0.052 -1.434,0.6 -1.844,1.28 -0.447,-1.668 -3.616,-1.77 -4.25,0.595 Z"/><path style="fill:#000000;" d="m 11.906,1.47 c -0.786,0.047 -1.457,0.808 -1.406,1.59 l 0.406,7.094 c 0.02,0.354 -0.298,0.427 -0.344,0.156 l -1.1,-6.562 c -0.108,-0.742 -0.846,-1.336 -1.594,-1.281 -0.823,0.074 -1.485,0.935 -1.344,1.75 l 1.5,9 q 0.008,0.191 0.063,0.375 c -0.059,0.237 -0.094,0.406 -0.094,0.406 -5,-5 -6.219,-1.406 -6.219,-1.406 3.398,2.294 5.459,9.456 8.375,9.437 l 8.843,-0.031 c 0,0 0.33,-7.055 0.969,-9.625 l 1.5,-6.031 c 0.24,-0.92 -0.615,-1.946 -1.563,-1.875 a 1.54,1.54 0 0 0 -1.375,1.156 l -1.281,5.094 c -0.07,0.276 -0.136,0.165 -0.125,-0.063 l 0.375,-7.594 c 0.055,-0.848 -0.746,-1.648 -1.594,-1.593 -0.733,0.045 -1.377,0.703 -1.406,1.4370002 l -0.344,6.938 c -0.017,0.352 -0.26,0.36 -0.281,-0.032 L 13.5,2.906944 C 13.468,2.1109438 12.702,1.4189438 11.906,1.47 Z"/></svg></div></td>
-			<td><div class="ds-cursor-preview" style="cursor: url('data:image/svg+xml;utf8,%3Csvg width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22%3E %3Cpath style=%22fill:%23ffffff;%22 d=%22m 9.75,2.344 c -0.498,-0.55 -1.136,-0.934 -1.937,-0.875 H 7.78 A 2.487,2.487 0 0 0 5.53,4.374944 l 1.25,7.469 c -0.473,-0.334 -1.047,-0.905 -1.468,-1.094 -0.978,-0.438 -1.873,-0.493 -2.594,-0.281 -1.442,0.424 -1.875,1.812 -1.875,1.812 l -0.25,0.719 0.625,0.437 c 1.376,0.93 2.774,3.183 4.094,5.282 0.66,1.049 1.315,2.042 2.062,2.843 0.747,0.801 1.642,1.476 2.781,1.47 l 8.845,-0.033 h 0.969 l 0.03,-0.969 c 0,0 0.09,-1.745 0.25,-3.812 0.162,-2.068 0.41,-4.478 0.688,-5.594 l 1.5,-6.031 c 0.433,-1.657 -0.886,-3.252 -2.593,-3.125 -0.524,0.03 -0.987,0.26 -1.375,0.562 l 0.031,-0.906 A 2.49,2.49 0 0 0 15.844,0.468 c -0.852,0.052 -1.434,0.6 -1.844,1.28 -0.447,-1.668 -3.616,-1.77 -4.25,0.595 Z%22 /%3E %3Cpath style=%22fill:%23000000;%22 d=%22m 11.906,1.47 c -0.786,0.047 -1.457,0.808 -1.406,1.59 l 0.406,7.094 c 0.02,0.354 -0.298,0.427 -0.344,0.156 l -1.1,-6.562 c -0.108,-0.742 -0.846,-1.336 -1.594,-1.281 -0.823,0.074 -1.485,0.935 -1.344,1.75 l 1.5,9 q 0.008,0.191 0.063,0.375 c -0.059,0.237 -0.094,0.406 -0.094,0.406 -5,-5 -6.219,-1.406 -6.219,-1.406 3.398,2.294 5.459,9.456 8.375,9.437 l 8.843,-0.031 c 0,0 0.33,-7.055 0.969,-9.625 l 1.5,-6.031 c 0.24,-0.92 -0.615,-1.946 -1.563,-1.875 a 1.54,1.54 0 0 0 -1.375,1.156 l -1.281,5.094 c -0.07,0.276 -0.136,0.165 -0.125,-0.063 l 0.375,-7.594 c 0.055,-0.848 -0.746,-1.648 -1.594,-1.593 -0.733,0.045 -1.377,0.703 -1.406,1.4370002 l -0.344,6.938 c -0.017,0.352 -0.26,0.36 -0.281,-0.032 L 13.5,2.906944 C 13.468,2.1109438 12.702,1.4189438 11.906,1.47 Z%22 /%3E %3C/svg%3E') 12 12, grab;">hover</div></td>
-			<td>Custom grab hand &mdash; shape anchor and custom shape handles</td>
-			<td><span class="ds-cursor-count">2</span></td>
-			<td>
-				<ul class="ds-cursor-source-list">
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/images/cursors/grab.svg">grab.svg</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#30">ShapeHandleAnchorSubSection.ts:30</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ShapeHandleCustomSubSection.ts#31">ShapeHandleCustomSubSection.ts:31</a></li>
-				</ul>
-			</td>
+			<td>Keyboard Shortcuts</td>
+			<td><code>#modal-dialog-keyboard-shortcuts-content-box</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#L161">jsdialogs.css:161</a></td>
+		</tr>
+		<tr>
+			<td>Busy indicator</td>
+			<td><code>busypopup</code> (type: modalpopup)</td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/control/Control.UIManager.ts#L488">Control.UIManager.ts:488</a></td>
+		</tr>
+		<tr>
+			<td>LibreOffice native dialogs (Format Cells, Insert Special Character, &hellip;)</td>
+			<td><code>.lokdialog_container.modalpopup</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#L26">jsdialogs.css:26</a></td>
 		</tr>
 	</tbody>
 </table>
 
-<p class="ds-desc">Cursor declarations live across <a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/spreadsheet.css">spreadsheet.css</a> (spreadsheet-specific), <a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/leaflet.css">leaflet.css</a> (map/pan resize), <a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jquery-ui-lightness.css">jquery-ui-lightness.css</a> (UI widget resize), and inline in <a target="_blank" rel="noopener noreferrer" href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections">browser/src/canvas/sections/</a> (shape/canvas handles).</p>
+<h3 class="ds-component-title" id="dialogs-nonmodal">Nonmodal (draggable)</h3>
+<p class="ds-desc">No backdrop &mdash; the document underneath stays interactive. The dialog can be dragged by its title bar and stays open until the user dismisses it. <strong>Use when:</strong> the dialog is a tool the user keeps glancing at while editing (Find &amp; Replace, Accept/Reject Changes, Sort criteria). Outside clicks do <em>not</em> close it.</p>
+
+<div class="ds-dialog-stage ds-dialog-stage--nonmodal">
+	<div class="ds-dialog-stage-doc"></div>
+	<div class="ds-dialog ds-dialog--nonmodal" id="ds-nonmodal-demo" style="width: 360px;">
+		<div class="ds-dialog-titlebar">
+			<span class="ds-dialog-titlebar-title">Manage Changes</span>
+			<button class="ds-dialog-titlebar-close" aria-label="Close" type="button">&times;</button>
+		</div>
+		<div class="ds-dialog-body">
+			<p>3 pending changes by <em>Caolán</em>. Drag this dialog out of the way while you review the document.</p>
+		</div>
+		<div class="ds-dialog-buttons demo">
+			<div class="ds-dialog-buttons-left">
+				<button class="button-secondary" type="button">Reject all</button>
+			</div>
+			<div class="ds-dialog-buttons-spacer"></div>
+			<div class="ds-dialog-buttons-right">
+				<button class="button-secondary" type="button">Reject</button>
+				<button class="button-primary" type="button">Accept</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<table class="ds-spec-table ds-dialog-examples">
+	<thead><tr><th>Example</th><th>Dialog id / class</th><th>Source</th></tr></thead>
+	<tbody>
+		<tr>
+			<td>Accept / Reject Changes</td>
+			<td><code>AcceptRejectChangesDialog</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#L62">jsdialogs.css:62</a></td>
+		</tr>
+		<tr>
+			<td>Sort Key Window (Sort &mdash; Calc)</td>
+			<td><code>SortKeyWindow</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/css/jsdialogs.css#L199">jsdialogs.css:199</a></td>
+		</tr>
+	</tbody>
+</table>
+<p class="ds-desc"><em>Note:</em> the nonmodal surface is the rarest of the three &mdash; most older floating tool palettes (Find &amp; Replace, advanced filters) still come from the LibreOffice native dialog path and so behave nonmodally without explicitly opting in. New work tends to land as either modal jsdialog or popover.</p>
+
+<h3 class="ds-component-title" id="dialogs-popover">Popover (non-dialog)</h3>
+<p class="ds-desc">Not really a dialog &mdash; an anchored panel for inline pickers and dropdowns. Has no title bar, no button area; just content. Opted-in via the JSDialog property <code>popupParent: '_POPOVER_'</code> (and <code>clickToClose: '_POPOVER_'</code>). <strong>Use when:</strong> the user is making a small bounded choice tied to a specific control (font color, autocomplete suggestion, autofilter values). Outside click dismisses.</p>
+
+<div class="ds-dialog-stage ds-dialog-stage--popover">
+	<div class="ds-popover-anchor">Font name &nbsp;&nbsp;<em style="font-style: normal;">Calibri</em></div>
+	<div class="ds-popover">
+		<div class="ds-popover-item">Arial</div>
+		<div class="ds-popover-item">Calibri Light</div>
+		<div class="ds-popover-item selected">Calibri</div>
+		<div class="ds-popover-item">Cambria</div>
+		<div class="ds-popover-item">Times New Roman</div>
+		<div class="ds-popover-item">Verdana</div>
+	</div>
+</div>
+
+<table class="ds-spec-table ds-dialog-examples">
+	<thead><tr><th>Example</th><th>Dialog id / class</th><th>Source</th></tr></thead>
+	<tbody>
+		<tr>
+			<td>Auto-complete popup</td>
+			<td><code>AutoCompletePopup</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/control/AutoCompletePopup.ts#L56">AutoCompletePopup.ts:56</a></td>
+		</tr>
+		<tr>
+			<td>Content-control dropdown (Writer)</td>
+			<td><code>contentControlModalpopup</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/canvas/sections/ContentControlDropdownSubSection.ts#L94">ContentControlDropdownSubSection.ts:94</a></td>
+		</tr>
+		<tr>
+			<td>Formula usage popup (Calc)</td>
+			<td>extends <code>AutoCompletePopup</code></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/2b71cd2094a7216d39eadd8b6d7e27033877288c/browser/src/control/Control.FormulaUsagePopup.ts#L35">Control.FormulaUsagePopup.ts:35</a></td>
+		</tr>
+	</tbody>
+</table>
 
 </main>
 
@@ -2332,6 +2979,40 @@ function animateProgress(bar) {
 
 // Init first active link
 if (sections.length) sections[0].link.classList.add('active');
+
+// Nonmodal dialog demo: drag by titlebar
+(function () {
+	const dlg = document.getElementById('ds-nonmodal-demo');
+	if (!dlg) return;
+	const handle = dlg.querySelector('.ds-dialog-titlebar');
+	if (!handle) return;
+	let startX = 0, startY = 0, dx = 0, dy = 0, dragging = false, pointerId = null;
+	handle.addEventListener('pointerdown', (e) => {
+		if (e.target.closest('button')) return;
+		dragging = true;
+		pointerId = e.pointerId;
+		startX = e.clientX - dx;
+		startY = e.clientY - dy;
+		dlg.classList.add('ds-dragging');
+		handle.setPointerCapture(pointerId);
+		e.preventDefault();
+	});
+	handle.addEventListener('pointermove', (e) => {
+		if (!dragging || e.pointerId !== pointerId) return;
+		dx = e.clientX - startX;
+		dy = e.clientY - startY;
+		dlg.style.transform = 'translate(' + dx + 'px, ' + dy + 'px)';
+	});
+	const end = (e) => {
+		if (!dragging) return;
+		dragging = false;
+		dlg.classList.remove('ds-dragging');
+		try { handle.releasePointerCapture(pointerId); } catch (_) {}
+		pointerId = null;
+	};
+	handle.addEventListener('pointerup', end);
+	handle.addEventListener('pointercancel', end);
+})();
 
 // Mobile sidebar toggle
 const sidebarEl = document.getElementById('ds-sidebar');
