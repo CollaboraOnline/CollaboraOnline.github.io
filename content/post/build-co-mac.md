@@ -66,7 +66,7 @@ cd collabora-office
 
 Move into the `engine/` subdirectory of the monorepo and build the `main` branch with the following `autogen.input`.
 
-If you want a localized (translated) user interface, also clone the translations repository into `engine/translations` from the top of the clone before building; the engine's `--with-lang` picks up the `.po` files from there:
+If you want a localized (translated) user interface, also clone the translations repository into `engine/translations` from the top of the clone before building, and replace `--without-lang` with `--with-lang` (see the `autogen.input` below); the engine picks up the `.po` files from there:
 
 ```bash
 git clone https://gerrit.collaboraoffice.com/translations engine/translations
@@ -84,8 +84,10 @@ git clone https://gerrit.collaboraoffice.com/translations engine/translations
 
     --enable-werror
     --enable-symbols
-    # If you don't want localizations
+    # For an en-US-only build (no localizations):
     --without-lang
+    # For a localized UI, drop the line above and list the languages instead, e.g.:
+    #--with-lang=de fr es
 
 For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
