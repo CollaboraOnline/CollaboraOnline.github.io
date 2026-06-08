@@ -41,7 +41,7 @@ new content.
 {{ end }}
 
 {{ if eq $section "clone-lo" }}
-Collabora Office core lives inside the `online` monorepo under `engine/`, so a separate `core` clone is no longer needed. If you have not cloned the monorepo yet, run the `clone-online` step above first. Then move into the core tree:
+The former LibreOffice core lives inside the `online` monorepo under `engine/`, so a separate clone is no longer needed. If you have not cloned the monorepo yet, run the `clone-online` step above first. Then move into the engine tree:
 
 ```bash
 cd engine
@@ -50,7 +50,7 @@ git checkout {{.Get "lobranch"}}
 {{ end }}
 
 {{ if eq $section "clone-online" }}
-Collabora Online is hosted on Gerrit as a single monorepo. The LibreOffice core sits under `engine/` inside the same repo, so there is no separate `core` clone any more.
+Collabora Online is hosted on Gerrit as a single monorepo: all the source code lives in one repository, with the former LibreOffice core under `engine/`.
 
 For an anonymous read-only clone (no account needed):
 ```bash

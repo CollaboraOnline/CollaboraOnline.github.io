@@ -49,7 +49,7 @@ Building for `My Mac (Designed for iPad)` on Mac Silicon will run, but it is uns
 brew install autoconf automake libtool pkg-config
 ```
 
-Collabora Online and the LibreOffice core now live in a single Gerrit monorepo - core is the `engine/` subdirectory of the `online` repo, so there is no separate `core` clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
+All the source code now lives in a single Gerrit monorepo; the former LibreOffice core is the `engine/` subdirectory of the `online` repo, so there is no separate repository to clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
 For an anonymous read-only clone:
 

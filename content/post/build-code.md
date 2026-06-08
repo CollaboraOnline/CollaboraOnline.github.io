@@ -376,7 +376,7 @@ CODE needs Collabora Office core to be built to run. You have two options to mee
 #### Option A - Build core locally (Recommended)
 For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux.
 
-First clone the unified `online` monorepo (the LibreOffice core lives under `engine/` inside this repo - there is no separate `core` clone any more):
+First clone the unified `online` monorepo — all the source code lives here, with the former LibreOffice core under `engine/`:
 
 {{% common-build-commands section="clone-online" %}}
 
