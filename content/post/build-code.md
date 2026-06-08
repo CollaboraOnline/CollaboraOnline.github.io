@@ -376,7 +376,7 @@ CODE needs the engine to be built to run. You have two options to meet this requ
 #### Option A - Build the engine locally (Recommended)
 For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux.
 
-First clone the unified `online` monorepo — all the source code lives here, with the former LibreOffice core under `engine/`:
+First clone the unified `online` monorepo — all the source code lives here, with the former Collabora Office core under `engine/`:
 
 {{% common-build-commands section="clone-online" %}}
 

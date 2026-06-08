@@ -95,7 +95,7 @@ automatically, so it no longer needs to be installed as a distro package.
 
 ## Building
 
-Development happens on the unified [Gerrit monorepo](https://gerrit.collaboraoffice.com/online): all the source code lives in one repository, with the former LibreOffice core under `engine/`. Code review uses Gerrit, not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
+Development happens on the unified [Gerrit monorepo](https://gerrit.collaboraoffice.com/online): all the source code lives in one repository, with the former Collabora Office core under `engine/`. Code review uses Gerrit, not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
 ### Clone the monorepo
 
