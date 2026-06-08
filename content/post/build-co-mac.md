@@ -37,10 +37,7 @@ it, and only depend on eg. self-built POCO, etc.
 
 * Node.js
     + Needed for building the JS parts (not needed if you build them on another linux machine)
-* Install node.js
-    ```
-    brew install node
-    ```
+    + Install nodejs (20.x) by downloading the macOS .pkg from the `Prebuilt installer` tab at https://nodejs.org/en/download. It provides the `npm` and `node` commands that are required to build everything in the `browser/` folder.
 * for ./configure
     ```
     brew install libtool
