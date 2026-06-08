@@ -70,7 +70,7 @@ git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-
 cd collabora-office
 ```
 
-### Build LO
+### Build the engine
 
 Move into the `engine/` subdirectory of the monorepo and build the `main` branch with the following `autogen.input`.
 
