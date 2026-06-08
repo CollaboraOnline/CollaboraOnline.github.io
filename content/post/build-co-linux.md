@@ -195,11 +195,35 @@ flatpak build-bundle repo CollaboraOffice.Debug.flatpak \
     com.collaboraoffice.Office.Debug --runtime
 ```
 
+## Snap
+
+Collabora Office is also packaged as a snap. The `snap/snapcraft.yaml` builds the
+engine and the Qt app together, so it does not need the separate engine build
+above. From the top of the monorepo, with
+[snapcraft](https://snapcraft.io/docs/installing-snapcraft) installed (it builds
+in an LXD container by default):
+
+```bash
+snapcraft
+```
+
+This produces a `collabora-office_<version>_<arch>.snap`. Install your locally
+built snap with:
+
+```bash
+sudo snap install --dangerous ./collabora-office_*.snap
+```
+
 ## Pre-built download
 
-If you just want a pre-built package instead of compiling, download the
-**Collabora Office Linux Flatpak snapshots** here:
-👉 https://www.collaboraoffice.com/downloads/Collabora-Office-Linux-Snapshot/
+If you just want a pre-built package instead of compiling:
+
+* **Snap**, from the `latest/edge` channel:
+    ```bash
+    sudo snap install collabora-office --channel=latest/edge
+    ```
+* **Flatpak** — download the **Collabora Office Linux Flatpak snapshots**:
+    👉 https://www.collaboraoffice.com/downloads/Collabora-Office-Linux-Snapshot/
 
 </section>
 
