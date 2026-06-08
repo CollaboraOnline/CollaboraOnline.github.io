@@ -91,7 +91,7 @@ Move into the `engine/` subdirectory of the monorepo and build the `main` branch
 
 For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux
 
-### Configure Collabora Online
+### Configure Collabora Office
 
 Run this from the top of the monorepo (one level up from `engine/`):
 
@@ -110,7 +110,7 @@ passed on the configure line.
 Adjust `your-built-lo.app` to match the app bundle name produced by your engine
 build.
 
-### Build the JavaScipt bits
+### Build the JavaScript bits
 
 Just run `make` from the terminal.
 
