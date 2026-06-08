@@ -35,15 +35,19 @@ You will need a Mac with [Xcode](https://apps.apple.com/gb/app/xcode/id497799835
 
 ### An iOS or iPadOS device ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
-**Collabora Office cannot run in a simulator** because the LibreOfficeKit bits are built for an `iOS` target, but the simulator is `iOS-simulator`. Therefore, you'll need a real device to run this.
+**Collabora Office cannot run in a simulator** because the engine is built for an `iOS` target, but the simulator is `iOS-simulator`. Therefore, you'll need a real device to run this.
 
 Building for `My Mac (Designed for iPad)` on Mac Silicon will run, but it is unstable. In particular, sometimes bugs are present on Mac that are not present on a mobile device or vice-versa. We strongly suggest you build and run for a physical iOS or iPadOS device.
 
 
-## 1) Build the LibreOfficeKit code for iOS
+## 1) Build the engine for iOS
 ### on a Mac ## {#ios-1-build-Lo-mac .extraclass class="requirement-machine"}
 
-1.1) First you need to build the LibreOfficeKit code (Collabora Office core) for iOS. For the build dependencies, it is the best to install [LODE, the LibreOffice Development Environment](https://wiki.documentfoundation.org/Development/lode) and add its `bin` directory to the `PATH`.
+1.1) Apart from Xcode, building the engine needs the usual autotools and pkg-config, which you can install with [Homebrew](https://brew.sh/):
+
+```bash
+brew install autoconf automake libtool pkg-config
+```
 
 Collabora Online and the LibreOffice core now live in a single Gerrit monorepo - core is the `engine/` subdirectory of the `online` repo, so there is no separate `core` clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
