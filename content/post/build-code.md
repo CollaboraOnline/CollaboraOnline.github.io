@@ -22,66 +22,11 @@ Are you interested in contributing but do not know where to start? Head over to 
 
 <!--more-->
 # Build CODE
-Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operating system or opt for using Gitpod (hack, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
+Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operating system from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
 
 **Where the code lives.** Development happens on [Gerrit](https://gerrit.collaboraoffice.com/), which is where code review takes place and where the canonical history lives. GitHub hosts a read-only mirror of the monorepo (online plus the engine under `engine/`) at [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror) for browsing, cloning, and GitHub Actions. The original [`CollaboraOnline/online`](https://github.com/CollaboraOnline/online) repo is now used only for the issue tracker, so existing `cool#1234` references in commit messages keep working. Pull requests against either GitHub repo are auto-closed; see the FAQ entries [What is `online.mirror`?]({{< relref "faq.md#online-mirror" >}}) and [I have a fix - where do I send the PR?]({{< relref "faq.md#sending-fixes" >}}) for the contribution workflow.
 
 {{< build-dropdown >}}<br>
-
-<section id="build-code-gitpod" class="build-code-content">
-
-## Gitpod {#build-code-on-gitpod}
-On top of our daily engine archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
-
-**Steps to quick start:**
-
-* Sign-up on [Gitpod.io](http://gitpod.io/) with your GitHub account
-* Install the [proper extension](https://www.gitpod.io/docs/browser-extension/) for your browser
-* Go to [COOL repo](https://github.com/CollaboraOnline/online.mirror)
-* Click on the green Gitpod button near the top of the GitHub repo page
-
-{{< figure src="/images/gitpod-button-onGitHub.png" alt="GitPod green button on GitHub">}}
-
-* You should be redirected to gitpod.io where you can set your workspace settings. Please choose large container:
-
-{{< figure src="/images/gitpod-new-workspace.png"  alt="GitPod.io new workspace">}}
-
-* Make sure your browser is not blocking windows/tabs from opening from the gitpod workspace URL (maybe add `*.gitpod.io` to your browser's whitelist)
-* VNC tab will open automatically if not just click on the left icon `Remote explorer` and click `6080`. You will see a tab completely black, that's normal.
-
-{{< figure src="/images/gitpod-screenshot-COOL.png" title="Gitpod, your development environment for Collabora Online on the cloud">}}
-
-* Wait for a few minutes, and you will have a full development environment with COOL already cloned & built, ready-to-start/develop.
-
-{{< figure src="/images/gitpod-screenshot-COOL-splitterminal.png" title="The left pane will automatically start to build the software for you. The right waits for the 9980 port to be available and displays interesting comments">}}
-
-* The GitPod tasks will run automatically and further instructions will be printed out right in the terminal
-* After the build finishes (left terminal pane) you will see links. Copy the URL ending with: `hello-world.odt`
-* In the right terminal pane execute the following: `firefox  [paste copied URL here]` or `/usr/bin/chromium [paste copied URL here]`
-* Now head over to the web browser tab where the VNC is opened, you will see Firefox/Chromium opening there, maximize and have fun.
-* You can also run cypress tests via GitPod. To do so, please  prepend `CYPRESS_BROWSER="/usr/bin/chromium"` (`"firefox"` can also be used). Example:
-  * `cd cypress_test/`
-  * `CYPRESS_BROWSER="/usr/bin/chromium" make check` for every test or `CYPRESS_BROWSER="/usr/bin/chromium" make check-desktop spec=impress/scrolling_spec.js` for one specific test on desktop
-  * More info at https://github.com/CollaboraOnline/online.mirror/blob/main/cypress_test/README
-
-* Code review now happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests. When you have something to submit, follow the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) to set up SSH keys, install the `commit-msg` hook, and push to `refs/for/main`.
-
-Happy hacking! : )
-
-_First published on [ Collabora Online Community Roundup #2](https://www.collaboraoffice.com/online/collabora-online-community-roundup-2/)_
-
-{{% common-build-commands section="running" %}}
-
-If you are using VS Code as your IDE and want to run code in your local VS Code with local ports, follow these steps:
-1. Open Gitpod and navigate to the top left option.
-2. Select `Gitpod: Open in VS Code`.
-3. Install the following extensions in your VS Code: `Gitpod`, `Remote - SSH`, `Remote - SSH: Editing Configuration Files`, and `Remote Explorer`.
-4. Configure your SSH key in VS Code.
-5. Once everything is set up, type make run. This will allow you to access the hosted port on your local machine.
-
-</section>
-
----
 
 <section id="build-code-clone-script" class="build-code-content">
 
