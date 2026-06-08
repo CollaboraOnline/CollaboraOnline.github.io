@@ -25,9 +25,9 @@ Linux lover? Build Collabora Office and unleash your inner hacker.
 
 # Build Collabora Office
 
-This is the Collabora Office Linux Desktop app built on Qt6 WebEngine.
+This is the Collabora Office Linux desktop app built on Qt6 WebEngine.
 
-## Dependencies
+## Requirements
 
 ### Fedora
 
@@ -93,11 +93,9 @@ A C++ compiler with full C++20 support is required, including `std::format` (GCC
 POCO is built as part of the engine (`engine/`) and picked up from its workdir
 automatically, so it no longer needs to be installed as a distro package.
 
-## Building
+## Clone the monorepo
 
-Development happens on the unified [Gerrit monorepo](https://gerrit.collaboraoffice.com/online): all the source code lives in one repository, with the former Collabora Office core under `engine/`. Code review uses Gerrit, not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
-
-### Clone the monorepo
+All the source code now lives in a single Gerrit monorepo; the former Collabora Office core is the `engine/` subdirectory of the `online` repo, so there is no separate repository to clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
 For an anonymous read-only clone:
 ```bash
@@ -111,7 +109,7 @@ git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-
 cd collabora-office
 ```
 
-### The engine
+## Build the engine
 
 The engine is the `engine/` subdirectory of the monorepo. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux if needed.
 
@@ -132,7 +130,7 @@ export COCOREPATH=$(pwd)
 cd ..
 ```
 
-### Collabora Office
+## Build Collabora Office
 
 From the top of the `collabora-office` clone:
 
@@ -154,7 +152,7 @@ This produces the `coda-qt` executable in `qt/`.
 ./qt/coda-qt ../test/data/hello.odt  # open a file
 ```
 
-## Debug with Chromium DevTools
+### Debug with Chromium DevTools
 
 ```bash
 export QTWEBENGINE_REMOTE_DEBUGGING=3311
@@ -199,6 +197,8 @@ flatpak-builder --repo=repo --force-clean --ccache --keep-build-dirs build-dir \
 flatpak build-bundle repo CollaboraOffice.Debug.flatpak \
     com.collaboraoffice.Office.Debug --runtime
 ```
+
+## Pre-built download
 
 If you just want a pre-built package instead of compiling, download the
 **Collabora Office Linux Flatpak snapshots** here:
