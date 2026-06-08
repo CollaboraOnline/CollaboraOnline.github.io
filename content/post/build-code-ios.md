@@ -54,16 +54,16 @@ Collabora Online and the LibreOffice core now live in a single Gerrit monorepo -
 For an anonymous read-only clone:
 
 ```bash
-git clone https://gerrit.collaboraoffice.com/online collabora-online
+git clone https://gerrit.collaboraoffice.com/online collabora-office
 ```
 
 If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
 
 ```bash
-git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-online
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
 ```
 
-Then move into `collabora-online/engine` and put in your autogen.input something like this:
+Then move into `collabora-office/engine` and put in your autogen.input something like this:
 
 ```bash
 # Comment out for production builds
@@ -107,7 +107,7 @@ from its workdir, so they no longer need to be built separately for iOS.
 
 ## 3) Build the iOS app
 ### on a Mac ## {#ios-3-clone-online-mac .extraclass class="requirement-machine"}
-3.1) Step back to the top of the `collabora-online` clone (one level up from `engine/`) - the same monorepo you used in step 1 contains the online sources.
+3.1) Step back to the top of the `collabora-office` clone (one level up from `engine/`) - the same monorepo you used in step 1 contains the online sources.
 
 Run autogen.sh, and configure it with the --enable-iosapp option:
 
