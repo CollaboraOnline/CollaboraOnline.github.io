@@ -65,12 +65,12 @@ stuff. This is the main reason we are using WSL.
 
 	sudo apt install nodejs npm
 
-### Clone the common repository for both Collabora Online and the "engine" (core)
+### Clone the monorepo (Collabora Online and the engine)
 
 Clone the https://gerrit.collaboraoffice.com/online repository. The
 default "main" branch is what is used for development
 
-### Build "engine" ("core")
+### Build the engine
 
 Change to the `engine` subdirectory.
 The known good configuration is in `distro-configs/CODAWindows.conf`. Make sure that you include
@@ -85,10 +85,10 @@ autogen.input:
 ```
 
 Note that if you build the Collabora Office project in Visual Studio
-in the Debug configuration, you *must* use a core build with either
+in the Debug configuration, you *must* use an engine build with either
 `--enable-dbgutil` or `--enable-msvc-debug-runtime`.
 
-The core build should proceed fairly normally. Note that you
+The engine build should proceed fairly normally. Note that you
 will not end up with a runnable Collabora Office Classic. Attempting
 to run instdir/program/soffice.exe will just produce the message "no
 suitable windowing system found, exiting".
@@ -110,7 +110,7 @@ Ideally, in the future, it would be nice to be able to actually truly build
 
 Version numbers below are current at the time of writing this. Newer
 versions will probably work, too.
-For `zlib` and `libpng` we use the unpacked sources in the core build directory, and
+For `zlib` and `libpng` we use the unpacked sources in the engine build directory, and
 the static libraries already built there.
 
 ### Build Collabora Office itself
