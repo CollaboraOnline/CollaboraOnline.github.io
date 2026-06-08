@@ -1,4 +1,5 @@
 {{$section := .Get "section"}}
+{{$clonedir := .Get "clonedir" | default "collabora-online"}}
 
 {{ if eq $section "code-needs-lo-wget" }}
 CODE needs the engine (formerly "Collabora Office core") to be built to run. Building the engine from source takes a considerable amount of time and brings in extra complexity, so we will instead download a daily-built archive containing the pieces that are absolutely necessary. If you are working only on the online side, without any engine-side changes, or you just want to quickly get going to do some small fixes, this will be enough for you. Otherwise, [refer to the general instructions](/post/build-code/#build-code-n-lo).
@@ -53,19 +54,19 @@ Collabora Online is hosted on Gerrit as a single monorepo. The LibreOffice core 
 
 For an anonymous read-only clone (no account needed):
 ```bash
-git clone https://gerrit.collaboraoffice.com/online collabora-office
+git clone https://gerrit.collaboraoffice.com/online {{$clonedir}}
 ```
 
 If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
 ```bash
-git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online {{$clonedir}}
 ```
 
 See the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full Gerrit workflow (SSH key, `commit-msg` hook, pushing to `refs/for/main`).
 
 Switch to the local clone's directory:
 ```bash
-cd collabora-office
+cd {{$clonedir}}
 ```
 {{ end }}
 

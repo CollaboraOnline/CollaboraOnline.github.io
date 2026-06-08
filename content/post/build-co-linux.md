@@ -101,14 +101,14 @@ Development happens on the unified [Gerrit monorepo](https://gerrit.collaboraoff
 
 For an anonymous read-only clone:
 ```bash
-git clone https://gerrit.collaboraoffice.com/online collabora-office
-cd collabora-office
+git clone https://gerrit.collaboraoffice.com/online collabora-online
+cd collabora-online
 ```
 
 If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
 ```bash
-git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
-cd collabora-office
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-online
+cd collabora-online
 ```
 
 ### Collabora Office Core
@@ -134,7 +134,7 @@ cd ..
 
 ### Collabora Online
 
-From the top of the `collabora-office` clone:
+From the top of the `collabora-online` clone:
 
 ```bash
 ./autogen.sh
