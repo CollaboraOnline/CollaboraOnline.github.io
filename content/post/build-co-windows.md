@@ -65,8 +65,9 @@ The second runs as your normal user. It places `make`, `jom`, `clang-format`
 and `pkgconf` in `~\bin`, extracts Strawberry Perl Portable to `~\co\spp`, sets
 the git options the build needs (`protocol.version=2`, `core.autocrlf=false`)
 and `MSYS=winsymlinks:nativestrict`, drops a sample `~\co\autogen.input`, and
-installs an Ubuntu 24.04 WSL distro with the required packages (`pkg-config`,
-`automake`, `make`, `gperf`, `bison`, `nasm`, `flex`, `zip`, `libfont-ttf-perl`):
+installs an Ubuntu 24.04 WSL distro with the packages the engine and online
+build need (autotools, `build-essential`, the Python `lxml`/`polib` helpers, and
+Node.js 20 from NodeSource, since 24.04 only ships Node.js 18):
 
 ```
 winget configure windows/.config/user_steps.winget
