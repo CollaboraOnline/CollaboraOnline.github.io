@@ -45,10 +45,6 @@ it, and only depend on eg. self-built POCO, etc.
     ```
     brew install libtool
     ```
-* zlib
-    ```
-    brew install zlib
-    ```
 * cppunit
     ```
     brew install cppunit
