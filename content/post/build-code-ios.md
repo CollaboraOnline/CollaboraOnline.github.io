@@ -89,19 +89,14 @@ PYTHON MODULES, NODEJS, and HOMEBREW
 /usr/bin/pip3 install lxml
 ```
 
-2.1.2) Install nodejs version 20.15.1 by downloading the macOS .pkg from the `Prebuilt installer` tab at https://nodejs.org/en/download. Note: nodejs versions newer than 20.15.1 will cause the iOS build to fail in the node-canvas package. This package provides `npm` and `node` commands that are required to build everything in `browser/` folder.
+2.1.2) Install nodejs (20.x) by downloading the macOS .pkg from the `Prebuilt installer` tab at https://nodejs.org/en/download. It provides the `npm` and `node` commands that are required to build everything in the `browser/` folder.
 
 2.1.3) Install Homebrew from https://github.com/Homebrew/brew/releases/latest (macOS pkg) and add /opt/homebrew/bin and /opt/homebrew/sbin to the end of your PATH.
 
-2.1.4) Install the following Homebrew modules:
+2.1.4) Install pkg-config via Homebrew:
 ```bash
 brew install pkg-config
-brew install pixman
-brew install cairo
-brew install pango
-brew install giflib
 ```
-These modules are required to build `canvas` node module. On Intel based Macs the build system pulls a binary from GitHub, therefore building from source is only required on M1/M2 Macs.
 
 POCO and zstd are built as part of the engine (CollaboraOffice core) and taken
 from its workdir, so they no longer need to be built separately for iOS.
