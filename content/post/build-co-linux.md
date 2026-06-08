@@ -113,6 +113,12 @@ cd collabora-office
 
 The engine is the `engine/` subdirectory of the monorepo. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux if needed.
 
+If you want a localized (translated) user interface, also clone the translations repository into `engine/translations` from the top of the clone before building; the engine's `--with-lang` picks up the `.po` files from there:
+
+```bash
+git clone https://gerrit.collaboraoffice.com/translations engine/translations
+```
+
 ```bash
 cd engine
 ```

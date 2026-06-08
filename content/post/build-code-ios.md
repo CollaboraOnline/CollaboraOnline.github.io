@@ -65,6 +65,12 @@ cd collabora-office
 
 ## Build the engine
 
+If you want a localized (translated) user interface, first clone the translations repository into `engine/translations` from the top of the clone; the engine's `--with-lang` picks up the `.po` files from there:
+
+```bash
+git clone https://gerrit.collaboraoffice.com/translations engine/translations
+```
+
 Move into `collabora-office/engine` and put something like this in your `autogen.input`:
 
 ```bash

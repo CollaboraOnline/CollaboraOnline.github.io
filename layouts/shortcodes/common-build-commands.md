@@ -41,6 +41,12 @@ The former Collabora Office core lives inside the `online` monorepo under `engin
 cd engine
 git checkout {{.Get "lobranch"}}
 ```
+
+For a localized (translated) user interface, also clone the translations repository into `engine/translations` (you are now inside `engine/`); the engine's `--with-lang` picks up the `.po` files from there:
+
+```bash
+git clone https://gerrit.collaboraoffice.com/translations translations
+```
 {{ end }}
 
 {{ if eq $section "clone-online" }}

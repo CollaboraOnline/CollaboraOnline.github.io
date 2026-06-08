@@ -88,6 +88,12 @@ cd collabora-office
 
 ## Build the engine
 
+If you want a localized (translated) user interface, first clone the translations repository into `engine/translations` from the top of the clone; the engine's `--with-lang` picks up the `.po` files from there:
+
+```bash
+git clone https://gerrit.collaboraoffice.com/translations engine/translations
+```
+
 Change to the `engine` subdirectory and create an `autogen.input`.
 `user_steps.winget` writes a template to `~\co\autogen.input`; a typical Visual
 Studio 2026 configuration looks like:
