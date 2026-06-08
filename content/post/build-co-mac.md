@@ -60,14 +60,14 @@ Collabora Online and the LibreOffice core now live in a single Gerrit monorepo -
 
 For an anonymous read-only clone:
 ```bash
-git clone https://gerrit.collaboraoffice.com/online collabora-online
-cd collabora-online
+git clone https://gerrit.collaboraoffice.com/online collabora-office
+cd collabora-office
 ```
 
 If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
 ```bash
-git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-online
-cd collabora-online
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
+cd collabora-office
 ```
 
 ### Build LO
