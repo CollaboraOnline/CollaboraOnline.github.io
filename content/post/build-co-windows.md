@@ -23,60 +23,66 @@ On Windows and want to tinker? Build Collabora Office and level up your setup.
 <!--more-->
 # Build Collabora Office
 
-The steps below are for building the Collabora Office in Windows.
+This is the Collabora Office Windows desktop app (`windows/`).
 
 <section id="build-co-windows" class="build-co-linux">
 
-## Windows
+## Requirements
 
-### Requirements
+For starters, the same requirements as for building Collabora Office Classic or
+LibreOffice, see
+https://wiki.documentfoundation.org/Development/BuildingOnWindows. Make sure to
+use Visual Studio 2022 — other Visual Studio versions for building the online
+bits have not been tested. In the Visual Studio installer, also install the .NET
+desktop development components.
 
-For starters, the same requirements as for building Collabora Office Classic
-or LibreOffice, see
-https://wiki.documentfoundation.org/Development/BuildingOnWindows.
-Make sure to use Visual
-Studio 2022. Using other Visual Studio versions for building the
-online bits has not been tested.
+Turn on WSL, the Windows Subsystem for Linux, and install a distro. We use the
+default, Ubuntu; others presumably work too. In an administrator Command Prompt:
 
-In the Visual Studio installer, also install the .NET desktop development
-components.
-
-### Setup
-
-Turn on WSL, the Windows Subsystem for Linux, and install a distro.
-We use the default, Ubuntu, others presumably work, too. In an
-administrator Command Prompt:
 ```
-	wsl --install Ubuntu
+wsl --install Ubuntu
 ```
-In that Ubuntu, install various things that will be needed later. Most
-of this is needed just to run the configure script in online. That
-configure script checks for tons of things that are completely
-irrelevant for a Windows build of Collabora Office, but oh well. Patches welcome.
 
-This is not necessarily a comprehensive list, you might notice more
-missing things as you go along.
+In that Ubuntu, install the packages needed later. Most of this is needed just
+to run the online configure script, which checks for many things that are
+irrelevant for a Windows build of Collabora Office. This is not necessarily a
+comprehensive list — you might notice more missing things as you go along.
 
-	sudo apt install libtool python3-lxml python3-polib g++ pkg-config
-	sudo apt install libpng-dev libzstd-dev libcppunit-dev libpam-dev
+```
+sudo apt install libtool python3-lxml python3-polib g++ pkg-config
+sudo apt install libpng-dev libzstd-dev libcppunit-dev libpam-dev
+```
 
-The following things are more essential, for bulding the JavaScript
-stuff. This is the main reason we are using WSL.
+Node.js is the more essential one, for building the JavaScript bits (the main
+reason we use WSL):
 
-	sudo apt install nodejs npm
+```
+sudo apt install nodejs npm
+```
 
-### Clone the monorepo (Collabora Online and the engine)
+## Clone the monorepo
 
-Clone the https://gerrit.collaboraoffice.com/online repository. The
-default "main" branch is what is used for development
+All the source code now lives in a single Gerrit monorepo; the former Collabora Office core is the `engine/` subdirectory of the `online` repo, so there is no separate repository to clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
-### Build the engine
+For an anonymous read-only clone:
+```bash
+git clone https://gerrit.collaboraoffice.com/online collabora-office
+cd collabora-office
+```
 
-Change to the `engine` subdirectory.
-The known good configuration is in `distro-configs/CODAWindows.conf`. Make sure that you include
-it in your `autogen.input`. You can tweak it as you like, for example:
+If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
+```bash
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
+cd collabora-office
+```
 
-autogen.input:
+## Build the engine
+
+Change to the `engine` subdirectory. The known good configuration is in
+`distro-configs/CODAWindows.conf`. Make sure that you include it in your
+`autogen.input`. You can tweak it as you like, for example:
+
+`autogen.input`:
 ```
 --host=x86_64-pc-cygwin
 --with-distro=CODAWindows
@@ -84,77 +90,84 @@ autogen.input:
 --with-external-tar=/cygdrive/c/co/src
 ```
 
-Note that if you build the Collabora Office project in Visual Studio
-in the Debug configuration, you *must* use an engine build with either
+Note that if you build the Collabora Office project in Visual Studio in the
+Debug configuration, you *must* use an engine build with either
 `--enable-dbgutil` or `--enable-msvc-debug-runtime`.
 
-The engine build should proceed fairly normally. Note that you
-will not end up with a runnable Collabora Office Classic. Attempting
-to run instdir/program/soffice.exe will just produce the message "no
-suitable windowing system found, exiting".
+The engine build should proceed fairly normally. Note that you will not end up
+with a runnable Collabora Office Classic. Attempting to run
+`instdir/program/soffice.exe` will just produce the message "no suitable
+windowing system found, exiting".
 
-You can attempt to run `make check` but that will probably run into
-some false positives.
+You can attempt to run `make check` but that will probably run into some false
+positives.
 
-#### Building engine using WSL and Git Bash
+### Building the engine using WSL and Git Bash
 
-It is possible nowadays to configure Collabora Office Classic or
-LibreOffice for Windows in WSL, not Cygwin. The actual build will then
-use the so-called Git Bash, though, not WSL. It is unclear why the
-impression is given that one is building in WSL. We have not used that for Collabora Office, though.
+It is possible nowadays to configure Collabora Office Classic or LibreOffice for
+Windows in WSL, not Cygwin. The actual build will then use the so-called Git
+Bash, though, not WSL. It is unclear why the impression is given that one is
+building in WSL. We have not used that for Collabora Office, though.
 
-Ideally, in the future, it would be nice to be able to actually truly build
-`engine` for Windows using only Visual Studio and WSL, without Git Bash.
+Ideally, in the future, it would be nice to be able to actually truly build the
+engine for Windows using only Visual Studio and WSL, without Git Bash.
 
-### Build direct dependencies of Collabora Office for Windows
+## Build Collabora Office
 
-Version numbers below are current at the time of writing this. Newer
-versions will probably work, too.
-For `zlib` and `libpng` we use the unpacked sources in the engine build directory, and
-the static libraries already built there.
-
-### Build Collabora Office itself
+### Configure
 
 In an Ubuntu shell, in the top-level of your clone of the `online` repo, run
 
-	./autogen.sh
+```
+./autogen.sh
+```
 
 then run the configure script, like below. POCO, libpng and zstd are built as
 part of the engine and linked from its workdir by the Visual Studio project, so
 they no longer need to be built or passed separately (zlib likewise comes from
-the engine).
+the engine's unpacked sources).
 
-	./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=$PWD/engine --with-lo-path=`wslpath -w $PWD/engine/instdir` --with-zlib-includes=$PWD/engine/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
+```
+./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=$PWD/engine --with-lo-path=`wslpath -w $PWD/engine/instdir` --with-zlib-includes=$PWD/engine/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
+```
 
 Change the `--with-info-url` as appropriate. That is the web page that will be
 shown when clicking the leftmost button in the toolbar.
 
-Note, that some paths are Unix-like paths, and the `--with-lo-path` is a Windows path. This is important.
+Note that some paths are Unix-like paths, while `--with-lo-path` is a Windows
+path. This is important.
 
-Now you can build the JavaScript bits:
+### Build the JavaScript bits
+
 ```
-	cd browser && make
+cd browser && make
 ```
-And then finally, open the windows/coda/CODA.sln solution in Visual Studio and build it.
 
-To build Collabora Office from the command line, run this in `x64 native Tools
-Command Prompt` window. To do it from a script you probably want to
-check what the PATH in such a command prompt window is, and make sure
-to use the relevant PATH entries in a .cmd file.
+### Build the app
 
-	msbuild /p:Configuration=Release /p:Platform=x64 windows\coda\CODA.sln
+Open the `windows/coda/CODA.sln` solution in Visual Studio and build it.
+
+To build Collabora Office from the command line, run this in an `x64 native
+Tools Command Prompt` window. To do it from a script you probably want to check
+what the PATH in such a command prompt window is, and make sure to use the
+relevant PATH entries in a `.cmd` file.
+
+```
+msbuild /p:Configuration=Release /p:Platform=x64 windows\coda\CODA.sln
+```
 
 To first clean the build, run:
 
-	msbuild /p:Configuration=Release /p:Platform=x64 /t:Clean windows\coda\CODA.sln
+```
+msbuild /p:Configuration=Release /p:Platform=x64 /t:Clean windows\coda\CODA.sln
+```
 
-You could also run that from a WSL shell, as long as you make sure
-PATH has what is needed, and you quote the msbuild command-line
-parameters as needed.
+You could also run that from a WSL shell, as long as you make sure PATH has what
+is needed, and you quote the msbuild command-line parameters as needed.
 
-### pre-built snapshot for Windows
+## Pre-built download
 
-If you just want a **pre-built snapshot for Windows**, you can download it here:  
+If you just want a **pre-built snapshot for Windows**, you can download it here:
 👉 https://www.collaboraoffice.com/downloads/Collabora-Office-Windows-Snapshot/
 
 </section>
