@@ -31,7 +31,7 @@ The steps below are for building the Collabora Office in macOS (macos/).
 
 The following instructions depend heavily on using Homebrew, as that makes the
 managing the build requirements much easier. It is of course possible to avoid
-it, and only depend on eg. self-built libpng, etc.
+it, and only depend on eg. self-built POCO, etc.
 
 ### Setup
 
@@ -45,10 +45,6 @@ it, and only depend on eg. self-built libpng, etc.
     ```
     brew install poco
     ```
-* zstd
-    ```
-    brew install zstd
-    ```
 * for ./configure
     ```
     brew install libtool
@@ -56,10 +52,6 @@ it, and only depend on eg. self-built libpng, etc.
 * zlib
     ```
     brew install zlib
-    ```
-* libpng
-    ```
-    brew install libpng
     ```
 * cppunit
     ```
@@ -138,17 +130,17 @@ Run this from the top of the monorepo (one level up from `engine/`):
     --with-vendor="Your Name" \
     --with-poco-includes=/opt/homebrew/opt/poco/include \
     --with-poco-libs=/opt/homebrew/opt/poco/lib \
-    --with-zstd-includes=/opt/homebrew/include \
-    --with-zstd-libs=/opt/homebrew/lib \
-    --with-libpng-includes=/opt/homebrew/include \
-    --with-libpng-libs=/opt/homebrew/lib \
-    --with-lo-path=engine/instdir/your-built-lo.app \
-    --with-lokit-path=engine/include
+    --with-zstd-includes=`pwd`/engine/workdir/UnpackedTarball/zstd/lib \
+    --with-zstd-libs=`pwd`/engine/workdir/LinkTarget/StaticLibrary \
+    --with-libpng-includes=`pwd`/engine/workdir/UnpackedTarball/libpng \
+    --with-libpng-libs=`pwd`/engine/workdir/LinkTarget/StaticLibrary \
+    --with-lo-path=`pwd`/engine/instdir/your-built-lo.app \
+    --with-lokit-path=`pwd`/engine/include
 
 Adjust `your-built-lo.app` to match the app bundle name produced by your core
 build. Also, on Intel Macs homebrew gets installed in
 `/usr/local`, not `/opt/homebrew`; but you may prefer your own built versions of
-POCO, libpng and zstd.
+POCO.
 
 ### Build the JavaScipt bits
 
