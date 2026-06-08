@@ -124,22 +124,19 @@ make
 
 > For debug builds, add `--enable-dbgutil` to the autogen line.
 
-Once done, record the path for the online build and step back to the top of the monorepo:
+Once done, step back to the top of the monorepo:
 ```bash
-export COCOREPATH=$(pwd)
 cd ..
 ```
 
 ## Build Collabora Office
 
-From the top of the `collabora-office` clone:
+From the top of the `collabora-office` clone. The engine is in `engine/`, where
+configure looks by default, so no paths need to be passed:
 
 ```bash
 ./autogen.sh
-./configure --enable-qtapp \
-    --with-lo-path=${COCOREPATH}/instdir \
-    --with-lokit-path=${COCOREPATH}/include \
-    --enable-debug
+./configure --enable-qtapp --enable-debug
 make -j $(nproc)
 ```
 

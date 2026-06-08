@@ -11,13 +11,7 @@ wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets
 tar xvf {{.Get "lotar"}} -C engine
 ```
 
-Export the location of the engine tree as a variable for the configure step:
-```bash
-export COCOREPATH=$(pwd)/engine
-
-# Or make it persistent as part of your .bashrc with
-echo "export COCOREPATH=$(pwd)/engine" >> ~/.bashrc && source ~/.bashrc
-```
+Configure will then pick up the engine from `engine/` automatically.
 {{ end }}
 
 {{ if eq $section "running" }}
@@ -76,13 +70,11 @@ Run autogen to generate the configure file:
 ./autogen.sh
 ```
 
-Run the generated configure script with proper parameters:
+Run the generated configure script. The engine is in `engine/`, where configure looks by default, so no paths need to be passed:
 ```bash
-./configure --with-lokit-path=${COCOREPATH}/include \
-            --with-lo-path=${COCOREPATH}/instdir \
-            --enable-debug --enable-cypress
+./configure --enable-debug --enable-cypress
 ```
-Note: when building from the monorepo with the engine built in `engine/`, set `COCOREPATH=$(pwd)/engine` from the top of the clone before running configure. You can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
+You can add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
 
 Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
 ```bash

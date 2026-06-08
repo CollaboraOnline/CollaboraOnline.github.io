@@ -337,9 +337,8 @@ make -j $(nproc)
 ```
 You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
 
-Once the engine is built, record its location and step back to the top of the monorepo to build online:
+Once the engine is built, step back to the top of the monorepo to build online:
 ```bash
-export COCOREPATH=$(pwd)
 cd ..
 ```
 
@@ -353,7 +352,7 @@ Then download the daily-built archive and extract it into `engine/`:
 
 {{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
 
-The archive only contains `instdir`; the LOKit headers come from the monorepo's `engine/include`. Both paths feed the `--with-lo-path` / `--with-lokit-path` configure options in the next step.
+The archive only contains `instdir`; the LOKit headers come from the monorepo's `engine/include`. Configure finds both under `engine/` automatically in the next step.
 
 ### Building CODE
 
