@@ -145,7 +145,6 @@ Now step back to the top of the monorepo (one level up from `engine/`) and confi
     ./autogen.sh
     ./configure --enable-androidapp \
                 --with-lo-builddir=${CO_BUILDDIR} \
-                --enable-silent-rules \
                 --enable-debug \
                 --with-android-abi=${ABI}
 

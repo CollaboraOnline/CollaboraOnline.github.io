@@ -77,7 +77,7 @@ Run autogen to generate the configure file:
 
 Run the generated configure script with proper parameters:
 ```bash
-./configure --enable-silent-rules --with-lokit-path=${COCOREPATH}/include \
+./configure --with-lokit-path=${COCOREPATH}/include \
             --with-lo-path=${COCOREPATH}/instdir \
             --enable-debug --enable-cypress
 ```

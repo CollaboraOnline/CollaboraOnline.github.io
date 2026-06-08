@@ -418,7 +418,6 @@ Run autoconf/automake, configure and build using GNU make from the top of the `o
 
 You can also add extra flags to customize your build:
 
-- Add `--enable-silent-rules` to create less verbose build output
 - Add `--enable-cypress` to enable tests which use a browser (requires Chromium)
 
 See `./configure --help` for the full list of options.
