@@ -22,38 +22,23 @@ showtitle = true
 Are you familiar with Android development environment and interested to learn more while helping the project?
 <!--more-->
 
-# How to build the Android app:
+# Build the Android app
 
-## You will need
+These instructions build the Collabora Office app for Android. The native parts must be built on Linux; you build the engine first, then the app, from the same monorepo.
 
-### A computer with Linux installed ## {.extraclass class="requirement-machine"}
+## Requirements
 
-The development of the Android app has to be done on Linux, it's currently not possible to
-build the native parts on Windows
+* **A computer running Linux.** The native parts of the Android app cannot currently be built on Windows.
+* **The Android platform tools, including a compatible NDK.** Builds have been tested with Android NDK 23.0.7599858; other NDK versions may or may not work.
+* **An Android or ChromeOS device, or a simulator.** The app can run in a simulator, though some bugs may appear in a simulator but not on a physical device or vice versa — if you can, build and run on a physical device. [Connect the device or simulator to your computer using adb](https://developer.android.com/tools/adb#Enabling).
 
-### The Android platform tools including a compatible NDK  ## {.extraclass class="requirement-machine"}
-
-Builds have been tested with Android NDK 23.0.7599858, other NDK versions may or
-may not work
-
-### An Android or ChromeOS device or simulator ## {.extraclass class="requirement-machine"}
-
-The Android app can run in a simulator, however some bugs may be present in a
-simulator that are not present on a mobile device or vice-versa. If you are able
-to, we strongly suggest you build and run for a physical device.
-
-You should [connect this device or simulator to your computer using
-adb](https://developer.android.com/tools/adb#Enabling)
-
-## Build the engine for Android
-
-### Clone the monorepo
+## Clone the monorepo
 
 All the source code now lives in a single Gerrit monorepo; the former Collabora Office core is the `engine/` subdirectory of the `online` repo, so there is no separate repository to clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
 {{% common-build-commands section="clone-online" clonedir="collabora-office" %}}
 
-### Move into the engine
+## Build the engine
 
 The engine lives under `engine/` inside the monorepo - that is where you do the engine build:
 
@@ -61,7 +46,7 @@ The engine lives under `engine/` inside the monorepo - that is where you do the 
 
 If you already have the monorepo cloned for another job, you may [use git worktrees to speed up this step](https://git-scm.com/docs/git-worktree).
 
-### Configure the engine
+### Configure
 
 Decide what architecture you are going to build for. This will depend on your
 android device's ABI. We support building for armeabi-v7a, arm64-v8a, x86 and
@@ -116,7 +101,7 @@ Finally, run
 
     ./autogen.sh
 
-### Build the engine
+### Build
 
 Run `make` and wait a while for the build to finish...
 
@@ -128,7 +113,7 @@ POCO and libzstd are built as part of the engine, one
 copy per ABI, and taken from its workdir, so they no longer need to be built
 separately for Android.
 
-### Configuring the build
+### Configure
 
 Let's set some variables based on what we just built...
 
@@ -148,13 +133,13 @@ Now step back to the top of the monorepo (one level up from `engine/`) and confi
                 --enable-debug \
                 --with-android-abi=${ABI}
 
-### Build Collabora Office
+### Build
 
 Once again, after configuring the build you can run it with `make`
 
     make
 
-## Build the android app
+## Build the app
 
 ### Option 1: Using Android studio
 
