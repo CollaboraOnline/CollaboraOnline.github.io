@@ -122,7 +122,7 @@ Run `make` and wait a while for the build to finish...
 
     make
 
-## Build Collabora Online
+## Build Collabora Office
 
 POCO and libzstd are built as part of the engine, one
 copy per ABI, and taken from its workdir, so they no longer need to be built
@@ -139,7 +139,7 @@ Let's set some variables based on what we just built...
 CO_BUILDDIR to the `engine/` subdirectory of the monorepo where you built
 the engine.
 
-Now step back to the top of the monorepo (one level up from `engine/`) and configure the Collabora Online build
+Now step back to the top of the monorepo (one level up from `engine/`) and configure the Collabora Office build
 
     cd ..
     ./autogen.sh
@@ -148,7 +148,7 @@ Now step back to the top of the monorepo (one level up from `engine/`) and confi
                 --enable-debug \
                 --with-android-abi=${ABI}
 
-### Build Collabora Online
+### Build Collabora Office
 
 Once again, after configuring the build you can run it with `make`
 
