@@ -74,11 +74,11 @@ Then move into `collabora-online/engine` and put in your autogen.input something
 --enable-werror
 --enable-symbols
 --with-myspell-dicts
---with-distro=LibreOfficeiOS
+--with-distro=CPiOS
 --with-lang=ar bg ca cs da de el en-US en-GB eo es eu fi fr gl he hr hu id is it ja ko lo nb nl oc pl pt pt-BR sq ru sk sl sv tr uk vi zh-CN zh-TW
 ```
 
-and build "normally". (Naturally, no unit tests will be run when cross-compiling.) Of course there is no requirement to use those --enable options; as a minimum, just `--with-distro=LibreOfficeiOS` should work.
+and build "normally". (Naturally, no unit tests will be run when cross-compiling.) Of course there is no requirement to use those --enable options; as a minimum, just `--with-distro=CPiOS` should work.
 
 This will produce a large number of static archives (.a) here and there in instdir and workdir, but no app that can be run as such. (You can see a list of them in workdir/CustomTarget/ios/ios-all-static-libs.list)
 
