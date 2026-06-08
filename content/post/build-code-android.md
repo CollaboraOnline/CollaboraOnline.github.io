@@ -45,7 +45,7 @@ to, we strongly suggest you build and run for a physical device.
 You should [connect this device or simulator to your computer using
 adb](https://developer.android.com/tools/adb#Enabling)
 
-## Build Collabora Office Core for Android
+## Build the engine for Android
 
 ### Clone the monorepo
 
@@ -53,15 +53,15 @@ All the source code now lives in a single Gerrit monorepo; the former LibreOffic
 
 {{% common-build-commands section="clone-online" clonedir="collabora-office" %}}
 
-### Move into core
+### Move into the engine
 
-Core lives under `engine/` inside the monorepo - that is where you do the core build:
+The engine lives under `engine/` inside the monorepo - that is where you do the engine build:
 
 {{% common-build-commands section="clone-lo" lobranch="main" %}}
 
 If you already have the monorepo cloned for another job, you may [use git worktrees to speed up this step](https://git-scm.com/docs/git-worktree).
 
-### Configure Collabora Office core
+### Configure the engine
 
 Decide what architecture you are going to build for. This will depend on your
 android device's ABI. We support building for armeabi-v7a, arm64-v8a, x86 and
@@ -73,7 +73,7 @@ online or use adb to get a list of valid architectures
     $ adb shell getprop ro.product.cpu.abilist
     arm64-v8a,armeabi-v7a,armeabi
 
-Create a file called `autogen.input` in your core clone with the
+Create a file called `autogen.input` in the `engine/` directory with the
 following content:
 
     --build=x86_64-unknown-linux-gnu
@@ -116,7 +116,7 @@ Finally, run
 
     ./autogen.sh
 
-### Build Collabora Office core
+### Build the engine
 
 Run `make` and wait a while for the build to finish...
 
@@ -124,7 +124,7 @@ Run `make` and wait a while for the build to finish...
 
 ## Build Collabora Online
 
-POCO and libzstd are built as part of the engine (CollaboraOffice core), one
+POCO and libzstd are built as part of the engine, one
 copy per ABI, and taken from its workdir, so they no longer need to be built
 separately for Android.
 
@@ -137,7 +137,7 @@ Let's set some variables based on what we just built...
 
 ...remember to change your ABI to the ABI you're building the app for, and
 CO_BUILDDIR to the `engine/` subdirectory of the monorepo where you built
-Collabora Office core.
+the engine.
 
 Now step back to the top of the monorepo (one level up from `engine/`) and configure the Collabora Online build
 
@@ -175,10 +175,10 @@ otherwise aren't able to use Android Studio) we recommend you follow Option 1
 
 ## Debugging
 
-To debug the native Collabora Office core code in Android Studio, you need the debugging
+To debug the native engine code in Android Studio, you need the debugging
 symbols and to setup Android Studio to actually read & use them.
 
-### Add android/obj/local/armeabi-v7a from core.git as a Symbol Directory
+### Add android/obj/local/armeabi-v7a from the engine as a Symbol Directory
 
 In Android Studio, choose Run -> Debug... -> Edit Configurations...
 

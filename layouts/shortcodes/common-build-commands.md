@@ -82,7 +82,7 @@ Run the generated configure script with proper parameters:
             --with-lo-path=${COCOREPATH}/instdir \
             --enable-debug --enable-cypress
 ```
-Note: when building from the monorepo with core built in `engine/`, set `COCOREPATH=$(pwd)/engine` from the top of the clone before running configure. You can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
+Note: when building from the monorepo with the engine built in `engine/`, set `COCOREPATH=$(pwd)/engine` from the top of the clone before running configure. You can also add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
 
 Start the actual build, which might take from a few minutes to half an hour (or more) depending on how powerful your machine is:
 ```bash

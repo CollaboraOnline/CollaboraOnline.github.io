@@ -102,7 +102,7 @@ PYTHON MODULES, NODEJS, and HOMEBREW
 brew install pkg-config
 ```
 
-POCO and zstd are built as part of the engine (CollaboraOffice core) and taken
+POCO and zstd are built as part of the engine and taken
 from its workdir, so they no longer need to be built separately for iOS.
 
 ## 3) Build the iOS app
@@ -127,7 +127,7 @@ Then run:
 (cd browser && make)
 ```
 
-The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the Collabora Office core source and build directories (which typically will be the same, of course).
+The configure script puts the app name as the `CFBundleDisplayName` property into the `ios/Mobile/Info.plist` file, and sets up some symbolic links that point to the engine source and build directories (which typically will be the same, of course).
 
 3.2) Before opening the Xcode project for the first time
    - seriously consider disabling source code indexing, this
@@ -142,7 +142,7 @@ The configure script puts the app name as the `CFBundleDisplayName` property int
 
 3.4) Now you can open the Mobile Xcode project, build it, and run it. Note:
 building for "My Mac (Designed for iPad)" on Mac Silicon will run, but it
-is unstable. Also, you can't run in an emulator since Collabora Office core for iOS is
+is unstable. Also, you can't run in an emulator since the engine for iOS is
 built for arm64 only. So, effectively, you can only test the build on a real
 iOS device.
 

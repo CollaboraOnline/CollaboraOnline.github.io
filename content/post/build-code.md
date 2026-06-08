@@ -24,14 +24,14 @@ Are you interested in contributing but do not know where to start? Head over to 
 # Build CODE
 Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operating system or opt for using Gitpod (hack, build, debug and run entirely using a web-browser) from the list below for straightforward instructions to get you going quickly. If you are a seasoned developer with commit access, or just feeling extraordinarily brave, feel free to follow the general instructions.
 
-**Where the code lives.** Development happens on [Gerrit](https://gerrit.collaboraoffice.com/), which is where code review takes place and where the canonical history lives. GitHub hosts a read-only mirror of the monorepo (online plus core under `engine/`) at [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror) for browsing, cloning, and GitHub Actions. The original [`CollaboraOnline/online`](https://github.com/CollaboraOnline/online) repo is now used only for the issue tracker, so existing `cool#1234` references in commit messages keep working. Pull requests against either GitHub repo are auto-closed; see the FAQ entries [What is `online.mirror`?]({{< relref "faq.md#online-mirror" >}}) and [I have a fix - where do I send the PR?]({{< relref "faq.md#sending-fixes" >}}) for the contribution workflow.
+**Where the code lives.** Development happens on [Gerrit](https://gerrit.collaboraoffice.com/), which is where code review takes place and where the canonical history lives. GitHub hosts a read-only mirror of the monorepo (online plus the engine under `engine/`) at [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror) for browsing, cloning, and GitHub Actions. The original [`CollaboraOnline/online`](https://github.com/CollaboraOnline/online) repo is now used only for the issue tracker, so existing `cool#1234` references in commit messages keep working. Pull requests against either GitHub repo are auto-closed; see the FAQ entries [What is `online.mirror`?]({{< relref "faq.md#online-mirror" >}}) and [I have a fix - where do I send the PR?]({{< relref "faq.md#sending-fixes" >}}) for the contribution workflow.
 
 {{< build-dropdown >}}<br>
 
 <section id="build-code-gitpod" class="build-code-content">
 
 ## Gitpod {#build-code-on-gitpod}
-On top of our daily Collabora Office core archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
+On top of our daily engine archives, we have also added integration support for Gitpod, a cloud based development environment. Now you can start hacking Collabora Online (COOL) in under ~5 minutes!
 
 **Steps to quick start:**
 
@@ -105,7 +105,7 @@ chmod +x clone-online.sh
 The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.
 
 ### Dependencies
-We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
+We need the engine and several other libraries and tools to build `CODE`. POCO is built as part of the engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
 
 ```bash
 # For Leap 15.5
@@ -152,7 +152,7 @@ Run autoconf/automake, configure and build using GNU make:
 The instructions below have been prepared for and tested on Fedora 37. You might need to do small adjustments for Fedora-based distributions.
 
 ### Dependencies
-We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency.
+We need the engine and several other libraries and tools to build `CODE`. POCO is built as part of the engine and taken from its workdir, so it is not a separate dependency.
 
 Open a terminal and follow the steps below:
 
@@ -203,7 +203,7 @@ Run autoconf/automake, configure and build using GNU make:
 The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.
 
 ### Dependencies
-We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency.
+We need the engine and several other libraries and tools to build `CODE`. POCO is built as part of the engine and taken from its workdir, so it is not a separate dependency.
 
 Open a terminal and follow the steps below:
 ```bash
@@ -241,7 +241,7 @@ adjustments for other releases.
 *Note: Sometimes Debian comes without sudo preinstalled. If you do not have sudo, you will need to run `apt install -y sudo` as root. It is not good enough to only run the commands which require sudo below as root, as sudo is also run during `make`*
 
 ### Dependencies
-We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
+We need the engine and several other libraries and tools to build `CODE`. POCO is built as part of the engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
 
 Lets start by installing the `dialog` package, which will be needed while installing some
 of the other packages:
@@ -285,7 +285,7 @@ The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. Yo
 adjustments for other releases.
 
 ### Dependencies
-We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
+We need the engine and several other libraries and tools to build `CODE`. POCO is built as part of the engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
 
 Lets start by installing the `dialog` package, which will be needed while installing some
 of the other packages:
@@ -343,17 +343,17 @@ also be possible to make darwin shells for building the iOS app.
 
 Follow the instructions in the
 [nix-build-support](https://github.com/CollaboraOnline/nix-build-support)
-repository. They will lead you through cloning Collabora Office core and Collabora
-online, configuring your build and running your newly-built CODE.
+repository. They will lead you through cloning the engine and Collabora
+Online, configuring your build and running your newly-built CODE.
 
-## Build CODE & Core {#build-code-n-lo}
+## Build CODE & the engine {#build-code-n-lo}
 
 ### Dependencies
 
 CODE must be built on Linux, and you need the following:
 
-* Collabora Office core
-  + Either build core from source, or download a daily built archive (see below)
+* The engine
+  + Either build the engine from source, or download a daily built archive (see below)
 * libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
   + Use the packages from your distro
 
@@ -369,18 +369,18 @@ You may also want to have the following optional dependencies:
 * Node.js
   + Needed for building the JS parts (not needed if you build them on another linux machine)
 
-### Collabora Office Core
+### The engine
 
-CODE needs Collabora Office core to be built to run. You have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes on Collabora Office core, or you just want to quickly get going to do some small fixes, you may prefer the second way.
+CODE needs the engine to be built to run. You have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes to the engine, or you just want to quickly get going to do some small fixes, you may prefer the second way.
 
-#### Option A - Build core locally (Recommended)
+#### Option A - Build the engine locally (Recommended)
 For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux.
 
 First clone the unified `online` monorepo — all the source code lives here, with the former LibreOffice core under `engine/`:
 
 {{% common-build-commands section="clone-online" %}}
 
-Now move into the core tree and build it:
+Now move into the engine tree and build it:
 {{% common-build-commands section="clone-lo" lobranch="main" %}}
 
 Configure and build, adding the following configuration options to `autogen.sh` or `autogen.input`:
@@ -392,7 +392,7 @@ make -j $(nproc)
 ```
 You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
 
-Once core is built, record its location and step back to the top of the monorepo to build online:
+Once the engine is built, record its location and step back to the top of the monorepo to build online:
 ```bash
 export COCOREPATH=$(pwd)
 cd ..
@@ -452,7 +452,7 @@ now do:
 The ${SYSTEMPLATE} is a directory tree set up using the
 coolwsd-systemplate-setup script here. (It should not exist before
 running the script.) It will contain the runtime environment needed by
-the LibreOffice dynamic libraries used through LibreOfficeKit.
+the engine's dynamic libraries.
 Improvements to that script are very likely needed on various distros.
 
 The ${ROOTFORJAILS} directory above is a presumably initially empty

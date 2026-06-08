@@ -111,9 +111,9 @@ git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-
 cd collabora-online
 ```
 
-### Collabora Office Core
+### The engine
 
-Core is the `engine/` subdirectory of the monorepo. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux if needed.
+The engine is the `engine/` subdirectory of the monorepo. For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux if needed.
 
 ```bash
 cd engine
