@@ -74,9 +74,9 @@ cd collabora-office
 
 Move into the `engine/` subdirectory of the monorepo and build the `main` branch with the following `autogen.input`.
 
-NOTE: Build with stuff installed via 'brew', and not via 'lode'; if you have
-too many things installed via 'brew', compilation may fail for you due to
-incompatible stuff.
+> **Note:** Build with packages installed via Homebrew, not LODE. Having too
+> many things installed via Homebrew can also make compilation fail, due to
+> incompatible packages.
 
 `autogen.input`:
 
