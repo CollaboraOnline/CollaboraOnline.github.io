@@ -29,141 +29,132 @@ This is the Collabora Office Windows desktop app (`windows/`).
 
 ## Requirements
 
-For starters, the same requirements as for building Collabora Office Classic or
-LibreOffice, see
-https://wiki.documentfoundation.org/Development/BuildingOnWindows. Make sure to
-use Visual Studio 2022 — other Visual Studio versions for building the online
-bits have not been tested. In the Visual Studio installer, also install the .NET
-desktop development components.
+Collabora Office for Windows is built with **Visual Studio 2026**, plus a
+Unix-style toolchain reached through WSL and Git Bash. The `windows/.config/`
+directory in the repo ships
+[WinGet configuration](https://learn.microsoft.com/windows/package-manager/configuration/)
+files that set up a build machine for you; apply them, or follow them as a
+checklist if you prefer to install things by hand.
 
-Turn on WSL, the Windows Subsystem for Linux, and install a distro. We use the
-default, Ubuntu; others presumably work too. In an administrator Command Prompt:
+### Visual Studio 2026
 
-```
-wsl --install Ubuntu
-```
-
-In that Ubuntu, install the packages needed later. Most of this is needed just
-to run the online configure script, which checks for many things that are
-irrelevant for a Windows build of Collabora Office. This is not necessarily a
-comprehensive list — you might notice more missing things as you go along.
+Install Visual Studio 2026 Community with the "Desktop development with C++" and
+".NET desktop development" workloads. The exact component list is pinned in
+`windows/.config/2026.vsconfig`. To install Visual Studio and the required
+components in one step:
 
 ```
-sudo apt install libtool python3-lxml python3-polib g++ pkg-config
-sudo apt install libpng-dev libzstd-dev libcppunit-dev libpam-dev
+winget configure windows/.config/configuration.winget
 ```
 
-Node.js is the more essential one, for building the JavaScript bits (the main
-reason we use WSL):
+(`windows/.config/2026_cross.vsconfig` lists the extra components for
+cross-compiling to ARM64.)
+
+### Build tools and WSL
+
+Two more WinGet configurations finish the setup. The first must be run **as
+administrator** — it downloads `jom`, `make`, `clang-format`, `pkgconf` and
+Strawberry Perl Portable, makes sure WSL is installed, and enables Developer
+Mode (so `tar` can create native symlinks while unpacking tarballs):
 
 ```
-sudo apt install nodejs npm
+winget configure windows/.config/admin_deps.winget
+```
+
+The second runs as your normal user. It places `make`, `jom`, `clang-format`
+and `pkgconf` in `~\bin`, extracts Strawberry Perl Portable to `~\co\spp`, sets
+the git options the build needs (`protocol.version=2`, `core.autocrlf=false`)
+and `MSYS=winsymlinks:nativestrict`, drops a sample `~\co\autogen.input`, and
+installs an Ubuntu 24.04 WSL distro with the required packages (`pkg-config`,
+`automake`, `make`, `gperf`, `bison`, `nasm`, `flex`, `zip`, `libfont-ttf-perl`):
+
+```
+winget configure windows/.config/user_steps.winget
 ```
 
 ## Clone the monorepo
 
 All the source code now lives in a single Gerrit monorepo; the former Collabora Office core is the `engine/` subdirectory of the `online` repo, so there is no separate repository to clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
-For an anonymous read-only clone:
+From a **Git Bash** terminal, clone with protocol v2 and CRLF translation turned off:
+
 ```bash
-git clone https://gerrit.collaboraoffice.com/online collabora-office
+git clone --config protocol.version=2 --config core.autocrlf=false \
+    ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
 cd collabora-office
 ```
 
-If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
-```bash
-git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
-cd collabora-office
-```
+(If you applied `user_steps.winget`, those two git options are already set globally.) For an anonymous read-only clone, use `https://gerrit.collaboraoffice.com/online` in place of the SSH URL.
 
 ## Build the engine
 
-Change to the `engine` subdirectory. The known good configuration is in
-`distro-configs/CODAWindows.conf`. Make sure that you include it in your
-`autogen.input`. You can tweak it as you like, for example:
+Change to the `engine` subdirectory and create an `autogen.input`.
+`user_steps.winget` writes a template to `~\co\autogen.input`; a typical Visual
+Studio 2026 configuration looks like:
 
-`autogen.input`:
 ```
---host=x86_64-pc-cygwin
 --with-distro=CODAWindows
---with-lang=ar ca cs cy da de el en-US en-GB es eu fi fr ga gl he hr hu hy id is it ja kk ko nl pl pt pt-BR ro ru sk sl sq sv tr uk zh-CN zh-TW
---with-external-tar=/cygdrive/c/co/src
+--host=x86_64-pc-cygwin
+--with-visual-studio=2026
+--with-strawberry-perl-portable=C:\Users\<you>\co\spp
+--with-external-tar=C:\Users\<you>\co\co-externaltar
 ```
 
-Note that if you build the Collabora Office project in Visual Studio in the
-Debug configuration, you *must* use an engine build with either
-`--enable-dbgutil` or `--enable-msvc-debug-runtime`.
+Adjust the paths to match where Strawberry Perl Portable was extracted and where
+you keep downloaded tarballs. Then run autogen through WSL and build with `make`
+from Git Bash:
 
-The engine build should proceed fairly normally. Note that you will not end up
-with a runnable Collabora Office Classic. Attempting to run
-`instdir/program/soffice.exe` will just produce the message "no suitable
-windowing system found, exiting".
+```bash
+cd engine
+wsl ./autogen.sh
+make
+```
 
-You can attempt to run `make check` but that will probably run into some false
+If you build the Collabora Office project in Visual Studio in the Debug
+configuration, you *must* use an engine build with either `--enable-dbgutil` or
+`--enable-msvc-debug-runtime`.
+
+You will not end up with a runnable Collabora Office Classic — running
+`instdir/program/soffice.exe` just prints "no suitable windowing system found,
+exiting". You can attempt `make check`, but it will probably hit some false
 positives.
-
-### Building the engine using WSL and Git Bash
-
-It is possible nowadays to configure Collabora Office Classic or LibreOffice for
-Windows in WSL, not Cygwin. The actual build will then use the so-called Git
-Bash, though, not WSL. It is unclear why the impression is given that one is
-building in WSL. We have not used that for Collabora Office, though.
-
-Ideally, in the future, it would be nice to be able to actually truly build the
-engine for Windows using only Visual Studio and WSL, without Git Bash.
 
 ## Build Collabora Office
 
 ### Configure
 
-In an Ubuntu shell, in the top-level of your clone of the `online` repo, run
+From the top of the clone, run autogen and configure through WSL. POCO, libpng
+and zstd are built as part of the engine and linked from its workdir by the
+Visual Studio project, so they no longer need to be built or passed separately
+(zlib likewise comes from the engine):
 
-```
-./autogen.sh
-```
-
-then run the configure script, like below. POCO, libpng and zstd are built as
-part of the engine and linked from its workdir by the Visual Studio project, so
-they no longer need to be built or passed separately (zlib likewise comes from
-the engine's unpacked sources).
-
-```
-./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir=$PWD/engine --with-lo-path=`wslpath -w $PWD/engine/instdir` --with-zlib-includes=$PWD/engine/workdir/UnpackedTarball/zlib --with-info-url=https://example.com/coda/info.html
+```bash
+wsl --exec bash -c "./autogen.sh"
+wsl --exec bash -c "./configure --enable-windowsapp --with-app-name='Collabora Office' --with-lo-builddir='/mnt/c/Users/<you>/collabora-office/engine' --with-lo-path='C:\Users\<you>\collabora-office\engine\instdir' --with-info-url=https://example.com/coda/info.html"
 ```
 
-Change the `--with-info-url` as appropriate. That is the web page that will be
-shown when clicking the leftmost button in the toolbar.
-
-Note that some paths are Unix-like paths, while `--with-lo-path` is a Windows
-path. This is important.
+`--with-lo-builddir` is a WSL (Unix) path, while `--with-lo-path` is a Windows
+path — this matters. Change `--with-info-url` as appropriate; that is the web
+page shown when clicking the leftmost button in the toolbar.
 
 ### Build the JavaScript bits
 
-```
-cd browser && make
+```bash
+wsl --exec bash -c "(cd browser && make clean && make)"
 ```
 
 ### Build the app
 
-Open the `windows/coda/CODA.sln` solution in Visual Studio and build it.
-
-To build Collabora Office from the command line, run this in an `x64 native
-Tools Command Prompt` window. To do it from a script you probably want to check
-what the PATH in such a command prompt window is, and make sure to use the
-relevant PATH entries in a `.cmd` file.
+From a **Developer Command Prompt for VS 2026**, build the solution (`/restore`
+fetches the NuGet/.NET dependencies):
 
 ```
-msbuild /p:Configuration=Release /p:Platform=x64 windows\coda\CODA.sln
+msbuild /restore /p:Configuration=Release /p:Platform=x64 windows\coda\CODA.sln
 ```
 
-To first clean the build, run:
-
-```
-msbuild /p:Configuration=Release /p:Platform=x64 /t:Clean windows\coda\CODA.sln
-```
-
-You could also run that from a WSL shell, as long as you make sure PATH has what
-is needed, and you quote the msbuild command-line parameters as needed.
+To clean first, run the same command with `/t:Clean`. You can also build from a
+WSL shell, as long as PATH has what is needed and you quote the msbuild
+parameters.
 
 ## Pre-built download
 
