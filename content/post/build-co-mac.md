@@ -112,14 +112,13 @@ Run this from the top of the monorepo (one level up from `engine/`):
     --with-app-name="Collabora Office" \
     --with-app-package-name=com.yourpackage.name \
     --with-vendor="Your Name" \
-    --with-lo-path=engine/instdir/your-built-lo.app \
-    --with-lokit-path=engine/include
+    --with-lo-path=engine/instdir/your-built-lo.app
 
 POCO, zstd and libpng are built as part of the engine and taken from its
 workdir, so they no longer need to be installed (via Homebrew or otherwise) or
 passed on the configure line.
 
-Adjust `your-built-lo.app` to match the app bundle name produced by your core
+Adjust `your-built-lo.app` to match the app bundle name produced by your engine
 build.
 
 ### Build the JavaScipt bits
