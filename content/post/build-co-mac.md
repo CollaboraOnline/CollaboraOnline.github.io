@@ -42,10 +42,6 @@ it, and only depend on eg. self-built POCO, etc.
     ```
     brew install libtool
     ```
-* cppunit
-    ```
-    brew install cppunit
-    ```
 
 * install the Python helpers used by the build
     ```
