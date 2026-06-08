@@ -103,54 +103,8 @@ brew install giflib
 ```
 These modules are required to build `canvas` node module. On Intel based Macs the build system pulls a binary from GitHub, therefore building from source is only required on M1/M2 Macs.
 
-POCO LIBRARY
-
-2.2.1) The below instructions are for the so-called basic edition of the POCO
-library. Download the source code from https://pocoproject.org/download.html:
-
-2.2.2) Compile. Note: the second and third commands force the path to load
-/usr/bin/python3 and /usr/bin/libtool and the second command sets the minimum
-iOS version to match the Collabora Office core build:
-```bash
-./configure --config=iPhone --static --no-tests --no-samples \
-  --omit=ActiveRecord,Crypto,NetSSL_OpenSSL,Zip,Data,Data/SQLite,Data/ODBC,Data/MySQL,MongoDB,PDF,CppParser,PageCompiler,JWT,Prometheus,Redis \
-  --prefix=$HOME/poco-ios-arm64
-```
-```bash
-PATH="/usr/bin:$PATH" make POCO_TARGET_OSARCH=arm64 IPHONE_SDK_VERSION_MIN=14.5 -s -j4
-```
-```bash
-PATH="/usr/bin:$PATH" make POCO_TARGET_OSARCH=arm64 install
-```
-
-This will install the poco static libraries and headers to your $HOME directory into poco-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
-
-ZSTD LIBRARY
-
-2.3.1) The below instructions are for the so-called basic edition of the
-ZSTD library. Download the source code from
-https://github.com/facebook/zstd/releases.
-
-Alternatively you can use the helper script to build libzstd for iOS: https://github.com/CollaboraOnline/online.mirror/blob/main/scripts/build-zstd-ios.sh
-
-2.3.2) Compile. Note: in the first command, force SDK to iOS and set the
-minimum iOS version to match the Collabora Office core build:
-```bash
-CC="/usr/bin/clang -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk -target arm64-apple-ios14.5" make
-```
-```bash
-make DESTDIR=$HOME/zstd-ios-arm64 install
-```
-Important: the following command deletes any shared libraries that may have
-been installed in the previous command. This is important because recent
-versions of Xcode will link to a dynamic library if it exists in the same
-folder as a static library and our iOS app will not run if it is linked to
-any non-system dynamic libraries:
-```bash
-find "$HOME/zstd-ios-arm64" -name "*.dylib*" -exec rm {} \;
-```
-
-This will install the zstd static libraries and headers to your $HOME directory into zstd-ios-arm64 directory. You can change the directory to your wishes, but by installing it this way into a directory in `$HOME` it doesn't pollute your root directories, doesn't need root permissions and can be removed easily.
+POCO and zstd are built as part of the engine (CollaboraOffice core) and taken
+from its workdir, so they no longer need to be built separately for iOS.
 
 ## 3) Build the iOS app
 ### on a Mac ## {#ios-3-clone-online-mac .extraclass class="requirement-machine"}
@@ -165,10 +119,6 @@ Run autogen.sh, and configure it with the --enable-iosapp option:
 --with-app-name="My Own Mobile Office Suite" \
 --enable-experimental \
 --with-vendor="MyOwnApp" \
---with-poco-includes=$HOME/poco-ios-arm64/include \
---with-poco-libs=$HOME/poco-ios-arm64/lib \
---with-zstd-includes=$HOME/zstd-ios-arm64/usr/local/include \
---with-zstd-libs=$HOME/zstd-ios-arm64/usr/local/lib \
 --with-lo-builddir=$(pwd)/engine
 ```
 

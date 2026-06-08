@@ -41,10 +41,6 @@ it, and only depend on eg. self-built POCO, etc.
     ```
     brew install node
     ```
-* Install poco
-    ```
-    brew install poco
-    ```
 * for ./configure
     ```
     brew install libtool
@@ -128,19 +124,15 @@ Run this from the top of the monorepo (one level up from `engine/`):
     --with-app-name="Collabora Office" \
     --with-app-package-name=com.yourpackage.name \
     --with-vendor="Your Name" \
-    --with-poco-includes=/opt/homebrew/opt/poco/include \
-    --with-poco-libs=/opt/homebrew/opt/poco/lib \
-    --with-zstd-includes=`pwd`/engine/workdir/UnpackedTarball/zstd/lib \
-    --with-zstd-libs=`pwd`/engine/workdir/LinkTarget/StaticLibrary \
-    --with-libpng-includes=`pwd`/engine/workdir/UnpackedTarball/libpng \
-    --with-libpng-libs=`pwd`/engine/workdir/LinkTarget/StaticLibrary \
-    --with-lo-path=`pwd`/engine/instdir/your-built-lo.app \
-    --with-lokit-path=`pwd`/engine/include
+    --with-lo-path=engine/instdir/your-built-lo.app \
+    --with-lokit-path=engine/include
+
+POCO, zstd and libpng are built as part of the engine and taken from its
+workdir, so they no longer need to be installed (via Homebrew or otherwise) or
+passed on the configure line.
 
 Adjust `your-built-lo.app` to match the app bundle name produced by your core
-build. Also, on Intel Macs homebrew gets installed in
-`/usr/local`, not `/opt/homebrew`; but you may prefer your own built versions of
-POCO.
+build.
 
 ### Build the JavaScipt bits
 

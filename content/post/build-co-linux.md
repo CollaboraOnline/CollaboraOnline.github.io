@@ -36,7 +36,7 @@ Tested on Fedora 43.
 ```bash
 sudo dnf install autoconf automake cppunit-devel fontconfig-devel gcc gcc-c++ \
     git libcap-devel libpng-devel libtool libzstd-devel make npm openssl-devel \
-    pam-devel perl-JSON-PP pkgconf-pkg-config poco-devel python3-lxml \
+    pam-devel perl-JSON-PP pkgconf-pkg-config python3-lxml \
     python3-polib qt6-linguist qt6-qtbase-devel qt6-qtwebengine-devel \
     qt6-qtwebsockets-devel
 ```
@@ -52,29 +52,13 @@ sudo apt install -y autoconf automake build-essential cmake fontconfig git \
     qt6-base-dev qt6-tools-dev qt6-tools-dev-tools qt6-webengine-dev
 ```
 
-#### Poco from source
-
-Ubuntu 24.04 ships Poco 1.11.0, but Collabora Office requires 1.12.0 or newer. Build it from source:
-
-```bash
-wget https://github.com/pocoproject/poco/archive/refs/tags/poco-1.14.2-release.tar.gz
-tar xzf poco-1.14.2-release.tar.gz
-cd poco-poco-1.14.2-release
-mkdir cmake-build && cd cmake-build
-cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local
-make -j $(nproc)
-sudo make install
-sudo ldconfig
-cd ../..
-```
-
 ### Debian
 
 Tested on Debian 13 (Trixie).
 
 ```bash
 sudo apt install -y autoconf automake build-essential fontconfig git \
-    libcap-dev libcppunit-dev libpam0g-dev libpng-dev libpoco-dev \
+    libcap-dev libcppunit-dev libpam0g-dev libpng-dev \
     libqt6websockets6-dev libssl-dev libtool libzstd-dev npm pkg-config \
     python3-lxml python3-polib qt6-base-dev qt6-tools-dev qt6-tools-dev-tools \
     qt6-webengine-dev
@@ -84,7 +68,7 @@ sudo apt install -y autoconf automake build-essential fontconfig git \
 
 ```bash
 sudo pacman -Syu autoconf automake base-devel cppunit fontconfig \
-    git libcap libpng libtool npm openssl pam perl-json-pp pkgconf poco \
+    git libcap libpng libtool npm openssl pam perl-json-pp pkgconf \
     python-lxml python-polib qt6-base qt6-tools qt6-webengine \
     qt6-websockets zstd
 ```
@@ -97,7 +81,7 @@ Tested on openSUSE Leap 16.0.
 PYVER=$(python3 -c 'import sys; print(f"python{sys.version_info.major}{sys.version_info.minor}")')
 sudo zypper install autoconf automake cppunit-devel fontconfig-devel gcc-c++ \
     git libcap-devel libopenssl-devel libpng16-compat-devel libpng16-devel \
-    libtool libzstd-devel make npm-default pam-devel pkgconf poco-devel \
+    libtool libzstd-devel make npm-default pam-devel pkgconf \
     ${PYVER}-lxml ${PYVER}-polib qt6-base-devel qt6-tools-linguist \
     qt6-webenginecore-devel qt6-webenginewidgets-devel qt6-websockets-devel
 ```
@@ -106,7 +90,8 @@ sudo zypper install autoconf automake cppunit-devel fontconfig-devel gcc-c++ \
 
 A C++ compiler with full C++20 support is required, including `std::format` (GCC 13+ or Clang 17+).
 
-Poco >= 1.12.0 is required. Some distros ship an older version -- see the [Ubuntu section](#poco-from-source) for building from source.
+POCO is built as part of the engine (`engine/`) and picked up from its workdir
+automatically, so it no longer needs to be installed as a distro package.
 
 ## Building
 
@@ -159,8 +144,6 @@ From the top of the `collabora-online` clone:
     --enable-debug
 make -j $(nproc)
 ```
-
-> **Ubuntu:** if you built Poco from source, add `--with-poco-includes=/usr/local/include --with-poco-libs=/usr/local/lib` to configure.
 
 This produces the `coda-qt` executable in `qt/`.
 

@@ -124,21 +124,20 @@ Run `make` and wait a while for the build to finish...
 
 ## Build Collabora Online
 
-You need a copy of `POCO` and `libzstd` built for Android in order to build the Android app. You can use these scripts to build those
-
-* POCO - use [build-poco-android.sh](https://github.com/CollaboraOnline/online.mirror/blob/main/scripts/build-poco-android.sh)
-* libzstd - use [build-zstd-android.sh](https://github.com/CollaboraOnline/online.mirror/blob/main/scripts/build-zstd-android.sh)
+POCO and libzstd are built as part of the engine (CollaboraOffice core), one
+copy per ABI, and taken from its workdir, so they no longer need to be built
+separately for Android.
 
 ### Configuring the build
 
 Let's set some variables based on what we just built...
 
     export ABI=arm64-v8a
-    export POCO_DIR=/opt/android-poco
-    export ZSTD_DIR=/opt/android-zstd
     export CO_BUILDDIR=/opt/libreoffice
 
-...remember to change your ABI to the ABI you're building the app for, POCO\_DIR and ZSTD\_DIR to the output directories of the build scripts, and CO_BUILDDIR to the `engine/` subdirectory of the monorepo where you built Collabora Office core.
+...remember to change your ABI to the ABI you're building the app for, and
+CO_BUILDDIR to the `engine/` subdirectory of the monorepo where you built
+Collabora Office core.
 
 Now step back to the top of the monorepo (one level up from `engine/`) and configure the Collabora Online build
 
@@ -146,10 +145,6 @@ Now step back to the top of the monorepo (one level up from `engine/`) and confi
     ./autogen.sh
     ./configure --enable-androidapp \
                 --with-lo-builddir=${CO_BUILDDIR} \
-                --with-poco-includes=${POCO_DIR}/install/include \
-                --with-poco-libs=${POCO_DIR}/install/${ABI}/lib \
-                --with-zstd-includes=${ZSTD_DIR}/lib \
-                --with-zstd-libs=${ZSTD_DIR}/install/${ABI}/lib \
                 --enable-silent-rules \
                 --enable-debug \
                 --with-android-abi=${ABI}

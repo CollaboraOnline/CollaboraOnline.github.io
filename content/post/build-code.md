@@ -105,7 +105,7 @@ chmod +x clone-online.sh
 The instructions below have been prepared for and tested on openSUSE Leap 15.3. You might need to do small adjustments for other releases.
 
 ### Dependencies
-We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
 
 ```bash
 # For Leap 15.5
@@ -118,7 +118,7 @@ sudo zypper install -t pattern devel_basis
 ```
 Now go ahead and install the following packages
 ```bash
-zypper in poco-devel libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml chromium
+zypper in libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml chromium
 
 # If you are using Leap 15.4 please install this aditional compatability library
 zypper in libpng16-compat-devel
@@ -152,7 +152,7 @@ Run autoconf/automake, configure and build using GNU make:
 The instructions below have been prepared for and tested on Fedora 37. You might need to do small adjustments for Fedora-based distributions.
 
 ### Dependencies
-We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`.
+We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency.
 
 Open a terminal and follow the steps below:
 
@@ -172,7 +172,6 @@ sudo dnf install \
     nodejs-devel \
     npm \
     pam-devel \
-    poco-devel \
     python3-polib
 ```
 
@@ -204,11 +203,11 @@ Run autoconf/automake, configure and build using GNU make:
 The instructions below have been prepared for and tested on Manjaro 21.2.3. You might need to do small adjustments for Arch and/or other Arch-based distributions.
 
 ### Dependencies
-We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`.
+We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency.
 
 Open a terminal and follow the steps below:
 ```bash
-sudo pacman -Syu libcap libcap-ng lib32-libcap libpng poco cppunit nodejs npm chromium python-lxml python-polib
+sudo pacman -Syu libcap libcap-ng lib32-libcap libpng cppunit nodejs npm chromium python-lxml python-polib
 ```
 
 ### Clone the source
@@ -242,7 +241,7 @@ adjustments for other releases.
 *Note: Sometimes Debian comes without sudo preinstalled. If you do not have sudo, you will need to run `apt install -y sudo` as root. It is not good enough to only run the commands which require sudo below as root, as sudo is also run during `make`*
 
 ### Dependencies
-We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
 
 Lets start by installing the `dialog` package, which will be needed while installing some
 of the other packages:
@@ -252,7 +251,7 @@ sudo apt install -y dialog
 
 Now install the rest of the required packages:
 ```bash
-sudo apt install -y libpoco-dev python3-polib libcap-dev npm \
+sudo apt install -y python3-polib libcap-dev npm \
                     libpam-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
                     pkg-config fontconfig chromium
@@ -286,7 +285,7 @@ The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. Yo
 adjustments for other releases.
 
 ### Dependencies
-We need Collabora Office core, POCO library and several other libraries and tools to build `CODE`. Open a terminal and follow the steps below.
+We need Collabora Office core and several other libraries and tools to build `CODE`. POCO is built as part of the core engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
 
 Lets start by installing the `dialog` package, which will be needed while installing some
 of the other packages:
@@ -296,7 +295,7 @@ sudo apt install -y dialog
 
 Now install the rest of the required packages:
 ```bash
-sudo apt install -y libpoco-dev python3-polib libcap-dev libssl-dev npm \
+sudo apt install -y python3-polib libcap-dev libssl-dev npm \
                     libpam-dev libzstd-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libgif-dev libcppunit-dev \
                     pkg-config fontconfig snapd chromium-browser
@@ -355,8 +354,6 @@ CODE must be built on Linux, and you need the following:
 
 * Collabora Office core
   + Either build core from source, or download a daily built archive (see below)
-* Poco library: http://pocoproject.org/
-  + Either use the package from your distro, or build it yourself, ideally 1.10.1 or later
 * libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
   + Use the packages from your distro
 
@@ -421,18 +418,12 @@ Run autoconf/automake, configure and build using GNU make from the top of the `o
 
 You can also add extra flags to customize your build:
 
-- If you built POCO from source, add `--with-poco-includes=<POCODIRECTORY>/include --with-poco-libs=<POCODIRECTORY>/lib`
 - Add `--enable-silent-rules` to create less verbose build output
 - Add `--enable-cypress` to enable tests which use a browser (requires Chromium)
 
 See `./configure --help` for the full list of options.
 
-Make sure we use unbundled libraries within POCO libraries. For this, we should export `CFLAGS` and ``CCFLAGS`` appropriately.
-
 ```bash
-export CFLAGS="$CFLAGS -DPOCO_UNBUNDLED=1"
-export CXXFLAGS="$CXXFLAGS -DPOCO_UNBUNDLED=1"
-
 make -j `nproc`
 ```
 
@@ -569,32 +560,6 @@ kernel.apparmor_restrict_unprivileged_userns=0
 
 After rebooting, you should be able to continue the build process without encountering the error.
 
-
-### Poco 1.13.0 Crash on Startup (`make run`)
-
-When running ```make run```, Poco 1.13.0 may crash on startup with the following error:
-
-```Failed to initialize COOLWSD: Null pointer: strategy in file "./Foundation/src/FileChannel.cpp", line 283 ```
-
-This happens due to the use of ```rotation="never"``` for the log rotation strategy in ```coolwsd.xml.```
-
-**Solution**
-
-Update the log rotation strategy in ```coolwsd.xml```:
-
- * Change
-
-      ```
-      rotation="never"
-      ```
-     to:
-      ```
-      rotation="monthly"
-      ```
-
-This resolves the crash.
-
-Note: This is a dependency-related issue that may be resolved in future versions. You can also refer to the online repository's development notes for the most current information regarding dependency issues: https://github.com/CollaboraOnline/online.mirror/blob/main/dev-notes/dependency-issues.md?plain=1#L12
 
 </section>
 
