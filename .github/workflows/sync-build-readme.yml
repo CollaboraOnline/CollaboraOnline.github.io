@@ -33,5 +33,5 @@ jobs:
             echo "Build pages already up to date."
             exit 0
           fi
-          git commit -m "Sync macOS build instructions from source repo" --signoff
+          git commit -m "Sync build instructions from source repo READMEs" --signoff
           git push https://x-access-token:${{ secrets.GENERATE_CONTRIBUTORS }}@github.com/CollaboraOnline/CollaboraOnline.github.io.git HEAD:master
