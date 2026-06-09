@@ -262,13 +262,6 @@ element.
 </description>
 ```
 
-# Debugging
-
-Some useful environment variable settings are `QT_LOGGING_RULES=` to always get JS console warnings
-and errors (even when running without a `--debug` command line argument) and
-`QT_MESSAGE_PATTERN=%{if-category}%{category}: %{endif}%{file}:%{line}: %{message}` to get JS
-console warnings and errors that contain file and line information.
-
 </section>
 
 {{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/qt/README.md" name="Edit page" >}}
