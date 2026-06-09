@@ -1,0 +1,24 @@
++++
+authors = [
+    "Collabora",
+]
+title = "Build Collabora Office for Mac"
+date = "2020-12-01"
+home_pos = "4"
+description = "Step-by-step build instructions"
+tags = [
+    "build",
+    "make",
+]
+images = [
+    "beaver/build-code-ios-copyrighted.png",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
++++
+
+Got a Mac and a curious mind? Build your own Collabora Office and see the magic happen.
+
+<!--more-->
+<section id="build-co-mac" class="build-co-linux">

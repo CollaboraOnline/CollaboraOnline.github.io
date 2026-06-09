@@ -21,11 +21,11 @@ showimage = false
 Got a Mac and a curious mind? Build your own Collabora Office and see the magic happen.
 
 <!--more-->
+<section id="build-co-mac" class="build-co-linux">
+
 # Build Collabora Office
 
 This is the Collabora Office macOS desktop app (`macos/`).
-
-<section id="build-co-mac" class="build-co-linux">
 
 ## Requirements
 
@@ -122,4 +122,4 @@ the **TestFlight preview build**:
 
 </section>
 
-{{< edit-button to="/content/post/build-co-mac.md" name="Edit page">}}
+{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/macos/README.md" name="Edit page" >}}

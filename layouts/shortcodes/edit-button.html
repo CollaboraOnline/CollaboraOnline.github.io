@@ -1,4 +1,8 @@
-<a href='https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/master{{ .Get "to" }}'  class="btn btn-light btn-co-secondary btn-edit-page">
+{{- $href := .Get "href" -}}
+{{- if not $href -}}
+{{- $href = printf "https://github.com/CollaboraOnline/CollaboraOnline.github.io/blob/master%s" (.Get "to") -}}
+{{- end -}}
+<a href='{{ $href }}'  class="btn btn-light btn-co-secondary btn-edit-page">
 {{ .Get "name" }}
 </a>
 <p></p>
