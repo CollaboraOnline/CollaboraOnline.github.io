@@ -1,0 +1,22 @@
++++
+authors = [
+    "Collabora",
+]
+title = "Build for iOS"
+date = "2023-09-01"
+home_pos = "6"
+description = "Step-by-step build instructions"
+tags = [
+    "build",
+    "make",
+]
+images = [
+    "beaver/build-code-ios-copyrighted.png",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
++++
+
+Are you familiar with iOS development environment and interested to learn more while helping the project?
+<!--more-->

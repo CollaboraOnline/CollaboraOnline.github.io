@@ -36,13 +36,41 @@ These instructions build the Collabora Office app for Android. The native parts 
 
 All the source code now lives in a single Gerrit monorepo; the former Collabora Office core is the `engine/` subdirectory of the `online` repo, so there is no separate repository to clone any more. Code review happens on [Gerrit](https://gerrit.collaboraoffice.com/), not GitHub pull requests; see the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full workflow.
 
-{{% common-build-commands section="clone-online" clonedir="collabora-office" %}}
+Collabora Online is hosted on Gerrit as a single monorepo: all the source code lives in one repository, with the former Collabora Office core under `engine/`.
+
+For an anonymous read-only clone (no account needed):
+```bash
+git clone https://gerrit.collaboraoffice.com/online collabora-office
+```
+
+If you have a Gerrit account and plan to push changes for review, clone over SSH instead:
+```bash
+git clone ssh://YOUR_USERNAME@gerrit.collaboraoffice.com:29418/online collabora-office
+```
+
+See the [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41) for the full Gerrit workflow (SSH key, `commit-msg` hook, pushing to `refs/for/main`).
+
+Switch to the local clone's directory:
+```bash
+cd collabora-office
+```
 
 ## Build the engine
 
 The engine lives under `engine/` inside the monorepo - that is where you do the engine build:
 
-{{% common-build-commands section="clone-lo" lobranch="main" %}}
+The former Collabora Office core lives inside the `online` monorepo under `engine/`, so a separate clone is no longer needed. If you have not cloned the monorepo yet, run the `clone-online` step above first. Then move into the engine tree:
+
+```bash
+cd engine
+git checkout main
+```
+
+For a localized (translated) user interface, also clone the translations repository into `engine/translations` (you are now inside `engine/`); the engine's `--with-lang` picks up the `.po` files from there:
+
+```bash
+git clone https://gerrit.collaboraoffice.com/translations translations
+```
 
 If you already have the monorepo cloned for another job, you may [use git worktrees to speed up this step](https://git-scm.com/docs/git-worktree).
 
@@ -226,4 +254,4 @@ So the result will look something like this:
     --with-distro=CPAndroid
     --enable-sal-log
 
-{{< edit-button to="/content/post/build-code-android.md" name="Edit page">}}
+{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/android/README" name="Edit page" >}}
