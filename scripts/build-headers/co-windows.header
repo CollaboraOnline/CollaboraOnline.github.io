@@ -1,0 +1,24 @@
++++
+authors = [
+    "Collabora",
+]
+title = "Build Collabora Office for Windows"
+date = "2026-04-27"
+home_pos = "3"
+description = "Step-by-step build instructions"
+tags = [
+    "build",
+    "make",
+]
+images = [
+    "beaver/co-windows-copyrighted.png",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
++++
+
+On Windows and want to tinker? Build Collabora Office and level up your setup.
+
+<!--more-->
+<section id="build-co-windows" class="build-co-linux">

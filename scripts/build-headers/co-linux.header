@@ -1,0 +1,24 @@
++++
+authors = [
+    "Collabora",
+]
+title = "Build Collabora Office for Linux"
+date = "2020-12-01"
+home_pos = "2"
+description = "Step-by-step build instructions"
+tags = [
+    "build",
+    "make",
+]
+images = [
+    "beaver/co-linux-copyrighted.png",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
++++
+
+Linux lover? Build Collabora Office and unleash your inner hacker.
+
+<!--more-->
+<section id="build-co-linux" class="build-co-linux">

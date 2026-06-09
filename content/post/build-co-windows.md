@@ -21,11 +21,11 @@ showimage = false
 On Windows and want to tinker? Build Collabora Office and level up your setup.
 
 <!--more-->
+<section id="build-co-windows" class="build-co-linux">
+
 # Build Collabora Office
 
 This is the Collabora Office Windows desktop app (`windows/`).
-
-<section id="build-co-windows" class="build-co-linux">
 
 ## Requirements
 
@@ -170,4 +170,4 @@ If you just want a **pre-built snapshot for Windows**, you can download it here:
 
 </section>
 
-{{< edit-button to="/content/post/build-co-windows.md" name="Edit page">}}
+{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/windows/coda/README.md" name="Edit page" >}}
