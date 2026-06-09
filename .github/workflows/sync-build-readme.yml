@@ -28,7 +28,9 @@ jobs:
           git config user.email "darshan.upadhyay@collabora.com"
           git add content/post/build-co-mac.md \
                   content/post/build-co-linux.md \
-                  content/post/build-co-windows.md
+                  content/post/build-co-windows.md \
+                  content/post/build-code-ios.md \
+                  content/post/build-code-android.md
           if git diff --cached --quiet; then
             echo "Build pages already up to date."
             exit 0

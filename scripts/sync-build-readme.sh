@@ -28,6 +28,8 @@ PAGES=(
   "scripts/build-headers/co-mac.header|macos/README.md|content/post/build-co-mac.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/macos/README.md"
   "scripts/build-headers/co-linux.header|qt/README.md|content/post/build-co-linux.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/qt/README.md"
   "scripts/build-headers/co-windows.header|windows/coda/README.md|content/post/build-co-windows.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/windows/coda/README.md"
+  "scripts/build-headers/code-ios.header|ios/README|content/post/build-code-ios.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/ios/README"
+  "scripts/build-headers/code-android.header|android/README|content/post/build-code-android.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/android/README"
 )
 
 fetch_readme() {
@@ -62,8 +64,12 @@ for entry in "${PAGES[@]}"; do
     cat "$header"
     printf '\n'
     printf '%s\n' "$body"
-    printf '\n</section>\n\n'
-    printf '{{< edit-button href="%s" name="Edit page" >}}\n' "$edit_link"
+    # Close the section only when the header stub opened one. The desktop pages
+    # wrap their body in a section; the iOS and Android pages do not.
+    if grep -q '<section' "$header"; then
+      printf '\n</section>\n'
+    fi
+    printf '\n{{< edit-button href="%s" name="Edit page" >}}\n' "$edit_link"
   } > "$output"
 
   echo "Wrote $output from $source"

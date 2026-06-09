@@ -20,6 +20,7 @@ showimage = false
 
 Are you familiar with iOS development environment and interested to learn more while helping the project?
 <!--more-->
+
 # Build the iOS app
 
 These instructions build the Collabora Office iOS app. Everything is done on a Mac: you build the engine first, then the app, from the same monorepo.
@@ -125,4 +126,4 @@ Now open the Mobile Xcode project. Xcode is very restrictive and requires some c
 
 Then build and run. Note that building for "My Mac (Designed for iPad)" on Mac Silicon will run but is unstable. You can't run in a simulator since the engine for iOS is built for arm64 only, so you can only test on a real iOS device.
 
-{{< edit-button to="/content/post/build-code-ios.md" name="Edit page">}}
+{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/ios/README" name="Edit page" >}}

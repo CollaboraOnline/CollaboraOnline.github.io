@@ -1,0 +1,23 @@
++++
+authors = [
+    "Collabora",
+]
+title = "Build for Android"
+date = "2022-07-02"
+home_pos = "5"
+description = "Step-by-step build instructions"
+tags = [
+    "build",
+    "make",
+]
+images = [
+    "beaver/build-code-android-copyrighted.png",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
+showtitle = true
++++
+
+Are you familiar with Android development environment and interested to learn more while helping the project?
+<!--more-->
