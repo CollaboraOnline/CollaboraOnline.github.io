@@ -254,4 +254,4 @@ So the result will look something like this:
     --with-distro=CPAndroid
     --enable-sal-log
 
-{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/android/README" name="Edit page" >}}
+{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/android/README.md" name="Edit page" >}}

@@ -28,8 +28,8 @@ PAGES=(
   "scripts/build-headers/co-mac.header|macos/README.md|content/post/build-co-mac.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/macos/README.md"
   "scripts/build-headers/co-linux.header|qt/README.md|content/post/build-co-linux.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/qt/README.md"
   "scripts/build-headers/co-windows.header|windows/coda/README.md|content/post/build-co-windows.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/windows/coda/README.md"
-  "scripts/build-headers/code-ios.header|ios/README|content/post/build-code-ios.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/ios/README"
-  "scripts/build-headers/code-android.header|android/README|content/post/build-code-android.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/android/README"
+  "scripts/build-headers/code-ios.header|ios/README.md|content/post/build-code-ios.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/ios/README.md"
+  "scripts/build-headers/code-android.header|android/README.md|content/post/build-code-android.md|https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/android/README.md"
 )
 
 fetch_readme() {

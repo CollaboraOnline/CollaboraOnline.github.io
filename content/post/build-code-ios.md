@@ -126,4 +126,4 @@ Now open the Mobile Xcode project. Xcode is very restrictive and requires some c
 
 Then build and run. Note that building for "My Mac (Designed for iPad)" on Mac Silicon will run but is unstable. You can't run in a simulator since the engine for iOS is built for arm64 only, so you can only test on a real iOS device.
 
-{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/ios/README" name="Edit page" >}}
+{{< edit-button href="https://gerrit.collaboraoffice.com/plugins/gitiles/online/+/refs/heads/main/ios/README.md" name="Edit page" >}}
