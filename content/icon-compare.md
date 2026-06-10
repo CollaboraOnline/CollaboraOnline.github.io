@@ -5,6 +5,11 @@ date = "2026-06-08"
 +++
 
 <div class="icon-diff">
+  <h1 class="crumbs" aria-label="Breadcrumb">
+    <a href="/design-with-us/">Design with us</a>
+    <span class="sep" aria-hidden="true">&gt;</span>
+    <span class="here" aria-current="page">Icon Compare</span>
+  </h1>
   <p class="lede">Compare an icon's <strong>before</strong> and <strong>after</strong> SVG, on light and dark backgrounds.</p>
 
   <div class="tip">
@@ -90,6 +95,13 @@ date = "2026-06-08"
 <style>
   .icon-diff { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: #1a1a1a; }
   .icon-diff * { box-sizing: border-box; }
+  /* Hide the theme's auto-rendered title; the breadcrumb h1 below is the sole heading. */
+  .content-page .col-lg-8 > h2.mb-3 { display: none; }
+  .icon-diff h1.crumbs { font-size: 1.6rem; font-weight: 600; line-height: 1.3; margin: 0 0 1rem; }
+  .icon-diff h1.crumbs a { color: #555; text-decoration: none; }
+  .icon-diff h1.crumbs a:hover { text-decoration: underline; }
+  .icon-diff h1.crumbs .sep { color: #aaa; margin: 0 0.5rem; font-weight: 400; }
+  .icon-diff h1.crumbs .here { color: #1a1a1a; }
   .icon-diff .lede { color: #555; font-size: 0.95rem; margin: 0 0 1.5rem; line-height: 1.5; }
   .icon-diff code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
   .icon-diff .lede code { background: #eee; padding: 0.05rem 0.3rem; border-radius: 4px; font-size: 0.85em; }
