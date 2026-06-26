@@ -19,8 +19,55 @@ showimage = false
 showtitle = true
 +++
 
-Are you familiar with Android development environment and interested to learn more while helping the project?
+Install Collabora Office on your Android phone or tablet from F-Droid, or build it yourself from source.
+
 <!--more-->
+
+## Install Collabora Office on Android {#install}
+
+Collabora Office for Android is published through F-Droid, the catalogue of free
+and open source apps. You add the Collabora repository to the F-Droid app once,
+and after that you install and update Collabora Office like any other app.
+
+### 1. Install the F-Droid app
+
+If you do not already have F-Droid on your device, download and install it from
+the official site: [f-droid.org](https://f-droid.org/). F-Droid is an app store;
+it is the app you use to install Collabora Office.
+
+### 2. Add the Collabora Office repository
+
+You have three ways to add the repository. Pick whichever suits you.
+
+**Scan the QR code** (when you are reading this page on another screen, such as
+a computer). In the F-Droid app open Settings, then Repositories, then the plus
+button, then "Scan QR code", and point your camera at this code:
+
+<img src="/images/collabora-fdroid-repo-qr.svg" alt="QR code that adds the Collabora Office F-Droid repository" width="220" height="220" style="border:1px solid #ddd; padding:8px; background:#fff;">
+
+**Tap to add** (when you are reading this page on the phone itself, with F-Droid
+already installed): [Add the Collabora Office repository to F-Droid](https://www.collaboraoffice.com/downloads/fdroid/repo/?fingerprint=573258C84E149B5F4D9299E7434B2B69A8410372921D4AE586BA91EC767892CC).
+
+**Add it by hand**: in the F-Droid app open Settings, then Repositories, then the
+plus button, and enter the address and fingerprint below.
+
+* Repository address:
+  `https://www.collaboraoffice.com/downloads/fdroid/repo/`
+* Fingerprint:
+  `573258C84E149B5F4D9299E7434B2B69A8410372921D4AE586BA91EC767892CC`
+
+If you would like to see the F-Droid screens for adding a repository, F-Droid has
+its own picture guide: [Adding a repository to F-Droid](https://f-droid.org/tutorials/add-repo/).
+
+### 3. Install Collabora Office
+
+Once the repository is added, let F-Droid refresh its list of apps. Search for
+"Collabora Office", open it, and tap Install. Updates then arrive through F-Droid
+along with your other apps.
+
+---
+
+Are you familiar with Android development environment and interested to learn more while helping the project?
 
 # Build the Android app
 
