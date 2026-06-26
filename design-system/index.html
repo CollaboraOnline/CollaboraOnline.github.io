@@ -2084,7 +2084,7 @@ p.ds-desc {
 <p class="ds-desc">All cursor types used across Collabora Online, with live previews and links to source. There is no centralised cursor map in the codebase &mdash; cursors are applied inline via <code>style.cursor</code> in TypeScript/JavaScript or via CSS classes. The <em>Uses</em> chip counts occurrences in <code>browser/css/</code> + inline <code>style.cursor</code> assignments in <code>browser/src/</code>. The <em>Source</em> link points at one representative declaration at a pinned upstream SHA.</p>
 
 <div class="ds-cursor-note">
-<strong>Tip:</strong> hover the preview box to see the actual cursor as your browser renders it. Source links point at the read-only GitHub mirror <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror">CollaboraOnline/online.mirror</a> pinned to the commit that was the tip of <code>main</code> when this page was built (SHA <code>fae3aa6</code>) so line numbers stay accurate; the pipeline re-pins to the latest commit on every run.
+<strong>Tip:</strong> hover the preview box to see the actual cursor as your browser renders it. Source links point at the read-only GitHub mirror <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror">CollaboraOnline/online.mirror</a> pinned to the commit that was the tip of <code>main</code> when this page was built (SHA <code>02d585e</code>) so line numbers stay accurate; the pipeline re-pins to the latest commit on every run.
 </div>
 
 <h3 class="ds-component-title" id="cursors-standard">Standard CSS cursors</h3>
@@ -2093,33 +2093,33 @@ p.ds-desc {
 		<tr><th>Cursor</th><th>Preview</th><th>Description</th><th>Uses</th><th>Source</th></tr>
 	</thead>
 	<tbody>
-		<tr><td><code>auto</code></td><td><div class="ds-cursor-preview" style="cursor: auto;">hover</div></td><td>Browser chooses cursor automatically</td><td><span class="ds-cursor-count">3</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/cool.css#L233">cool.css:233</a></td></tr>
-		<tr><td><code>cell</code></td><td><div class="ds-cursor-preview" style="cursor: cell;">hover</div></td><td>Cell selection in spreadsheets</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/spreadsheet.css#L2">spreadsheet.css:2</a></td></tr>
-		<tr><td><code>col-resize</code></td><td><div class="ds-cursor-preview" style="cursor: col-resize;">hover</div></td><td>Column width resize</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/cool.css#L266">cool.css:266</a></td></tr>
-		<tr><td><code>context-menu</code></td><td><div class="ds-cursor-preview" style="cursor: context-menu;">hover</div></td><td>Context menu trigger</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css#L747">jsdialogs.css:747</a></td></tr>
-		<tr><td><code>crosshair</code></td><td><div class="ds-cursor-preview" style="cursor: crosshair;">hover</div></td><td>Crosshair selector (auto-fill in spreadsheets)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css#L169">leaflet.css:169</a></td></tr>
-		<tr><td><code>default</code></td><td><div class="ds-cursor-preview" style="cursor: default;">hover</div></td><td>Standard arrow (buttons, toolbar, panels)</td><td><span class="ds-cursor-count">20</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L61">jquery-ui-lightness.css:61</a></td></tr>
-		<tr><td><code>e-resize</code></td><td><div class="ds-cursor-preview" style="cursor: e-resize;">hover</div></td><td>Resize from the east (right) edge</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L613">jquery-ui-lightness.css:613</a></td></tr>
-		<tr><td><code>ew-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ew-resize;">hover</div></td><td>Horizontal resize (east/west)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css#L187">leaflet.css:187</a></td></tr>
-		<tr><td><code>grab</code></td><td><div class="ds-cursor-preview" style="cursor: grab;">hover</div></td><td>Hand ready to grab/drag. <em>Used only as SVG fallback in this codebase</em> &mdash; see <code>grab.svg</code> below.</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#L30">ShapeHandleAnchorSubSection.ts:30</a></td></tr>
-		<tr><td><code>grabbing</code></td><td><div class="ds-cursor-preview" style="cursor: grabbing;">hover</div></td><td>Hand actively dragging</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css#L220">leaflet.css:220</a></td></tr>
-		<tr><td><code>help</code></td><td><div class="ds-cursor-preview" style="cursor: help;">hover</div></td><td>Help/explainer cursor (info tooltips, AI chat sidebar)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/aichat-sidebar.css#L212">aichat-sidebar.css:212</a></td></tr>
-		<tr><td><code>inherit</code></td><td><div class="ds-cursor-preview" style="cursor: inherit;">hover</div></td><td>Inherit cursor from parent element</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/cool.css#L946">cool.css:946</a></td></tr>
-		<tr><td><code>move</code></td><td><div class="ds-cursor-preview" style="cursor: move;">hover</div></td><td>Move/drag element (four-arrow)</td><td><span class="ds-cursor-count">7</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css#L165">leaflet.css:165</a></td></tr>
-		<tr><td><code>n-resize</code></td><td><div class="ds-cursor-preview" style="cursor: n-resize;">hover</div></td><td>Resize from north (top) edge</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L599">jquery-ui-lightness.css:599</a></td></tr>
-		<tr><td><code>ne-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ne-resize;">hover</div></td><td>Resize from north-east corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L648">jquery-ui-lightness.css:648</a></td></tr>
-		<tr><td><code>nesw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nesw-resize;">hover</div></td><td>Diagonal resize (NE / SW)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css#L183">leaflet.css:183</a></td></tr>
-		<tr><td><code>not-allowed</code></td><td><div class="ds-cursor-preview" style="cursor: not-allowed;">hover</div></td><td>Action not permitted (disabled buttons)</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/backstage.css#L166">backstage.css:166</a></td></tr>
-		<tr><td><code>ns-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ns-resize;">hover</div></td><td>Vertical resize (north/south)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css#L195">leaflet.css:195</a></td></tr>
-		<tr><td><code>nw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nw-resize;">hover</div></td><td>Resize from north-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L641">jquery-ui-lightness.css:641</a></td></tr>
-		<tr><td><code>nwse-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nwse-resize;">hover</div></td><td>Diagonal resize (NW / SE)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css#L191">leaflet.css:191</a></td></tr>
-		<tr><td><code>pointer</code></td><td><div class="ds-cursor-preview" style="cursor: pointer;">hover</div></td><td>Interactive element (buttons, links)</td><td><span class="ds-cursor-count">78</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/selectionMarkers.css#L29">selectionMarkers.css:29</a></td></tr>
-		<tr><td><code>row-resize</code></td><td><div class="ds-cursor-preview" style="cursor: row-resize;">hover</div></td><td>Row height resize</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/spreadsheet.css#L228">spreadsheet.css:228</a></td></tr>
-		<tr><td><code>s-resize</code></td><td><div class="ds-cursor-preview" style="cursor: s-resize;">hover</div></td><td>Resize from south (bottom) edge</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L606">jquery-ui-lightness.css:606</a></td></tr>
-		<tr><td><code>se-resize</code></td><td><div class="ds-cursor-preview" style="cursor: se-resize;">hover</div></td><td>Resize from south-east corner (table fill)</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L627">jquery-ui-lightness.css:627</a></td></tr>
-		<tr><td><code>sw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: sw-resize;">hover</div></td><td>Resize from south-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L634">jquery-ui-lightness.css:634</a></td></tr>
-		<tr><td><code>text</code></td><td><div class="ds-cursor-preview" style="cursor: text;">hover</div></td><td>Text input / text selection (I-beam)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L862">jquery-ui-lightness.css:862</a></td></tr>
-		<tr><td><code>w-resize</code></td><td><div class="ds-cursor-preview" style="cursor: w-resize;">hover</div></td><td>Resize from west (left) edge</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css#L620">jquery-ui-lightness.css:620</a></td></tr>
+		<tr><td><code>auto</code></td><td><div class="ds-cursor-preview" style="cursor: auto;">hover</div></td><td>Browser chooses cursor automatically</td><td><span class="ds-cursor-count">3</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/cool.css#L233">cool.css:233</a></td></tr>
+		<tr><td><code>cell</code></td><td><div class="ds-cursor-preview" style="cursor: cell;">hover</div></td><td>Cell selection in spreadsheets</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/spreadsheet.css#L2">spreadsheet.css:2</a></td></tr>
+		<tr><td><code>col-resize</code></td><td><div class="ds-cursor-preview" style="cursor: col-resize;">hover</div></td><td>Column width resize</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/cool.css#L266">cool.css:266</a></td></tr>
+		<tr><td><code>context-menu</code></td><td><div class="ds-cursor-preview" style="cursor: context-menu;">hover</div></td><td>Context menu trigger</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css#L747">jsdialogs.css:747</a></td></tr>
+		<tr><td><code>crosshair</code></td><td><div class="ds-cursor-preview" style="cursor: crosshair;">hover</div></td><td>Crosshair selector (auto-fill in spreadsheets)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css#L169">leaflet.css:169</a></td></tr>
+		<tr><td><code>default</code></td><td><div class="ds-cursor-preview" style="cursor: default;">hover</div></td><td>Standard arrow (buttons, toolbar, panels)</td><td><span class="ds-cursor-count">20</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L61">jquery-ui-lightness.css:61</a></td></tr>
+		<tr><td><code>e-resize</code></td><td><div class="ds-cursor-preview" style="cursor: e-resize;">hover</div></td><td>Resize from the east (right) edge</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L613">jquery-ui-lightness.css:613</a></td></tr>
+		<tr><td><code>ew-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ew-resize;">hover</div></td><td>Horizontal resize (east/west)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css#L187">leaflet.css:187</a></td></tr>
+		<tr><td><code>grab</code></td><td><div class="ds-cursor-preview" style="cursor: grab;">hover</div></td><td>Hand ready to grab/drag. <em>Used only as SVG fallback in this codebase</em> &mdash; see <code>grab.svg</code> below.</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#L30">ShapeHandleAnchorSubSection.ts:30</a></td></tr>
+		<tr><td><code>grabbing</code></td><td><div class="ds-cursor-preview" style="cursor: grabbing;">hover</div></td><td>Hand actively dragging</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css#L220">leaflet.css:220</a></td></tr>
+		<tr><td><code>help</code></td><td><div class="ds-cursor-preview" style="cursor: help;">hover</div></td><td>Help/explainer cursor (info tooltips, AI chat sidebar)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/aichat-sidebar.css#L212">aichat-sidebar.css:212</a></td></tr>
+		<tr><td><code>inherit</code></td><td><div class="ds-cursor-preview" style="cursor: inherit;">hover</div></td><td>Inherit cursor from parent element</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/cool.css#L946">cool.css:946</a></td></tr>
+		<tr><td><code>move</code></td><td><div class="ds-cursor-preview" style="cursor: move;">hover</div></td><td>Move/drag element (four-arrow)</td><td><span class="ds-cursor-count">7</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css#L165">leaflet.css:165</a></td></tr>
+		<tr><td><code>n-resize</code></td><td><div class="ds-cursor-preview" style="cursor: n-resize;">hover</div></td><td>Resize from north (top) edge</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L599">jquery-ui-lightness.css:599</a></td></tr>
+		<tr><td><code>ne-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ne-resize;">hover</div></td><td>Resize from north-east corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L648">jquery-ui-lightness.css:648</a></td></tr>
+		<tr><td><code>nesw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nesw-resize;">hover</div></td><td>Diagonal resize (NE / SW)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css#L183">leaflet.css:183</a></td></tr>
+		<tr><td><code>not-allowed</code></td><td><div class="ds-cursor-preview" style="cursor: not-allowed;">hover</div></td><td>Action not permitted (disabled buttons)</td><td><span class="ds-cursor-count">5</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/backstage.css#L166">backstage.css:166</a></td></tr>
+		<tr><td><code>ns-resize</code></td><td><div class="ds-cursor-preview" style="cursor: ns-resize;">hover</div></td><td>Vertical resize (north/south)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css#L195">leaflet.css:195</a></td></tr>
+		<tr><td><code>nw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nw-resize;">hover</div></td><td>Resize from north-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L641">jquery-ui-lightness.css:641</a></td></tr>
+		<tr><td><code>nwse-resize</code></td><td><div class="ds-cursor-preview" style="cursor: nwse-resize;">hover</div></td><td>Diagonal resize (NW / SE)</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css#L191">leaflet.css:191</a></td></tr>
+		<tr><td><code>pointer</code></td><td><div class="ds-cursor-preview" style="cursor: pointer;">hover</div></td><td>Interactive element (buttons, links)</td><td><span class="ds-cursor-count">78</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/selectionMarkers.css#L29">selectionMarkers.css:29</a></td></tr>
+		<tr><td><code>row-resize</code></td><td><div class="ds-cursor-preview" style="cursor: row-resize;">hover</div></td><td>Row height resize</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/spreadsheet.css#L228">spreadsheet.css:228</a></td></tr>
+		<tr><td><code>s-resize</code></td><td><div class="ds-cursor-preview" style="cursor: s-resize;">hover</div></td><td>Resize from south (bottom) edge</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L606">jquery-ui-lightness.css:606</a></td></tr>
+		<tr><td><code>se-resize</code></td><td><div class="ds-cursor-preview" style="cursor: se-resize;">hover</div></td><td>Resize from south-east corner (table fill)</td><td><span class="ds-cursor-count">2</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L627">jquery-ui-lightness.css:627</a></td></tr>
+		<tr><td><code>sw-resize</code></td><td><div class="ds-cursor-preview" style="cursor: sw-resize;">hover</div></td><td>Resize from south-west corner</td><td><span class="ds-cursor-count">1</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L634">jquery-ui-lightness.css:634</a></td></tr>
+		<tr><td><code>text</code></td><td><div class="ds-cursor-preview" style="cursor: text;">hover</div></td><td>Text input / text selection (I-beam)</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L862">jquery-ui-lightness.css:862</a></td></tr>
+		<tr><td><code>w-resize</code></td><td><div class="ds-cursor-preview" style="cursor: w-resize;">hover</div></td><td>Resize from west (left) edge</td><td><span class="ds-cursor-count">4</span></td><td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css#L620">jquery-ui-lightness.css:620</a></td></tr>
 	</tbody>
 </table>
 
@@ -2138,8 +2138,8 @@ p.ds-desc {
 			<td><span class="ds-cursor-count">1</span></td>
 			<td>
 				<ul class="ds-cursor-source-list">
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/images/cursors/crop.svg">crop.svg</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/canvas/sections/ShapeHandleScalingSubSection.ts#L36">ShapeHandleScalingSubSection.ts:36</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/images/cursors/crop.svg">crop.svg</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/canvas/sections/ShapeHandleScalingSubSection.ts#L36">ShapeHandleScalingSubSection.ts:36</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -2151,9 +2151,9 @@ p.ds-desc {
 			<td><span class="ds-cursor-count">2</span></td>
 			<td>
 				<ul class="ds-cursor-source-list">
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/images/cursors/fill.svg">fill.svg</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/spreadsheet.css#L6">spreadsheet.css:6</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/cool.css#L250">cool.css:250</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/images/cursors/fill.svg">fill.svg</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/spreadsheet.css#L6">spreadsheet.css:6</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/cool.css#L250">cool.css:250</a></li>
 				</ul>
 			</td>
 		</tr>
@@ -2165,16 +2165,16 @@ p.ds-desc {
 			<td><span class="ds-cursor-count">2</span></td>
 			<td>
 				<ul class="ds-cursor-source-list">
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/images/cursors/grab.svg">grab.svg</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#L30">ShapeHandleAnchorSubSection.ts:30</a></li>
-					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/canvas/sections/ShapeHandleCustomSubSection.ts#L31">ShapeHandleCustomSubSection.ts:31</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/images/cursors/grab.svg">grab.svg</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/canvas/sections/ShapeHandleAnchorSubSection.ts#L30">ShapeHandleAnchorSubSection.ts:30</a></li>
+					<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/canvas/sections/ShapeHandleCustomSubSection.ts#L31">ShapeHandleCustomSubSection.ts:31</a></li>
 				</ul>
 			</td>
 		</tr>
 	</tbody>
 </table>
 
-<p class="ds-desc">Cursor declarations live across <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/spreadsheet.css">spreadsheet.css</a> (spreadsheet-specific), <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/leaflet.css">leaflet.css</a> (map/pan resize), <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jquery-ui-lightness.css">jquery-ui-lightness.css</a> (UI widget resize), and inline in <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/tree/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/canvas/sections">browser/src/canvas/sections/</a> (shape/canvas handles).</p>
+<p class="ds-desc">Cursor declarations live across <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/spreadsheet.css">spreadsheet.css</a> (spreadsheet-specific), <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/leaflet.css">leaflet.css</a> (map/pan resize), <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jquery-ui-lightness.css">jquery-ui-lightness.css</a> (UI widget resize), and inline in <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/tree/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/canvas/sections">browser/src/canvas/sections/</a> (shape/canvas handles).</p>
 
 <h3 class="ds-component-title" id="cursors-anatomy">Anatomy</h3>
 <p class="ds-desc">How each custom cursor is constructed: hotspot, fill, stroke, and the surrounding clear region. The three Figma frames below break down the anatomy and the production conventions used across the cursor set.</p>
@@ -2198,7 +2198,7 @@ p.ds-desc {
 <p class="ds-desc">Illustrative SVGs that visualise a choice or state for the user. Distinct from <a href="#cursors">cursors</a> (functional pointer feedback) and toolbar icons (which live in the LibreOffice icon themes). Infographics live next to the surface that uses them &mdash; e.g. <code>browser/admin/images/</code> for the integrator settings panel.</p>
 
 <h3 class="ds-component-title" id="infographics-ui-mode">UI mode selector (integrator settings)</h3>
-<p class="ds-desc">Shown in the per-user settings dialog under <em>Customization</em>, where the user picks between the Notebookbar and Compact toolbar layouts. The two illustrations are paired as clickable cards; the active card gets the <code>.selected</code> ring (blue tint + border). Rendered at <code>300px</code> wide, scaling responsively. See <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1443"><code>AdminIntegratorSettings.ts:1443</code></a> (<code>renderCompactModeToggle</code>) and <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/admin/css/adminIntegratorSettings.css#L669"><code>adminIntegratorSettings.css:669</code></a> for the styling.</p>
+<p class="ds-desc">Shown in the per-user settings dialog under <em>Customization</em>, where the user picks between the Notebookbar and Compact toolbar layouts. The two illustrations are paired as clickable cards; the active card gets the <code>.selected</code> ring (blue tint + border). Rendered at <code>300px</code> wide, scaling responsively. See <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1443"><code>AdminIntegratorSettings.ts:1443</code></a> (<code>renderCompactModeToggle</code>) and <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/admin/css/adminIntegratorSettings.css#L669"><code>adminIntegratorSettings.css:669</code></a> for the styling.</p>
 
 <div class="ds-infographic-grid">
 	<div class="ds-infographic-card">
@@ -2209,8 +2209,8 @@ p.ds-desc {
 		<p class="ds-infographic-card-desc">Tabbed ribbon-style toolbar (the default). Shows a coloured tab strip with one tab active, plus a grid of icon-sized rectangles standing in for the per-tab tool clusters.</p>
 		<div class="ds-infographic-card-sources">
 			<ul>
-				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/admin/images/Notebookbar.svg"><code>browser/admin/images/Notebookbar.svg</code></a></li>
-				<li>Used at <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1444"><code>AdminIntegratorSettings.ts:1444</code></a></li>
+				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/admin/images/Notebookbar.svg"><code>browser/admin/images/Notebookbar.svg</code></a></li>
+				<li>Used at <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1444"><code>AdminIntegratorSettings.ts:1444</code></a></li>
 			</ul>
 		</div>
 	</div>
@@ -2223,8 +2223,8 @@ p.ds-desc {
 		<p class="ds-infographic-card-desc">Classic single-row toolbar with a menubar above (the &ldquo;Compact&rdquo; mode). Mirrors the Notebookbar illustration's footprint so the two cards align side-by-side.</p>
 		<div class="ds-infographic-card-sources">
 			<ul>
-				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/admin/images/Compact.svg"><code>browser/admin/images/Compact.svg</code></a></li>
-				<li>Used at <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1451"><code>AdminIntegratorSettings.ts:1451</code></a></li>
+				<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/admin/images/Compact.svg"><code>browser/admin/images/Compact.svg</code></a></li>
+				<li>Used at <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/admin/src/integrator/AdminIntegratorSettings.ts#L1451"><code>AdminIntegratorSettings.ts:1451</code></a></li>
 			</ul>
 		</div>
 	</div>
@@ -2819,7 +2819,7 @@ p.ds-desc {
 
 <!-- ========== DIALOGS ========== -->
 <h2 class="ds-section-title" id="dialogs">Dialogs</h2>
-<p class="ds-desc">Collabora Online uses a single dialog framework (<em>jsdialog</em>, see <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/control/Control.JSDialog.js"><code>Control.JSDialog.js</code></a> + <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css"><code>jsdialogs.css</code></a>) but the framework hosts three behaviourally distinct kinds of surface, classified by two dimensions &mdash; whether the backdrop is dimmed (lightbox / nonlightbox) and whether background interaction is blocked (modal / nonmodal / non-dialog). See <a target="_blank" rel="noopener noreferrer" href="https://forum.collaboraonline.com/t/classifying-dialogs/1649">the classification thread on the forum</a> for the original rubric.</p>
+<p class="ds-desc">Collabora Online uses a single dialog framework (<em>jsdialog</em>, see <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/control/Control.JSDialog.js"><code>Control.JSDialog.js</code></a> + <a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css"><code>jsdialogs.css</code></a>) but the framework hosts three behaviourally distinct kinds of surface, classified by two dimensions &mdash; whether the backdrop is dimmed (lightbox / nonlightbox) and whether background interaction is blocked (modal / nonmodal / non-dialog). See <a target="_blank" rel="noopener noreferrer" href="https://forum.collaboraonline.com/t/classifying-dialogs/1649">the classification thread on the forum</a> for the original rubric.</p>
 
 <table class="ds-spec-table">
 	<thead><tr><th>Kind</th><th>Backdrop</th><th>Background interaction</th><th>Movable</th><th>Outside click</th><th>CSS marker</th></tr></thead>
@@ -2901,27 +2901,27 @@ p.ds-desc {
 		<tr>
 			<td>About dialog</td>
 			<td><code>#modal-dialog-about-dialog-box</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css#L159">jsdialogs.css:159</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css#L159">jsdialogs.css:159</a></td>
 		</tr>
 		<tr>
 			<td>Online Help</td>
 			<td><code>#modal-dialog-online-help-content-box</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css#L160">jsdialogs.css:160</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css#L160">jsdialogs.css:160</a></td>
 		</tr>
 		<tr>
 			<td>Keyboard Shortcuts</td>
 			<td><code>#modal-dialog-keyboard-shortcuts-content-box</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css#L161">jsdialogs.css:161</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css#L161">jsdialogs.css:161</a></td>
 		</tr>
 		<tr>
 			<td>Busy indicator</td>
 			<td><code>busypopup</code> (type: modalpopup)</td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/control/Control.UIManager.ts#L488">Control.UIManager.ts:488</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/control/Control.UIManager.ts#L488">Control.UIManager.ts:488</a></td>
 		</tr>
 		<tr>
 			<td>LibreOffice native dialogs (Format Cells, Insert Special Character, &hellip;)</td>
 			<td><code>.lokdialog_container.modalpopup</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css#L26">jsdialogs.css:26</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css#L26">jsdialogs.css:26</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2958,12 +2958,12 @@ p.ds-desc {
 		<tr>
 			<td>Accept / Reject Changes</td>
 			<td><code>AcceptRejectChangesDialog</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css#L62">jsdialogs.css:62</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css#L62">jsdialogs.css:62</a></td>
 		</tr>
 		<tr>
 			<td>Sort Key Window (Sort &mdash; Calc)</td>
 			<td><code>SortKeyWindow</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/css/jsdialogs.css#L199">jsdialogs.css:199</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/css/jsdialogs.css#L199">jsdialogs.css:199</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2990,17 +2990,17 @@ p.ds-desc {
 		<tr>
 			<td>Auto-complete popup</td>
 			<td><code>AutoCompletePopup</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/control/AutoCompletePopup.ts#L56">AutoCompletePopup.ts:56</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/control/AutoCompletePopup.ts#L56">AutoCompletePopup.ts:56</a></td>
 		</tr>
 		<tr>
 			<td>Content-control dropdown (Writer)</td>
 			<td><code>contentControlModalpopup</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/canvas/sections/ContentControlDropdownSubSection.ts#L94">ContentControlDropdownSubSection.ts:94</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/canvas/sections/ContentControlDropdownSubSection.ts#L94">ContentControlDropdownSubSection.ts:94</a></td>
 		</tr>
 		<tr>
 			<td>Formula usage popup (Calc)</td>
 			<td>extends <code>AutoCompletePopup</code></td>
-			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/fae3aa6528c34f09359bf9205d1cad45df6e8d22/browser/src/control/Control.FormulaUsagePopup.ts#L35">Control.FormulaUsagePopup.ts:35</a></td>
+			<td><a target="_blank" rel="noopener noreferrer" href="https://github.com/CollaboraOnline/online.mirror/blob/02d585e5bcc74c724de5709ec58df6a1846aa6e5/browser/src/control/Control.FormulaUsagePopup.ts#L35">Control.FormulaUsagePopup.ts:35</a></td>
 		</tr>
 	</tbody>
 </table>
