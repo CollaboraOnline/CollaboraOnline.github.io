@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-07-28T06:51:09Z",
+  "months": [
+    {
+      "issues_closed": 66,
+      "issues_opened": 43,
+      "month": "2024-07",
+      "prs_merged": 227
+    },
+    {
+      "issues_closed": 125,
+      "issues_opened": 62,
+      "month": "2024-08",
+      "prs_merged": 183
+    },
+    {
+      "issues_closed": 34,
+      "issues_opened": 36,
+      "month": "2024-09",
+      "prs_merged": 141
+    },
+    {
+      "issues_closed": 42,
+      "issues_opened": 54,
+      "month": "2024-10",
+      "prs_merged": 162
+    },
+    {
+      "issues_closed": 40,
+      "issues_opened": 43,
+      "month": "2024-11",
+      "prs_merged": 192
+    },
+    {
+      "issues_closed": 33,
+      "issues_opened": 38,
+      "month": "2024-12",
+      "prs_merged": 145
+    },
+    {
+      "issues_closed": 52,
+      "issues_opened": 46,
+      "month": "2025-01",
+      "prs_merged": 168
+    },
+    {
+      "issues_closed": 26,
+      "issues_opened": 41,
+      "month": "2025-02",
+      "prs_merged": 141
+    },
+    {
+      "issues_closed": 46,
+      "issues_opened": 52,
+      "month": "2025-03",
+      "prs_merged": 149
+    },
+    {
+      "issues_closed": 35,
+      "issues_opened": 53,
+      "month": "2025-04",
+      "prs_merged": 245
+    },
+    {
+      "issues_closed": 54,
+      "issues_opened": 72,
+      "month": "2025-05",
+      "prs_merged": 182
+    },
+    {
+      "issues_closed": 19,
+      "issues_opened": 75,
+      "month": "2025-06",
+      "prs_merged": 77
+    },
+    {
+      "issues_closed": 22,
+      "issues_opened": 43,
+      "month": "2025-07",
+      "prs_merged": 160
+    },
+    {
+      "issues_closed": 21,
+      "issues_opened": 31,
+      "month": "2025-08",
+      "prs_merged": 205
+    },
+    {
+      "issues_closed": 21,
+      "issues_opened": 26,
+      "month": "2025-09",
+      "prs_merged": 261
+    },
+    {
+      "issues_closed": 42,
+      "issues_opened": 59,
+      "month": "2025-10",
+      "prs_merged": 231
+    },
+    {
+      "issues_closed": 34,
+      "issues_opened": 77,
+      "month": "2025-11",
+      "prs_merged": 205
+    },
+    {
+      "issues_closed": 155,
+      "issues_opened": 57,
+      "month": "2025-12",
+      "prs_merged": 179
+    },
+    {
+      "issues_closed": 35,
+      "issues_opened": 73,
+      "month": "2026-01",
+      "prs_merged": 235
+    },
+    {
+      "issues_closed": 27,
+      "issues_opened": 82,
+      "month": "2026-02",
+      "prs_merged": 327
+    },
+    {
+      "issues_closed": 55,
+      "issues_opened": 79,
+      "month": "2026-03",
+      "prs_merged": 443
+    },
+    {
+      "issues_closed": 48,
+      "issues_opened": 99,
+      "month": "2026-04",
+      "prs_merged": 242
+    },
+    {
+      "issues_closed": 53,
+      "issues_opened": 143,
+      "month": "2026-05",
+      "prs_merged": 46
+    },
+    {
+      "issues_closed": 96,
+      "issues_opened": 66,
+      "month": "2026-06",
+      "prs_merged": 7
+    }
+  ],
+  "source": "github_monthly"
+}

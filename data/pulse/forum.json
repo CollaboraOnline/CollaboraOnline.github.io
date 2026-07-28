@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-07-28T09:14:49Z",
+  "metrics": {
+    "cool_forum": {
+      "active_users_30d": 79,
+      "posts_30d": 177,
+      "top_topics_monthly": [
+        {
+          "posts": 11,
+          "title": "=PY() + NumPy inside Collabora",
+          "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
+          "views": 93
+        },
+        {
+          "posts": 1,
+          "title": "COOL TC meeting minutes: 2026-07-08",
+          "url": "https://forum.collaboraonline.com/t/cool-tc-meeting-minutes-2026-07-08/4830",
+          "views": 32
+        },
+        {
+          "posts": 1,
+          "title": "COOL 26.04 is here!",
+          "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
+          "views": 37
+        },
+        {
+          "posts": 6,
+          "title": "Build of Collabore Office Classic fails in vcl/win/dtrans/FmtFilter",
+          "url": "https://forum.collaboraonline.com/t/build-of-collabore-office-classic-fails-in-vcl-win-dtrans-fmtfilter/4828",
+          "views": 49
+        },
+        {
+          "posts": 5,
+          "title": "Printing is not working",
+          "url": "https://forum.collaboraonline.com/t/printing-is-not-working/4826",
+          "views": 77
+        }
+      ],
+      "topics_30d": 55,
+      "total_posts": 9933,
+      "total_topics": 2078
+    }
+  },
+  "period": {
+    "days": 30,
+    "from": "2026-06-28",
+    "to": "2026-07-28"
+  },
+  "source": "forum"
+}

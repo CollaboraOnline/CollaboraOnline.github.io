@@ -1,0 +1,29 @@
+[
+ {
+  "date": "2026-07-28",
+  "github": {
+   "issues_opened_30d": 72,
+   "issues_closed_30d": 69,
+   "prs_merged_30d": 3,
+   "commits_30d": 4,
+   "open_issues": 989,
+   "stars": 3308
+  },
+  "gerrit": {
+   "merged_30d": 1392,
+   "open_unreviewed": 164
+  },
+  "forum": {
+   "topics_30d": 56,
+   "posts_30d": 178,
+   "active_users_30d": 79
+  },
+  "weblate": {
+   "languages": 95,
+   "translated_percent": 51.0
+  },
+  "docker": {
+   "pull_count": 117370725
+  }
+ }
+]

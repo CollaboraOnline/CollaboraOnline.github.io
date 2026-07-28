@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-28T06:57:30Z",
+  "metrics": {
+    "active_authors_30d": 4,
+    "commits_30d": 4,
+    "easy_hacks_open": 73,
+    "forks": 1017,
+    "issues_closed_30d": 69,
+    "issues_opened_30d": 72,
+    "open_issues": 989,
+    "open_prs": 4,
+    "prs_merged_30d": 3,
+    "prs_opened_30d": 5,
+    "stars": 3308,
+    "top_upvoted_open_issues": [
+      {
+        "number": 12438,
+        "thumbs_up": 17,
+        "title": "Feature Request: Add Interactive Checkboxes to Calc",
+        "url": "https://github.com/CollaboraOnline/online/issues/12438"
+      },
+      {
+        "number": 5562,
+        "thumbs_up": 13,
+        "title": "Import data from other spreadsheets (IMPORTRANGE / workbook links)",
+        "url": "https://github.com/CollaboraOnline/online/issues/5562"
+      },
+      {
+        "number": 14938,
+        "thumbs_up": 12,
+        "title": "Writer: Apply last-used zoom level as default for all documents",
+        "url": "https://github.com/CollaboraOnline/online/issues/14938"
+      },
+      {
+        "number": 13633,
+        "thumbs_up": 7,
+        "title": "Desktop: Collabora Office Desktop Flatpak crashes on startup on hybrid-graphics systems",
+        "url": "https://github.com/CollaboraOnline/online/issues/13633"
+      },
+      {
+        "number": 10092,
+        "thumbs_up": 7,
+        "title": "Server audit -> Performance \"always poor\"",
+        "url": "https://github.com/CollaboraOnline/online/issues/10092"
+      }
+    ]
+  },
+  "period": {
+    "days": 30,
+    "from": "2026-06-28",
+    "to": "2026-07-28"
+  },
+  "source": "github"
+}
