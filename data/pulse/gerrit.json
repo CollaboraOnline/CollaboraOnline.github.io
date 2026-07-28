@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-07-28T06:57:38Z",
+  "metrics": {
+    "merged_30d": 1392,
+    "open_active": 206,
+    "open_unreviewed": 164,
+    "top_authors_30d": [
+      {
+        "merged": 251,
+        "name": "Caolán McNamara"
+      },
+      {
+        "merged": 151,
+        "name": "Noel Grandin"
+      },
+      {
+        "merged": 92,
+        "name": "Andras Timar"
+      },
+      {
+        "merged": 77,
+        "name": "Stephan Bergmann"
+      },
+      {
+        "merged": 63,
+        "name": "Miklos Vajna"
+      }
+    ]
+  },
+  "notes": [
+    "All metrics cover the Gerrit project 'online' (the CollaboraOnline monorepo) only; other projects on gerrit.collaboraoffice.com are excluded.",
+    "merged_30d counts changes by submit time (mergedafter:), so it is exactly the set of changes merged inside the window."
+  ],
+  "period": {
+    "days": 30,
+    "from": "2026-06-28",
+    "to": "2026-07-28"
+  },
+  "source": "gerrit"
+}
