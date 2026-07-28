@@ -1,0 +1,46 @@
+name: Update Community Pulse Data and Push to Collabora Github IO
+
+on:
+  schedule:
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-pulse:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout IO repository
+      - name: Checkout IO repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GENERATE_CONTRIBUTORS }}
+          path: io
+
+      # Install Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # Run the fetchers and refresh the history
+      - name: Run Community Pulse fetchers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd io
+          python3 scripts/pulse/run_all.py
+
+      # Commit & Push using PAT
+      - name: Commit and Push changes
+        run: |
+          cd io
+          git config user.name "Darshan-upadhyay1110"
+          git config user.email "darshan.upadhyay@collabora.com"
+          git add data/pulse/
+          if git diff --quiet --cached; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update Community Pulse data" --signoff
+            git push https://x-access-token:${{ secrets.GENERATE_CONTRIBUTORS }}@github.com/CollaboraOnline/CollaboraOnline.github.io.git master
+          fi
