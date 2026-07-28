@@ -1,0 +1,680 @@
+{{- /*
+  Community Pulse dashboard.
+
+  Renders headline stat tiles, trend charts and community panels from the nightly-refreshed
+  JSON under data/pulse/. Every metric access is guarded: a missing file or a null metric
+  renders as an em dash, never as a zero. The trend charts are inline SVG built by vanilla
+  JavaScript from data embedded at build time; the page makes no external requests. The
+  monthly numbers behind the charts are also server-rendered as a data table, so the page
+  stays readable without JavaScript.
+*/ -}}
+{{- $site := .Page.Site -}}
+{{- $pulse := $site.Data.pulse | default dict -}}
+
+{{- $ghFile := $pulse.github | default dict -}}
+{{- $gh := $ghFile.metrics | default dict -}}
+{{- $gerritFile := $pulse.gerrit | default dict -}}
+{{- $gerrit := $gerritFile.metrics | default dict -}}
+{{- $forumFile := $pulse.forum | default dict -}}
+{{- $forumMetrics := $forumFile.metrics | default dict -}}
+{{- $coolForum := $forumMetrics.cool_forum | default dict -}}
+{{- $weblateFile := $pulse.weblate | default dict -}}
+{{- $weblate := $weblateFile.metrics | default dict -}}
+{{- $dockerFile := $pulse.docker | default dict -}}
+{{- $docker := $dockerFile.metrics | default dict -}}
+{{- $monthlyFile := $pulse.github_monthly | default dict -}}
+{{- $months := $monthlyFile.months | default slice -}}
+
+<div class="pulse-dashboard">
+
+  {{- /* ---------------- Headline stat tiles ---------------- */}}
+  <h2 class="pulse-section-title">At a glance</h2>
+  {{- with or $ghFile.period $gerritFile.period }}
+  <p class="pulse-section-sub">Rolling 30-day window: {{ .from }} to {{ .to }}.</p>
+  {{- end }}
+
+  <div class="pulse-tiles">
+    <div class="pulse-tile pulse-tile-lead">
+      <span class="pulse-tile-label">Gerrit changes merged <span class="pulse-window">30 days</span></span>
+      <span class="pulse-tile-value">{{ partial "pulse-num.html" (index $gerrit "merged_30d") }}</span>
+      <span class="pulse-tile-sub">{{ partial "pulse-num.html" (index $gerrit "open_active") }} open &middot; {{ partial "pulse-num.html" (index $gerrit "open_unreviewed") }} awaiting first review</span>
+    </div>
+
+    <div class="pulse-tile">
+      <span class="pulse-tile-label">Open issues on GitHub</span>
+      <span class="pulse-tile-value">{{ partial "pulse-num.html" (index $gh "open_issues") }}</span>
+      <span class="pulse-tile-sub">CollaboraOnline/online</span>
+    </div>
+
+    <div class="pulse-tile">
+      <span class="pulse-tile-label">Issues opened / closed <span class="pulse-window">30 days</span></span>
+      <span class="pulse-tile-value">{{ partial "pulse-num.html" (index $gh "issues_opened_30d") }} <span class="pulse-tile-value-sep">/</span> {{ partial "pulse-num.html" (index $gh "issues_closed_30d") }}</span>
+      <span class="pulse-tile-sub">opened / closed on GitHub</span>
+    </div>
+
+    <a class="pulse-tile pulse-tile-link" href="{{ with $site.GetPage "/post/easyhacks" }}{{ .RelPermalink }}{{ else }}{{ "post/easyhacks/" | relURL }}{{ end }}">
+      <span class="pulse-tile-label">Easy Hacks open</span>
+      <span class="pulse-tile-value">{{ partial "pulse-num.html" (index $gh "easy_hacks_open") }}</span>
+      <span class="pulse-tile-sub">starting points for new developers &raquo;</span>
+    </a>
+
+    <div class="pulse-tile">
+      <span class="pulse-tile-label">Forum activity <span class="pulse-window">30 days</span></span>
+      <span class="pulse-tile-value">{{ partial "pulse-num.html" (index $coolForum "topics_30d") }} <span class="pulse-tile-value-sep">topics</span></span>
+      <span class="pulse-tile-sub">{{ partial "pulse-num.html" (index $coolForum "posts_30d") }} posts &middot; {{ partial "pulse-num.html" (index $coolForum "active_users_30d") }} active users</span>
+    </div>
+
+    <div class="pulse-tile">
+      <span class="pulse-tile-label">Translation languages</span>
+      <span class="pulse-tile-value">{{ partial "pulse-num.html" (index $weblate "languages") }}</span>
+      <span class="pulse-tile-sub">
+        {{- $tp := index $weblate "translated_percent" -}}
+        {{- if eq (printf "%v" $tp) "<nil>" }}&mdash;{{ else }}{{ lang.FormatNumberCustom 1 (float $tp) }}%{{ end }} translated on Weblate</span>
+    </div>
+
+    <div class="pulse-tile">
+      <span class="pulse-tile-label">Docker pulls</span>
+      {{- $pulls := index $docker "pull_count" -}}
+      {{- if eq (printf "%v" $pulls) "<nil>" }}
+      <span class="pulse-tile-value">&mdash;</span>
+      {{- else }}
+      {{- $pullsF := float $pulls }}
+      <span class="pulse-tile-value" title="{{ lang.FormatNumberCustom 0 $pullsF }} pulls">
+        {{- if ge $pullsF 1000000000 -}}
+          {{- lang.FormatNumberCustom 1 (div $pullsF 1000000000) -}}B
+        {{- else if ge $pullsF 1000000 -}}
+          {{- lang.FormatNumberCustom 1 (div $pullsF 1000000) -}}M
+        {{- else -}}
+          {{- lang.FormatNumberCustom 0 $pullsF -}}
+        {{- end -}}
+      </span>
+      {{- end }}
+      <span class="pulse-tile-sub">collabora/code image, all time</span>
+    </div>
+  </div>
+
+  {{- /* ---------------- Trend charts ---------------- */}}
+  <h2 class="pulse-section-title">Trends on GitHub</h2>
+  {{- if gt (len $months) 0 }}
+  <p class="pulse-section-sub">Monthly totals for the repository CollaboraOnline/online, last {{ len $months }} full months.</p>
+  <noscript>
+    <p class="pulse-note">The charts in this section need JavaScript. All of the monthly numbers
+    are available in the data table below, and the headline numbers above do not need JavaScript.</p>
+  </noscript>
+
+  <figure class="pulse-chart-card">
+    <figcaption class="pulse-chart-title">Issues opened vs. closed per month</figcaption>
+    <div class="pulse-chart-scroll">
+      <div class="pulse-chart" id="pulse-chart-issues"></div>
+    </div>
+    <div class="pulse-legend">
+      <span class="pulse-legend-item"><span class="pulse-swatch pulse-swatch-1"></span>Opened</span>
+      <span class="pulse-legend-item"><span class="pulse-swatch pulse-swatch-2"></span>Closed</span>
+    </div>
+  </figure>
+
+  <details class="pulse-table-details">
+    <summary>View the monthly numbers as a table</summary>
+    <div class="pulse-table-scroll">
+      <table class="pulse-table">
+        <thead>
+          <tr><th scope="col">Month</th><th scope="col">Issues opened</th><th scope="col">Issues closed</th></tr>
+        </thead>
+        <tbody>
+          {{- range $months }}
+          <tr>
+            <th scope="row">{{ index . "month" }}</th>
+            <td>{{ partial "pulse-num.html" (index . "issues_opened") }}</td>
+            <td>{{ partial "pulse-num.html" (index . "issues_closed") }}</td>
+          </tr>
+          {{- end }}
+        </tbody>
+      </table>
+    </div>
+  </details>
+  {{- else }}
+  <p class="pulse-note">Monthly trend data is not available right now.</p>
+  {{- end }}
+
+  {{- /* ---------------- Community panels ---------------- */}}
+  <h2 class="pulse-section-title">Around the community</h2>
+
+  <div class="pulse-panels">
+    <section class="pulse-panel">
+      <h3 class="pulse-panel-title">Most wanted</h3>
+      <p class="pulse-panel-sub">Open GitHub issues with the most thumbs-up reactions.</p>
+      {{- $top := index $gh "top_upvoted_open_issues" }}
+      {{- if $top }}
+      <ol class="pulse-list">
+        {{- range $top }}
+        <li>
+          <a href="{{ .url }}">{{ .title }}</a>
+          <span class="pulse-badge" title="{{ .thumbs_up }} thumbs-up reactions">&#128077;&#65038; {{ .thumbs_up }}</span>
+        </li>
+        {{- end }}
+      </ol>
+      {{- else }}
+      <p class="pulse-empty">&mdash;</p>
+      {{- end }}
+    </section>
+
+    <section class="pulse-panel">
+      <h3 class="pulse-panel-title">Top Gerrit authors <span class="pulse-window">30 days</span></h3>
+      <p class="pulse-panel-sub">By changes merged on <a href="https://gerrit.collaboraoffice.com/">gerrit.collaboraoffice.com</a>, project online.</p>
+      {{- $authors := index $gerrit "top_authors_30d" }}
+      {{- if $authors }}
+      {{- $maxMerged := 0.0 }}
+      {{- range $authors }}{{ if gt (float .merged) $maxMerged }}{{ $maxMerged = float .merged }}{{ end }}{{ end }}
+      <ol class="pulse-authors">
+        {{- range $authors }}
+        <li>
+          <span class="pulse-author-name">{{ .name }}</span>
+          <span class="pulse-author-track">
+            {{- $pct := 100.0 }}
+            {{- if gt $maxMerged 0.0 }}{{ $pct = mul 100.0 (div (float .merged) $maxMerged) }}{{ end }}
+            <span class="pulse-author-bar" style="width: {{ printf "%.1f" $pct }}%"></span>
+          </span>
+          <span class="pulse-author-count">{{ partial "pulse-num.html" .merged }}</span>
+        </li>
+        {{- end }}
+      </ol>
+      {{- else }}
+      <p class="pulse-empty">&mdash;</p>
+      {{- end }}
+    </section>
+
+    <section class="pulse-panel pulse-panel-wide">
+      <h3 class="pulse-panel-title">Hot topics on the <a href="https://forum.collaboraonline.com/">Collabora Online forum</a> this month</h3>
+      {{- $coolTopics := index $coolForum "top_topics_monthly" }}
+      {{- if $coolTopics }}
+      <ol class="pulse-list">
+        {{- range $coolTopics }}
+        <li>
+          <a href="{{ .url }}">{{ .title }}</a>
+          <span class="pulse-badge">{{ partial "pulse-num.html" .views }} view{{ if ne (int (default 0 .views)) 1 }}s{{ end }} &middot; {{ partial "pulse-num.html" .posts }} post{{ if ne (int (default 0 .posts)) 1 }}s{{ end }}</span>
+        </li>
+        {{- end }}
+      </ol>
+      {{- else }}
+      <p class="pulse-empty">&mdash;</p>
+      {{- end }}
+    </section>
+  </div>
+
+  <p class="pulse-footer">Data refreshes nightly{{ with index $ghFile "generated_at" }} &middot; last updated {{ dateFormat "2 January 2006, 15:04 UTC" (time.AsTime .) }}{{ end }}</p>
+</div>
+
+<style>
+.pulse-dashboard {
+  --pulse-accent: #5c2983;
+  --pulse-series-1: #7040a2;
+  --pulse-series-2: #eb6834;
+  --pulse-ink: #0c344b;
+  --pulse-muted: #5f6b76;
+  --pulse-line: #e5e1ee;
+  margin: 1rem 0 2rem;
+  color: var(--pulse-ink);
+}
+.pulse-section-title {
+  font-size: 1.35rem;
+  margin: 2rem 0 0.25rem;
+  color: var(--pulse-ink);
+}
+.pulse-section-sub {
+  font-size: 0.85rem;
+  color: var(--pulse-muted);
+  margin: 0 0 0.75rem;
+}
+.pulse-window {
+  font-size: 0.7rem;
+  color: var(--pulse-muted);
+  border: 1px solid var(--pulse-line);
+  border-radius: 8px;
+  padding: 0 6px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.pulse-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 12px;
+  margin: 0.75rem 0 0.5rem;
+}
+.pulse-tile {
+  border: 1px solid var(--pulse-line);
+  border-top: 3px solid var(--pulse-line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.pulse-tile-lead {
+  border-top-color: var(--pulse-accent);
+}
+.pulse-tile-label {
+  font-size: 0.78rem;
+  color: var(--pulse-muted);
+  line-height: 1.3;
+}
+.pulse-tile-value {
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--pulse-ink);
+}
+.pulse-tile-lead .pulse-tile-value {
+  color: var(--pulse-accent);
+}
+.pulse-tile-value-sep {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--pulse-muted);
+}
+.pulse-tile-sub {
+  font-size: 0.72rem;
+  color: var(--pulse-muted);
+  line-height: 1.35;
+}
+a.pulse-tile-link,
+a.pulse-tile-link:hover {
+  text-decoration: none;
+}
+a.pulse-tile-link:hover {
+  border-color: var(--pulse-accent);
+}
+a.pulse-tile-link .pulse-tile-value {
+  color: var(--pulse-accent);
+}
+.pulse-chart-card {
+  border: 1px solid var(--pulse-line);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 0 0 1rem;
+  background: #fff;
+}
+.pulse-chart-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--pulse-ink);
+  margin: 0 0 0.5rem;
+}
+.pulse-chart-scroll {
+  overflow-x: auto;
+}
+.pulse-chart svg {
+  display: block;
+  width: 100%;
+  min-width: 560px;
+  height: auto;
+}
+.pulse-hitcol {
+  fill: transparent;
+}
+.pulse-hitcol:hover {
+  fill: rgba(112, 64, 162, 0.08);
+}
+.pulse-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.8rem;
+  color: var(--pulse-muted);
+  margin-top: 8px;
+}
+.pulse-legend-item {
+  display: inline-flex;
+  align-items: center;
+}
+.pulse-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+.pulse-swatch-1 { background: var(--pulse-series-1); }
+.pulse-swatch-2 { background: var(--pulse-series-2); }
+.pulse-note {
+  font-size: 0.8rem;
+  color: var(--pulse-muted);
+  background: #faf8fc;
+  border-left: 3px solid var(--pulse-accent);
+  padding: 8px 12px;
+  margin: 0.75rem 0 0;
+  line-height: 1.5;
+}
+.pulse-table-details {
+  margin: 0 0 1rem;
+}
+.pulse-table-details summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--pulse-accent);
+}
+.pulse-table-scroll {
+  overflow-x: auto;
+}
+.pulse-table {
+  font-size: 0.85rem;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-variant-numeric: tabular-nums;
+}
+.pulse-table th,
+.pulse-table td {
+  padding: 4px 12px;
+  border-bottom: 1px solid var(--pulse-line);
+  text-align: right;
+  white-space: nowrap;
+}
+.pulse-table th[scope="row"],
+.pulse-table thead th:first-child {
+  text-align: left;
+}
+.pulse-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+  margin: 0.75rem 0 0;
+}
+.pulse-panel {
+  border: 1px solid var(--pulse-line);
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+  min-width: 0;
+}
+.pulse-panel-wide {
+  grid-column: 1 / -1;
+}
+.pulse-panel-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+  color: var(--pulse-ink);
+}
+.pulse-panel-sub {
+  font-size: 0.78rem;
+  color: var(--pulse-muted);
+  margin: 0 0 0.5rem;
+}
+.pulse-list {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.pulse-list li {
+  margin: 0.4rem 0;
+  line-height: 1.4;
+}
+.pulse-list a,
+.pulse-panel-title a {
+  color: var(--pulse-ink);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.pulse-list a:hover,
+.pulse-list a:focus-visible,
+.pulse-panel-title a:hover,
+.pulse-panel-title a:focus-visible {
+  color: var(--pulse-accent);
+}
+.pulse-badge {
+  white-space: nowrap;
+  color: var(--pulse-muted);
+  font-size: 0.78rem;
+}
+.pulse-empty {
+  color: var(--pulse-muted);
+}
+.pulse-authors {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.pulse-authors li {
+  display: grid;
+  grid-template-columns: minmax(120px, auto) 1fr auto;
+  gap: 10px;
+  align-items: center;
+  margin: 0.45rem 0;
+}
+.pulse-author-track {
+  background: #f1edf6;
+  border-radius: 3px;
+  height: 8px;
+  overflow: hidden;
+  min-width: 50px;
+}
+.pulse-author-bar {
+  display: block;
+  height: 100%;
+  background: var(--pulse-series-1);
+  border-radius: 3px;
+}
+.pulse-author-count {
+  font-variant-numeric: tabular-nums;
+  color: var(--pulse-ink);
+}
+.pulse-footer {
+  font-size: 0.8rem;
+  color: var(--pulse-muted);
+  border-top: 1px solid var(--pulse-line);
+  padding-top: 10px;
+  margin-top: 1.5rem;
+}
+</style>
+
+{{- if gt (len $months) 0 }}
+<script>
+/* Trend charts: static inline SVG built from data embedded at build time. Nothing is animated,
+   so no special handling is needed for the prefers-reduced-motion setting. */
+(function () {
+  'use strict';
+
+  var months = {{ $months | jsonify | safeJS }};
+  if (!Array.isArray(months) || months.length === 0) {
+    return;
+  }
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var INK = '#0c344b';
+  var MUTED = '#6f7d89';
+  var GRID = '#eceaf2';
+  var AXIS = '#c9c4d6';
+  var SERIES1 = '#7040a2';
+  var SERIES2 = '#eb6834';
+  var SURFACE = '#ffffff';
+  var MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  function el(name, attrs, text) {
+    var node = document.createElementNS(NS, name);
+    for (var key in attrs) {
+      node.setAttribute(key, attrs[key]);
+    }
+    if (text !== undefined) {
+      node.textContent = text;
+    }
+    return node;
+  }
+
+  function isNum(v) {
+    return typeof v === 'number' && isFinite(v);
+  }
+
+  function monthShort(m) {
+    var parts = String(m).split('-');
+    return MONTH_NAMES[parseInt(parts[1], 10) - 1] + " '" + parts[0].slice(2);
+  }
+
+  function monthLong(m) {
+    var parts = String(m).split('-');
+    return MONTH_NAMES[parseInt(parts[1], 10) - 1] + ' ' + parts[0];
+  }
+
+  /* A rounded y-axis maximum plus its tick step, from clean 1/2/5 multiples. */
+  function niceScale(max) {
+    if (!(max > 0)) {
+      return { max: 1, step: 1 };
+    }
+    var rough = max / 5;
+    var magnitude = Math.pow(10, Math.floor(Math.log(rough) / Math.LN10));
+    var step = 10 * magnitude;
+    var multiples = [1, 2, 5, 10];
+    for (var i = 0; i < multiples.length; i++) {
+      if (multiples[i] * magnitude >= rough) {
+        step = multiples[i] * magnitude;
+        break;
+      }
+    }
+    return { max: Math.ceil(max / step) * step, step: step };
+  }
+
+  /* Draws the shared frame: horizontal gridlines, y tick labels, a unit caption,
+     the baseline, and x labels on every 4th month plus the last one. */
+  function drawFrame(svg, dims, scale, unit, xForIndex) {
+    var plotBottom = dims.top + dims.plotH;
+    for (var v = 0; v <= scale.max; v += scale.step) {
+      var y = plotBottom - (v / scale.max) * dims.plotH;
+      if (v > 0) {
+        svg.appendChild(el('line', {
+          x1: dims.left, x2: dims.left + dims.plotW, y1: y, y2: y,
+          stroke: GRID, 'stroke-width': 1
+        }));
+      }
+      svg.appendChild(el('text', {
+        x: dims.left - 8, y: y + 4, 'text-anchor': 'end',
+        'font-size': 11, fill: MUTED
+      }, v.toLocaleString('en-US')));
+    }
+    svg.appendChild(el('line', {
+      x1: dims.left, x2: dims.left + dims.plotW, y1: plotBottom, y2: plotBottom,
+      stroke: AXIS, 'stroke-width': 1
+    }));
+    svg.appendChild(el('text', {
+      x: dims.left - 40, y: dims.top - 8, 'text-anchor': 'start',
+      'font-size': 11, fill: MUTED
+    }, unit));
+    for (var i = 0; i < months.length; i++) {
+      var last = months.length - 1;
+      if ((i % 4 === 0 && i <= last - 3) || i === last) {
+        svg.appendChild(el('text', {
+          x: xForIndex(i), y: plotBottom + 20, 'text-anchor': 'middle',
+          'font-size': 11, fill: MUTED
+        }, monthShort(months[i].month)));
+      }
+    }
+  }
+
+  function makeSvg(width, height, label) {
+    var svg = el('svg', {
+      viewBox: '0 0 ' + width + ' ' + height,
+      role: 'img',
+      'aria-label': label,
+      'font-family': 'inherit'
+    });
+    svg.appendChild(el('title', {}, label));
+    return svg;
+  }
+
+  /* Line chart: issues opened vs. closed. */
+  function drawIssuesChart(container) {
+    var W = 760, H = 320;
+    var dims = { left: 48, top: 24, plotW: W - 48 - 56, plotH: H - 24 - 44 };
+    var maxVal = 0;
+    months.forEach(function (m) {
+      if (isNum(m.issues_opened)) maxVal = Math.max(maxVal, m.issues_opened);
+      if (isNum(m.issues_closed)) maxVal = Math.max(maxVal, m.issues_closed);
+    });
+    var scale = niceScale(maxVal);
+    var n = months.length;
+    var x = function (i) {
+      return dims.left + (n > 1 ? (i * dims.plotW) / (n - 1) : dims.plotW / 2);
+    };
+    var y = function (v) {
+      return dims.top + dims.plotH - (v / scale.max) * dims.plotH;
+    };
+
+    var svg = makeSvg(W, H, 'Line chart of GitHub issues opened and closed per month over the last '
+      + n + ' months. The same numbers are in the data table below.');
+    drawFrame(svg, dims, scale, 'issues / month', x);
+
+    [{ key: 'issues_opened', color: SERIES1, name: 'opened' },
+     { key: 'issues_closed', color: SERIES2, name: 'closed' }].forEach(function (series) {
+      var d = '';
+      var pen = 'M';
+      for (var i = 0; i < n; i++) {
+        var v = months[i][series.key];
+        if (!isNum(v)) {
+          pen = 'M';
+          continue;
+        }
+        d += pen + x(i).toFixed(1) + ' ' + y(v).toFixed(1) + ' ';
+        pen = 'L';
+      }
+      if (d) {
+        svg.appendChild(el('path', {
+          d: d.trim(), fill: 'none', stroke: series.color, 'stroke-width': 2,
+          'stroke-linejoin': 'round', 'stroke-linecap': 'round'
+        }));
+      }
+    });
+
+    /* End markers and end labels for both series, nudged apart when the line ends converge. */
+    var ends = [];
+    [{ key: 'issues_opened', color: SERIES1 },
+     { key: 'issues_closed', color: SERIES2 }].forEach(function (s) {
+      for (var j = n - 1; j >= 0; j--) {
+        if (isNum(months[j][s.key])) {
+          ends.push({ v: months[j][s.key], i: j, color: s.color });
+          break;
+        }
+      }
+    });
+    ends.forEach(function (e) {
+      svg.appendChild(el('circle', {
+        cx: x(e.i).toFixed(1), cy: y(e.v).toFixed(1), r: 4,
+        fill: e.color, stroke: SURFACE, 'stroke-width': 2
+      }));
+    });
+    if (ends.length === 2 && Math.abs(y(ends[0].v) - y(ends[1].v)) < 14) {
+      ends[0].dy = y(ends[0].v) < y(ends[1].v) ? -7 : 7;
+      ends[1].dy = -ends[0].dy;
+    }
+    ends.forEach(function (e) {
+      svg.appendChild(el('text', {
+        x: (x(e.i) + 10).toFixed(1), y: (y(e.v) + 4 + (e.dy || 0)).toFixed(1),
+        'font-size': 12, 'font-weight': 600, fill: INK
+      }, e.v.toLocaleString('en-US')));
+    });
+
+    /* Full-height hover targets, one per month, with a native tooltip. */
+    var slot = n > 1 ? dims.plotW / (n - 1) : dims.plotW;
+    for (var i = 0; i < n; i++) {
+      var m = months[i];
+      var hit = el('rect', {
+        x: (x(i) - slot / 2).toFixed(1), y: dims.top,
+        width: slot.toFixed(1), height: dims.plotH,
+        'class': 'pulse-hitcol'
+      });
+      hit.appendChild(el('title', {}, monthLong(m.month) + ': '
+        + (isNum(m.issues_opened) ? m.issues_opened.toLocaleString('en-US') : '\u2014') + ' opened, '
+        + (isNum(m.issues_closed) ? m.issues_closed.toLocaleString('en-US') : '\u2014') + ' closed'));
+      svg.appendChild(hit);
+    }
+
+    container.appendChild(svg);
+  }
+
+  var issuesContainer = document.getElementById('pulse-chart-issues');
+  if (issuesContainer) {
+    drawIssuesChart(issuesContainer);
+  }
+})();
+</script>
+{{- end }}
