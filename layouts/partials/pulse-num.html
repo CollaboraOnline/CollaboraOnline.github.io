@@ -1,0 +1,3 @@
+{{- /* Formats a numeric metric with thousands separators. A nil value (missing data file or a
+metric the nightly fetcher recorded as null) renders as an em dash, never as a zero. */ -}}
+{{- if eq (printf "%v" .) "<nil>" -}}&mdash;{{- else -}}{{- lang.FormatNumberCustom 0 (float .) -}}{{- end -}}
