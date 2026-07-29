@@ -14,6 +14,7 @@ and the site redeploys - the same pattern as `contributors_fetch.yaml`.
 | `fetch_forum.py` | `data/pulse/forum.json` | forum.collaboraonline.com (Discourse JSON) |
 | `fetch_weblate.py` | `data/pulse/weblate.json` | hosted.weblate.org API (project collabora-online) |
 | `fetch_docker.py` | `data/pulse/docker.json` | hub.docker.com v2 API (collabora/code) |
+| `fetch_easyhacks.py` | `data/pulse/easyhacks.json` | api.github.com (open Easy Hack issues) |
 | `backfill_github_monthly.py` | `data/pulse/github_monthly.json` | GitHub search API (run manually, not in cron) |
 | `run_all.py` | runs all fetchers + appends `data/pulse/history.json` | - |
 
@@ -62,6 +63,15 @@ total_posts, top_topics_monthly}` (top 5, each `{title, url, views, posts}`).
 `docker.json` (repository `collabora/code`):
 `pull_count`, `star_count`.
 
+`easyhacks.json` (repo `CollaboraOnline/online`, open issues labeled
+`Easy Hack`, from the paginated REST issues listing so the list is
+complete): `total_open`, `issues` (sorted by `updated_at` descending,
+each `{number, title, url, created_at, updated_at, labels, assignee,
+comments, thumbs_up, mentor}`; dates are `YYYY-MM-DD`, `labels`
+excludes `Easy Hack` itself, `assignee` is a login or null, `mentor`
+is the name stated in an explicit mentor line of the issue body or
+null).
+
 `history.json` - array of one compact entry per day, sorted by date,
 at most one entry per date (re-runs on the same date replace the entry):
 
@@ -72,7 +82,8 @@ at most one entry per date (re-runs on the same date replace the entry):
   "gerrit":  { "merged_30d": 0, "open_unreviewed": 0 },
   "forum":   { "topics_30d": 0, "posts_30d": 0, "active_users_30d": 0 },
   "weblate": { "languages": 0, "translated_percent": 0.0 },
-  "docker":  { "pull_count": 0 } }
+  "docker":  { "pull_count": 0 },
+  "easyhacks": { "total_open": 0 } }
 ```
 
 `github_monthly.json` - backfilled trend seed, most recent 24 full months:
