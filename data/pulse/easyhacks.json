@@ -1,0 +1,1095 @@
+{
+  "generated_at": "2026-07-29T13:49:11Z",
+  "metrics": {
+    "issues": [
+      {
+        "assignee": null,
+        "comments": 2,
+        "created_at": "2026-06-25",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": "@tml1024",
+        "number": 15964,
+        "thumbs_up": 0,
+        "title": "Change std::string::find() anti-patterns to use std::string::starts_with() instead",
+        "updated_at": "2026-07-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/15964"
+      },
+      {
+        "assignee": null,
+        "comments": 2,
+        "created_at": "2026-06-16",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 15943,
+        "thumbs_up": 0,
+        "title": "JSDialogs: Improve View Widgets Layout in help tab",
+        "updated_at": "2026-07-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/15943"
+      },
+      {
+        "assignee": "shahd-elgouhary",
+        "comments": 2,
+        "created_at": "2026-06-12",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 15935,
+        "thumbs_up": 0,
+        "title": "Remove leftover loleaflet references",
+        "updated_at": "2026-07-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/15935"
+      },
+      {
+        "assignee": null,
+        "comments": 1,
+        "created_at": "2026-06-24",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 15960,
+        "thumbs_up": 0,
+        "title": "Replace (window as any) casts with the typed Window interface",
+        "updated_at": "2026-06-24",
+        "url": "https://github.com/CollaboraOnline/online/issues/15960"
+      },
+      {
+        "assignee": null,
+        "comments": 13,
+        "created_at": "2025-05-14",
+        "labels": [
+          "enhancement",
+          "UX",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 11933,
+        "thumbs_up": 0,
+        "title": "[Design review] Track changes: Reinstate button: improve Labeling",
+        "updated_at": "2026-06-17",
+        "url": "https://github.com/CollaboraOnline/online/issues/11933"
+      },
+      {
+        "assignee": null,
+        "comments": 1,
+        "created_at": "2023-08-23",
+        "labels": [
+          "bug",
+          "view: phone"
+        ],
+        "mentor": null,
+        "number": 7142,
+        "thumbs_up": 0,
+        "title": "Mobile: All #mobile-wizard .mobile-wizard.ui-text have top border",
+        "updated_at": "2026-06-01",
+        "url": "https://github.com/CollaboraOnline/online/issues/7142"
+      },
+      {
+        "assignee": "ioanyaa",
+        "comments": 5,
+        "created_at": "2025-10-22",
+        "labels": [
+          "enhancement",
+          "UX",
+          "view: phone",
+          "25.04"
+        ],
+        "mentor": "@Minion3665",
+        "number": 13253,
+        "thumbs_up": 0,
+        "title": "mobile: Insert icon doesn't match iconset",
+        "updated_at": "2026-06-01",
+        "url": "https://github.com/CollaboraOnline/online/issues/13253"
+      },
+      {
+        "assignee": "ivanakoron",
+        "comments": 1,
+        "created_at": "2026-05-25",
+        "labels": [
+          "UX",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 15834,
+        "thumbs_up": 1,
+        "title": "Redesign sheetview.svg icon",
+        "updated_at": "2026-05-25",
+        "url": "https://github.com/CollaboraOnline/online/issues/15834"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-05-22",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 15826,
+        "thumbs_up": 0,
+        "title": "Remove qt / kde backend from VCL",
+        "updated_at": "2026-05-22",
+        "url": "https://github.com/CollaboraOnline/online/issues/15826"
+      },
+      {
+        "assignee": "CodingwithKetan",
+        "comments": 17,
+        "created_at": "2025-04-25",
+        "labels": [
+          "enhancement",
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110 @gokaysatir",
+        "number": 11754,
+        "thumbs_up": 0,
+        "title": "Replace jQuery Selectors with getElementById() for ID-Based Lookups",
+        "updated_at": "2026-05-04",
+        "url": "https://github.com/CollaboraOnline/online/issues/11754"
+      },
+      {
+        "assignee": null,
+        "comments": 2,
+        "created_at": "2026-04-15",
+        "labels": [
+          "UX",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 15516,
+        "thumbs_up": 1,
+        "title": "Update label for Line Colour",
+        "updated_at": "2026-04-26",
+        "url": "https://github.com/CollaboraOnline/online/issues/15516"
+      },
+      {
+        "assignee": null,
+        "comments": 3,
+        "created_at": "2026-04-14",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 15508,
+        "thumbs_up": 0,
+        "title": "js files space between :_",
+        "updated_at": "2026-04-26",
+        "url": "https://github.com/CollaboraOnline/online/issues/15508"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-04-09",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 15442,
+        "thumbs_up": 0,
+        "title": "search button cut off in navigator (chromium)",
+        "updated_at": "2026-04-13",
+        "url": "https://github.com/CollaboraOnline/online/issues/15442"
+      },
+      {
+        "assignee": null,
+        "comments": 2,
+        "created_at": "2025-06-24",
+        "labels": [
+          "UX",
+          "CSS",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12201,
+        "thumbs_up": 0,
+        "title": "Menubutton alignment and styling followup",
+        "updated_at": "2026-04-13",
+        "url": "https://github.com/CollaboraOnline/online/issues/12201"
+      },
+      {
+        "assignee": null,
+        "comments": 4,
+        "created_at": "2025-11-16",
+        "labels": [
+          "enhancement",
+          "UX",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 13474,
+        "thumbs_up": 0,
+        "title": "Save icon Floppy disk vs Cloud-icon",
+        "updated_at": "2026-04-13",
+        "url": "https://github.com/CollaboraOnline/online/issues/13474"
+      },
+      {
+        "assignee": null,
+        "comments": 3,
+        "created_at": "2025-07-01",
+        "labels": [
+          "UX",
+          "25.04"
+        ],
+        "mentor": "@eszkadev @pedropintosilva",
+        "number": 12246,
+        "thumbs_up": 0,
+        "title": "use a better font and font-size:icon-size ratio",
+        "updated_at": "2026-04-13",
+        "url": "https://github.com/CollaboraOnline/online/issues/12246"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-04-08",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110  @banobepascal",
+        "number": 15427,
+        "thumbs_up": 0,
+        "title": "Improve arrows for RTL mode in context menus",
+        "updated_at": "2026-04-08",
+        "url": "https://github.com/CollaboraOnline/online/issues/15427"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-04-08",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110 @banobepascal",
+        "number": 15426,
+        "thumbs_up": 0,
+        "title": "Improve alignment of icon and text in context menus",
+        "updated_at": "2026-04-08",
+        "url": "https://github.com/CollaboraOnline/online/issues/15426"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-04-07",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 15417,
+        "thumbs_up": 0,
+        "title": "Server Audit css issue",
+        "updated_at": "2026-04-07",
+        "url": "https://github.com/CollaboraOnline/online/issues/15417"
+      },
+      {
+        "assignee": "notoriousisk",
+        "comments": 4,
+        "created_at": "2026-02-19",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110  @eszkadev",
+        "number": 14562,
+        "thumbs_up": 0,
+        "title": "Remove unnecessary dropdown for Insert Table button in Writer",
+        "updated_at": "2026-03-23",
+        "url": "https://github.com/CollaboraOnline/online/issues/14562"
+      },
+      {
+        "assignee": "Pandelissym",
+        "comments": 7,
+        "created_at": "2026-02-18",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110",
+        "number": 14546,
+        "thumbs_up": 0,
+        "title": "Unauthorized WOPI host error not shown in the UI",
+        "updated_at": "2026-03-23",
+        "url": "https://github.com/CollaboraOnline/online/issues/14546"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-10-31",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": "@caolanm @Ashod",
+        "number": 13329,
+        "thumbs_up": 0,
+        "title": "Make mode lines consistent in .cpp/.hpp files (add Emacs at top, Vim at end)",
+        "updated_at": "2026-03-20",
+        "url": "https://github.com/CollaboraOnline/online/issues/13329"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-10-31",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": "@Ashod",
+        "number": 13337,
+        "thumbs_up": 0,
+        "title": ": Replace `#ifdef MOBILEAPP` with `Util::isMobileApp()` where possible",
+        "updated_at": "2026-03-20",
+        "url": "https://github.com/CollaboraOnline/online/issues/13337"
+      },
+      {
+        "assignee": null,
+        "comments": 11,
+        "created_at": "2022-07-19",
+        "labels": [
+          "enhancement",
+          "Hacktoberfest",
+          "app: android",
+          "Java"
+        ],
+        "mentor": null,
+        "number": 5040,
+        "thumbs_up": 0,
+        "title": "Insert camera image on mobile",
+        "updated_at": "2026-03-09",
+        "url": "https://github.com/CollaboraOnline/online/issues/5040"
+      },
+      {
+        "assignee": "iammohitvs",
+        "comments": 6,
+        "created_at": "2025-12-02",
+        "labels": [
+          "testing",
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110 @printfdebugging",
+        "number": 13693,
+        "thumbs_up": 0,
+        "title": "create cypress tests for impress iconviews",
+        "updated_at": "2026-02-26",
+        "url": "https://github.com/CollaboraOnline/online/issues/13693"
+      },
+      {
+        "assignee": null,
+        "comments": 9,
+        "created_at": "2021-01-30",
+        "labels": [
+          "enhancement",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 1371,
+        "thumbs_up": 0,
+        "title": "It is not possible to insert a hyperlink like mailto:email@address.com into a document",
+        "updated_at": "2026-02-19",
+        "url": "https://github.com/CollaboraOnline/online/issues/1371"
+      },
+      {
+        "assignee": null,
+        "comments": 2,
+        "created_at": "2026-01-20",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@tml1024",
+        "number": 14140,
+        "thumbs_up": 0,
+        "title": "Rename window.mode.isMobile() to window.mode.isSmallScreenDevice()",
+        "updated_at": "2026-02-07",
+        "url": "https://github.com/CollaboraOnline/online/issues/14140"
+      },
+      {
+        "assignee": "omkarhole",
+        "comments": 9,
+        "created_at": "2025-12-02",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 13688,
+        "thumbs_up": 0,
+        "title": "In Calc, move the `Comment` button closer to the left side on `Insert` tab",
+        "updated_at": "2026-01-23",
+        "url": "https://github.com/CollaboraOnline/online/issues/13688"
+      },
+      {
+        "assignee": "omkarhole",
+        "comments": 5,
+        "created_at": "2025-05-23",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12017,
+        "thumbs_up": 0,
+        "title": "A11y: Replace all <div role=\"button\"> usages with semantic <button> elements",
+        "updated_at": "2026-01-01",
+        "url": "https://github.com/CollaboraOnline/online/issues/12017"
+      },
+      {
+        "assignee": null,
+        "comments": 3,
+        "created_at": "2024-12-21",
+        "labels": [
+          "bug",
+          "regression",
+          "24.04",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 10790,
+        "thumbs_up": 0,
+        "title": "Calc: light mode grid vs dark mode with inverted background grid",
+        "updated_at": "2025-12-31",
+        "url": "https://github.com/CollaboraOnline/online/issues/10790"
+      },
+      {
+        "assignee": null,
+        "comments": 3,
+        "created_at": "2025-11-11",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 13417,
+        "thumbs_up": 0,
+        "title": "Update Help-Shortcuts to include `Strg+Umschalt+F`, `Strg+Umschalt+K`, and `Strg+Umschalt+U`",
+        "updated_at": "2025-12-26",
+        "url": "https://github.com/CollaboraOnline/online/issues/13417"
+      },
+      {
+        "assignee": "Abdreir667",
+        "comments": 4,
+        "created_at": "2025-10-31",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": "@Ashod @Darshan-upadhyay1110",
+        "number": 13338,
+        "thumbs_up": 0,
+        "title": "Remove `const` where `std::move` is used to promote moving.",
+        "updated_at": "2025-12-11",
+        "url": "https://github.com/CollaboraOnline/online/issues/13338"
+      },
+      {
+        "assignee": "alexia355",
+        "comments": 1,
+        "created_at": "2025-10-31",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": "@Ashod",
+        "number": 13339,
+        "thumbs_up": 0,
+        "title": "Find opportunities to use `constexpr`.",
+        "updated_at": "2025-12-07",
+        "url": "https://github.com/CollaboraOnline/online/issues/13339"
+      },
+      {
+        "assignee": "AndreeaGeo",
+        "comments": 2,
+        "created_at": "2025-11-25",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110",
+        "number": 13573,
+        "thumbs_up": 0,
+        "title": "Cypress: add test for save icon states",
+        "updated_at": "2025-11-30",
+        "url": "https://github.com/CollaboraOnline/online/issues/13573"
+      },
+      {
+        "assignee": "dragos-dobrin",
+        "comments": 6,
+        "created_at": "2025-10-31",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": "@caolanm @Ashod",
+        "number": 13334,
+        "thumbs_up": 0,
+        "title": "Rewrite removeFile in common/FileUtil-unix.cpp to use std::filesystem",
+        "updated_at": "2025-11-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/13334"
+      },
+      {
+        "assignee": null,
+        "comments": 4,
+        "created_at": "2025-11-07",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 13389,
+        "thumbs_up": 0,
+        "title": "Sheet view options icon missing for dark mode theme",
+        "updated_at": "2025-11-24",
+        "url": "https://github.com/CollaboraOnline/online/issues/13389"
+      },
+      {
+        "assignee": "KirtiGautam620",
+        "comments": 2,
+        "created_at": "2025-11-17",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110",
+        "number": 13483,
+        "thumbs_up": 0,
+        "title": "Code cleanup: reduce boilerplate code by using parametrized functions",
+        "updated_at": "2025-11-18",
+        "url": "https://github.com/CollaboraOnline/online/issues/13483"
+      },
+      {
+        "assignee": null,
+        "comments": 4,
+        "created_at": "2025-11-14",
+        "labels": [
+          "UX",
+          "25.04"
+        ],
+        "mentor": "@gokaysatir @eszkadev",
+        "number": 13469,
+        "thumbs_up": 0,
+        "title": "use css class selectors to change cursor style instead of setting style.cursor",
+        "updated_at": "2025-11-17",
+        "url": "https://github.com/CollaboraOnline/online/issues/13469"
+      },
+      {
+        "assignee": "otiliaai",
+        "comments": 7,
+        "created_at": "2025-06-19",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12177,
+        "thumbs_up": 0,
+        "title": "Refactor and Split COOLWSD.cpp into Logical Modules",
+        "updated_at": "2025-11-15",
+        "url": "https://github.com/CollaboraOnline/online/issues/12177"
+      },
+      {
+        "assignee": "alexia355",
+        "comments": 9,
+        "created_at": "2025-06-19",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12179,
+        "thumbs_up": 0,
+        "title": "Replace Repeated String Comparisons with Compile-Time map Lookups",
+        "updated_at": "2025-11-15",
+        "url": "https://github.com/CollaboraOnline/online/issues/12179"
+      },
+      {
+        "assignee": "andrei-popovici-dev",
+        "comments": 2,
+        "created_at": "2025-11-07",
+        "labels": [
+          "enhancement",
+          "C++",
+          "view: tablet",
+          "view: phone",
+          "JavaScript",
+          "25.04"
+        ],
+        "mentor": "@Minion3665",
+        "number": 13396,
+        "thumbs_up": 0,
+        "title": "mobile web: add ui_default option to start in edit mode",
+        "updated_at": "2025-11-15",
+        "url": "https://github.com/CollaboraOnline/online/issues/13396"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-11-07",
+        "labels": [
+          "view: tablet",
+          "JavaScript",
+          "CSS",
+          "25.04",
+          "symptom: cropping"
+        ],
+        "mentor": "@Minion3665",
+        "number": 13395,
+        "thumbs_up": 0,
+        "title": "overflowed menus can't be scrolled onscreen",
+        "updated_at": "2025-11-07",
+        "url": "https://github.com/CollaboraOnline/online/issues/13395"
+      },
+      {
+        "assignee": "Darshan-upadhyay1110",
+        "comments": 4,
+        "created_at": "2025-10-30",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110 @pedropintosilva",
+        "number": 13322,
+        "thumbs_up": 0,
+        "title": "Fix text color for selected elements in listboxes, treeviews and dialogs",
+        "updated_at": "2025-11-06",
+        "url": "https://github.com/CollaboraOnline/online/issues/13322"
+      },
+      {
+        "assignee": null,
+        "comments": 3,
+        "created_at": "2024-08-27",
+        "labels": [
+          "enhancement",
+          "Hacktoberfest",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 9915,
+        "thumbs_up": 1,
+        "title": "Popup window text confusing when editing same document",
+        "updated_at": "2025-10-22",
+        "url": "https://github.com/CollaboraOnline/online/issues/9915"
+      },
+      {
+        "assignee": null,
+        "comments": 2,
+        "created_at": "2025-10-15",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@pedropintosilva",
+        "number": 13207,
+        "thumbs_up": 0,
+        "title": "Improve label and icon for \"Invert Background\" option in Dark Mode",
+        "updated_at": "2025-10-16",
+        "url": "https://github.com/CollaboraOnline/online/issues/13207"
+      },
+      {
+        "assignee": null,
+        "comments": 6,
+        "created_at": "2025-05-16",
+        "labels": [
+          "TypeScript",
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110",
+        "number": 11959,
+        "thumbs_up": 0,
+        "title": "Extract main-nav to separate file/component",
+        "updated_at": "2025-09-23",
+        "url": "https://github.com/CollaboraOnline/online/issues/11959"
+      },
+      {
+        "assignee": "aregnak",
+        "comments": 4,
+        "created_at": "2025-06-19",
+        "labels": [
+          "C++",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12178,
+        "thumbs_up": 0,
+        "title": "Extract Platform-Dependent Code to Reduce `#ifdef`s and Header Pollution",
+        "updated_at": "2025-09-03",
+        "url": "https://github.com/CollaboraOnline/online/issues/12178"
+      },
+      {
+        "assignee": "omkarhole",
+        "comments": 3,
+        "created_at": "2025-06-09",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110",
+        "number": 12108,
+        "thumbs_up": 1,
+        "title": "Replace var with const/let",
+        "updated_at": "2025-08-15",
+        "url": "https://github.com/CollaboraOnline/online/issues/12108"
+      },
+      {
+        "assignee": "eszkadev",
+        "comments": 2,
+        "created_at": "2025-07-25",
+        "labels": [
+          "bug",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12406,
+        "thumbs_up": 0,
+        "title": "INCOMING: logging for internally created dialogs ...",
+        "updated_at": "2025-07-29",
+        "url": "https://github.com/CollaboraOnline/online/issues/12406"
+      },
+      {
+        "assignee": null,
+        "comments": 1,
+        "created_at": "2025-07-25",
+        "labels": [
+          "enhancement",
+          "UX",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12405,
+        "thumbs_up": 0,
+        "title": "UI metrics - track dialogs",
+        "updated_at": "2025-07-25",
+        "url": "https://github.com/CollaboraOnline/online/issues/12405"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-06-11",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @meven @Minion3665 @hfiguiere @Cwiiis",
+        "number": 12122,
+        "thumbs_up": 0,
+        "title": "Convert JS to TS",
+        "updated_at": "2025-06-11",
+        "url": "https://github.com/CollaboraOnline/online/issues/12122"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-06-11",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 12125,
+        "thumbs_up": 0,
+        "title": "TS conversion: MultilineEdit widget",
+        "updated_at": "2025-06-11",
+        "url": "https://github.com/CollaboraOnline/online/issues/12125"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-06-11",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 12124,
+        "thumbs_up": 0,
+        "title": "TS conversion: Frame widget",
+        "updated_at": "2025-06-11",
+        "url": "https://github.com/CollaboraOnline/online/issues/12124"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-06-11",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 12123,
+        "thumbs_up": 0,
+        "title": "TS conversion: DrawingArea widget",
+        "updated_at": "2025-06-11",
+        "url": "https://github.com/CollaboraOnline/online/issues/12123"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-05-28",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 12060,
+        "thumbs_up": 0,
+        "title": "Writer: Sidebar: Area:  Unexpected jumping hover effect on button",
+        "updated_at": "2025-05-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/12060"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-05-27",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110",
+        "number": 12046,
+        "thumbs_up": 0,
+        "title": "Dropdown shows multiple selections when navigating with arrow keys",
+        "updated_at": "2025-05-27",
+        "url": "https://github.com/CollaboraOnline/online/issues/12046"
+      },
+      {
+        "assignee": null,
+        "comments": 6,
+        "created_at": "2025-05-19",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110 @Cwiiis @gokaysatir",
+        "number": 11970,
+        "thumbs_up": 0,
+        "title": "Navigator button covers debug information.",
+        "updated_at": "2025-05-23",
+        "url": "https://github.com/CollaboraOnline/online/issues/11970"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-05-21",
+        "labels": [
+          "bug",
+          "UX",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 11989,
+        "thumbs_up": 0,
+        "title": "Mobile: Search field is misaligned",
+        "updated_at": "2025-05-21",
+        "url": "https://github.com/CollaboraOnline/online/issues/11989"
+      },
+      {
+        "assignee": "grnd-alt",
+        "comments": 7,
+        "created_at": "2024-10-24",
+        "labels": [
+          "Hacktoberfest",
+          "24.04"
+        ],
+        "mentor": "@gokaysatir @codewithvk",
+        "number": 10313,
+        "thumbs_up": 0,
+        "title": "Add Scrollbar Animation Effect",
+        "updated_at": "2025-05-21",
+        "url": "https://github.com/CollaboraOnline/online/issues/10313"
+      },
+      {
+        "assignee": "CodingwithKetan",
+        "comments": 4,
+        "created_at": "2025-04-04",
+        "labels": [
+          "testing",
+          "cypress",
+          "24.04"
+        ],
+        "mentor": "@eszkadev @Darshan-upadhyay1110",
+        "number": 11537,
+        "thumbs_up": 1,
+        "title": "Add visual cypress test for menubutton (with color label)",
+        "updated_at": "2025-05-19",
+        "url": "https://github.com/CollaboraOnline/online/issues/11537"
+      },
+      {
+        "assignee": "Teruk15",
+        "comments": 4,
+        "created_at": "2025-04-09",
+        "labels": [
+          "25.04"
+        ],
+        "mentor": "@eszkadev  @Darshan-upadhyay1110",
+        "number": 11589,
+        "thumbs_up": 0,
+        "title": "Improve clipboard support in Audit dialog by checking for navigator.clipboard",
+        "updated_at": "2025-05-19",
+        "url": "https://github.com/CollaboraOnline/online/issues/11589"
+      },
+      {
+        "assignee": "CodingwithKetan",
+        "comments": 5,
+        "created_at": "2025-01-30",
+        "labels": [
+          "24.04"
+        ],
+        "mentor": "@pedropintosilva  @Darshan-upadhyay1110",
+        "number": 11050,
+        "thumbs_up": 0,
+        "title": "Remove redundant last modification indicator in Compact View",
+        "updated_at": "2025-03-31",
+        "url": "https://github.com/CollaboraOnline/online/issues/11050"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-03-19",
+        "labels": [
+          "bug",
+          "unconfirmed",
+          "24.04"
+        ],
+        "mentor": null,
+        "number": 11375,
+        "thumbs_up": 0,
+        "title": "browser/src/control/HRuler.ts negatively impacts scrolling performance",
+        "updated_at": "2025-03-31",
+        "url": "https://github.com/CollaboraOnline/online/issues/11375"
+      },
+      {
+        "assignee": "JulianTaub",
+        "comments": 6,
+        "created_at": "2025-02-07",
+        "labels": [
+          "enhancement",
+          "24.04"
+        ],
+        "mentor": null,
+        "number": 11107,
+        "thumbs_up": 0,
+        "title": "Catch and flag DOM leakage ...",
+        "updated_at": "2025-03-24",
+        "url": "https://github.com/CollaboraOnline/online/issues/11107"
+      },
+      {
+        "assignee": "banobepascal",
+        "comments": 1,
+        "created_at": "2024-12-17",
+        "labels": [],
+        "mentor": null,
+        "number": 10753,
+        "thumbs_up": 0,
+        "title": "Replace Insert > QR and Barcode icon",
+        "updated_at": "2025-02-08",
+        "url": "https://github.com/CollaboraOnline/online/issues/10753"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2025-01-27",
+        "labels": [
+          "24.04"
+        ],
+        "mentor": null,
+        "number": 11023,
+        "thumbs_up": 0,
+        "title": "On RTL documents, user list area overlaps with sidebar button",
+        "updated_at": "2025-01-27",
+        "url": "https://github.com/CollaboraOnline/online/issues/11023"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2024-10-15",
+        "labels": [
+          "bug",
+          "Hacktoberfest",
+          "view: phone"
+        ],
+        "mentor": "@Rash419",
+        "number": 10234,
+        "thumbs_up": 1,
+        "title": "mobile: undefined error when document reconnects",
+        "updated_at": "2024-11-01",
+        "url": "https://github.com/CollaboraOnline/online/issues/10234"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2024-11-01",
+        "labels": [
+          "enhancement",
+          "cypress"
+        ],
+        "mentor": "@Rash419",
+        "number": 10390,
+        "thumbs_up": 0,
+        "title": "cypress: enable skipped tests",
+        "updated_at": "2024-11-01",
+        "url": "https://github.com/CollaboraOnline/online/issues/10390"
+      },
+      {
+        "assignee": null,
+        "comments": 1,
+        "created_at": "2023-10-21",
+        "labels": [
+          "bug",
+          "Hacktoberfest",
+          "UX",
+          "app: android",
+          "dark-mode"
+        ],
+        "mentor": null,
+        "number": 7503,
+        "thumbs_up": 0,
+        "title": "Android: Dark Mode \"Menu Selection\" = Light-on-Light Highlight+Text",
+        "updated_at": "2024-10-14",
+        "url": "https://github.com/CollaboraOnline/online/issues/7503"
+      },
+      {
+        "assignee": null,
+        "comments": 10,
+        "created_at": "2023-11-23",
+        "labels": [
+          "bug",
+          "dialog"
+        ],
+        "mentor": null,
+        "number": 7710,
+        "thumbs_up": 0,
+        "title": "Async more dialogs",
+        "updated_at": "2024-08-16",
+        "url": "https://github.com/CollaboraOnline/online/issues/7710"
+      },
+      {
+        "assignee": null,
+        "comments": 10,
+        "created_at": "2024-06-13",
+        "labels": [
+          "enhancement",
+          "Easy",
+          "performance",
+          "24.04"
+        ],
+        "mentor": null,
+        "number": 9276,
+        "thumbs_up": 0,
+        "title": "UnitPerf CSV generation",
+        "updated_at": "2024-07-05",
+        "url": "https://github.com/CollaboraOnline/online/issues/9276"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2022-02-10",
+        "labels": [
+          "Hacktoberfest"
+        ],
+        "mentor": "@lpranam",
+        "number": 4159,
+        "thumbs_up": 0,
+        "title": "Drop IE11 support",
+        "updated_at": "2023-10-18",
+        "url": "https://github.com/CollaboraOnline/online/issues/4159"
+      },
+      {
+        "assignee": null,
+        "comments": 4,
+        "created_at": "2022-10-19",
+        "labels": [
+          "enhancement",
+          "JavaScript"
+        ],
+        "mentor": null,
+        "number": 5360,
+        "thumbs_up": 0,
+        "title": "Add logout button to admin console",
+        "updated_at": "2023-02-17",
+        "url": "https://github.com/CollaboraOnline/online/issues/5360"
+      }
+    ],
+    "total_open": 73
+  },
+  "source": "easyhacks"
+}
