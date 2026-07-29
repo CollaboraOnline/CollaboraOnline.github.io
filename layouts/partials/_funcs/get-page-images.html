@@ -1,0 +1,75 @@
+{{/*
+Site override of Hugo's embedded partial "_funcs/get-page-images", which the
+embedded opengraph, twitter_cards, and schema templates use to build their
+image meta tags.
+
+The embedded version resolves each entry of the page's "images" front matter
+parameter against the page's own bundle resources and otherwise treats the
+entry as a URL relative to the site root. On this site the front matter of a
+post names its preview image by its path inside the images section, for
+example "beaver/easyhacks-copyrighted.png", which lives at
+content/images/beaver/ and is published under /images/. The site-root
+fallback therefore produced links such as /beaver/... that do not exist.
+
+This copy keeps the embedded logic and adds one extra lookup step: an image
+that is not a resource of the page itself is searched among the resources of
+the images section before falling back to a plain URL. A leading "/" or
+"images/" prefix on the front matter value is accepted and stripped for that
+lookup, so both "beaver/foo.png" and "/images/beaver/foo.png" resolve to the
+same resource and nothing gets a double prefix.
+*/}}
+{{- $imgs := slice }}
+{{- $imgParams := .Params.images }}
+{{- $resources := .Resources.ByType "image" -}}
+{{/* Find featured image resources if the images parameter is empty. */}}
+{{- if not $imgParams }}
+  {{- $featured := $resources.GetMatch "*feature*" -}}
+  {{- if not $featured }}{{ $featured = $resources.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+  {{- with $featured }}
+    {{- $imgs = $imgs | append (dict
+      "Image" .
+      "RelPermalink" .RelPermalink
+      "Permalink" .Permalink) }}
+  {{- end }}
+{{- end }}
+{{/* Use the first one of site images as the fallback. */}}
+{{- if and (not $imgParams) (not $imgs) }}
+  {{- with site.Params.images }}
+    {{- $imgParams = first 1 . }}
+  {{- end }}
+{{- end }}
+{{/* Parse page's images parameter. */}}
+{{- range $imgParams }}
+  {{- $img := . }}
+  {{- $url := urls.Parse $img }}
+  {{- if eq $url.Scheme "" }}
+    {{/* Internal image. Try the page's own resources first. */}}
+    {{- $resource := $resources.GetMatch $img }}
+    {{- if not $resource }}
+      {{/* Then try the resources of the images section. */}}
+      {{- $name := strings.TrimPrefix "images/" (strings.TrimPrefix "/" $img) }}
+      {{- with site.GetPage "section" "images" }}
+        {{- $resource = .Resources.GetMatch $name }}
+      {{- end }}
+    {{- end }}
+    {{- with $resource }}
+      {{/* Image resource. */}}
+      {{- $imgs = $imgs | append (dict
+        "Image" .
+        "RelPermalink" .RelPermalink
+        "Permalink" .Permalink) }}
+    {{- else }}
+      {{- $imgs = $imgs | append (dict
+        "RelPermalink" (relURL $img)
+        "Permalink" (absURL $img)
+      ) }}
+    {{- end }}
+  {{- else }}
+    {{/* External image */}}
+    {{- $imgs = $imgs | append (dict
+      "RelPermalink" $img
+      "Permalink" $img
+    ) }}
+  {{- end }}
+{{- end }}
+{{- return $imgs }}
