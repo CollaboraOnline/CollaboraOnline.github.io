@@ -41,11 +41,11 @@ the [How to build CODE]({{< relref "build-code" >}} "How to build CODE") page.
 
 ### List of Easy Hacks
 
-Below is a non-exhaustive list of the Easy Hacks. To view the complete list of the current Easy Hacks, you may check [the corresponding issues on GitHub.](https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Hack%22)
+Below is the complete list of the current Easy Hacks, refreshed every night from [the corresponding issues on GitHub.](https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Hack%22) Use the search box and the filters to narrow the list down; the unclaimed ones are great picks for a first contribution.
 
 To see the details of an easy hack you are interested in below, just click on it to go to the related GitHub issue.
 
-{{< get-easy-hacks >}}
+{{< easy-hacks-board >}}
 
 {{< link-button to="https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Hack%22" name="View all">}}
 
