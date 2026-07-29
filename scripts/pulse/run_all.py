@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Run all Community Pulse fetchers and append today's history entry.
 
-Runs the five fetchers as subprocesses, one after the other. A fetcher
+Runs the fetchers in FETCHERS as subprocesses, one after the other. A fetcher
 that fails does not stop the run: its previous data/pulse/<source>.json
 stays in place (the fetchers write nothing on total failure) and the
 affected history values become null. After the fetchers, one compact
@@ -20,7 +20,7 @@ import pulse_common as pc
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-FETCHERS = ['github', 'gerrit', 'forum', 'weblate', 'docker']
+FETCHERS = ['github', 'gerrit', 'forum', 'weblate', 'docker', 'easyhacks']
 
 HISTORY_PATH = os.path.join(pc.DATA_DIR, 'history.json')
 
@@ -33,6 +33,7 @@ HISTORY_KEYS = {
     'forum': ['topics_30d', 'posts_30d', 'active_users_30d'],
     'weblate': ['languages', 'translated_percent'],
     'docker': ['pull_count'],
+    'easyhacks': ['total_open'],
 }
 
 

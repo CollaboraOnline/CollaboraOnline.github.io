@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-07-28T09:14:49Z",
+  "generated_at": "2026-07-29T13:49:05Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 79,
-      "posts_30d": 177,
+      "active_users_30d": 81,
+      "posts_30d": 173,
       "top_topics_monthly": [
         {
           "posts": 11,
           "title": "=PY() + NumPy inside Collabora",
           "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
-          "views": 93
+          "views": 99
         },
         {
           "posts": 1,
@@ -21,7 +21,7 @@
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 37
+          "views": 40
         },
         {
           "posts": 6,
@@ -33,18 +33,18 @@
           "posts": 5,
           "title": "Printing is not working",
           "url": "https://forum.collaboraonline.com/t/printing-is-not-working/4826",
-          "views": 77
+          "views": 80
         }
       ],
-      "topics_30d": 55,
-      "total_posts": 9933,
-      "total_topics": 2078
+      "topics_30d": 54,
+      "total_posts": 9937,
+      "total_topics": 2080
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-06-28",
-    "to": "2026-07-28"
+    "from": "2026-06-29",
+    "to": "2026-07-29"
   },
   "source": "forum"
 }
