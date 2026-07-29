@@ -1,3 +1,22 @@
++++
+authors = [
+    "Collabora",
+]
+title = "ODF Implementer Notes: List of Collabora ODF Extensions"
+date = "2026-07-29"
+home_pos = "19"
+description = "ODF Implementer Notes: List of Collabora ODF Extensions"
+tags = [
+    "odf",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
++++
+
+A list of all ODF Extensions in Collabora Online and Collabora Office
+
+<!--more-->
 
 # ODF Implementer Notes: List of Collabora ODF Extensions
 

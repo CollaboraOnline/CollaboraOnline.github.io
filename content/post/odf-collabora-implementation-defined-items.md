@@ -1,5 +1,24 @@
++++
+authors = [
+    "Collabora",
+]
+title = "ODF Implementer Notes: List of Collabora Implementation-Defined Items"
+date = "2026-07-29"
+home_pos = "21"
+description = "ODF Implementer Notes: List of Collabora Implementation-Defined Items"
+tags = [
+    "odf",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
++++
 
-# ODF Implementer Notes: List of Collabora implementation-defined items
+Documentation of implementation-defined items as required by the standard.
+
+<!--more-->
+
+# ODF Implementer Notes: List of Collabora Implementation-Defined Items
 
 The OpenDocument Format standard defines, "Implementation-defined is
 used in this standard for values or processing that may differ between
@@ -540,7 +559,7 @@ LogicalSequence, and ComplexSequence), Part 4, ODF 1.3
 5.7 Nonstandard Function Names, Part 4, ODF 1.3
 
 See
-[List_of_Collabora_OpenFormula_Extensions.md](List_of_Collabora_OpenFormula_Extensions.md)
+[List_of_Collabora_OpenFormula_Extensions](../odf-collabora-openformula-extensions/)
 
 ### Common Template for Functions and Operators
 

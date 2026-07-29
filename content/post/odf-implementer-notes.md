@@ -1,3 +1,22 @@
++++
+authors = [
+    "Collabora",
+]
+title = "ODF Implementer Notes"
+date = "2026-07-29"
+home_pos = "18"
+description = "ODF Implementer Notes"
+tags = [
+    "odf",
+]
+type = "sidebar"
+layout = "sidebar"
+showimage = false
++++
+
+ODF Implementer Notes for Collabora Online and Collabora Office
+
+<!--more-->
 
 # ODF Implementer Notes
 
@@ -123,17 +142,17 @@ from this version.
 ## Collabora ODF extensions
 
 - See the complete
-[List_of_Collabora_ODF_Extensions.md](List_of_Collabora_ODF_Extensions.md)
+[List_of_Collabora_ODF_Extensions](../odf-collabora-odf-extensions/)
 
 ## Collabora OpenFormula extensions
 
 - See the complete
-[List_of_Collabora_OpenFormula_Extensions.md](List_of_Collabora_OpenFormula_Extensions.md)
+[List_of_Collabora_OpenFormula_Extensions](../odf-collabora-openformula-extensions/)
 
 ## ODF "implementation-defined" items in Collabora
 
 - See the [List of ODF "implementation-defined" items in
- Collabora](List_of_Collabora_Implementation-Defined_Items.md)
+ Collabora](../odf-collabora-implementation-defined-items/)
 
 ## `settings.xml`
 
