@@ -89,7 +89,11 @@ sudo zypper install autoconf automake cppunit-devel fontconfig-devel gcc-c++ \
 
 ### General notes
 
-A C++ compiler with full C++20 support is required, including `std::format` (GCC 13+ or Clang 17+).
+A C++ compiler with full C++20 support is required, including `std::format` (GCC 13+ or Clang 17+); the code uses `std::format`, which the GNU C++ standard library only provides from GCC 13 on. The distribution releases listed above all ship a new enough compiler. If yours does not, install a newer one (for example the `gcc-13` and `g++-13` packages) and select it on the configure line, optionally prefixed with `ccache` for faster rebuilds:
+
+```bash
+./configure CC="ccache gcc-13" CXX="ccache g++-13" --enable-qtapp --enable-debug
+```
 
 POCO is built as part of the engine (`engine/`) and picked up from its workdir
 automatically, so it no longer needs to be installed as a distro package.
