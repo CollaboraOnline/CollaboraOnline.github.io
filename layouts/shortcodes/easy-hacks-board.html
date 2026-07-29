@@ -1,0 +1,472 @@
+{{- /*
+  Easy Hacks board.
+
+  Renders the full list of open Easy Hack issues from the nightly-refreshed JSON at
+  data/pulse/easyhacks.json, entirely at build time - the page makes no external requests.
+  The filter controls (text search, unclaimed/mentor toggles, label chips) are a vanilla
+  JavaScript enhancement layered on data attributes; without JavaScript the controls stay
+  hidden and the complete list is still readable. Every data access is guarded: a missing
+  or empty data file renders a short refresh note, never an error.
+*/ -}}
+{{- $pulse := .Page.Site.Data.pulse | default dict -}}
+{{- $ehFile := $pulse.easyhacks | default dict -}}
+{{- $metrics := $ehFile.metrics | default dict -}}
+{{- $issues := $metrics.issues | default slice -}}
+
+{{- if gt (len $issues) 0 -}}
+{{- $total := int ($metrics.total_open | default (len $issues)) -}}
+
+{{- /* Count the unclaimed issues and how often each label occurs. */ -}}
+{{- $unclaimed := 0 -}}
+{{- $scratch := newScratch -}}
+{{- range $issues -}}
+  {{- if not .assignee -}}{{- $unclaimed = add $unclaimed 1 -}}{{- end -}}
+  {{- range (.labels | default slice) -}}
+    {{- $seen := int (index ($scratch.Get "counts" | default dict) . | default 0) -}}
+    {{- $scratch.SetInMap "counts" . (add $seen 1) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Filter chips: labels carried by at least three issues, skipping the release-version
+       labels (two digits, a dot, two digits) that say nothing about the skills needed. */ -}}
+{{- $chips := slice -}}
+{{- range $name, $count := ($scratch.Get "counts" | default dict) -}}
+  {{- if and (ge $count 3) (eq (len (findRE `^[0-9]{2}\.[0-9]{2}$` $name)) 0) -}}
+    {{- $chips = $chips | append (dict "name" $name "count" $count) -}}
+  {{- end -}}
+{{- end -}}
+{{- $chips = sort $chips "count" "desc" -}}
+
+<div class="eh-board">
+  <p class="eh-headline">
+    <strong>{{ $total }} open Easy Hack{{ if ne $total 1 }}s{{ end }}</strong>, {{ $unclaimed }} unclaimed
+    <span class="eh-headline-sub">refreshed nightly{{ with $ehFile.generated_at }} &middot; last updated {{ dateFormat "2 January 2006, 15:04 UTC" (time.AsTime .) }}{{ end }}</span>
+  </p>
+
+  <div class="eh-controls" hidden>
+    <input type="search" class="eh-search" placeholder="Search title, number or label&hellip;" aria-label="Search Easy Hacks">
+    <label class="eh-toggle"><input type="checkbox" class="eh-toggle-unclaimed"> Only unclaimed</label>
+    <label class="eh-toggle"><input type="checkbox" class="eh-toggle-mentor"> Has mentor</label>
+    {{- if gt (len $chips) 0 }}
+    <div class="eh-chip-row" role="group" aria-label="Filter by label">
+      {{- range $chips }}
+      <button type="button" class="eh-chip" aria-pressed="false" data-eh-label="{{ lower .name }}">{{ .name }} <span class="eh-chip-count">{{ .count }}</span></button>
+      {{- end }}
+    </div>
+    {{- end }}
+    <p class="eh-counter" aria-live="polite">Showing {{ len $issues }} of {{ len $issues }} Easy Hacks</p>
+  </div>
+
+  <div class="eh-grid">
+    {{- range $issues }}
+    {{- $labels := .labels | default slice }}
+    {{- $isUnclaimed := not .assignee }}
+    {{- $mentor := .mentor | default "" }}
+    <article class="eh-card{{ if $isUnclaimed }} eh-card-unclaimed{{ end }}"
+      data-labels="|{{ delimit (apply $labels "lower" ".") "|" }}|"
+      data-unclaimed="{{ if $isUnclaimed }}1{{ else }}0{{ end }}"
+      data-mentor="{{ if ne $mentor "" }}1{{ else }}0{{ end }}"
+      data-text="{{ lower (printf "#%d %s %s" (int .number) .title (delimit $labels " ")) }}">
+      <a class="eh-title" href="{{ .url }}"><span class="eh-number">#{{ int .number }}</span> {{ .title }}</a>
+      {{- if gt (len $labels) 0 }}
+      <div class="eh-labels">
+        {{- range $labels }}
+        <span class="eh-label">{{ . }}</span>
+        {{- end }}
+      </div>
+      {{- end }}
+      <div class="eh-meta">
+        {{- if $isUnclaimed }}
+        <span class="eh-state eh-state-open">unclaimed</span>
+        {{- else }}
+        <span class="eh-state">claimed by {{ .assignee }}</span>
+        {{- end }}
+        <span class="eh-meta-item">opened {{ substr (printf "%s" .created_at) 0 7 }}</span>
+        {{- if gt (int (.comments | default 0)) 0 }}
+        <span class="eh-meta-item">{{ int .comments }} comment{{ if ne (int .comments) 1 }}s{{ end }}</span>
+        {{- end }}
+        {{- if gt (int (.thumbs_up | default 0)) 0 }}
+        <span class="eh-meta-item" title="{{ int .thumbs_up }} thumbs-up reactions">&#128077;&#65038; {{ int .thumbs_up }}</span>
+        {{- end }}
+      </div>
+      {{- if ne $mentor "" }}
+      <p class="eh-mentor">Mentor:
+        {{- range split $mentor " " }}{{ if ne . "" }}
+        {{ if gt (len (findRE `^@[A-Za-z0-9-]+$` .)) 0 }}<a href="https://github.com/{{ strings.TrimPrefix "@" . }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}
+        {{- end }}{{ end }}
+      </p>
+      {{- end }}
+    </article>
+    {{- end }}
+  </div>
+
+  <p class="eh-empty" hidden>No Easy Hacks match these filters. Clear a filter or two and try again.</p>
+
+  <nav class="eh-pager" aria-label="Easy Hacks pages" hidden>
+    <button type="button" class="eh-pager-btn eh-pager-prev">&laquo; Previous</button>
+    <span class="eh-pager-info" aria-live="polite"></span>
+    <button type="button" class="eh-pager-btn eh-pager-next">Next &raquo;</button>
+  </nav>
+</div>
+
+<style>
+.eh-board {
+  --eh-accent: #5c2983;
+  --eh-ink: #0c344b;
+  --eh-muted: #5f6b76;
+  --eh-line: #e5e1ee;
+  --eh-soft: #faf8fc;
+  margin: 1rem 0 1.5rem;
+  color: var(--eh-ink);
+}
+.eh-headline {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+.eh-headline-sub {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--eh-muted);
+  margin-top: 2px;
+}
+.eh-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--eh-line);
+  border-radius: 10px;
+  background: var(--eh-soft);
+  padding: 10px 12px;
+  margin: 0 0 1rem;
+}
+.eh-search {
+  flex: 1 1 220px;
+  min-width: 160px;
+  font-size: 0.9rem;
+  color: var(--eh-ink);
+  background: #fff;
+  border: 1px solid var(--eh-line);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+.eh-search:focus {
+  outline: 2px solid var(--eh-accent);
+  outline-offset: 1px;
+  border-color: var(--eh-accent);
+}
+.eh-toggle {
+  font-size: 0.85rem;
+  color: var(--eh-ink);
+  white-space: nowrap;
+  cursor: pointer;
+  margin: 0;
+}
+.eh-toggle input {
+  accent-color: var(--eh-accent);
+  margin-right: 4px;
+}
+.eh-chip-row {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.eh-chip {
+  font-size: 0.78rem;
+  color: var(--eh-ink);
+  background: #fff;
+  border: 1px solid var(--eh-line);
+  border-radius: 999px;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.eh-chip:hover,
+.eh-chip:focus-visible {
+  border-color: var(--eh-accent);
+  color: var(--eh-accent);
+}
+.eh-chip[aria-pressed="true"] {
+  background: var(--eh-accent);
+  border-color: var(--eh-accent);
+  color: #fff;
+}
+.eh-chip-count {
+  opacity: 0.7;
+  font-size: 0.72rem;
+}
+.eh-counter {
+  flex-basis: 100%;
+  font-size: 0.78rem;
+  color: var(--eh-muted);
+  margin: 0;
+}
+.eh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.eh-card {
+  border: 1px solid var(--eh-line);
+  border-left: 3px solid var(--eh-line);
+  border-radius: 10px;
+  background: #fff;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+.eh-card-unclaimed {
+  border-left-color: var(--eh-accent);
+  background: var(--eh-soft);
+}
+.eh-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--eh-ink);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.eh-title:hover,
+.eh-title:focus-visible {
+  color: var(--eh-accent);
+}
+.eh-number {
+  color: var(--eh-muted);
+  font-weight: 400;
+}
+.eh-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.eh-label {
+  font-size: 0.7rem;
+  color: var(--eh-muted);
+  border: 1px solid var(--eh-line);
+  border-radius: 999px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+.eh-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  font-size: 0.75rem;
+  color: var(--eh-muted);
+  margin-top: auto;
+}
+.eh-state {
+  font-weight: 600;
+}
+.eh-state-open {
+  color: var(--eh-accent);
+}
+.eh-mentor {
+  font-size: 0.78rem;
+  color: var(--eh-muted);
+  margin: 0;
+}
+.eh-mentor a {
+  color: var(--eh-ink);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.eh-mentor a:hover,
+.eh-mentor a:focus-visible {
+  color: var(--eh-accent);
+}
+.eh-empty {
+  font-size: 0.85rem;
+  color: var(--eh-muted);
+  background: var(--eh-soft);
+  border-left: 3px solid var(--eh-accent);
+  padding: 8px 12px;
+  margin: 1rem 0 0;
+}
+.eh-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 1.25rem 0 0;
+}
+.eh-pager-btn {
+  font-size: 0.85rem;
+  color: var(--eh-ink);
+  background: #fff;
+  border: 1px solid var(--eh-line);
+  border-radius: 999px;
+  padding: 5px 14px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.eh-pager-btn:hover:not(:disabled) {
+  color: var(--eh-accent);
+  border-color: var(--eh-accent);
+}
+.eh-pager-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.eh-pager-info {
+  font-size: 0.85rem;
+  color: var(--eh-muted);
+  font-variant-numeric: tabular-nums;
+}
+</style>
+
+<script>
+/* Filtering for the Easy Hacks board. The list is complete in the HTML above; this script
+   only shows and hides cards based on their data attributes, so with JavaScript turned off
+   the controls stay hidden and every card stays visible. */
+(function () {
+  'use strict';
+
+  function toArray(nodeList) {
+    return Array.prototype.slice.call(nodeList);
+  }
+
+  function initBoard(root) {
+    var controls = root.querySelector('.eh-controls');
+    var search = root.querySelector('.eh-search');
+    var unclaimedBox = root.querySelector('.eh-toggle-unclaimed');
+    var mentorBox = root.querySelector('.eh-toggle-mentor');
+    var chips = toArray(root.querySelectorAll('.eh-chip'));
+    var cards = toArray(root.querySelectorAll('.eh-card'));
+    var counter = root.querySelector('.eh-counter');
+    var empty = root.querySelector('.eh-empty');
+    var pager = root.querySelector('.eh-pager');
+    var pagerPrev = root.querySelector('.eh-pager-prev');
+    var pagerNext = root.querySelector('.eh-pager-next');
+    var pagerInfo = root.querySelector('.eh-pager-info');
+    if (!controls || !search || !unclaimedBox || !mentorBox || !counter || !empty
+        || !pager || !pagerPrev || !pagerNext || !pagerInfo) {
+      return;
+    }
+
+    var PAGE_SIZE = 12;
+    var page = 1;
+
+    function activeLabels() {
+      var labels = [];
+      chips.forEach(function (chip) {
+        if (chip.getAttribute('aria-pressed') === 'true') {
+          labels.push(chip.getAttribute('data-eh-label'));
+        }
+      });
+      return labels;
+    }
+
+    function cardMatches(card, query, onlyUnclaimed, needMentor, labels) {
+      if (query && (card.getAttribute('data-text') || '').indexOf(query) === -1) {
+        return false;
+      }
+      if (onlyUnclaimed && card.getAttribute('data-unclaimed') !== '1') {
+        return false;
+      }
+      if (needMentor && card.getAttribute('data-mentor') !== '1') {
+        return false;
+      }
+      if (labels.length > 0) {
+        var cardLabels = card.getAttribute('data-labels') || '';
+        var hasOne = false;
+        for (var i = 0; i < labels.length; i++) {
+          if (cardLabels.indexOf('|' + labels[i] + '|') !== -1) {
+            hasOne = true;
+            break;
+          }
+        }
+        if (!hasOne) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    function apply() {
+      var query = (search.value || '').trim().toLowerCase();
+      var onlyUnclaimed = unclaimedBox.checked;
+      var needMentor = mentorBox.checked;
+      var labels = activeLabels();
+      var matched = [];
+      cards.forEach(function (card) {
+        if (cardMatches(card, query, onlyUnclaimed, needMentor, labels)) {
+          matched.push(card);
+        } else {
+          card.hidden = true;
+        }
+      });
+
+      /* The matching cards are sliced into pages of PAGE_SIZE. */
+      var pageCount = Math.max(1, Math.ceil(matched.length / PAGE_SIZE));
+      if (page > pageCount) {
+        page = pageCount;
+      }
+      var start = (page - 1) * PAGE_SIZE;
+      var end = start + PAGE_SIZE;
+      matched.forEach(function (card, index) {
+        card.hidden = index < start || index >= end;
+      });
+
+      if (matched.length === 0) {
+        counter.textContent = 'Showing 0 of ' + cards.length + ' Easy Hacks';
+      } else {
+        counter.textContent = 'Showing ' + (start + 1) + '-'
+          + Math.min(end, matched.length) + ' of ' + matched.length + ' Easy Hacks';
+      }
+      empty.hidden = matched.length > 0;
+
+      pager.hidden = pageCount <= 1;
+      pagerInfo.textContent = 'Page ' + page + ' of ' + pageCount;
+      pagerPrev.disabled = page <= 1;
+      pagerNext.disabled = page >= pageCount;
+    }
+
+    /* A changed filter starts over from the first page of the new result set. */
+    function applyFromFilter() {
+      page = 1;
+      apply();
+    }
+
+    function goToPage(next) {
+      page = next;
+      apply();
+      controls.scrollIntoView({ block: 'start' });
+    }
+
+    search.addEventListener('input', applyFromFilter);
+    unclaimedBox.addEventListener('change', applyFromFilter);
+    mentorBox.addEventListener('change', applyFromFilter);
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var pressed = chip.getAttribute('aria-pressed') === 'true';
+        chip.setAttribute('aria-pressed', pressed ? 'false' : 'true');
+        applyFromFilter();
+      });
+    });
+    pagerPrev.addEventListener('click', function () {
+      if (page > 1) {
+        goToPage(page - 1);
+      }
+    });
+    pagerNext.addEventListener('click', function () {
+      goToPage(page + 1);
+    });
+
+    controls.removeAttribute('hidden');
+    apply();
+  }
+
+  toArray(document.querySelectorAll('.eh-board')).forEach(initBoard);
+})();
+</script>
+{{- else -}}
+<p class="eh-refresh-note" style="font-size: 0.9rem; color: #5f6b76; background: #faf8fc; border-left: 3px solid #5c2983; padding: 8px 12px;">
+  The Easy Hacks list is being refreshed. In the meantime you can browse the
+  <a href="https://github.com/CollaboraOnline/online/issues?q=is%3Aissue+is%3Aopen+label%3A%22Easy+Hack%22">open Easy Hack issues on GitHub</a>.
+</p>
+{{- end -}}
