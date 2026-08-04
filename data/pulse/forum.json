@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-03T05:57:17Z",
+  "generated_at": "2026-08-04T05:30:32Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 73,
-      "posts_30d": 177,
+      "active_users_30d": 75,
+      "posts_30d": 179,
       "top_topics_monthly": [
         {
           "posts": 12,
           "title": "=PY() + NumPy inside Collabora",
           "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
-          "views": 116
+          "views": 118
         },
         {
           "posts": 1,
@@ -21,30 +21,30 @@
           "posts": 3,
           "title": "IOS TestFligh 2604",
           "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 28
+          "views": 32
         },
         {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 46
+          "views": 47
         },
         {
-          "posts": 6,
-          "title": "Build of Collabore Office Classic fails in vcl/win/dtrans/FmtFilter",
-          "url": "https://forum.collaboraonline.com/t/build-of-collabore-office-classic-fails-in-vcl-win-dtrans-fmtfilter/4828",
-          "views": 51
+          "posts": 7,
+          "title": "Enabling languages causes 75+ second document loads",
+          "url": "https://forum.collaboraonline.com/t/enabling-languages-causes-75-second-document-loads/4813",
+          "views": 71
         }
       ],
       "topics_30d": 56,
-      "total_posts": 9949,
-      "total_topics": 2085
+      "total_posts": 9953,
+      "total_topics": 2086
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-04",
-    "to": "2026-08-03"
+    "from": "2026-07-05",
+    "to": "2026-08-04"
   },
   "source": "forum"
 }
