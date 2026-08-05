@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-04T05:30:23Z",
+  "generated_at": "2026-08-05T05:29:37Z",
   "metrics": {
     "active_authors_30d": 3,
     "commits_30d": 3,
     "easy_hacks_open": 73,
-    "forks": 1021,
+    "forks": 1020,
     "issues_closed_30d": 44,
-    "issues_opened_30d": 66,
-    "open_issues": 1000,
+    "issues_opened_30d": 64,
+    "open_issues": 1002,
     "open_prs": 4,
     "prs_merged_30d": 2,
     "prs_opened_30d": 4,
@@ -15,7 +15,7 @@
     "top_upvoted_open_issues": [
       {
         "number": 12438,
-        "thumbs_up": 18,
+        "thumbs_up": 19,
         "title": "Feature Request: Add Interactive Checkboxes to Calc",
         "url": "https://github.com/CollaboraOnline/online/issues/12438"
       },
@@ -47,8 +47,8 @@
   },
   "period": {
     "days": 30,
-    "from": "2026-07-05",
-    "to": "2026-08-04"
+    "from": "2026-07-06",
+    "to": "2026-08-05"
   },
   "source": "github"
 }
