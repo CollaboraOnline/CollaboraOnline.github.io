@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-05T05:29:46Z",
+  "generated_at": "2026-08-06T05:32:46Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 78,
-      "posts_30d": 183,
+      "active_users_30d": 76,
+      "posts_30d": 189,
       "top_topics_monthly": [
         {
           "posts": 12,
           "title": "=PY() + NumPy inside Collabora",
           "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
-          "views": 123
+          "views": 128
         },
         {
           "posts": 1,
@@ -21,13 +21,13 @@
           "posts": 3,
           "title": "IOS TestFligh 2604",
           "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 32
+          "views": 33
         },
         {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 47
+          "views": 48
         },
         {
           "posts": 6,
@@ -37,14 +37,14 @@
         }
       ],
       "topics_30d": 56,
-      "total_posts": 9962,
-      "total_topics": 2090
+      "total_posts": 9970,
+      "total_topics": 2091
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-06",
-    "to": "2026-08-05"
+    "from": "2026-07-07",
+    "to": "2026-08-06"
   },
   "source": "forum"
 }
