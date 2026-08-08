@@ -1,15 +1,21 @@
 {
-  "generated_at": "2026-08-07T04:36:52Z",
+  "generated_at": "2026-08-08T03:50:04Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 75,
-      "posts_30d": 187,
+      "posts_30d": 186,
       "top_topics_monthly": [
         {
           "posts": 12,
           "title": "=PY() + NumPy inside Collabora",
           "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
-          "views": 136
+          "views": 137
+        },
+        {
+          "posts": 10,
+          "title": "Calc on android no search/replace function",
+          "url": "https://forum.collaboraonline.com/t/calc-on-android-no-search-replace-function/4909",
+          "views": 35
         },
         {
           "posts": 1,
@@ -18,33 +24,27 @@
           "views": 32
         },
         {
-          "posts": 3,
-          "title": "IOS TestFligh 2604",
-          "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 33
-        },
-        {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 54
+          "views": 56
         },
         {
-          "posts": 6,
-          "title": "Build of Collabore Office Classic fails in vcl/win/dtrans/FmtFilter",
-          "url": "https://forum.collaboraonline.com/t/build-of-collabore-office-classic-fails-in-vcl-win-dtrans-fmtfilter/4828",
-          "views": 51
+          "posts": 4,
+          "title": "IOS TestFligh 2604",
+          "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
+          "views": 37
         }
       ],
-      "topics_30d": 51,
-      "total_posts": 9979,
-      "total_topics": 2093
+      "topics_30d": 50,
+      "total_posts": 9988,
+      "total_topics": 2095
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-08",
-    "to": "2026-08-07"
+    "from": "2026-07-09",
+    "to": "2026-08-08"
   },
   "source": "forum"
 }
