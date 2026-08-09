@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-08-08T03:50:04Z",
+  "generated_at": "2026-08-09T03:57:53Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 75,
-      "posts_30d": 186,
+      "active_users_30d": 74,
+      "posts_30d": 179,
       "top_topics_monthly": [
         {
           "posts": 12,
           "title": "=PY() + NumPy inside Collabora",
           "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
-          "views": 137
+          "views": 148
         },
         {
           "posts": 10,
           "title": "Calc on android no search/replace function",
           "url": "https://forum.collaboraonline.com/t/calc-on-android-no-search-replace-function/4909",
-          "views": 35
+          "views": 37
         },
         {
           "posts": 1,
           "title": "COOL TC meeting minutes: 2026-07-08",
           "url": "https://forum.collaboraonline.com/t/cool-tc-meeting-minutes-2026-07-08/4830",
-          "views": 32
+          "views": 40
         },
         {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 56
+          "views": 57
         },
         {
           "posts": 4,
           "title": "IOS TestFligh 2604",
           "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 37
+          "views": 38
         }
       ],
-      "topics_30d": 50,
-      "total_posts": 9988,
+      "topics_30d": 47,
+      "total_posts": 9990,
       "total_topics": 2095
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-09",
-    "to": "2026-08-08"
+    "from": "2026-07-10",
+    "to": "2026-08-09"
   },
   "source": "forum"
 }
