@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-10T04:12:44Z",
+  "generated_at": "2026-08-11T03:59:52Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 76,
-      "posts_30d": 177,
+      "active_users_30d": 79,
+      "posts_30d": 186,
       "top_topics_monthly": [
         {
           "posts": 12,
           "title": "=PY() + NumPy inside Collabora",
           "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
-          "views": 150
+          "views": 152
         },
         {
           "posts": 10,
@@ -21,7 +21,7 @@
           "posts": 4,
           "title": "Solved: Collabora CODE 26.04.2.2.1 (Docker) behind Nginx reverse proxy",
           "url": "https://forum.collaboraonline.com/t/solved-collabora-code-26-04-2-2-1-docker-behind-nginx-reverse-proxy/4894",
-          "views": 88
+          "views": 94
         },
         {
           "posts": 1,
@@ -30,21 +30,21 @@
           "views": 58
         },
         {
-          "posts": 4,
+          "posts": 5,
           "title": "IOS TestFligh 2604",
           "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 39
+          "views": 42
         }
       ],
-      "topics_30d": 48,
-      "total_posts": 9993,
-      "total_topics": 2097
+      "topics_30d": 49,
+      "total_posts": 10005,
+      "total_topics": 2099
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-11",
-    "to": "2026-08-10"
+    "from": "2026-07-12",
+    "to": "2026-08-11"
   },
   "source": "forum"
 }
