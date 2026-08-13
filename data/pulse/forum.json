@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-08-12T04:21:58Z",
+  "generated_at": "2026-08-13T04:25:13Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 80,
-      "posts_30d": 189,
+      "active_users_30d": 81,
+      "posts_30d": 184,
       "top_topics_monthly": [
-        {
-          "posts": 12,
-          "title": "=PY() + NumPy inside Collabora",
-          "url": "https://forum.collaboraonline.com/t/py-numpy-inside-collabora/4844",
-          "views": 153
-        },
         {
           "posts": 10,
           "title": "Calc on android no search/replace function",
@@ -21,30 +15,36 @@
           "posts": 4,
           "title": "Solved: Collabora CODE 26.04.2.2.1 (Docker) behind Nginx reverse proxy",
           "url": "https://forum.collaboraonline.com/t/solved-collabora-code-26-04-2-2-1-docker-behind-nginx-reverse-proxy/4894",
-          "views": 99
+          "views": 102
         },
         {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 59
+          "views": 61
         },
         {
           "posts": 5,
           "title": "IOS TestFligh 2604",
           "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 44
+          "views": 45
+        },
+        {
+          "posts": 7,
+          "title": "ERROR: file stalls at \"connecting\" when trying to open it",
+          "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
+          "views": 54
         }
       ],
-      "topics_30d": 48,
-      "total_posts": 10014,
-      "total_topics": 2101
+      "topics_30d": 49,
+      "total_posts": 10018,
+      "total_topics": 2103
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-13",
-    "to": "2026-08-12"
+    "from": "2026-07-14",
+    "to": "2026-08-13"
   },
   "source": "forum"
 }
