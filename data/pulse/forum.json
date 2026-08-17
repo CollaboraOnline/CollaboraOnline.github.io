@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-16T03:27:30Z",
+  "generated_at": "2026-08-17T03:28:04Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 83,
-      "posts_30d": 169,
+      "posts_30d": 168,
       "top_topics_monthly": [
         {
           "posts": 10,
           "title": "Calc on android no search/replace function",
           "url": "https://forum.collaboraonline.com/t/calc-on-android-no-search-replace-function/4909",
-          "views": 40
+          "views": 42
         },
         {
           "posts": 4,
           "title": "Solved: Collabora CODE 26.04.2.2.1 (Docker) behind Nginx reverse proxy",
           "url": "https://forum.collaboraonline.com/t/solved-collabora-code-26-04-2-2-1-docker-behind-nginx-reverse-proxy/4894",
-          "views": 108
+          "views": 110
         },
         {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 64
+          "views": 72
         },
         {
           "posts": 5,
@@ -33,18 +33,18 @@
           "posts": 7,
           "title": "ERROR: file stalls at \"connecting\" when trying to open it",
           "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
-          "views": 61
+          "views": 65
         }
       ],
       "topics_30d": 48,
-      "total_posts": 10036,
-      "total_topics": 2108
+      "total_posts": 10039,
+      "total_topics": 2109
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-17",
-    "to": "2026-08-16"
+    "from": "2026-07-18",
+    "to": "2026-08-17"
   },
   "source": "forum"
 }
