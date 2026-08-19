@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-08-18T03:23:08Z",
+  "generated_at": "2026-08-19T03:25:20Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": "smehrbrodt",
+        "comments": 3,
+        "created_at": "2024-12-21",
+        "labels": [
+          "bug",
+          "regression",
+          "24.04",
+          "25.04"
+        ],
+        "mentor": null,
+        "number": 10790,
+        "thumbs_up": 0,
+        "title": "Calc: light mode grid vs dark mode with inverted background grid",
+        "updated_at": "2026-08-18",
+        "url": "https://github.com/CollaboraOnline/online/issues/10790"
+      },
       {
         "assignee": null,
         "comments": 4,
@@ -390,21 +407,6 @@
       },
       {
         "assignee": null,
-        "comments": 9,
-        "created_at": "2021-01-30",
-        "labels": [
-          "enhancement",
-          "25.04"
-        ],
-        "mentor": null,
-        "number": 1371,
-        "thumbs_up": 0,
-        "title": "It is not possible to insert a hyperlink like mailto:email@address.com into a document",
-        "updated_at": "2026-02-19",
-        "url": "https://github.com/CollaboraOnline/online/issues/1371"
-      },
-      {
-        "assignee": null,
         "comments": 2,
         "created_at": "2026-01-20",
         "labels": [
@@ -444,23 +446,6 @@
         "title": "A11y: Replace all <div role=\"button\"> usages with semantic <button> elements",
         "updated_at": "2026-01-01",
         "url": "https://github.com/CollaboraOnline/online/issues/12017"
-      },
-      {
-        "assignee": null,
-        "comments": 3,
-        "created_at": "2024-12-21",
-        "labels": [
-          "bug",
-          "regression",
-          "24.04",
-          "25.04"
-        ],
-        "mentor": null,
-        "number": 10790,
-        "thumbs_up": 0,
-        "title": "Calc: light mode grid vs dark mode with inverted background grid",
-        "updated_at": "2025-12-31",
-        "url": "https://github.com/CollaboraOnline/online/issues/10790"
       },
       {
         "assignee": null,
@@ -1061,20 +1046,6 @@
       },
       {
         "assignee": null,
-        "comments": 0,
-        "created_at": "2022-02-10",
-        "labels": [
-          "Hacktoberfest"
-        ],
-        "mentor": "@lpranam",
-        "number": 4159,
-        "thumbs_up": 0,
-        "title": "Drop IE11 support",
-        "updated_at": "2023-10-18",
-        "url": "https://github.com/CollaboraOnline/online/issues/4159"
-      },
-      {
-        "assignee": null,
         "comments": 4,
         "created_at": "2022-10-19",
         "labels": [
@@ -1089,7 +1060,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 73
+    "total_open": 71
   },
   "source": "easyhacks"
 }
