@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-20T03:24:57Z",
+  "generated_at": "2026-08-21T03:29:52Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 89,
-      "posts_30d": 172,
+      "active_users_30d": 91,
+      "posts_30d": 169,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -15,13 +15,13 @@
           "posts": 4,
           "title": "Solved: Collabora CODE 26.04.2.2.1 (Docker) behind Nginx reverse proxy",
           "url": "https://forum.collaboraonline.com/t/solved-collabora-code-26-04-2-2-1-docker-behind-nginx-reverse-proxy/4894",
-          "views": 118
+          "views": 122
         },
         {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 76
+          "views": 77
         },
         {
           "posts": 5,
@@ -33,18 +33,18 @@
           "posts": 7,
           "title": "ERROR: file stalls at \"connecting\" when trying to open it",
           "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
-          "views": 69
+          "views": 70
         }
       ],
-      "topics_30d": 45,
-      "total_posts": 10049,
-      "total_topics": 2111
+      "topics_30d": 44,
+      "total_posts": 10054,
+      "total_topics": 2113
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-21",
-    "to": "2026-08-20"
+    "from": "2026-07-22",
+    "to": "2026-08-21"
   },
   "source": "forum"
 }
