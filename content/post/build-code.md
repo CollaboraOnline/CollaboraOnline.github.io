@@ -26,6 +26,8 @@ Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operatin
 
 **Where the code lives.** Development happens on [Gerrit](https://gerrit.collaboraoffice.com/), which is where code review takes place and where the canonical history lives. GitHub hosts a read-only mirror of the monorepo (online plus the engine under `engine/`) at [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror) for browsing, cloning, and GitHub Actions. The original [`CollaboraOnline/online`](https://github.com/CollaboraOnline/online) repo is now used only for the issue tracker, so existing `cool#1234` references in commit messages keep working. Pull requests against either GitHub repo are auto-closed; see the FAQ entries [What is `online.mirror`?]({{< relref "faq.md#online-mirror" >}}) and [I have a fix - where do I send the PR?]({{< relref "faq.md#sending-fixes" >}}) for the contribution workflow.
 
+**Compiler requirement.** Building CODE needs a C++ compiler with full C++20 support, including `std::format`: GCC 13 or newer (or Clang 17 or newer). The code uses `std::format`, which the GNU C++ standard library only provides from GCC 13 on, so builds with GCC 12 or older fail. The distribution sections below say how to get a new enough compiler where the default one is too old.
+
 {{< build-dropdown >}}<br>
 
 <section id="build-code-clone-script" class="build-code-content">
@@ -69,6 +71,12 @@ zypper in libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-
 zypper in libpng16-compat-devel
 ```
 
+The default gcc on Leap 15.x is older than GCC 13, which the build requires. Install the newer compiler packages, plus ccache for faster rebuilds:
+```bash
+zypper in gcc13 gcc13-c++ ccache
+```
+The configure line below then selects this compiler as `gcc-13` and `g++-13`.
+
 ### Clone the source
 Clone the unified `online` monorepo from Gerrit:
 
@@ -80,7 +88,7 @@ Clone the unified `online` monorepo from Gerrit:
 ### Building CODE
 Run autoconf/automake, configure and build using GNU make:
 
-{{% common-build-commands section="build-online" %}}
+{{% common-build-commands section="build-online" cc="gcc-13" cxx="g++-13" %}}
 
 {{% common-build-commands section="run-unit-tests" %}}
 
@@ -96,6 +104,8 @@ Run autoconf/automake, configure and build using GNU make:
 
 The instructions below have been prepared for and tested on Fedora 37. You might need to do small adjustments for Fedora-based distributions.
 
+The build requires GCC 13 or newer. Fedora ships GCC 13 as its system compiler since Fedora 38, so use Fedora 38 or a later release.
+
 ### Dependencies
 We need the engine and several other libraries and tools to build `CODE`. POCO is built as part of the engine and taken from its workdir, so it is not a separate dependency.
 
@@ -103,6 +113,7 @@ Open a terminal and follow the steps below:
 
 ```bash
 sudo dnf install \
+    ccache \
     chromium \
     cppunit-devel \
     gcc \
@@ -152,8 +163,10 @@ We need the engine and several other libraries and tools to build `CODE`. POCO i
 
 Open a terminal and follow the steps below:
 ```bash
-sudo pacman -Syu libcap libcap-ng lib32-libcap libpng cppunit nodejs npm chromium python-lxml python-polib
+sudo pacman -Syu ccache libcap libcap-ng lib32-libcap libpng cppunit nodejs npm chromium python-lxml python-polib
 ```
+
+The build requires GCC 13 or newer. Arch is a rolling release and its current `gcc` package is well past that, so the default compiler is fine.
 
 ### Clone the source
 Clone the unified `online` monorepo from Gerrit:
@@ -182,6 +195,8 @@ Run autoconf/automake, configure and build using GNU make:
 The instructions below have been prepared for and tested on Debian GNU/Linux 11 (bullseye). You might need to do small
 adjustments for other releases.
 
+The build requires GCC 13 or newer. Debian 13 (trixie) ships GCC 14 as its default compiler, so use Debian 13 or a later release. Debian 12 and older default to GCC 12 or older and do not carry a gcc-13 package, so they cannot build the current code.
+
 
 *Note: Sometimes Debian comes without sudo preinstalled. If you do not have sudo, you will need to run `apt install -y sudo` as root. It is not good enough to only run the commands which require sudo below as root, as sudo is also run during `make`*
 
@@ -199,7 +214,7 @@ Now install the rest of the required packages:
 sudo apt install -y python3-polib libcap-dev npm \
                     libpam-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libcppunit-dev \
-                    pkg-config fontconfig chromium
+                    pkg-config fontconfig chromium ccache
 ```
 
 ### Clone the source
@@ -229,6 +244,8 @@ Run autoconf/automake, configure and build using GNU make:
 The instructions below have been prepared for and tested on Ubuntu 20.04 LTS. You might need to do small
 adjustments for other releases.
 
+The build requires GCC 13 or newer. Ubuntu ships GCC 13 as its default compiler since 24.04 LTS, so use Ubuntu 24.04 LTS or a later release. On an older release, install the `gcc-13` and `g++-13` packages if your release provides them and pass `CC="ccache gcc-13" CXX="ccache g++-13"` to configure instead of the plain compiler names.
+
 ### Dependencies
 We need the engine and several other libraries and tools to build `CODE`. POCO is built as part of the engine and taken from its workdir, so it is not a separate dependency. Open a terminal and follow the steps below.
 
@@ -243,7 +260,7 @@ Now install the rest of the required packages:
 sudo apt install -y python3-polib libcap-dev libssl-dev npm \
                     libpam-dev libzstd-dev wget git build-essential libtool \
                     libcap2-bin python3-lxml libpng-dev libgif-dev libcppunit-dev \
-                    pkg-config fontconfig snapd chromium-browser
+                    pkg-config fontconfig snapd chromium-browser ccache
 ```
 
 *Note: Chromium is needed and used in the cypress tests. Ubuntu has no Chromium deb packages in its repositories, only a dummy package that points to the respective snap. Probably best to make sure you have snapd installed and install chromium-browser which in turn will install the snap package.*
@@ -297,10 +314,14 @@ Online, configuring your build and running your newly-built CODE.
 
 CODE must be built on Linux, and you need the following:
 
+* A C++ compiler with full C++20 support, including `std::format`: GCC 13 or newer
+  + If your distribution's default gcc is older than 13, install a versioned package such as `gcc-13` and `g++-13` and pass `CC` and `CXX` to configure as shown below
 * The engine
   + Either build the engine from source, or download a daily built archive (see below)
 * libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
   + Use the packages from your distro
+* ccache
+  + Optional: caches compilation results so rebuilds are much faster; the sample configure line below uses it
 
 You may also want to have the following optional dependencies:
 
