@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-22T03:20:35Z",
+  "generated_at": "2026-08-23T03:29:42Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 91,
-      "posts_30d": 177,
+      "posts_30d": 169,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -15,19 +15,19 @@
           "posts": 4,
           "title": "Solved: Collabora CODE 26.04.2.2.1 (Docker) behind Nginx reverse proxy",
           "url": "https://forum.collaboraonline.com/t/solved-collabora-code-26-04-2-2-1-docker-behind-nginx-reverse-proxy/4894",
-          "views": 123
+          "views": 124
         },
         {
           "posts": 1,
           "title": "COOL 26.04 is here!",
           "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 78
+          "views": 80
         },
         {
           "posts": 5,
           "title": "IOS TestFligh 2604",
           "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 55
+          "views": 56
         },
         {
           "posts": 7,
@@ -37,14 +37,14 @@
         }
       ],
       "topics_30d": 46,
-      "total_posts": 10068,
-      "total_topics": 2118
+      "total_posts": 10084,
+      "total_topics": 2121
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-23",
-    "to": "2026-08-22"
+    "from": "2026-07-24",
+    "to": "2026-08-23"
   },
   "source": "forum"
 }
