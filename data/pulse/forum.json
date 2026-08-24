@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T03:29:42Z",
+  "generated_at": "2026-08-24T03:31:26Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 91,
-      "posts_30d": 169,
+      "active_users_30d": 90,
+      "posts_30d": 163,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -15,7 +15,7 @@
           "posts": 4,
           "title": "Solved: Collabora CODE 26.04.2.2.1 (Docker) behind Nginx reverse proxy",
           "url": "https://forum.collaboraonline.com/t/solved-collabora-code-26-04-2-2-1-docker-behind-nginx-reverse-proxy/4894",
-          "views": 124
+          "views": 126
         },
         {
           "posts": 1,
@@ -37,14 +37,14 @@
         }
       ],
       "topics_30d": 46,
-      "total_posts": 10084,
-      "total_topics": 2121
+      "total_posts": 10085,
+      "total_topics": 2122
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-24",
-    "to": "2026-08-23"
+    "from": "2026-07-25",
+    "to": "2026-08-24"
   },
   "source": "forum"
 }
