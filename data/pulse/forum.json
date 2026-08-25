@@ -1,27 +1,15 @@
 {
-  "generated_at": "2026-08-24T03:31:26Z",
+  "generated_at": "2026-08-25T03:26:23Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 90,
-      "posts_30d": 163,
+      "active_users_30d": 89,
+      "posts_30d": 162,
       "top_topics_monthly": [
         {
           "posts": 10,
           "title": "Calc on android no search/replace function",
           "url": "https://forum.collaboraonline.com/t/calc-on-android-no-search-replace-function/4909",
           "views": 44
-        },
-        {
-          "posts": 4,
-          "title": "Solved: Collabora CODE 26.04.2.2.1 (Docker) behind Nginx reverse proxy",
-          "url": "https://forum.collaboraonline.com/t/solved-collabora-code-26-04-2-2-1-docker-behind-nginx-reverse-proxy/4894",
-          "views": 126
-        },
-        {
-          "posts": 1,
-          "title": "COOL 26.04 is here!",
-          "url": "https://forum.collaboraonline.com/t/cool-26-04-is-here/4893",
-          "views": 80
         },
         {
           "posts": 5,
@@ -33,18 +21,30 @@
           "posts": 7,
           "title": "ERROR: file stalls at \"connecting\" when trying to open it",
           "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
-          "views": 70
+          "views": 74
+        },
+        {
+          "posts": 7,
+          "title": "Cannot run presentation in office build from online/engine",
+          "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
+          "views": 47
+        },
+        {
+          "posts": 3,
+          "title": "Cannot login to Nextcloud with Firefox, but works with Chrome",
+          "url": "https://forum.collaboraonline.com/t/cannot-login-to-nextcloud-with-firefox-but-works-with-chrome/4912",
+          "views": 53
         }
       ],
-      "topics_30d": 46,
-      "total_posts": 10085,
-      "total_topics": 2122
+      "topics_30d": 47,
+      "total_posts": 10090,
+      "total_topics": 2123
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-25",
-    "to": "2026-08-24"
+    "from": "2026-07-26",
+    "to": "2026-08-25"
   },
   "source": "forum"
 }
