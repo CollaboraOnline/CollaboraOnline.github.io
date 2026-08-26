@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-25T03:26:23Z",
+  "generated_at": "2026-08-26T03:33:08Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 89,
-      "posts_30d": 162,
+      "active_users_30d": 90,
+      "posts_30d": 161,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -33,18 +33,18 @@
           "posts": 3,
           "title": "Cannot login to Nextcloud with Firefox, but works with Chrome",
           "url": "https://forum.collaboraonline.com/t/cannot-login-to-nextcloud-with-firefox-but-works-with-chrome/4912",
-          "views": 53
+          "views": 58
         }
       ],
-      "topics_30d": 47,
-      "total_posts": 10090,
-      "total_topics": 2123
+      "topics_30d": 46,
+      "total_posts": 10091,
+      "total_topics": 2124
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-26",
-    "to": "2026-08-25"
+    "from": "2026-07-27",
+    "to": "2026-08-26"
   },
   "source": "forum"
 }
