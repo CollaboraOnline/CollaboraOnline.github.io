@@ -21,6 +21,13 @@ showimage = false
 A great way to get in touch, ask anything or get mentoring is through one of our official channels. . .
 <!--more-->
 ---
+## COOLFest 2026
+* 🎉 5 September - 4 October: a month of daily community calls
+* 📅 Every day, weekends included
+* 🕙 12:30 UTC [(convert to your local time)](https://www.timeanddate.com/worldclock/fixedtime.html?hour=12&min=30&sec=0)
+* 💬 https://meet.jit.si/COOLFest
+* 🚀 No registration - just join the call, pick an [Easy Hack]({{< relref "easyhacks" >}} "Easy Hacks"), set up your own COOL instance, try integrating COOL with different tools, and enjoy the open source fun!
+
 ## COOL meeting
 * 📅 Every Thursday
 * 🕙 ~ {{< dst tm="12:00" >}} [(convert to your local time)](http://www.timebie.com/std/centraleuropeansummer.php?q=12)
