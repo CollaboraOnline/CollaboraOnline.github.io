@@ -76,10 +76,12 @@
   content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-cooldays-cta.svg');
+  background: url('/images/circle-coolfest-cta.svg');
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 182px auto;
+  border: 1px solid #5c2983;
   border-radius: 182px;
   margin-bottom: -100px;
   position: relative;
@@ -104,7 +106,7 @@
 }
 
 #img-container-cta:hover::after {
-  content: 'COOL Days 2026';
+  content: 'COOLFest 2026';
   text-align: center;
   display: block;
   font-weight: bold;
@@ -116,7 +118,7 @@
 }
 
 #img-container-cta:hover::before {
-  content: 'Watch it on';
+  content: 'Join';
   text-align: center;
   display: block;
   font-weight: bold;
