@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T03:33:11Z",
+  "generated_at": "2026-08-27T12:58:51Z",
   "metrics": {
     "issues": [
       {
@@ -967,24 +967,6 @@
       },
       {
         "assignee": null,
-        "comments": 1,
-        "created_at": "2023-10-21",
-        "labels": [
-          "bug",
-          "Hacktoberfest",
-          "UX",
-          "app: android",
-          "dark-mode"
-        ],
-        "mentor": null,
-        "number": 7503,
-        "thumbs_up": 0,
-        "title": "Android: Dark Mode \"Menu Selection\" = Light-on-Light Highlight+Text",
-        "updated_at": "2024-10-14",
-        "url": "https://github.com/CollaboraOnline/online/issues/7503"
-      },
-      {
-        "assignee": null,
         "comments": 10,
         "created_at": "2023-11-23",
         "labels": [
@@ -1031,7 +1013,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 69
+    "total_open": 68
   },
   "source": "easyhacks"
 }

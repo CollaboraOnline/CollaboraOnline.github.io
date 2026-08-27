@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-26T03:33:08Z",
+  "generated_at": "2026-08-27T12:58:48Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 90,
-      "posts_30d": 161,
+      "active_users_30d": 92,
+      "posts_30d": 163,
       "top_topics_monthly": [
         {
           "posts": 10,
           "title": "Calc on android no search/replace function",
           "url": "https://forum.collaboraonline.com/t/calc-on-android-no-search-replace-function/4909",
-          "views": 44
+          "views": 48
         },
         {
           "posts": 5,
@@ -27,7 +27,7 @@
           "posts": 7,
           "title": "Cannot run presentation in office build from online/engine",
           "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
-          "views": 47
+          "views": 48
         },
         {
           "posts": 3,
@@ -36,15 +36,15 @@
           "views": 58
         }
       ],
-      "topics_30d": 46,
-      "total_posts": 10091,
-      "total_topics": 2124
+      "topics_30d": 48,
+      "total_posts": 10095,
+      "total_topics": 2126
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-27",
-    "to": "2026-08-26"
+    "from": "2026-07-28",
+    "to": "2026-08-27"
   },
   "source": "forum"
 }
