@@ -1,7 +1,343 @@
 {
-  "generated_at": "2026-08-27T12:58:51Z",
+  "generated_at": "2026-08-28T14:30:09Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "CSS",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16140,
+        "thumbs_up": 0,
+        "title": "Replace hardcoded colour literals in jsdialogs.css with palette tokens",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16140"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "CSS",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16135,
+        "thumbs_up": 0,
+        "title": "Styles gallery in the notebookbar clips its rows and style names",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16135"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "C++",
+          "accessibility",
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16133,
+        "thumbs_up": 0,
+        "title": "a11y: border preset and shadow pickers have no accessible name",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16133"
+      },
+      {
+        "assignee": null,
+        "comments": 1,
+        "created_at": "2026-08-28",
+        "labels": [
+          "accessibility",
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16132,
+        "thumbs_up": 0,
+        "title": "a11y: Special Characters grid cells have no accessible name",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16132"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "C++",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16153,
+        "thumbs_up": 0,
+        "title": "Import the DrawingML image effects that the exporter already writes",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16153"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "C++",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16152,
+        "thumbs_up": 0,
+        "title": "Replace the legacy OSL_ENSURE calls in the DrawingML colour code with SAL_WARN",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16152"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "C++",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16151,
+        "thumbs_up": 0,
+        "title": "Make LangUtil::isRtlLanguage inline, drop its dead branch, and add a test",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16151"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "C++",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16150,
+        "thumbs_up": 0,
+        "title": "Use the NumUtil helpers instead of std::atoi and std::stoi",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16150"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "C++",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16149,
+        "thumbs_up": 0,
+        "title": "Cast to unsigned char before calling the cctype functions",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16149"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "testing",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16148,
+        "thumbs_up": 0,
+        "title": "Make the no-get-contains-chain lint rule cover cy.cGet()",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16148"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "testing",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16147,
+        "thumbs_up": 0,
+        "title": "Re-enable the six skipped insert field tests in the Impress insertion wizard",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16147"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "testing",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16146,
+        "thumbs_up": 0,
+        "title": "Fix the stale spec paths in the Cypress README",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16146"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16145,
+        "thumbs_up": 0,
+        "title": "The listbox widget ignores the hidden property that other widgets honour",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16145"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "JavaScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16144,
+        "thumbs_up": 0,
+        "title": "Remove dead Leaflet-era modules and globals from browser/src",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16144"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16143,
+        "thumbs_up": 0,
+        "title": "Declare SlideShow once in global.d.ts instead of in every slideshow file",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16143"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16142,
+        "thumbs_up": 0,
+        "title": "Convert browser/src/errormessages.js to TypeScript",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16142"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "CSS",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16141,
+        "thumbs_up": 0,
+        "title": "Finish the migration to logical CSS properties in jsdialogs.css",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16141"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16139,
+        "thumbs_up": 0,
+        "title": "Replace deprecated numeric event.keyCode comparisons with event.key",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16139"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "accessibility",
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16138,
+        "thumbs_up": 0,
+        "title": "a11y: Home and End in the dialog tab rail move focus without switching tab",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16138"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "accessibility",
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16137,
+        "thumbs_up": 0,
+        "title": "a11y: snackbar messages are not announced by screen readers",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16137"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "accessibility",
+          "TypeScript",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16136,
+        "thumbs_up": 0,
+        "title": "a11y: menubuttons report themselves as disabled when they are enabled",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16136"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-08-28",
+        "labels": [
+          "CSS",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16134,
+        "thumbs_up": 0,
+        "title": "Define the missing --color-primary-rgb custom property",
+        "updated_at": "2026-08-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16134"
+      },
       {
         "assignee": null,
         "comments": 4,
@@ -1013,7 +1349,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 68
+    "total_open": 90
   },
   "source": "easyhacks"
 }
