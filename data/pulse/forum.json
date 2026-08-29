@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-28T14:30:06Z",
+  "generated_at": "2026-08-29T09:16:27Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 101,
-      "posts_30d": 164,
+      "active_users_30d": 100,
+      "posts_30d": 162,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -15,19 +15,19 @@
           "posts": 5,
           "title": "IOS TestFligh 2604",
           "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 57
+          "views": 58
         },
         {
           "posts": 7,
           "title": "ERROR: file stalls at \"connecting\" when trying to open it",
           "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
-          "views": 74
+          "views": 75
         },
         {
           "posts": 7,
           "title": "Cannot run presentation in office build from online/engine",
           "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
-          "views": 49
+          "views": 56
         },
         {
           "posts": 3,
@@ -37,14 +37,14 @@
         }
       ],
       "topics_30d": 47,
-      "total_posts": 10101,
+      "total_posts": 10103,
       "total_topics": 2127
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-29",
-    "to": "2026-08-28"
+    "from": "2026-07-30",
+    "to": "2026-08-29"
   },
   "source": "forum"
 }

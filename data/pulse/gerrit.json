@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-08-28T14:30:03Z",
+  "generated_at": "2026-08-29T09:16:24Z",
   "metrics": {
-    "merged_30d": 1633,
-    "open_active": 298,
-    "open_unreviewed": 231,
+    "merged_30d": 1603,
+    "open_active": 295,
+    "open_unreviewed": 235,
     "top_authors_30d": [
       {
-        "merged": 169,
+        "merged": 160,
         "name": "Mike Kaganski"
       },
       {
-        "merged": 151,
+        "merged": 146,
         "name": "Stephan Bergmann"
       },
       {
-        "merged": 129,
+        "merged": 126,
         "name": "Noel Grandin"
+      },
+      {
+        "merged": 118,
+        "name": "Caolán McNamara"
       },
       {
         "merged": 117,
         "name": "Andras Timar"
-      },
-      {
-        "merged": 114,
-        "name": "Caolán McNamara"
       }
     ]
   },
@@ -33,8 +33,8 @@
   ],
   "period": {
     "days": 30,
-    "from": "2026-07-29",
-    "to": "2026-08-28"
+    "from": "2026-07-30",
+    "to": "2026-08-29"
   },
   "source": "gerrit"
 }
