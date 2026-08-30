@@ -1,21 +1,15 @@
 {
-  "generated_at": "2026-08-29T09:16:27Z",
+  "generated_at": "2026-08-30T08:28:00Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 100,
-      "posts_30d": 162,
+      "posts_30d": 161,
       "top_topics_monthly": [
         {
           "posts": 10,
           "title": "Calc on android no search/replace function",
           "url": "https://forum.collaboraonline.com/t/calc-on-android-no-search-replace-function/4909",
           "views": 48
-        },
-        {
-          "posts": 5,
-          "title": "IOS TestFligh 2604",
-          "url": "https://forum.collaboraonline.com/t/ios-testfligh-2604/4904",
-          "views": 58
         },
         {
           "posts": 7,
@@ -30,21 +24,27 @@
           "views": 56
         },
         {
+          "posts": 6,
+          "title": "Cannot build CODA",
+          "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
+          "views": 51
+        },
+        {
           "posts": 3,
           "title": "Cannot login to Nextcloud with Firefox, but works with Chrome",
           "url": "https://forum.collaboraonline.com/t/cannot-login-to-nextcloud-with-firefox-but-works-with-chrome/4912",
           "views": 58
         }
       ],
-      "topics_30d": 47,
+      "topics_30d": 46,
       "total_posts": 10103,
       "total_topics": 2127
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-30",
-    "to": "2026-08-29"
+    "from": "2026-07-31",
+    "to": "2026-08-30"
   },
   "source": "forum"
 }
