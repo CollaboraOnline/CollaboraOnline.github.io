@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-30T08:28:00Z",
+  "generated_at": "2026-08-31T08:48:44Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 100,
-      "posts_30d": 161,
+      "active_users_30d": 99,
+      "posts_30d": 165,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -15,36 +15,36 @@
           "posts": 7,
           "title": "ERROR: file stalls at \"connecting\" when trying to open it",
           "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
-          "views": 75
+          "views": 77
         },
         {
           "posts": 7,
           "title": "Cannot run presentation in office build from online/engine",
           "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
-          "views": 56
+          "views": 60
         },
         {
-          "posts": 6,
+          "posts": 8,
           "title": "Cannot build CODA",
           "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
-          "views": 51
+          "views": 60
         },
         {
           "posts": 3,
           "title": "Cannot login to Nextcloud with Firefox, but works with Chrome",
           "url": "https://forum.collaboraonline.com/t/cannot-login-to-nextcloud-with-firefox-but-works-with-chrome/4912",
-          "views": 58
+          "views": 59
         }
       ],
-      "topics_30d": 46,
-      "total_posts": 10103,
-      "total_topics": 2127
+      "topics_30d": 48,
+      "total_posts": 10107,
+      "total_topics": 2129
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-07-31",
-    "to": "2026-08-30"
+    "from": "2026-08-01",
+    "to": "2026-08-31"
   },
   "source": "forum"
 }
