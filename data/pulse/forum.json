@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-31T08:48:44Z",
+  "generated_at": "2026-09-01T07:56:05Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 99,
-      "posts_30d": 165,
+      "posts_30d": 167,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -27,7 +27,7 @@
           "posts": 8,
           "title": "Cannot build CODA",
           "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
-          "views": 60
+          "views": 62
         },
         {
           "posts": 3,
@@ -37,14 +37,14 @@
         }
       ],
       "topics_30d": 48,
-      "total_posts": 10107,
+      "total_posts": 10109,
       "total_topics": 2129
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-01",
-    "to": "2026-08-31"
+    "from": "2026-08-02",
+    "to": "2026-09-01"
   },
   "source": "forum"
 }
