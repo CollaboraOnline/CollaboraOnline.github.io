@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-01T07:56:09Z",
+  "generated_at": "2026-09-02T07:15:26Z",
   "metrics": {
     "issues": [
       {
-        "assignee": "Zewang0217",
-        "comments": 3,
-        "created_at": "2026-08-28",
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-09-01",
         "labels": [
-          "TypeScript",
+          "performance",
           "26.04"
         ],
-        "mentor": "@Darshan-upadhyay1110",
-        "number": 16142,
+        "mentor": "@mikekaganski",
+        "number": 16170,
         "thumbs_up": 0,
-        "title": "Convert browser/src/errormessages.js to TypeScript",
+        "title": "Optimize taking start and end of SwPaM in sw",
         "updated_at": "2026-09-01",
-        "url": "https://github.com/CollaboraOnline/online/issues/16142"
+        "url": "https://github.com/CollaboraOnline/online/issues/16170"
       },
       {
         "assignee": null,
@@ -725,20 +725,6 @@
         "url": "https://github.com/CollaboraOnline/online/issues/13693"
       },
       {
-        "assignee": null,
-        "comments": 2,
-        "created_at": "2026-01-20",
-        "labels": [
-          "25.04"
-        ],
-        "mentor": "@tml1024",
-        "number": 14140,
-        "thumbs_up": 0,
-        "title": "Rename window.mode.isMobile() to window.mode.isSmallScreenDevice()",
-        "updated_at": "2026-02-07",
-        "url": "https://github.com/CollaboraOnline/online/issues/14140"
-      },
-      {
         "assignee": "omkarhole",
         "comments": 9,
         "created_at": "2025-12-02",
@@ -838,20 +824,6 @@
         "title": "Rewrite removeFile in common/FileUtil-unix.cpp to use std::filesystem",
         "updated_at": "2025-11-28",
         "url": "https://github.com/CollaboraOnline/online/issues/13334"
-      },
-      {
-        "assignee": null,
-        "comments": 4,
-        "created_at": "2025-11-07",
-        "labels": [
-          "25.04"
-        ],
-        "mentor": "@Darshan-upadhyay1110",
-        "number": 13389,
-        "thumbs_up": 0,
-        "title": "Sheet view options icon missing for dark mode theme",
-        "updated_at": "2025-11-24",
-        "url": "https://github.com/CollaboraOnline/online/issues/13389"
       },
       {
         "assignee": "KirtiGautam620",
@@ -1349,7 +1321,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 90
+    "total_open": 88
   },
   "source": "easyhacks"
 }

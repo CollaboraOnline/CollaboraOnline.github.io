@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-01T07:56:05Z",
+  "generated_at": "2026-09-02T07:15:23Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 99,
-      "posts_30d": 167,
+      "active_users_30d": 98,
+      "posts_30d": 166,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -21,30 +21,30 @@
           "posts": 7,
           "title": "Cannot run presentation in office build from online/engine",
           "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
-          "views": 60
+          "views": 61
         },
         {
           "posts": 8,
           "title": "Cannot build CODA",
           "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
-          "views": 62
+          "views": 63
         },
         {
           "posts": 3,
           "title": "Cannot login to Nextcloud with Firefox, but works with Chrome",
           "url": "https://forum.collaboraonline.com/t/cannot-login-to-nextcloud-with-firefox-but-works-with-chrome/4912",
-          "views": 59
+          "views": 60
         }
       ],
-      "topics_30d": 48,
-      "total_posts": 10109,
-      "total_topics": 2129
+      "topics_30d": 46,
+      "total_posts": 10114,
+      "total_topics": 2131
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-02",
-    "to": "2026-09-01"
+    "from": "2026-08-03",
+    "to": "2026-09-02"
   },
   "source": "forum"
 }
