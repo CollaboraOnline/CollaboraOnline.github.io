@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-02T07:15:23Z",
+  "generated_at": "2026-09-03T07:18:57Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 98,
-      "posts_30d": 166,
+      "active_users_30d": 99,
+      "posts_30d": 169,
       "top_topics_monthly": [
         {
           "posts": 10,
@@ -15,7 +15,7 @@
           "posts": 7,
           "title": "ERROR: file stalls at \"connecting\" when trying to open it",
           "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
-          "views": 77
+          "views": 79
         },
         {
           "posts": 7,
@@ -27,7 +27,7 @@
           "posts": 8,
           "title": "Cannot build CODA",
           "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
-          "views": 63
+          "views": 66
         },
         {
           "posts": 3,
@@ -36,15 +36,15 @@
           "views": 60
         }
       ],
-      "topics_30d": 46,
-      "total_posts": 10114,
-      "total_topics": 2131
+      "topics_30d": 48,
+      "total_posts": 10121,
+      "total_topics": 2134
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-03",
-    "to": "2026-09-02"
+    "from": "2026-08-04",
+    "to": "2026-09-03"
   },
   "source": "forum"
 }
