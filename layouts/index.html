@@ -7,6 +7,22 @@
                 {{ if .Site.Params.homepageCAT -}}
                   <a href="{{ "post/communicate/" | relURL }}#coolfest-2026" id="img-container-cta"></a>
                 {{- end -}}
+                {{- if .Site.Params.homepageVideo -}}
+                <div class="homepage-image homepage-image-device">
+                  {{- /* CSS frame, so any clip sits in it whole. */ -}}
+                  <div class="device">
+                    <div class="device-lid">
+                      <video class="device-screen" id="home-video"
+                             poster="{{ .Site.Params.homepageVideoPoster | relURL }}"
+                             muted loop playsinline preload="none"
+                             aria-label="Editing a document in Collabora Online Writer">
+                        <source src="{{ .Site.Params.homepageVideo | relURL }}" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="device-base"></div>
+                  </div>
+                </div>
+                {{- else -}}
                 <div class="homepage-image">
                   {{- with .Site.Params.homepageImageLaptop -}}
                     <img src="{{ . | relURL }}" class="img-fluid home-laptop">
@@ -15,6 +31,7 @@
                     <img src="{{ . | relURL }}" class="img-fluid home-screenshot">
                   {{- end -}}
                 </div>
+                {{- end -}}
 
             <h1 class="display-4">{{ .Site.Params.subtitle }}</h1>
               {{- with .Site.Params.description -}}
