@@ -1,0 +1,39 @@
+name: Refresh the last merged change on the homepage
+
+# Refreshes only recent.json, more often than the nightly Pulse run. Every
+# push to master redeploys, so three hours is the trade against deploy noise.
+
+on:
+  schedule:
+    - cron: '20 */3 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh-recent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout IO repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GENERATE_CONTRIBUTORS }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Fetch the most recent merges
+        run: python3 scripts/pulse/fetch_recent.py
+
+      - name: Commit and push when the newest merge changed
+        run: |
+          git config user.name "Darshan-upadhyay1110"
+          git config user.email "darshan.upadhyay@collabora.com"
+          git add data/pulse/recent.json
+          if git diff --quiet --cached; then
+            echo "No new merges since the last run"
+          else
+            git commit -m "Update the last merged change on the homepage" --signoff
+            git push https://x-access-token:${{ secrets.GENERATE_CONTRIBUTORS }}@github.com/CollaboraOnline/CollaboraOnline.github.io.git HEAD:master
+          fi

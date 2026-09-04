@@ -20,7 +20,8 @@ import pulse_common as pc
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-FETCHERS = ['github', 'gerrit', 'forum', 'weblate', 'docker', 'easyhacks']
+FETCHERS = ['github', 'gerrit', 'forum', 'weblate', 'docker', 'easyhacks',
+            'recent']
 
 HISTORY_PATH = os.path.join(pc.DATA_DIR, 'history.json')
 
