@@ -1,0 +1,187 @@
+{{- /* Next call from data/meetings.yaml, last merge from data/pulse/recent.json.
+  Both render server-side; the script only restates them in local time. */ -}}
+
+{{- $recentFile := index .Site.Data.pulse "recent" | default dict -}}
+{{- $changes := index ($recentFile.metrics | default dict) "changes" | default slice -}}
+{{- $newest := index $changes 0 -}}
+{{- $calls := index (.Site.Data.meetings | default dict) "calls" | default slice -}}
+
+{{- if or $newest $calls -}}
+<section class="home-clocks" aria-label="Collabora Online right now">
+
+  {{- if $calls }}
+  <div class="clock-card">
+    {{- with .Site.GetPage "section" "images" -}}
+      {{- with .Resources.GetMatch "beaver/communicate-copyrighted.png" -}}
+        {{- $bv := .Fit "260x260" -}}
+        <img class="clock-beaver" src="{{ $bv.RelPermalink }}" width="{{ $bv.Width }}" height="{{ $bv.Height }}" alt="" loading="lazy">
+      {{- end -}}
+    {{- end }}
+    <div class="clock-body">
+      <p class="clock-label">Next community call</p>
+      <p class="clock-name" id="clock-call-name">Community calls</p>
+      <p class="clock-big" id="clock-call-in" hidden></p>
+      <p class="clock-meta" id="clock-call-when" hidden></p>
+      <a class="clock-join" id="clock-call-join" href="{{ (index $calls 0).url }}" hidden>Join the call</a>
+
+      <ul class="clock-fallback" id="clock-call-fallback">
+        {{- range $calls }}
+        <li><a href="{{ .url }}">{{ .name }}</a>, {{ .time }} {{ .tz }}</li>
+        {{- end }}
+      </ul>
+
+      <ol class="clock-week" id="clock-week" aria-label="Calls over the next seven days"></ol>
+    </div>
+  </div>
+  {{- end }}
+
+  {{- with $newest }}
+  <div class="clock-card">
+    {{- with $.Site.GetPage "section" "images" -}}
+      {{- with .Resources.GetMatch "beaver/build-code-copyrighted.png" -}}
+        {{- $bv := .Fit "300x220" -}}
+        <img class="clock-beaver clock-beaver-wide" src="{{ $bv.RelPermalink }}" width="{{ $bv.Width }}" height="{{ $bv.Height }}" alt="" loading="lazy">
+      {{- end -}}
+    {{- end }}
+    <div class="clock-body">
+      <p class="clock-label">Last change merged</p>
+      <p class="clock-big" id="clock-merge-ago" hidden></p>
+      <p class="clock-name"><a href="{{ .url }}">{{ .subject }}</a></p>
+      <p class="clock-meta">by {{ .owner }}</p>
+      <p class="clock-meta">
+        <time id="clock-merge-time" datetime="{{ .submitted }}">{{ dateFormat "2 January 2006, 15:04 UTC" (time.AsTime .submitted) }}</time>
+      </p>
+      <a class="clock-join clock-join-quiet" href="https://gerrit.collaboraoffice.com/q/project:online+status:merged">See what else landed</a>
+    </div>
+  </div>
+  {{- end }}
+
+</section>
+
+{{ partial "community-calls-data.html" . }}
+<script>
+(function () {
+  'use strict';
+
+  /* community-calls.js is loaded from the footer, so wait for the document */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+
+  function start() {
+
+  var CC = window.CommunityCalls;
+
+  /* ---------- last change merged ---------- */
+
+  function ago(ms) {
+    var mins = Math.round((Date.now() - ms) / 60000);
+    if (mins < 1) { return 'just now'; }
+    if (mins < 60) { return mins + ' min ago'; }
+    var hours = Math.round(mins / 60);
+    if (hours < 24) { return hours + (hours === 1 ? ' hour ago' : ' hours ago'); }
+    var days = Math.round(hours / 24);
+    if (days < 30) { return days + (days === 1 ? ' day ago' : ' days ago'); }
+    var months = Math.round(days / 30);
+    return months + (months === 1 ? ' month ago' : ' months ago');
+  }
+
+  var timeEl = document.getElementById('clock-merge-time');
+  var agoEl = document.getElementById('clock-merge-ago');
+  if (timeEl && agoEl) {
+    var merged = new Date(timeEl.getAttribute('datetime')).getTime();
+    if (!isNaN(merged)) {
+      agoEl.textContent = ago(merged);
+      agoEl.hidden = false;
+      timeEl.textContent = new Intl.DateTimeFormat(undefined, {
+        weekday: 'short', day: 'numeric', month: 'short',
+        hour: '2-digit', minute: '2-digit'
+      }).format(new Date(merged))
+        + (CC && CC.localZone() ? ' \u00b7 ' + CC.localZone() : '');
+    }
+  }
+
+  if (!CC) { return; }
+  var OCC = CC.occurrences(9);
+  if (!OCC.length) { return; }
+
+  /* ---------- next community call ---------- */
+
+  function renderCall() {
+    var nameEl = document.getElementById('clock-call-name');
+    var inEl = document.getElementById('clock-call-in');
+    var whenEl = document.getElementById('clock-call-when');
+    var joinEl = document.getElementById('clock-call-join');
+    var fallbackEl = document.getElementById('clock-call-fallback');
+    if (!nameEl || !inEl || !whenEl || !joinEl) { return; }
+
+    var found = CC.nextOrLive(OCC);
+    if (!found) { return; }
+    var occ = found.occ;
+
+    if (fallbackEl) { fallbackEl.hidden = true; }
+    nameEl.textContent = occ.name;
+    joinEl.href = occ.url;
+    joinEl.hidden = false;
+    inEl.hidden = false;
+    whenEl.hidden = false;
+
+    var zone = CC.localZone() ? ' \u00b7 ' + CC.localZone() : '';
+    if (found.live) {
+      nameEl.insertAdjacentHTML('beforeend',
+        ' <span class="clock-onair">on air</span>');
+      inEl.textContent = 'happening now';
+      joinEl.textContent = 'Join the call';
+      whenEl.textContent = 'started ' + CC.shortWhen(occ.at) + zone;
+      return;
+    }
+    inEl.textContent = CC.countdown(occ.at);
+    joinEl.textContent = 'Join on Jitsi';
+    whenEl.textContent = CC.shortWhen(occ.at) + zone;
+  }
+
+  function renderWeek() {
+    var host = document.getElementById('clock-week');
+    if (!host) { return; }
+    var today = new Date().toDateString();
+    for (var i = 0; i < 7; i++) {
+      var day = new Date(Date.now() + i * CC.DAY);
+      var key = day.toDateString();
+      var onDay = OCC.filter(function (occ) {
+        return new Date(occ.at).toDateString() === key;
+      });
+      var cell = document.createElement('li');
+      cell.className = 'clock-day' + (key === today ? ' clock-day-today' : '');
+      cell.title = onDay.length
+        ? onDay.map(function (occ) { return occ.name + ' ' + CC.shortWhen(occ.at); }).join('\n')
+        : 'No scheduled call';
+      var weekday = document.createElement('span');
+      weekday.className = 'clock-dow';
+      weekday.textContent = day.toLocaleDateString(undefined, { weekday: 'short' });
+      var number = document.createElement('span');
+      number.className = 'clock-dom';
+      number.textContent = day.getDate();
+      var dots = document.createElement('span');
+      dots.className = 'clock-dots';
+      onDay.slice(0, 3).forEach(function () {
+        var dot = document.createElement('span');
+        dot.className = 'clock-dot';
+        dots.appendChild(dot);
+      });
+      cell.appendChild(weekday);
+      cell.appendChild(number);
+      cell.appendChild(dots);
+      host.appendChild(cell);
+    }
+  }
+
+  renderCall();
+  renderWeek();
+  setInterval(renderCall, 30000);
+
+  }
+})();
+</script>
+{{- end -}}

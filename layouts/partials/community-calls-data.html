@@ -1,0 +1,5 @@
+{{- /* The schedule for static/js/community-calls.js to read. */ -}}
+{{- $calls := index (.Site.Data.meetings | default dict) "calls" | default slice -}}
+{{- with $calls }}
+<script type="application/json" id="community-calls-data">{{ . | jsonify | safeJS }}</script>
+{{- end }}
