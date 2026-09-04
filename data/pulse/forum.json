@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-03T07:18:57Z",
+  "generated_at": "2026-09-04T07:21:27Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 99,
-      "posts_30d": 169,
+      "posts_30d": 163,
       "top_topics_monthly": [
-        {
-          "posts": 10,
-          "title": "Calc on android no search/replace function",
-          "url": "https://forum.collaboraonline.com/t/calc-on-android-no-search-replace-function/4909",
-          "views": 48
-        },
         {
           "posts": 7,
           "title": "ERROR: file stalls at \"connecting\" when trying to open it",
@@ -31,20 +25,26 @@
         },
         {
           "posts": 3,
-          "title": "Cannot login to Nextcloud with Firefox, but works with Chrome",
-          "url": "https://forum.collaboraonline.com/t/cannot-login-to-nextcloud-with-firefox-but-works-with-chrome/4912",
-          "views": 60
+          "title": "Questions About MPL 2.0 Source Availability for a Modified Collabora Online Web UI",
+          "url": "https://forum.collaboraonline.com/t/questions-about-mpl-2-0-source-availability-for-a-modified-collabora-online-web-ui/4945",
+          "views": 62
+        },
+        {
+          "posts": 4,
+          "title": "ODG and Calc editors: filename becomes editable after copy-paste, even though rename is disabled (CODE 26.04.2.4.1)",
+          "url": "https://forum.collaboraonline.com/t/odg-and-calc-editors-filename-becomes-editable-after-copy-paste-even-though-rename-is-disabled-code-26-04-2-4-1/4932",
+          "views": 42
         }
       ],
-      "topics_30d": 48,
-      "total_posts": 10121,
+      "topics_30d": 44,
+      "total_posts": 10125,
       "total_topics": 2134
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-04",
-    "to": "2026-09-03"
+    "from": "2026-08-05",
+    "to": "2026-09-04"
   },
   "source": "forum"
 }
