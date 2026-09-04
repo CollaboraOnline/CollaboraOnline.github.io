@@ -6,6 +6,39 @@
 {{- $newest := index $changes 0 -}}
 {{- $calls := index (.Site.Data.meetings | default dict) "calls" | default slice -}}
 
+{{- $events := index (.Site.Data.meetings | default dict) "events" | default slice -}}
+{{- $live := slice -}}
+{{- $nowU := now.Unix -}}
+{{- range $events -}}
+  {{- $fromU := (time.AsTime .from).Unix -}}
+  {{- /* inclusive of the last day */ -}}
+  {{- $toU := add (time.AsTime .to).Unix 86400 -}}
+  {{- if and (ge $nowU $fromU) (lt $nowU $toU) -}}
+    {{- $day := add 1 (int (math.Floor (div (sub $nowU $fromU) 86400))) -}}
+    {{- $total := add 1 (int (math.Floor (div (sub (time.AsTime .to).Unix $fromU) 86400))) -}}
+    {{- $live = $live | append (dict "e" . "day" $day "total" $total) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with index $live 0 }}
+{{- $e := .e }}
+<aside class="fest-banner">
+  <img class="fest-mark" src="{{ "images/circle-coolfest-cta.svg" | relURL }}" alt="" width="62" height="62">
+  <div class="fest-body">
+    <p class="fest-head">
+      <strong>{{ $e.name }} is running right now.</strong>
+      {{ $e.blurb }}
+    </p>
+    <p class="fest-detail">{{ $e.detail }} Every day at {{ $e.time }} until {{ dateFormat "2 January" (time.AsTime $e.to) }}.</p>
+  </div>
+  <p class="fest-day"><span class="fest-day-n">Day {{ .day }}</span><span class="fest-day-of">of {{ .total }}</span></p>
+  <p class="fest-cta">
+    <a class="fest-join" href="{{ $e.url }}">Join today's call</a>
+    <a class="fest-more" href="{{ $e.more | relURL }}">What is {{ $e.name }}?</a>
+  </p>
+</aside>
+{{- end }}
+
 {{- if or $newest $calls -}}
 <section class="home-clocks" aria-label="Collabora Online right now">
 

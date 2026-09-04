@@ -6,6 +6,17 @@
 #   from, to: optional YYYY-MM-DD bounds, for a call that runs for a season
 #   minutes: how long a call counts as running, for the "on air" state
 
+# The homepage banners an event only between from and to.
+events:
+  - name: COOL Fest
+    from: "2026-09-05"
+    to: "2026-10-04"
+    blurb: A community call every day, weekends included.
+    detail: Join for an hour, pick an Easy Hack, set up your own instance, or just listen.
+    time: "12:30 UTC"
+    url: https://meet.jit.si/COOLFest
+    more: /coolfest/
+
 calls:
   - name: COOLFest daily call
     days: [0, 1, 2, 3, 4, 5, 6]
