@@ -53,13 +53,17 @@ type = "type"
   tagline = "We love to work with everyone and anyone in the open to liberate people's documents."
   homepageImage = "/images/homepage-image.png"
   homepageImageLaptop = "/images/notebook.jpg"
+  # Shown inside the laptop frame in place of homepageImage. Comment the
+  # two lines out to go back to the still screenshot.
+  homepageVideo = "/videos/writer-overview.mp4"
+  homepageVideoPoster = "/videos/writer-overview-poster.jpg"
   homepageCAT = true
   share = true
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
   customCSS = ["buttons.css", "anim.css", "header.css", "clocks.css", "dropdown.css", "sidebar.css", "post-content.css"]
-  customJS = ["copy-code.js", "community-calls.js"]
+  customJS = ["copy-code.js", "home-video.js", "community-calls.js"]
 
   [params.social]
     rss = true
