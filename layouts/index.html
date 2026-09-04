@@ -93,6 +93,8 @@
     Forum
   </a>
 </div>
+  {{ partial "homepage-clocks.html" . }}
+
   <!-- Pick the first according to home_pos param -->
   {{- range first 1 (sort (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) ".Params.home_pos") -}}
         {{ $page := . }}

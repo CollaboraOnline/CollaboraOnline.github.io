@@ -58,8 +58,8 @@ type = "type"
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
-  customCSS = ["buttons.css", "anim.css", "header.css", "dropdown.css", "sidebar.css", "post-content.css"]
-  customJS = ["copy-code.js"]
+  customCSS = ["buttons.css", "anim.css", "header.css", "clocks.css", "dropdown.css", "sidebar.css", "post-content.css"]
+  customJS = ["copy-code.js", "community-calls.js"]
 
   [params.social]
     rss = true
