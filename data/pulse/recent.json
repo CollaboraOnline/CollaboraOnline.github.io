@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-04T11:22:27Z",
+  "generated_at": "2026-09-04T20:49:19Z",
   "metrics": {
     "changes": [
       {
-        "number": 10940,
-        "owner": "Caolán McNamara",
-        "subject": "add --require-landlock so the kit exits if the rules fail",
-        "submitted": "2026-09-04T11:19:30Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10940"
-      },
-      {
-        "number": 11154,
-        "owner": "Andras Timar",
-        "subject": "wasm: drop numberdialog.ui from the emscripten fs image",
-        "submitted": "2026-09-04T11:06:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11154"
-      },
-      {
-        "number": 11066,
+        "number": 11215,
         "owner": "Henry Castro",
-        "subject": "browser: a11y: give Writer's swallowed notebookbar shortcuts their own keys",
-        "submitted": "2026-09-04T10:46:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11066"
+        "subject": "cypress: test Tab from a notebookbar tab accelerator enters the page",
+        "submitted": "2026-09-04T20:28:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11215"
       },
       {
-        "number": 11148,
+        "number": 11214,
+        "owner": "Henry Castro",
+        "subject": "browser: a11y: Tab from a tab accelerator enters the tab page too",
+        "submitted": "2026-09-04T20:28:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11214"
+      },
+      {
+        "number": 11115,
+        "owner": "Pranam Lashkari",
+        "subject": "added section to default impress test doc",
+        "submitted": "2026-09-04T20:27:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11115"
+      },
+      {
+        "number": 11022,
+        "owner": "Caolán McNamara",
+        "subject": "landlock: let the engine read the shared config presets where they are staged",
+        "submitted": "2026-09-04T19:07:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11022"
+      },
+      {
+        "number": 11052,
+        "owner": "Pranam Lashkari",
+        "subject": "impress: fixed slide numbers after collapsing a section",
+        "submitted": "2026-09-04T19:02:20Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11052"
+      },
+      {
+        "number": 11165,
         "owner": "Tor Lillqvist",
-        "subject": "Don't leak the buffer when converting to std::string",
-        "submitted": "2026-09-04T10:22:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11148"
+        "subject": "Bin the check for an engine library with a different vtable",
+        "submitted": "2026-09-04T18:20:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11165"
       },
       {
-        "number": 10553,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "cool#13529 Fix cropped outline on the search and replace icons",
-        "submitted": "2026-09-04T09:46:20Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10553"
+        "number": 11068,
+        "owner": "Darshan-Upadhyay",
+        "subject": "sidebar: show the panel through the resolved wrapper element",
+        "submitted": "2026-09-04T16:24:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11068"
       },
       {
-        "number": 9332,
-        "owner": "Gökay ŞATIR",
-        "subject": "Rank the tiles wsd sends by each pane the client shows.",
-        "submitted": "2026-09-04T09:22:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/9332"
-      },
-      {
-        "number": 11137,
-        "owner": "Tor Lillqvist",
-        "subject": "Drop the unused COKitDocument::getPartHash()",
-        "submitted": "2026-09-04T09:18:29Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11137"
-      },
-      {
-        "number": 10923,
-        "owner": "Banobe Pascal",
-        "subject": "CODA: keep the backstage home templates to one row",
-        "submitted": "2026-09-04T08:32:36Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10923"
+        "number": 11070,
+        "owner": "Balázs Varga",
+        "subject": "sc: keep a pasted formula off a table it never referenced",
+        "submitted": "2026-09-04T13:14:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11070"
       }
     ]
   },
