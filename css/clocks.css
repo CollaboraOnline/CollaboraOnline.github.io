@@ -1,0 +1,362 @@
+/* The two clocks under the homepage hero: next community call, last merge. */
+
+.home-clocks {
+  --clock-purple: #5c2983;
+  --clock-purple-soft: #f3edf8;
+  --clock-ink: #0c344b;
+  --clock-ember: #c4491a;
+  --clock-muted: #5f6b76;
+  --clock-faint: #8a93a0;
+  --clock-line: #e6e1ee;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--clock-line);
+  border-radius: 4px;
+  background: linear-gradient(180deg, #fbf8fd 0%, #ffffff 100%);
+  margin: 2rem 0 0;
+  color: var(--clock-ink);
+}
+
+.clock-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  padding: 18px 22px 20px;
+  min-width: 0;
+  align-items: start;
+}
+
+.clock-card + .clock-card {
+  border-left: 1px solid var(--clock-line);
+}
+
+.clock-beaver {
+  height: 104px;
+  width: auto;
+  align-self: center;
+  flex: none;
+}
+
+.clock-beaver-wide {
+  height: 88px;
+}
+
+.clock-body {
+  min-width: 0;
+}
+
+.home-clocks p {
+  margin: 0;
+}
+
+.clock-label {
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--clock-faint);
+  margin-bottom: 4px !important;
+}
+
+.clock-big {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--clock-purple);
+  font-variant-numeric: tabular-nums;
+  margin: 1px 0 3px !important;
+}
+
+.clock-card + .clock-card .clock-big {
+  color: var(--clock-ember);
+}
+
+.clock-name {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--clock-ink);
+}
+
+.clock-name a {
+  color: inherit;
+}
+
+.clock-meta {
+  font-size: 12.5px;
+  color: var(--clock-muted);
+  line-height: 1.45;
+}
+
+.clock-onair {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--clock-ember);
+  color: #fff;
+  border-radius: 2px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: 2px;
+}
+
+.clock-join {
+  display: inline-block;
+  margin-top: 9px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--clock-purple);
+  border: 1px solid var(--clock-purple);
+  border-radius: 3px;
+  padding: 3px 12px;
+  text-decoration: none;
+}
+
+.clock-join:hover,
+.clock-join:focus {
+  background: var(--clock-purple);
+  color: #fff;
+  text-decoration: none;
+}
+
+.clock-join-quiet {
+  color: var(--clock-muted);
+  border-color: var(--clock-line);
+}
+
+.clock-join-quiet:hover,
+.clock-join-quiet:focus {
+  background: var(--clock-ink);
+  border-color: var(--clock-ink);
+}
+
+/* Shown until the script works out which call is next. */
+.clock-fallback {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--clock-muted);
+}
+
+.clock-fallback li {
+  margin: 2px 0;
+}
+
+/* Seven day cells, one dot per call. */
+.clock-week {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  padding: 0;
+  margin: 12px 0 0;
+  max-width: 330px;
+}
+
+.clock-day {
+  border: 1px solid var(--clock-line);
+  border-radius: 3px;
+  padding: 4px 0 5px;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.clock-day-today {
+  border-color: var(--clock-purple);
+  background: var(--clock-purple-soft);
+}
+
+.clock-dow {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--clock-faint);
+}
+
+.clock-dom {
+  display: block;
+  font-size: 12px;
+  color: var(--clock-muted);
+}
+
+.clock-day-today .clock-dom {
+  color: var(--clock-purple);
+  font-weight: 600;
+}
+
+.clock-dots {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  height: 5px;
+  margin-top: 2px;
+}
+
+.clock-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--clock-purple);
+}
+
+@media (max-width: 991px) {
+  .home-clocks {
+    grid-template-columns: 1fr;
+  }
+
+  .clock-card + .clock-card {
+    border-left: 0;
+    border-top: 1px solid var(--clock-line);
+  }
+}
+
+@media (max-width: 575px) {
+  .clock-beaver,
+  .clock-beaver-wide {
+    height: 72px;
+  }
+
+  .clock-card {
+    padding: 16px 16px 18px;
+    gap: 12px;
+  }
+}
+
+/* Banner for an event while it is running, from the from/to window in
+   data/meetings.yaml. */
+
+.fest-banner {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 8px 20px;
+  align-items: center;
+  background: #5c2983;
+  color: #fff;
+  border-radius: 4px;
+  padding: 14px 22px;
+  margin: 2rem 0 0;
+}
+
+.fest-banner + .home-clocks {
+  margin-top: 10px;
+}
+
+.fest-mark {
+  width: 62px;
+  height: 62px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.fest-banner p {
+  margin: 0;
+}
+
+.fest-head {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.fest-head strong {
+  font-weight: 700;
+}
+
+.fest-detail {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #e4d5ef;
+}
+
+.fest-day {
+  text-align: center;
+  border-left: 1px solid #7c51a0;
+  border-right: 1px solid #7c51a0;
+  padding: 0 18px;
+  line-height: 1.15;
+}
+
+.fest-day-n {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+}
+
+.fest-day-of {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d3bde4;
+}
+
+.fest-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: stretch;
+}
+
+.fest-join,
+.fest-more {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 3px;
+  padding: 5px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.fest-join {
+  background: #fff;
+  color: #5c2983;
+  font-weight: 600;
+}
+
+.fest-join:hover,
+.fest-join:focus {
+  background: #f0e6f7;
+  color: #40195e;
+  text-decoration: none;
+}
+
+.fest-more {
+  border: 1px solid #a982c9;
+  color: #fff;
+}
+
+.fest-more:hover,
+.fest-more:focus {
+  background: #7c51a0;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .fest-banner {
+    grid-template-columns: auto 1fr;
+    gap: 12px 16px;
+  }
+
+  .fest-day {
+    grid-column: 1;
+    border: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .fest-cta {
+    grid-column: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

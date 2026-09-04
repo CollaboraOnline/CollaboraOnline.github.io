@@ -45,6 +45,93 @@
   box-shadow: 0 12px 20px 0 lightgray;
 }
 
+/* Laptop drawn in CSS so the frame takes its shape from the clip, whatever
+   aspect ratio it has. */
+
+.homepage-image-device {
+  position: static;
+  width: auto;
+  top: auto;
+  right: auto;
+  padding: 0 0 10px;
+}
+
+/* fit-content keeps the bezel even on all four sides */
+.device {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.device-lid {
+  background: #f1f2f6;
+  border: 1px solid #e0e2ea;
+  border-bottom: 0;
+  border-radius: 14px 14px 3px 3px;
+  padding: 14px 12px 16px;
+  position: relative;
+}
+
+/* the camera, so a rounded rectangle reads as a lid */
+.device-lid::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 50%;
+  background: #c3c7d2;
+}
+
+.device-screen {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  /* the hero text sets this row's height, so stay inside it */
+  max-height: 340px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 0 1px #e0e2ea;
+}
+
+.device-base {
+  position: relative;
+  width: 116%;
+  margin: 0 -8%;
+  height: 11px;
+  background: #e7e9ef;
+  border: 1px solid #dcdee7;
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 14px 26px rgba(12, 52, 75, 0.10);
+}
+
+/* the thumb notch */
+.device-base::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 13%;
+  height: 3px;
+  margin-left: -6.5%;
+  border-radius: 0 0 3px 3px;
+  background: #cdd1da;
+}
+
+@media (min-width: 992px) {
+  .homepage-image-device {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 14px;
+  }
+}
+
 .homepage-image {
   right: 0;
   top: 14px;
@@ -72,75 +159,82 @@
   }
 }
 
+/* COOL Fest badge. Under 768px the disc becomes a pill in the flow. */
+
 #img-container-cta {
-  content: '';
   width: 182px;
   height: 182px;
-  background: url('/images/circle-coolfest-cta.svg');
-  background-color: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 182px auto;
+  border-radius: 50%;
+  background-color: #fff;
   border: 1px solid #5c2983;
-  border-radius: 182px;
-  margin-bottom: -100px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 12px;
+  text-decoration: none;
   float: right;
+  margin-bottom: -100px;
   margin-right: -58px;
+  position: relative;
   z-index: 1;
   animation-name: pulse-shadow;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+}
+
+#img-container-cta:hover,
+#img-container-cta:focus {
+  animation-play-state: paused;
+  box-shadow: 0 0 6px 2px rgba(92, 41, 131, 0.4);
   text-decoration: none;
 }
 
-#img-container-cta:hover {
-  animation-play-state: paused;
-  box-shadow: 0 0 5px 1px #5c298365, inset 0 -100px 50px 1px white !important;
-}
-
-#img-container-cta:hover::before,
-#img-container-cta:hover::after {
-  animation-play-state: paused;
-}
-
-#img-container-cta:hover::after {
-  content: 'COOLFest 2026';
-  text-align: center;
+.cta-mark {
   display: block;
-  font-weight: bold;
-  color: #1a2430;
-  position: relative;
-  top: 104px;
-  background-image: linear-gradient(to right, #fff0 20%, white 40%, white 50%, white 55%, #fff0 75%);
-  opacity: 0;
+  width: 142px;
+  height: auto;
 }
 
-#img-container-cta:hover::before {
-  content: 'Join';
-  text-align: center;
+.cta-when {
   display: block;
-  font-weight: bold;
-  color: transparent;
-  position: relative;
-  top: 108px;
-  /* background-image: linear-gradient(to right, #fff0 10%, white 20%, white 50%, white 60%, #fff0 95%); */
-  opacity: 0;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #0c344b;
 }
 
-#img-container-cta::after,
-#img-container-cta::before {
-  animation-name: show-cta-txt;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+@media (max-width: 767px) {
+  #img-container-cta {
+    float: none;
+    width: auto;
+    height: auto;
+    border-radius: 999px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 7px 20px 7px 10px;
+    margin: 0 0 22px;
+    animation: none;
+  }
+
+  .cta-mark {
+    width: 92px;
+  }
+
+  .cta-when {
+    text-align: left;
+    font-size: 16px;
+  }
 }
 
-#img-container-cta:hover::after,
-#img-container-cta:hover::before {
-  animation-play-state: initial;
-  opacity: 1;
+@media (prefers-reduced-motion: reduce) {
+  #img-container-cta {
+    animation: none;
+  }
 }
 
 @media (max-width: 411px) {
