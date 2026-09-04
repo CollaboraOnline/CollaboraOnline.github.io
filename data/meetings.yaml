@@ -1,0 +1,45 @@
+# When we meet. Keep in step with content/post/communicate.md.
+#
+#   days: 0 Sunday .. 6 Saturday, in the timezone named by tz
+#   time: 24-hour HH:MM, wall-clock in that same timezone
+#   tz:   IANA zone. Europe/Berlin follows CET and CEST on its own
+#   from, to: optional YYYY-MM-DD bounds, for a call that runs for a season
+#   minutes: how long a call counts as running, for the "on air" state
+
+calls:
+  - name: COOLFest daily call
+    days: [0, 1, 2, 3, 4, 5, 6]
+    time: "12:30"
+    tz: UTC
+    url: https://meet.jit.si/COOLFest
+    from: "2026-09-05"
+    to: "2026-10-04"
+    minutes: 60
+
+  - name: COOL Technical Committee
+    days: [3]
+    time: "16:00"
+    tz: Europe/Berlin
+    url: https://meet.jit.si/COOL-TC-Meeting
+    minutes: 60
+
+  - name: COOL meeting
+    days: [4]
+    time: "12:00"
+    tz: Europe/Berlin
+    url: https://meet.jit.si/COOLWeeklyMeeting
+    minutes: 60
+
+  - name: COOL UI/UX Design meeting
+    days: [4]
+    time: "14:00"
+    tz: Europe/Berlin
+    url: https://meet.jit.si/COOL-UI-UX-Design
+    minutes: 60
+
+  - name: Tea Time Trainings
+    days: [5]
+    time: "13:00"
+    tz: Europe/Berlin
+    url: https://meet.jit.si/Fri-TTT-CPTEAM
+    minutes: 60
