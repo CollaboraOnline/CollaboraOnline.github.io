@@ -5,7 +5,10 @@
     <div class="hero row">
         <div class="col position-relative py-lg-7{{ if not .Site.Params.homepageImage }} py-7{{ else }} pb-5{{ end }}">
                 {{ if .Site.Params.homepageCAT -}}
-                  <a href="{{ "post/communicate/" | relURL }}#coolfest-2026" id="img-container-cta"></a>
+                  <a href="{{ "coolfest/" | relURL }}" id="img-container-cta">
+                    <img class="cta-mark" src="{{ "images/circle-coolfest-cta.svg" | relURL }}" alt="COOL Fest" width="142" height="71">
+                    <span class="cta-when">5 Sep to 4 Oct</span>
+                  </a>
                 {{- end -}}
                 {{- if .Site.Params.homepageVideo -}}
                 <div class="homepage-image homepage-image-device">
