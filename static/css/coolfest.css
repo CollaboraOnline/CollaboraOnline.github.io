@@ -1,0 +1,440 @@
+/* Only used by layouts/_default/coolfest.html. */
+
+.coolfest {
+  --cf-purple: #5c2983;
+  --cf-deep: #3d1a58;
+  --cf-lift: #7b3fa8;
+  --cf-ember: #eb6834;
+  --cf-ink: #0c344b;
+  --cf-muted: #5f6b76;
+  --cf-faint: #8a93a0;
+  --cf-line: #e6e1ee;
+  --cf-wash: #faf8fc;
+
+  color: var(--cf-ink);
+}
+
+/* ---------------- splash ---------------- */
+
+.cf-splash {
+  background:
+    radial-gradient(1200px 460px at 78% -8%, rgba(235, 104, 52, 0.30), transparent 62%),
+    radial-gradient(900px 520px at 8% 108%, rgba(160, 96, 214, 0.42), transparent 60%),
+    linear-gradient(140deg, var(--cf-deep) 0%, var(--cf-purple) 52%, var(--cf-lift) 100%);
+  color: #fff;
+  /* the navbar is fixed-top and 67px tall */
+  padding: 118px 24px 62px;
+  text-align: center;
+}
+
+.cf-splash-inner {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.cf-logo {
+  width: 300px;
+  max-width: 72%;
+  height: auto;
+  background: #fff;
+  border-radius: 999px;
+  padding: 18px 26px;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.22);
+}
+
+.cf-dates {
+  margin: 24px 0 0;
+  font-size: 13px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #e7d7f4;
+}
+
+.cf-title {
+  margin: 10px 0 0;
+  font-size: clamp(34px, 6vw, 58px);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.cf-lede {
+  margin: 18px auto 0;
+  max-width: 62ch;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #ecdff7;
+}
+
+.cf-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  align-items: baseline;
+  justify-content: center;
+  margin: 26px 0 0;
+}
+
+.cf-badge {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 3px;
+  padding: 4px 12px;
+  color: #fff;
+}
+
+.cf-badge-live {
+  background: var(--cf-ember);
+}
+
+.cf-badge-done {
+  background: rgba(255, 255, 255, 0.12);
+  color: #dfcdee;
+}
+
+.cf-day {
+  margin: 0;
+  font-size: 14px;
+  color: #dcc7ee;
+}
+
+.cf-day-n {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.cf-next {
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+  color: #e7d7f4;
+}
+
+.cf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 28px 0 0;
+}
+
+.cf-btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 11px 26px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.cf-btn-go {
+  background: #fff;
+  color: var(--cf-purple);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.cf-btn-go:hover,
+.cf-btn-go:focus {
+  background: #f4eafb;
+  color: var(--cf-deep);
+  text-decoration: none;
+}
+
+.cf-btn-ghost {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.cf-btn-ghost:hover,
+.cf-btn-ghost:focus {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  text-decoration: none;
+}
+
+.cf-localtime {
+  margin: 16px 0 0;
+  font-size: 13px;
+  color: #d6c0e8;
+}
+
+/* ---------------- body ---------------- */
+
+.cf-body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+}
+
+.cf-section {
+  padding: 46px 0 0;
+}
+
+.cf-h2 {
+  font-size: clamp(23px, 3vw, 30px);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+  color: var(--cf-ink);
+}
+
+.cf-sub {
+  font-size: 15px;
+  color: var(--cf-muted);
+  margin: 0 0 20px;
+}
+
+.cf-section p {
+  line-height: 1.65;
+}
+
+/* numbered because a call really does run in this order */
+.cf-list {
+  list-style: none;
+  counter-reset: cf;
+  padding: 0;
+  margin: 22px 0 0;
+  display: grid;
+  gap: 20px;
+}
+
+.cf-list li {
+  counter-increment: cf;
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+}
+
+.cf-list li::before {
+  content: counter(cf);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--cf-purple);
+  background: #f3edf8;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  margin-top: 2px;
+}
+
+/* both are grid items, so pin them or the text drops under the number */
+.cf-list li > h3,
+.cf-list li > p {
+  grid-column: 2;
+}
+
+.cf-list h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 3px;
+  color: var(--cf-ink);
+}
+
+.cf-list p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--cf-muted);
+}
+
+/* ---------------- how to join ---------------- */
+
+.cf-join {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 34px;
+  align-items: center;
+}
+
+.cf-steps {
+  padding-left: 1.2rem;
+  margin: 16px 0 0;
+  display: grid;
+  gap: 10px;
+  font-size: 15px;
+  color: var(--cf-muted);
+}
+
+.cf-steps strong {
+  color: var(--cf-ink);
+}
+
+.cf-note {
+  margin: 18px 0 0;
+  font-size: 14px;
+  color: var(--cf-muted);
+  background: var(--cf-wash);
+  border-left: 3px solid var(--cf-purple);
+  padding: 10px 14px;
+}
+
+.cf-beaver {
+  height: 210px;
+  width: auto;
+}
+
+/* ---------------- the week ---------------- */
+
+.cf-week {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--cf-line);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cf-week-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.2fr) auto;
+  gap: 16px;
+  align-items: baseline;
+  padding: 11px 18px;
+  border-bottom: 1px solid #f0ecf5;
+  font-size: 14px;
+}
+
+.cf-week-row:last-child {
+  border-bottom: 0;
+}
+
+.cf-week-fest {
+  background: #faf7fd;
+}
+
+.cf-week-today .cf-week-when {
+  font-weight: 700;
+  color: var(--cf-purple);
+}
+
+.cf-week-when {
+  color: var(--cf-ink);
+}
+
+.cf-week-name {
+  color: var(--cf-muted);
+}
+
+.cf-week-rel {
+  color: var(--cf-faint);
+  font-size: 12.5px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* ---------------- pick something ---------------- */
+
+.cf-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 14px;
+  margin: 22px 0 0;
+}
+
+.cf-card {
+  border: 1px solid var(--cf-line);
+  border-top: 3px solid var(--cf-purple);
+  border-radius: 4px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  text-decoration: none;
+  background: #fff;
+}
+
+.cf-card:hover,
+.cf-card:focus {
+  border-top-color: var(--cf-ember);
+  text-decoration: none;
+}
+
+.cf-card-n {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--cf-purple);
+  font-variant-numeric: tabular-nums;
+}
+
+.cf-card-t {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cf-ink);
+}
+
+.cf-card-t-lead {
+  font-size: 19px;
+  margin-bottom: 2px;
+}
+
+.cf-card-d {
+  font-size: 13px;
+  color: var(--cf-muted);
+  line-height: 1.5;
+}
+
+/* ---------------- end ---------------- */
+
+.cf-end {
+  border-top: 1px solid var(--cf-line);
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cf-end .cf-h2 {
+  max-width: 22ch;
+  margin: 0 auto;
+}
+
+.cf-btn-quiet {
+  border-color: var(--cf-line);
+  color: var(--cf-muted);
+}
+
+.cf-btn-quiet:hover,
+.cf-btn-quiet:focus {
+  border-color: var(--cf-ink);
+  color: var(--cf-ink);
+  text-decoration: none;
+}
+
+.cf-end .cf-btn-go {
+  background: var(--cf-purple);
+  color: #fff;
+}
+
+.cf-end .cf-btn-go:hover,
+.cf-end .cf-btn-go:focus {
+  background: var(--cf-deep);
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .cf-join {
+    grid-template-columns: 1fr;
+  }
+
+  .cf-beaver {
+    height: 150px;
+    justify-self: center;
+  }
+
+  .cf-week-row {
+    grid-template-columns: 1fr auto;
+  }
+
+  .cf-week-name {
+    grid-column: 1 / -1;
+  }
+}

@@ -1,0 +1,268 @@
+{{ define "main" }}
+{{- /* Dates come from data/meetings.yaml. Three states: before, during, after. */ -}}
+
+{{- $event := dict -}}
+{{- range index (.Site.Data.meetings | default dict) "events" | default slice -}}
+  {{- if eq .name "COOL Fest" }}{{ $event = . }}{{ end -}}
+{{- end -}}
+{{- if not $event -}}
+  {{- $event = dict "name" "COOL Fest" "from" "2026-09-05" "to" "2026-10-04"
+        "time" "12:30 UTC" "url" "https://meet.jit.si/COOLFest" -}}
+{{- end -}}
+
+{{- $fromT := time.AsTime $event.from -}}
+{{- $toT := time.AsTime $event.to -}}
+{{- $nowU := now.Unix -}}
+{{- $fromU := $fromT.Unix -}}
+{{- $endU := add $toT.Unix 86400 -}}
+{{- $total := add 1 (int (math.Floor (div (sub $toT.Unix $fromU) 86400))) -}}
+{{- $state := "before" -}}
+{{- $day := 0 -}}
+{{- if ge $nowU $endU -}}
+  {{- $state = "after" -}}
+{{- else if ge $nowU $fromU -}}
+  {{- $state = "during" -}}
+  {{- $day = add 1 (int (math.Floor (div (sub $nowU $fromU) 86400))) -}}
+{{- else -}}
+  {{- $day = add 1 (int (math.Floor (div (sub $fromU $nowU) 86400))) -}}
+{{- end -}}
+
+{{- $gh := (index (index .Site.Data.pulse "github" | default dict) "metrics") | default dict -}}
+{{- $hacks := index $gh "easy_hacks_open" -}}
+
+<main class="coolfest coolfest-{{ $state }}">
+
+  <!-- ===================== splash ===================== -->
+  <header class="cf-splash">
+    <div class="cf-splash-inner">
+      <img class="cf-logo" src="{{ "images/circle-coolfest-cta.svg" | relURL }}"
+           alt="COOL Fest" width="300" height="150">
+
+      <p class="cf-dates">
+        {{ dateFormat "2 January" $fromT }} to {{ dateFormat "2 January 2006" $toT }}
+        &middot; every day &middot; {{ $event.time }}
+      </p>
+
+      <h1 class="cf-title">A month of getting people<br>into the code.</h1>
+
+      <p class="cf-lede">A whole month dedicated to helping more people start contributing to
+        Collabora Online. A live call every single day, weekends included. No registration,
+        no talk to prepare, no experience assumed.</p>
+
+      <div class="cf-status">
+        {{- if eq $state "during" }}
+        <p class="cf-badge cf-badge-live">Running right now</p>
+        <p class="cf-day"><span class="cf-day-n">Day {{ $day }}</span> of {{ $total }}</p>
+        {{- else if eq $state "before" }}
+        <p class="cf-badge">Starts {{ dateFormat "2 January" $fromT }}</p>
+        <p class="cf-day"><span class="cf-day-n">{{ $day }}</span> {{ if eq $day 1 }}day{{ else }}days{{ end }} to go</p>
+        {{- else }}
+        <p class="cf-badge cf-badge-done">Finished for this year</p>
+        <p class="cf-day"><span class="cf-day-n">{{ $total }}</span> days of calls</p>
+        {{- end }}
+        <p class="cf-next" id="cf-next" hidden></p>
+      </div>
+
+      <p class="cf-actions">
+        {{- if ne $state "after" }}
+        <a class="cf-btn cf-btn-go" href="{{ $event.url }}">Join the call on Jitsi</a>
+        {{- end }}
+        <a class="cf-btn cf-btn-ghost" href="{{ "post/easyhacks/" | relURL }}">
+          Browse the Easy Hacks{{ if $hacks }} ({{ $hacks }} open){{ end }}
+        </a>
+      </p>
+
+      {{- if ne $state "after" }}
+      <p class="cf-localtime" id="cf-localtime" hidden></p>
+      {{- end }}
+    </div>
+  </header>
+
+  <div class="cf-body">
+
+    <!-- ===================== what happens ===================== -->
+    <section class="cf-section">
+      <h2 class="cf-h2">What happens on a call</h2>
+      <p class="cf-sub">One hour, every day, in the same room. Drop in for any of it.</p>
+
+      <ol class="cf-list">
+        <li>
+          <h3>Get your development environment working</h3>
+          <p>The build is the tallest step in contributing to this project. Bring the error
+            you are stuck on and someone will look at it with you.</p>
+        </li>
+        <li>
+          <h3>Pick an Easy Hack, with a mentor</h3>
+          <p>{{ if $hacks }}{{ $hacks }} tasks{{ else }}Tasks{{ end }} are scoped for a first
+            contribution and most carry code pointers to the area they touch. We will help you
+            choose one that suits what you already know.</p>
+        </li>
+        <li>
+          <h3>Find your way around the codebase</h3>
+          <p>A browser front end in TypeScript over a LibreOffice engine in C++. Ask where
+            something lives instead of reading for a week to find out.</p>
+        </li>
+        <li>
+          <h3>Get help with code review</h3>
+          <p>Changes go through Gerrit rather than pull requests. We will walk you through your
+            first push, and through the comments when they come back.</p>
+        </li>
+        <li>
+          <h3>Meet the people</h3>
+          <p>The names on the commits are in the call. That is most of what a community is.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===================== how to join ===================== -->
+    <section class="cf-section cf-join">
+      <div class="cf-join-text">
+        <h2 class="cf-h2">How to join</h2>
+        <ol class="cf-steps">
+          <li><strong>Open the link.</strong> <a href="{{ $event.url }}">meet.jit.si/COOLFest</a>,
+            in a browser. Nothing to install and nothing to sign up for.</li>
+          <li><strong>Turn up at {{ $event.time }}.</strong> That is 14:30 in Central Europe and
+            18:00 in India. <span id="cf-yourtime"></span></li>
+          <li><strong>Say hello.</strong> Tell us what you want to do, or say you are only
+            listening. Both are welcome.</li>
+        </ol>
+        <p class="cf-note">Cannot make the time? The
+          <a href="{{ "post/communicate/" | relURL }}">other community calls</a> run every week,
+          the <a href="https://forum.collaboraonline.com/">forum</a> is always open, and the
+          Easy Hacks are not going anywhere.</p>
+      </div>
+      {{- with .Site.GetPage "section" "images" -}}
+        {{- with .Resources.GetMatch "beaver/communicate-copyrighted.png" -}}
+          {{- $bv := .Fit "360x360" -}}
+          <img class="cf-beaver" src="{{ $bv.RelPermalink }}" width="{{ $bv.Width }}" height="{{ $bv.Height }}" alt="" loading="lazy">
+        {{- end -}}
+      {{- end }}
+    </section>
+
+    <!-- ===================== the week ===================== -->
+    <section class="cf-section">
+      <h2 class="cf-h2">The next seven days</h2>
+      <p class="cf-sub">Every call on the calendar, in your own timezone.</p>
+      <ol class="cf-week" id="cf-week"></ol>
+      <noscript>
+        <p class="cf-note">The daily COOL Fest call is at {{ $event.time }}. The weekly calls are
+          listed on the <a href="{{ "post/communicate/" | relURL }}">Get Involved</a> page.</p>
+      </noscript>
+    </section>
+
+    <!-- ===================== bring something ===================== -->
+    <section class="cf-section cf-pick">
+      <div>
+        <h2 class="cf-h2">Come with something in mind, or come empty-handed</h2>
+        <p>Either works. If you would rather arrive with a target, these are the three doors
+          that need the least setup.</p>
+        <div class="cf-cards">
+          <a class="cf-card" href="{{ "post/easyhacks/" | relURL }}">
+            <span class="cf-card-n">{{ if $hacks }}{{ $hacks }}{{ else }}&mdash;{{ end }}</span>
+            <span class="cf-card-t">Easy Hacks open</span>
+            <span class="cf-card-d">Scoped tasks with code pointers, most with a mentor named on them.</span>
+          </a>
+          <a class="cf-card" href="https://hosted.weblate.org/projects/collabora-online/">
+            <span class="cf-card-n">95</span>
+            <span class="cf-card-t">Languages on Weblate</span>
+            <span class="cf-card-d">Translation needs no build and no Gerrit account. The widest door there is.</span>
+          </a>
+          <a class="cf-card" href="{{ "design-with-us/" | relURL }}">
+            <span class="cf-card-t cf-card-t-lead">Design with us</span>
+            <span class="cf-card-d">Icons, dialogs and the design system. Bring an eye rather than a compiler.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== footer cta ===================== -->
+    <section class="cf-section cf-end">
+      <h2 class="cf-h2">Come join us, learn something new, and maybe make your first contribution.</h2>
+      <p class="cf-actions">
+        {{- if ne $state "after" }}
+        <a class="cf-btn cf-btn-go" href="{{ $event.url }}">Join the call on Jitsi</a>
+        {{- end }}
+        <a class="cf-btn cf-btn-quiet" href="https://forum.collaboraonline.com/t/coolfest-is-here-join-us-from-5-september-to-4-october/4987">Read the announcement</a>
+      </p>
+    </section>
+
+  </div>
+</main>
+
+{{ partial "community-calls-data.html" . }}
+<script>
+(function () {
+  'use strict';
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+
+  function start() {
+    var CC = window.CommunityCalls;
+    if (!CC) { return; }
+    var occ = CC.occurrences(9);
+    if (!occ.length) { return; }
+    var zone = CC.localZone();
+
+    var nextEl = document.getElementById('cf-next');
+    function renderNext() {
+      if (!nextEl) { return; }
+      var found = CC.nextOrLive(occ, 'COOLFest');
+      if (!found) { return; }
+      nextEl.hidden = false;
+      nextEl.textContent = found.live
+        ? "Today's call is happening now"
+        : "Next call " + CC.countdown(found.occ.at) + ", " + CC.shortWhen(found.occ.at);
+    }
+    renderNext();
+    setInterval(renderNext, 30000);
+
+    var localEl = document.getElementById('cf-localtime');
+    var fest = null;
+    for (var i = 0; i < occ.length; i++) {
+      if (occ[i].name.indexOf('COOLFest') !== -1) { fest = occ[i]; break; }
+    }
+    if (localEl && fest && zone) {
+      localEl.hidden = false;
+      localEl.textContent = 'That is ' + CC.shortWhen(fest.at) + ' where you are (' + zone + ').';
+    }
+    var yourTime = document.getElementById('cf-yourtime');
+    if (yourTime && fest && zone) {
+      yourTime.textContent = 'For you that is ' + CC.shortWhen(fest.at) + ', ' + zone + '.';
+    }
+
+    var host = document.getElementById('cf-week');
+    if (!host) { return; }
+    var todayKey = new Date().toDateString();
+    var cutoff = Date.now() + 7 * CC.DAY;
+    var shown = 0;
+    occ.forEach(function (item) {
+      if (item.at < Date.now() - 60 * 60000 || item.at > cutoff) { return; }
+      shown++;
+      var li = document.createElement('li');
+      li.className = 'cf-week-row'
+        + (new Date(item.at).toDateString() === todayKey ? ' cf-week-today' : '')
+        + (item.name.indexOf('COOLFest') !== -1 ? ' cf-week-fest' : '');
+      var when = document.createElement('span');
+      when.className = 'cf-week-when';
+      when.textContent = CC.longWhen(item.at);
+      var name = document.createElement('a');
+      name.className = 'cf-week-name';
+      name.href = item.url;
+      name.textContent = item.name;
+      var rel = document.createElement('span');
+      rel.className = 'cf-week-rel';
+      rel.textContent = CC.countdown(item.at);
+      li.appendChild(when);
+      li.appendChild(name);
+      li.appendChild(rel);
+      host.appendChild(li);
+    });
+    if (!shown) { host.remove(); }
+  }
+})();
+</script>
+{{ end }}

@@ -226,3 +226,137 @@
     gap: 12px;
   }
 }
+
+/* Banner for an event while it is running, from the from/to window in
+   data/meetings.yaml. */
+
+.fest-banner {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 8px 20px;
+  align-items: center;
+  background: #5c2983;
+  color: #fff;
+  border-radius: 4px;
+  padding: 14px 22px;
+  margin: 2rem 0 0;
+}
+
+.fest-banner + .home-clocks {
+  margin-top: 10px;
+}
+
+.fest-mark {
+  width: 62px;
+  height: 62px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.fest-banner p {
+  margin: 0;
+}
+
+.fest-head {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.fest-head strong {
+  font-weight: 700;
+}
+
+.fest-detail {
+  font-size: 13px;
+  line-height: 1.45;
+  color: #e4d5ef;
+}
+
+.fest-day {
+  text-align: center;
+  border-left: 1px solid #7c51a0;
+  border-right: 1px solid #7c51a0;
+  padding: 0 18px;
+  line-height: 1.15;
+}
+
+.fest-day-n {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+}
+
+.fest-day-of {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d3bde4;
+}
+
+.fest-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: stretch;
+}
+
+.fest-join,
+.fest-more {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 3px;
+  padding: 5px 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.fest-join {
+  background: #fff;
+  color: #5c2983;
+  font-weight: 600;
+}
+
+.fest-join:hover,
+.fest-join:focus {
+  background: #f0e6f7;
+  color: #40195e;
+  text-decoration: none;
+}
+
+.fest-more {
+  border: 1px solid #a982c9;
+  color: #fff;
+}
+
+.fest-more:hover,
+.fest-more:focus {
+  background: #7c51a0;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .fest-banner {
+    grid-template-columns: auto 1fr;
+    gap: 12px 16px;
+  }
+
+  .fest-day {
+    grid-column: 1;
+    border: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .fest-cta {
+    grid-column: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
