@@ -1,7 +1,35 @@
 {
-  "generated_at": "2026-09-05T17:24:22Z",
+  "generated_at": "2026-09-05T20:27:37Z",
   "metrics": {
     "changes": [
+      {
+        "number": 10299,
+        "owner": "Gülşah Köse",
+        "subject": "Let Delete remove the selected shape in Impress master view",
+        "submitted": "2026-09-05T19:53:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/10299"
+      },
+      {
+        "number": 10063,
+        "owner": "Gülşah Köse",
+        "subject": "jsdialog: send a full update when a widget with children is disabled",
+        "submitted": "2026-09-05T19:25:24Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/10063"
+      },
+      {
+        "number": 11244,
+        "owner": "Caolán McNamara",
+        "subject": "cid#563441 Copy instead of move",
+        "submitted": "2026-09-05T19:05:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11244"
+      },
+      {
+        "number": 11247,
+        "owner": "Caolán McNamara",
+        "subject": "cid#562993 resolve typedefs from the value the loop carries",
+        "submitted": "2026-09-05T18:10:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11247"
+      },
       {
         "number": 11239,
         "owner": "Caolán McNamara",
@@ -29,34 +57,6 @@
         "subject": "pdfimport doesn't use fontconfig since pdfium replaced poppler",
         "submitted": "2026-09-05T13:33:49Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/11246"
-      },
-      {
-        "number": 11065,
-        "owner": "Noel Grandin",
-        "subject": "cool#15054 improve perf of LineEndStyleBoxes",
-        "submitted": "2026-09-05T11:15:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11065"
-      },
-      {
-        "number": 11112,
-        "owner": "Caolán McNamara",
-        "subject": "check CSP sources for every byte they cannot hold",
-        "submitted": "2026-09-05T11:07:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11112"
-      },
-      {
-        "number": 11111,
-        "owner": "Caolán McNamara",
-        "subject": "replace carriage returns as well as newlines when merging CSP",
-        "submitted": "2026-09-05T11:06:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11111"
-      },
-      {
-        "number": 11236,
-        "owner": "Tor Lillqvist",
-        "subject": "Return std::string from COKit::dumpState()",
-        "submitted": "2026-09-05T11:02:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11236"
       }
     ]
   },
