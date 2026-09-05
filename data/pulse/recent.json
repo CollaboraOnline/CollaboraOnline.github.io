@@ -1,7 +1,42 @@
 {
-  "generated_at": "2026-09-05T10:42:03Z",
+  "generated_at": "2026-09-05T15:19:17Z",
   "metrics": {
     "changes": [
+      {
+        "number": 11246,
+        "owner": "Caolán McNamara",
+        "subject": "pdfimport doesn't use fontconfig since pdfium replaced poppler",
+        "submitted": "2026-09-05T13:33:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11246"
+      },
+      {
+        "number": 11065,
+        "owner": "Noel Grandin",
+        "subject": "cool#15054 improve perf of LineEndStyleBoxes",
+        "submitted": "2026-09-05T11:15:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11065"
+      },
+      {
+        "number": 11112,
+        "owner": "Caolán McNamara",
+        "subject": "check CSP sources for every byte they cannot hold",
+        "submitted": "2026-09-05T11:07:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11112"
+      },
+      {
+        "number": 11111,
+        "owner": "Caolán McNamara",
+        "subject": "replace carriage returns as well as newlines when merging CSP",
+        "submitted": "2026-09-05T11:06:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11111"
+      },
+      {
+        "number": 11236,
+        "owner": "Tor Lillqvist",
+        "subject": "Return std::string from COKit::dumpState()",
+        "submitted": "2026-09-05T11:02:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11236"
+      },
       {
         "number": 11235,
         "owner": "Tor Lillqvist",
@@ -22,41 +57,6 @@
         "subject": "Return std::string from COKit::getVersionInfo()",
         "submitted": "2026-09-05T08:25:38Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/11225"
-      },
-      {
-        "number": 11233,
-        "owner": "Caolán McNamara",
-        "subject": "raise the timeout for the qtapp print dialog test",
-        "submitted": "2026-09-05T03:00:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11233"
-      },
-      {
-        "number": 11159,
-        "owner": "Caolán McNamara",
-        "subject": "keep the request line to the bytes RFC 9112 allows",
-        "submitted": "2026-09-05T01:29:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11159"
-      },
-      {
-        "number": 11215,
-        "owner": "Henry Castro",
-        "subject": "cypress: test Tab from a notebookbar tab accelerator enters the page",
-        "submitted": "2026-09-04T20:28:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11215"
-      },
-      {
-        "number": 11214,
-        "owner": "Henry Castro",
-        "subject": "browser: a11y: Tab from a tab accelerator enters the tab page too",
-        "submitted": "2026-09-04T20:28:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11214"
-      },
-      {
-        "number": 11115,
-        "owner": "Pranam Lashkari",
-        "subject": "added section to default impress test doc",
-        "submitted": "2026-09-04T20:27:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11115"
       }
     ]
   },
