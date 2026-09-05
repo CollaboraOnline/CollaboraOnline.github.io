@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-04T07:21:27Z",
+  "generated_at": "2026-09-05T07:03:25Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 99,
-      "posts_30d": 163,
+      "active_users_30d": 97,
+      "posts_30d": 160,
       "top_topics_monthly": [
-        {
-          "posts": 7,
-          "title": "ERROR: file stalls at \"connecting\" when trying to open it",
-          "url": "https://forum.collaboraonline.com/t/error-file-stalls-at-connecting-when-trying-to-open-it/4916",
-          "views": 79
-        },
         {
           "posts": 7,
           "title": "Cannot run presentation in office build from online/engine",
@@ -21,7 +15,7 @@
           "posts": 8,
           "title": "Cannot build CODA",
           "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
-          "views": 66
+          "views": 68
         },
         {
           "posts": 3,
@@ -34,17 +28,23 @@
           "title": "ODG and Calc editors: filename becomes editable after copy-paste, even though rename is disabled (CODE 26.04.2.4.1)",
           "url": "https://forum.collaboraonline.com/t/odg-and-calc-editors-filename-becomes-editable-after-copy-paste-even-though-rename-is-disabled-code-26-04-2-4-1/4932",
           "views": 42
+        },
+        {
+          "posts": 4,
+          "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
+          "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
+          "views": 44
         }
       ],
-      "topics_30d": 44,
-      "total_posts": 10125,
+      "topics_30d": 43,
+      "total_posts": 10129,
       "total_topics": 2134
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-05",
-    "to": "2026-09-04"
+    "from": "2026-08-06",
+    "to": "2026-09-05"
   },
   "source": "forum"
 }
