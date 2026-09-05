@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-09-04T23:04:40Z",
+  "generated_at": "2026-09-05T04:36:58Z",
   "metrics": {
     "changes": [
+      {
+        "number": 11233,
+        "owner": "Caolán McNamara",
+        "subject": "raise the timeout for the qtapp print dialog test",
+        "submitted": "2026-09-05T03:00:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11233"
+      },
+      {
+        "number": 11159,
+        "owner": "Caolán McNamara",
+        "subject": "keep the request line to the bytes RFC 9112 allows",
+        "submitted": "2026-09-05T01:29:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11159"
+      },
       {
         "number": 11215,
         "owner": "Henry Castro",
@@ -43,20 +57,6 @@
         "subject": "Bin the check for an engine library with a different vtable",
         "submitted": "2026-09-04T18:20:06Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/11165"
-      },
-      {
-        "number": 11068,
-        "owner": "Darshan-Upadhyay",
-        "subject": "sidebar: show the panel through the resolved wrapper element",
-        "submitted": "2026-09-04T16:24:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11068"
-      },
-      {
-        "number": 11070,
-        "owner": "Balázs Varga",
-        "subject": "sc: keep a pasted formula off a table it never referenced",
-        "submitted": "2026-09-04T13:14:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11070"
       }
     ]
   },
