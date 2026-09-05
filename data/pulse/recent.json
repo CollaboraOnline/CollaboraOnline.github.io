@@ -1,7 +1,28 @@
 {
-  "generated_at": "2026-09-05T07:03:28Z",
+  "generated_at": "2026-09-05T10:42:03Z",
   "metrics": {
     "changes": [
+      {
+        "number": 11235,
+        "owner": "Tor Lillqvist",
+        "subject": "Return std::string from COKitDocument::getPartName()",
+        "submitted": "2026-09-05T10:20:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11235"
+      },
+      {
+        "number": 11229,
+        "owner": "Caolán McNamara",
+        "subject": "cypress: make insertTable wait for the table style gallery to fill",
+        "submitted": "2026-09-05T08:53:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11229"
+      },
+      {
+        "number": 11225,
+        "owner": "Tor Lillqvist",
+        "subject": "Return std::string from COKit::getVersionInfo()",
+        "submitted": "2026-09-05T08:25:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11225"
+      },
       {
         "number": 11233,
         "owner": "Caolán McNamara",
@@ -36,27 +57,6 @@
         "subject": "added section to default impress test doc",
         "submitted": "2026-09-04T20:27:55Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/11115"
-      },
-      {
-        "number": 11022,
-        "owner": "Caolán McNamara",
-        "subject": "landlock: let the engine read the shared config presets where they are staged",
-        "submitted": "2026-09-04T19:07:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11022"
-      },
-      {
-        "number": 11052,
-        "owner": "Pranam Lashkari",
-        "subject": "impress: fixed slide numbers after collapsing a section",
-        "submitted": "2026-09-04T19:02:20Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11052"
-      },
-      {
-        "number": 11165,
-        "owner": "Tor Lillqvist",
-        "subject": "Bin the check for an engine library with a different vtable",
-        "submitted": "2026-09-04T18:20:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11165"
       }
     ]
   },
