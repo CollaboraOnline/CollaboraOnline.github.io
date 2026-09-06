@@ -1,7 +1,49 @@
 {
-  "generated_at": "2026-09-06T07:14:45Z",
+  "generated_at": "2026-09-06T11:04:11Z",
   "metrics": {
     "changes": [
+      {
+        "number": 11113,
+        "owner": "Caolán McNamara",
+        "subject": "reject a request whose host holds whitespace or a control byte",
+        "submitted": "2026-09-06T10:51:48Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11113"
+      },
+      {
+        "number": 11240,
+        "owner": "Caolán McNamara",
+        "subject": "cid#562980 silence Copy into fixed size buffer",
+        "submitted": "2026-09-06T09:13:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11240"
+      },
+      {
+        "number": 11249,
+        "owner": "Caolán McNamara",
+        "subject": "cid#563439 only import styles when we have a system path",
+        "submitted": "2026-09-06T09:13:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11249"
+      },
+      {
+        "number": 11241,
+        "owner": "Caolán McNamara",
+        "subject": "wsd: the session cookie has to make it onto the response",
+        "submitted": "2026-09-06T09:12:36Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11241"
+      },
+      {
+        "number": 11226,
+        "owner": "Caolán McNamara",
+        "subject": "always create the user autocorrect directory",
+        "submitted": "2026-09-06T09:12:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11226"
+      },
+      {
+        "number": 11254,
+        "owner": "Tomaž Vajngerl",
+        "subject": "run prettier over mocha the tests",
+        "submitted": "2026-09-06T08:17:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11254"
+      },
       {
         "number": 10299,
         "owner": "Gülşah Köse",
@@ -15,48 +57,6 @@
         "subject": "jsdialog: send a full update when a widget with children is disabled",
         "submitted": "2026-09-05T19:25:24Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/10063"
-      },
-      {
-        "number": 11244,
-        "owner": "Caolán McNamara",
-        "subject": "cid#563441 Copy instead of move",
-        "submitted": "2026-09-05T19:05:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11244"
-      },
-      {
-        "number": 11247,
-        "owner": "Caolán McNamara",
-        "subject": "cid#562993 resolve typedefs from the value the loop carries",
-        "submitted": "2026-09-05T18:10:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11247"
-      },
-      {
-        "number": 11239,
-        "owner": "Caolán McNamara",
-        "subject": "cid#563067 silence Double lock",
-        "submitted": "2026-09-05T16:41:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11239"
-      },
-      {
-        "number": 11238,
-        "owner": "Caolán McNamara",
-        "subject": "cid#563438 Logically dead code",
-        "submitted": "2026-09-05T16:30:36Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11238"
-      },
-      {
-        "number": 11242,
-        "owner": "Caolán McNamara",
-        "subject": "fix --enable-gtk3 build",
-        "submitted": "2026-09-05T15:51:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11242"
-      },
-      {
-        "number": 11246,
-        "owner": "Caolán McNamara",
-        "subject": "pdfimport doesn't use fontconfig since pdfium replaced poppler",
-        "submitted": "2026-09-05T13:33:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11246"
       }
     ]
   },
