@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-09-06T20:28:50Z",
+  "generated_at": "2026-09-06T22:54:59Z",
   "metrics": {
     "changes": [
+      {
+        "number": 11282,
+        "owner": "Caolán McNamara",
+        "subject": "cid#563106 check the annotation count against the bytes left",
+        "submitted": "2026-09-06T22:33:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11282"
+      },
+      {
+        "number": 10974,
+        "owner": "Shlok",
+        "subject": "browser: fix input and dropdown border contrast in dark mode",
+        "submitted": "2026-09-06T22:29:51Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/10974"
+      },
       {
         "number": 11195,
         "owner": "Ashod Nakashian",
@@ -43,20 +57,6 @@
         "subject": "spif: support markingData",
         "submitted": "2026-09-06T19:52:14Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/11190"
-      },
-      {
-        "number": 11189,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: support document{Start,End} body-markings",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11189"
-      },
-      {
-        "number": 11188,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: support waterMark qualifier",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11188"
       }
     ]
   },
