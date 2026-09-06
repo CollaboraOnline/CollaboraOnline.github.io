@@ -1,7 +1,28 @@
 {
-  "generated_at": "2026-09-06T11:04:11Z",
+  "generated_at": "2026-09-06T15:32:02Z",
   "metrics": {
     "changes": [
+      {
+        "number": 11260,
+        "owner": "Caolán McNamara",
+        "subject": "crashtesting: stack overflow restoring table header names",
+        "submitted": "2026-09-06T11:20:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11260"
+      },
+      {
+        "number": 11245,
+        "owner": "Tor Lillqvist",
+        "subject": "Add a COKitBitmap type for COKitDocument::renderFontOrientation() to return",
+        "submitted": "2026-09-06T11:18:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11245"
+      },
+      {
+        "number": 10493,
+        "owner": "Caolán McNamara",
+        "subject": "cid#563295 Unchecked return value",
+        "submitted": "2026-09-06T11:17:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/10493"
+      },
       {
         "number": 11113,
         "owner": "Caolán McNamara",
@@ -36,27 +57,6 @@
         "subject": "always create the user autocorrect directory",
         "submitted": "2026-09-06T09:12:10Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/11226"
-      },
-      {
-        "number": 11254,
-        "owner": "Tomaž Vajngerl",
-        "subject": "run prettier over mocha the tests",
-        "submitted": "2026-09-06T08:17:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11254"
-      },
-      {
-        "number": 10299,
-        "owner": "Gülşah Köse",
-        "subject": "Let Delete remove the selected shape in Impress master view",
-        "submitted": "2026-09-05T19:53:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10299"
-      },
-      {
-        "number": 10063,
-        "owner": "Gülşah Köse",
-        "subject": "jsdialog: send a full update when a widget with children is disabled",
-        "submitted": "2026-09-05T19:25:24Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10063"
       }
     ]
   },
