@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-06T15:32:02Z",
+  "generated_at": "2026-09-06T20:28:50Z",
   "metrics": {
     "changes": [
       {
-        "number": 11260,
-        "owner": "Caolán McNamara",
-        "subject": "crashtesting: stack overflow restoring table header names",
-        "submitted": "2026-09-06T11:20:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11260"
+        "number": 11195,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: move the SecurityLabel dialog to svx",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11195"
       },
       {
-        "number": 11245,
-        "owner": "Tor Lillqvist",
-        "subject": "Add a COKitBitmap type for COKitDocument::renderFontOrientation() to return",
-        "submitted": "2026-09-06T11:18:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11245"
+        "number": 11194,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: move Security Label logic, storage and tests to svx",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11194"
       },
       {
-        "number": 10493,
-        "owner": "Caolán McNamara",
-        "subject": "cid#563295 Unchecked return value",
-        "submitted": "2026-09-06T11:17:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10493"
+        "number": 11193,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: add Security Label button to the notebook bar",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11193"
       },
       {
-        "number": 11113,
-        "owner": "Caolán McNamara",
-        "subject": "reject a request whose host holds whitespace or a control byte",
-        "submitted": "2026-09-06T10:51:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11113"
+        "number": 11192,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: security label banner",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11192"
       },
       {
-        "number": 11240,
-        "owner": "Caolán McNamara",
-        "subject": "cid#562980 silence Copy into fixed size buffer",
-        "submitted": "2026-09-06T09:13:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11240"
+        "number": 11191,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: support portionMarking",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11191"
       },
       {
-        "number": 11249,
-        "owner": "Caolán McNamara",
-        "subject": "cid#563439 only import styles when we have a system path",
-        "submitted": "2026-09-06T09:13:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11249"
+        "number": 11190,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: support markingData",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11190"
       },
       {
-        "number": 11241,
-        "owner": "Caolán McNamara",
-        "subject": "wsd: the session cookie has to make it onto the response",
-        "submitted": "2026-09-06T09:12:36Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11241"
+        "number": 11189,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: support document{Start,End} body-markings",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11189"
       },
       {
-        "number": 11226,
-        "owner": "Caolán McNamara",
-        "subject": "always create the user autocorrect directory",
-        "submitted": "2026-09-06T09:12:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11226"
+        "number": 11188,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: support waterMark qualifier",
+        "submitted": "2026-09-06T19:52:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11188"
       }
     ]
   },
