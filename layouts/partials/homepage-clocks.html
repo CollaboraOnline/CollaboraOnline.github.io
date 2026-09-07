@@ -1,5 +1,6 @@
 {{- /* Next call from data/meetings.yaml, last merge from data/pulse/recent.json.
-  Both render server-side; the script only restates them in local time. */ -}}
+  Both render server-side; the script restates them in local time and replaces
+  the merge with whatever the GitHub mirror of the Gerrit project reports. */ -}}
 
 {{- $recentFile := index .Site.Data.pulse "recent" | default dict -}}
 {{- $changes := index ($recentFile.metrics | default dict) "changes" | default slice -}}
@@ -79,8 +80,8 @@
     <div class="clock-body">
       <p class="clock-label">Last change merged</p>
       <p class="clock-big" id="clock-merge-ago" hidden></p>
-      <p class="clock-name"><a href="{{ .url }}">{{ .subject }}</a></p>
-      <p class="clock-meta">by {{ .owner }}</p>
+      <p class="clock-name"><a id="clock-merge-link" href="{{ .url }}">{{ .subject }}</a></p>
+      <p class="clock-meta">by <span id="clock-merge-by">{{ .owner }}</span></p>
       <p class="clock-meta">
         <time id="clock-merge-time" datetime="{{ .submitted }}">{{ dateFormat "2 January 2006, 15:04 UTC" (time.AsTime .submitted) }}</time>
       </p>
@@ -123,18 +124,70 @@
 
   var timeEl = document.getElementById('clock-merge-time');
   var agoEl = document.getElementById('clock-merge-ago');
-  if (timeEl && agoEl) {
+  var linkEl = document.getElementById('clock-merge-link');
+  var byEl = document.getElementById('clock-merge-by');
+
+  function paintMerge() {
+    if (!timeEl || !agoEl) { return; }
     var merged = new Date(timeEl.getAttribute('datetime')).getTime();
-    if (!isNaN(merged)) {
-      agoEl.textContent = ago(merged);
-      agoEl.hidden = false;
-      timeEl.textContent = new Intl.DateTimeFormat(undefined, {
-        weekday: 'short', day: 'numeric', month: 'short',
-        hour: '2-digit', minute: '2-digit'
-      }).format(new Date(merged))
-        + (CC && CC.localZone() ? ' \u00b7 ' + CC.localZone() : '');
-    }
+    if (isNaN(merged)) { return; }
+    agoEl.textContent = ago(merged);
+    agoEl.hidden = false;
+    timeEl.textContent = new Intl.DateTimeFormat(undefined, {
+      weekday: 'short', day: 'numeric', month: 'short',
+      hour: '2-digit', minute: '2-digit'
+    }).format(new Date(merged))
+      + (CC && CC.localZone() ? ' \u00b7 ' + CC.localZone() : '');
   }
+
+  var MIRROR = 'https://api.github.com/repos/CollaboraOnline/online.mirror/commits?sha=main&per_page=1';
+  var REVIEWED_ON = /^Reviewed-on: (https:\/\/gerrit\.collaboraoffice\.com\/\S+)\s*$/m;
+  var LOOK_EVERY = 300000;
+  var lastLook = 0;
+
+  function readMerge() {
+    if (!timeEl || !window.fetch) { return; }
+    if (Date.now() - lastLook < LOOK_EVERY) { return; }
+    lastLook = Date.now();
+
+    fetch(MIRROR, { headers: { Accept: 'application/vnd.github+json' } })
+      .then(function (res) {
+        if (!res.ok) { throw new Error('the mirror answered ' + res.status); }
+        return res.json();
+      })
+      .then(function (list) {
+        var top = list && list[0];
+        var commit = top && top.commit;
+        if (!commit || !commit.committer || !commit.committer.date) { return; }
+
+        if (new Date(commit.committer.date) <= new Date(timeEl.getAttribute('datetime'))) { return; }
+
+        var on = REVIEWED_ON.exec(commit.message);
+        timeEl.setAttribute('datetime', commit.committer.date);
+        if (linkEl) {
+          linkEl.textContent = commit.message.split('\n')[0];
+          linkEl.href = on ? on[1] : top.html_url;
+        }
+        if (byEl && commit.author && commit.author.name) {
+          byEl.textContent = commit.author.name;
+        }
+        paintMerge();
+      })
+      .catch(function (err) {
+        if (window.console && console.debug) {
+          console.debug('last merge: keeping the built-in value,', err.message || err);
+        }
+      });
+  }
+
+  paintMerge();
+  readMerge();
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) { return; }
+    paintMerge();
+    readMerge();
+  });
 
   if (!CC) { return; }
   var OCC = CC.occurrences(9);
