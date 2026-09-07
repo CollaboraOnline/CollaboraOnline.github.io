@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-06T07:14:42Z",
+  "generated_at": "2026-09-07T07:28:31Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 97,
+      "active_users_30d": 95,
       "posts_30d": 157,
       "top_topics_monthly": [
-        {
-          "posts": 7,
-          "title": "Cannot run presentation in office build from online/engine",
-          "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
-          "views": 61
-        },
         {
           "posts": 8,
           "title": "Cannot build CODA",
           "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
           "views": 70
+        },
+        {
+          "posts": 7,
+          "title": "Cannot run presentation in office build from online/engine",
+          "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
+          "views": 61
         },
         {
           "posts": 3,
@@ -33,18 +33,18 @@
           "posts": 4,
           "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
           "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
-          "views": 46
+          "views": 48
         }
       ],
-      "topics_30d": 39,
-      "total_posts": 10141,
-      "total_topics": 2134
+      "topics_30d": 42,
+      "total_posts": 10144,
+      "total_topics": 2137
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-07",
-    "to": "2026-09-06"
+    "from": "2026-08-08",
+    "to": "2026-09-07"
   },
   "source": "forum"
 }

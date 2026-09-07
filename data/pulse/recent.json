@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-07T04:50:45Z",
+  "generated_at": "2026-09-07T07:28:35Z",
   "metrics": {
     "changes": [
       {
-        "number": 11282,
+        "number": 11232,
+        "owner": "Andras Timar",
+        "subject": "browser: localize the commands and word cloud demo extensions",
+        "submitted": "2026-09-07T07:16:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11232"
+      },
+      {
+        "number": 11230,
+        "owner": "Areg Nakashian",
+        "subject": "browser: Display long template names on multiple lines",
+        "submitted": "2026-09-07T07:16:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11230"
+      },
+      {
+        "number": 11231,
+        "owner": "Andras Timar",
+        "subject": "browser: localization for JS extensions",
+        "submitted": "2026-09-07T07:09:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11231"
+      },
+      {
+        "number": 11257,
+        "owner": "Tomaž Vajngerl",
+        "subject": "browser: draw a stroke thinner than a pixel at the width it asks for",
+        "submitted": "2026-09-07T06:59:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11257"
+      },
+      {
+        "number": 11256,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: serve the master pages from the primitives command",
+        "submitted": "2026-09-07T06:59:20Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11256"
+      },
+      {
+        "number": 11255,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: move recording an object change into a helper",
+        "submitted": "2026-09-07T06:54:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11255"
+      },
+      {
+        "number": 11283,
         "owner": "Caolán McNamara",
-        "subject": "cid#563106 check the annotation count against the bytes left",
-        "submitted": "2026-09-06T22:33:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11282"
+        "subject": "cid#562868 make class_data::m_storedTypeRefs an atomic",
+        "submitted": "2026-09-07T06:37:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11283"
       },
       {
-        "number": 10974,
-        "owner": "Shlok",
-        "subject": "browser: fix input and dropdown border contrast in dark mode",
-        "submitted": "2026-09-06T22:29:51Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10974"
-      },
-      {
-        "number": 11195,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: move the SecurityLabel dialog to svx",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11195"
-      },
-      {
-        "number": 11194,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: move Security Label logic, storage and tests to svx",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11194"
-      },
-      {
-        "number": 11193,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: add Security Label button to the notebook bar",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11193"
-      },
-      {
-        "number": 11192,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: security label banner",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11192"
-      },
-      {
-        "number": 11191,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: support portionMarking",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11191"
-      },
-      {
-        "number": 11190,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: support markingData",
-        "submitted": "2026-09-06T19:52:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11190"
+        "number": 10921,
+        "owner": "Noel Grandin",
+        "subject": "cool#15927 move css::uno::XComponentContext to cpo::uno:: namespace",
+        "submitted": "2026-09-04T06:32:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/10921"
       }
     ]
   },
