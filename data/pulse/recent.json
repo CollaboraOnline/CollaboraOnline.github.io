@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-07T07:28:35Z",
+  "generated_at": "2026-09-08T07:22:03Z",
   "metrics": {
     "changes": [
+      {
+        "number": 11054,
+        "owner": "Stephan Bergmann",
+        "subject": "Introduce UNO interface method overload annotations",
+        "submitted": "2026-09-08T07:19:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11054"
+      },
+      {
+        "number": 11555,
+        "owner": "Stephan Bergmann",
+        "subject": "Do not invalidate ThreadTid in setThreadName on Emscripten",
+        "submitted": "2026-09-08T07:19:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11555"
+      },
+      {
+        "number": 11522,
+        "owner": "Caolán McNamara",
+        "subject": "ofz#557289178 the top text append might not be a SwXText",
+        "submitted": "2026-09-08T07:16:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11522"
+      },
+      {
+        "number": 11528,
+        "owner": "Caolán McNamara",
+        "subject": "ofz#557542656 negation of -2147483648 cannot be represented",
+        "submitted": "2026-09-08T07:15:24Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11528"
+      },
+      {
+        "number": 11554,
+        "owner": "Karthik Godha",
+        "subject": "mobile: hide \"Delete Sheet\" for a protected sheet in the tab menu",
+        "submitted": "2026-09-08T07:11:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11554"
+      },
+      {
+        "number": 11164,
+        "owner": "Balázs Varga",
+        "subject": "sc: undo a Total Row change from its bottom band only",
+        "submitted": "2026-09-08T06:48:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11164"
+      },
+      {
+        "number": 11516,
+        "owner": "Stephan Bergmann",
+        "subject": "-Werror,-Wunused-private-field",
+        "submitted": "2026-09-08T06:44:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11516"
+      },
       {
         "number": 11232,
         "owner": "Andras Timar",
         "subject": "browser: localize the commands and word cloud demo extensions",
         "submitted": "2026-09-07T07:16:38Z",
         "url": "https://gerrit.collaboraoffice.com/c/online/+/11232"
-      },
-      {
-        "number": 11230,
-        "owner": "Areg Nakashian",
-        "subject": "browser: Display long template names on multiple lines",
-        "submitted": "2026-09-07T07:16:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11230"
-      },
-      {
-        "number": 11231,
-        "owner": "Andras Timar",
-        "subject": "browser: localization for JS extensions",
-        "submitted": "2026-09-07T07:09:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11231"
-      },
-      {
-        "number": 11257,
-        "owner": "Tomaž Vajngerl",
-        "subject": "browser: draw a stroke thinner than a pixel at the width it asks for",
-        "submitted": "2026-09-07T06:59:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11257"
-      },
-      {
-        "number": 11256,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: serve the master pages from the primitives command",
-        "submitted": "2026-09-07T06:59:20Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11256"
-      },
-      {
-        "number": 11255,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: move recording an object change into a helper",
-        "submitted": "2026-09-07T06:54:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11255"
-      },
-      {
-        "number": 11283,
-        "owner": "Caolán McNamara",
-        "subject": "cid#562868 make class_data::m_storedTypeRefs an atomic",
-        "submitted": "2026-09-07T06:37:52Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11283"
-      },
-      {
-        "number": 10921,
-        "owner": "Noel Grandin",
-        "subject": "cool#15927 move css::uno::XComponentContext to cpo::uno:: namespace",
-        "submitted": "2026-09-04T06:32:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10921"
       }
     ]
   },
