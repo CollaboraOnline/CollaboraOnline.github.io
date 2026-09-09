@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-08T07:21:59Z",
+  "generated_at": "2026-09-09T07:30:30Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 95,
-      "posts_30d": 155,
+      "active_users_30d": 99,
+      "posts_30d": 164,
       "top_topics_monthly": [
         {
           "posts": 8,
           "title": "Cannot build CODA",
           "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
-          "views": 70
+          "views": 76
         },
         {
           "posts": 7,
@@ -21,30 +21,30 @@
           "posts": 3,
           "title": "Questions About MPL 2.0 Source Availability for a Modified Collabora Online Web UI",
           "url": "https://forum.collaboraonline.com/t/questions-about-mpl-2-0-source-availability-for-a-modified-collabora-online-web-ui/4945",
-          "views": 64
+          "views": 67
         },
         {
-          "posts": 4,
-          "title": "ODG and Calc editors: filename becomes editable after copy-paste, even though rename is disabled (CODE 26.04.2.4.1)",
-          "url": "https://forum.collaboraonline.com/t/odg-and-calc-editors-filename-becomes-editable-after-copy-paste-even-though-rename-is-disabled-code-26-04-2-4-1/4932",
-          "views": 42
+          "posts": 5,
+          "title": "Bug when panning accross cells",
+          "url": "https://forum.collaboraonline.com/t/bug-when-panning-accross-cells/4956",
+          "views": 48
         },
         {
           "posts": 4,
           "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
           "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
-          "views": 48
+          "views": 53
         }
       ],
-      "topics_30d": 41,
-      "total_posts": 10145,
-      "total_topics": 2137
+      "topics_30d": 44,
+      "total_posts": 10158,
+      "total_topics": 2142
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-09",
-    "to": "2026-09-08"
+    "from": "2026-08-10",
+    "to": "2026-09-09"
   },
   "source": "forum"
 }

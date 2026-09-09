@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-08T07:22:03Z",
+  "generated_at": "2026-09-09T07:30:32Z",
   "metrics": {
     "issues": [
       {
         "assignee": null,
-        "comments": 0,
+        "comments": 1,
         "created_at": "2026-09-01",
         "labels": [
           "performance",
@@ -14,7 +14,7 @@
         "number": 16170,
         "thumbs_up": 0,
         "title": "Optimize taking start and end of SwPaM in sw",
-        "updated_at": "2026-09-01",
+        "updated_at": "2026-09-08",
         "url": "https://github.com/CollaboraOnline/online/issues/16170"
       },
       {

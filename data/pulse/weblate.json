@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-08T07:22:01Z",
+  "generated_at": "2026-09-09T07:30:31Z",
   "metrics": {
     "components": 15,
     "languages": 95,
-    "total_strings": 238153,
+    "total_strings": 238446,
     "translated_percent": 48.6
   },
   "source": "weblate"
