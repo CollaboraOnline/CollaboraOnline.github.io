@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-09T07:30:32Z",
+  "generated_at": "2026-09-10T07:26:53Z",
   "metrics": {
     "changes": [
       {
-        "number": 11680,
-        "owner": "Miklos Vajna",
-        "subject": "cool#16131 engine SVG paste: handle this in Writer",
-        "submitted": "2026-09-09T07:30:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11680"
+        "number": 11919,
+        "owner": "Stephan Bergmann",
+        "subject": "loplugin:consttobool",
+        "submitted": "2026-09-10T07:16:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11919"
       },
       {
-        "number": 11679,
-        "owner": "Miklos Vajna",
-        "subject": "cool#16131 browser clipboard sync paste: handle image URL without an image",
-        "submitted": "2026-09-09T07:27:51Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11679"
+        "number": 11688,
+        "owner": "Rashesh Padia",
+        "subject": "browser: hold user activity off while the document unloads",
+        "submitted": "2026-09-10T07:10:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11688"
       },
       {
-        "number": 11525,
-        "owner": "Caolán McNamara",
-        "subject": "cid#563442 silence Bad use of null-like value",
-        "submitted": "2026-09-09T07:23:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11525"
+        "number": 11677,
+        "owner": "Rashesh Padia",
+        "subject": "browser: two small fixes to the socket shims",
+        "submitted": "2026-09-10T07:10:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11677"
       },
       {
-        "number": 9579,
-        "owner": "Caolán McNamara",
-        "subject": "give a view whose renderer died a fresh connection to the loaded document",
-        "submitted": "2026-09-09T07:23:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/9579"
+        "number": 11676,
+        "owner": "Rashesh Padia",
+        "subject": "browser: put the permission back when a migration stalls",
+        "submitted": "2026-09-10T07:10:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11676"
       },
       {
-        "number": 11569,
-        "owner": "Caolán McNamara",
-        "subject": "parse the .uno:Save answer in one place",
-        "submitted": "2026-09-09T07:22:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11569"
+        "number": 11675,
+        "owner": "Rashesh Padia",
+        "subject": "wsd: small review fixes around the monitor and the admin page",
+        "submitted": "2026-09-10T07:10:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11675"
       },
       {
-        "number": 11805,
-        "owner": "Caolán McNamara",
-        "subject": "stop running solenv/bin/localestr while reading the makefiles",
-        "submitted": "2026-09-09T07:22:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11805"
+        "number": 11674,
+        "owner": "Rashesh Padia",
+        "subject": "wsd: say which monitor was expected to be the controller",
+        "submitted": "2026-09-10T07:10:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11674"
       },
       {
-        "number": 11543,
-        "owner": "Mike Kaganski",
-        "subject": "tdf#163240 sw: subdivide a Link by Spans",
-        "submitted": "2026-09-09T07:15:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11543"
+        "number": 11673,
+        "owner": "Rashesh Padia",
+        "subject": "wsd: hand over a saved document whatever state the controller named",
+        "submitted": "2026-09-10T07:10:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11673"
       },
       {
-        "number": 11542,
-        "owner": "Mike Kaganski",
-        "subject": "tdf#163240 sw: track which tags to close, not how many",
-        "submitted": "2026-09-09T07:08:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11542"
+        "number": 11672,
+        "owner": "Rashesh Padia",
+        "subject": "wsd: take a disconnected monitor out of the socket map",
+        "submitted": "2026-09-10T07:10:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11672"
       }
     ]
   },

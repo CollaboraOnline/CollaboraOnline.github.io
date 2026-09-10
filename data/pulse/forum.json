@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-09T07:30:30Z",
+  "generated_at": "2026-09-10T07:26:50Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 99,
-      "posts_30d": 164,
+      "active_users_30d": 95,
+      "posts_30d": 154,
       "top_topics_monthly": [
         {
           "posts": 8,
@@ -24,27 +24,27 @@
           "views": 67
         },
         {
+          "posts": 4,
+          "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
+          "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
+          "views": 56
+        },
+        {
           "posts": 5,
           "title": "Bug when panning accross cells",
           "url": "https://forum.collaboraonline.com/t/bug-when-panning-accross-cells/4956",
           "views": 48
-        },
-        {
-          "posts": 4,
-          "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
-          "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
-          "views": 53
         }
       ],
-      "topics_30d": 44,
-      "total_posts": 10158,
+      "topics_30d": 43,
+      "total_posts": 10160,
       "total_topics": 2142
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-10",
-    "to": "2026-09-09"
+    "from": "2026-08-11",
+    "to": "2026-09-10"
   },
   "source": "forum"
 }
