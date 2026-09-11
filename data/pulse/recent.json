@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-10T07:26:53Z",
+  "generated_at": "2026-09-11T07:24:59Z",
   "metrics": {
     "changes": [
       {
-        "number": 11919,
-        "owner": "Stephan Bergmann",
-        "subject": "loplugin:consttobool",
-        "submitted": "2026-09-10T07:16:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11919"
+        "number": 11928,
+        "owner": "Balázs Varga",
+        "subject": "Table Style: merge a conditional format's border with the style's",
+        "submitted": "2026-09-11T06:55:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11928"
       },
       {
-        "number": 11688,
-        "owner": "Rashesh Padia",
-        "subject": "browser: hold user activity off while the document unloads",
-        "submitted": "2026-09-10T07:10:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11688"
+        "number": 11927,
+        "owner": "Balázs Varga",
+        "subject": "Table Style: merge borders across the table elements",
+        "submitted": "2026-09-11T06:52:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11927"
       },
       {
-        "number": 11677,
-        "owner": "Rashesh Padia",
-        "subject": "browser: two small fixes to the socket shims",
-        "submitted": "2026-09-10T07:10:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11677"
+        "number": 11926,
+        "owner": "Balázs Varga",
+        "subject": "Table Style: corner cells keep the header and totals row border",
+        "submitted": "2026-09-11T06:46:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11926"
       },
       {
-        "number": 11676,
-        "owner": "Rashesh Padia",
-        "subject": "browser: put the permission back when a migration stalls",
-        "submitted": "2026-09-10T07:10:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11676"
+        "number": 11925,
+        "owner": "Balázs Varga",
+        "subject": "Table Style: merge a direct cell border with the style's",
+        "submitted": "2026-09-11T06:46:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11925"
       },
       {
-        "number": 11675,
-        "owner": "Rashesh Padia",
-        "subject": "wsd: small review fixes around the monitor and the admin page",
-        "submitted": "2026-09-10T07:10:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11675"
+        "number": 12049,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#102307 quick find: also use .uno:RepeatSearch to find next",
+        "submitted": "2026-09-11T06:34:30Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12049"
       },
       {
-        "number": 11674,
-        "owner": "Rashesh Padia",
-        "subject": "wsd: say which monitor was expected to be the controller",
-        "submitted": "2026-09-10T07:10:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11674"
+        "number": 12061,
+        "owner": "Skyler Grey",
+        "subject": "fix(iOS): correct blank slides when presenting",
+        "submitted": "2026-09-11T06:21:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12061"
       },
       {
-        "number": 11673,
-        "owner": "Rashesh Padia",
-        "subject": "wsd: hand over a saved document whatever state the controller named",
-        "submitted": "2026-09-10T07:10:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11673"
+        "number": 12088,
+        "owner": "Szymon Kłos",
+        "subject": "importslide: report the number of slides really inserted",
+        "submitted": "2026-09-11T06:19:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12088"
       },
       {
-        "number": 11672,
-        "owner": "Rashesh Padia",
-        "subject": "wsd: take a disconnected monitor out of the socket map",
-        "submitted": "2026-09-10T07:10:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11672"
+        "number": 10552,
+        "owner": "Jan Holesovsky",
+        "subject": "overflow manager: Re-run the fold decision when widths change",
+        "submitted": "2026-09-11T06:13:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/10552"
       }
     ]
   },
