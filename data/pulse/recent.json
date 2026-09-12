@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-11T07:24:59Z",
+  "generated_at": "2026-09-12T07:17:36Z",
   "metrics": {
     "changes": [
       {
-        "number": 11928,
-        "owner": "Balázs Varga",
-        "subject": "Table Style: merge a conditional format's border with the style's",
-        "submitted": "2026-09-11T06:55:19Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11928"
+        "number": 12255,
+        "owner": "Pedro Silva",
+        "subject": "Import slides: the chip leaves Checking when the source answers",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12255"
       },
       {
-        "number": 11927,
-        "owner": "Balázs Varga",
-        "subject": "Table Style: merge borders across the table elements",
-        "submitted": "2026-09-11T06:52:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11927"
+        "number": 12251,
+        "owner": "Pedro Silva",
+        "subject": "Import slides: a section row opens, and a checkbox picks it",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12251"
       },
       {
-        "number": 11926,
-        "owner": "Balázs Varga",
-        "subject": "Table Style: corner cells keep the header and totals row border",
-        "submitted": "2026-09-11T06:46:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11926"
+        "number": 12250,
+        "owner": "Pedro Silva",
+        "subject": "Import slides: line the section rows up with their slides",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12250"
       },
       {
-        "number": 11925,
-        "owner": "Balázs Varga",
-        "subject": "Table Style: merge a direct cell border with the style's",
-        "submitted": "2026-09-11T06:46:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11925"
+        "number": 12249,
+        "owner": "Pedro Silva",
+        "subject": "Import slides: align insert slides btn to the Import slide btn",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12249"
       },
       {
-        "number": 12049,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#102307 quick find: also use .uno:RepeatSearch to find next",
-        "submitted": "2026-09-11T06:34:30Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12049"
+        "number": 12248,
+        "owner": "Pedro Silva",
+        "subject": "Import slides: keep the options behind one line",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12248"
       },
       {
-        "number": 12061,
-        "owner": "Skyler Grey",
-        "subject": "fix(iOS): correct blank slides when presenting",
-        "submitted": "2026-09-11T06:21:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12061"
+        "number": 12247,
+        "owner": "Pedro Silva",
+        "subject": "Import slides: rename the source list and the link modes",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12247"
       },
       {
-        "number": 12088,
-        "owner": "Szymon Kłos",
-        "subject": "importslide: report the number of slides really inserted",
-        "submitted": "2026-09-11T06:19:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12088"
+        "number": 12246,
+        "owner": "Pedro Silva",
+        "subject": "Import slides pane: fix active row triple border",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12246"
       },
       {
-        "number": 10552,
-        "owner": "Jan Holesovsky",
-        "subject": "overflow manager: Re-run the fold decision when widths change",
-        "submitted": "2026-09-11T06:13:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10552"
+        "number": 12245,
+        "owner": "Pedro Silva",
+        "subject": "Import slides: the show all btn keeps its size under the pointer",
+        "submitted": "2026-09-12T07:15:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12245"
       }
     ]
   },

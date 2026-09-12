@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-09-11T07:24:59Z",
+  "generated_at": "2026-09-12T07:17:35Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-09-11",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16201,
+        "thumbs_up": 0,
+        "title": "Add tooltips for the insert caption notebookbar buttons",
+        "updated_at": "2026-09-11",
+        "url": "https://github.com/CollaboraOnline/online/issues/16201"
+      },
       {
         "assignee": null,
         "comments": 1,
@@ -562,21 +576,6 @@
         "title": "Save icon Floppy disk vs Cloud-icon",
         "updated_at": "2026-04-13",
         "url": "https://github.com/CollaboraOnline/online/issues/13474"
-      },
-      {
-        "assignee": null,
-        "comments": 3,
-        "created_at": "2025-07-01",
-        "labels": [
-          "UX",
-          "25.04"
-        ],
-        "mentor": "@eszkadev @pedropintosilva",
-        "number": 12246,
-        "thumbs_up": 0,
-        "title": "use a better font and font-size:icon-size ratio",
-        "updated_at": "2026-04-13",
-        "url": "https://github.com/CollaboraOnline/online/issues/12246"
       },
       {
         "assignee": null,

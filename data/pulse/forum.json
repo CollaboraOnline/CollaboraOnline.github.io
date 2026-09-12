@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-11T07:24:56Z",
+  "generated_at": "2026-09-12T07:17:32Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 97,
-      "posts_30d": 160,
+      "active_users_30d": 95,
+      "posts_30d": 167,
       "top_topics_monthly": [
         {
           "posts": 8,
@@ -24,27 +24,27 @@
           "views": 68
         },
         {
-          "posts": 4,
-          "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
-          "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
-          "views": 58
+          "posts": 1,
+          "title": "COOL TC meeting minutes: 2026-09-09",
+          "url": "https://forum.collaboraonline.com/t/cool-tc-meeting-minutes-2026-09-09/5020",
+          "views": 18
         },
         {
-          "posts": 5,
-          "title": "Bug when panning accross cells",
-          "url": "https://forum.collaboraonline.com/t/bug-when-panning-accross-cells/4956",
-          "views": 48
+          "posts": 6,
+          "title": "Collabora writer crashes",
+          "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
+          "views": 44
         }
       ],
-      "topics_30d": 44,
-      "total_posts": 10173,
-      "total_topics": 2145
+      "topics_30d": 43,
+      "total_posts": 10184,
+      "total_topics": 2146
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-12",
-    "to": "2026-09-11"
+    "from": "2026-08-13",
+    "to": "2026-09-12"
   },
   "source": "forum"
 }
