@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-12T07:17:32Z",
+  "generated_at": "2026-09-13T07:35:51Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 95,
-      "posts_30d": 167,
+      "active_users_30d": 91,
+      "posts_30d": 156,
       "top_topics_monthly": [
         {
           "posts": 8,
@@ -15,36 +15,36 @@
           "posts": 7,
           "title": "Cannot run presentation in office build from online/engine",
           "url": "https://forum.collaboraonline.com/t/cannot-run-presentation-in-office-build-from-online-engine/4947",
-          "views": 62
-        },
-        {
-          "posts": 3,
-          "title": "Questions About MPL 2.0 Source Availability for a Modified Collabora Online Web UI",
-          "url": "https://forum.collaboraonline.com/t/questions-about-mpl-2-0-source-availability-for-a-modified-collabora-online-web-ui/4945",
-          "views": 68
-        },
-        {
-          "posts": 1,
-          "title": "COOL TC meeting minutes: 2026-09-09",
-          "url": "https://forum.collaboraonline.com/t/cool-tc-meeting-minutes-2026-09-09/5020",
-          "views": 18
+          "views": 63
         },
         {
           "posts": 6,
           "title": "Collabora writer crashes",
           "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
           "views": 44
+        },
+        {
+          "posts": 1,
+          "title": "COOL TC meeting minutes: 2026-09-09",
+          "url": "https://forum.collaboraonline.com/t/cool-tc-meeting-minutes-2026-09-09/5020",
+          "views": 19
+        },
+        {
+          "posts": 6,
+          "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
+          "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
+          "views": 43
         }
       ],
-      "topics_30d": 43,
+      "topics_30d": 41,
       "total_posts": 10184,
       "total_topics": 2146
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-13",
-    "to": "2026-09-12"
+    "from": "2026-08-14",
+    "to": "2026-09-13"
   },
   "source": "forum"
 }

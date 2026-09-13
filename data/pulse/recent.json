@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-12T07:17:36Z",
+  "generated_at": "2026-09-13T07:35:55Z",
   "metrics": {
     "changes": [
       {
-        "number": 12255,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: the chip leaves Checking when the source answers",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12255"
+        "number": 12269,
+        "owner": "Andras Timar",
+        "subject": "server audit: name the containment mechanism, no bind-mount warning for landlock",
+        "submitted": "2026-09-12T23:14:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12269"
       },
       {
-        "number": 12251,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: a section row opens, and a checkbox picks it",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12251"
+        "number": 11630,
+        "owner": "Caolán McNamara",
+        "subject": "ofz#515655013 don't remove an emptied table cell section",
+        "submitted": "2026-09-12T23:07:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11630"
       },
       {
-        "number": 12250,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: line the section rows up with their slides",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12250"
+        "number": 12319,
+        "owner": "Caolán McNamara",
+        "subject": "browser: Add missing ARIA tabpanel roles to spreadsheet view",
+        "submitted": "2026-09-12T23:07:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12319"
       },
       {
-        "number": 12249,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: align insert slides btn to the Import slide btn",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12249"
+        "number": 12292,
+        "owner": "Shlok",
+        "subject": "browser: Add missing ARIA tabpanel roles to spreadsheet view",
+        "submitted": "2026-09-12T23:07:29Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12292"
       },
       {
-        "number": 12248,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: keep the options behind one line",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12248"
+        "number": 12318,
+        "owner": "Caolán McNamara",
+        "subject": "cypress: writer1/annotation: ensure sidebar hidden after reloadDocument",
+        "submitted": "2026-09-12T20:48:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12318"
       },
       {
-        "number": 12247,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: rename the source list and the link modes",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12247"
+        "number": 12013,
+        "owner": "Henry Castro",
+        "subject": "cypress: test a Calc cell is announced with its address and content",
+        "submitted": "2026-09-12T20:48:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12013"
       },
       {
-        "number": 12246,
-        "owner": "Pedro Silva",
-        "subject": "Import slides pane: fix active row triple border",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12246"
+        "number": 11999,
+        "owner": "Henry Castro",
+        "subject": "cypress: validate every context of Draw's sidebar",
+        "submitted": "2026-09-12T20:48:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11999"
       },
       {
-        "number": 12245,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: the show all btn keeps its size under the pointer",
-        "submitted": "2026-09-12T07:15:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12245"
+        "number": 12148,
+        "owner": "Mohit Marathe",
+        "subject": "cypress: make insertTable wait for the gallery scroll to end",
+        "submitted": "2026-09-11T08:35:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12148"
       }
     ]
   },
