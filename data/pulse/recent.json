@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-13T07:35:55Z",
+  "generated_at": "2026-09-14T08:02:19Z",
   "metrics": {
     "changes": [
       {
-        "number": 12269,
-        "owner": "Andras Timar",
-        "subject": "server audit: name the containment mechanism, no bind-mount warning for landlock",
-        "submitted": "2026-09-12T23:14:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12269"
+        "number": 12383,
+        "owner": "Stephan Bergmann",
+        "subject": "loplugin:externandnotdefined, loplugin:external",
+        "submitted": "2026-09-14T08:00:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12383"
       },
       {
-        "number": 11630,
-        "owner": "Caolán McNamara",
-        "subject": "ofz#515655013 don't remove an emptied table cell section",
-        "submitted": "2026-09-12T23:07:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11630"
+        "number": 12161,
+        "owner": "Stephan Bergmann",
+        "subject": "Improve pyuno.legacyapi SAL_INFOs",
+        "submitted": "2026-09-14T07:59:21Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12161"
       },
       {
-        "number": 12319,
-        "owner": "Caolán McNamara",
-        "subject": "browser: Add missing ARIA tabpanel roles to spreadsheet view",
-        "submitted": "2026-09-12T23:07:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12319"
+        "number": 12167,
+        "owner": "Stephan Bergmann",
+        "subject": "Clean up Automake .PHONY warnings",
+        "submitted": "2026-09-14T07:56:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12167"
       },
       {
-        "number": 12292,
-        "owner": "Shlok",
-        "subject": "browser: Add missing ARIA tabpanel roles to spreadsheet view",
-        "submitted": "2026-09-12T23:07:29Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12292"
+        "number": 12151,
+        "owner": "Stephan Bergmann",
+        "subject": "Hide install-demo-extensions target behind --enable-debug",
+        "submitted": "2026-09-14T07:56:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12151"
       },
       {
-        "number": 12318,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: writer1/annotation: ensure sidebar hidden after reloadDocument",
-        "submitted": "2026-09-12T20:48:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12318"
+        "number": 12150,
+        "owner": "Stephan Bergmann",
+        "subject": "Adapt install-demo-extensions for CODA-Q",
+        "submitted": "2026-09-14T07:56:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12150"
       },
       {
-        "number": 12013,
-        "owner": "Henry Castro",
-        "subject": "cypress: test a Calc cell is announced with its address and content",
-        "submitted": "2026-09-12T20:48:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12013"
+        "number": 12149,
+        "owner": "Stephan Bergmann",
+        "subject": "install-demo-extensions doesn't need to synthesize files for COOL",
+        "submitted": "2026-09-14T07:56:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12149"
       },
       {
-        "number": 11999,
-        "owner": "Henry Castro",
-        "subject": "cypress: validate every context of Draw's sidebar",
-        "submitted": "2026-09-12T20:48:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11999"
+        "number": 12385,
+        "owner": "Miklos Vajna",
+        "subject": "engine sd: fix crash in the CustomAnimationEffectTabPage ctor",
+        "submitted": "2026-09-14T07:56:26Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12385"
       },
       {
-        "number": 12148,
-        "owner": "Mohit Marathe",
-        "subject": "cypress: make insertTable wait for the gallery scroll to end",
-        "submitted": "2026-09-11T08:35:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12148"
+        "number": 12162,
+        "owner": "Stephan Bergmann",
+        "subject": "Use an absolute base URL for the GAS wrapper",
+        "submitted": "2026-09-14T07:55:04Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12162"
       }
     ]
   },
