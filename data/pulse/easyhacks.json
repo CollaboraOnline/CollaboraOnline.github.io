@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T08:02:19Z",
+  "generated_at": "2026-09-15T07:57:04Z",
   "metrics": {
     "issues": [
       {
@@ -782,20 +782,6 @@
         "url": "https://github.com/CollaboraOnline/online/issues/13339"
       },
       {
-        "assignee": "AndreeaGeo",
-        "comments": 2,
-        "created_at": "2025-11-25",
-        "labels": [
-          "25.04"
-        ],
-        "mentor": "@eszkadev @Darshan-upadhyay1110",
-        "number": 13573,
-        "thumbs_up": 0,
-        "title": "Cypress: add test for save icon states",
-        "updated_at": "2025-11-30",
-        "url": "https://github.com/CollaboraOnline/online/issues/13573"
-      },
-      {
         "assignee": "dragos-dobrin",
         "comments": 6,
         "created_at": "2025-10-31",
@@ -1306,7 +1292,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 87
+    "total_open": 86
   },
   "source": "easyhacks"
 }

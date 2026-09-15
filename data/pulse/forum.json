@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-09-14T08:02:15Z",
+  "generated_at": "2026-09-15T07:57:01Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 90,
-      "posts_30d": 151,
+      "active_users_30d": 92,
+      "posts_30d": 157,
       "top_topics_monthly": [
         {
-          "posts": 8,
-          "title": "Cannot build CODA",
-          "url": "https://forum.collaboraonline.com/t/cannot-build-coda/4948",
-          "views": 77
+          "posts": 6,
+          "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
+          "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
+          "views": 68
         },
         {
           "posts": 1,
           "title": "COOL TC meeting minutes: 2026-09-09",
           "url": "https://forum.collaboraonline.com/t/cool-tc-meeting-minutes-2026-09-09/5020",
-          "views": 19
+          "views": 26
         },
         {
           "posts": 6,
           "title": "Collabora writer crashes",
           "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
-          "views": 44
+          "views": 62
         },
         {
-          "posts": 6,
-          "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
-          "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
-          "views": 53
+          "posts": 1,
+          "title": "Collabora Office 26.04 Now Available on Android and iOS",
+          "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
+          "views": 30
         },
         {
-          "posts": 4,
-          "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
-          "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
-          "views": 59
+          "posts": 3,
+          "title": "How to enable AI features in code 26.04?",
+          "url": "https://forum.collaboraonline.com/t/how-to-enable-ai-features-in-code-26-04/4989",
+          "views": 56
         }
       ],
       "topics_30d": 39,
-      "total_posts": 10187,
-      "total_topics": 2147
+      "total_posts": 10194,
+      "total_topics": 2148
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-15",
-    "to": "2026-09-14"
+    "from": "2026-08-16",
+    "to": "2026-09-15"
   },
   "source": "forum"
 }

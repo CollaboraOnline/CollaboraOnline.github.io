@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-14T08:02:19Z",
+  "generated_at": "2026-09-15T07:57:04Z",
   "metrics": {
     "changes": [
       {
-        "number": 12383,
-        "owner": "Stephan Bergmann",
-        "subject": "loplugin:externandnotdefined, loplugin:external",
-        "submitted": "2026-09-14T08:00:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12383"
+        "number": 12402,
+        "owner": "Balázs Varga",
+        "subject": "sc: keep the Total Row at the bottom when sorting a table",
+        "submitted": "2026-09-15T07:54:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12402"
       },
       {
-        "number": 12161,
-        "owner": "Stephan Bergmann",
-        "subject": "Improve pyuno.legacyapi SAL_INFOs",
-        "submitted": "2026-09-14T07:59:21Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12161"
+        "number": 12548,
+        "owner": "Andras Timar",
+        "subject": "consult the user dictionaries for proofreading errors too",
+        "submitted": "2026-09-15T07:51:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12548"
       },
       {
-        "number": 12167,
-        "owner": "Stephan Bergmann",
-        "subject": "Clean up Automake .PHONY warnings",
-        "submitted": "2026-09-14T07:56:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12167"
+        "number": 12489,
+        "owner": "Jaume Pujantell",
+        "subject": "browser: do not follow a caret the user did not move",
+        "submitted": "2026-09-15T07:47:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12489"
       },
       {
-        "number": 12151,
-        "owner": "Stephan Bergmann",
-        "subject": "Hide install-demo-extensions target behind --enable-debug",
-        "submitted": "2026-09-14T07:56:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12151"
+        "number": 12488,
+        "owner": "Jaume Pujantell",
+        "subject": "browser: stop following our own caret once the user scrolls it away",
+        "submitted": "2026-09-15T07:47:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12488"
       },
       {
-        "number": 12150,
-        "owner": "Stephan Bergmann",
-        "subject": "Adapt install-demo-extensions for CODA-Q",
-        "submitted": "2026-09-14T07:56:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12150"
+        "number": 12406,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "sw: do not put character properties on a text frame",
+        "submitted": "2026-09-15T07:38:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12406"
       },
       {
-        "number": 12149,
-        "owner": "Stephan Bergmann",
-        "subject": "install-demo-extensions doesn't need to synthesize files for COOL",
-        "submitted": "2026-09-14T07:56:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12149"
+        "number": 12446,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "sd: write the form controls of a slide",
+        "submitted": "2026-09-15T07:38:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12446"
       },
       {
-        "number": 12385,
-        "owner": "Miklos Vajna",
-        "subject": "engine sd: fix crash in the CustomAnimationEffectTabPage ctor",
-        "submitted": "2026-09-14T07:56:26Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12385"
+        "number": 12445,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "sd: write the text styles a master holds",
+        "submitted": "2026-09-15T07:37:21Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12445"
       },
       {
-        "number": 12162,
-        "owner": "Stephan Bergmann",
-        "subject": "Use an absolute base URL for the GAS wrapper",
-        "submitted": "2026-09-14T07:55:04Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12162"
+        "number": 12444,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "oox: a connector carries the style of a shape",
+        "submitted": "2026-09-15T07:36:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12444"
       }
     ]
   },
