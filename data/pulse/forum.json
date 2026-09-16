@@ -1,15 +1,27 @@
 {
-  "generated_at": "2026-09-15T07:57:01Z",
+  "generated_at": "2026-09-16T07:49:57Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 92,
-      "posts_30d": 157,
+      "active_users_30d": 93,
+      "posts_30d": 162,
       "top_topics_monthly": [
+        {
+          "posts": 1,
+          "title": "Collabora Office 26.04 Now Available on Android and iOS",
+          "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
+          "views": 33
+        },
         {
           "posts": 6,
           "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
           "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
-          "views": 68
+          "views": 72
+        },
+        {
+          "posts": 6,
+          "title": "Collabora writer crashes",
+          "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
+          "views": 65
         },
         {
           "posts": 1,
@@ -18,33 +30,21 @@
           "views": 26
         },
         {
-          "posts": 6,
-          "title": "Collabora writer crashes",
-          "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
-          "views": 62
-        },
-        {
-          "posts": 1,
-          "title": "Collabora Office 26.04 Now Available on Android and iOS",
-          "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 30
-        },
-        {
           "posts": 3,
           "title": "How to enable AI features in code 26.04?",
           "url": "https://forum.collaboraonline.com/t/how-to-enable-ai-features-in-code-26-04/4989",
-          "views": 56
+          "views": 64
         }
       ],
-      "topics_30d": 39,
-      "total_posts": 10194,
-      "total_topics": 2148
+      "topics_30d": 42,
+      "total_posts": 10202,
+      "total_topics": 2152
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-16",
-    "to": "2026-09-15"
+    "from": "2026-08-17",
+    "to": "2026-09-16"
   },
   "source": "forum"
 }

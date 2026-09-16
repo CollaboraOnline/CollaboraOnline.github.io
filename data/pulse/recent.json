@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-15T07:57:04Z",
+  "generated_at": "2026-09-16T07:50:00Z",
   "metrics": {
     "changes": [
       {
-        "number": 12402,
-        "owner": "Balázs Varga",
-        "subject": "sc: keep the Total Row at the bottom when sorting a table",
-        "submitted": "2026-09-15T07:54:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12402"
-      },
-      {
-        "number": 12548,
+        "number": 12592,
         "owner": "Andras Timar",
-        "subject": "consult the user dictionaries for proofreading errors too",
-        "submitted": "2026-09-15T07:51:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12548"
+        "subject": "register LanguageTool as the grammar checker of 16 locales in the engine",
+        "submitted": "2026-09-16T07:32:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12592"
       },
       {
-        "number": 12489,
-        "owner": "Jaume Pujantell",
-        "subject": "browser: do not follow a caret the user did not move",
-        "submitted": "2026-09-15T07:47:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12489"
+        "number": 12591,
+        "owner": "Andras Timar",
+        "subject": "make 11 the engine default for ListBoxMaximumLineCount",
+        "submitted": "2026-09-16T07:30:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12591"
       },
       {
-        "number": 12488,
-        "owner": "Jaume Pujantell",
-        "subject": "browser: stop following our own caret once the user scrolls it away",
-        "submitted": "2026-09-15T07:47:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12488"
+        "number": 12640,
+        "owner": "Caolán McNamara",
+        "subject": "don't take a filelist file's mode from the build tree",
+        "submitted": "2026-09-16T07:30:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12640"
       },
       {
-        "number": 12406,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "sw: do not put character properties on a text frame",
-        "submitted": "2026-09-15T07:38:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12406"
+        "number": 12590,
+        "owner": "Andras Timar",
+        "subject": "make Calibri/Carlito the engine default font for 'en' documents",
+        "submitted": "2026-09-16T07:29:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12590"
       },
       {
-        "number": 12446,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "sd: write the form controls of a slide",
-        "submitted": "2026-09-15T07:38:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12446"
+        "number": 12589,
+        "owner": "Andras Timar",
+        "subject": "kit: default the work path to the temp dir",
+        "submitted": "2026-09-16T07:28:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12589"
       },
       {
-        "number": 12445,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "sd: write the text styles a master holds",
-        "submitted": "2026-09-15T07:37:21Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12445"
+        "number": 12403,
+        "owner": "Karthik Godha",
+        "subject": "impress: Keep the search highlight when the hit is on another slide",
+        "submitted": "2026-09-16T07:28:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12403"
       },
       {
-        "number": 12444,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "oox: a connector carries the style of a shape",
-        "submitted": "2026-09-15T07:36:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12444"
+        "number": 12108,
+        "owner": "Ketan Ghori",
+        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Control.JSDialogBuilder.js",
+        "submitted": "2026-09-16T06:17:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12108"
+      },
+      {
+        "number": 12107,
+        "owner": "Ketan Ghori",
+        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Cursor.ts",
+        "submitted": "2026-09-16T06:17:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12107"
       }
     ]
   },
