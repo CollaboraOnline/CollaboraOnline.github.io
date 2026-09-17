@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-16T07:50:00Z",
+  "generated_at": "2026-09-17T07:54:54Z",
   "metrics": {
     "changes": [
       {
-        "number": 12592,
-        "owner": "Andras Timar",
-        "subject": "register LanguageTool as the grammar checker of 16 locales in the engine",
-        "submitted": "2026-09-16T07:32:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12592"
+        "number": 12832,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "sc: a date axis that chooses its own base unit states none",
+        "submitted": "2026-09-17T07:37:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12832"
       },
       {
-        "number": 12591,
-        "owner": "Andras Timar",
-        "subject": "make 11 the engine default for ListBoxMaximumLineCount",
-        "submitted": "2026-09-16T07:30:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12591"
-      },
-      {
-        "number": 12640,
+        "number": 12783,
         "owner": "Caolán McNamara",
-        "subject": "don't take a filelist file's mode from the build tree",
-        "submitted": "2026-09-16T07:30:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12640"
+        "subject": "senddoc: pass the mail client its arguments directly",
+        "submitted": "2026-09-17T07:28:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12783"
       },
       {
-        "number": 12590,
-        "owner": "Andras Timar",
-        "subject": "make Calibri/Carlito the engine default font for 'en' documents",
-        "submitted": "2026-09-16T07:29:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12590"
+        "number": 12831,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "chart2: ask an object which properties it has before reading them",
+        "submitted": "2026-09-17T07:15:24Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12831"
       },
       {
-        "number": 12589,
-        "owner": "Andras Timar",
-        "subject": "kit: default the work path to the temp dir",
-        "submitted": "2026-09-16T07:28:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12589"
+        "number": 12830,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "xmloff: a chart that reads from its own document is not a fault",
+        "submitted": "2026-09-17T07:15:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12830"
       },
       {
-        "number": 12403,
-        "owner": "Karthik Godha",
-        "subject": "impress: Keep the search highlight when the hit is on another slide",
-        "submitted": "2026-09-16T07:28:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12403"
+        "number": 12702,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#39881 srchdlg: don't hide search buttons if 'search by styles'",
+        "submitted": "2026-09-17T07:13:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12702"
       },
       {
-        "number": 12108,
-        "owner": "Ketan Ghori",
-        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Control.JSDialogBuilder.js",
-        "submitted": "2026-09-16T06:17:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12108"
+        "number": 12838,
+        "owner": "Noel Grandin",
+        "subject": "fix build in sc/",
+        "submitted": "2026-09-17T07:11:05Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12838"
       },
       {
-        "number": 12107,
-        "owner": "Ketan Ghori",
-        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Cursor.ts",
-        "submitted": "2026-09-16T06:17:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12107"
+        "number": 12793,
+        "owner": "Mohit Marathe",
+        "subject": "g: add an optional '--topic=NAME' argument to './g review'",
+        "submitted": "2026-09-17T07:06:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12793"
+      },
+      {
+        "number": 12693,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: draw the gradient fills",
+        "submitted": "2026-09-17T07:00:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12693"
       }
     ]
   },
