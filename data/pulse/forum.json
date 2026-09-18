@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-17T07:54:50Z",
+  "generated_at": "2026-09-18T07:32:59Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 93,
-      "posts_30d": 173,
+      "active_users_30d": 85,
+      "posts_30d": 181,
       "top_topics_monthly": [
         {
           "posts": 1,
           "title": "Collabora Office 26.04 Now Available on Android and iOS",
           "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 41
+          "views": 49
         },
         {
           "posts": 7,
           "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
           "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
-          "views": 85
+          "views": 99
         },
         {
           "posts": 1,
@@ -30,21 +30,21 @@
           "views": 69
         },
         {
-          "posts": 3,
-          "title": "How to enable AI features in code 26.04?",
-          "url": "https://forum.collaboraonline.com/t/how-to-enable-ai-features-in-code-26-04/4989",
-          "views": 69
+          "posts": 5,
+          "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
+          "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
+          "views": 72
         }
       ],
-      "topics_30d": 45,
-      "total_posts": 10216,
-      "total_topics": 2155
+      "topics_30d": 46,
+      "total_posts": 10228,
+      "total_topics": 2157
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-18",
-    "to": "2026-09-17"
+    "from": "2026-08-19",
+    "to": "2026-09-18"
   },
   "source": "forum"
 }

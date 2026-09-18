@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-17T07:54:54Z",
+  "generated_at": "2026-09-18T07:33:02Z",
   "metrics": {
     "changes": [
       {
-        "number": 12832,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "sc: a date axis that chooses its own base unit states none",
-        "submitted": "2026-09-17T07:37:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12832"
+        "number": 11901,
+        "owner": "Henry Castro",
+        "subject": "cypress: check what a tooltip owes the pointer",
+        "submitted": "2026-09-18T07:26:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11901"
       },
       {
-        "number": 12783,
+        "number": 11900,
+        "owner": "Henry Castro",
+        "subject": "browser: a11y: give a tooltip time to be reached",
+        "submitted": "2026-09-18T07:26:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11900"
+      },
+      {
+        "number": 12742,
         "owner": "Caolán McNamara",
-        "subject": "senddoc: pass the mail client its arguments directly",
-        "submitted": "2026-09-17T07:28:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12783"
+        "subject": "editeng: use the online selection path on the desktop too",
+        "submitted": "2026-09-18T07:25:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12742"
       },
       {
-        "number": 12831,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "chart2: ask an object which properties it has before reading them",
-        "submitted": "2026-09-17T07:15:24Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12831"
+        "number": 12115,
+        "owner": "Ketan Ghori",
+        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Control.MobileWizard.js",
+        "submitted": "2026-09-18T07:03:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12115"
       },
       {
-        "number": 12830,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "xmloff: a chart that reads from its own document is not a fault",
-        "submitted": "2026-09-17T07:15:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12830"
+        "number": 12113,
+        "owner": "Ketan Ghori",
+        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Toolbar.js",
+        "submitted": "2026-09-18T07:03:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12113"
       },
       {
-        "number": 12702,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#39881 srchdlg: don't hide search buttons if 'search by styles'",
-        "submitted": "2026-09-17T07:13:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12702"
+        "number": 12112,
+        "owner": "Ketan Ghori",
+        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Control.TopToolbar.js",
+        "submitted": "2026-09-18T07:01:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12112"
       },
       {
-        "number": 12838,
-        "owner": "Noel Grandin",
-        "subject": "fix build in sc/",
-        "submitted": "2026-09-17T07:11:05Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12838"
-      },
-      {
-        "number": 12793,
+        "number": 12695,
         "owner": "Mohit Marathe",
-        "subject": "g: add an optional '--topic=NAME' argument to './g review'",
-        "submitted": "2026-09-17T07:06:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12793"
+        "subject": "loplugin:stringviewparam: skip methods marked override",
+        "submitted": "2026-09-18T06:09:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12695"
       },
       {
-        "number": 12693,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: draw the gradient fills",
-        "submitted": "2026-09-17T07:00:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12693"
+        "number": 12883,
+        "owner": "Caolán McNamara",
+        "subject": "ShellExec::execute: nothing passes an nFlags of 42 anymore",
+        "submitted": "2026-09-18T05:44:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12883"
       }
     ]
   },
