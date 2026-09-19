@@ -4,7 +4,7 @@
 {{ if eq $section "code-needs-lo-wget" }}
 CODE needs the engine (formerly "Collabora Office core") to be built to run. Building the engine from source takes a considerable amount of time and brings in extra complexity, so we will instead download a daily-built archive containing the pieces that are absolutely necessary. If you are working only on the online side, without any engine-side changes, or you just want to quickly get going to do some small fixes, this will be enough for you. Otherwise, [refer to the general instructions](/post/build-code/#build-code-n-lo).
 
-The archive ships only the engine's `instdir`; the LOKit headers no longer need to be bundled because they are already in the monorepo at `engine/include`. Run the following from the top of the cloned `online` monorepo so the asset is extracted into the existing `engine/` directory:
+The archive ships only the engine's `instdir`; the LOKit headers no longer need to be bundled because they are already in the monorepo at `engine/include`. Run the following from the top of the cloned `collabora-online` monorepo so the asset is extracted into the existing `engine/` directory:
 
 ```bash
 wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/{{.Get "lotar"}}
