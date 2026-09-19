@@ -1,15 +1,21 @@
 {
-  "generated_at": "2026-09-18T07:32:59Z",
+  "generated_at": "2026-09-19T07:28:29Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 85,
-      "posts_30d": 181,
+      "active_users_30d": 87,
+      "posts_30d": 180,
       "top_topics_monthly": [
+        {
+          "posts": 9,
+          "title": "Connection reset by peer with Collabora on Seafile instance",
+          "url": "https://forum.collaboraonline.com/t/connection-reset-by-peer-with-collabora-on-seafile-instance/5040",
+          "views": 40
+        },
         {
           "posts": 1,
           "title": "Collabora Office 26.04 Now Available on Android and iOS",
           "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 49
+          "views": 50
         },
         {
           "posts": 7,
@@ -21,30 +27,24 @@
           "posts": 1,
           "title": "COOL TC meeting minutes: 2026-09-09",
           "url": "https://forum.collaboraonline.com/t/cool-tc-meeting-minutes-2026-09-09/5020",
-          "views": 31
+          "views": 33
         },
         {
           "posts": 6,
           "title": "Collabora writer crashes",
           "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
           "views": 69
-        },
-        {
-          "posts": 5,
-          "title": "False “Document changed in storage” conflict with SharePoint on 26.04 after successful PutFile without LastModifiedTime",
-          "url": "https://forum.collaboraonline.com/t/false-document-changed-in-storage-conflict-with-sharepoint-on-26-04-after-successful-putfile-without-lastmodifiedtime/4966",
-          "views": 72
         }
       ],
       "topics_30d": 46,
-      "total_posts": 10228,
+      "total_posts": 10229,
       "total_topics": 2157
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-19",
-    "to": "2026-09-18"
+    "from": "2026-08-20",
+    "to": "2026-09-19"
   },
   "source": "forum"
 }

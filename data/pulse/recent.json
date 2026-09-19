@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-18T07:33:02Z",
+  "generated_at": "2026-09-19T07:28:32Z",
   "metrics": {
     "changes": [
       {
-        "number": 11901,
-        "owner": "Henry Castro",
-        "subject": "cypress: check what a tooltip owes the pointer",
-        "submitted": "2026-09-18T07:26:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11901"
+        "number": 12843,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: mark out the placeholders in master view",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12843"
       },
       {
-        "number": 11900,
-        "owner": "Henry Castro",
-        "subject": "browser: a11y: give a tooltip time to be reached",
-        "submitted": "2026-09-18T07:26:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11900"
+        "number": 12842,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: answer a request for a page the document does not hold",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12842"
       },
       {
-        "number": 12742,
-        "owner": "Caolán McNamara",
-        "subject": "editeng: use the online selection path on the desktop too",
-        "submitted": "2026-09-18T07:25:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12742"
+        "number": 12841,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: key the cache by part and mode",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12841"
       },
       {
-        "number": 12115,
-        "owner": "Ketan Ghori",
-        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Control.MobileWizard.js",
-        "submitted": "2026-09-18T07:03:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12115"
+        "number": 12840,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: name a text edit entry by the view it belongs to",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12840"
       },
       {
-        "number": 12113,
-        "owner": "Ketan Ghori",
-        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Toolbar.js",
-        "submitted": "2026-09-18T07:03:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12113"
+        "number": 12839,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: send the text of an edit as it is typed",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12839"
       },
       {
-        "number": 12112,
-        "owner": "Ketan Ghori",
-        "subject": "jsdepend: replace jQuery ID selectors with getElementById in Control.TopToolbar.js",
-        "submitted": "2026-09-18T07:01:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12112"
+        "number": 12792,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: send a running text edit as its own entry",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12792"
       },
       {
-        "number": 12695,
-        "owner": "Mohit Marathe",
-        "subject": "loplugin:stringviewparam: skip methods marked override",
-        "submitted": "2026-09-18T06:09:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12695"
+        "number": 12791,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: check that every parent names a reported object",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12791"
       },
       {
-        "number": 12883,
-        "owner": "Caolán McNamara",
-        "subject": "ShellExec::execute: nothing passes an nFlags of 42 anymore",
-        "submitted": "2026-09-18T05:44:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12883"
+        "number": 12790,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: serve the notes pages",
+        "submitted": "2026-09-19T05:43:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12790"
       }
     ]
   },
