@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-19T07:28:26Z",
+  "generated_at": "2026-09-20T07:52:28Z",
   "metrics": {
-    "merged_30d": 2458,
-    "open_active": 268,
-    "open_unreviewed": 226,
+    "merged_30d": 2447,
+    "open_active": 220,
+    "open_unreviewed": 178,
     "top_authors_30d": [
       {
-        "merged": 335,
+        "merged": 337,
         "name": "Caolán McNamara"
       },
       {
-        "merged": 237,
+        "merged": 244,
         "name": "Henry Castro"
       },
       {
@@ -18,7 +18,7 @@
         "name": "Andras Timar"
       },
       {
-        "merged": 176,
+        "merged": 171,
         "name": "Samuel Mehrbrodt"
       },
       {
@@ -33,8 +33,8 @@
   ],
   "period": {
     "days": 30,
-    "from": "2026-08-20",
-    "to": "2026-09-19"
+    "from": "2026-08-21",
+    "to": "2026-09-20"
   },
   "source": "gerrit"
 }

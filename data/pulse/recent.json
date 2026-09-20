@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-19T07:28:32Z",
+  "generated_at": "2026-09-20T07:52:35Z",
   "metrics": {
     "changes": [
       {
-        "number": 12843,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: mark out the placeholders in master view",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12843"
+        "number": 13072,
+        "owner": "Noel Grandin",
+        "subject": "use more OUString literal in extensions",
+        "submitted": "2026-09-20T07:30:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13072"
       },
       {
-        "number": 12842,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: answer a request for a page the document does not hold",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12842"
+        "number": 13071,
+        "owner": "Noel Grandin",
+        "subject": "use more OUString literal in xmlsecurity",
+        "submitted": "2026-09-20T07:30:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13071"
       },
       {
-        "number": 12841,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: key the cache by part and mode",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12841"
+        "number": 12864,
+        "owner": "Szymon Kłos",
+        "subject": "cool#7662 - align style previews with physical grid.",
+        "submitted": "2026-09-19T20:52:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12864"
       },
       {
-        "number": 12840,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: name a text edit entry by the view it belongs to",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12840"
+        "number": 12861,
+        "owner": "Szymon Kłos",
+        "subject": "notebookbar: remove leftover of manual style population",
+        "submitted": "2026-09-19T20:52:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12861"
       },
       {
-        "number": 12839,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: send the text of an edit as it is typed",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12839"
+        "number": 12860,
+        "owner": "Szymon Kłos",
+        "subject": "notebookbar: do not populate styles manually",
+        "submitted": "2026-09-19T20:52:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12860"
       },
       {
-        "number": 12792,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: send a running text edit as its own entry",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12792"
+        "number": 12859,
+        "owner": "Szymon Kłos",
+        "subject": "Localize style names from the engine, not on the client",
+        "submitted": "2026-09-19T20:52:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12859"
       },
       {
-        "number": 12791,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: check that every parent names a reported object",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12791"
+        "number": 12858,
+        "owner": "Szymon Kłos",
+        "subject": "notebookbar: re-render style previews on display density change",
+        "submitted": "2026-09-19T20:52:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12858"
       },
       {
-        "number": 12790,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: serve the notes pages",
-        "submitted": "2026-09-19T05:43:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12790"
+        "number": 11493,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "cool#16081 Bring Word's built-in table styles to Writer",
+        "submitted": "2026-09-18T19:39:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11493"
       }
     ]
   },

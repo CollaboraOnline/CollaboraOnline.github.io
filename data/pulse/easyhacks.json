@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T07:28:32Z",
+  "generated_at": "2026-09-20T07:52:35Z",
   "metrics": {
     "issues": [
       {
@@ -1216,22 +1216,6 @@
       {
         "assignee": null,
         "comments": 0,
-        "created_at": "2024-10-15",
-        "labels": [
-          "bug",
-          "Hacktoberfest",
-          "view: phone"
-        ],
-        "mentor": "@Rash419",
-        "number": 10234,
-        "thumbs_up": 1,
-        "title": "mobile: undefined error when document reconnects",
-        "updated_at": "2024-11-01",
-        "url": "https://github.com/CollaboraOnline/online/issues/10234"
-      },
-      {
-        "assignee": null,
-        "comments": 0,
         "created_at": "2024-11-01",
         "labels": [
           "enhancement",
@@ -1292,7 +1276,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 86
+    "total_open": 85
   },
   "source": "easyhacks"
 }
