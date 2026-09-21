@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-20T07:52:35Z",
+  "generated_at": "2026-09-21T08:07:38Z",
   "metrics": {
     "changes": [
       {
-        "number": 13072,
-        "owner": "Noel Grandin",
-        "subject": "use more OUString literal in extensions",
-        "submitted": "2026-09-20T07:30:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13072"
+        "number": 13120,
+        "owner": "Andras Timar",
+        "subject": "cool#14874: print the version with --version for the Qt app",
+        "submitted": "2026-09-21T08:05:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13120"
       },
       {
-        "number": 13071,
-        "owner": "Noel Grandin",
-        "subject": "use more OUString literal in xmlsecurity",
-        "submitted": "2026-09-20T07:30:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13071"
+        "number": 13117,
+        "owner": "Mike Kaganski",
+        "subject": "tdf#163272 sw: give a paragraph its own /Lang",
+        "submitted": "2026-09-21T08:01:30Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13117"
       },
       {
-        "number": 12864,
-        "owner": "Szymon Kłos",
-        "subject": "cool#7662 - align style previews with physical grid.",
-        "submitted": "2026-09-19T20:52:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12864"
+        "number": 12617,
+        "owner": "Sahil Gautam",
+        "subject": "fix: browser: keep a reply whose parent was deleted",
+        "submitted": "2026-09-21T07:58:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12617"
       },
       {
-        "number": 12861,
-        "owner": "Szymon Kłos",
-        "subject": "notebookbar: remove leftover of manual style population",
-        "submitted": "2026-09-19T20:52:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12861"
+        "number": 13056,
+        "owner": "Hubert Figuière",
+        "subject": "typescript: Remove more cast 'as any'",
+        "submitted": "2026-09-21T07:38:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13056"
       },
       {
-        "number": 12860,
-        "owner": "Szymon Kłos",
-        "subject": "notebookbar: do not populate styles manually",
-        "submitted": "2026-09-19T20:52:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12860"
+        "number": 13051,
+        "owner": "Hubert Figuière",
+        "subject": "typescript: Create the UnoCommand type",
+        "submitted": "2026-09-21T07:32:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13051"
       },
       {
-        "number": 12859,
-        "owner": "Szymon Kłos",
-        "subject": "Localize style names from the engine, not on the client",
-        "submitted": "2026-09-19T20:52:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12859"
-      },
-      {
-        "number": 12858,
-        "owner": "Szymon Kłos",
-        "subject": "notebookbar: re-render style previews on display density change",
-        "submitted": "2026-09-19T20:52:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12858"
-      },
-      {
-        "number": 11493,
+        "number": 12483,
         "owner": "Samuel Mehrbrodt",
-        "subject": "cool#16081 Bring Word's built-in table styles to Writer",
-        "submitted": "2026-09-18T19:39:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11493"
+        "subject": "cool#15971 keep the document awake while a comment is written",
+        "submitted": "2026-09-21T07:20:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12483"
+      },
+      {
+        "number": 12775,
+        "owner": "Jan Holesovsky",
+        "subject": "coda-m: Make the slideshow and console windows inspectable",
+        "submitted": "2026-09-21T07:17:48Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12775"
+      },
+      {
+        "number": 12774,
+        "owner": "Jan Holesovsky",
+        "subject": "avmedia: Fix the macOS backend for the cpo::uno move",
+        "submitted": "2026-09-21T07:17:48Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12774"
       }
     ]
   },
