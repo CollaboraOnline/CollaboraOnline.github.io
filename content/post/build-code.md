@@ -61,6 +61,11 @@ It will bring in things like git, gcc, etc.
 ```bash
 sudo zypper install -t pattern devel_basis
 ```
+The engine build needs the build dependencies of the distribution's own LibreOffice package as well:
+```bash
+sudo zypper si -d libreoffice
+```
+
 Now go ahead and install the following packages
 ```bash
 zypper in libcap-progs python3-polib libcap-devel npm libtool cppunit-devel pam-devel python3-lxml chromium
@@ -74,8 +79,8 @@ Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
 
-### Engine binaries
-{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+### Build the engine
+{{% common-build-commands section="build-engine" %}}
 
 ### Building CODE
 Run autoconf/automake, configure and build using GNU make:
@@ -101,6 +106,11 @@ We need the engine and several other libraries and tools to build `CODE`. POCO i
 
 Open a terminal and follow the steps below:
 
+The engine build needs the build dependencies of the distribution's own LibreOffice package as well:
+```bash
+sudo dnf builddep libreoffice
+```
+
 ```bash
 sudo dnf install \
     chromium \
@@ -125,8 +135,8 @@ Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
 
-### Engine binaries
-{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+### Build the engine
+{{% common-build-commands section="build-engine" %}}
 
 ### Building CODE
 Run autoconf/automake, configure and build using GNU make:
@@ -155,13 +165,15 @@ Open a terminal and follow the steps below:
 sudo pacman -Syu libcap libcap-ng lib32-libcap libpng cppunit nodejs npm chromium python-lxml python-polib
 ```
 
+The engine build also needs `base-devel` and the build dependencies (`makedepends`) of the `libreoffice-fresh` package. https://wiki.documentfoundation.org/Development/BuildingOnLinux lists them for Arch.
+
 ### Clone the source
 Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
 
-### Engine binaries
-{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+### Build the engine
+{{% common-build-commands section="build-engine" %}}
 
 ### Building CODE
 Run autoconf/automake, configure and build using GNU make:
@@ -194,6 +206,11 @@ of the other packages:
 sudo apt install -y dialog
 ```
 
+The engine build needs the build dependencies of the distribution's own LibreOffice package as well. This requires `deb-src` entries in your apt sources:
+```bash
+sudo apt build-dep -y libreoffice
+```
+
 Now install the rest of the required packages:
 ```bash
 sudo apt install -y python3-polib libcap-dev npm \
@@ -207,8 +224,8 @@ Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
 
-### Engine binaries
-{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+### Build the engine
+{{% common-build-commands section="build-engine" %}}
 
 ### Building CODE
 Run autoconf/automake, configure and build using GNU make:
@@ -238,6 +255,11 @@ of the other packages:
 sudo apt install -y dialog
 ```
 
+The engine build needs the build dependencies of the distribution's own LibreOffice package as well. This requires `deb-src` entries in your apt sources:
+```bash
+sudo apt build-dep -y libreoffice
+```
+
 Now install the rest of the required packages:
 ```bash
 sudo apt install -y python3-polib libcap-dev libssl-dev npm \
@@ -253,8 +275,8 @@ Clone the unified `online` monorepo from Gerrit:
 
 {{% common-build-commands section="clone-online" %}}
 
-### Engine binaries
-{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
+### Build the engine
+{{% common-build-commands section="build-engine" %}}
 
 ### Building CODE
 Run autoconf/automake, configure and build using GNU make:
@@ -298,7 +320,7 @@ Online, configuring your build and running your newly-built CODE.
 CODE must be built on Linux, and you need the following:
 
 * The engine
-  + Either build the engine from source, or download a daily built archive (see below)
+  + Built from the `engine/` subtree of the monorepo (see below)
 * libpng, libcap-progs, libtool, automake, autoconf, pkg-config, sudo, pam
   + Use the packages from your distro
 
@@ -316,43 +338,17 @@ You may also want to have the following optional dependencies:
 
 ### The engine
 
-CODE needs the engine to be built to run. You have two options to meet this requirement: either by building it locally (Option A - recommended), or by downloading a daily built archive (Option B - quick & dirty) which contains only the absolutely necessary pieces. If you are working only on the online side, without doing any code-level changes to the engine, or you just want to quickly get going to do some small fixes, you may prefer the second way.
-
-#### Option A - Build the engine locally (Recommended)
-For dependency installation, refer to https://wiki.documentfoundation.org/Development/BuildingOnLinux.
-
-First clone the unified `online` monorepo — all the source code lives here, with the former Collabora Office core under `engine/`:
+First clone the unified `online` monorepo. All the source code lives here, with the former Collabora Office core under `engine/`:
 
 {{% common-build-commands section="clone-online" %}}
 
-Now move into the engine tree and build it:
-{{% common-build-commands section="clone-lo" lobranch="main" %}}
+{{% common-build-commands section="build-engine" %}}
 
-Configure and build, adding the following configuration options to `autogen.sh` or `autogen.input`:
+For a localized (translated) user interface, clone the [translations repository](https://gerrit.collaboraoffice.com/admin/repos/translations) into `engine/translations` before running `autogen.sh`, and add `--with-lang="de fr"` (or the languages you need) to the `autogen.sh` call. The engine's `--with-lang` picks up the `.po` files from there, and a flag given on the command line wins over the `--without-lang` in the distro configuration:
+
 ```bash
-./autogen.sh --with-distro=CPLinux-LOKit --without-package-format
+git clone https://gerrit.collaboraoffice.com/translations engine/translations
 ```
-```bash
-make -j $(nproc)
-```
-You can expect this process to take at least an hour or two the first time, possibly more depending on your machine and your internet connection. Subsequent builds will be faster.
-
-Once the engine is built, step back to the top of the monorepo to build online:
-```bash
-cd ..
-```
-
-#### Option B - Download a Daily-Built Archive of the Engine (Quick & Dirty)
-
-Option B reuses the same monorepo clone as Option A, but skips the engine source build by dropping a pre-built `instdir` into `engine/`. If you have not cloned the monorepo yet, do so now:
-
-{{% common-build-commands section="clone-online" %}}
-
-Then download the daily-built archive and extract it into `engine/`:
-
-{{% common-build-commands section="code-needs-lo-wget" lotar="engine-main-assets.tar.gz" %}}
-
-The archive only contains `instdir`; the LOKit headers come from the monorepo's `engine/include`. Configure finds both under `engine/` automatically in the next step.
 
 ### Building CODE
 
