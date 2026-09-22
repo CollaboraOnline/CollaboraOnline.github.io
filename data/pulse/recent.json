@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-21T08:07:38Z",
+  "generated_at": "2026-09-22T07:52:34Z",
   "metrics": {
     "changes": [
       {
-        "number": 13120,
+        "number": 11268,
+        "owner": "Caolán McNamara",
+        "subject": "wsd: keep the cursor and selection ends in the last view position",
+        "submitted": "2026-09-22T07:52:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/11268"
+      },
+      {
+        "number": 13234,
+        "owner": "Stephan Bergmann",
+        "subject": "UBSan CppunitTest_sw_ooxmlimport2 apparently needs SvxBrushItem RTTI now",
+        "submitted": "2026-09-22T07:51:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13234"
+      },
+      {
+        "number": 13197,
+        "owner": "Miklos Vajna",
+        "subject": "cool#16219 engine sw, merged paste: allow remaining needed character properties",
+        "submitted": "2026-09-22T07:51:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13197"
+      },
+      {
+        "number": 12975,
         "owner": "Andras Timar",
-        "subject": "cool#14874: print the version with --version for the Qt app",
-        "submitted": "2026-09-21T08:05:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13120"
+        "subject": "cypress: two users, and only one of them owns the document settings",
+        "submitted": "2026-09-22T07:50:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12975"
       },
       {
-        "number": 13117,
-        "owner": "Mike Kaganski",
-        "subject": "tdf#163272 sw: give a paragraph its own /Lang",
-        "submitted": "2026-09-21T08:01:30Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13117"
+        "number": 12974,
+        "owner": "Andras Timar",
+        "subject": "Options: say when a change will not be felt in this document",
+        "submitted": "2026-09-22T07:50:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12974"
       },
       {
-        "number": 12617,
-        "owner": "Sahil Gautam",
-        "subject": "fix: browser: keep a reply whose parent was deleted",
-        "submitted": "2026-09-21T07:58:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12617"
+        "number": 12973,
+        "owner": "Andras Timar",
+        "subject": "Options: read the settings again when the one user on a document saves",
+        "submitted": "2026-09-22T07:50:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12973"
       },
       {
-        "number": 13056,
-        "owner": "Hubert Figuière",
-        "subject": "typescript: Remove more cast 'as any'",
-        "submitted": "2026-09-21T07:38:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13056"
+        "number": 12972,
+        "owner": "Andras Timar",
+        "subject": "wsd: pin down what a second user's settings do to a shared document",
+        "submitted": "2026-09-22T07:50:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12972"
       },
       {
-        "number": 13051,
-        "owner": "Hubert Figuière",
-        "subject": "typescript: Create the UnoCommand type",
-        "submitted": "2026-09-21T07:32:19Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13051"
-      },
-      {
-        "number": 12483,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "cool#15971 keep the document awake while a comment is written",
-        "submitted": "2026-09-21T07:20:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12483"
-      },
-      {
-        "number": 12775,
-        "owner": "Jan Holesovsky",
-        "subject": "coda-m: Make the slideshow and console windows inspectable",
-        "submitted": "2026-09-21T07:17:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12775"
-      },
-      {
-        "number": 12774,
-        "owner": "Jan Holesovsky",
-        "subject": "avmedia: Fix the macOS backend for the cpo::uno move",
-        "submitted": "2026-09-21T07:17:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12774"
+        "number": 12971,
+        "owner": "Andras Timar",
+        "subject": "CODA: apply the settings the dialog saves without reopening the document",
+        "submitted": "2026-09-22T07:50:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12971"
       }
     ]
   },

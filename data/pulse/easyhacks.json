@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-09-21T08:07:37Z",
+  "generated_at": "2026-09-22T07:52:33Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-09-21",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16227,
+        "thumbs_up": 0,
+        "title": "Change comment icon in Calc",
+        "updated_at": "2026-09-21",
+        "url": "https://github.com/CollaboraOnline/online/issues/16227"
+      },
       {
         "assignee": null,
         "comments": 0,
@@ -1276,7 +1290,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 85
+    "total_open": 86
   },
   "source": "easyhacks"
 }
