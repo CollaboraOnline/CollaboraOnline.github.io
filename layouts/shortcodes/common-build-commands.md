@@ -1,17 +1,22 @@
 {{$section := .Get "section"}}
 {{$clonedir := .Get "clonedir" | default "collabora-online"}}
 
-{{ if eq $section "code-needs-lo-wget" }}
-CODE needs the engine (formerly "Collabora Office core") to be built to run. Building the engine from source takes a considerable amount of time and brings in extra complexity, so we will instead download a daily-built archive containing the pieces that are absolutely necessary. If you are working only on the online side, without any engine-side changes, or you just want to quickly get going to do some small fixes, this will be enough for you. Otherwise, [refer to the general instructions](/post/build-code/#build-code-n-lo).
+{{ if eq $section "build-engine" }}
+CODE needs the engine (formerly "Collabora Office core") to be built before online can be configured and built. The online build compiles its C++ parts with the engine's build system and links against libraries built in the engine tree, so it needs a complete engine build under `engine/`, not just a set of installed binaries.
 
-The archive ships only the engine's `instdir`; the LOKit headers no longer need to be bundled because they are already in the monorepo at `engine/include`. Run the following from the top of the cloned `collabora-online` monorepo so the asset is extracted into the existing `engine/` directory:
+The engine has many more build dependencies than online. Install the packages your distribution needs to build LibreOffice; the engine's `README.md` and https://wiki.documentfoundation.org/Development/BuildingOnLinux list them.
+
+From the top of the cloned `online` monorepo, configure and build the engine with the developer variant of the LOKit distro configuration:
 
 ```bash
-wget https://github.com/CollaboraOnline/online/releases/download/for-code-assets/{{.Get "lotar"}}
-tar xvf {{.Get "lotar"}} -C engine
+cd engine
+./autogen.sh --with-distro=CPLinux-LOKit-Dev
+make -j $(nproc)
+cd ..
 ```
 
-Configure will then pick up the engine from `engine/` automatically.
+The first build takes at least an hour or two, possibly more depending on your machine and your internet connection. Later builds only rebuild what changed. The `CPLinux-LOKit-Dev` configuration turns off packaging, translations and merged libraries and turns on debugging utilities. For an optimized engine without the debug checks, use `--with-distro=CPLinux-LOKit --without-package-format` instead.
+
 {{ end }}
 
 {{ if eq $section "running" }}
@@ -32,21 +37,6 @@ export COOL_SERVE_FROM_FS=1
 ```
 to avoid the caching, so that you can just Shift+Reload the pages to see the
 new content.
-{{ end }}
-
-{{ if eq $section "clone-lo" }}
-The former Collabora Office core lives inside the `online` monorepo under `engine/`, so a separate clone is no longer needed. If you have not cloned the monorepo yet, run the `clone-online` step above first. Then move into the engine tree:
-
-```bash
-cd engine
-git checkout {{.Get "lobranch"}}
-```
-
-For a localized (translated) user interface, also clone the translations repository into `engine/translations` (you are now inside `engine/`); the engine's `--with-lang` picks up the `.po` files from there:
-
-```bash
-git clone https://gerrit.collaboraoffice.com/translations translations
-```
 {{ end }}
 
 {{ if eq $section "clone-online" }}
