@@ -71,14 +71,16 @@ cd {{$clonedir}}
 {{ end }}
 
 {{ if eq $section "build-online" }}
+{{$cc := .Get "cc" | default "gcc"}}
+{{$cxx := .Get "cxx" | default "g++"}}
 Run autogen to generate the configure file:
 ```bash
 ./autogen.sh
 ```
 
-Run the generated configure script. The engine is in `engine/`, where configure looks by default, so no paths need to be passed:
+Run the generated configure script. The engine is in `engine/`, where configure looks by default, so no paths need to be passed. The `CC` and `CXX` variables select the compiler, which must be GCC 13 or newer (see the compiler requirement above). The `ccache` prefix stores compilation results so that later rebuilds are much faster; install the `ccache` package from your distribution, or drop the prefix if you do not want it:
 ```bash
-./configure --enable-debug --enable-cypress
+./configure CC="ccache {{$cc}}" CXX="ccache {{$cxx}}" --enable-debug --enable-cypress
 ```
 You can add `--disable-ssl` instead of changing coolwsd.xml every time you want to disable ssl.
 
