@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-23T07:54:14Z",
+  "generated_at": "2026-09-24T07:44:35Z",
   "metrics": {
     "changes": [
       {
-        "number": 13341,
-        "owner": "Caolán McNamara",
-        "subject": "concat-deps: write dep-file paths with $(SRCDIR)",
-        "submitted": "2026-09-23T07:28:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13341"
-      },
-      {
-        "number": 13088,
-        "owner": "Pedro Silva",
-        "subject": "Impress: Reduce lengthy Open Shapes Deck",
-        "submitted": "2026-09-23T07:01:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13088"
-      },
-      {
-        "number": 13126,
-        "owner": "Pedro Silva",
-        "subject": "Import slides: fix on canvas slide-link-toolbar height",
-        "submitted": "2026-09-23T07:00:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13126"
-      },
-      {
-        "number": 13337,
+        "number": 13285,
         "owner": "Miklos Vajna",
-        "subject": "engine lingucomponent: fix dependency in CppunitTest_lingucomponent_lightproof",
-        "submitted": "2026-09-23T06:16:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13337"
+        "subject": "engine configure: default to build without evolution2 support",
+        "submitted": "2026-09-24T07:44:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13285"
       },
       {
-        "number": 13338,
-        "owner": "Caolán McNamara",
-        "subject": "cff: check the PrivDict range like the other dict reads",
-        "submitted": "2026-09-23T06:16:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13338"
+        "number": 13355,
+        "owner": "Miklos Vajna",
+        "subject": "pdfium: replace extractpatterns.patch with the upstreamed version",
+        "submitted": "2026-09-24T07:42:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13355"
       },
       {
-        "number": 13275,
-        "owner": "Caolán McNamara",
-        "subject": "wsd: one failed save stops background saving for good",
-        "submitted": "2026-09-23T05:50:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13275"
+        "number": 13265,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#163888 sc ReplaceAllStyle: only replace for MultiMark in this tab",
+        "submitted": "2026-09-24T07:40:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13265"
       },
       {
-        "number": 13276,
+        "number": 13362,
         "owner": "Caolán McNamara",
-        "subject": "wsd: one failed save stops background saving for good",
-        "submitted": "2026-09-23T05:50:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13276"
+        "subject": "formulabar: catch the mouseup of a drag that ends outside the text",
+        "submitted": "2026-09-24T07:37:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13362"
       },
       {
-        "number": 13340,
+        "number": 13416,
         "owner": "Caolán McNamara",
-        "subject": "check the byte ranges of a pdf signature against the file",
-        "submitted": "2026-09-23T05:49:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13340"
+        "subject": "ofz#555964961 Timeout",
+        "submitted": "2026-09-24T07:36:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13416"
+      },
+      {
+        "number": 13414,
+        "owner": "Caolán McNamara",
+        "subject": "ofz#563849779 Integer-overflow",
+        "submitted": "2026-09-24T07:36:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13414"
+      },
+      {
+        "number": 13288,
+        "owner": "Caolán McNamara",
+        "subject": "wsd: say which clients get the viewposition message",
+        "submitted": "2026-09-24T07:28:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13288"
+      },
+      {
+        "number": 13287,
+        "owner": "Caolán McNamara",
+        "subject": "kit: check the load option's part with isValidPartId",
+        "submitted": "2026-09-24T07:24:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13287"
       }
     ]
   },

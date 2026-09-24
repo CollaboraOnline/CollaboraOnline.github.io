@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-23T07:54:11Z",
+  "generated_at": "2026-09-24T07:44:31Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 86,
+      "active_users_30d": 84,
       "posts_30d": 152,
       "top_topics_monthly": [
         {
           "posts": 5,
           "title": "Android 26.04.3.1 cannot open password-protected XLSX files",
           "url": "https://forum.collaboraonline.com/t/android-26-04-3-1-cannot-open-password-protected-xlsx-files/5029",
-          "views": 76
+          "views": 81
         },
         {
           "posts": 1,
           "title": "Collabora Office 26.04 Now Available on Android and iOS",
           "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 66
+          "views": 69
         },
         {
           "posts": 7,
           "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
           "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
-          "views": 120
+          "views": 121
         },
         {
           "posts": 1,
@@ -33,18 +33,18 @@
           "posts": 6,
           "title": "Collabora writer crashes",
           "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
-          "views": 69
+          "views": 70
         }
       ],
-      "topics_30d": 39,
-      "total_posts": 10238,
-      "total_topics": 2161
+      "topics_30d": 40,
+      "total_posts": 10241,
+      "total_topics": 2162
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-24",
-    "to": "2026-09-23"
+    "from": "2026-08-25",
+    "to": "2026-09-24"
   },
   "source": "forum"
 }
