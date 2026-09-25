@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-24T07:44:35Z",
+  "generated_at": "2026-09-25T08:04:33Z",
   "metrics": {
     "changes": [
       {
-        "number": 13285,
+        "number": 13508,
         "owner": "Miklos Vajna",
-        "subject": "engine configure: default to build without evolution2 support",
-        "submitted": "2026-09-24T07:44:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13285"
+        "subject": "pdfium: update to 8073",
+        "submitted": "2026-09-25T07:39:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13508"
       },
       {
-        "number": 13355,
+        "number": 13509,
         "owner": "Miklos Vajna",
-        "subject": "pdfium: replace extractpatterns.patch with the upstreamed version",
-        "submitted": "2026-09-24T07:42:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13355"
+        "subject": "cool#16242 browser: handle clipboard shortcuts in the Impress notes bottom panel",
+        "submitted": "2026-09-25T07:20:40Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13509"
       },
       {
-        "number": 13265,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#163888 sc ReplaceAllStyle: only replace for MultiMark in this tab",
-        "submitted": "2026-09-24T07:40:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13265"
-      },
-      {
-        "number": 13362,
+        "number": 13499,
         "owner": "Caolán McNamara",
-        "subject": "formulabar: catch the mouseup of a drag that ends outside the text",
-        "submitted": "2026-09-24T07:37:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13362"
+        "subject": "cypress: retry the check that the lint run has started",
+        "submitted": "2026-09-25T07:19:51Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13499"
       },
       {
-        "number": 13416,
+        "number": 13502,
         "owner": "Caolán McNamara",
-        "subject": "ofz#555964961 Timeout",
-        "submitted": "2026-09-24T07:36:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13416"
+        "subject": "cypress: wait for idle after the sidebar toggle in Large Annotation Tests",
+        "submitted": "2026-09-25T07:19:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13502"
       },
       {
-        "number": 13414,
+        "number": 13501,
         "owner": "Caolán McNamara",
-        "subject": "ofz#563849779 Integer-overflow",
-        "submitted": "2026-09-24T07:36:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13414"
+        "subject": "consider javascript an exotic protocol",
+        "submitted": "2026-09-25T07:19:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13501"
       },
       {
-        "number": 13288,
-        "owner": "Caolán McNamara",
-        "subject": "wsd: say which clients get the viewposition message",
-        "submitted": "2026-09-24T07:28:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13288"
+        "number": 13506,
+        "owner": "Stephan Bergmann",
+        "subject": "Avoid unnecessary, wrong downcast",
+        "submitted": "2026-09-25T07:15:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13506"
       },
       {
-        "number": 13287,
-        "owner": "Caolán McNamara",
-        "subject": "kit: check the load option's part with isValidPartId",
-        "submitted": "2026-09-24T07:24:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13287"
+        "number": 13466,
+        "owner": "Balázs Varga",
+        "subject": "starmath OOXML: keep the bold and italic of text in a formula",
+        "submitted": "2026-09-25T06:15:20Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13466"
+      },
+      {
+        "number": 13497,
+        "owner": "Andras Timar",
+        "subject": "cypress: make check-php-proxy say whether it stopped the php proxy",
+        "submitted": "2026-09-25T05:36:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13497"
       }
     ]
   },

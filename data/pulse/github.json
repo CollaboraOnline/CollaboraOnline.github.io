@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-24T07:44:17Z",
+  "generated_at": "2026-09-25T08:04:18Z",
   "metrics": {
     "active_authors_30d": 4,
-    "commits_30d": 12,
+    "commits_30d": 13,
     "easy_hacks_open": 88,
     "forks": 1017,
-    "issues_closed_30d": 226,
+    "issues_closed_30d": 213,
     "issues_opened_30d": 118,
     "open_issues": 839,
     "open_prs": 1,
     "prs_merged_30d": 4,
     "prs_opened_30d": 3,
-    "stars": 3347,
+    "stars": 3348,
     "top_upvoted_open_issues": [
       {
         "number": 12438,
@@ -38,17 +38,17 @@
         "url": "https://github.com/CollaboraOnline/online/issues/13633"
       },
       {
-        "number": 10092,
-        "thumbs_up": 7,
-        "title": "Server audit -> Performance \"always poor\"",
-        "url": "https://github.com/CollaboraOnline/online/issues/10092"
+        "number": 15168,
+        "thumbs_up": 8,
+        "title": "[Enhancement / Distribution] Distribute Collabora Office for macOS through Homebrew",
+        "url": "https://github.com/CollaboraOnline/online/issues/15168"
       }
     ]
   },
   "period": {
     "days": 30,
-    "from": "2026-08-25",
-    "to": "2026-09-24"
+    "from": "2026-08-26",
+    "to": "2026-09-25"
   },
   "source": "github"
 }
