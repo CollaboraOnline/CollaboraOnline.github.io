@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-25T08:04:18Z",
+  "generated_at": "2026-09-26T07:55:34Z",
   "metrics": {
-    "active_authors_30d": 4,
-    "commits_30d": 13,
+    "active_authors_30d": 5,
+    "commits_30d": 14,
     "easy_hacks_open": 88,
     "forks": 1017,
-    "issues_closed_30d": 213,
-    "issues_opened_30d": 118,
-    "open_issues": 839,
+    "issues_closed_30d": 209,
+    "issues_opened_30d": 122,
+    "open_issues": 844,
     "open_prs": 1,
     "prs_merged_30d": 4,
     "prs_opened_30d": 3,
-    "stars": 3348,
+    "stars": 3356,
     "top_upvoted_open_issues": [
       {
         "number": 12438,
@@ -32,23 +32,23 @@
         "url": "https://github.com/CollaboraOnline/online/issues/14938"
       },
       {
+        "number": 15168,
+        "thumbs_up": 11,
+        "title": "[Enhancement / Distribution] Distribute Collabora Office for macOS through Homebrew",
+        "url": "https://github.com/CollaboraOnline/online/issues/15168"
+      },
+      {
         "number": 13633,
         "thumbs_up": 8,
         "title": "Desktop: Collabora Office Desktop Flatpak crashes on startup on hybrid-graphics systems",
         "url": "https://github.com/CollaboraOnline/online/issues/13633"
-      },
-      {
-        "number": 15168,
-        "thumbs_up": 8,
-        "title": "[Enhancement / Distribution] Distribute Collabora Office for macOS through Homebrew",
-        "url": "https://github.com/CollaboraOnline/online/issues/15168"
       }
     ]
   },
   "period": {
     "days": 30,
-    "from": "2026-08-26",
-    "to": "2026-09-25"
+    "from": "2026-08-27",
+    "to": "2026-09-26"
   },
   "source": "github"
 }

@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-25T08:04:33Z",
+  "generated_at": "2026-09-26T07:56:00Z",
   "metrics": {
     "changes": [
       {
-        "number": 13508,
-        "owner": "Miklos Vajna",
-        "subject": "pdfium: update to 8073",
-        "submitted": "2026-09-25T07:39:52Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13508"
-      },
-      {
-        "number": 13509,
-        "owner": "Miklos Vajna",
-        "subject": "cool#16242 browser: handle clipboard shortcuts in the Impress notes bottom panel",
-        "submitted": "2026-09-25T07:20:40Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13509"
-      },
-      {
-        "number": 13499,
+        "number": 13492,
         "owner": "Caolán McNamara",
-        "subject": "cypress: retry the check that the lint run has started",
-        "submitted": "2026-09-25T07:19:51Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13499"
+        "subject": "close the unlock popup description paragraph with </p>",
+        "submitted": "2026-09-25T19:42:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13492"
       },
       {
-        "number": 13502,
+        "number": 13558,
+        "owner": "Armin Le Grand",
+        "subject": "cool#16235 sd: rebuild Navigator after Regenerate Diagram",
+        "submitted": "2026-09-25T17:30:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13558"
+      },
+      {
+        "number": 13454,
+        "owner": "Pedro Silva",
+        "subject": "Dark mode: Writer: stylesview: container to have paper bg",
+        "submitted": "2026-09-25T16:11:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13454"
+      },
+      {
+        "number": 13570,
         "owner": "Caolán McNamara",
-        "subject": "cypress: wait for idle after the sidebar toggle in Large Annotation Tests",
-        "submitted": "2026-09-25T07:19:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13502"
+        "subject": "clarify policy",
+        "submitted": "2026-09-25T15:35:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13570"
       },
       {
-        "number": 13501,
-        "owner": "Caolán McNamara",
-        "subject": "consider javascript an exotic protocol",
-        "submitted": "2026-09-25T07:19:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13501"
-      },
-      {
-        "number": 13506,
-        "owner": "Stephan Bergmann",
-        "subject": "Avoid unnecessary, wrong downcast",
-        "submitted": "2026-09-25T07:15:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13506"
-      },
-      {
-        "number": 13466,
-        "owner": "Balázs Varga",
-        "subject": "starmath OOXML: keep the bold and italic of text in a formula",
-        "submitted": "2026-09-25T06:15:20Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13466"
-      },
-      {
-        "number": 13497,
+        "number": 13447,
         "owner": "Andras Timar",
-        "subject": "cypress: make check-php-proxy say whether it stopped the php proxy",
-        "submitted": "2026-09-25T05:36:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13497"
+        "subject": "basctl: drop exporting a Basic library as an extension",
+        "submitted": "2026-09-25T15:04:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13447"
+      },
+      {
+        "number": 13446,
+        "owner": "Andras Timar",
+        "subject": "Sweep up what the extension framework left behind",
+        "submitted": "2026-09-25T15:03:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13446"
+      },
+      {
+        "number": 13518,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#102307 quick find: add hard coded keyboard shortcut to label",
+        "submitted": "2026-09-25T14:54:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13518"
+      },
+      {
+        "number": 13539,
+        "owner": "Caolán McNamara",
+        "subject": "Related: tdf#163590 apply the autofit scales stored in pptx",
+        "submitted": "2026-09-25T14:07:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13539"
       }
     ]
   },
