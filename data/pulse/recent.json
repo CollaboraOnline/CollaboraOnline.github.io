@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-26T07:56:00Z",
+  "generated_at": "2026-09-27T08:27:22Z",
   "metrics": {
     "changes": [
       {
-        "number": 13492,
+        "number": 13600,
         "owner": "Caolán McNamara",
-        "subject": "close the unlock popup description paragraph with </p>",
-        "submitted": "2026-09-25T19:42:19Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13492"
+        "subject": "clear the old value before loading an old format SbxVariable",
+        "submitted": "2026-09-26T18:15:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13600"
       },
       {
-        "number": 13558,
-        "owner": "Armin Le Grand",
-        "subject": "cool#16235 sd: rebuild Navigator after Regenerate Diagram",
-        "submitted": "2026-09-25T17:30:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13558"
-      },
-      {
-        "number": 13454,
-        "owner": "Pedro Silva",
-        "subject": "Dark mode: Writer: stylesview: container to have paper bg",
-        "submitted": "2026-09-25T16:11:46Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13454"
-      },
-      {
-        "number": 13570,
+        "number": 13599,
         "owner": "Caolán McNamara",
-        "subject": "clarify policy",
-        "submitted": "2026-09-25T15:35:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13570"
+        "subject": "let the kernel pick the port each unit test listens on",
+        "submitted": "2026-09-26T18:15:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13599"
       },
       {
-        "number": 13447,
-        "owner": "Andras Timar",
-        "subject": "basctl: drop exporting a Basic library as an extension",
-        "submitted": "2026-09-25T15:04:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13447"
-      },
-      {
-        "number": 13446,
-        "owner": "Andras Timar",
-        "subject": "Sweep up what the extension framework left behind",
-        "submitted": "2026-09-25T15:03:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13446"
-      },
-      {
-        "number": 13518,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#102307 quick find: add hard coded keyboard shortcut to label",
-        "submitted": "2026-09-25T14:54:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13518"
-      },
-      {
-        "number": 13539,
+        "number": 13580,
         "owner": "Caolán McNamara",
-        "subject": "Related: tdf#163590 apply the autofit scales stored in pptx",
-        "submitted": "2026-09-25T14:07:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13539"
+        "subject": "add LOUtil.escapeHtml",
+        "submitted": "2026-09-26T13:33:04Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13580"
+      },
+      {
+        "number": 13597,
+        "owner": "Caolán McNamara",
+        "subject": "wait for the click timer to expire inside removeShapeSelection",
+        "submitted": "2026-09-26T13:32:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13597"
+      },
+      {
+        "number": 13596,
+        "owner": "Caolán McNamara",
+        "subject": "wait for the click timer to expire inside removeShapeSelection",
+        "submitted": "2026-09-26T13:32:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13596"
+      },
+      {
+        "number": 13598,
+        "owner": "Caolán McNamara",
+        "subject": "run the ReportWhenIdle idle twice and reply from the second run",
+        "submitted": "2026-09-26T13:32:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13598"
+      },
+      {
+        "number": 13586,
+        "owner": "Caolán McNamara",
+        "subject": "send only the status line when a settings fetch or delete fails",
+        "submitted": "2026-09-26T10:33:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13586"
+      },
+      {
+        "number": 10017,
+        "owner": "Sarper Akdemir",
+        "subject": "feat(app:linux): move the Qt clipboard onto the COKitClipboardProvider",
+        "submitted": "2026-09-23T16:33:20Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/10017"
       }
     ]
   },

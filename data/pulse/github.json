@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-26T07:55:34Z",
+  "generated_at": "2026-09-27T08:27:06Z",
   "metrics": {
     "active_authors_30d": 5,
-    "commits_30d": 14,
+    "commits_30d": 9,
     "easy_hacks_open": 88,
     "forks": 1017,
-    "issues_closed_30d": 209,
-    "issues_opened_30d": 122,
-    "open_issues": 844,
+    "issues_closed_30d": 194,
+    "issues_opened_30d": 116,
+    "open_issues": 843,
     "open_prs": 1,
-    "prs_merged_30d": 4,
-    "prs_opened_30d": 3,
+    "prs_merged_30d": 3,
+    "prs_opened_30d": 2,
     "stars": 3356,
     "top_upvoted_open_issues": [
       {
@@ -33,7 +33,7 @@
       },
       {
         "number": 15168,
-        "thumbs_up": 11,
+        "thumbs_up": 12,
         "title": "[Enhancement / Distribution] Distribute Collabora Office for macOS through Homebrew",
         "url": "https://github.com/CollaboraOnline/online/issues/15168"
       },
@@ -47,8 +47,8 @@
   },
   "period": {
     "days": 30,
-    "from": "2026-08-27",
-    "to": "2026-09-26"
+    "from": "2026-08-28",
+    "to": "2026-09-27"
   },
   "source": "github"
 }
