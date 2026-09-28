@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-27T08:27:22Z",
+  "generated_at": "2026-09-28T08:52:26Z",
   "metrics": {
     "changes": [
       {
-        "number": 13600,
-        "owner": "Caolán McNamara",
-        "subject": "clear the old value before loading an old format SbxVariable",
-        "submitted": "2026-09-26T18:15:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13600"
+        "number": 13661,
+        "owner": "Miklos Vajna",
+        "subject": "engine editeng: prefix members of SvxEscapementItem",
+        "submitted": "2026-09-28T07:57:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13661"
       },
       {
-        "number": 13599,
-        "owner": "Caolán McNamara",
-        "subject": "let the kernel pick the port each unit test listens on",
-        "submitted": "2026-09-26T18:15:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13599"
+        "number": 13568,
+        "owner": "Miklos Vajna",
+        "subject": "NFC tdf#111843 SfxViewShell: HasSelection(bText=true), remove =true",
+        "submitted": "2026-09-28T07:52:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13568"
       },
       {
-        "number": 13580,
-        "owner": "Caolán McNamara",
-        "subject": "add LOUtil.escapeHtml",
-        "submitted": "2026-09-26T13:33:04Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13580"
+        "number": 13483,
+        "owner": "Szymon Kłos",
+        "subject": "wsd, browser: don't ask the storage for a source on every edit",
+        "submitted": "2026-09-28T07:48:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13483"
       },
       {
-        "number": 13597,
-        "owner": "Caolán McNamara",
-        "subject": "wait for the click timer to expire inside removeShapeSelection",
-        "submitted": "2026-09-26T13:32:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13597"
+        "number": 13480,
+        "owner": "Szymon Kłos",
+        "subject": "sd, kit, wsd, browser: save the persistent link on linked slides",
+        "submitted": "2026-09-28T07:48:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13480"
       },
       {
-        "number": 13596,
-        "owner": "Caolán McNamara",
-        "subject": "wait for the click timer to expire inside removeShapeSelection",
-        "submitted": "2026-09-26T13:32:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13596"
+        "number": 13479,
+        "owner": "Szymon Kłos",
+        "subject": "browser: pass PersistentLink when locating a missing file",
+        "submitted": "2026-09-28T07:48:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13479"
       },
       {
-        "number": 13598,
-        "owner": "Caolán McNamara",
-        "subject": "run the ReportWhenIdle idle twice and reply from the second run",
-        "submitted": "2026-09-26T13:32:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13598"
+        "number": 13478,
+        "owner": "Szymon Kłos",
+        "subject": "wsd: resolve missing sources with SupportsLinkAccess",
+        "submitted": "2026-09-28T07:48:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13478"
       },
       {
-        "number": 13586,
-        "owner": "Caolán McNamara",
-        "subject": "send only the status line when a settings fetch or delete fails",
-        "submitted": "2026-09-26T10:33:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13586"
+        "number": 13477,
+        "owner": "Szymon Kłos",
+        "subject": "wsd: keep both persistent link and resolved src",
+        "submitted": "2026-09-28T07:48:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13477"
       },
       {
-        "number": 10017,
-        "owner": "Sarper Akdemir",
-        "subject": "feat(app:linux): move the Qt clipboard onto the COKitClipboardProvider",
-        "submitted": "2026-09-23T16:33:20Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/10017"
+        "number": 13175,
+        "owner": "Szymon Kłos",
+        "subject": "wsd: rename related documents to remote links",
+        "submitted": "2026-09-28T07:48:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13175"
       }
     ]
   },
