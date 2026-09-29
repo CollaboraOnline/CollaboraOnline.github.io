@@ -1,7 +1,52 @@
 {
-  "generated_at": "2026-09-28T08:52:25Z",
+  "generated_at": "2026-09-29T08:51:26Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-09-28",
+        "labels": [
+          "enhancement",
+          "UX",
+          "unconfirmed",
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16256,
+        "thumbs_up": 0,
+        "title": "Import slides pane: options and insert button in one line (responsiveness)",
+        "updated_at": "2026-09-29",
+        "url": "https://github.com/CollaboraOnline/online/issues/16256"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-09-28",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16252,
+        "thumbs_up": 0,
+        "title": "Impress: Wrong icon shown for \"Add Section\" in light mode",
+        "updated_at": "2026-09-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16252"
+      },
+      {
+        "assignee": null,
+        "comments": 1,
+        "created_at": "2026-09-28",
+        "labels": [
+          "enhancement"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16251,
+        "thumbs_up": 0,
+        "title": "Stylelint: check the CSS during the build instead of rewriting it with --fix",
+        "updated_at": "2026-09-28",
+        "url": "https://github.com/CollaboraOnline/online/issues/16251"
+      },
       {
         "assignee": null,
         "comments": 2,
@@ -1321,7 +1366,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 88
+    "total_open": 91
   },
   "source": "easyhacks"
 }

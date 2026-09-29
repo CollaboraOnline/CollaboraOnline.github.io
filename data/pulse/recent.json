@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-28T08:52:26Z",
+  "generated_at": "2026-09-29T08:51:27Z",
   "metrics": {
     "changes": [
       {
-        "number": 13661,
+        "number": 13643,
+        "owner": "Caolán McNamara",
+        "subject": "settings upload wants a plain file name too",
+        "submitted": "2026-09-29T08:49:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13643"
+      },
+      {
+        "number": 13743,
         "owner": "Miklos Vajna",
-        "subject": "engine editeng: prefix members of SvxEscapementItem",
-        "submitted": "2026-09-28T07:57:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13661"
+        "subject": "engine configure: default to build without xmlhelp",
+        "submitted": "2026-09-29T08:43:48Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13743"
       },
       {
-        "number": 13568,
-        "owner": "Miklos Vajna",
-        "subject": "NFC tdf#111843 SfxViewShell: HasSelection(bText=true), remove =true",
-        "submitted": "2026-09-28T07:52:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13568"
+        "number": 13704,
+        "owner": "Mike Kaganski",
+        "subject": "tdf#163240 sw: let a link's rectangle cover the ruby it ends in",
+        "submitted": "2026-09-29T08:42:15Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13704"
       },
       {
-        "number": 13483,
-        "owner": "Szymon Kłos",
-        "subject": "wsd, browser: don't ask the storage for a source on every edit",
-        "submitted": "2026-09-28T07:48:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13483"
+        "number": 13667,
+        "owner": "Caolán McNamara",
+        "subject": "note a document event from HTML import like the other HTML events",
+        "submitted": "2026-09-29T08:37:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13667"
       },
       {
-        "number": 13480,
-        "owner": "Szymon Kłos",
-        "subject": "sd, kit, wsd, browser: save the persistent link on linked slides",
-        "submitted": "2026-09-28T07:48:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13480"
+        "number": 13657,
+        "owner": "Caolán McNamara",
+        "subject": "check the class of a nested user type found by name in SbiImage::Load",
+        "submitted": "2026-09-29T08:36:02Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13657"
       },
       {
-        "number": 13479,
-        "owner": "Szymon Kłos",
-        "subject": "browser: pass PersistentLink when locating a missing file",
-        "submitted": "2026-09-28T07:48:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13479"
+        "number": 13656,
+        "owner": "Caolán McNamara",
+        "subject": "reuse INetURLObject::IsExoticProtocol for other binding command schemes",
+        "submitted": "2026-09-29T08:35:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13656"
       },
       {
-        "number": 13478,
-        "owner": "Szymon Kłos",
-        "subject": "wsd: resolve missing sources with SupportsLinkAccess",
-        "submitted": "2026-09-28T07:48:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13478"
+        "number": 13655,
+        "owner": "Caolán McNamara",
+        "subject": "handle customized bindings of a document like its other content",
+        "submitted": "2026-09-29T08:34:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13655"
       },
       {
-        "number": 13477,
-        "owner": "Szymon Kłos",
-        "subject": "wsd: keep both persistent link and resolved src",
-        "submitted": "2026-09-28T07:48:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13477"
-      },
-      {
-        "number": 13175,
-        "owner": "Szymon Kłos",
-        "subject": "wsd: rename related documents to remote links",
-        "submitted": "2026-09-28T07:48:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13175"
+        "number": 13697,
+        "owner": "Sarper Akdemir",
+        "subject": "Don't have one filter for each extension in the COKit file picker",
+        "submitted": "2026-09-29T08:19:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13697"
       }
     ]
   },
