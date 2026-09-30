@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-29T08:51:27Z",
+  "generated_at": "2026-09-30T08:51:56Z",
   "metrics": {
     "changes": [
       {
-        "number": 13643,
+        "number": 13863,
+        "owner": "Jaume Pujantell",
+        "subject": "Revert \"oox: write the plain color when a theme color is out of date\"",
+        "submitted": "2026-09-30T08:40:48Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13863"
+      },
+      {
+        "number": 13785,
+        "owner": "Pranam Lashkari",
+        "subject": "jsdialog: send the notes selection after a click collapses it",
+        "submitted": "2026-09-30T08:37:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13785"
+      },
+      {
+        "number": 13853,
         "owner": "Caolán McNamara",
-        "subject": "settings upload wants a plain file name too",
-        "submitted": "2026-09-29T08:49:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13643"
+        "subject": "accept only the downloadas ids that the clients send",
+        "submitted": "2026-09-30T08:37:15Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13853"
       },
       {
-        "number": 13743,
-        "owner": "Miklos Vajna",
-        "subject": "engine configure: default to build without xmlhelp",
-        "submitted": "2026-09-29T08:43:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13743"
-      },
-      {
-        "number": 13704,
+        "number": 13843,
         "owner": "Mike Kaganski",
-        "subject": "tdf#163240 sw: let a link's rectangle cover the ruby it ends in",
-        "submitted": "2026-09-29T08:42:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13704"
+        "subject": "sw: take both ends of a PaM with one comparison in doc",
+        "submitted": "2026-09-30T08:23:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13843"
       },
       {
-        "number": 13667,
-        "owner": "Caolán McNamara",
-        "subject": "note a document event from HTML import like the other HTML events",
-        "submitted": "2026-09-29T08:37:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13667"
+        "number": 13817,
+        "owner": "Noel Grandin",
+        "subject": "add some editeng/sd unit tests",
+        "submitted": "2026-09-30T08:08:21Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13817"
       },
       {
-        "number": 13657,
-        "owner": "Caolán McNamara",
-        "subject": "check the class of a nested user type found by name in SbiImage::Load",
-        "submitted": "2026-09-29T08:36:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13657"
+        "number": 13816,
+        "owner": "Miklos Vajna",
+        "subject": "NFC tdf#74078 uitool SfxToSwPageDescAttr: refactor before patch",
+        "submitted": "2026-09-30T08:07:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13816"
       },
       {
-        "number": 13656,
-        "owner": "Caolán McNamara",
-        "subject": "reuse INetURLObject::IsExoticProtocol for other binding command schemes",
-        "submitted": "2026-09-29T08:35:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13656"
+        "number": 13782,
+        "owner": "Jaume Pujantell",
+        "subject": "oox: write the plain color when a theme color is out of date",
+        "submitted": "2026-09-30T06:58:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13782"
       },
       {
-        "number": 13655,
-        "owner": "Caolán McNamara",
-        "subject": "handle customized bindings of a document like its other content",
-        "submitted": "2026-09-29T08:34:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13655"
-      },
-      {
-        "number": 13697,
-        "owner": "Sarper Akdemir",
-        "subject": "Don't have one filter for each extension in the COKit file picker",
-        "submitted": "2026-09-29T08:19:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13697"
+        "number": 13571,
+        "owner": "Pranam Lashkari",
+        "subject": "sd, browser: clear the notes placeholder when the pane gets focus",
+        "submitted": "2026-09-29T12:00:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13571"
       }
     ]
   },
