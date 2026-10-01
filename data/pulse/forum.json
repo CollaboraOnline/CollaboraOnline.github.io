@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-30T08:51:53Z",
+  "generated_at": "2026-10-01T09:16:06Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 69,
-      "posts_30d": 172,
+      "active_users_30d": 67,
+      "posts_30d": 174,
       "top_topics_monthly": [
         {
           "posts": 5,
           "title": "Android 26.04.3.1 cannot open password-protected XLSX files",
           "url": "https://forum.collaboraonline.com/t/android-26-04-3-1-cannot-open-password-protected-xlsx-files/5029",
-          "views": 90
+          "views": 94
         },
         {
           "posts": 1,
           "title": "Collabora Office 26.04 Now Available on Android and iOS",
           "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 82
+          "views": 86
         },
         {
           "posts": 7,
           "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
           "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
-          "views": 151
+          "views": 156
         },
         {
           "posts": 1,
@@ -30,21 +30,21 @@
           "views": 36
         },
         {
-          "posts": 6,
-          "title": "Collabora writer crashes",
-          "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
-          "views": 75
+          "posts": 9,
+          "title": "Connection reset by peer with Collabora on Seafile instance",
+          "url": "https://forum.collaboraonline.com/t/connection-reset-by-peer-with-collabora-on-seafile-instance/5040",
+          "views": 79
         }
       ],
-      "topics_30d": 43,
-      "total_posts": 10279,
-      "total_topics": 2172
+      "topics_30d": 46,
+      "total_posts": 10283,
+      "total_topics": 2175
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-08-31",
-    "to": "2026-09-30"
+    "from": "2026-09-01",
+    "to": "2026-10-01"
   },
   "source": "forum"
 }

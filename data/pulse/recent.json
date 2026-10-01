@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-09-30T08:51:56Z",
+  "generated_at": "2026-10-01T09:16:10Z",
   "metrics": {
     "changes": [
       {
-        "number": 13863,
-        "owner": "Jaume Pujantell",
-        "subject": "Revert \"oox: write the plain color when a theme color is out of date\"",
-        "submitted": "2026-09-30T08:40:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13863"
+        "number": 13986,
+        "owner": "Tomaž Vajngerl",
+        "subject": "wsd: upload browsersetting with the shared settings upload code",
+        "submitted": "2026-10-01T09:07:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13986"
       },
       {
-        "number": 13785,
-        "owner": "Pranam Lashkari",
-        "subject": "jsdialog: send the notes selection after a click collapses it",
-        "submitted": "2026-09-30T08:37:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13785"
+        "number": 13999,
+        "owner": "Stephan Bergmann",
+        "subject": "Adapt run-gas-test.py to slidesapp-test.js",
+        "submitted": "2026-10-01T08:59:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13999"
       },
       {
-        "number": 13853,
-        "owner": "Caolán McNamara",
-        "subject": "accept only the downloadas ids that the clients send",
-        "submitted": "2026-09-30T08:37:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13853"
+        "number": 13947,
+        "owner": "Stephan Bergmann",
+        "subject": "Let a disposed SwXParagraph no longer reach its paragraph",
+        "submitted": "2026-10-01T08:55:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13947"
       },
       {
-        "number": 13843,
-        "owner": "Mike Kaganski",
-        "subject": "sw: take both ends of a PaM with one comparison in doc",
-        "submitted": "2026-09-30T08:23:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13843"
+        "number": 13898,
+        "owner": "Henry Castro",
+        "subject": "cypress: check the context keeps its paragraphs and follows Orca into focus mode",
+        "submitted": "2026-10-01T08:51:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13898"
       },
       {
-        "number": 13817,
-        "owner": "Noel Grandin",
-        "subject": "add some editeng/sd unit tests",
-        "submitted": "2026-09-30T08:08:21Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13817"
+        "number": 13897,
+        "owner": "Henry Castro",
+        "subject": "browser: let Orca go on from the paragraph it was reading in focus mode",
+        "submitted": "2026-10-01T08:51:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13897"
       },
       {
-        "number": 13816,
-        "owner": "Miklos Vajna",
-        "subject": "NFC tdf#74078 uitool SfxToSwPageDescAttr: refactor before patch",
-        "submitted": "2026-09-30T08:07:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13816"
+        "number": 13896,
+        "owner": "Henry Castro",
+        "subject": "browser: keep the paragraphs around the caret as the caret moves",
+        "submitted": "2026-10-01T08:51:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13896"
       },
       {
-        "number": 13782,
-        "owner": "Jaume Pujantell",
-        "subject": "oox: write the plain color when a theme color is out of date",
-        "submitted": "2026-09-30T06:58:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13782"
+        "number": 13895,
+        "owner": "Henry Castro",
+        "subject": "cypress: check a reader leaving browse mode on the context moves the caret",
+        "submitted": "2026-10-01T08:51:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13895"
       },
       {
-        "number": 13571,
-        "owner": "Pranam Lashkari",
-        "subject": "sd, browser: clear the notes placeholder when the pane gets focus",
-        "submitted": "2026-09-29T12:00:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13571"
+        "number": 13894,
+        "owner": "Henry Castro",
+        "subject": "browser: leave the caret where the reader was when it enters focus mode",
+        "submitted": "2026-10-01T08:51:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13894"
       }
     ]
   },
