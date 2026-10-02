@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-01T09:16:10Z",
+  "generated_at": "2026-10-02T08:49:00Z",
   "metrics": {
     "changes": [
       {
-        "number": 13986,
-        "owner": "Tomaž Vajngerl",
-        "subject": "wsd: upload browsersetting with the shared settings upload code",
-        "submitted": "2026-10-01T09:07:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13986"
+        "number": 14144,
+        "owner": "Rashesh Padia",
+        "subject": "slideshow: draw videos and GIFs when WebGL is not available",
+        "submitted": "2026-10-02T08:47:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14144"
       },
       {
-        "number": 13999,
-        "owner": "Stephan Bergmann",
-        "subject": "Adapt run-gas-test.py to slidesapp-test.js",
-        "submitted": "2026-10-01T08:59:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13999"
+        "number": 14129,
+        "owner": "Karthik Godha",
+        "subject": "mobile: Handle OS back button in comment editor",
+        "submitted": "2026-10-02T08:46:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14129"
       },
       {
-        "number": 13947,
-        "owner": "Stephan Bergmann",
-        "subject": "Let a disposed SwXParagraph no longer reach its paragraph",
-        "submitted": "2026-10-01T08:55:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13947"
+        "number": 14128,
+        "owner": "Karthik Godha",
+        "subject": "mobile: Open the comment editor from the cell context menu",
+        "submitted": "2026-10-02T08:44:30Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14128"
       },
       {
-        "number": 13898,
-        "owner": "Henry Castro",
-        "subject": "cypress: check the context keeps its paragraphs and follows Orca into focus mode",
-        "submitted": "2026-10-01T08:51:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13898"
+        "number": 14125,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: test: build hand-written WOPI URLs from getWopiHostURI()",
+        "submitted": "2026-10-02T08:34:20Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14125"
       },
       {
-        "number": 13897,
-        "owner": "Henry Castro",
-        "subject": "browser: let Orca go on from the paragraph it was reading in focus mode",
-        "submitted": "2026-10-01T08:51:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13897"
+        "number": 13891,
+        "owner": "Pedro Silva",
+        "subject": "Slide sorter: put the link badge in the grid picture's corner",
+        "submitted": "2026-10-02T08:33:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13891"
       },
       {
-        "number": 13896,
-        "owner": "Henry Castro",
-        "subject": "browser: keep the paragraphs around the caret as the caret moves",
-        "submitted": "2026-10-01T08:51:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13896"
+        "number": 13890,
+        "owner": "Pedro Silva",
+        "subject": "Slide sorter: hang the avatars below the slide in the list again",
+        "submitted": "2026-10-02T08:33:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13890"
       },
       {
-        "number": 13895,
-        "owner": "Henry Castro",
-        "subject": "cypress: check a reader leaving browse mode on the context moves the caret",
-        "submitted": "2026-10-01T08:51:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13895"
+        "number": 14124,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: test: name where a test's WOPI URLs point",
+        "submitted": "2026-10-02T08:31:29Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14124"
       },
       {
-        "number": 13894,
-        "owner": "Henry Castro",
-        "subject": "browser: leave the caret where the reader was when it enters focus mode",
-        "submitted": "2026-10-01T08:51:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13894"
+        "number": 14123,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: explain a convert-to whose client disconnected first",
+        "submitted": "2026-10-02T08:29:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14123"
       }
     ]
   },
