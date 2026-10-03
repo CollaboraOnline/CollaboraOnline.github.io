@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-02T08:49:00Z",
+  "generated_at": "2026-10-03T08:26:16Z",
   "metrics": {
     "changes": [
       {
-        "number": 14144,
+        "number": 14113,
+        "owner": "Pranam Lashkari",
+        "subject": "browser: keep a long listbox value inside the box",
+        "submitted": "2026-10-02T19:33:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14113"
+      },
+      {
+        "number": 14157,
         "owner": "Rashesh Padia",
-        "subject": "slideshow: draw videos and GIFs when WebGL is not available",
-        "submitted": "2026-10-02T08:47:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14144"
+        "subject": "sd: start a notes paragraph at the same level on Ctrl+Enter",
+        "submitted": "2026-10-02T17:51:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14157"
       },
       {
-        "number": 14129,
-        "owner": "Karthik Godha",
-        "subject": "mobile: Handle OS back button in comment editor",
-        "submitted": "2026-10-02T08:46:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14129"
+        "number": 14154,
+        "owner": "Rashesh Padia",
+        "subject": "sd, browser: lock the notes in the pane while another user edits them",
+        "submitted": "2026-10-02T17:51:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14154"
       },
       {
-        "number": 14128,
-        "owner": "Karthik Godha",
-        "subject": "mobile: Open the comment editor from the cell context menu",
-        "submitted": "2026-10-02T08:44:30Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14128"
+        "number": 14156,
+        "owner": "Rashesh Padia",
+        "subject": "browser: keep each notes paragraph as tall as its text",
+        "submitted": "2026-10-02T16:42:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14156"
       },
       {
-        "number": 14125,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: test: build hand-written WOPI URLs from getWopiHostURI()",
-        "submitted": "2026-10-02T08:34:20Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14125"
+        "number": 14155,
+        "owner": "Rashesh Padia",
+        "subject": "editeng: show the notes pane text in the font it has",
+        "submitted": "2026-10-02T16:42:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14155"
       },
       {
-        "number": 13891,
-        "owner": "Pedro Silva",
-        "subject": "Slide sorter: put the link badge in the grid picture's corner",
-        "submitted": "2026-10-02T08:33:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13891"
+        "number": 14111,
+        "owner": "Rashesh Padia",
+        "subject": "browser: insert an image picked as media as a picture",
+        "submitted": "2026-10-02T16:17:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14111"
       },
       {
-        "number": 13890,
-        "owner": "Pedro Silva",
-        "subject": "Slide sorter: hang the avatars below the slide in the list again",
-        "submitted": "2026-10-02T08:33:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13890"
+        "number": 14102,
+        "owner": "Tibor Nagy",
+        "subject": "browser: show the Update Links button only once the links are known",
+        "submitted": "2026-10-02T16:10:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14102"
       },
       {
-        "number": 14124,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: test: name where a test's WOPI URLs point",
-        "submitted": "2026-10-02T08:31:29Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14124"
-      },
-      {
-        "number": 14123,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: explain a convert-to whose client disconnected first",
-        "submitted": "2026-10-02T08:29:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14123"
+        "number": 13449,
+        "owner": "Noel Grandin",
+        "subject": "move the Paragraph data-structure from Outliner to EditEngine",
+        "submitted": "2026-10-02T15:44:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13449"
       }
     ]
   },
