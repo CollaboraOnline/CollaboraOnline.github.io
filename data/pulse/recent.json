@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-03T08:26:16Z",
+  "generated_at": "2026-10-04T08:39:03Z",
   "metrics": {
     "changes": [
       {
-        "number": 14113,
-        "owner": "Pranam Lashkari",
-        "subject": "browser: keep a long listbox value inside the box",
-        "submitted": "2026-10-02T19:33:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14113"
+        "number": 14233,
+        "owner": "Ashod Nakashian",
+        "subject": "spif: don't crash probing customXml parts with CDATA",
+        "submitted": "2026-10-03T19:44:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14233"
       },
       {
-        "number": 14157,
-        "owner": "Rashesh Padia",
-        "subject": "sd: start a notes paragraph at the same level on Ctrl+Enter",
-        "submitted": "2026-10-02T17:51:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14157"
+        "number": 14224,
+        "owner": "Caolán McNamara",
+        "subject": "factor the data pilot url source check into a shared helper",
+        "submitted": "2026-10-03T18:08:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14224"
       },
       {
-        "number": 14154,
-        "owner": "Rashesh Padia",
-        "subject": "sd, browser: lock the notes in the pane while another user edits them",
-        "submitted": "2026-10-02T17:51:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14154"
+        "number": 14220,
+        "owner": "Caolán McNamara",
+        "subject": "cypress: list only the engine fonts in the browser fontconfig",
+        "submitted": "2026-10-03T15:25:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14220"
       },
       {
-        "number": 14156,
-        "owner": "Rashesh Padia",
-        "subject": "browser: keep each notes paragraph as tall as its text",
-        "submitted": "2026-10-02T16:42:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14156"
+        "number": 14172,
+        "owner": "Caolán McNamara",
+        "subject": "odbc: quote connection string values that contain a separator",
+        "submitted": "2026-10-03T14:26:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14172"
       },
       {
-        "number": 14155,
-        "owner": "Rashesh Padia",
-        "subject": "editeng: show the notes pane text in the font it has",
-        "submitted": "2026-10-02T16:42:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14155"
+        "number": 14217,
+        "owner": "Caolán McNamara",
+        "subject": "ofz#500542909 svl: don't broadcast an unchanged SetHidden or SetFollow",
+        "submitted": "2026-10-03T14:25:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14217"
       },
       {
-        "number": 14111,
-        "owner": "Rashesh Padia",
-        "subject": "browser: insert an image picked as media as a picture",
-        "submitted": "2026-10-02T16:17:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14111"
+        "number": 14211,
+        "owner": "Caolán McNamara",
+        "subject": "drop cda, flv, ra, rm and viv from the media filter list",
+        "submitted": "2026-10-03T09:31:30Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14211"
       },
       {
-        "number": 14102,
-        "owner": "Tibor Nagy",
-        "subject": "browser: show the Update Links button only once the links are known",
-        "submitted": "2026-10-02T16:10:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14102"
+        "number": 14209,
+        "owner": "Caolán McNamara",
+        "subject": "dbaccess: use trusted location rule for ado connections",
+        "submitted": "2026-10-03T09:31:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14209"
       },
       {
-        "number": 13449,
-        "owner": "Noel Grandin",
-        "subject": "move the Paragraph data-structure from Outliner to EditEngine",
-        "submitted": "2026-10-02T15:44:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13449"
+        "number": 14212,
+        "owner": "Caolán McNamara",
+        "subject": "don't default to make -j nproc before make 4.4",
+        "submitted": "2026-10-03T09:30:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14212"
       }
     ]
   },

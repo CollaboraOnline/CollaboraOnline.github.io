@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-10-03T08:26:15Z",
+  "generated_at": "2026-10-04T08:39:02Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 3,
+        "created_at": "2026-09-23",
+        "labels": [
+          "C++",
+          "core",
+          "Easy - Medium",
+          "26.04"
+        ],
+        "mentor": "@grandinj @mistmist",
+        "number": 16239,
+        "thumbs_up": 0,
+        "title": "remove skia",
+        "updated_at": "2026-10-03",
+        "url": "https://github.com/CollaboraOnline/online/issues/16239"
+      },
       {
         "assignee": "shubhamy0",
         "comments": 5,
@@ -72,23 +89,6 @@
         "title": "Stylelint: check the CSS during the build instead of rewriting it with --fix",
         "updated_at": "2026-09-28",
         "url": "https://github.com/CollaboraOnline/online/issues/16251"
-      },
-      {
-        "assignee": null,
-        "comments": 2,
-        "created_at": "2026-09-23",
-        "labels": [
-          "C++",
-          "core",
-          "Easy - Medium",
-          "26.04"
-        ],
-        "mentor": "@grandinj @mistmist",
-        "number": 16239,
-        "thumbs_up": 0,
-        "title": "remove skia",
-        "updated_at": "2026-09-25",
-        "url": "https://github.com/CollaboraOnline/online/issues/16239"
       },
       {
         "assignee": null,

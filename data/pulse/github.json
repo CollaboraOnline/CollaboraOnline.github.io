@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-03T08:25:59Z",
+  "generated_at": "2026-10-04T08:38:49Z",
   "metrics": {
     "active_authors_30d": 5,
     "commits_30d": 8,
     "easy_hacks_open": 92,
     "forks": 1015,
-    "issues_closed_30d": 149,
-    "issues_opened_30d": 94,
-    "open_issues": 855,
+    "issues_closed_30d": 130,
+    "issues_opened_30d": 98,
+    "open_issues": 860,
     "open_prs": 1,
     "prs_merged_30d": 3,
     "prs_opened_30d": 2,
@@ -47,8 +47,8 @@
   },
   "period": {
     "days": 30,
-    "from": "2026-09-03",
-    "to": "2026-10-03"
+    "from": "2026-09-04",
+    "to": "2026-10-04"
   },
   "source": "github"
 }
