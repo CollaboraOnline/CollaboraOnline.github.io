@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-04T08:39:03Z",
+  "generated_at": "2026-10-05T09:27:02Z",
   "metrics": {
     "changes": [
       {
-        "number": 14233,
-        "owner": "Ashod Nakashian",
-        "subject": "spif: don't crash probing customXml parts with CDATA",
-        "submitted": "2026-10-03T19:44:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14233"
+        "number": 13289,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "svx: fix a crash reading the properties of a shape in a header",
+        "submitted": "2026-10-05T09:20:21Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13289"
       },
       {
-        "number": 14224,
-        "owner": "Caolán McNamara",
-        "subject": "factor the data pilot url source check into a shared helper",
-        "submitted": "2026-10-03T18:08:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14224"
+        "number": 14232,
+        "owner": "Karthik Godha",
+        "subject": "android: Use the document's display name when exporting",
+        "submitted": "2026-10-05T09:11:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14232"
       },
       {
-        "number": 14220,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: list only the engine fonts in the browser fontconfig",
-        "submitted": "2026-10-03T15:25:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14220"
+        "number": 14250,
+        "owner": "Karthik Godha",
+        "subject": "mobile: close the file when the password dialog is dismissed",
+        "submitted": "2026-10-05T09:06:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14250"
       },
       {
-        "number": 14172,
-        "owner": "Caolán McNamara",
-        "subject": "odbc: quote connection string values that contain a separator",
-        "submitted": "2026-10-03T14:26:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14172"
+        "number": 14249,
+        "owner": "Karthik Godha",
+        "subject": "android: send the BYE from the native message thread",
+        "submitted": "2026-10-05T09:06:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14249"
       },
       {
-        "number": 14217,
-        "owner": "Caolán McNamara",
-        "subject": "ofz#500542909 svl: don't broadcast an unchanged SetHidden or SetFollow",
-        "submitted": "2026-10-03T14:25:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14217"
+        "number": 14248,
+        "owner": "Karthik Godha",
+        "subject": "mobile: stop a document that never loaded when its view leaves",
+        "submitted": "2026-10-05T09:06:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14248"
       },
       {
-        "number": 14211,
+        "number": 14286,
         "owner": "Caolán McNamara",
-        "subject": "drop cda, flv, ra, rm and viv from the media filter list",
-        "submitted": "2026-10-03T09:31:30Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14211"
+        "subject": "an embedded document is not in a trusted location for link updates",
+        "submitted": "2026-10-05T08:45:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14286"
       },
       {
-        "number": 14209,
-        "owner": "Caolán McNamara",
-        "subject": "dbaccess: use trusted location rule for ado connections",
-        "submitted": "2026-10-03T09:31:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14209"
+        "number": 14213,
+        "owner": "Pranam Lashkari",
+        "subject": "svx: grow the table row when a column shrinks during text edit",
+        "submitted": "2026-10-05T08:42:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14213"
       },
       {
-        "number": 14212,
-        "owner": "Caolán McNamara",
-        "subject": "don't default to make -j nproc before make 4.4",
-        "submitted": "2026-10-03T09:30:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14212"
+        "number": 14218,
+        "owner": "Tomaž Vajngerl",
+        "subject": "sc: recalculate volatile cells in each MULTIPLE.OPERATIONS row",
+        "submitted": "2026-10-05T08:40:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14218"
       }
     ]
   },
