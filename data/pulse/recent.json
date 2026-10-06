@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-05T09:27:02Z",
+  "generated_at": "2026-10-06T09:13:08Z",
   "metrics": {
     "changes": [
       {
-        "number": 13289,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "svx: fix a crash reading the properties of a shape in a header",
-        "submitted": "2026-10-05T09:20:21Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13289"
-      },
-      {
-        "number": 14232,
-        "owner": "Karthik Godha",
-        "subject": "android: Use the document's display name when exporting",
-        "submitted": "2026-10-05T09:11:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14232"
-      },
-      {
-        "number": 14250,
-        "owner": "Karthik Godha",
-        "subject": "mobile: close the file when the password dialog is dismissed",
-        "submitted": "2026-10-05T09:06:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14250"
-      },
-      {
-        "number": 14249,
-        "owner": "Karthik Godha",
-        "subject": "android: send the BYE from the native message thread",
-        "submitted": "2026-10-05T09:06:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14249"
-      },
-      {
-        "number": 14248,
-        "owner": "Karthik Godha",
-        "subject": "mobile: stop a document that never loaded when its view leaves",
-        "submitted": "2026-10-05T09:06:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14248"
-      },
-      {
-        "number": 14286,
+        "number": 14365,
         "owner": "Caolán McNamara",
-        "subject": "an embedded document is not in a trusted location for link updates",
-        "submitted": "2026-10-05T08:45:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14286"
+        "subject": "transfer the correct subset of storage.wopi host settings to the kit",
+        "submitted": "2026-10-06T08:58:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14365"
       },
       {
-        "number": 14213,
-        "owner": "Pranam Lashkari",
-        "subject": "svx: grow the table row when a column shrinks during text edit",
-        "submitted": "2026-10-05T08:42:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14213"
+        "number": 14447,
+        "owner": "Mike Kaganski",
+        "subject": "Fix unit test testPieTextArea",
+        "submitted": "2026-10-06T08:58:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14447"
       },
       {
-        "number": 14218,
+        "number": 14301,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "svx: give a header shape's copy its own points",
+        "submitted": "2026-10-06T08:42:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14301"
+      },
+      {
+        "number": 14400,
+        "owner": "Caolán McNamara",
+        "subject": "Add some process documentation",
+        "submitted": "2026-10-06T08:28:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14400"
+      },
+      {
+        "number": 12577,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "oox: keep the text where it is when the spacing crosses over",
+        "submitted": "2026-10-06T08:15:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12577"
+      },
+      {
+        "number": 14370,
         "owner": "Tomaž Vajngerl",
-        "subject": "sc: recalculate volatile cells in each MULTIPLE.OPERATIONS row",
-        "submitted": "2026-10-05T08:40:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14218"
+        "subject": "vector: gray and invert a subtree with blend modes",
+        "submitted": "2026-10-06T07:48:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14370"
+      },
+      {
+        "number": 14369,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: draw the shadow, glow, soft edge and transparence",
+        "submitted": "2026-10-06T07:48:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14369"
+      },
+      {
+        "number": 14368,
+        "owner": "Tomaž Vajngerl",
+        "subject": "drawinglayer: blur shadow and soft edge by a third of the radius",
+        "submitted": "2026-10-06T07:48:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14368"
       }
     ]
   },
