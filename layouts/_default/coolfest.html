@@ -45,9 +45,15 @@
 
       <h1 class="cf-title">A month of getting people<br>into the code.</h1>
 
+      {{- if eq $state "after" }}
+      <p class="cf-lede">A whole month dedicated to helping more people start contributing to
+        Collabora Online. There was a live call every single day, weekends included. Thank you to
+        everyone who joined. The weekly community calls carry on, and so do the Easy Hacks.</p>
+      {{- else }}
       <p class="cf-lede">A whole month dedicated to helping more people start contributing to
         Collabora Online. A live call every single day, weekends included. No registration,
         no talk to prepare, no experience assumed.</p>
+      {{- end }}
 
       <div class="cf-status">
         {{- if eq $state "during" }}
@@ -82,8 +88,13 @@
 
     <!-- ===================== what happens ===================== -->
     <section class="cf-section">
+      {{- if eq $state "after" }}
+      <h2 class="cf-h2">What happened on the calls</h2>
+      <p class="cf-sub">One hour, every day, in the same room. People dropped in for any of it.</p>
+      {{- else }}
       <h2 class="cf-h2">What happens on a call</h2>
       <p class="cf-sub">One hour, every day, in the same room. Drop in for any of it.</p>
+      {{- end }}
 
       <ol class="cf-list">
         <li>
@@ -114,6 +125,7 @@
       </ol>
     </section>
 
+    {{- if ne $state "after" }}
     <!-- ===================== how to join ===================== -->
     <section class="cf-section cf-join">
       <div class="cf-join-text">
@@ -138,11 +150,18 @@
         {{- end -}}
       {{- end }}
     </section>
+    {{- end }}
 
     <!-- ===================== the week ===================== -->
     <section class="cf-section">
+      {{- if eq $state "after" }}
+      <h2 class="cf-h2">The weekly calls carry on</h2>
+      <p class="cf-sub">Every call in the next seven days, in your own timezone. More on the
+        <a href="{{ "post/communicate/" | relURL }}">Get Involved</a> page.</p>
+      {{- else }}
       <h2 class="cf-h2">The next seven days</h2>
       <p class="cf-sub">Every call on the calendar, in your own timezone.</p>
+      {{- end }}
       <ol class="cf-week" id="cf-week"></ol>
       <noscript>
         <p class="cf-note">The daily COOL Fest call is at {{ $event.time }}. The weekly calls are
@@ -153,9 +172,14 @@
     <!-- ===================== bring something ===================== -->
     <section class="cf-section cf-pick">
       <div>
+          {{- if eq $state "after" }}
+        <h2 class="cf-h2">Start contributing any time</h2>
+        <p>These are the three doors that need the least setup.</p>
+        {{- else }}
         <h2 class="cf-h2">Come with something in mind, or come empty-handed</h2>
         <p>Either works. If you would rather arrive with a target, these are the three doors
           that need the least setup.</p>
+        {{- end }}
         <div class="cf-cards">
           <a class="cf-card" href="{{ "post/easyhacks/" | relURL }}">
             <span class="cf-card-n">{{ if $hacks }}{{ $hacks }}{{ else }}&mdash;{{ end }}</span>
@@ -177,9 +201,15 @@
 
     <!-- ===================== footer cta ===================== -->
     <section class="cf-section cf-end">
+      {{- if eq $state "after" }}
+      <h2 class="cf-h2">See you at the next one. Until then, the weekly calls are open to everyone.</h2>
+      {{- else }}
       <h2 class="cf-h2">Come join us, learn something new, and maybe make your first contribution.</h2>
+      {{- end }}
       <p class="cf-actions">
-        {{- if ne $state "after" }}
+        {{- if eq $state "after" }}
+        <a class="cf-btn cf-btn-go" href="{{ "post/communicate/" | relURL }}">See the weekly calls</a>
+        {{- else }}
         <a class="cf-btn cf-btn-go" href="{{ $event.url }}">Join the call on Jitsi</a>
         {{- end }}
         <a class="cf-btn cf-btn-quiet" href="https://forum.collaboraonline.com/t/coolfest-is-here-join-us-from-5-september-to-4-october/4987">Read the announcement</a>

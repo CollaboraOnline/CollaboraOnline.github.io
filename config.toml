@@ -57,13 +57,25 @@ type = "type"
   # two lines out to go back to the still screenshot.
   homepageVideo = "/videos/writer-overview.mp4"
   homepageVideoPoster = "/videos/writer-overview-poster.jpg"
-  homepageCAT = true
   share = true
   showLanguageSwitcher = false
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
   customCSS = ["buttons.css", "anim.css", "header.css", "clocks.css", "coolfest.css", "dropdown.css", "sidebar.css", "post-content.css"]
   customJS = ["copy-code.js", "home-video.js", "community-calls.js"]
+
+  # Round badge on the homepage hero. Remove the table to hide it. The image is a
+  # wide logo without its own ring, and the label sits under it. An url starting
+  # with http opens in a new tab; any other url is a path on this site.
+  # During COOL Fest this was: url = "coolfest/", image = "images/circle-coolfest-cta.svg",
+  # alt = "COOL Fest", width = 142, height = 71, label = "5 Sep to 4 Oct".
+  [params.homepageCTA]
+    url = "https://www.collaboraonline.com/events/cool-days-2026/"
+    image = "images/cooldays-mark.svg"
+    alt = "COOL Days 2026"
+    width = 142
+    height = 67
+    label = "Watch the talks"
 
   [params.social]
     rss = true
