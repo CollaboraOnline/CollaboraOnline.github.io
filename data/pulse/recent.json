@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-06T09:13:08Z",
+  "generated_at": "2026-10-07T09:03:19Z",
   "metrics": {
     "changes": [
       {
-        "number": 14365,
-        "owner": "Caolán McNamara",
-        "subject": "transfer the correct subset of storage.wopi host settings to the kit",
-        "submitted": "2026-10-06T08:58:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14365"
-      },
-      {
-        "number": 14447,
+        "number": 14412,
         "owner": "Mike Kaganski",
-        "subject": "Fix unit test testPieTextArea",
-        "submitted": "2026-10-06T08:58:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14447"
+        "subject": "browser: put the editable's caret on the document caret",
+        "submitted": "2026-10-07T08:59:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14412"
       },
       {
-        "number": 14301,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "svx: give a header shape's copy its own points",
-        "submitted": "2026-10-06T08:42:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14301"
+        "number": 14537,
+        "owner": "Sarper Akdemir",
+        "subject": "fix(app:linux): build l10n-settings.js for the app in a server tree",
+        "submitted": "2026-10-07T08:37:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14537"
       },
       {
-        "number": 14400,
-        "owner": "Caolán McNamara",
-        "subject": "Add some process documentation",
-        "submitted": "2026-10-06T08:28:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14400"
+        "number": 14536,
+        "owner": "Sarper Akdemir",
+        "subject": "fix(app:linux): the app page loads its translations again",
+        "submitted": "2026-10-07T08:36:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14536"
       },
       {
-        "number": 12577,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "oox: keep the text where it is when the spacing crosses over",
-        "submitted": "2026-10-06T08:15:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12577"
+        "number": 14566,
+        "owner": "Miklos Vajna",
+        "subject": "cool#16285 Impress, airplane transition: add document model & PPTX import/export",
+        "submitted": "2026-10-07T08:26:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14566"
       },
       {
-        "number": 14370,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: gray and invert a subtree with blend modes",
-        "submitted": "2026-10-06T07:48:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14370"
+        "number": 14476,
+        "owner": "Noel Grandin",
+        "subject": "replace SAL_CONSTEXPR macro with constexpr",
+        "submitted": "2026-10-07T08:26:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14476"
       },
       {
-        "number": 14369,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: draw the shadow, glow, soft edge and transparence",
-        "submitted": "2026-10-06T07:48:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14369"
+        "number": 14110,
+        "owner": "Rashesh Padia",
+        "subject": "sd: move only the slides shown as selected after a slide move",
+        "submitted": "2026-10-07T08:14:42Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14110"
       },
       {
-        "number": 14368,
-        "owner": "Tomaž Vajngerl",
-        "subject": "drawinglayer: blur shadow and soft edge by a third of the radius",
-        "submitted": "2026-10-06T07:48:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14368"
+        "number": 14109,
+        "owner": "Rashesh Padia",
+        "subject": "browser: show the clicked slide at once after a section select",
+        "submitted": "2026-10-07T08:14:42Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14109"
+      },
+      {
+        "number": 14521,
+        "owner": "Andras Timar",
+        "subject": "wsd: list each CSP source once in frame-ancestors and frame-src",
+        "submitted": "2026-10-07T08:09:36Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14521"
       }
     ]
   },

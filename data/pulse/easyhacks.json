@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T09:13:08Z",
+  "generated_at": "2026-10-07T09:03:19Z",
   "metrics": {
     "issues": [
       {
@@ -13,23 +13,6 @@
         "title": "Move the lastFillIndex map in Widget.TabControl.tsx into the dialog component",
         "updated_at": "2026-10-06",
         "url": "https://github.com/CollaboraOnline/online/issues/16266"
-      },
-      {
-        "assignee": null,
-        "comments": 3,
-        "created_at": "2026-09-23",
-        "labels": [
-          "C++",
-          "core",
-          "Easy - Medium",
-          "26.04"
-        ],
-        "mentor": "@grandinj @mistmist",
-        "number": 16239,
-        "thumbs_up": 0,
-        "title": "remove skia",
-        "updated_at": "2026-10-03",
-        "url": "https://github.com/CollaboraOnline/online/issues/16239"
       },
       {
         "assignee": "shubhamy0",
@@ -1377,7 +1360,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 92
+    "total_open": 91
   },
   "source": "easyhacks"
 }
