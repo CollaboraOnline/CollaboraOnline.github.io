@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-07T09:03:19Z",
+  "generated_at": "2026-10-08T09:18:46Z",
   "metrics": {
     "issues": [
       {
         "assignee": "ChevyRuiz",
-        "comments": 2,
+        "comments": 3,
         "created_at": "2026-10-01",
         "labels": [],
         "mentor": "@eszkadev @banobepascal",
         "number": 16266,
         "thumbs_up": 0,
         "title": "Move the lastFillIndex map in Widget.TabControl.tsx into the dialog component",
-        "updated_at": "2026-10-06",
+        "updated_at": "2026-10-08",
         "url": "https://github.com/CollaboraOnline/online/issues/16266"
       },
       {
