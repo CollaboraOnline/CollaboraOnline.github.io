@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-08T09:18:43Z",
+  "generated_at": "2026-10-09T09:25:53Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 73,
-      "posts_30d": 192,
+      "posts_30d": 189,
       "top_topics_monthly": [
         {
           "posts": 5,
           "title": "Android 26.04.3.1 cannot open password-protected XLSX files",
           "url": "https://forum.collaboraonline.com/t/android-26-04-3-1-cannot-open-password-protected-xlsx-files/5029",
-          "views": 108
+          "views": 109
         },
         {
           "posts": 1,
           "title": "Collabora Office 26.04 Now Available on Android and iOS",
           "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 109
+          "views": 116
         },
         {
           "posts": 7,
           "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
           "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
-          "views": 172
+          "views": 177
         },
         {
           "posts": 1,
@@ -33,18 +33,18 @@
           "posts": 9,
           "title": "Connection reset by peer with Collabora on Seafile instance",
           "url": "https://forum.collaboraonline.com/t/connection-reset-by-peer-with-collabora-on-seafile-instance/5040",
-          "views": 90
+          "views": 95
         }
       ],
-      "topics_30d": 53,
-      "total_posts": 10329,
-      "total_topics": 2188
+      "topics_30d": 55,
+      "total_posts": 10337,
+      "total_topics": 2193
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-08",
-    "to": "2026-10-08"
+    "from": "2026-09-09",
+    "to": "2026-10-09"
   },
   "source": "forum"
 }

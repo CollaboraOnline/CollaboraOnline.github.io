@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-08T09:18:46Z",
+  "generated_at": "2026-10-09T09:25:56Z",
   "metrics": {
     "changes": [
       {
-        "number": 14732,
+        "number": 14829,
+        "owner": "Năstasie Raul-Ionuț",
+        "subject": "Improved alignment in notebookbar",
+        "submitted": "2026-10-09T09:01:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14829"
+      },
+      {
+        "number": 14765,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#168607 writerfilter: import PROP_TAB_STOP_DISTANCE 0",
+        "submitted": "2026-10-09T08:55:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14765"
+      },
+      {
+        "number": 14764,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#172113 sw ms import: remove early return",
+        "submitted": "2026-10-09T08:49:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14764"
+      },
+      {
+        "number": 14831,
         "owner": "Andras Timar",
-        "subject": "flatpak: sync externals with download.lst",
-        "submitted": "2026-10-08T08:55:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14732"
+        "subject": "cypress: wait for the typed character in the form field tests",
+        "submitted": "2026-10-09T08:40:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14831"
       },
       {
-        "number": 14740,
-        "owner": "Szymon Kłos",
-        "subject": "wsd: don't keep a closed document alive by its link",
-        "submitted": "2026-10-08T08:53:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14740"
+        "number": 14830,
+        "owner": "Andras Timar",
+        "subject": "browser: send binary messages over the proxy socket as bytes",
+        "submitted": "2026-10-09T08:34:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14830"
       },
       {
-        "number": 14739,
-        "owner": "Stephan Bergmann",
-        "subject": "SdrOnOffItem, SdrMetricItem, and SdrPercentItem need their own CreateDefault",
-        "submitted": "2026-10-08T08:52:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14739"
+        "number": 14822,
+        "owner": "Michael Meeks",
+        "subject": "test: link the standalone unit tests against gbuild's libraries.",
+        "submitted": "2026-10-09T08:20:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14822"
       },
       {
-        "number": 14725,
-        "owner": "Caolán McNamara",
-        "subject": "extend the instance metadata check",
-        "submitted": "2026-10-08T08:21:51Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14725"
+        "number": 14643,
+        "owner": "Mike Kaganski",
+        "subject": "browser: let the keyboard reach the link popup",
+        "submitted": "2026-10-09T07:52:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14643"
       },
       {
-        "number": 14735,
-        "owner": "Pranam Lashkari",
-        "subject": "browser: stop the slide flicker on fast arrow navigation",
-        "submitted": "2026-10-08T08:09:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14735"
-      },
-      {
-        "number": 14351,
-        "owner": "Michael Stahl",
-        "subject": "xmlsecurity: add import of `SigningCertificateV2` element",
-        "submitted": "2026-10-08T08:07:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14351"
-      },
-      {
-        "number": 14203,
-        "owner": "Michael Stahl",
-        "subject": "xmlsecurity: improve validation performance",
-        "submitted": "2026-10-08T07:59:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14203"
-      },
-      {
-        "number": 14683,
-        "owner": "Mohit Marathe",
-        "subject": "cypress: fix reply position flake in annotation_spec",
-        "submitted": "2026-10-08T07:58:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14683"
+        "number": 14469,
+        "owner": "Mike Kaganski",
+        "subject": "browser: label a dialog by its title element, not its text",
+        "submitted": "2026-10-09T07:49:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14469"
       }
     ]
   },
