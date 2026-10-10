@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-09T09:25:56Z",
+  "generated_at": "2026-10-10T08:47:46Z",
   "metrics": {
     "changes": [
       {
-        "number": 14829,
-        "owner": "Năstasie Raul-Ionuț",
-        "subject": "Improved alignment in notebookbar",
-        "submitted": "2026-10-09T09:01:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14829"
+        "number": 14869,
+        "owner": "Stephan Bergmann",
+        "subject": "Send google.script.run calls to the kit from the main window",
+        "submitted": "2026-10-10T07:23:36Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14869"
       },
       {
-        "number": 14765,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#168607 writerfilter: import PROP_TAB_STOP_DISTANCE 0",
-        "submitted": "2026-10-09T08:55:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14765"
+        "number": 15003,
+        "owner": "Tomaž Vajngerl",
+        "subject": "Shift keeps the ratio and Alt turns the snap over",
+        "submitted": "2026-10-10T06:57:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15003"
       },
       {
-        "number": 14764,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#172113 sw ms import: remove early return",
-        "submitted": "2026-10-09T08:49:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14764"
+        "number": 15002,
+        "owner": "Tomaž Vajngerl",
+        "subject": "Let a key step go exactly where it says",
+        "submitted": "2026-10-10T06:57:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15002"
       },
       {
-        "number": 14831,
-        "owner": "Andras Timar",
-        "subject": "cypress: wait for the typed character in the form field tests",
-        "submitted": "2026-10-09T08:40:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14831"
+        "number": 15001,
+        "owner": "Tomaž Vajngerl",
+        "subject": "Follow where a key step really landed",
+        "submitted": "2026-10-10T06:57:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15001"
       },
       {
-        "number": 14830,
-        "owner": "Andras Timar",
-        "subject": "browser: send binary messages over the proxy socket as bytes",
-        "submitted": "2026-10-09T08:34:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14830"
+        "number": 15000,
+        "owner": "Tomaž Vajngerl",
+        "subject": "Draw the eight outside the frame",
+        "submitted": "2026-10-10T06:57:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15000"
       },
       {
-        "number": 14822,
-        "owner": "Michael Meeks",
-        "subject": "test: link the standalone unit tests against gbuild's libraries.",
-        "submitted": "2026-10-09T08:20:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14822"
+        "number": 14999,
+        "owner": "Tomaž Vajngerl",
+        "subject": "Set a drag off from the handle, not from the mouse",
+        "submitted": "2026-10-10T06:57:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14999"
       },
       {
-        "number": 14643,
-        "owner": "Mike Kaganski",
-        "subject": "browser: let the keyboard reach the link popup",
-        "submitted": "2026-10-09T07:52:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14643"
+        "number": 14998,
+        "owner": "Tomaž Vajngerl",
+        "subject": "Draw a band round a group and round a diagram",
+        "submitted": "2026-10-10T06:57:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14998"
       },
       {
-        "number": 14469,
-        "owner": "Mike Kaganski",
-        "subject": "browser: label a dialog by its title element, not its text",
-        "submitted": "2026-10-09T07:49:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14469"
+        "number": 14997,
+        "owner": "Tomaž Vajngerl",
+        "subject": "Ask the object whether it is a diagram, and for its picture",
+        "submitted": "2026-10-10T06:57:54Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14997"
       }
     ]
   },
