@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-10T08:47:46Z",
+  "generated_at": "2026-10-11T09:09:46Z",
   "metrics": {
     "changes": [
       {
-        "number": 14869,
-        "owner": "Stephan Bergmann",
-        "subject": "Send google.script.run calls to the kit from the main window",
-        "submitted": "2026-10-10T07:23:36Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14869"
+        "number": 15033,
+        "owner": "Caolán McNamara",
+        "subject": "only forward the .uno: and script forms of a uno command to the kit",
+        "submitted": "2026-10-10T23:34:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15033"
       },
       {
-        "number": 15003,
-        "owner": "Tomaž Vajngerl",
-        "subject": "Shift keeps the ratio and Alt turns the snap over",
-        "submitted": "2026-10-10T06:57:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15003"
+        "number": 15011,
+        "owner": "Caolán McNamara",
+        "subject": "editeng: read the brush graphic through GetGraphicObject",
+        "submitted": "2026-10-10T18:21:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15011"
       },
       {
-        "number": 15002,
-        "owner": "Tomaž Vajngerl",
-        "subject": "Let a key step go exactly where it says",
-        "submitted": "2026-10-10T06:57:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15002"
+        "number": 15012,
+        "owner": "Caolán McNamara",
+        "subject": "create a document's Basic library container when fuzzing too",
+        "submitted": "2026-10-10T18:20:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15012"
       },
       {
-        "number": 15001,
-        "owner": "Tomaž Vajngerl",
-        "subject": "Follow where a key step really landed",
-        "submitted": "2026-10-10T06:57:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15001"
+        "number": 15013,
+        "owner": "Caolán McNamara",
+        "subject": "abort when fuzzing reaches a script",
+        "submitted": "2026-10-10T18:20:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15013"
       },
       {
-        "number": 15000,
-        "owner": "Tomaž Vajngerl",
-        "subject": "Draw the eight outside the frame",
-        "submitted": "2026-10-10T06:57:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15000"
+        "number": 15019,
+        "owner": "Caolán McNamara",
+        "subject": "vcl: only follow protocols that can name a picture file in loadFromURL",
+        "submitted": "2026-10-10T18:20:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15019"
       },
       {
-        "number": 14999,
-        "owner": "Tomaž Vajngerl",
-        "subject": "Set a drag off from the handle, not from the mouse",
-        "submitted": "2026-10-10T06:57:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14999"
+        "number": 15010,
+        "owner": "Caolán McNamara",
+        "subject": "add an sftfuzzer that embeds an untrusted font in a PDF",
+        "submitted": "2026-10-10T18:18:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15010"
       },
       {
-        "number": 14998,
-        "owner": "Tomaž Vajngerl",
-        "subject": "Draw a band round a group and round a diagram",
-        "submitted": "2026-10-10T06:57:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14998"
+        "number": 15009,
+        "owner": "Caolán McNamara",
+        "subject": "drop sftfuzzer",
+        "submitted": "2026-10-10T18:18:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15009"
       },
       {
-        "number": 14997,
-        "owner": "Tomaž Vajngerl",
-        "subject": "Ask the object whether it is a diagram, and for its picture",
-        "submitted": "2026-10-10T06:57:54Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14997"
+        "number": 15007,
+        "owner": "Caolán McNamara",
+        "subject": "fftester: load the ww8, ww6, ww2 and rtf filters from libswlo",
+        "submitted": "2026-10-10T14:29:26Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15007"
       }
     ]
   },

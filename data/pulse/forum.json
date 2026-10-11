@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-10-10T08:47:42Z",
+  "generated_at": "2026-10-11T09:09:40Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 73,
-      "posts_30d": 190,
+      "active_users_30d": 69,
+      "posts_30d": 177,
       "top_topics_monthly": [
         {
           "posts": 5,
           "title": "Android 26.04.3.1 cannot open password-protected XLSX files",
           "url": "https://forum.collaboraonline.com/t/android-26-04-3-1-cannot-open-password-protected-xlsx-files/5029",
-          "views": 109
+          "views": 110
         },
         {
           "posts": 1,
           "title": "Collabora Office 26.04 Now Available on Android and iOS",
           "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 121
-        },
-        {
-          "posts": 7,
-          "title": "Does Collabora CODE 26.04.2.4 Have Any User or Concurrent Connection Limits",
-          "url": "https://forum.collaboraonline.com/t/does-collabora-code-26-04-2-4-have-any-user-or-concurrent-connection-limits/5023",
-          "views": 179
+          "views": 123
         },
         {
           "posts": 9,
           "title": "Connection reset by peer with Collabora on Seafile instance",
           "url": "https://forum.collaboraonline.com/t/connection-reset-by-peer-with-collabora-on-seafile-instance/5040",
-          "views": 101
+          "views": 104
         },
         {
-          "posts": 6,
-          "title": "Collabora writer crashes",
-          "url": "https://forum.collaboraonline.com/t/collabora-writer-crashes/5024",
+          "posts": 9,
+          "title": "Impress closes automatically on ipad",
+          "url": "https://forum.collaboraonline.com/t/impress-closes-automatically-on-ipad/5043",
           "views": 81
+        },
+        {
+          "posts": 5,
+          "title": "What to install the Collabora online on our local and try with WOPI browser editing",
+          "url": "https://forum.collaboraonline.com/t/what-to-install-the-collabora-online-on-our-local-and-try-with-wopi-browser-editing/5044",
+          "views": 79
         }
       ],
-      "topics_30d": 55,
-      "total_posts": 10341,
+      "topics_30d": 52,
+      "total_posts": 10343,
       "total_topics": 2194
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-10",
-    "to": "2026-10-10"
+    "from": "2026-09-11",
+    "to": "2026-10-11"
   },
   "source": "forum"
 }
