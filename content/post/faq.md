@@ -68,6 +68,8 @@ Repository (monorepo, includes core under `engine/`):
 For the full Gerrit workflow (SSH key setup, `commit-msg` hook, pushing to
 `refs/for/main`, addressing review feedback) see the
 [first contribution guide](https://forum.collaboraonline.com/t/your-first-pull-request/41).
+For what happens after you push (reviewers, CI runs, and updating your change) see
+[After you push to Gerrit]({{< relref "after-push.md" >}}).
 
 Build instructions:
 - Linux (Collabora): https://collaboraonline.github.io/post/build-co-linux/

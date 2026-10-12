@@ -26,6 +26,8 @@ Build **C**ollabora **O**nline **D**evelopment **E**dition. Choose your operatin
 
 **Where the code lives.** Development happens on [Gerrit](https://gerrit.collaboraoffice.com/), which is where code review takes place and where the canonical history lives. GitHub hosts a read-only mirror of the monorepo (online plus the engine under `engine/`) at [`CollaboraOnline/online.mirror`](https://github.com/CollaboraOnline/online.mirror) for browsing, cloning, and GitHub Actions. The original [`CollaboraOnline/online`](https://github.com/CollaboraOnline/online) repo is now used only for the issue tracker, so existing `cool#1234` references in commit messages keep working. Pull requests against either GitHub repo are auto-closed; see the FAQ entries [What is `online.mirror`?]({{< relref "faq.md#online-mirror" >}}) and [I have a fix - where do I send the PR?]({{< relref "faq.md#sending-fixes" >}}) for the contribution workflow.
 
+**After you push.** See [After you push to Gerrit]({{< relref "after-push.md" >}}) for review and CI.
+
 {{< build-dropdown >}}<br>
 
 <section id="build-code-clone-script" class="build-code-content">
