@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-11T09:09:46Z",
+  "generated_at": "2026-10-12T09:34:35Z",
   "metrics": {
     "changes": [
       {
-        "number": 15033,
+        "number": 15018,
         "owner": "Caolán McNamara",
-        "subject": "only forward the .uno: and script forms of a uno command to the kit",
-        "submitted": "2026-10-10T23:34:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15033"
+        "subject": "tdf#146150 tools: drop the slot: scheme from INetURLObject",
+        "submitted": "2026-10-12T09:29:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15018"
       },
       {
-        "number": 15011,
+        "number": 15017,
         "owner": "Caolán McNamara",
-        "subject": "editeng: read the brush graphic through GetGraphicObject",
-        "submitted": "2026-10-10T18:21:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15011"
+        "subject": "drop the remaining special cases for slot: urls",
+        "submitted": "2026-10-12T09:29:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15017"
       },
       {
-        "number": 15012,
+        "number": 15016,
         "owner": "Caolán McNamara",
-        "subject": "create a document's Basic library container when fuzzing too",
-        "submitted": "2026-10-10T18:20:52Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15012"
+        "subject": "sfx2: drop the per-verb slots",
+        "submitted": "2026-10-12T09:29:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15016"
       },
       {
-        "number": 15013,
+        "number": 15015,
         "owner": "Caolán McNamara",
-        "subject": "abort when fuzzing reaches a script",
-        "submitted": "2026-10-10T18:20:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15013"
+        "subject": "tdf#146150 sfx2: drop dispatch of the numeric slot: and commandId: urls",
+        "submitted": "2026-10-12T09:29:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15015"
       },
       {
-        "number": 15019,
+        "number": 15014,
         "owner": "Caolán McNamara",
-        "subject": "vcl: only follow protocols that can name a picture file in loadFromURL",
-        "submitted": "2026-10-10T18:20:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15019"
+        "subject": "tdf#146150 framework: don't invent slot: urls for menu items without a command",
+        "submitted": "2026-10-12T09:29:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15014"
       },
       {
-        "number": 15010,
-        "owner": "Caolán McNamara",
-        "subject": "add an sftfuzzer that embeds an untrusted font in a PDF",
-        "submitted": "2026-10-10T18:18:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15010"
+        "number": 14985,
+        "owner": "Andras Timar",
+        "subject": "Show a Lightproof icon on the sentence checker's grammar message",
+        "submitted": "2026-10-12T08:46:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14985"
       },
       {
-        "number": 15009,
-        "owner": "Caolán McNamara",
-        "subject": "drop sftfuzzer",
-        "submitted": "2026-10-10T18:18:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15009"
+        "number": 14912,
+        "owner": "Mike Kaganski",
+        "subject": "sfx2: announce selecting and deselecting a Writer image",
+        "submitted": "2026-10-12T07:25:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14912"
       },
       {
-        "number": 15007,
-        "owner": "Caolán McNamara",
-        "subject": "fftester: load the ww8, ww6, ww2 and rtf filters from libswlo",
-        "submitted": "2026-10-10T14:29:26Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15007"
+        "number": 14855,
+        "owner": "Mike Kaganski",
+        "subject": "sfx2, browser: give the reader a paragraph's images",
+        "submitted": "2026-10-12T06:41:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14855"
       }
     ]
   },
