@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-10-12T09:34:32Z",
+  "generated_at": "2026-10-13T09:38:54Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 69,
-      "posts_30d": 172,
+      "active_users_30d": 72,
+      "posts_30d": 178,
       "top_topics_monthly": [
+        {
+          "posts": 13,
+          "title": "Impress closes automatically on ipad",
+          "url": "https://forum.collaboraonline.com/t/impress-closes-automatically-on-ipad/5043",
+          "views": 96
+        },
         {
           "posts": 1,
           "title": "Collabora Office 26.04 Now Available on Android and iOS",
           "url": "https://forum.collaboraonline.com/t/collabora-office-26-04-now-available-on-android-and-ios/5034",
-          "views": 124
+          "views": 125
         },
         {
           "posts": 9,
           "title": "Connection reset by peer with Collabora on Seafile instance",
           "url": "https://forum.collaboraonline.com/t/connection-reset-by-peer-with-collabora-on-seafile-instance/5040",
-          "views": 106
-        },
-        {
-          "posts": 9,
-          "title": "Impress closes automatically on ipad",
-          "url": "https://forum.collaboraonline.com/t/impress-closes-automatically-on-ipad/5043",
-          "views": 85
+          "views": 115
         },
         {
           "posts": 5,
           "title": "What to install the Collabora online on our local and try with WOPI browser editing",
           "url": "https://forum.collaboraonline.com/t/what-to-install-the-collabora-online-on-our-local-and-try-with-wopi-browser-editing/5044",
-          "views": 81
+          "views": 86
         },
         {
           "posts": 8,
           "title": "\"File cannot be saved\" on Onedrive",
           "url": "https://forum.collaboraonline.com/t/file-cannot-be-saved-on-onedrive/5072",
-          "views": 61
+          "views": 62
         }
       ],
-      "topics_30d": 53,
-      "total_posts": 10348,
-      "total_topics": 2197
+      "topics_30d": 52,
+      "total_posts": 10354,
+      "total_topics": 2196
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-12",
-    "to": "2026-10-12"
+    "from": "2026-09-13",
+    "to": "2026-10-13"
   },
   "source": "forum"
 }

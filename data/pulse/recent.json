@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-12T09:34:35Z",
+  "generated_at": "2026-10-13T09:38:57Z",
   "metrics": {
     "changes": [
       {
-        "number": 15018,
-        "owner": "Caolán McNamara",
-        "subject": "tdf#146150 tools: drop the slot: scheme from INetURLObject",
-        "submitted": "2026-10-12T09:29:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15018"
-      },
-      {
-        "number": 15017,
-        "owner": "Caolán McNamara",
-        "subject": "drop the remaining special cases for slot: urls",
-        "submitted": "2026-10-12T09:29:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15017"
-      },
-      {
-        "number": 15016,
-        "owner": "Caolán McNamara",
-        "subject": "sfx2: drop the per-verb slots",
-        "submitted": "2026-10-12T09:29:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15016"
-      },
-      {
-        "number": 15015,
-        "owner": "Caolán McNamara",
-        "subject": "tdf#146150 sfx2: drop dispatch of the numeric slot: and commandId: urls",
-        "submitted": "2026-10-12T09:29:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15015"
-      },
-      {
-        "number": 15014,
-        "owner": "Caolán McNamara",
-        "subject": "tdf#146150 framework: don't invent slot: urls for menu items without a command",
-        "submitted": "2026-10-12T09:29:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15014"
-      },
-      {
-        "number": 14985,
-        "owner": "Andras Timar",
-        "subject": "Show a Lightproof icon on the sentence checker's grammar message",
-        "submitted": "2026-10-12T08:46:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14985"
-      },
-      {
-        "number": 14912,
+        "number": 15226,
         "owner": "Mike Kaganski",
-        "subject": "sfx2: announce selecting and deselecting a Writer image",
-        "submitted": "2026-10-12T07:25:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14912"
+        "subject": "tdf#173897: let a multi-line field break across pages",
+        "submitted": "2026-10-13T09:37:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15226"
       },
       {
-        "number": 14855,
+        "number": 15169,
+        "owner": "Noel Grandin",
+        "subject": "loplugin:unusedfields",
+        "submitted": "2026-10-13T08:24:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15169"
+      },
+      {
+        "number": 15234,
         "owner": "Mike Kaganski",
-        "subject": "sfx2, browser: give the reader a paragraph's images",
-        "submitted": "2026-10-12T06:41:22Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14855"
+        "subject": "loplugin:redundantfcast: allow a cast deducing a return type",
+        "submitted": "2026-10-13T08:18:42Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15234"
+      },
+      {
+        "number": 15236,
+        "owner": "Miklos Vajna",
+        "subject": "cool#16242 browser: handle paste from notebookbar in the Impress notes bottom panel on Firefox",
+        "submitted": "2026-10-13T07:56:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15236"
+      },
+      {
+        "number": 15235,
+        "owner": "Miklos Vajna",
+        "subject": "engine editeng: prefix members of SvxDateField",
+        "submitted": "2026-10-13T07:32:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15235"
+      },
+      {
+        "number": 15189,
+        "owner": "Caolán McNamara",
+        "subject": "sfx2: give the infobar container a single layout-changed handler",
+        "submitted": "2026-10-13T07:30:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15189"
+      },
+      {
+        "number": 15188,
+        "owner": "Caolán McNamara",
+        "subject": "sfx2: leave the infobar Resize to the layout changed handler",
+        "submitted": "2026-10-13T07:29:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15188"
+      },
+      {
+        "number": 13296,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "browser: label a shortcut with the key that application uses",
+        "submitted": "2026-10-13T07:28:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/13296"
       }
     ]
   },
