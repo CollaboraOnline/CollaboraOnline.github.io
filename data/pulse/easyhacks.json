@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-10-13T09:38:56Z",
+  "generated_at": "2026-10-16T07:25:40Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-10-15",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16304,
+        "thumbs_up": 0,
+        "title": "Design show tour icon",
+        "updated_at": "2026-10-15",
+        "url": "https://github.com/CollaboraOnline/online/issues/16304"
+      },
       {
         "assignee": "shubhamy0",
         "comments": 5,
@@ -1348,7 +1362,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 90
+    "total_open": 91
   },
   "source": "easyhacks"
 }

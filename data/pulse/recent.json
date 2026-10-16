@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-13T09:38:57Z",
+  "generated_at": "2026-10-16T07:25:41Z",
   "metrics": {
     "changes": [
       {
-        "number": 15226,
-        "owner": "Mike Kaganski",
-        "subject": "tdf#173897: let a multi-line field break across pages",
-        "submitted": "2026-10-13T09:37:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15226"
+        "number": 15649,
+        "owner": "Jaume Pujantell",
+        "subject": "tdf#125793 sw: paint old color and lines on the old side of compare",
+        "submitted": "2026-10-16T07:21:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15649"
       },
       {
-        "number": 15169,
-        "owner": "Noel Grandin",
-        "subject": "loplugin:unusedfields",
-        "submitted": "2026-10-13T08:24:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15169"
+        "number": 15648,
+        "owner": "Jaume Pujantell",
+        "subject": "tdf#125793 sw: compare character and paragraph formatting too",
+        "submitted": "2026-10-16T07:21:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15648"
       },
       {
-        "number": 15234,
-        "owner": "Mike Kaganski",
-        "subject": "loplugin:redundantfcast: allow a cast deducing a return type",
-        "submitted": "2026-10-13T08:18:42Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15234"
+        "number": 15592,
+        "owner": "Pedro Silva",
+        "subject": "Compact mode: shorten the header from 102px to 88px",
+        "submitted": "2026-10-16T06:51:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15592"
       },
       {
-        "number": 15236,
-        "owner": "Miklos Vajna",
-        "subject": "cool#16242 browser: handle paste from notebookbar in the Impress notes bottom panel on Firefox",
-        "submitted": "2026-10-13T07:56:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15236"
-      },
-      {
-        "number": 15235,
-        "owner": "Miklos Vajna",
-        "subject": "engine editeng: prefix members of SvxDateField",
-        "submitted": "2026-10-13T07:32:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15235"
-      },
-      {
-        "number": 15189,
+        "number": 15602,
         "owner": "Caolán McNamara",
-        "subject": "sfx2: give the infobar container a single layout-changed handler",
-        "submitted": "2026-10-13T07:30:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15189"
+        "subject": "a change to an already open dialog should not stop a bgsave",
+        "submitted": "2026-10-16T06:08:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15602"
       },
       {
-        "number": 15188,
-        "owner": "Caolán McNamara",
-        "subject": "sfx2: leave the infobar Resize to the layout changed handler",
-        "submitted": "2026-10-13T07:29:52Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15188"
+        "number": 15901,
+        "owner": "Szymon Kłos",
+        "subject": "calc: fetch the sheet geometry again after a reconnection",
+        "submitted": "2026-10-16T05:53:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15901"
       },
       {
-        "number": 13296,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "browser: label a shortcut with the key that application uses",
-        "submitted": "2026-10-13T07:28:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/13296"
+        "number": 15896,
+        "owner": "Szymon Kłos",
+        "subject": "calc: test that undo of clearing outlines keeps the row positions",
+        "submitted": "2026-10-16T05:53:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15896"
+      },
+      {
+        "number": 15895,
+        "owner": "Szymon Kłos",
+        "subject": "calc: test that undo of a whole column paste keeps the column positions",
+        "submitted": "2026-10-16T05:53:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15895"
+      },
+      {
+        "number": 15889,
+        "owner": "Szymon Kłos",
+        "subject": "calc: invalidate cached column positions on every sheet a change touches",
+        "submitted": "2026-10-16T05:53:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15889"
       }
     ]
   },
