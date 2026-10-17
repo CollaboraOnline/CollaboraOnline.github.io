@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-16T07:25:41Z",
+  "generated_at": "2026-10-17T07:07:12Z",
   "metrics": {
     "changes": [
       {
-        "number": 15649,
-        "owner": "Jaume Pujantell",
-        "subject": "tdf#125793 sw: paint old color and lines on the old side of compare",
-        "submitted": "2026-10-16T07:21:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15649"
-      },
-      {
-        "number": 15648,
-        "owner": "Jaume Pujantell",
-        "subject": "tdf#125793 sw: compare character and paragraph formatting too",
-        "submitted": "2026-10-16T07:21:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15648"
-      },
-      {
-        "number": 15592,
-        "owner": "Pedro Silva",
-        "subject": "Compact mode: shorten the header from 102px to 88px",
-        "submitted": "2026-10-16T06:51:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15592"
-      },
-      {
-        "number": 15602,
+        "number": 14720,
         "owner": "Caolán McNamara",
-        "subject": "a change to an already open dialog should not stop a bgsave",
-        "submitted": "2026-10-16T06:08:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15602"
+        "subject": "list the AI provider hosts a user may choose in ai.allowed_hosts",
+        "submitted": "2026-10-17T04:43:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14720"
       },
       {
-        "number": 15901,
-        "owner": "Szymon Kłos",
-        "subject": "calc: fetch the sheet geometry again after a reconnection",
-        "submitted": "2026-10-16T05:53:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15901"
+        "number": 16057,
+        "owner": "Năstasie Raul-Ionuț",
+        "subject": "a11y: Make slide content be announced in plain text",
+        "submitted": "2026-10-16T20:27:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16057"
       },
       {
-        "number": 15896,
-        "owner": "Szymon Kłos",
-        "subject": "calc: test that undo of clearing outlines keeps the row positions",
-        "submitted": "2026-10-16T05:53:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15896"
+        "number": 16069,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: close the file of an upload that did not finish",
+        "submitted": "2026-10-16T20:27:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16069"
       },
       {
-        "number": 15895,
-        "owner": "Szymon Kłos",
-        "subject": "calc: test that undo of a whole column paste keeps the column positions",
-        "submitted": "2026-10-16T05:53:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15895"
+        "number": 16068,
+        "owner": "Caolán McNamara",
+        "subject": "curl: build with cmake's ninja generator on Windows",
+        "submitted": "2026-10-16T20:25:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16068"
       },
       {
-        "number": 15889,
-        "owner": "Szymon Kłos",
-        "subject": "calc: invalidate cached column positions on every sheet a change touches",
-        "submitted": "2026-10-16T05:53:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15889"
+        "number": 16075,
+        "owner": "Caolán McNamara",
+        "subject": "add nn to the snap manifest languages too",
+        "submitted": "2026-10-16T20:24:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16075"
+      },
+      {
+        "number": 15799,
+        "owner": "Andras Timar",
+        "subject": "docker: running the LanguageTool service next to Collabora Online",
+        "submitted": "2026-10-16T18:09:24Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15799"
+      },
+      {
+        "number": 15798,
+        "owner": "Andras Timar",
+        "subject": "wsd: the apps do not export the remote checker environment",
+        "submitted": "2026-10-16T18:09:24Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15798"
+      },
+      {
+        "number": 15191,
+        "owner": "Tor Lillqvist",
+        "subject": "Round the active tab more and put short bars between the other tabs",
+        "submitted": "2026-10-16T16:08:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15191"
       }
     ]
   },
