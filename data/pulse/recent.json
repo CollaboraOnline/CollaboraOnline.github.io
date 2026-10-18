@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-17T07:07:12Z",
+  "generated_at": "2026-10-18T07:21:26Z",
   "metrics": {
     "changes": [
       {
-        "number": 14720,
-        "owner": "Caolán McNamara",
-        "subject": "list the AI provider hosts a user may choose in ai.allowed_hosts",
-        "submitted": "2026-10-17T04:43:22Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14720"
+        "number": 15491,
+        "owner": "Emanuel Schorsch",
+        "subject": "NoOp sw: extract RTF row cell-default reset",
+        "submitted": "2026-10-18T06:49:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15491"
       },
       {
-        "number": 16057,
-        "owner": "Năstasie Raul-Ionuț",
-        "subject": "a11y: Make slide content be announced in plain text",
-        "submitted": "2026-10-16T20:27:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16057"
+        "number": 16056,
+        "owner": "Armin Le Grand",
+        "subject": "Paste an own copy at the place it was copied from, in the kit too",
+        "submitted": "2026-10-18T06:42:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16056"
       },
       {
-        "number": 16069,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: close the file of an upload that did not finish",
-        "submitted": "2026-10-16T20:27:22Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16069"
+        "number": 16055,
+        "owner": "Armin Le Grand",
+        "subject": "Hold turn, mirror and shear fast with the protected place or size",
+        "submitted": "2026-10-18T06:42:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16055"
       },
       {
-        "number": 16068,
-        "owner": "Caolán McNamara",
-        "subject": "curl: build with cmake's ninja generator on Windows",
-        "submitted": "2026-10-16T20:25:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16068"
+        "number": 16054,
+        "owner": "Armin Le Grand",
+        "subject": "Send a view that draws from objects only what it reads of a selection",
+        "submitted": "2026-10-18T06:42:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16054"
       },
       {
-        "number": 16075,
-        "owner": "Caolán McNamara",
-        "subject": "add nn to the snap manifest languages too",
-        "submitted": "2026-10-16T20:24:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16075"
+        "number": 16053,
+        "owner": "Armin Le Grand",
+        "subject": "Scroll to a selection from the client's own boxes, only when it is new",
+        "submitted": "2026-10-18T06:42:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16053"
       },
       {
-        "number": 15799,
-        "owner": "Andras Timar",
-        "subject": "docker: running the LanguageTool service next to Collabora Online",
-        "submitted": "2026-10-16T18:09:24Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15799"
+        "number": 16052,
+        "owner": "Armin Le Grand",
+        "subject": "Show the 0 key's change at once, and keep the group buttons in sight",
+        "submitted": "2026-10-18T06:42:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16052"
       },
       {
-        "number": 15798,
-        "owner": "Andras Timar",
-        "subject": "wsd: the apps do not export the remote checker environment",
-        "submitted": "2026-10-16T18:09:24Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15798"
+        "number": 16051,
+        "owner": "Armin Le Grand",
+        "subject": "Keep the band of a group upright round its frame",
+        "submitted": "2026-10-18T06:42:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16051"
       },
       {
-        "number": 15191,
-        "owner": "Tor Lillqvist",
-        "subject": "Round the active tab more and put short bars between the other tabs",
-        "submitted": "2026-10-16T16:08:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15191"
+        "number": 16050,
+        "owner": "Armin Le Grand",
+        "subject": "Reset turns and slants by the 0 key on the selection",
+        "submitted": "2026-10-18T06:42:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16050"
       }
     ]
   },

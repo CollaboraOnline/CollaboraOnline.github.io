@@ -1,27 +1,21 @@
 {
-  "generated_at": "2026-10-17T07:07:08Z",
+  "generated_at": "2026-10-18T07:21:24Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 74,
-      "posts_30d": 166,
+      "posts_30d": 156,
       "top_topics_monthly": [
-        {
-          "posts": 13,
-          "title": "Impress closes automatically on ipad",
-          "url": "https://forum.collaboraonline.com/t/impress-closes-automatically-on-ipad/5043",
-          "views": 116
-        },
-        {
-          "posts": 5,
-          "title": "What to install the Collabora online on our local and try with WOPI browser editing",
-          "url": "https://forum.collaboraonline.com/t/what-to-install-the-collabora-online-on-our-local-and-try-with-wopi-browser-editing/5044",
-          "views": 93
-        },
         {
           "posts": 8,
           "title": "\"File cannot be saved\" on Onedrive",
           "url": "https://forum.collaboraonline.com/t/file-cannot-be-saved-on-onedrive/5072",
           "views": 76
+        },
+        {
+          "posts": 6,
+          "title": "Collabora Office Classic Snapshot new version?",
+          "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
+          "views": 62
         },
         {
           "posts": 3,
@@ -30,21 +24,27 @@
           "views": 25
         },
         {
-          "posts": 6,
-          "title": "Collabora Office Classic Snapshot new version?",
-          "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
+          "posts": 4,
+          "title": "How to write macros in Collabora Office (desktop)?",
+          "url": "https://forum.collaboraonline.com/t/how-to-write-macros-in-collabora-office-desktop/5110",
           "views": 60
+        },
+        {
+          "posts": 6,
+          "title": "Only 0 MB of RAM available",
+          "url": "https://forum.collaboraonline.com/t/only-0-mb-of-ram-available/5085",
+          "views": 47
         }
       ],
-      "topics_30d": 51,
-      "total_posts": 10372,
-      "total_topics": 2204
+      "topics_30d": 50,
+      "total_posts": 10375,
+      "total_topics": 2205
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-17",
-    "to": "2026-10-17"
+    "from": "2026-09-18",
+    "to": "2026-10-18"
   },
   "source": "forum"
 }
