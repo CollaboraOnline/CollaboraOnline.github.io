@@ -19,7 +19,7 @@ showimage = false
 showtitle = true
 +++
 
-A great way to get involved. You can perfect CODE and Collabora Office apps for your language, while learning about the feature set, and how things work.
+A great way to get involved. You can perfect CODE and the Collabora Office apps for your language, while learning about the feature set, and how things work. Every string is on Weblate, so you can translate the whole product: Collabora Online in the browser, and Collabora Office on desktop and mobile.
 <!--more-->
 ## Weblate
 Please join our team of translators at our [Hosted Weblate](https://hosted.weblate.org/projects/collabora-online/) page
@@ -31,15 +31,20 @@ Please join our team of translators at our [Hosted Weblate](https://hosted.webla
 That's it!
 
 ### Components to work with
-In Weblate there are many components in the Collabora Online category. The most important ones:
-* UI: this contains the bulk of user interface strings of CODE and Collabora Office
-* LOKit: this contains the difference between Collabora's core release branch and upstream LibreOffice.
+In Weblate there are many components in the Collabora Online project. The most important ones:
+* UI: the user interface strings of the browser front end, shared by CODE and Collabora Office
+* [Engine](https://hosted.weblate.org/projects/collabora-online/engine/): the strings of the document engine, one component per source module (for example sw/messages for Writer, sc/messages for Calc, sd/messages for Impress and Draw). These are the menus, dialogs, sidebar panels and messages of the documents themselves.
 * Collabora Office Qt app: a few strings specific to the Qt app on Linux (File Open and Print dialogs)
 * Collabora Office macOS app: a few strings specific to the macOS app (Main menu)
 * Help: a small built-in help module and table of keyboard shortcuts
 * Welcome Presentation: Upon the first start of Collabora Office there is a little presentation about the new product, and this presentation can be localized.
 * iOS app: a few strings specific to the iOS app (Settings panel)
 * Android app and Android lib: a few strings specific to the Android app
+
+### Languages
+Weblate carries the 46 languages that we build and ship. If your language is not
+there and you want to maintain it, ask on the [forum](https://forum.collaboraonline.com/)
+and we can add it.
 
 ## Credits
 

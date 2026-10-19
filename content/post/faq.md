@@ -198,6 +198,26 @@ appreciated.
 Of course we prepared the vital [translation environment](https://collaboraonline.github.io/post/translate/)
 and are already merging changes.
 
+### Can I translate all of Collabora Online and Collabora Office? {#translate-everything}
+{{< faq-date added="2026-10-19" >}}
+
+Yes. In October 2026 we imported the strings of the document engine into our
+[Weblate project](https://hosted.weblate.org/projects/collabora-online/engine/).
+Together with the browser front end and the app-specific components that were
+already there, Weblate now holds every string of the product. You can translate
+Collabora Online in the browser, and Collabora Office on desktop and mobile, fully
+and from one place. The engine strings are in the "Engine" category, with one
+component per source module. See the [translation page]({{< relref "translate.md" >}})
+to get started.
+
+### Why is my language not on Weblate? {#translate-languages}
+{{< faq-date added="2026-10-19" >}}
+
+We imported only the 46 languages that we build and ship. We did not want to add
+the long tail of languages that are unmaintained and largely incomplete. If your
+language is missing and you are ready to maintain it, ask on the
+[forum](https://forum.collaboraonline.com/) and we can add it.
+
 ## Why is Collabora Online its own project? {#own-project}
 {{< faq-date added="2020-10-01" added_commit="c18a9d2" >}}
 
