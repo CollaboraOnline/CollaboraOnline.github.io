@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-18T07:21:26Z",
+  "generated_at": "2026-10-19T08:00:09Z",
   "metrics": {
     "changes": [
       {
-        "number": 15491,
-        "owner": "Emanuel Schorsch",
-        "subject": "NoOp sw: extract RTF row cell-default reset",
-        "submitted": "2026-10-18T06:49:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15491"
+        "number": 15958,
+        "owner": "Tomaž Vajngerl",
+        "subject": "sw: update comment on keeping fly frames in floating table split",
+        "submitted": "2026-10-19T07:43:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15958"
       },
       {
-        "number": 16056,
-        "owner": "Armin Le Grand",
-        "subject": "Paste an own copy at the place it was copied from, in the kit too",
-        "submitted": "2026-10-18T06:42:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16056"
+        "number": 15930,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vcl: make BitmapScaleConvolutionFilter faster",
+        "submitted": "2026-10-19T07:38:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15930"
       },
       {
-        "number": 16055,
-        "owner": "Armin Le Grand",
-        "subject": "Hold turn, mirror and shear fast with the protected place or size",
-        "submitted": "2026-10-18T06:42:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16055"
+        "number": 15481,
+        "owner": "Caolán McNamara",
+        "subject": "a11y: apply a redraw of the borders widget in place",
+        "submitted": "2026-10-19T07:20:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15481"
       },
       {
-        "number": 16054,
-        "owner": "Armin Le Grand",
-        "subject": "Send a view that draws from objects only what it reads of a selection",
-        "submitted": "2026-10-18T06:42:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16054"
+        "number": 15480,
+        "owner": "Caolán McNamara",
+        "subject": "jsdialog: send a drawing area repaint as a redraw action",
+        "submitted": "2026-10-19T07:20:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15480"
       },
       {
-        "number": 16053,
-        "owner": "Armin Le Grand",
-        "subject": "Scroll to a selection from the client's own boxes, only when it is new",
-        "submitted": "2026-10-18T06:42:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16053"
+        "number": 15479,
+        "owner": "Caolán McNamara",
+        "subject": "a11y: move setting the borders widget state into _showBorders",
+        "submitted": "2026-10-19T07:20:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15479"
       },
       {
-        "number": 16052,
-        "owner": "Armin Le Grand",
-        "subject": "Show the 0 key's change at once, and keep the group buttons in sight",
-        "submitted": "2026-10-18T06:42:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16052"
+        "number": 15957,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: Leave bullets out of the text runs a prediction edits",
+        "submitted": "2026-10-19T07:17:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15957"
       },
       {
-        "number": 16051,
-        "owner": "Armin Le Grand",
-        "subject": "Keep the band of a group upright round its frame",
-        "submitted": "2026-10-18T06:42:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16051"
+        "number": 16127,
+        "owner": "Aron Budea",
+        "subject": "sd: better export of indents to PPTX",
+        "submitted": "2026-10-19T07:16:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16127"
       },
       {
-        "number": 16050,
-        "owner": "Armin Le Grand",
-        "subject": "Reset turns and slants by the 0 key on the selection",
-        "submitted": "2026-10-18T06:42:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16050"
+        "number": 14634,
+        "owner": "Mohit Marathe",
+        "subject": "wsd: keep a dropped session for its browser to reconnect to",
+        "submitted": "2026-10-16T17:06:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14634"
       }
     ]
   },
