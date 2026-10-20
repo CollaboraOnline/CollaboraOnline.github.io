@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-19T08:00:05Z",
+  "generated_at": "2026-10-20T07:50:13Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 73,
-      "posts_30d": 161,
+      "active_users_30d": 80,
+      "posts_30d": 172,
       "top_topics_monthly": [
         {
           "posts": 8,
           "title": "\"File cannot be saved\" on Onedrive",
           "url": "https://forum.collaboraonline.com/t/file-cannot-be-saved-on-onedrive/5072",
-          "views": 76
+          "views": 80
         },
         {
           "posts": 6,
           "title": "Collabora Office Classic Snapshot new version?",
           "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
-          "views": 65
+          "views": 68
         },
         {
           "posts": 3,
           "title": "Build of engine breaks on Windows",
           "url": "https://forum.collaboraonline.com/t/build-of-engine-breaks-on-windows/5106",
-          "views": 25
+          "views": 28
         },
         {
           "posts": 4,
@@ -33,18 +33,18 @@
           "posts": 6,
           "title": "Only 0 MB of RAM available",
           "url": "https://forum.collaboraonline.com/t/only-0-mb-of-ram-available/5085",
-          "views": 47
+          "views": 53
         }
       ],
-      "topics_30d": 53,
-      "total_posts": 10382,
-      "total_topics": 2208
+      "topics_30d": 56,
+      "total_posts": 10393,
+      "total_topics": 2211
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-19",
-    "to": "2026-10-19"
+    "from": "2026-09-20",
+    "to": "2026-10-20"
   },
   "source": "forum"
 }

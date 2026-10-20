@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-19T08:00:09Z",
+  "generated_at": "2026-10-20T07:50:17Z",
   "metrics": {
     "changes": [
       {
-        "number": 15958,
-        "owner": "Tomaž Vajngerl",
-        "subject": "sw: update comment on keeping fly frames in floating table split",
-        "submitted": "2026-10-19T07:43:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15958"
+        "number": 16345,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#32363 sw DOCX: add unit test/documentation for shortening headings",
+        "submitted": "2026-10-20T07:49:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16345"
       },
       {
-        "number": 15930,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vcl: make BitmapScaleConvolutionFilter faster",
-        "submitted": "2026-10-19T07:38:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15930"
+        "number": 16309,
+        "owner": "Raúl F. Pérez",
+        "subject": "cool#16251 browser: Stop Stylelint from modifying CSS during builds",
+        "submitted": "2026-10-20T07:40:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16309"
       },
       {
-        "number": 15481,
+        "number": 16343,
+        "owner": "Andras Timar",
+        "subject": "docker: point the image provenance at the real source and documentation",
+        "submitted": "2026-10-20T07:36:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16343"
+      },
+      {
+        "number": 16412,
         "owner": "Caolán McNamara",
-        "subject": "a11y: apply a redraw of the borders widget in place",
-        "submitted": "2026-10-19T07:20:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15481"
+        "subject": "coolwsd.xml: describe alias_groups mode \"first\" and add a one host example",
+        "submitted": "2026-10-20T07:35:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16412"
       },
       {
-        "number": 15480,
+        "number": 16411,
         "owner": "Caolán McNamara",
-        "subject": "jsdialog: send a drawing area repaint as a redraw action",
-        "submitted": "2026-10-19T07:20:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15480"
+        "subject": "check the settings delete response the same way as the fetch ones",
+        "submitted": "2026-10-20T07:35:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16411"
       },
       {
-        "number": 15479,
+        "number": 16410,
         "owner": "Caolán McNamara",
-        "subject": "a11y: move setting the borders widget state into _showBorders",
-        "submitted": "2026-10-19T07:20:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15479"
+        "subject": "send only the status line when a settings fetch or delete fails",
+        "submitted": "2026-10-20T07:34:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16410"
       },
       {
-        "number": 15957,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: Leave bullets out of the text runs a prediction edits",
-        "submitted": "2026-10-19T07:17:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15957"
+        "number": 16409,
+        "owner": "Caolán McNamara",
+        "subject": "drop the superseded host fallback",
+        "submitted": "2026-10-20T07:34:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16409"
       },
       {
-        "number": 16127,
-        "owner": "Aron Budea",
-        "subject": "sd: better export of indents to PPTX",
-        "submitted": "2026-10-19T07:16:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16127"
-      },
-      {
-        "number": 14634,
-        "owner": "Mohit Marathe",
-        "subject": "wsd: keep a dropped session for its browser to reconnect to",
-        "submitted": "2026-10-16T17:06:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14634"
+        "number": 16408,
+        "owner": "Caolán McNamara",
+        "subject": "send X-Content-Type-Options: nosniff with error replies too",
+        "submitted": "2026-10-20T07:34:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16408"
       }
     ]
   },

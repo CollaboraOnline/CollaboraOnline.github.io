@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-10-19T08:00:09Z",
+  "generated_at": "2026-10-20T07:50:16Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 1,
+        "created_at": "2026-10-15",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16304,
+        "thumbs_up": 0,
+        "title": "Design show tour icon",
+        "updated_at": "2026-10-19",
+        "url": "https://github.com/CollaboraOnline/online/issues/16304"
+      },
       {
         "assignee": null,
         "comments": 0,
@@ -15,20 +29,6 @@
         "title": "Calc and Impress: show \"Add to Dictionary\" in the spelling context menu as Writer does",
         "updated_at": "2026-10-16",
         "url": "https://github.com/CollaboraOnline/online/issues/16308"
-      },
-      {
-        "assignee": null,
-        "comments": 0,
-        "created_at": "2026-10-15",
-        "labels": [
-          "26.04"
-        ],
-        "mentor": null,
-        "number": 16304,
-        "thumbs_up": 0,
-        "title": "Design show tour icon",
-        "updated_at": "2026-10-15",
-        "url": "https://github.com/CollaboraOnline/online/issues/16304"
       },
       {
         "assignee": "shubhamy0",
@@ -74,20 +74,6 @@
         "title": "Impress: Wrong icon shown for \"Add Section\" in light mode",
         "updated_at": "2026-09-28",
         "url": "https://github.com/CollaboraOnline/online/issues/16252"
-      },
-      {
-        "assignee": null,
-        "comments": 1,
-        "created_at": "2026-09-28",
-        "labels": [
-          "enhancement"
-        ],
-        "mentor": "@Darshan-upadhyay1110",
-        "number": 16251,
-        "thumbs_up": 0,
-        "title": "Stylelint: check the CSS during the build instead of rewriting it with --fix",
-        "updated_at": "2026-09-28",
-        "url": "https://github.com/CollaboraOnline/online/issues/16251"
       },
       {
         "assignee": null,
@@ -1376,7 +1362,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 92
+    "total_open": 91
   },
   "source": "easyhacks"
 }
