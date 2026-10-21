@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T07:50:13Z",
+  "generated_at": "2026-10-21T07:54:14Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 80,
-      "posts_30d": 172,
+      "active_users_30d": 79,
+      "posts_30d": 180,
       "top_topics_monthly": [
         {
           "posts": 8,
@@ -15,36 +15,36 @@
           "posts": 6,
           "title": "Collabora Office Classic Snapshot new version?",
           "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
-          "views": 68
+          "views": 72
         },
         {
           "posts": 3,
           "title": "Build of engine breaks on Windows",
           "url": "https://forum.collaboraonline.com/t/build-of-engine-breaks-on-windows/5106",
-          "views": 28
+          "views": 29
+        },
+        {
+          "posts": 6,
+          "title": "Only 0 MB of RAM available",
+          "url": "https://forum.collaboraonline.com/t/only-0-mb-of-ram-available/5085",
+          "views": 55
         },
         {
           "posts": 4,
           "title": "How to write macros in Collabora Office (desktop)?",
           "url": "https://forum.collaboraonline.com/t/how-to-write-macros-in-collabora-office-desktop/5110",
           "views": 61
-        },
-        {
-          "posts": 6,
-          "title": "Only 0 MB of RAM available",
-          "url": "https://forum.collaboraonline.com/t/only-0-mb-of-ram-available/5085",
-          "views": 53
         }
       ],
       "topics_30d": 56,
-      "total_posts": 10393,
-      "total_topics": 2211
+      "total_posts": 10404,
+      "total_topics": 2213
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-20",
-    "to": "2026-10-20"
+    "from": "2026-09-21",
+    "to": "2026-10-21"
   },
   "source": "forum"
 }

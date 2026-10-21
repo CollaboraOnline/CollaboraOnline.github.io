@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-20T07:50:17Z",
+  "generated_at": "2026-10-21T07:54:17Z",
   "metrics": {
     "changes": [
       {
-        "number": 16345,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#32363 sw DOCX: add unit test/documentation for shortening headings",
-        "submitted": "2026-10-20T07:49:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16345"
+        "number": 16600,
+        "owner": "Stephan Bergmann",
+        "subject": "Fix timing-dependent failure of testA11yImageSelection",
+        "submitted": "2026-10-21T07:47:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16600"
       },
       {
-        "number": 16309,
-        "owner": "Raúl F. Pérez",
-        "subject": "cool#16251 browser: Stop Stylelint from modifying CSS during builds",
-        "submitted": "2026-10-20T07:40:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16309"
-      },
-      {
-        "number": 16343,
+        "number": 16604,
         "owner": "Andras Timar",
-        "subject": "docker: point the image provenance at the real source and documentation",
-        "submitted": "2026-10-20T07:36:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16343"
+        "subject": "CODA-Q: bring our own cell pointer for Calc",
+        "submitted": "2026-10-21T07:43:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16604"
       },
       {
-        "number": 16412,
-        "owner": "Caolán McNamara",
-        "subject": "coolwsd.xml: describe alias_groups mode \"first\" and add a one host example",
-        "submitted": "2026-10-20T07:35:22Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16412"
+        "number": 16603,
+        "owner": "Andras Timar",
+        "subject": "CODA-Q: bring our own cell pointer for Calc",
+        "submitted": "2026-10-21T07:43:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16603"
       },
       {
-        "number": 16411,
+        "number": 16498,
         "owner": "Caolán McNamara",
-        "subject": "check the settings delete response the same way as the fetch ones",
-        "submitted": "2026-10-20T07:35:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16411"
+        "subject": "in multiuser tests submit iframe2 load after iframe1 load starts",
+        "submitted": "2026-10-21T07:31:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16498"
       },
       {
-        "number": 16410,
+        "number": 16497,
         "owner": "Caolán McNamara",
-        "subject": "send only the status line when a settings fetch or delete fails",
-        "submitted": "2026-10-20T07:34:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16410"
+        "subject": "refactor the cypress-multiuser message handler to look like the debug.html one",
+        "submitted": "2026-10-21T07:31:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16497"
       },
       {
-        "number": 16409,
+        "number": 16572,
         "owner": "Caolán McNamara",
-        "subject": "drop the superseded host fallback",
-        "submitted": "2026-10-20T07:34:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16409"
+        "subject": "sfx2: start an embedded object made by initNew with link updates off",
+        "submitted": "2026-10-21T07:30:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16572"
       },
       {
-        "number": 16408,
-        "owner": "Caolán McNamara",
-        "subject": "send X-Content-Type-Options: nosniff with error replies too",
-        "submitted": "2026-10-20T07:34:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16408"
+        "number": 16258,
+        "owner": "Szymon Kłos",
+        "subject": "app: extract StateMachine as a base for reuse",
+        "submitted": "2026-10-21T07:16:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16258"
+      },
+      {
+        "number": 16536,
+        "owner": "Szymon Kłos",
+        "subject": "debug.html: testable slide import pane",
+        "submitted": "2026-10-21T07:15:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16536"
       }
     ]
   },

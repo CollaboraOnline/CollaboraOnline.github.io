@@ -1,7 +1,22 @@
 {
-  "generated_at": "2026-10-20T07:50:16Z",
+  "generated_at": "2026-10-21T07:54:17Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-10-21",
+        "labels": [
+          "bug",
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16319,
+        "thumbs_up": 0,
+        "title": "Styles: new style inherits old preview",
+        "updated_at": "2026-10-21",
+        "url": "https://github.com/CollaboraOnline/online/issues/16319"
+      },
       {
         "assignee": null,
         "comments": 1,
@@ -558,20 +573,6 @@
         "title": "Redesign sheetview.svg icon",
         "updated_at": "2026-05-25",
         "url": "https://github.com/CollaboraOnline/online/issues/15834"
-      },
-      {
-        "assignee": null,
-        "comments": 0,
-        "created_at": "2026-05-22",
-        "labels": [
-          "26.04"
-        ],
-        "mentor": null,
-        "number": 15826,
-        "thumbs_up": 0,
-        "title": "Remove qt / kde backend from VCL",
-        "updated_at": "2026-05-22",
-        "url": "https://github.com/CollaboraOnline/online/issues/15826"
       },
       {
         "assignee": "CodingwithKetan",
@@ -1211,22 +1212,6 @@
         "url": "https://github.com/CollaboraOnline/online/issues/10313"
       },
       {
-        "assignee": "CodingwithKetan",
-        "comments": 4,
-        "created_at": "2025-04-04",
-        "labels": [
-          "testing",
-          "cypress",
-          "24.04"
-        ],
-        "mentor": "@eszkadev @Darshan-upadhyay1110",
-        "number": 11537,
-        "thumbs_up": 1,
-        "title": "Add visual cypress test for menubutton (with color label)",
-        "updated_at": "2025-05-19",
-        "url": "https://github.com/CollaboraOnline/online/issues/11537"
-      },
-      {
         "assignee": "Teruk15",
         "comments": 4,
         "created_at": "2025-04-09",
@@ -1362,7 +1347,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 91
+    "total_open": 90
   },
   "source": "easyhacks"
 }
