@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T07:54:14Z",
+  "generated_at": "2026-10-22T07:50:13Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 79,
-      "posts_30d": 180,
+      "active_users_30d": 80,
+      "posts_30d": 182,
       "top_topics_monthly": [
         {
           "posts": 8,
@@ -15,7 +15,7 @@
           "posts": 6,
           "title": "Collabora Office Classic Snapshot new version?",
           "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
-          "views": 72
+          "views": 73
         },
         {
           "posts": 3,
@@ -36,15 +36,15 @@
           "views": 61
         }
       ],
-      "topics_30d": 56,
-      "total_posts": 10404,
-      "total_topics": 2213
+      "topics_30d": 58,
+      "total_posts": 10406,
+      "total_topics": 2215
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-21",
-    "to": "2026-10-21"
+    "from": "2026-09-22",
+    "to": "2026-10-22"
   },
   "source": "forum"
 }

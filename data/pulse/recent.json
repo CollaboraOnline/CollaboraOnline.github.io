@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-21T07:54:17Z",
+  "generated_at": "2026-10-22T07:50:16Z",
   "metrics": {
     "changes": [
       {
-        "number": 16600,
-        "owner": "Stephan Bergmann",
-        "subject": "Fix timing-dependent failure of testA11yImageSelection",
-        "submitted": "2026-10-21T07:47:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16600"
+        "number": 16681,
+        "owner": "Dmytro Kulyk",
+        "subject": "tdf#173709 offapi: drop the @since tag of HyperLinkTitle",
+        "submitted": "2026-10-22T07:49:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16681"
       },
       {
-        "number": 16604,
-        "owner": "Andras Timar",
-        "subject": "CODA-Q: bring our own cell pointer for Calc",
-        "submitted": "2026-10-21T07:43:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16604"
+        "number": 16715,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#173759 tdf#169219 swrelpagesize ui: update only on relation changes",
+        "submitted": "2026-10-22T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16715"
       },
       {
-        "number": 16603,
-        "owner": "Andras Timar",
-        "subject": "CODA-Q: bring our own cell pointer for Calc",
-        "submitted": "2026-10-21T07:43:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16603"
+        "number": 16714,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#169024 writerfilter: import TEXT_LINE as LINE_TOP for layoutInCell",
+        "submitted": "2026-10-22T07:31:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16714"
       },
       {
-        "number": 16498,
+        "number": 15628,
         "owner": "Caolán McNamara",
-        "subject": "in multiuser tests submit iframe2 load after iframe1 load starts",
-        "submitted": "2026-10-21T07:31:46Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16498"
+        "subject": "jsdialog: send a drawing area repaint as a redraw action",
+        "submitted": "2026-10-22T07:26:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15628"
       },
       {
-        "number": 16497,
+        "number": 15627,
         "owner": "Caolán McNamara",
-        "subject": "refactor the cypress-multiuser message handler to look like the debug.html one",
-        "submitted": "2026-10-21T07:31:46Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16497"
+        "subject": "a11y: move setting the borders widget state into _showBorders",
+        "submitted": "2026-10-22T07:26:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/15627"
       },
       {
-        "number": 16572,
-        "owner": "Caolán McNamara",
-        "subject": "sfx2: start an embedded object made by initNew with link updates off",
-        "submitted": "2026-10-21T07:30:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16572"
+        "number": 16713,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#163868 writerfilter: recognize framePrs in header/footers",
+        "submitted": "2026-10-22T07:21:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16713"
       },
       {
-        "number": 16258,
-        "owner": "Szymon Kłos",
-        "subject": "app: extract StateMachine as a base for reuse",
-        "submitted": "2026-10-21T07:16:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16258"
+        "number": 16225,
+        "owner": "Areg Nakashian",
+        "subject": "browser: constant new tab button position and add tab scroll bar",
+        "submitted": "2026-10-22T07:13:40Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16225"
       },
       {
-        "number": 16536,
-        "owner": "Szymon Kłos",
-        "subject": "debug.html: testable slide import pane",
-        "submitted": "2026-10-21T07:15:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16536"
+        "number": 16712,
+        "owner": "Miklos Vajna",
+        "subject": "tdf#169024 docx export: LINE_TOP is not inside/LINE_BOTTOM not outside",
+        "submitted": "2026-10-22T07:13:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16712"
       }
     ]
   },

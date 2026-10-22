@@ -1,7 +1,58 @@
 {
-  "generated_at": "2026-10-21T07:54:17Z",
+  "generated_at": "2026-10-22T07:50:16Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-10-22",
+        "labels": [
+          "bug",
+          "UX",
+          "unconfirmed",
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16324,
+        "thumbs_up": 0,
+        "title": "Writer: Formula tab: Expanded containers have weird layout, are confusing",
+        "updated_at": "2026-10-22",
+        "url": "https://github.com/CollaboraOnline/online/issues/16324"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-10-22",
+        "labels": [
+          "bug",
+          "UX",
+          "unconfirmed",
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16323,
+        "thumbs_up": 0,
+        "title": "Writer: Formula tab: Containers don't fill all the usable space",
+        "updated_at": "2026-10-22",
+        "url": "https://github.com/CollaboraOnline/online/issues/16323"
+      },
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-10-22",
+        "labels": [
+          "bug",
+          "UX",
+          "unconfirmed",
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16322,
+        "thumbs_up": 0,
+        "title": "Writer: Formula tab: Elements appear squished in container",
+        "updated_at": "2026-10-22",
+        "url": "https://github.com/CollaboraOnline/online/issues/16322"
+      },
       {
         "assignee": null,
         "comments": 0,
@@ -1347,7 +1398,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 90
+    "total_open": 93
   },
   "source": "easyhacks"
 }
