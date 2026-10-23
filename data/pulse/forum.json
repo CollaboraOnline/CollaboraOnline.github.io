@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-22T07:50:13Z",
+  "generated_at": "2026-10-23T07:49:29Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 80,
+      "active_users_30d": 82,
       "posts_30d": 182,
       "top_topics_monthly": [
         {
@@ -15,7 +15,7 @@
           "posts": 6,
           "title": "Collabora Office Classic Snapshot new version?",
           "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
-          "views": 73
+          "views": 74
         },
         {
           "posts": 3,
@@ -33,18 +33,18 @@
           "posts": 4,
           "title": "How to write macros in Collabora Office (desktop)?",
           "url": "https://forum.collaboraonline.com/t/how-to-write-macros-in-collabora-office-desktop/5110",
-          "views": 61
+          "views": 62
         }
       ],
       "topics_30d": 58,
-      "total_posts": 10406,
-      "total_topics": 2215
+      "total_posts": 10412,
+      "total_topics": 2217
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-22",
-    "to": "2026-10-22"
+    "from": "2026-09-23",
+    "to": "2026-10-23"
   },
   "source": "forum"
 }

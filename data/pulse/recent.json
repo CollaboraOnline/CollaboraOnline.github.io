@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-22T07:50:16Z",
+  "generated_at": "2026-10-23T07:49:33Z",
   "metrics": {
     "changes": [
       {
-        "number": 16681,
-        "owner": "Dmytro Kulyk",
-        "subject": "tdf#173709 offapi: drop the @since tag of HyperLinkTitle",
-        "submitted": "2026-10-22T07:49:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16681"
-      },
-      {
-        "number": 16715,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#173759 tdf#169219 swrelpagesize ui: update only on relation changes",
-        "submitted": "2026-10-22T07:36:19Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16715"
-      },
-      {
-        "number": 16714,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#169024 writerfilter: import TEXT_LINE as LINE_TOP for layoutInCell",
-        "submitted": "2026-10-22T07:31:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16714"
-      },
-      {
-        "number": 15628,
+        "number": 16879,
         "owner": "Caolán McNamara",
-        "subject": "jsdialog: send a drawing area repaint as a redraw action",
-        "submitted": "2026-10-22T07:26:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15628"
+        "subject": "ofz#576510288 Timeout",
+        "submitted": "2026-10-23T07:36:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16879"
       },
       {
-        "number": 15627,
+        "number": 16882,
         "owner": "Caolán McNamara",
-        "subject": "a11y: move setting the borders widget state into _showBorders",
-        "submitted": "2026-10-22T07:26:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/15627"
+        "subject": "ofz#576427404 Timeout",
+        "submitted": "2026-10-23T07:36:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16882"
       },
       {
-        "number": 16713,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#163868 writerfilter: recognize framePrs in header/footers",
-        "submitted": "2026-10-22T07:21:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16713"
+        "number": 16595,
+        "owner": "Emanuel Schorsch",
+        "subject": "sw: don't crash asking an unrecognized AutoText file if it is read-only",
+        "submitted": "2026-10-23T07:03:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16595"
       },
       {
-        "number": 16225,
-        "owner": "Areg Nakashian",
-        "subject": "browser: constant new tab button position and add tab scroll bar",
-        "submitted": "2026-10-22T07:13:40Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16225"
+        "number": 16909,
+        "owner": "Andras Timar",
+        "subject": "add Lithuanian (lt) to the shipped languages",
+        "submitted": "2026-10-23T06:42:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16909"
       },
       {
-        "number": 16712,
-        "owner": "Miklos Vajna",
-        "subject": "tdf#169024 docx export: LINE_TOP is not inside/LINE_BOTTOM not outside",
-        "submitted": "2026-10-22T07:13:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16712"
+        "number": 16911,
+        "owner": "Andras Timar",
+        "subject": "sw: report the header/footer state from the page descriptors directly",
+        "submitted": "2026-10-23T06:30:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16911"
+      },
+      {
+        "number": 16859,
+        "owner": "Armin Le Grand",
+        "subject": "Keep the ellipse of a circle piece given a transformation",
+        "submitted": "2026-10-23T04:40:05Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16859"
+      },
+      {
+        "number": 16858,
+        "owner": "Armin Le Grand",
+        "subject": "Route the connectors tied to a glue point while it moves",
+        "submitted": "2026-10-23T04:40:05Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16858"
+      },
+      {
+        "number": 16857,
+        "owner": "Armin Le Grand",
+        "subject": "Show the angle beside the turn handle always",
+        "submitted": "2026-10-23T04:38:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16857"
       }
     ]
   },
