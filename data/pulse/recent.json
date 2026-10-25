@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-24T07:31:00Z",
+  "generated_at": "2026-10-25T07:44:35Z",
   "metrics": {
     "changes": [
       {
-        "number": 12829,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "oox: let each item of a diagram take its own line colour",
-        "submitted": "2026-10-24T07:08:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12829"
+        "number": 17102,
+        "owner": "Caolán McNamara",
+        "subject": "escape the download name in Content-Disposition as a quoted-string",
+        "submitted": "2026-10-25T06:13:05Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17102"
       },
       {
-        "number": 12828,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "oox: draw no line where a diagram style asks for none",
-        "submitted": "2026-10-24T07:08:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12828"
-      },
-      {
-        "number": 16823,
+        "number": 17105,
         "owner": "Noel Grandin",
-        "subject": "convert svl JunitTest to CppunitTest",
-        "submitted": "2026-10-24T07:05:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16823"
+        "subject": "remove JunitTest_sw_complex",
+        "submitted": "2026-10-24T23:25:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17105"
       },
       {
-        "number": 17068,
+        "number": 17104,
+        "owner": "Noel Grandin",
+        "subject": "remove JunitTest_bean_complex",
+        "submitted": "2026-10-24T23:21:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17104"
+      },
+      {
+        "number": 17082,
+        "owner": "Noel Grandin",
+        "subject": "convert toolkit_complex unit test from Java to C++",
+        "submitted": "2026-10-24T23:19:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17082"
+      },
+      {
+        "number": 17101,
         "owner": "Caolán McNamara",
-        "subject": "sw html import: only take an image's data attribute in XHTML",
-        "submitted": "2026-10-23T23:31:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17068"
+        "subject": "cypress: idle before the writer sidebar snapshot instead of sleeping",
+        "submitted": "2026-10-24T23:13:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17101"
       },
       {
-        "number": 17043,
-        "owner": "Michael Stahl",
-        "subject": "python3: do not ship certifi and its `cacert.pem`",
-        "submitted": "2026-10-23T22:25:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17043"
-      },
-      {
-        "number": 17041,
-        "owner": "Michael Stahl",
-        "subject": "python3: upgrade to release 3.14.9",
-        "submitted": "2026-10-23T22:25:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17041"
-      },
-      {
-        "number": 16999,
-        "owner": "Besmir Godolja",
-        "subject": "fix minor documentation and xml metadata for Albanian dictionary",
-        "submitted": "2026-10-23T22:24:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16999"
-      },
-      {
-        "number": 17062,
+        "number": 17100,
         "owner": "Caolán McNamara",
-        "subject": "cid#564124 Untrusted value as argument",
-        "submitted": "2026-10-23T20:28:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17062"
+        "subject": "cypress: wait for the double click to reach core instead of sleeping",
+        "submitted": "2026-10-24T23:13:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17100"
+      },
+      {
+        "number": 17099,
+        "owner": "Caolán McNamara",
+        "subject": "cypress: wait for the click timer between two clicks in editable_area",
+        "submitted": "2026-10-24T23:13:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17099"
+      },
+      {
+        "number": 17098,
+        "owner": "Caolán McNamara",
+        "subject": "cypress: read comment positions after idle instead of sleeping",
+        "submitted": "2026-10-24T23:13:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17098"
       }
     ]
   },

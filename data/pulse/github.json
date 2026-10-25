@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-24T07:30:46Z",
+  "generated_at": "2026-10-25T07:44:20Z",
   "metrics": {
     "active_authors_30d": 2,
-    "commits_30d": 5,
+    "commits_30d": 4,
     "easy_hacks_open": 94,
     "forks": 1013,
-    "issues_closed_30d": 72,
-    "issues_opened_30d": 95,
+    "issues_closed_30d": 71,
+    "issues_opened_30d": 93,
     "open_issues": 862,
-    "open_prs": 1,
+    "open_prs": 2,
     "prs_merged_30d": 0,
-    "prs_opened_30d": 0,
+    "prs_opened_30d": 1,
     "stars": 3383,
     "top_upvoted_open_issues": [
       {
@@ -47,8 +47,8 @@
   },
   "period": {
     "days": 30,
-    "from": "2026-09-24",
-    "to": "2026-10-24"
+    "from": "2026-09-25",
+    "to": "2026-10-25"
   },
   "source": "github"
 }
