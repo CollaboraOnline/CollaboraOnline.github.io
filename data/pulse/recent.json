@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-25T07:44:35Z",
+  "generated_at": "2026-10-26T08:00:26Z",
   "metrics": {
     "changes": [
       {
-        "number": 17102,
-        "owner": "Caolán McNamara",
-        "subject": "escape the download name in Content-Disposition as a quoted-string",
-        "submitted": "2026-10-25T06:13:05Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17102"
+        "number": 17051,
+        "owner": "Gülşah Köse",
+        "subject": "cool#16334 sd: refresh slide previews after a master background change",
+        "submitted": "2026-10-26T07:55:40Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17051"
       },
       {
-        "number": 17105,
-        "owner": "Noel Grandin",
-        "subject": "remove JunitTest_sw_complex",
-        "submitted": "2026-10-24T23:25:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17105"
+        "number": 17115,
+        "owner": "Andras Timar",
+        "subject": "l10n: report a read-only in-place translation as READ_ONLY, not FAILED",
+        "submitted": "2026-10-26T07:44:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17115"
       },
       {
-        "number": 17104,
-        "owner": "Noel Grandin",
-        "subject": "remove JunitTest_bean_complex",
-        "submitted": "2026-10-24T23:21:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17104"
+        "number": 17107,
+        "owner": "Andras Timar",
+        "subject": "a few missing license headers in helper scripts",
+        "submitted": "2026-10-26T07:43:51Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17107"
       },
       {
-        "number": 17082,
-        "owner": "Noel Grandin",
-        "subject": "convert toolkit_complex unit test from Java to C++",
-        "submitted": "2026-10-24T23:19:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17082"
+        "number": 16965,
+        "owner": "Tomaž Vajngerl",
+        "subject": "editeng: return field items by value from the field lookups",
+        "submitted": "2026-10-26T07:19:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16965"
       },
       {
-        "number": 17101,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: idle before the writer sidebar snapshot instead of sleeping",
-        "submitted": "2026-10-24T23:13:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17101"
+        "number": 17036,
+        "owner": "Tomaž Vajngerl",
+        "subject": "sd: drop the remembered vector content when memory is trimmed",
+        "submitted": "2026-10-26T06:09:15Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17036"
       },
       {
-        "number": 17100,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: wait for the double click to reach core instead of sleeping",
-        "submitted": "2026-10-24T23:13:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17100"
+        "number": 16959,
+        "owner": "Tomaž Vajngerl",
+        "subject": "desktop: Move the SetTextCursor handling out of init.cxx",
+        "submitted": "2026-10-26T06:08:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16959"
       },
       {
-        "number": 17099,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: wait for the click timer between two clicks in editable_area",
-        "submitted": "2026-10-24T23:13:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17099"
+        "number": 16958,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: Explain where a click past a wrapped line puts the caret",
+        "submitted": "2026-10-26T06:08:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16958"
       },
       {
-        "number": 17098,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: read comment positions after idle instead of sleeping",
-        "submitted": "2026-10-24T23:13:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17098"
+        "number": 16957,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: Name the run offsets of the test fixtures translateX and Y",
+        "submitted": "2026-10-26T06:08:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16957"
       }
     ]
   },

@@ -1,15 +1,21 @@
 {
-  "generated_at": "2026-10-25T07:44:32Z",
+  "generated_at": "2026-10-26T08:00:22Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 82,
-      "posts_30d": 181,
+      "active_users_30d": 83,
+      "posts_30d": 191,
       "top_topics_monthly": [
         {
-          "posts": 13,
+          "posts": 16,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 59
+          "views": 78
+        },
+        {
+          "posts": 8,
+          "title": "\"File cannot be saved\" on Onedrive",
+          "url": "https://forum.collaboraonline.com/t/file-cannot-be-saved-on-onedrive/5072",
+          "views": 88
         },
         {
           "posts": 3,
@@ -18,33 +24,27 @@
           "views": 38
         },
         {
-          "posts": 8,
-          "title": "\"File cannot be saved\" on Onedrive",
-          "url": "https://forum.collaboraonline.com/t/file-cannot-be-saved-on-onedrive/5072",
-          "views": 86
-        },
-        {
           "posts": 6,
           "title": "Collabora Office Classic Snapshot new version?",
           "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
-          "views": 86
+          "views": 87
         },
         {
           "posts": 6,
           "title": "Only 0 MB of RAM available",
           "url": "https://forum.collaboraonline.com/t/only-0-mb-of-ram-available/5085",
-          "views": 66
+          "views": 69
         }
       ],
-      "topics_30d": 56,
-      "total_posts": 10421,
-      "total_topics": 2218
+      "topics_30d": 57,
+      "total_posts": 10438,
+      "total_topics": 2220
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-25",
-    "to": "2026-10-25"
+    "from": "2026-09-26",
+    "to": "2026-10-26"
   },
   "source": "forum"
 }
