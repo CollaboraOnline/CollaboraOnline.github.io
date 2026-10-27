@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-26T08:00:26Z",
+  "generated_at": "2026-10-27T08:12:15Z",
   "metrics": {
     "changes": [
       {
-        "number": 17051,
-        "owner": "Gülşah Köse",
-        "subject": "cool#16334 sd: refresh slide previews after a master background change",
-        "submitted": "2026-10-26T07:55:40Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17051"
+        "number": 17365,
+        "owner": "Michael Stahl",
+        "subject": "python3: upgrade to release 3.14.10",
+        "submitted": "2026-10-27T08:07:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17365"
       },
       {
-        "number": 17115,
+        "number": 17309,
+        "owner": "Michael Stahl",
+        "subject": "python3: do not ship certifi and its `cacert.pem`",
+        "submitted": "2026-10-27T07:37:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17309"
+      },
+      {
+        "number": 17308,
+        "owner": "Michael Stahl",
+        "subject": "python3: upgrade to release 3.14.9",
+        "submitted": "2026-10-27T07:37:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17308"
+      },
+      {
+        "number": 17343,
         "owner": "Andras Timar",
-        "subject": "l10n: report a read-only in-place translation as READ_ONLY, not FAILED",
-        "submitted": "2026-10-26T07:44:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17115"
+        "subject": "vcl: install the Collabora Office widget theme with the engine",
+        "submitted": "2026-10-27T07:30:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17343"
       },
       {
-        "number": 17107,
+        "number": 17326,
         "owner": "Andras Timar",
-        "subject": "a few missing license headers in helper scripts",
-        "submitted": "2026-10-26T07:43:51Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17107"
+        "subject": "sw: keep marks over the blanks around translated text",
+        "submitted": "2026-10-27T07:29:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17326"
       },
       {
-        "number": 16965,
-        "owner": "Tomaž Vajngerl",
-        "subject": "editeng: return field items by value from the field lookups",
-        "submitted": "2026-10-26T07:19:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16965"
+        "number": 17325,
+        "owner": "Andras Timar",
+        "subject": "sw: set the language only on footnotes in the translated text",
+        "submitted": "2026-10-27T07:29:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17325"
       },
       {
-        "number": 17036,
-        "owner": "Tomaž Vajngerl",
-        "subject": "sd: drop the remembered vector content when memory is trimmed",
-        "submitted": "2026-10-26T06:09:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17036"
+        "number": 17324,
+        "owner": "Andras Timar",
+        "subject": "sw: no copy of a frame anchored in translated text",
+        "submitted": "2026-10-27T07:29:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17324"
       },
       {
-        "number": 16959,
-        "owner": "Tomaž Vajngerl",
-        "subject": "desktop: Move the SetTextCursor handling out of init.cxx",
-        "submitted": "2026-10-26T06:08:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16959"
-      },
-      {
-        "number": 16958,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: Explain where a click past a wrapped line puts the caret",
-        "submitted": "2026-10-26T06:08:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16958"
-      },
-      {
-        "number": 16957,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: Name the run offsets of the test fixtures translateX and Y",
-        "submitted": "2026-10-26T06:08:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/16957"
+        "number": 17112,
+        "owner": "Andras Timar",
+        "subject": "documents.html: open the documents as a user of your own, who owns them",
+        "submitted": "2026-10-27T07:16:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17112"
       }
     ]
   },
