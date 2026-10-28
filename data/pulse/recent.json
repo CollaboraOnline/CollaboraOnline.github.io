@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-27T08:12:15Z",
+  "generated_at": "2026-10-28T08:51:02Z",
   "metrics": {
     "changes": [
       {
-        "number": 17365,
-        "owner": "Michael Stahl",
-        "subject": "python3: upgrade to release 3.14.10",
-        "submitted": "2026-10-27T08:07:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17365"
-      },
-      {
-        "number": 17309,
-        "owner": "Michael Stahl",
-        "subject": "python3: do not ship certifi and its `cacert.pem`",
-        "submitted": "2026-10-27T07:37:52Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17309"
-      },
-      {
-        "number": 17308,
-        "owner": "Michael Stahl",
-        "subject": "python3: upgrade to release 3.14.9",
-        "submitted": "2026-10-27T07:37:52Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17308"
-      },
-      {
-        "number": 17343,
+        "number": 17609,
         "owner": "Andras Timar",
-        "subject": "vcl: install the Collabora Office widget theme with the engine",
-        "submitted": "2026-10-27T07:30:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17343"
+        "subject": "desktop apps: open the welcome slideshow from the menu in debug builds",
+        "submitted": "2026-10-28T08:39:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17609"
       },
       {
-        "number": 17326,
+        "number": 17480,
         "owner": "Andras Timar",
-        "subject": "sw: keep marks over the blanks around translated text",
-        "submitted": "2026-10-27T07:29:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17326"
+        "subject": "Use the Spanish \"Italic\" icon added to images/es/",
+        "submitted": "2026-10-28T08:37:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17480"
       },
       {
-        "number": 17325,
+        "number": 17479,
         "owner": "Andras Timar",
-        "subject": "sw: set the language only on footnotes in the translated text",
-        "submitted": "2026-10-27T07:29:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17325"
+        "subject": "browser: give the Cleanup stop button its own label",
+        "submitted": "2026-10-28T08:37:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17479"
       },
       {
-        "number": 17324,
+        "number": 17444,
         "owner": "Andras Timar",
-        "subject": "sw: no copy of a frame anchored in translated text",
-        "submitted": "2026-10-27T07:29:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17324"
+        "subject": "Give up AutoCorrect Options when the view it was opened in closes",
+        "submitted": "2026-10-28T08:36:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17444"
       },
       {
-        "number": 17112,
+        "number": 17443,
         "owner": "Andras Timar",
-        "subject": "documents.html: open the documents as a user of your own, who owns them",
-        "submitted": "2026-10-27T07:16:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17112"
+        "subject": "Let anyone change the settings of a document that has no owner",
+        "submitted": "2026-10-28T08:36:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17443"
+      },
+      {
+        "number": 17618,
+        "owner": "Caolán McNamara",
+        "subject": "alias icons for the notebookbar pane commands that had none",
+        "submitted": "2026-10-28T08:22:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17618"
+      },
+      {
+        "number": 17614,
+        "owner": "Caolán McNamara",
+        "subject": "cypress: allow COOLWSD_LOG_LEVEL to be set from the make command line",
+        "submitted": "2026-10-28T08:22:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17614"
+      },
+      {
+        "number": 14394,
+        "owner": "Tibor Nagy",
+        "subject": "sd: do not use the master page of a closed document",
+        "submitted": "2026-10-28T08:07:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14394"
       }
     ]
   },
