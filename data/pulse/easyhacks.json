@@ -1,7 +1,22 @@
 {
-  "generated_at": "2026-10-28T08:51:02Z",
+  "generated_at": "2026-10-29T08:45:05Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 2,
+        "created_at": "2026-08-28",
+        "labels": [
+          "C++",
+          "26.04"
+        ],
+        "mentor": "@Darshan-upadhyay1110",
+        "number": 16151,
+        "thumbs_up": 0,
+        "title": "Make LangUtil::isRtlLanguage inline, drop its dead branch, and add a test",
+        "updated_at": "2026-10-29",
+        "url": "https://github.com/CollaboraOnline/online/issues/16151"
+      },
       {
         "assignee": "Darshan-upadhyay1110",
         "comments": 2,
@@ -304,21 +319,6 @@
         "title": "Replace the legacy OSL_ENSURE calls in the DrawingML colour code with SAL_WARN",
         "updated_at": "2026-08-28",
         "url": "https://github.com/CollaboraOnline/online/issues/16152"
-      },
-      {
-        "assignee": null,
-        "comments": 0,
-        "created_at": "2026-08-28",
-        "labels": [
-          "C++",
-          "26.04"
-        ],
-        "mentor": "@Darshan-upadhyay1110",
-        "number": 16151,
-        "thumbs_up": 0,
-        "title": "Make LangUtil::isRtlLanguage inline, drop its dead branch, and add a test",
-        "updated_at": "2026-08-28",
-        "url": "https://github.com/CollaboraOnline/online/issues/16151"
       },
       {
         "assignee": null,

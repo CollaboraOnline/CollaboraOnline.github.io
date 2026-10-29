@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-28T08:51:02Z",
+  "generated_at": "2026-10-29T08:45:06Z",
   "metrics": {
     "changes": [
       {
-        "number": 17609,
-        "owner": "Andras Timar",
-        "subject": "desktop apps: open the welcome slideshow from the menu in debug builds",
-        "submitted": "2026-10-28T08:39:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17609"
+        "number": 14759,
+        "owner": "Rashesh Padia",
+        "subject": "sd: send the shape border to a view that joins during text edit",
+        "submitted": "2026-10-29T08:40:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14759"
       },
       {
-        "number": 17480,
-        "owner": "Andras Timar",
-        "subject": "Use the Spanish \"Italic\" icon added to images/es/",
-        "submitted": "2026-10-28T08:37:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17480"
+        "number": 17813,
+        "owner": "Gökay ŞATIR",
+        "subject": "uui: build the macro warning grid as a container.",
+        "submitted": "2026-10-29T08:25:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17813"
       },
       {
-        "number": 17479,
-        "owner": "Andras Timar",
-        "subject": "browser: give the Cleanup stop button its own label",
-        "submitted": "2026-10-28T08:37:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17479"
+        "number": 17628,
+        "owner": "Szymon Kłos",
+        "subject": "wsd: remove remote links from CheckFileInfo",
+        "submitted": "2026-10-29T08:20:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17628"
       },
       {
-        "number": 17444,
-        "owner": "Andras Timar",
-        "subject": "Give up AutoCorrect Options when the view it was opened in closes",
-        "submitted": "2026-10-28T08:36:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17444"
+        "number": 17623,
+        "owner": "Szymon Kłos",
+        "subject": "PostMessage API: unify naming for remote link",
+        "submitted": "2026-10-29T08:20:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17623"
       },
       {
-        "number": 17443,
-        "owner": "Andras Timar",
-        "subject": "Let anyone change the settings of a document that has no owner",
-        "submitted": "2026-10-28T08:36:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17443"
+        "number": 17445,
+        "owner": "Szymon Kłos",
+        "subject": "wsd: allow register a remote link with the user's access token",
+        "submitted": "2026-10-29T08:19:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17445"
       },
       {
-        "number": 17618,
+        "number": 16720,
         "owner": "Caolán McNamara",
-        "subject": "alias icons for the notebookbar pane commands that had none",
-        "submitted": "2026-10-28T08:22:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17618"
+        "subject": "match the port written on an alias_groups host or alias",
+        "submitted": "2026-10-29T08:17:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/16720"
       },
       {
-        "number": 17614,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: allow COOLWSD_LOG_LEVEL to be set from the make command line",
-        "submitted": "2026-10-28T08:22:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17614"
+        "number": 17749,
+        "owner": "Armin Le Grand",
+        "subject": "Mark what a press inside a chart would take",
+        "submitted": "2026-10-29T08:15:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17749"
       },
       {
-        "number": 14394,
-        "owner": "Tibor Nagy",
-        "subject": "sd: do not use the master page of a closed document",
-        "submitted": "2026-10-28T08:07:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14394"
+        "number": 17748,
+        "owner": "Armin Le Grand",
+        "subject": "Show the parts of a turned chart where its window is",
+        "submitted": "2026-10-29T08:15:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17748"
       }
     ]
   },
