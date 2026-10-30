@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T08:45:02Z",
+  "generated_at": "2026-10-30T08:51:33Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 80,
-      "posts_30d": 193,
+      "active_users_30d": 82,
+      "posts_30d": 200,
       "top_topics_monthly": [
         {
           "posts": 16,
@@ -27,24 +27,24 @@
           "posts": 6,
           "title": "Only 0 MB of RAM available",
           "url": "https://forum.collaboraonline.com/t/only-0-mb-of-ram-available/5085",
-          "views": 77
+          "views": 78
         },
         {
           "posts": 4,
           "title": "How to write macros in Collabora Office (desktop)?",
           "url": "https://forum.collaboraonline.com/t/how-to-write-macros-in-collabora-office-desktop/5110",
-          "views": 79
+          "views": 80
         }
       ],
-      "topics_30d": 59,
-      "total_posts": 10462,
-      "total_topics": 2227
+      "topics_30d": 61,
+      "total_posts": 10471,
+      "total_topics": 2231
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-29",
-    "to": "2026-10-29"
+    "from": "2026-09-30",
+    "to": "2026-10-30"
   },
   "source": "forum"
 }

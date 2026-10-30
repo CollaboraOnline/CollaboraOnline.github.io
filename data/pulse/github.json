@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-29T08:44:49Z",
+  "generated_at": "2026-10-30T08:51:18Z",
   "metrics": {
     "active_authors_30d": 3,
     "commits_30d": 4,
     "easy_hacks_open": 94,
     "forks": 1013,
-    "issues_closed_30d": 71,
-    "issues_opened_30d": 86,
-    "open_issues": 869,
+    "issues_closed_30d": 86,
+    "issues_opened_30d": 91,
+    "open_issues": 860,
     "open_prs": 1,
     "prs_merged_30d": 1,
     "prs_opened_30d": 2,
-    "stars": 3380,
+    "stars": 3383,
     "top_upvoted_open_issues": [
       {
         "number": 12438,
@@ -26,16 +26,16 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5562"
       },
       {
-        "number": 14938,
-        "thumbs_up": 12,
-        "title": "Writer: Apply last-used zoom level as default for all documents",
-        "url": "https://github.com/CollaboraOnline/online/issues/14938"
-      },
-      {
         "number": 15168,
         "thumbs_up": 12,
         "title": "[Enhancement / Distribution] Distribute Collabora Office for macOS through Homebrew",
         "url": "https://github.com/CollaboraOnline/online/issues/15168"
+      },
+      {
+        "number": 14938,
+        "thumbs_up": 12,
+        "title": "Writer: Apply last-used zoom level as default for all documents",
+        "url": "https://github.com/CollaboraOnline/online/issues/14938"
       },
       {
         "number": 13633,
@@ -47,8 +47,8 @@
   },
   "period": {
     "days": 30,
-    "from": "2026-09-29",
-    "to": "2026-10-29"
+    "from": "2026-09-30",
+    "to": "2026-10-30"
   },
   "source": "github"
 }
