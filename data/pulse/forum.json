@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-30T08:51:33Z",
+  "generated_at": "2026-10-31T08:39:20Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 82,
-      "posts_30d": 200,
+      "active_users_30d": 84,
+      "posts_30d": 199,
       "top_topics_monthly": [
         {
-          "posts": 16,
+          "posts": 17,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 109
+          "views": 117
         },
         {
           "posts": 6,
@@ -21,30 +21,30 @@
           "posts": 3,
           "title": "Build of engine breaks on Windows",
           "url": "https://forum.collaboraonline.com/t/build-of-engine-breaks-on-windows/5106",
-          "views": 39
-        },
-        {
-          "posts": 6,
-          "title": "Only 0 MB of RAM available",
-          "url": "https://forum.collaboraonline.com/t/only-0-mb-of-ram-available/5085",
-          "views": 78
+          "views": 42
         },
         {
           "posts": 4,
           "title": "How to write macros in Collabora Office (desktop)?",
           "url": "https://forum.collaboraonline.com/t/how-to-write-macros-in-collabora-office-desktop/5110",
           "views": 80
+        },
+        {
+          "posts": 6,
+          "title": "Translations to follow LO or MS or ...?",
+          "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
+          "views": 65
         }
       ],
-      "topics_30d": 61,
-      "total_posts": 10471,
+      "topics_30d": 58,
+      "total_posts": 10474,
       "total_topics": 2231
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-09-30",
-    "to": "2026-10-30"
+    "from": "2026-10-01",
+    "to": "2026-10-31"
   },
   "source": "forum"
 }

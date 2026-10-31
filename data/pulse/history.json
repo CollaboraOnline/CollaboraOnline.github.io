@@ -2665,5 +2665,35 @@
   "easyhacks": {
    "total_open": 94
   }
+ },
+ {
+  "date": "2026-10-31",
+  "github": {
+   "issues_opened_30d": 90,
+   "issues_closed_30d": 85,
+   "prs_merged_30d": 1,
+   "commits_30d": 4,
+   "open_issues": 858,
+   "stars": 3385
+  },
+  "gerrit": {
+   "merged_30d": 2698,
+   "open_unreviewed": 221
+  },
+  "forum": {
+   "topics_30d": 58,
+   "posts_30d": 199,
+   "active_users_30d": 84
+  },
+  "weblate": {
+   "languages": 96,
+   "translated_percent": 83.8
+  },
+  "docker": {
+   "pull_count": 124007594
+  },
+  "easyhacks": {
+   "total_open": 94
+  }
  }
 ]

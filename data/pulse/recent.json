@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-30T08:51:37Z",
+  "generated_at": "2026-10-31T08:39:24Z",
   "metrics": {
     "changes": [
       {
-        "number": 18059,
+        "number": 9601,
+        "owner": "Bayram Çiçek",
+        "subject": "shape handles: draw the rotation handle with core's icon",
+        "submitted": "2026-10-31T06:34:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/9601"
+      },
+      {
+        "number": 18153,
+        "owner": "Stephan Bergmann",
+        "subject": "Remove a long-dead dmake makefile.mk",
+        "submitted": "2026-10-30T21:44:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18153"
+      },
+      {
+        "number": 18154,
+        "owner": "Stephan Bergmann",
+        "subject": "Remove the remains of the OXT layer",
+        "submitted": "2026-10-30T21:44:15Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18154"
+      },
+      {
+        "number": 17910,
+        "owner": "Noel Grandin",
+        "subject": "speed up displaying auto-filter on very large spreadsheets",
+        "submitted": "2026-10-30T20:09:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17910"
+      },
+      {
+        "number": 18114,
         "owner": "Caolán McNamara",
-        "subject": "ios: add ccache",
-        "submitted": "2026-10-30T08:32:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18059"
+        "subject": "sd: don't rename a slide that was deleted while the dialog was open",
+        "submitted": "2026-10-30T19:52:51Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18114"
       },
       {
-        "number": 17907,
-        "owner": "Skyler Grey",
-        "subject": "ios: add ccache",
-        "submitted": "2026-10-30T08:29:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17907"
+        "number": 17897,
+        "owner": "Mike Kaganski",
+        "subject": "tdf#94113 sw: give the caret to the page part of a paragraph that shows it",
+        "submitted": "2026-10-30T18:43:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17897"
       },
       {
-        "number": 12661,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "sc: keep the controls a spreadsheet holds in parts of its own",
-        "submitted": "2026-10-30T07:41:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12661"
+        "number": 17896,
+        "owner": "Mike Kaganski",
+        "subject": "editeng, sfx2: send no list prefix length for editeng paragraphs",
+        "submitted": "2026-10-30T18:43:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17896"
       },
       {
-        "number": 17908,
-        "owner": "Tomaž Vajngerl",
-        "subject": "sd: move the 3D transition presets into transitions.xml",
-        "submitted": "2026-10-30T06:03:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17908"
-      },
-      {
-        "number": 17582,
-        "owner": "Rashesh Padia",
-        "subject": "browser: let the Navigator option hide the slide panel in Impress",
-        "submitted": "2026-10-30T05:23:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17582"
-      },
-      {
-        "number": 17832,
-        "owner": "Rashesh Padia",
-        "subject": "vcl: decode the JSON data of a widget action in one place",
-        "submitted": "2026-10-30T05:22:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17832"
-      },
-      {
-        "number": 17831,
-        "owner": "Rashesh Padia",
-        "subject": "sd: remove the unused SlotStateListener class",
-        "submitted": "2026-10-30T05:22:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17831"
-      },
-      {
-        "number": 11563,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "jsdialog: size a tabbed dialog to its widest page",
-        "submitted": "2026-09-17T05:00:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/11563"
+        "number": 17895,
+        "owner": "Mike Kaganski",
+        "subject": "editeng, svx: keep the bullet text out of caret positions",
+        "submitted": "2026-10-30T18:43:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17895"
       }
     ]
   },
