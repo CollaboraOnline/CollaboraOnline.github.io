@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-10-31T08:39:24Z",
+  "generated_at": "2026-11-01T09:30:31Z",
   "metrics": {
     "changes": [
       {
-        "number": 9601,
-        "owner": "Bayram Çiçek",
-        "subject": "shape handles: draw the rotation handle with core's icon",
-        "submitted": "2026-10-31T06:34:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/9601"
-      },
-      {
-        "number": 18153,
-        "owner": "Stephan Bergmann",
-        "subject": "Remove a long-dead dmake makefile.mk",
-        "submitted": "2026-10-30T21:44:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18153"
-      },
-      {
-        "number": 18154,
-        "owner": "Stephan Bergmann",
-        "subject": "Remove the remains of the OXT layer",
-        "submitted": "2026-10-30T21:44:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18154"
-      },
-      {
-        "number": 17910,
-        "owner": "Noel Grandin",
-        "subject": "speed up displaying auto-filter on very large spreadsheets",
-        "submitted": "2026-10-30T20:09:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17910"
-      },
-      {
-        "number": 18114,
+        "number": 18232,
         "owner": "Caolán McNamara",
-        "subject": "sd: don't rename a slide that was deleted while the dialog was open",
-        "submitted": "2026-10-30T19:52:51Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18114"
+        "subject": "cid#565153 Bad use of null-like value",
+        "submitted": "2026-11-01T05:38:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18232"
       },
       {
-        "number": 17897,
-        "owner": "Mike Kaganski",
-        "subject": "tdf#94113 sw: give the caret to the page part of a paragraph that shows it",
-        "submitted": "2026-10-30T18:43:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17897"
+        "number": 18231,
+        "owner": "Caolán McNamara",
+        "subject": "cid#565141 silence Overflowed return value",
+        "submitted": "2026-11-01T05:38:16Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18231"
       },
       {
-        "number": 17896,
-        "owner": "Mike Kaganski",
-        "subject": "editeng, sfx2: send no list prefix length for editeng paragraphs",
-        "submitted": "2026-10-30T18:43:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17896"
+        "number": 18230,
+        "owner": "Caolán McNamara",
+        "subject": "check that the closealldialogs test's own dialog window closed",
+        "submitted": "2026-11-01T05:37:39Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18230"
       },
       {
-        "number": 17895,
-        "owner": "Mike Kaganski",
-        "subject": "editeng, svx: keep the bullet text out of caret positions",
-        "submitted": "2026-10-30T18:43:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17895"
+        "number": 18229,
+        "owner": "Caolán McNamara",
+        "subject": "wait for the popped-out modal window to close before the next test",
+        "submitted": "2026-11-01T05:37:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18229"
+      },
+      {
+        "number": 18228,
+        "owner": "Caolán McNamara",
+        "subject": "cid#565167 silence Pointer to local outside scope",
+        "submitted": "2026-11-01T05:36:15Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18228"
+      },
+      {
+        "number": 18218,
+        "owner": "Caolán McNamara",
+        "subject": "cid#565378 Variable copied when it could be moved",
+        "submitted": "2026-11-01T05:34:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18218"
+      },
+      {
+        "number": 18222,
+        "owner": "Caolán McNamara",
+        "subject": "sc: don't allocate columns that a style or pattern leaves unchanged",
+        "submitted": "2026-10-31T20:17:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18222"
+      },
+      {
+        "number": 18221,
+        "owner": "Caolán McNamara",
+        "subject": "ods import: treat column 1023 of a 1024 col table as the sheet edge",
+        "submitted": "2026-10-31T20:17:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18221"
       }
     ]
   },

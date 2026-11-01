@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-31T08:39:20Z",
+  "generated_at": "2026-11-01T09:30:27Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 84,
-      "posts_30d": 199,
+      "active_users_30d": 83,
+      "posts_30d": 187,
       "top_topics_monthly": [
         {
-          "posts": 17,
+          "posts": 18,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 117
-        },
-        {
-          "posts": 6,
-          "title": "Collabora Office Classic Snapshot new version?",
-          "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
-          "views": 94
+          "views": 121
         },
         {
           "posts": 3,
           "title": "Build of engine breaks on Windows",
           "url": "https://forum.collaboraonline.com/t/build-of-engine-breaks-on-windows/5106",
-          "views": 42
+          "views": 44
+        },
+        {
+          "posts": 6,
+          "title": "Collabora Office Classic Snapshot new version?",
+          "url": "https://forum.collaboraonline.com/t/collabora-office-classic-snapshot-new-version/5101",
+          "views": 96
         },
         {
           "posts": 4,
@@ -37,14 +37,14 @@
         }
       ],
       "topics_30d": 58,
-      "total_posts": 10474,
-      "total_topics": 2231
+      "total_posts": 10476,
+      "total_topics": 2232
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-01",
-    "to": "2026-10-31"
+    "from": "2026-10-02",
+    "to": "2026-11-01"
   },
   "source": "forum"
 }
