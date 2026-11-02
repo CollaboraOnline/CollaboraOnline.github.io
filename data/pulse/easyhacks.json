@@ -1,7 +1,21 @@
 {
-  "generated_at": "2026-11-01T09:30:30Z",
+  "generated_at": "2026-11-02T09:47:53Z",
   "metrics": {
     "issues": [
+      {
+        "assignee": null,
+        "comments": 0,
+        "created_at": "2026-11-02",
+        "labels": [
+          "26.04"
+        ],
+        "mentor": null,
+        "number": 16367,
+        "thumbs_up": 0,
+        "title": "Navigator panel title says \"Navigation\" while the button and menu say \"Navigator\"",
+        "updated_at": "2026-11-02",
+        "url": "https://github.com/CollaboraOnline/online/issues/16367"
+      },
       {
         "assignee": null,
         "comments": 2,
@@ -1412,7 +1426,7 @@
         "url": "https://github.com/CollaboraOnline/online/issues/5360"
       }
     ],
-    "total_open": 94
+    "total_open": 95
   },
   "source": "easyhacks"
 }

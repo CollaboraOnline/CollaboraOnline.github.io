@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-01T09:30:31Z",
+  "generated_at": "2026-11-02T09:47:54Z",
   "metrics": {
     "changes": [
       {
-        "number": 18232,
+        "number": 18329,
         "owner": "Caolán McNamara",
-        "subject": "cid#565153 Bad use of null-like value",
-        "submitted": "2026-11-01T05:38:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18232"
+        "subject": "cid#565475 Division or modulo by float zero",
+        "submitted": "2026-11-02T09:42:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18329"
       },
       {
-        "number": 18231,
+        "number": 18328,
         "owner": "Caolán McNamara",
-        "subject": "cid#565141 silence Overflowed return value",
-        "submitted": "2026-11-01T05:38:16Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18231"
+        "subject": "cid#565473 Division or modulo by float zero",
+        "submitted": "2026-11-02T09:42:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18328"
       },
       {
-        "number": 18230,
-        "owner": "Caolán McNamara",
-        "subject": "check that the closealldialogs test's own dialog window closed",
-        "submitted": "2026-11-01T05:37:39Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18230"
+        "number": 17883,
+        "owner": "Ashod Nakashian",
+        "subject": "comphelper: seed the parallel sort from the system random data",
+        "submitted": "2026-11-02T09:31:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17883"
       },
       {
-        "number": 18229,
-        "owner": "Caolán McNamara",
-        "subject": "wait for the popped-out modal window to close before the next test",
-        "submitted": "2026-11-01T05:37:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18229"
+        "number": 17882,
+        "owner": "Ashod Nakashian",
+        "subject": "comphelper: run a command before giving its unknown result",
+        "submitted": "2026-11-02T09:31:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17882"
       },
       {
-        "number": 18228,
-        "owner": "Caolán McNamara",
-        "subject": "cid#565167 silence Pointer to local outside scope",
-        "submitted": "2026-11-01T05:36:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18228"
+        "number": 17881,
+        "owner": "Ashod Nakashian",
+        "subject": "comphelper: give a result when a dispatch cannot notify",
+        "submitted": "2026-11-02T09:30:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17881"
       },
       {
-        "number": 18218,
-        "owner": "Caolán McNamara",
-        "subject": "cid#565378 Variable copied when it could be moved",
-        "submitted": "2026-11-01T05:34:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18218"
+        "number": 17880,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: read a save result without success as a save of unknown outcome",
+        "submitted": "2026-11-02T09:30:40Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17880"
       },
       {
-        "number": 18222,
-        "owner": "Caolán McNamara",
-        "subject": "sc: don't allocate columns that a style or pattern leaves unchanged",
-        "submitted": "2026-10-31T20:17:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18222"
+        "number": 12662,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "sc: keep every kind of form control a sheet holds",
+        "submitted": "2026-11-02T09:29:36Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/12662"
       },
       {
-        "number": 18221,
-        "owner": "Caolán McNamara",
-        "subject": "ods import: treat column 1023 of a 1024 col table as the sheet edge",
-        "submitted": "2026-10-31T20:17:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18221"
+        "number": 18038,
+        "owner": "Tomaž Vajngerl",
+        "subject": "slideshow: port the five 3D transitions that were still stubs",
+        "submitted": "2026-11-02T09:18:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18038"
       }
     ]
   },
