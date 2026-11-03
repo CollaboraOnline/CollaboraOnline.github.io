@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-02T09:47:54Z",
+  "generated_at": "2026-11-03T09:50:53Z",
   "metrics": {
     "changes": [
       {
-        "number": 18329,
-        "owner": "Caolán McNamara",
-        "subject": "cid#565475 Division or modulo by float zero",
-        "submitted": "2026-11-02T09:42:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18329"
-      },
-      {
-        "number": 18328,
-        "owner": "Caolán McNamara",
-        "subject": "cid#565473 Division or modulo by float zero",
-        "submitted": "2026-11-02T09:42:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18328"
-      },
-      {
-        "number": 17883,
-        "owner": "Ashod Nakashian",
-        "subject": "comphelper: seed the parallel sort from the system random data",
-        "submitted": "2026-11-02T09:31:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17883"
-      },
-      {
-        "number": 17882,
-        "owner": "Ashod Nakashian",
-        "subject": "comphelper: run a command before giving its unknown result",
-        "submitted": "2026-11-02T09:31:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17882"
-      },
-      {
-        "number": 17881,
-        "owner": "Ashod Nakashian",
-        "subject": "comphelper: give a result when a dispatch cannot notify",
-        "submitted": "2026-11-02T09:30:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17881"
-      },
-      {
-        "number": 17880,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: read a save result without success as a save of unknown outcome",
-        "submitted": "2026-11-02T09:30:40Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17880"
-      },
-      {
-        "number": 12662,
+        "number": 18515,
         "owner": "Samuel Mehrbrodt",
-        "subject": "sc: keep every kind of form control a sheet holds",
-        "submitted": "2026-11-02T09:29:36Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/12662"
+        "subject": "cool#16370 browser: draw a column or row under one pixel as one pixel",
+        "submitted": "2026-11-03T09:50:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18515"
       },
       {
-        "number": 18038,
-        "owner": "Tomaž Vajngerl",
-        "subject": "slideshow: port the five 3D transitions that were still stubs",
-        "submitted": "2026-11-02T09:18:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18038"
+        "number": 18324,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "cool#16370 sc: paint a whole-pixel column at its full width",
+        "submitted": "2026-11-03T09:50:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18324"
+      },
+      {
+        "number": 17487,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: Diagram layout measured against the drawings V",
+        "submitted": "2026-11-03T09:42:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17487"
+      },
+      {
+        "number": 17486,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: Diagram rings, anchors, colors and fonts",
+        "submitted": "2026-11-03T09:42:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17486"
+      },
+      {
+        "number": 17485,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: Diagram text in the text area of the preset",
+        "submitted": "2026-11-03T09:42:02Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17485"
+      },
+      {
+        "number": 17484,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: write a Diagram whose data has no dataModelExt",
+        "submitted": "2026-11-03T09:41:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17484"
+      },
+      {
+        "number": 17483,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: custom shape geometry without an SdrObject",
+        "submitted": "2026-11-03T09:41:30Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17483"
+      },
+      {
+        "number": 17482,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: place the text of turned Diagram shapes",
+        "submitted": "2026-11-03T09:41:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17482"
       }
     ]
   },

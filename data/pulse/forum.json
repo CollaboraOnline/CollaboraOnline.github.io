@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-02T09:46:56Z",
+  "generated_at": "2026-11-03T09:50:49Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 84,
-      "posts_30d": 190,
+      "active_users_30d": 83,
+      "posts_30d": 189,
       "top_topics_monthly": [
         {
           "posts": 19,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 126
+          "views": 127
         },
         {
           "posts": 3,
@@ -27,24 +27,24 @@
           "posts": 4,
           "title": "How to write macros in Collabora Office (desktop)?",
           "url": "https://forum.collaboraonline.com/t/how-to-write-macros-in-collabora-office-desktop/5110",
-          "views": 80
+          "views": 84
         },
         {
           "posts": 6,
           "title": "Translations to follow LO or MS or ...?",
           "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
-          "views": 66
+          "views": 67
         }
       ],
       "topics_30d": 62,
-      "total_posts": 10484,
+      "total_posts": 10486,
       "total_topics": 2236
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-03",
-    "to": "2026-11-02"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "source": "forum"
 }

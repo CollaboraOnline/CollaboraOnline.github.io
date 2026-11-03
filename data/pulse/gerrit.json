@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-02T09:46:53Z",
+  "generated_at": "2026-11-03T09:50:45Z",
   "metrics": {
-    "merged_30d": 2638,
-    "open_active": 264,
-    "open_unreviewed": 212,
+    "merged_30d": 2817,
+    "open_active": 261,
+    "open_unreviewed": 222,
     "top_authors_30d": [
       {
-        "merged": 492,
+        "merged": 529,
         "name": "Caolán McNamara"
       },
       {
-        "merged": 262,
+        "merged": 264,
         "name": "Tomaž Vajngerl"
       },
       {
-        "merged": 184,
+        "merged": 192,
         "name": "Andras Timar"
       },
       {
-        "merged": 115,
+        "merged": 123,
         "name": "Stephan Bergmann"
       },
       {
-        "merged": 101,
+        "merged": 120,
         "name": "Armin Le Grand"
       }
     ]
@@ -33,8 +33,8 @@
   ],
   "period": {
     "days": 30,
-    "from": "2026-10-03",
-    "to": "2026-11-02"
+    "from": "2026-10-04",
+    "to": "2026-11-03"
   },
   "source": "gerrit"
 }
