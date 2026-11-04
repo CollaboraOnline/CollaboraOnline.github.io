@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-03T09:50:53Z",
+  "generated_at": "2026-11-04T09:38:44Z",
   "metrics": {
     "changes": [
       {
-        "number": 18515,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "cool#16370 browser: draw a column or row under one pixel as one pixel",
-        "submitted": "2026-11-03T09:50:46Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18515"
+        "number": 18478,
+        "owner": "Caolán McNamara",
+        "subject": "only insert a pasted GIF as a file when the session can edit",
+        "submitted": "2026-11-04T09:35:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18478"
       },
       {
-        "number": 18324,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "cool#16370 sc: paint a whole-pixel column at its full width",
-        "submitted": "2026-11-03T09:50:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18324"
+        "number": 18619,
+        "owner": "Caolán McNamara",
+        "subject": "check for disk space before downloading a document to compare against",
+        "submitted": "2026-11-04T09:30:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18619"
       },
       {
-        "number": 17487,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: Diagram layout measured against the drawings V",
-        "submitted": "2026-11-03T09:42:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17487"
+        "number": 18214,
+        "owner": "Năstasie Raul-Ionuț",
+        "subject": "Improved reply indent in Writer",
+        "submitted": "2026-11-04T09:29:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18214"
       },
       {
-        "number": 17486,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: Diagram rings, anchors, colors and fonts",
-        "submitted": "2026-11-03T09:42:22Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17486"
+        "number": 18497,
+        "owner": "Hubert Figuière",
+        "subject": "wopi: Handle file without extensions in save as.",
+        "submitted": "2026-11-04T09:28:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18497"
       },
       {
-        "number": 17485,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: Diagram text in the text area of the preset",
-        "submitted": "2026-11-03T09:42:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17485"
+        "number": 18249,
+        "owner": "Shlok",
+        "subject": "backstage: enable keyboard navigation in sidebar",
+        "submitted": "2026-11-04T09:17:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18249"
       },
       {
-        "number": 17484,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: write a Diagram whose data has no dataModelExt",
-        "submitted": "2026-11-03T09:41:46Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17484"
+        "number": 18438,
+        "owner": "Karthik Godha",
+        "subject": "mobile: Put cell handles on every reference of an edited formula",
+        "submitted": "2026-11-04T09:13:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18438"
       },
       {
-        "number": 17483,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: custom shape geometry without an SdrObject",
-        "submitted": "2026-11-03T09:41:30Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17483"
+        "number": 18590,
+        "owner": "Gülşah Köse",
+        "subject": "starmath: show an in-place edit that keeps the formula size",
+        "submitted": "2026-11-04T09:13:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18590"
       },
       {
-        "number": 17482,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: place the text of turned Diagram shapes",
-        "submitted": "2026-11-03T09:41:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17482"
+        "number": 18635,
+        "owner": "Hubert Figuière",
+        "subject": "wopi: Restore WopiHostIsSharePoint",
+        "submitted": "2026-11-04T09:07:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18635"
       }
     ]
   },
