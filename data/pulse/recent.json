@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-04T09:38:44Z",
+  "generated_at": "2026-11-05T09:44:00Z",
   "metrics": {
     "changes": [
       {
-        "number": 18478,
-        "owner": "Caolán McNamara",
-        "subject": "only insert a pasted GIF as a file when the session can edit",
-        "submitted": "2026-11-04T09:35:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18478"
+        "number": 18692,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: Match the engine's answers to object changes by sequence",
+        "submitted": "2026-11-05T09:41:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18692"
       },
       {
-        "number": 18619,
-        "owner": "Caolán McNamara",
-        "subject": "check for disk space before downloading a document to compare against",
-        "submitted": "2026-11-04T09:30:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18619"
+        "number": 18691,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: Add InputSequence to number the input messages",
+        "submitted": "2026-11-05T09:41:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18691"
       },
       {
-        "number": 18214,
-        "owner": "Năstasie Raul-Ionuț",
-        "subject": "Improved reply indent in Writer",
-        "submitted": "2026-11-04T09:29:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18214"
+        "number": 18317,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "sd, oox: keep on the area itself whether the document stated text there",
+        "submitted": "2026-11-05T09:28:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18317"
       },
       {
-        "number": 18497,
-        "owner": "Hubert Figuière",
-        "subject": "wopi: Handle file without extensions in save as.",
-        "submitted": "2026-11-04T09:28:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18497"
+        "number": 18641,
+        "owner": "Nick",
+        "subject": "Keep border on selected buttons during hover",
+        "submitted": "2026-11-05T09:09:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18641"
       },
       {
-        "number": 18249,
-        "owner": "Shlok",
-        "subject": "backstage: enable keyboard navigation in sidebar",
-        "submitted": "2026-11-04T09:17:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18249"
+        "number": 18697,
+        "owner": "Tomaž Vajngerl",
+        "subject": "forkit: count each cgroup OOM kill only once across subforkits",
+        "submitted": "2026-11-05T09:05:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18697"
       },
       {
-        "number": 18438,
-        "owner": "Karthik Godha",
-        "subject": "mobile: Put cell handles on every reference of an edited formula",
-        "submitted": "2026-11-04T09:13:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18438"
+        "number": 17873,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "scriptinterop: report a cursor in a shape as a text selection",
+        "submitted": "2026-11-05T08:57:31Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/17873"
       },
       {
-        "number": 18590,
-        "owner": "Gülşah Köse",
-        "subject": "starmath: show an in-place edit that keeps the formula size",
-        "submitted": "2026-11-04T09:13:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18590"
+        "number": 14072,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "scriptinterop: document the page element and text interfaces",
+        "submitted": "2026-11-05T08:57:23Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14072"
       },
       {
-        "number": 18635,
-        "owner": "Hubert Figuière",
-        "subject": "wopi: Restore WopiHostIsSharePoint",
-        "submitted": "2026-11-04T09:07:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18635"
+        "number": 14071,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "scriptinterop: document the presentation and page interfaces",
+        "submitted": "2026-11-05T08:48:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/14071"
       }
     ]
   },
