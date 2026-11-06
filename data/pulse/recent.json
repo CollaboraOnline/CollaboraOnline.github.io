@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-05T09:44:00Z",
+  "generated_at": "2026-11-06T09:38:22Z",
   "metrics": {
     "changes": [
       {
-        "number": 18692,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: Match the engine's answers to object changes by sequence",
-        "submitted": "2026-11-05T09:41:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18692"
+        "number": 19055,
+        "owner": "Tor Lillqvist",
+        "subject": "Run the multidoc-close and save-repeat specs on CODA-W too",
+        "submitted": "2026-11-06T09:35:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19055"
       },
       {
-        "number": 18691,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: Add InputSequence to number the input messages",
-        "submitted": "2026-11-05T09:41:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18691"
+        "number": 19054,
+        "owner": "Tor Lillqvist",
+        "subject": "Move copyFixture() of the save-failed spec to the shared test lib",
+        "submitted": "2026-11-06T09:35:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19054"
       },
       {
-        "number": 18317,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "sd, oox: keep on the area itself whether the document stated text there",
-        "submitted": "2026-11-05T09:28:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18317"
+        "number": 19053,
+        "owner": "Tor Lillqvist",
+        "subject": "Run more of the shared WebdriverIO specs against CODA-W",
+        "submitted": "2026-11-06T09:35:37Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19053"
       },
       {
-        "number": 18641,
-        "owner": "Nick",
-        "subject": "Keep border on selected buttons during hover",
-        "submitted": "2026-11-05T09:09:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18641"
+        "number": 19022,
+        "owner": "Tor Lillqvist",
+        "subject": "Run the shared WebdriverIO specs against CODA-W",
+        "submitted": "2026-11-06T09:35:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19022"
       },
       {
-        "number": 18697,
-        "owner": "Tomaž Vajngerl",
-        "subject": "forkit: count each cgroup OOM kill only once across subforkits",
-        "submitted": "2026-11-05T09:05:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18697"
+        "number": 19021,
+        "owner": "Tor Lillqvist",
+        "subject": "Move the process helpers of the coda-qt test service to their own file",
+        "submitted": "2026-11-06T09:35:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19021"
       },
       {
-        "number": 17873,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "scriptinterop: report a cursor in a shape as a text selection",
-        "submitted": "2026-11-05T08:57:31Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/17873"
+        "number": 18649,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: Diagram texts fitted and written as measured",
+        "submitted": "2026-11-06T09:31:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18649"
       },
       {
-        "number": 14072,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "scriptinterop: document the page element and text interfaces",
-        "submitted": "2026-11-05T08:57:23Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14072"
+        "number": 18648,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: Diagram rows fit their children",
+        "submitted": "2026-11-06T09:31:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18648"
       },
       {
-        "number": 14071,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "scriptinterop: document the presentation and page interfaces",
-        "submitted": "2026-11-05T08:48:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/14071"
+        "number": 18647,
+        "owner": "Armin Le Grand",
+        "subject": "SmartArt: Diagram font bounds by point type and branch",
+        "submitted": "2026-11-06T09:31:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18647"
       }
     ]
   },
