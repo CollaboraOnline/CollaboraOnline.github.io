@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-11-06T09:38:19Z",
+  "generated_at": "2026-11-07T09:02:24Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 84,
-      "posts_30d": 173,
+      "active_users_30d": 83,
+      "posts_30d": 174,
       "top_topics_monthly": [
         {
           "posts": 19,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 148
+          "views": 150
         },
         {
-          "posts": 6,
+          "posts": 7,
           "title": "Translations to follow LO or MS or ...?",
           "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
-          "views": 76
+          "views": 82
+        },
+        {
+          "posts": 1,
+          "title": "Weblate stats: October 2026",
+          "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
+          "views": 31
         },
         {
           "posts": 2,
           "title": "How to configure Collabora on Nextcloud Snap",
           "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
-          "views": 41
+          "views": 42
         },
         {
           "posts": 8,
           "title": "Enable Adding Glossary terms in Weblate?",
           "url": "https://forum.collaboraonline.com/t/enable-adding-glossary-terms-in-weblate/5156",
-          "views": 51
-        },
-        {
-          "posts": 4,
-          "title": "Show formulas in Collabora Office Desktop spreadsheet cells?",
-          "url": "https://forum.collaboraonline.com/t/show-formulas-in-collabora-office-desktop-spreadsheet-cells/5120",
-          "views": 70
+          "views": 56
         }
       ],
       "topics_30d": 56,
-      "total_posts": 10500,
-      "total_topics": 2243
+      "total_posts": 10503,
+      "total_topics": 2244
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-07",
-    "to": "2026-11-06"
+    "from": "2026-10-08",
+    "to": "2026-11-07"
   },
   "source": "forum"
 }

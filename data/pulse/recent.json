@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-06T09:38:22Z",
+  "generated_at": "2026-11-07T09:02:28Z",
   "metrics": {
     "changes": [
       {
-        "number": 19055,
-        "owner": "Tor Lillqvist",
-        "subject": "Run the multidoc-close and save-repeat specs on CODA-W too",
-        "submitted": "2026-11-06T09:35:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19055"
+        "number": 19050,
+        "owner": "Manish Bera",
+        "subject": "rebuild the dispatcher when a view's read-only state changes",
+        "submitted": "2026-11-07T07:58:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19050"
       },
       {
-        "number": 19054,
-        "owner": "Tor Lillqvist",
-        "subject": "Move copyFixture() of the save-failed spec to the shared test lib",
-        "submitted": "2026-11-06T09:35:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19054"
+        "number": 19012,
+        "owner": "Michael Stahl",
+        "subject": "sw: fix always failing `testOpenCommentKey`",
+        "submitted": "2026-11-07T07:44:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19012"
       },
       {
-        "number": 19053,
-        "owner": "Tor Lillqvist",
-        "subject": "Run more of the shared WebdriverIO specs against CODA-W",
-        "submitted": "2026-11-06T09:35:37Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19053"
+        "number": 19190,
+        "owner": "Andras Timar",
+        "subject": "packaging: stop removing the lt and nn langpacks on install",
+        "submitted": "2026-11-07T07:11:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19190"
       },
       {
-        "number": 19022,
-        "owner": "Tor Lillqvist",
-        "subject": "Run the shared WebdriverIO specs against CODA-W",
-        "submitted": "2026-11-06T09:35:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19022"
+        "number": 19191,
+        "owner": "Andras Timar",
+        "subject": "docker: install the language packs of every shipped language",
+        "submitted": "2026-11-07T07:11:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19191"
       },
       {
-        "number": 19021,
-        "owner": "Tor Lillqvist",
-        "subject": "Move the process helpers of the coda-qt test service to their own file",
-        "submitted": "2026-11-06T09:35:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19021"
+        "number": 18843,
+        "owner": "Tomaž Vajngerl",
+        "subject": "slideshow: draw the presenter console's current slide on the GPU",
+        "submitted": "2026-11-06T22:56:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18843"
       },
       {
-        "number": 18649,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: Diagram texts fitted and written as measured",
-        "submitted": "2026-11-06T09:31:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18649"
+        "number": 18842,
+        "owner": "Tomaž Vajngerl",
+        "subject": "slideshow: draw the presenter console previews from vector primitives",
+        "submitted": "2026-11-06T22:56:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18842"
       },
       {
-        "number": 18648,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: Diagram rows fit their children",
-        "submitted": "2026-11-06T09:31:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18648"
+        "number": 18841,
+        "owner": "Tomaž Vajngerl",
+        "subject": "slideshow: let the presenter console start on a vector slideshow",
+        "submitted": "2026-11-06T22:56:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18841"
       },
       {
-        "number": 18647,
-        "owner": "Armin Le Grand",
-        "subject": "SmartArt: Diagram font bounds by point type and branch",
-        "submitted": "2026-11-06T09:31:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18647"
+        "number": 18840,
+        "owner": "Tomaž Vajngerl",
+        "subject": "slideshow: draw a video in the state of its shape",
+        "submitted": "2026-11-06T22:56:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18840"
       }
     ]
   },
