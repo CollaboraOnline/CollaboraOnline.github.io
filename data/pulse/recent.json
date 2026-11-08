@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-07T09:02:28Z",
+  "generated_at": "2026-11-08T09:19:33Z",
   "metrics": {
     "changes": [
       {
-        "number": 19050,
-        "owner": "Manish Bera",
-        "subject": "rebuild the dispatcher when a view's read-only state changes",
-        "submitted": "2026-11-07T07:58:22Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19050"
+        "number": 19236,
+        "owner": "Aron Budea",
+        "subject": "xmloff: don't warn about office:version of embedded documents",
+        "submitted": "2026-11-08T07:02:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19236"
       },
       {
-        "number": 19012,
-        "owner": "Michael Stahl",
-        "subject": "sw: fix always failing `testOpenCommentKey`",
-        "submitted": "2026-11-07T07:44:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19012"
+        "number": 19235,
+        "owner": "Aron Budea",
+        "subject": "svx: don't expect a writable gallery dir when all are read-only",
+        "submitted": "2026-11-08T07:02:24Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19235"
       },
       {
-        "number": 19190,
-        "owner": "Andras Timar",
-        "subject": "packaging: stop removing the lt and nn langpacks on install",
-        "submitted": "2026-11-07T07:11:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19190"
+        "number": 19234,
+        "owner": "Aron Budea",
+        "subject": "sd: don't warn about transitions without a subtype",
+        "submitted": "2026-11-08T07:02:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19234"
       },
       {
-        "number": 19191,
-        "owner": "Andras Timar",
-        "subject": "docker: install the language packs of every shipped language",
-        "submitted": "2026-11-07T07:11:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19191"
+        "number": 19225,
+        "owner": "Caolán McNamara",
+        "subject": "don't crash in getUsedData on xls export of a chart with no diagram",
+        "submitted": "2026-11-08T07:01:36Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19225"
       },
       {
-        "number": 18843,
-        "owner": "Tomaž Vajngerl",
-        "subject": "slideshow: draw the presenter console's current slide on the GPU",
-        "submitted": "2026-11-06T22:56:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18843"
+        "number": 19226,
+        "owner": "Stephan Bergmann",
+        "subject": "Avoid wrong downcast of a partially destroyed dialog",
+        "submitted": "2026-11-08T07:01:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19226"
       },
       {
-        "number": 18842,
-        "owner": "Tomaž Vajngerl",
-        "subject": "slideshow: draw the presenter console previews from vector primitives",
-        "submitted": "2026-11-06T22:56:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18842"
+        "number": 19223,
+        "owner": "Caolán McNamara",
+        "subject": "check the key derivation arguments are in range",
+        "submitted": "2026-11-08T06:58:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19223"
       },
       {
-        "number": 18841,
-        "owner": "Tomaž Vajngerl",
-        "subject": "slideshow: let the presenter console start on a vector slideshow",
-        "submitted": "2026-11-06T22:56:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18841"
+        "number": 19205,
+        "owner": "Caolán McNamara",
+        "subject": "cid#565587 Dereference before null check",
+        "submitted": "2026-11-08T06:58:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19205"
       },
       {
-        "number": 18840,
-        "owner": "Tomaž Vajngerl",
-        "subject": "slideshow: draw a video in the state of its shape",
-        "submitted": "2026-11-06T22:56:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18840"
+        "number": 19222,
+        "owner": "Caolán McNamara",
+        "subject": "ofz: fuzzers dropped every form control at import",
+        "submitted": "2026-11-08T06:57:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19222"
       }
     ]
   },
