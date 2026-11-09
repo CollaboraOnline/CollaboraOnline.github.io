@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-08T09:19:33Z",
+  "generated_at": "2026-11-09T10:03:54Z",
   "metrics": {
     "changes": [
       {
-        "number": 19236,
-        "owner": "Aron Budea",
-        "subject": "xmloff: don't warn about office:version of embedded documents",
-        "submitted": "2026-11-08T07:02:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19236"
+        "number": 18614,
+        "owner": "Darshan-Upadhyay",
+        "subject": "cool#16362 fileserver: send only complete gzip streams",
+        "submitted": "2026-11-09T09:00:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18614"
       },
       {
-        "number": 19235,
-        "owner": "Aron Budea",
-        "subject": "svx: don't expect a writable gallery dir when all are read-only",
-        "submitted": "2026-11-08T07:02:24Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19235"
-      },
-      {
-        "number": 19234,
-        "owner": "Aron Budea",
-        "subject": "sd: don't warn about transitions without a subtype",
-        "submitted": "2026-11-08T07:02:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19234"
-      },
-      {
-        "number": 19225,
+        "number": 19081,
         "owner": "Caolán McNamara",
-        "subject": "don't crash in getUsedData on xls export of a chart with no diagram",
-        "submitted": "2026-11-08T07:01:36Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19225"
+        "subject": "update mythes to 1.2.7",
+        "submitted": "2026-11-09T08:45:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19081"
       },
       {
-        "number": 19226,
-        "owner": "Stephan Bergmann",
-        "subject": "Avoid wrong downcast of a partially destroyed dialog",
-        "submitted": "2026-11-08T07:01:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19226"
+        "number": 19169,
+        "owner": "Sahil Gautam",
+        "subject": "mac: ask the account windows before the app quits",
+        "submitted": "2026-11-09T08:38:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19169"
       },
       {
-        "number": 19223,
-        "owner": "Caolán McNamara",
-        "subject": "check the key derivation arguments are in range",
-        "submitted": "2026-11-08T06:58:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19223"
+        "number": 19168,
+        "owner": "Sahil Gautam",
+        "subject": "mac: ask the editor page before an account window closes",
+        "submitted": "2026-11-09T08:38:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19168"
       },
       {
-        "number": 19205,
-        "owner": "Caolán McNamara",
-        "subject": "cid#565587 Dereference before null check",
-        "submitted": "2026-11-08T06:58:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19205"
+        "number": 19167,
+        "owner": "Sahil Gautam",
+        "subject": "refactor: mac: move closing the documents for a quit into a function",
+        "submitted": "2026-11-09T08:38:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19167"
       },
       {
-        "number": 19222,
-        "owner": "Caolán McNamara",
-        "subject": "ofz: fuzzers dropped every form control at import",
-        "submitted": "2026-11-08T06:57:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19222"
+        "number": 19166,
+        "owner": "Sahil Gautam",
+        "subject": "mac: close the local document on switchToServerMode",
+        "submitted": "2026-11-09T08:38:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19166"
+      },
+      {
+        "number": 19165,
+        "owner": "Sahil Gautam",
+        "subject": "windows: close the tab when there is no page to ask",
+        "submitted": "2026-11-09T08:38:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19165"
+      },
+      {
+        "number": 19140,
+        "owner": "Balázs Varga",
+        "subject": "vector: keep the Calc block JSON within a budget of bytes",
+        "submitted": "2026-11-09T04:10:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19140"
       }
     ]
   },
