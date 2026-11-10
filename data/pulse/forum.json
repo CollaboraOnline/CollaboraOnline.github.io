@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-09T10:03:50Z",
+  "generated_at": "2026-11-10T10:12:42Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 81,
+      "active_users_30d": 82,
       "posts_30d": 164,
       "top_topics_monthly": [
         {
           "posts": 19,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 152
-        },
-        {
-          "posts": 7,
-          "title": "Translations to follow LO or MS or ...?",
-          "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
-          "views": 87
+          "views": 153
         },
         {
           "posts": 1,
           "title": "Weblate stats: October 2026",
           "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
-          "views": 37
+          "views": 38
+        },
+        {
+          "posts": 7,
+          "title": "Translations to follow LO or MS or ...?",
+          "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
+          "views": 89
         },
         {
           "posts": 2,
@@ -33,18 +33,18 @@
           "posts": 8,
           "title": "Enable Adding Glossary terms in Weblate?",
           "url": "https://forum.collaboraonline.com/t/enable-adding-glossary-terms-in-weblate/5156",
-          "views": 56
+          "views": 57
         }
       ],
       "topics_30d": 51,
-      "total_posts": 10504,
+      "total_posts": 10506,
       "total_topics": 2244
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-10",
-    "to": "2026-11-09"
+    "from": "2026-10-11",
+    "to": "2026-11-10"
   },
   "source": "forum"
 }

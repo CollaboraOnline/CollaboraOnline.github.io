@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-09T10:03:54Z",
+  "generated_at": "2026-11-10T10:12:45Z",
   "metrics": {
     "changes": [
       {
-        "number": 18614,
-        "owner": "Darshan-Upadhyay",
-        "subject": "cool#16362 fileserver: send only complete gzip streams",
-        "submitted": "2026-11-09T09:00:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18614"
+        "number": 19540,
+        "owner": "Stephan Bergmann",
+        "subject": "Keep CODA's local document when its upload fails, and offer conflict choices",
+        "submitted": "2026-11-10T09:57:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19540"
       },
       {
-        "number": 19081,
-        "owner": "Caolán McNamara",
-        "subject": "update mythes to 1.2.7",
-        "submitted": "2026-11-09T08:45:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19081"
+        "number": 19539,
+        "owner": "Stephan Bergmann",
+        "subject": "Tell a session held back by a /co/collab conflict what it waits for",
+        "submitted": "2026-11-10T09:57:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19539"
       },
       {
-        "number": 19169,
-        "owner": "Sahil Gautam",
-        "subject": "mac: ask the account windows before the app quits",
-        "submitted": "2026-11-09T08:38:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19169"
+        "number": 19538,
+        "owner": "Stephan Bergmann",
+        "subject": "Treat a /co/collab upload as a conflict for an already loaded document",
+        "submitted": "2026-11-10T09:57:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19538"
       },
       {
-        "number": 19168,
-        "owner": "Sahil Gautam",
-        "subject": "mac: ask the editor page before an account window closes",
-        "submitted": "2026-11-09T08:38:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19168"
+        "number": 19537,
+        "owner": "Stephan Bergmann",
+        "subject": "Check the storage version that a /co/collab upload replaces",
+        "submitted": "2026-11-10T09:57:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19537"
       },
       {
-        "number": 19167,
-        "owner": "Sahil Gautam",
-        "subject": "refactor: mac: move closing the documents for a quit into a function",
-        "submitted": "2026-11-09T08:38:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19167"
+        "number": 19536,
+        "owner": "Stephan Bergmann",
+        "subject": "Ask a CODA user who edits locally before switching on switch_to_collab",
+        "submitted": "2026-11-10T09:57:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19536"
       },
       {
-        "number": 19166,
-        "owner": "Sahil Gautam",
-        "subject": "mac: close the local document on switchToServerMode",
-        "submitted": "2026-11-09T08:38:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19166"
+        "number": 19535,
+        "owner": "Stephan Bergmann",
+        "subject": "Build a CODA collab two-card dialog only once while it is shown",
+        "submitted": "2026-11-10T09:57:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19535"
       },
       {
-        "number": 19165,
-        "owner": "Sahil Gautam",
-        "subject": "windows: close the tab when there is no page to ask",
-        "submitted": "2026-11-09T08:38:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19165"
+        "number": 19534,
+        "owner": "Stephan Bergmann",
+        "subject": "Start a CODA remote page in an editor frame read-only, too",
+        "submitted": "2026-11-10T09:57:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19534"
       },
       {
-        "number": 19140,
-        "owner": "Balázs Varga",
-        "subject": "vector: keep the Calc block JSON within a budget of bytes",
-        "submitted": "2026-11-09T04:10:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19140"
+        "number": 19533,
+        "owner": "Stephan Bergmann",
+        "subject": "CODA-Q: Ask the editor frame's page before a cloud account window closes",
+        "submitted": "2026-11-10T09:57:26Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19533"
       }
     ]
   },
