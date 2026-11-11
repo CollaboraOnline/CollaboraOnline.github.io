@@ -164,7 +164,7 @@ We need the engine and several other libraries and tools to build `CODE`. POCO i
 
 Open a terminal and follow the steps below:
 ```bash
-sudo pacman -Syu libcap libcap-ng lib32-libcap libpng cppunit nodejs npm chromium python-lxml python-polib
+sudo pacman -Syu --needed base-devel libcap libcap-ng libpng cppunit nodejs npm chromium python-lxml python-polib gperf meson ninja
 ```
 
 The engine build also needs `base-devel` and the build dependencies (`makedepends`) of the `libreoffice-fresh` package. https://wiki.documentfoundation.org/Development/BuildingOnLinux lists them for Arch.
