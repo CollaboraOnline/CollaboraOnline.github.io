@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-10T10:12:45Z",
+  "generated_at": "2026-11-11T09:43:23Z",
   "metrics": {
     "changes": [
       {
-        "number": 19540,
-        "owner": "Stephan Bergmann",
-        "subject": "Keep CODA's local document when its upload fails, and offer conflict choices",
-        "submitted": "2026-11-10T09:57:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19540"
+        "number": 19787,
+        "owner": "Armin Le Grand",
+        "subject": "Let a click after a cell selection count on a slow connection",
+        "submitted": "2026-11-11T09:14:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19787"
       },
       {
-        "number": 19539,
-        "owner": "Stephan Bergmann",
-        "subject": "Tell a session held back by a /co/collab conflict what it waits for",
-        "submitted": "2026-11-10T09:57:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19539"
+        "number": 19786,
+        "owner": "Armin Le Grand",
+        "subject": "Keep the table from stepping back on late reports in vector",
+        "submitted": "2026-11-11T09:14:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19786"
       },
       {
-        "number": 19538,
-        "owner": "Stephan Bergmann",
-        "subject": "Treat a /co/collab upload as a conflict for an already loaded document",
-        "submitted": "2026-11-10T09:57:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19538"
+        "number": 19785,
+        "owner": "Armin Le Grand",
+        "subject": "Let a second Delete on a table marker count on what is left",
+        "submitted": "2026-11-11T09:14:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19785"
       },
       {
-        "number": 19537,
-        "owner": "Stephan Bergmann",
-        "subject": "Check the storage version that a /co/collab upload replaces",
-        "submitted": "2026-11-10T09:57:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19537"
+        "number": 19784,
+        "owner": "Armin Le Grand",
+        "subject": "dev-notes: add an overview of the vector mode of Draw and Impress",
+        "submitted": "2026-11-11T09:14:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19784"
       },
       {
-        "number": 19536,
-        "owner": "Stephan Bergmann",
-        "subject": "Ask a CODA user who edits locally before switching on switch_to_collab",
-        "submitted": "2026-11-10T09:57:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19536"
+        "number": 19783,
+        "owner": "Armin Le Grand",
+        "subject": "Show the hand only over handles that can be dragged",
+        "submitted": "2026-11-11T09:14:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19783"
       },
       {
-        "number": 19535,
-        "owner": "Stephan Bergmann",
-        "subject": "Build a CODA collab two-card dialog only once while it is shown",
-        "submitted": "2026-11-10T09:57:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19535"
+        "number": 19811,
+        "owner": "Jan Holesovsky",
+        "subject": "sc lok: Write the cell being edited into every save",
+        "submitted": "2026-11-11T09:04:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19811"
       },
       {
-        "number": 19534,
-        "owner": "Stephan Bergmann",
-        "subject": "Start a CODA remote page in an editor frame read-only, too",
-        "submitted": "2026-11-10T09:57:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19534"
+        "number": 19810,
+        "owner": "Jan Holesovsky",
+        "subject": "sc lok: Mark the document modified for any input into a cell",
+        "submitted": "2026-11-11T09:04:14Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19810"
       },
       {
-        "number": 19533,
+        "number": 19854,
         "owner": "Stephan Bergmann",
-        "subject": "CODA-Q: Ask the editor frame's page before a cloud account window closes",
-        "submitted": "2026-11-10T09:57:26Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19533"
+        "subject": "Add the external leading to the ascent on macOS with USE_HEADLESS_CODE too",
+        "submitted": "2026-11-11T08:40:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19854"
       }
     ]
   },
