@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-11-11T09:43:19Z",
+  "generated_at": "2026-11-12T10:03:55Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 79,
+      "active_users_30d": 76,
       "posts_30d": 161,
       "top_topics_monthly": [
         {
           "posts": 19,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 157
+          "views": 159
         },
         {
           "posts": 1,
           "title": "Weblate stats: October 2026",
           "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
-          "views": 39
+          "views": 41
         },
         {
           "posts": 7,
           "title": "Translations to follow LO or MS or ...?",
           "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
-          "views": 95
-        },
-        {
-          "posts": 5,
-          "title": "Every file corrupted",
-          "url": "https://forum.collaboraonline.com/t/every-file-corrupted/5190",
-          "views": 61
+          "views": 97
         },
         {
           "posts": 2,
           "title": "How to configure Collabora on Nextcloud Snap",
           "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
-          "views": 47
+          "views": 50
+        },
+        {
+          "posts": 8,
+          "title": "Enable Adding Glossary terms in Weblate?",
+          "url": "https://forum.collaboraonline.com/t/enable-adding-glossary-terms-in-weblate/5156",
+          "views": 66
         }
       ],
-      "topics_30d": 49,
-      "total_posts": 10508,
-      "total_topics": 2245
+      "topics_30d": 50,
+      "total_posts": 10515,
+      "total_topics": 2246
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-12",
-    "to": "2026-11-11"
+    "from": "2026-10-13",
+    "to": "2026-11-12"
   },
   "source": "forum"
 }

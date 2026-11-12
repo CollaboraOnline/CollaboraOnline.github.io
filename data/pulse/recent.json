@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-11T09:43:23Z",
+  "generated_at": "2026-11-12T10:03:58Z",
   "metrics": {
     "changes": [
       {
-        "number": 19787,
-        "owner": "Armin Le Grand",
-        "subject": "Let a click after a cell selection count on a slow connection",
-        "submitted": "2026-11-11T09:14:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19787"
+        "number": 19965,
+        "owner": "Noel Grandin",
+        "subject": "use more doubleToUStringBuffer in SvNumberformat",
+        "submitted": "2026-11-12T09:50:03Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19965"
       },
       {
-        "number": 19786,
-        "owner": "Armin Le Grand",
-        "subject": "Keep the table from stepping back on late reports in vector",
-        "submitted": "2026-11-11T09:14:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19786"
+        "number": 19897,
+        "owner": "Moritz Duge",
+        "subject": "wsd: don't stop unstarted brokers at once with limit_load_secs 0",
+        "submitted": "2026-11-12T09:17:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19897"
       },
       {
-        "number": 19785,
-        "owner": "Armin Le Grand",
-        "subject": "Let a second Delete on a table marker count on what is left",
-        "submitted": "2026-11-11T09:14:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19785"
+        "number": 19896,
+        "owner": "Moritz Duge",
+        "subject": "wsd: fix immediate load timeout with PAUSEFORDEBUGGER",
+        "submitted": "2026-11-12T09:17:43Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19896"
       },
       {
-        "number": 19784,
-        "owner": "Armin Le Grand",
-        "subject": "dev-notes: add an overview of the vector mode of Draw and Impress",
-        "submitted": "2026-11-11T09:14:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19784"
+        "number": 18865,
+        "owner": "Skyler Grey",
+        "subject": "android: avoid stripping symbols from debug builds",
+        "submitted": "2026-11-12T09:14:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18865"
       },
       {
-        "number": 19783,
-        "owner": "Armin Le Grand",
-        "subject": "Show the hand only over handles that can be dragged",
-        "submitted": "2026-11-11T09:14:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19783"
+        "number": 20022,
+        "owner": "Tomaž Vajngerl",
+        "subject": "sc: place the vector cell edit by the direction of vertical text",
+        "submitted": "2026-11-12T08:46:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20022"
       },
       {
-        "number": 19811,
-        "owner": "Jan Holesovsky",
-        "subject": "sc lok: Write the cell being edited into every save",
-        "submitted": "2026-11-11T09:04:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19811"
+        "number": 20021,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: leave typing in right-to-left text to the engine",
+        "submitted": "2026-11-12T08:46:34Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20021"
       },
       {
-        "number": 19810,
-        "owner": "Jan Holesovsky",
-        "subject": "sc lok: Mark the document modified for any input into a cell",
-        "submitted": "2026-11-11T09:04:14Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19810"
+        "number": 19941,
+        "owner": "Méven",
+        "subject": "sc: read the preview selection without copying it",
+        "submitted": "2026-11-12T08:37:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19941"
       },
       {
-        "number": 19854,
+        "number": 19776,
         "owner": "Stephan Bergmann",
-        "subject": "Add the external leading to the ascent on macOS with USE_HEADLESS_CODE too",
-        "submitted": "2026-11-11T08:40:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19854"
+        "subject": "CODA-Q: Rejoin the document when its page reloads",
+        "submitted": "2026-11-12T08:23:21Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19776"
       }
     ]
   },
