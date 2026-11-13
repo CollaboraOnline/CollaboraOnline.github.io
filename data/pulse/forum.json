@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-12T10:03:55Z",
+  "generated_at": "2026-11-13T09:51:24Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 76,
-      "posts_30d": 161,
+      "posts_30d": 169,
       "top_topics_monthly": [
         {
           "posts": 19,
@@ -24,27 +24,27 @@
           "views": 97
         },
         {
-          "posts": 2,
-          "title": "How to configure Collabora on Nextcloud Snap",
-          "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
-          "views": 50
-        },
-        {
           "posts": 8,
           "title": "Enable Adding Glossary terms in Weblate?",
           "url": "https://forum.collaboraonline.com/t/enable-adding-glossary-terms-in-weblate/5156",
-          "views": 66
+          "views": 68
+        },
+        {
+          "posts": 2,
+          "title": "How to configure Collabora on Nextcloud Snap",
+          "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
+          "views": 51
         }
       ],
-      "topics_30d": 50,
-      "total_posts": 10515,
-      "total_topics": 2246
+      "topics_30d": 53,
+      "total_posts": 10529,
+      "total_topics": 2251
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-13",
-    "to": "2026-11-12"
+    "from": "2026-10-14",
+    "to": "2026-11-13"
   },
   "source": "forum"
 }

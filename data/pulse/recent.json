@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-12T10:03:58Z",
+  "generated_at": "2026-11-13T09:51:28Z",
   "metrics": {
     "changes": [
       {
-        "number": 19965,
-        "owner": "Noel Grandin",
-        "subject": "use more doubleToUStringBuffer in SvNumberformat",
-        "submitted": "2026-11-12T09:50:03Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19965"
+        "number": 20154,
+        "owner": "Miklos Vajna",
+        "subject": "cool#16285 Impress, airplane transition: import loext:subtype",
+        "submitted": "2026-11-13T09:44:09Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20154"
       },
       {
-        "number": 19897,
-        "owner": "Moritz Duge",
-        "subject": "wsd: don't stop unstarted brokers at once with limit_load_secs 0",
-        "submitted": "2026-11-12T09:17:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19897"
+        "number": 20140,
+        "owner": "Tor Lillqvist",
+        "subject": "Open the document and a downloaded SVG with FileUtil in DocumentBroker",
+        "submitted": "2026-11-13T08:56:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20140"
       },
       {
-        "number": 19896,
-        "owner": "Moritz Duge",
-        "subject": "wsd: fix immediate load timeout with PAUSEFORDEBUGGER",
-        "submitted": "2026-11-12T09:17:43Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19896"
+        "number": 20034,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "vcl: let Command+click act as Ctrl+click for macOS clients",
+        "submitted": "2026-11-13T08:49:15Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20034"
       },
       {
-        "number": 18865,
-        "owner": "Skyler Grey",
-        "subject": "android: avoid stripping symbols from debug builds",
-        "submitted": "2026-11-12T09:14:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18865"
+        "number": 20033,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "tdf#121967 sd: add and remove shapes from the selection with Ctrl+click",
+        "submitted": "2026-11-13T08:48:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20033"
       },
       {
-        "number": 20022,
-        "owner": "Tomaž Vajngerl",
-        "subject": "sc: place the vector cell edit by the direction of vertical text",
-        "submitted": "2026-11-12T08:46:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20022"
-      },
-      {
-        "number": 20021,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: leave typing in right-to-left text to the engine",
-        "submitted": "2026-11-12T08:46:34Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20021"
-      },
-      {
-        "number": 19941,
+        "number": 19994,
         "owner": "Méven",
-        "subject": "sc: read the preview selection without copying it",
-        "submitted": "2026-11-12T08:37:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19941"
+        "subject": "vcl: share the font of equal glyph cache keys",
+        "submitted": "2026-11-13T08:48:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19994"
       },
       {
-        "number": 19776,
-        "owner": "Stephan Bergmann",
-        "subject": "CODA-Q: Rejoin the document when its page reloads",
-        "submitted": "2026-11-12T08:23:21Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19776"
+        "number": 20094,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "svx: show a fill color picked for table cells without fill",
+        "submitted": "2026-11-13T08:47:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20094"
+      },
+      {
+        "number": 20091,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "drawinglayer: paint the shadow of an opaque image in tiles",
+        "submitted": "2026-11-13T08:45:27Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20091"
+      },
+      {
+        "number": 18847,
+        "owner": "Karthik Godha",
+        "subject": "svx: show a PDF document on white paper in dark mode",
+        "submitted": "2026-11-13T08:40:52Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/18847"
       }
     ]
   },
