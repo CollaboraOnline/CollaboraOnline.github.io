@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-13T09:51:28Z",
+  "generated_at": "2026-11-14T09:15:07Z",
   "metrics": {
     "changes": [
       {
-        "number": 20154,
-        "owner": "Miklos Vajna",
-        "subject": "cool#16285 Impress, airplane transition: import loext:subtype",
-        "submitted": "2026-11-13T09:44:09Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20154"
+        "number": 20137,
+        "owner": "Caolán McNamara",
+        "subject": "only activate embedded OpenType fonts that lack Graphite tables",
+        "submitted": "2026-11-14T00:12:35Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20137"
       },
       {
-        "number": 20140,
-        "owner": "Tor Lillqvist",
-        "subject": "Open the document and a downloaded SVG with FileUtil in DocumentBroker",
-        "submitted": "2026-11-13T08:56:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20140"
+        "number": 20136,
+        "owner": "Caolán McNamara",
+        "subject": "update libeot to 0.0.2",
+        "submitted": "2026-11-14T00:12:21Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20136"
       },
       {
-        "number": 20034,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "vcl: let Command+click act as Ctrl+click for macOS clients",
-        "submitted": "2026-11-13T08:49:15Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20034"
+        "number": 20103,
+        "owner": "Skyler Grey",
+        "subject": "autofilter: test search behavior",
+        "submitted": "2026-11-13T23:51:04Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20103"
       },
       {
-        "number": 20033,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "tdf#121967 sd: add and remove shapes from the selection with Ctrl+click",
-        "submitted": "2026-11-13T08:48:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20033"
+        "number": 20133,
+        "owner": "Armin Le Grand",
+        "subject": "Give a new shape the id the client chose for it in vector",
+        "submitted": "2026-11-13T23:25:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20133"
       },
       {
-        "number": 19994,
-        "owner": "Méven",
-        "subject": "vcl: share the font of equal glyph cache keys",
-        "submitted": "2026-11-13T08:48:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19994"
+        "number": 20123,
+        "owner": "Armin Le Grand",
+        "subject": "Keep the looks of shapes to show them at once in vector",
+        "submitted": "2026-11-13T23:25:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20123"
       },
       {
-        "number": 20094,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "svx: show a fill color picked for table cells without fill",
-        "submitted": "2026-11-13T08:47:25Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20094"
+        "number": 20108,
+        "owner": "Armin Le Grand",
+        "subject": "Let a text box be dragged out or clicked where it goes in vector",
+        "submitted": "2026-11-13T23:25:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20108"
       },
       {
-        "number": 20091,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "drawinglayer: paint the shadow of an opaque image in tiles",
-        "submitted": "2026-11-13T08:45:27Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20091"
+        "number": 20107,
+        "owner": "Armin Le Grand",
+        "subject": "Delete the selected objects at once in vector",
+        "submitted": "2026-11-13T23:25:13Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20107"
       },
       {
-        "number": 18847,
-        "owner": "Karthik Godha",
-        "subject": "svx: show a PDF document on white paper in dark mode",
-        "submitted": "2026-11-13T08:40:52Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18847"
+        "number": 20106,
+        "owner": "Armin Le Grand",
+        "subject": "Show the shape while it is dragged out in vector",
+        "submitted": "2026-11-13T23:24:40Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20106"
       }
     ]
   },
