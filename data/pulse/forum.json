@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-14T09:15:03Z",
+  "generated_at": "2026-11-15T09:44:39Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 76,
-      "posts_30d": 167,
+      "active_users_30d": 77,
+      "posts_30d": 163,
       "top_topics_monthly": [
         {
           "posts": 19,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 174
+          "views": 175
         },
         {
           "posts": 1,
           "title": "Weblate stats: October 2026",
           "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
-          "views": 42
+          "views": 44
         },
         {
           "posts": 7,
           "title": "Translations to follow LO or MS or ...?",
           "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
-          "views": 100
+          "views": 104
         },
         {
           "posts": 8,
@@ -36,15 +36,15 @@
           "views": 54
         }
       ],
-      "topics_30d": 52,
-      "total_posts": 10529,
+      "topics_30d": 49,
+      "total_posts": 10530,
       "total_topics": 2251
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-15",
-    "to": "2026-11-14"
+    "from": "2026-10-16",
+    "to": "2026-11-15"
   },
   "source": "forum"
 }

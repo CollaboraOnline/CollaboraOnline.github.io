@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-14T09:15:07Z",
+  "generated_at": "2026-11-15T09:44:43Z",
   "metrics": {
     "changes": [
       {
-        "number": 20137,
-        "owner": "Caolán McNamara",
-        "subject": "only activate embedded OpenType fonts that lack Graphite tables",
-        "submitted": "2026-11-14T00:12:35Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20137"
+        "number": 20310,
+        "owner": "Tor Lillqvist",
+        "subject": "Bin the sfx.control trace of dispatcher calls and registrations",
+        "submitted": "2026-11-15T09:05:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20310"
       },
       {
-        "number": 20136,
-        "owner": "Caolán McNamara",
-        "subject": "update libeot to 0.0.2",
-        "submitted": "2026-11-14T00:12:21Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20136"
+        "number": 20309,
+        "owner": "Tor Lillqvist",
+        "subject": "Bin the per-element trace in the XML import",
+        "submitted": "2026-11-15T09:05:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20309"
       },
       {
-        "number": 20103,
-        "owner": "Skyler Grey",
-        "subject": "autofilter: test search behavior",
-        "submitted": "2026-11-13T23:51:04Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20103"
+        "number": 20060,
+        "owner": "Rashesh Padia",
+        "subject": "sd: notes pane: create the notes box when typing on a page without one",
+        "submitted": "2026-11-15T05:48:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20060"
       },
       {
-        "number": 20133,
+        "number": 20241,
         "owner": "Armin Le Grand",
-        "subject": "Give a new shape the id the client chose for it in vector",
-        "submitted": "2026-11-13T23:25:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20133"
+        "subject": "Show the run of a connector while it is dragged out in vector",
+        "submitted": "2026-11-15T02:31:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20241"
       },
       {
-        "number": 20123,
+        "number": 20240,
         "owner": "Armin Le Grand",
-        "subject": "Keep the looks of shapes to show them at once in vector",
-        "submitted": "2026-11-13T23:25:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20123"
+        "subject": "Tie a dragged end of a connector as the client found it in vector",
+        "submitted": "2026-11-15T02:31:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20240"
       },
       {
-        "number": 20108,
+        "number": 20239,
         "owner": "Armin Le Grand",
-        "subject": "Let a text box be dragged out or clicked where it goes in vector",
-        "submitted": "2026-11-13T23:25:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20108"
+        "subject": "Let a connector be dragged out and tied in vector",
+        "submitted": "2026-11-15T02:31:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20239"
       },
       {
-        "number": 20107,
+        "number": 20238,
         "owner": "Armin Le Grand",
-        "subject": "Delete the selected objects at once in vector",
-        "submitted": "2026-11-13T23:25:13Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20107"
+        "subject": "Show a dimension line as one while it is dragged out in vector",
+        "submitted": "2026-11-15T02:31:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20238"
       },
       {
-        "number": 20106,
+        "number": 20237,
         "owner": "Armin Le Grand",
-        "subject": "Show the shape while it is dragged out in vector",
-        "submitted": "2026-11-13T23:24:40Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20106"
+        "subject": "Offer the line kinds in a grid under Insert, Lines",
+        "submitted": "2026-11-15T02:31:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20237"
       }
     ]
   },
