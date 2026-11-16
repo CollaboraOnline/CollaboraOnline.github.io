@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-15T09:44:43Z",
+  "generated_at": "2026-11-16T10:01:10Z",
   "metrics": {
     "changes": [
       {
-        "number": 20310,
-        "owner": "Tor Lillqvist",
-        "subject": "Bin the sfx.control trace of dispatcher calls and registrations",
-        "submitted": "2026-11-15T09:05:19Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20310"
+        "number": 19553,
+        "owner": "Noel Grandin",
+        "subject": "remove unused parts of rtl/math",
+        "submitted": "2026-11-16T10:00:40Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19553"
       },
       {
-        "number": 20309,
-        "owner": "Tor Lillqvist",
-        "subject": "Bin the per-element trace in the XML import",
-        "submitted": "2026-11-15T09:05:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20309"
+        "number": 19551,
+        "owner": "Noel Grandin",
+        "subject": "simplify rtl_cache_create",
+        "submitted": "2026-11-16T09:54:22Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19551"
       },
       {
-        "number": 20060,
-        "owner": "Rashesh Padia",
-        "subject": "sd: notes pane: create the notes box when typing on a page without one",
-        "submitted": "2026-11-15T05:48:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20060"
+        "number": 19550,
+        "owner": "Noel Grandin",
+        "subject": "simplify UcbStreamHelper::CreateStream",
+        "submitted": "2026-11-16T09:53:04Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19550"
       },
       {
-        "number": 20241,
-        "owner": "Armin Le Grand",
-        "subject": "Show the run of a connector while it is dragged out in vector",
-        "submitted": "2026-11-15T02:31:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20241"
+        "number": 20262,
+        "owner": "Andras Timar",
+        "subject": "vcl: collect DXF MTEXT chunks in a string buffer",
+        "submitted": "2026-11-16T09:46:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20262"
       },
       {
-        "number": 20240,
-        "owner": "Armin Le Grand",
-        "subject": "Tie a dragged end of a connector as the client found it in vector",
-        "submitted": "2026-11-15T02:31:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20240"
+        "number": 19987,
+        "owner": "Méven",
+        "subject": "svl: size the buffer of a formatted number by its content",
+        "submitted": "2026-11-16T09:44:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19987"
       },
       {
-        "number": 20239,
-        "owner": "Armin Le Grand",
-        "subject": "Let a connector be dragged out and tied in vector",
-        "submitted": "2026-11-15T02:31:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20239"
+        "number": 20048,
+        "owner": "Nick",
+        "subject": "Check only one of Show/Hide Slide is visible on reload.",
+        "submitted": "2026-11-16T09:42:25Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20048"
       },
       {
-        "number": 20238,
-        "owner": "Armin Le Grand",
-        "subject": "Show a dimension line as one while it is dragged out in vector",
-        "submitted": "2026-11-15T02:31:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20238"
+        "number": 20261,
+        "owner": "Andras Timar",
+        "subject": "mobile: map menu icon names like the toolbar items do",
+        "submitted": "2026-11-16T09:42:16Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20261"
       },
       {
-        "number": 20237,
-        "owner": "Armin Le Grand",
-        "subject": "Offer the line kinds in a grid under Insert, Lines",
-        "submitted": "2026-11-15T02:31:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20237"
+        "number": 19146,
+        "owner": "Nick",
+        "subject": "Change visual toggle buttons to checkboxes.",
+        "submitted": "2026-11-16T09:42:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19146"
       }
     ]
   },

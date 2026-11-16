@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-15T09:44:39Z",
+  "generated_at": "2026-11-16T10:01:07Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 77,
-      "posts_30d": 163,
+      "active_users_30d": 76,
+      "posts_30d": 156,
       "top_topics_monthly": [
         {
           "posts": 19,
           "title": "Dutch translation topics",
           "url": "https://forum.collaboraonline.com/t/dutch-translation-topics/5141",
-          "views": 175
+          "views": 176
+        },
+        {
+          "posts": 7,
+          "title": "Translations to follow LO or MS or ...?",
+          "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
+          "views": 105
         },
         {
           "posts": 1,
           "title": "Weblate stats: October 2026",
           "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
           "views": 44
-        },
-        {
-          "posts": 7,
-          "title": "Translations to follow LO or MS or ...?",
-          "url": "https://forum.collaboraonline.com/t/translations-to-follow-lo-or-ms-or/5135",
-          "views": 104
         },
         {
           "posts": 8,
@@ -33,18 +33,18 @@
           "posts": 2,
           "title": "How to configure Collabora on Nextcloud Snap",
           "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
-          "views": 54
+          "views": 57
         }
       ],
-      "topics_30d": 49,
+      "topics_30d": 46,
       "total_posts": 10530,
       "total_topics": 2251
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-16",
-    "to": "2026-11-15"
+    "from": "2026-10-17",
+    "to": "2026-11-16"
   },
   "source": "forum"
 }
