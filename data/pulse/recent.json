@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-17T10:58:06Z",
+  "generated_at": "2026-11-20T10:17:46Z",
   "metrics": {
     "changes": [
       {
-        "number": 20365,
-        "owner": "Andras Timar",
-        "subject": "wsd: getMetrics and Options dialog work with admin console off",
-        "submitted": "2026-11-17T10:45:02Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20365"
+        "number": 20986,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Name glue points by their glue ids.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20986"
       },
       {
-        "number": 20348,
-        "owner": "Andras Timar",
-        "subject": "xmloff: read the sort language of alphabetical indexes, bibliographies",
-        "submitted": "2026-11-17T10:34:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20348"
+        "number": 20985,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Delete objects by their ids with deleteobjects.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20985"
       },
       {
-        "number": 20347,
-        "owner": "Andras Timar",
-        "subject": "add a master document to the test documents",
-        "submitted": "2026-11-17T10:34:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20347"
+        "number": 20984,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Simplify a path with setobjectpoints.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20984"
       },
       {
-        "number": 20346,
-        "owner": "Andras Timar",
-        "subject": "browser: SVG icons for the toolbar icons and images of the engine",
-        "submitted": "2026-11-17T10:34:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20346"
+        "number": 20983,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Open a path at a point with setobjectpathclosed.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20983"
       },
       {
-        "number": 20345,
-        "owner": "Andras Timar",
-        "subject": "vcl: send the icon of toolbar items and images by its path",
-        "submitted": "2026-11-17T10:34:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20345"
+        "number": 20982,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Convert objects by their ids with convertobjects.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20982"
       },
       {
-        "number": 20344,
-        "owner": "Andras Timar",
-        "subject": "insert a file of the storage into a master document on a server",
-        "submitted": "2026-11-17T10:34:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20344"
+        "number": 20981,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Delete a point of a path with setobjectpoints.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20981"
       },
       {
-        "number": 20343,
-        "owner": "Andras Timar",
-        "subject": "create a master document from a copy, where the user chooses",
-        "submitted": "2026-11-17T10:34:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20343"
+        "number": 20600,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Edit the points of a path with setobjectpoints only.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20600"
       },
       {
-        "number": 18262,
-        "owner": "Méven",
-        "subject": "CanvasTileUtils: apply tile deltas with bulk copies",
-        "submitted": "2026-11-09T13:40:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/18262"
+        "number": 20599,
+        "owner": "Gökay ŞATIR",
+        "subject": "Impress: Add a point to a path with setobjectpoints.",
+        "submitted": "2026-11-20T10:09:33Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20599"
       }
     ]
   },
