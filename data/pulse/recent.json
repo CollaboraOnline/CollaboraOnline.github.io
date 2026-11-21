@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-20T10:17:46Z",
+  "generated_at": "2026-11-21T10:02:18Z",
   "metrics": {
     "changes": [
       {
-        "number": 20986,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Name glue points by their glue ids.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20986"
+        "number": 20515,
+        "owner": "Pranam Lashkari",
+        "subject": "browser: add a presentation to the document from the import pane",
+        "submitted": "2026-11-21T09:50:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20515"
       },
       {
-        "number": 20985,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Delete objects by their ids with deleteobjects.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20985"
+        "number": 20514,
+        "owner": "Pranam Lashkari",
+        "subject": "kit, wsd: keep a remote link in the document on request",
+        "submitted": "2026-11-21T09:50:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20514"
       },
       {
-        "number": 20984,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Simplify a path with setobjectpoints.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20984"
+        "number": 20513,
+        "owner": "Pranam Lashkari",
+        "subject": "sd: keep a source presentation with no slide linked",
+        "submitted": "2026-11-21T09:50:38Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20513"
       },
       {
-        "number": 20983,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Open a path at a point with setobjectpathclosed.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20983"
+        "number": 21276,
+        "owner": "Caolán McNamara",
+        "subject": "cypress: wait for the form control properties dialog to settle",
+        "submitted": "2026-11-21T09:47:07Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21276"
       },
       {
-        "number": 20982,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Convert objects by their ids with convertobjects.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20982"
+        "number": 21222,
+        "owner": "Méven",
+        "subject": "sc: share the row styles of xlsx columns without cell styles",
+        "submitted": "2026-11-21T09:06:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21222"
       },
       {
-        "number": 20981,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Delete a point of a path with setobjectpoints.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20981"
+        "number": 20945,
+        "owner": "Noel Grandin",
+        "subject": "osl::Mutex->std::mutex in FilterCache",
+        "submitted": "2026-11-21T06:48:06Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20945"
       },
       {
-        "number": 20600,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Edit the points of a path with setobjectpoints only.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20600"
+        "number": 21191,
+        "owner": "Caolán McNamara",
+        "subject": "build the load command as a LoadCommand and write it once",
+        "submitted": "2026-11-21T06:43:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21191"
       },
       {
-        "number": 20599,
-        "owner": "Gökay ŞATIR",
-        "subject": "Impress: Add a point to a path with setobjectpoints.",
-        "submitted": "2026-11-20T10:09:33Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20599"
+        "number": 21190,
+        "owner": "Caolán McNamara",
+        "subject": "add LoadCommand with one table of the load options",
+        "submitted": "2026-11-21T06:43:00Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21190"
       }
     ]
   },
