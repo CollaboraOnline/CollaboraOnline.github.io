@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-21T10:02:18Z",
+  "generated_at": "2026-11-22T10:03:58Z",
   "metrics": {
     "changes": [
       {
-        "number": 20515,
-        "owner": "Pranam Lashkari",
-        "subject": "browser: add a presentation to the document from the import pane",
-        "submitted": "2026-11-21T09:50:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20515"
+        "number": 21025,
+        "owner": "Tomaž Vajngerl",
+        "subject": "vector: enable vector rendering by default for impress",
+        "submitted": "2026-11-22T01:40:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21025"
       },
       {
-        "number": 20514,
-        "owner": "Pranam Lashkari",
-        "subject": "kit, wsd: keep a remote link in the document on request",
-        "submitted": "2026-11-21T09:50:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20514"
+        "number": 21140,
+        "owner": "Tomaž Vajngerl",
+        "subject": "cypress: open every document with vector=false",
+        "submitted": "2026-11-22T01:39:59Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21140"
       },
       {
-        "number": 20513,
-        "owner": "Pranam Lashkari",
-        "subject": "sd: keep a source presentation with no slide linked",
-        "submitted": "2026-11-21T09:50:38Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20513"
+        "number": 21159,
+        "owner": "Szymon Kłos",
+        "subject": "calc: test row heights of a block pasted into a taller range",
+        "submitted": "2026-11-22T01:22:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21159"
       },
       {
-        "number": 21276,
-        "owner": "Caolán McNamara",
-        "subject": "cypress: wait for the form control properties dialog to settle",
-        "submitted": "2026-11-21T09:47:07Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21276"
+        "number": 21154,
+        "owner": "Szymon Kłos",
+        "subject": "calc: test text width iterator from any start row",
+        "submitted": "2026-11-22T01:22:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21154"
       },
       {
-        "number": 21222,
-        "owner": "Méven",
-        "subject": "sc: share the row styles of xlsx columns without cell styles",
-        "submitted": "2026-11-21T09:06:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21222"
+        "number": 20992,
+        "owner": "Szymon Kłos",
+        "subject": "calc: copy row heights of repeated paste instead of measuring",
+        "submitted": "2026-11-22T01:22:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20992"
       },
       {
-        "number": 20945,
-        "owner": "Noel Grandin",
-        "subject": "osl::Mutex->std::mutex in FilterCache",
-        "submitted": "2026-11-21T06:48:06Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20945"
+        "number": 21272,
+        "owner": "Kohei Yoshida",
+        "subject": "Keep the cell cursor on its cell when a row or a column is resized",
+        "submitted": "2026-11-22T01:07:41Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21272"
       },
       {
-        "number": 21191,
-        "owner": "Caolán McNamara",
-        "subject": "build the load command as a LoadCommand and write it once",
-        "submitted": "2026-11-21T06:43:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21191"
+        "number": 21253,
+        "owner": "Kohei Yoshida",
+        "subject": "Group the cell cursor state of app.calc into one cellCursor object",
+        "submitted": "2026-11-22T01:07:30Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21253"
       },
       {
-        "number": 21190,
-        "owner": "Caolán McNamara",
-        "subject": "add LoadCommand with one table of the load options",
-        "submitted": "2026-11-21T06:43:00Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21190"
+        "number": 21252,
+        "owner": "Armin Le Grand",
+        "subject": "Draw a motion path from the animation sidebar in vector",
+        "submitted": "2026-11-22T01:02:55Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21252"
       }
     ]
   },
