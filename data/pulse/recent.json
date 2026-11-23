@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-22T10:03:58Z",
+  "generated_at": "2026-11-23T11:00:36Z",
   "metrics": {
     "changes": [
       {
-        "number": 21025,
-        "owner": "Tomaž Vajngerl",
-        "subject": "vector: enable vector rendering by default for impress",
-        "submitted": "2026-11-22T01:40:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21025"
+        "number": 21471,
+        "owner": "Miklos Vajna",
+        "subject": "engine editeng: prefix members of SvxURLField",
+        "submitted": "2026-11-23T10:54:57Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21471"
       },
       {
-        "number": 21140,
-        "owner": "Tomaž Vajngerl",
-        "subject": "cypress: open every document with vector=false",
-        "submitted": "2026-11-22T01:39:59Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21140"
+        "number": 21452,
+        "owner": "Ashod Nakashian",
+        "subject": "sd: tiled rendering tests: start each test with the notes pane closed",
+        "submitted": "2026-11-23T09:18:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21452"
       },
       {
-        "number": 21159,
-        "owner": "Szymon Kłos",
-        "subject": "calc: test row heights of a block pasted into a taller range",
-        "submitted": "2026-11-22T01:22:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21159"
+        "number": 21392,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: differentiate between unknown and connected AsyncConnectResult",
+        "submitted": "2026-11-23T09:18:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21392"
       },
       {
-        "number": 21154,
-        "owner": "Szymon Kłos",
-        "subject": "calc: test text width iterator from any start row",
-        "submitted": "2026-11-22T01:22:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21154"
+        "number": 21391,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: update the map of documents going offline on the web server thread",
+        "submitted": "2026-11-23T09:18:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21391"
       },
       {
-        "number": 20992,
-        "owner": "Szymon Kłos",
-        "subject": "calc: copy row heights of repeated paste instead of measuring",
-        "submitted": "2026-11-22T01:22:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20992"
+        "number": 21390,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: guard the route token with a mutex",
+        "submitted": "2026-11-23T09:18:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21390"
       },
       {
-        "number": 21272,
-        "owner": "Kohei Yoshida",
-        "subject": "Keep the cell cursor on its cell when a row or a column is resized",
-        "submitted": "2026-11-22T01:07:41Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21272"
+        "number": 21389,
+        "owner": "Ashod Nakashian",
+        "subject": "wsd: keep the version of the Kit in one snapshot",
+        "submitted": "2026-11-23T09:18:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21389"
       },
       {
-        "number": 21253,
-        "owner": "Kohei Yoshida",
-        "subject": "Group the cell cursor state of app.calc into one cellCursor object",
-        "submitted": "2026-11-22T01:07:30Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21253"
+        "number": 21365,
+        "owner": "Ashod Nakashian",
+        "subject": "kit: compute the byte rlimits in 64 bits",
+        "submitted": "2026-11-23T09:18:28Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21365"
       },
       {
-        "number": 21252,
-        "owner": "Armin Le Grand",
-        "subject": "Draw a motion path from the animation sidebar in vector",
-        "submitted": "2026-11-22T01:02:55Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21252"
+        "number": 20085,
+        "owner": "Samuel Mehrbrodt",
+        "subject": "oox: export a chart's themeOverride and clrMapOvr",
+        "submitted": "2026-11-20T06:45:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20085"
       }
     ]
   },

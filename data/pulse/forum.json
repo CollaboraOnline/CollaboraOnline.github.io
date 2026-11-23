@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T10:03:55Z",
+  "generated_at": "2026-11-23T11:00:33Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 79,
-      "posts_30d": 152,
+      "posts_30d": 160,
       "top_topics_monthly": [
         {
           "posts": 1,
@@ -15,36 +15,36 @@
           "posts": 2,
           "title": "How to configure Collabora on Nextcloud Snap",
           "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
-          "views": 69
+          "views": 74
         },
         {
           "posts": 8,
           "title": "Enable Adding Glossary terms in Weblate?",
           "url": "https://forum.collaboraonline.com/t/enable-adding-glossary-terms-in-weblate/5156",
-          "views": 79
+          "views": 80
         },
         {
           "posts": 2,
           "title": "Why are there no settings for this suite?",
           "url": "https://forum.collaboraonline.com/t/why-are-there-no-settings-for-this-suite/5195",
-          "views": 75
+          "views": 77
         },
         {
-          "posts": 5,
-          "title": "That old public key issue... https://www.collaboraonline.com/code/#learnmorecode",
-          "url": "https://forum.collaboraonline.com/t/that-old-public-key-issue-https-www-collaboraonline-com-code-learnmorecode/5153",
-          "views": 87
+          "posts": 1,
+          "title": "COOL Days 2027 is coming to Berlin! :germany:",
+          "url": "https://forum.collaboraonline.com/t/cool-days-2027-is-coming-to-berlin/5177",
+          "views": 31
         }
       ],
-      "topics_30d": 44,
-      "total_posts": 10553,
-      "total_topics": 2259
+      "topics_30d": 47,
+      "total_posts": 10563,
+      "total_topics": 2262
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-23",
-    "to": "2026-11-22"
+    "from": "2026-10-24",
+    "to": "2026-11-23"
   },
   "source": "forum"
 }
