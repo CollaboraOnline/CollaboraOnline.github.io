@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-23T11:00:33Z",
+  "generated_at": "2026-11-24T12:47:40Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 79,
-      "posts_30d": 160,
+      "active_users_30d": 80,
+      "posts_30d": 154,
       "top_topics_monthly": [
-        {
-          "posts": 1,
-          "title": "Weblate stats: October 2026",
-          "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
-          "views": 47
-        },
         {
           "posts": 2,
           "title": "How to configure Collabora on Nextcloud Snap",
           "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
           "views": 74
+        },
+        {
+          "posts": 1,
+          "title": "Weblate stats: October 2026",
+          "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
+          "views": 48
         },
         {
           "posts": 8,
@@ -27,24 +27,24 @@
           "posts": 2,
           "title": "Why are there no settings for this suite?",
           "url": "https://forum.collaboraonline.com/t/why-are-there-no-settings-for-this-suite/5195",
-          "views": 77
+          "views": 78
         },
         {
           "posts": 1,
           "title": "COOL Days 2027 is coming to Berlin! :germany:",
           "url": "https://forum.collaboraonline.com/t/cool-days-2027-is-coming-to-berlin/5177",
-          "views": 31
+          "views": 33
         }
       ],
       "topics_30d": 47,
-      "total_posts": 10563,
-      "total_topics": 2262
+      "total_posts": 10569,
+      "total_topics": 2263
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-24",
-    "to": "2026-11-23"
+    "from": "2026-10-25",
+    "to": "2026-11-24"
   },
   "source": "forum"
 }

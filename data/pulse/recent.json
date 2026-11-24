@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-23T11:00:36Z",
+  "generated_at": "2026-11-24T12:47:43Z",
   "metrics": {
     "changes": [
       {
-        "number": 21471,
-        "owner": "Miklos Vajna",
-        "subject": "engine editeng: prefix members of SvxURLField",
-        "submitted": "2026-11-23T10:54:57Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21471"
+        "number": 21218,
+        "owner": "Gülşah Köse",
+        "subject": "sw: Add Ctrl+Alt+Shift+E as a second Insert Endnote key",
+        "submitted": "2026-11-24T12:17:10Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21218"
       },
       {
-        "number": 21452,
-        "owner": "Ashod Nakashian",
-        "subject": "sd: tiled rendering tests: start each test with the notes pane closed",
-        "submitted": "2026-11-23T09:18:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21452"
+        "number": 21217,
+        "owner": "Gülşah Köse",
+        "subject": "browser: copy and cut comment text without the card's styles",
+        "submitted": "2026-11-24T12:16:47Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21217"
       },
       {
-        "number": 21392,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: differentiate between unknown and connected AsyncConnectResult",
-        "submitted": "2026-11-23T09:18:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21392"
+        "number": 21909,
+        "owner": "Skyler Grey",
+        "subject": "android: stop recommending ourselves for PDFs",
+        "submitted": "2026-11-24T12:11:01Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21909"
       },
       {
-        "number": 21391,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: update the map of documents going offline on the web server thread",
-        "submitted": "2026-11-23T09:18:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21391"
+        "number": 21905,
+        "owner": "Michael Stahl",
+        "subject": "sqlite: upgrade to release 3.54.1",
+        "submitted": "2026-11-24T11:57:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21905"
       },
       {
-        "number": 21390,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: guard the route token with a mutex",
-        "submitted": "2026-11-23T09:18:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21390"
+        "number": 21903,
+        "owner": "Michael Stahl",
+        "subject": "expat: upgrade to release 2.11.0",
+        "submitted": "2026-11-24T11:57:46Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21903"
       },
       {
-        "number": 21389,
-        "owner": "Ashod Nakashian",
-        "subject": "wsd: keep the version of the Kit in one snapshot",
-        "submitted": "2026-11-23T09:18:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21389"
+        "number": 21864,
+        "owner": "Andras Timar",
+        "subject": "a failing RDF metadata lookup no longer escapes text formatting",
+        "submitted": "2026-11-24T11:56:49Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21864"
       },
       {
-        "number": 21365,
-        "owner": "Ashod Nakashian",
-        "subject": "kit: compute the byte rlimits in 64 bits",
-        "submitted": "2026-11-23T09:18:28Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21365"
+        "number": 21761,
+        "owner": "Nick",
+        "subject": "Impress: use existing var in slidsorter css",
+        "submitted": "2026-11-24T11:53:53Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21761"
       },
       {
-        "number": 20085,
-        "owner": "Samuel Mehrbrodt",
-        "subject": "oox: export a chart's themeOverride and clrMapOvr",
-        "submitted": "2026-11-20T06:45:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20085"
+        "number": 21917,
+        "owner": "Gökay ŞATIR",
+        "subject": "Remove extra definition of _isMasterView function.",
+        "submitted": "2026-11-24T11:46:12Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21917"
       }
     ]
   },
