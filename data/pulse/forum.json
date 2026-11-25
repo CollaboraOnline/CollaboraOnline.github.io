@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-24T12:47:40Z",
+  "generated_at": "2026-11-25T11:33:45Z",
   "metrics": {
     "cool_forum": {
-      "active_users_30d": 80,
-      "posts_30d": 154,
+      "active_users_30d": 82,
+      "posts_30d": 151,
       "top_topics_monthly": [
         {
           "posts": 2,
           "title": "How to configure Collabora on Nextcloud Snap",
           "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
-          "views": 74
+          "views": 75
         },
         {
           "posts": 1,
@@ -27,7 +27,7 @@
           "posts": 2,
           "title": "Why are there no settings for this suite?",
           "url": "https://forum.collaboraonline.com/t/why-are-there-no-settings-for-this-suite/5195",
-          "views": 78
+          "views": 79
         },
         {
           "posts": 1,
@@ -36,15 +36,15 @@
           "views": 33
         }
       ],
-      "topics_30d": 47,
-      "total_posts": 10569,
-      "total_topics": 2263
+      "topics_30d": 46,
+      "total_posts": 10584,
+      "total_topics": 2265
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-25",
-    "to": "2026-11-24"
+    "from": "2026-10-26",
+    "to": "2026-11-25"
   },
   "source": "forum"
 }

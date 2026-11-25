@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-24T12:47:43Z",
+  "generated_at": "2026-11-25T11:33:48Z",
   "metrics": {
     "changes": [
       {
-        "number": 21218,
+        "number": 22072,
         "owner": "Gülşah Köse",
-        "subject": "sw: Add Ctrl+Alt+Shift+E as a second Insert Endnote key",
-        "submitted": "2026-11-24T12:17:10Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21218"
+        "subject": "browser: scroll to an internal link target when the caret is there",
+        "submitted": "2026-11-25T11:20:18Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22072"
       },
       {
-        "number": 21217,
-        "owner": "Gülşah Köse",
-        "subject": "browser: copy and cut comment text without the card's styles",
-        "submitted": "2026-11-24T12:16:47Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21217"
+        "number": 20185,
+        "owner": "Jaume Pujantell",
+        "subject": "sw: keep one paragraph format change per paragraph",
+        "submitted": "2026-11-25T11:19:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/20185"
       },
       {
-        "number": 21909,
-        "owner": "Skyler Grey",
-        "subject": "android: stop recommending ourselves for PDFs",
-        "submitted": "2026-11-24T12:11:01Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21909"
+        "number": 21937,
+        "owner": "Caolán McNamara",
+        "subject": "paste with .uno:Paste or .uno:PasteSpecial after a clipboard download",
+        "submitted": "2026-11-25T11:14:44Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21937"
       },
       {
-        "number": 21905,
-        "owner": "Michael Stahl",
-        "subject": "sqlite: upgrade to release 3.54.1",
-        "submitted": "2026-11-24T11:57:46Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21905"
+        "number": 19889,
+        "owner": "Jaume Pujantell",
+        "subject": "tdf#169177 sw: select a tracked change by clicking its change bar",
+        "submitted": "2026-11-25T11:09:05Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/19889"
       },
       {
-        "number": 21903,
-        "owner": "Michael Stahl",
-        "subject": "expat: upgrade to release 2.11.0",
-        "submitted": "2026-11-24T11:57:46Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21903"
+        "number": 21274,
+        "owner": "Caolán McNamara",
+        "subject": "send nosniff and a sandbox policy with every download",
+        "submitted": "2026-11-25T10:50:11Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21274"
       },
       {
-        "number": 21864,
-        "owner": "Andras Timar",
-        "subject": "a failing RDF metadata lookup no longer escapes text formatting",
-        "submitted": "2026-11-24T11:56:49Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21864"
+        "number": 21186,
+        "owner": "Mike Kaganski",
+        "subject": "sal: let a string append its own text",
+        "submitted": "2026-11-25T10:42:24Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21186"
       },
       {
-        "number": 21761,
-        "owner": "Nick",
-        "subject": "Impress: use existing var in slidsorter css",
-        "submitted": "2026-11-24T11:53:53Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21761"
+        "number": 21273,
+        "owner": "Caolán McNamara",
+        "subject": "downloadas name must end in the extension of its format",
+        "submitted": "2026-11-25T10:41:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21273"
       },
       {
-        "number": 21917,
-        "owner": "Gökay ŞATIR",
-        "subject": "Remove extra definition of _isMasterView function.",
-        "submitted": "2026-11-24T11:46:12Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21917"
+        "number": 21860,
+        "owner": "Aron Budea",
+        "subject": "sd: fixes to export tests",
+        "submitted": "2026-11-25T10:29:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/21860"
       }
     ]
   },
