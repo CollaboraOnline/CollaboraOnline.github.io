@@ -1,50 +1,50 @@
 {
-  "generated_at": "2026-11-25T11:33:45Z",
+  "generated_at": "2026-11-26T11:17:13Z",
   "metrics": {
     "cool_forum": {
       "active_users_30d": 82,
-      "posts_30d": 151,
+      "posts_30d": 156,
       "top_topics_monthly": [
-        {
-          "posts": 2,
-          "title": "How to configure Collabora on Nextcloud Snap",
-          "url": "https://forum.collaboraonline.com/t/how-to-configure-collabora-on-nextcloud-snap/5157",
-          "views": 75
-        },
         {
           "posts": 1,
           "title": "Weblate stats: October 2026",
           "url": "https://forum.collaboraonline.com/t/weblate-stats-october-2026/5189",
-          "views": 48
-        },
-        {
-          "posts": 8,
-          "title": "Enable Adding Glossary terms in Weblate?",
-          "url": "https://forum.collaboraonline.com/t/enable-adding-glossary-terms-in-weblate/5156",
-          "views": 80
+          "views": 49
         },
         {
           "posts": 2,
           "title": "Why are there no settings for this suite?",
           "url": "https://forum.collaboraonline.com/t/why-are-there-no-settings-for-this-suite/5195",
-          "views": 79
+          "views": 82
+        },
+        {
+          "posts": 5,
+          "title": "Every file corrupted",
+          "url": "https://forum.collaboraonline.com/t/every-file-corrupted/5190",
+          "views": 93
         },
         {
           "posts": 1,
           "title": "COOL Days 2027 is coming to Berlin! :germany:",
           "url": "https://forum.collaboraonline.com/t/cool-days-2027-is-coming-to-berlin/5177",
           "views": 33
+        },
+        {
+          "posts": 5,
+          "title": "Enabling languages causes 75+ second document loads (pt2)",
+          "url": "https://forum.collaboraonline.com/t/enabling-languages-causes-75-second-document-loads-pt2/5183",
+          "views": 55
         }
       ],
-      "topics_30d": 46,
-      "total_posts": 10584,
-      "total_topics": 2265
+      "topics_30d": 48,
+      "total_posts": 10591,
+      "total_topics": 2267
     }
   },
   "period": {
     "days": 30,
-    "from": "2026-10-26",
-    "to": "2026-11-25"
+    "from": "2026-10-27",
+    "to": "2026-11-26"
   },
   "source": "forum"
 }

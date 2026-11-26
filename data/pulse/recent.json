@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-25T11:33:48Z",
+  "generated_at": "2026-11-26T11:17:16Z",
   "metrics": {
     "changes": [
       {
-        "number": 22072,
-        "owner": "Gülşah Köse",
-        "subject": "browser: scroll to an internal link target when the caret is there",
-        "submitted": "2026-11-25T11:20:18Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22072"
-      },
-      {
-        "number": 20185,
-        "owner": "Jaume Pujantell",
-        "subject": "sw: keep one paragraph format change per paragraph",
-        "submitted": "2026-11-25T11:19:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/20185"
-      },
-      {
-        "number": 21937,
-        "owner": "Caolán McNamara",
-        "subject": "paste with .uno:Paste or .uno:PasteSpecial after a clipboard download",
-        "submitted": "2026-11-25T11:14:44Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21937"
-      },
-      {
-        "number": 19889,
-        "owner": "Jaume Pujantell",
-        "subject": "tdf#169177 sw: select a tracked change by clicking its change bar",
-        "submitted": "2026-11-25T11:09:05Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/19889"
-      },
-      {
-        "number": 21274,
-        "owner": "Caolán McNamara",
-        "subject": "send nosniff and a sandbox policy with every download",
-        "submitted": "2026-11-25T10:50:11Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21274"
-      },
-      {
-        "number": 21186,
+        "number": 22083,
         "owner": "Mike Kaganski",
-        "subject": "sal: let a string append its own text",
-        "submitted": "2026-11-25T10:42:24Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21186"
+        "subject": "framework: take toolbar controllers out before disposing",
+        "submitted": "2026-11-26T11:04:48Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22083"
       },
       {
-        "number": 21273,
+        "number": 22094,
         "owner": "Caolán McNamara",
-        "subject": "downloadas name must end in the extension of its format",
-        "submitted": "2026-11-25T10:41:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21273"
+        "subject": "match the port of the first WOPI host too",
+        "submitted": "2026-11-26T10:57:32Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22094"
       },
       {
-        "number": 21860,
+        "number": 22198,
+        "owner": "Andras Timar",
+        "subject": "configure: give back forward slashes from PathFormat with wsl as a helper",
+        "submitted": "2026-11-26T10:51:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22198"
+      },
+      {
+        "number": 22197,
+        "owner": "Andras Timar",
+        "subject": "configure: use the cp of git-bash when wsl is only a helper",
+        "submitted": "2026-11-26T10:47:29Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22197"
+      },
+      {
+        "number": 22002,
         "owner": "Aron Budea",
-        "subject": "sd: fixes to export tests",
-        "submitted": "2026-11-25T10:29:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/21860"
+        "subject": "cool#16441 chart2: resize internal data once when adding categories",
+        "submitted": "2026-11-26T10:45:17Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22002"
+      },
+      {
+        "number": 22001,
+        "owner": "Aron Budea",
+        "subject": "chart2: keep the values when the internal data table grows",
+        "submitted": "2026-11-26T10:40:16Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22001"
+      },
+      {
+        "number": 22274,
+        "owner": "Caolán McNamara",
+        "subject": "run prettier on Control.TableStylesDialog.ts",
+        "submitted": "2026-11-26T10:38:08Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22274"
+      },
+      {
+        "number": 22107,
+        "owner": "Aron Budea",
+        "subject": "cool#16448 oox: discard custom parts with relationships",
+        "submitted": "2026-11-26T10:35:50Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22107"
       }
     ]
   },
