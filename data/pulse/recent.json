@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-26T11:17:16Z",
+  "generated_at": "2026-11-27T11:11:32Z",
   "metrics": {
     "changes": [
       {
-        "number": 22083,
-        "owner": "Mike Kaganski",
-        "subject": "framework: take toolbar controllers out before disposing",
-        "submitted": "2026-11-26T11:04:48Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22083"
-      },
-      {
-        "number": 22094,
+        "number": 22135,
         "owner": "Caolán McNamara",
-        "subject": "match the port of the first WOPI host too",
-        "submitted": "2026-11-26T10:57:32Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22094"
+        "subject": "make links relative in Markdown export like ODF export does",
+        "submitted": "2026-11-27T10:55:45Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22135"
       },
       {
-        "number": 22198,
+        "number": 22315,
         "owner": "Andras Timar",
-        "subject": "configure: give back forward slashes from PathFormat with wsl as a helper",
-        "submitted": "2026-11-26T10:51:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22198"
+        "subject": "a paste of an array formula's origin asks before it changes anything",
+        "submitted": "2026-11-27T10:44:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22315"
       },
       {
-        "number": 22197,
+        "number": 22314,
         "owner": "Andras Timar",
-        "subject": "configure: use the cp of git-bash when wsl is only a helper",
-        "submitted": "2026-11-26T10:47:29Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22197"
+        "subject": "Clone Formatting asks whether to paste beyond the selection without a nested loop",
+        "submitted": "2026-11-27T10:44:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22314"
       },
       {
-        "number": 22002,
-        "owner": "Aron Budea",
-        "subject": "cool#16441 chart2: resize internal data once when adding categories",
-        "submitted": "2026-11-26T10:45:17Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22002"
+        "number": 22313,
+        "owner": "Andras Timar",
+        "subject": "Calc asks whether to paste beyond the selection without a nested loop",
+        "submitted": "2026-11-27T10:44:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22313"
       },
       {
-        "number": 22001,
-        "owner": "Aron Budea",
-        "subject": "chart2: keep the values when the internal data table grows",
-        "submitted": "2026-11-26T10:40:16Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22001"
+        "number": 22312,
+        "owner": "Andras Timar",
+        "subject": "a Paste Special posted after its dialog finds its view again",
+        "submitted": "2026-11-27T10:44:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22312"
       },
       {
-        "number": 22274,
-        "owner": "Caolán McNamara",
-        "subject": "run prettier on Control.TableStylesDialog.ts",
-        "submitted": "2026-11-26T10:38:08Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22274"
+        "number": 22311,
+        "owner": "Andras Timar",
+        "subject": "the keep-a-reference comment in PasteFromSystem sits on the reference",
+        "submitted": "2026-11-27T10:44:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22311"
       },
       {
-        "number": 22107,
-        "owner": "Aron Budea",
-        "subject": "cool#16448 oox: discard custom parts with relationships",
-        "submitted": "2026-11-26T10:35:50Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22107"
+        "number": 22310,
+        "owner": "Andras Timar",
+        "subject": "Calc paste keeps its clipboard object alive while a dialog is open",
+        "submitted": "2026-11-27T10:44:58Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22310"
+      },
+      {
+        "number": 22441,
+        "owner": "Tor Lillqvist",
+        "subject": "Disable the + button of the tab strip on the Start page",
+        "submitted": "2026-11-27T10:43:56Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22441"
       }
     ]
   },
