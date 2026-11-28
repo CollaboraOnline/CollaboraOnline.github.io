@@ -1,62 +1,62 @@
 {
-  "generated_at": "2026-11-27T11:11:32Z",
+  "generated_at": "2026-11-28T10:44:32Z",
   "metrics": {
     "changes": [
       {
-        "number": 22135,
-        "owner": "Caolán McNamara",
-        "subject": "make links relative in Markdown export like ODF export does",
-        "submitted": "2026-11-27T10:55:45Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22135"
-      },
-      {
-        "number": 22315,
+        "number": 22371,
         "owner": "Andras Timar",
-        "subject": "a paste of an array formula's origin asks before it changes anything",
-        "submitted": "2026-11-27T10:44:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22315"
+        "subject": "browser: show the image of a radio button",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22371"
       },
       {
-        "number": 22314,
+        "number": 22370,
         "owner": "Andras Timar",
-        "subject": "Clone Formatting asks whether to paste beyond the selection without a nested loop",
-        "submitted": "2026-11-27T10:44:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22314"
+        "subject": "jsdialog: send the icon theme path of a radio button image",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22370"
       },
       {
-        "number": 22313,
+        "number": 22369,
         "owner": "Andras Timar",
-        "subject": "Calc asks whether to paste beyond the selection without a nested loop",
-        "submitted": "2026-11-27T10:44:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22313"
+        "subject": "browser: icons of ours for the engine images of the Navigator and dialogs",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22369"
       },
       {
-        "number": 22312,
+        "number": 22368,
         "owner": "Andras Timar",
-        "subject": "a Paste Special posted after its dialog finds its view again",
-        "submitted": "2026-11-27T10:44:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22312"
+        "subject": "browser: icons of ours for more images of the engine's icon theme",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22368"
       },
       {
-        "number": 22311,
+        "number": 22367,
         "owner": "Andras Timar",
-        "subject": "the keep-a-reference comment in PasteFromSystem sits on the reference",
-        "submitted": "2026-11-27T10:44:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22311"
+        "subject": "browser: show engine bitmaps for icons only when both of our SVGs fail",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22367"
       },
       {
-        "number": 22310,
+        "number": 22366,
         "owner": "Andras Timar",
-        "subject": "Calc paste keeps its clipboard object alive while a dialog is open",
-        "submitted": "2026-11-27T10:44:58Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22310"
+        "subject": "jsdialog: send the icon theme path of a button image, too",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22366"
       },
       {
-        "number": 22441,
-        "owner": "Tor Lillqvist",
-        "subject": "Disable the + button of the tab strip on the Start page",
-        "submitted": "2026-11-27T10:43:56Z",
-        "url": "https://gerrit.collaboraoffice.com/c/online/+/22441"
+        "number": 22365,
+        "owner": "Andras Timar",
+        "subject": "jsdialog: send the expanded image of a tree view entry as expandedimage",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22365"
+      },
+      {
+        "number": 22364,
+        "owner": "Andras Timar",
+        "subject": "icon-themes: remove galaxy, the branding there is the default one",
+        "submitted": "2026-11-28T07:36:19Z",
+        "url": "https://gerrit.collaboraoffice.com/c/online/+/22364"
       }
     ]
   },
